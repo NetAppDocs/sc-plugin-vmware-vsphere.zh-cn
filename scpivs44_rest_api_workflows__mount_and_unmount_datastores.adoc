@@ -1,0 +1,50 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_rest_api_workflows__mount_and_unmount_datastores.html 
+keywords:  
+summary:  
+---
+= 用于挂载和卸载数据存储库的 REST API 工作流
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+要使用适用于 VMware vSphere 的 SnapCenter 插件 REST API 对数据存储库备份执行挂载和卸载操作，您必须遵循规定的 REST API 调用顺序。
+
+对于每个 REST API ，在 REST API 的前面添加 `https://<server>:<port>` 以形成完整的端点。
+
+要挂载数据存储库，请按照以下工作流进行操作：
+
+|===
+| 步骤 | REST API | 注释 
+
+
+| 1. | 转至 `http://<vCenter-IP>/mob` | 从 VMware 受管对象 URL 中查找数据存储库 moref 。记下要挂载的数据存储库的 * moref* 。 
+
+
+| 2. | ` /4.1/数据 存储库 / ｛ moref ｝ / 备份` | `获取数据存储库的备份列表` 获取指定数据存储库的备份列表。传递步骤 1 中的 * moref* 。记下要挂载的 * 备份 Id* 。 
+
+
+| 3. | ` /4.1/" 数据存储库 / 备份 / ｛ backupId ｝ /snapshotlocators` | `获取 Snapshot 位置列表` 获取有关指定备份位置的详细信息。传递步骤 2 中的 * 备份 Id* 。记下 * 数据存储库 * 以及 * 快照位置列表 * 中的位置。 
+
+
+| 4. | ` /4.1/ 数据存储库 / ｛ moref ｝ / 可用性 EssxHosts` | `获取可用 ESXi 主机列表` 获取可用于挂载操作的 ESXi 主机列表。传递步骤 1 中的 * moref* 。请注意 * 可用的 EssxHostsList* 信息。 
+
+
+| 5. | ` /4.1/数据 存储库 / 备份 / ｛ backupId ｝ /mount` | `m为备份挂载数据存储库` 挂载指定的数据存储库备份。传递步骤 2 中的 * 备份 Id* 。在 * 数据存储库 * 和 * 位置 * 属性中，传递步骤 3 中 `snapshotLocationsList` 中的信息。在 * esxHostName* 属性中，传递步骤 4 中 * availableEssxHostsList* 中的信息。 
+|===
+要卸载数据存储库，请按照以下工作流进行操作：
+
+|===
+| 步骤 | REST API | 注释 
+
+
+| 1. | ` /4.1/数据 存储库 / 备份 / ｛ backupId ｝ / 已挂载` | `获取已挂载数据存储库的列表` 。记下要卸载的数据存储库 * moref* 。 
+
+
+| 2. | ` /4.1/数据 存储库 / 卸载` | `卸载要备份的数据存储库` 卸载指定的数据存储库备份。从步骤 1 传递数据存储库 * moref* 。 
+|===

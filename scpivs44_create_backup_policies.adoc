@@ -1,0 +1,20 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_create_backup_policies.html 
+keywords:  
+summary:  
+---
+= 创建备份策略
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+. 在 VMware vSphere Web Client 的左侧导航器窗格中，单击 * 策略 * ，然后单击 image:scpivs44_image6.png["错误：缺少图形映像"] * 新策略 * 。
+. 在 * 新建备份策略 * 页面上，输入策略配置信息，然后单击 * 添加 * 。
++
+如果策略将用于镜像 - 存储关系，则在复制字段中，如果要将备份复制到镜像 - 存储目标，则只能选择 * 备份后更新 SnapVault * 选项。
+
+

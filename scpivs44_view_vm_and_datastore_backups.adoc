@@ -1,0 +1,26 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_view_vm_and_datastore_backups.html 
+keywords:  
+summary:  
+---
+= 查看虚拟机和数据存储库备份
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+在准备备份或还原虚拟机或数据存储库时，您可能希望查看可用于该资源的所有备份并查看这些备份的详细信息。
+
+首次浏览大型文件文件夹（例如 10k 文件文件夹）可能需要一分钟或多分钟的时间。后续浏览会话所需时间更短。
+
+.步骤
+. 单击 * 菜单 * 并选择 * 主机和集群 * 菜单选项，然后选择一个虚拟机，再选择 * 配置 * 选项卡，然后单击 * 适用于 VMware vSphere 的 SnapCenter 插件 * 部分中的 * 备份 * 。
++
+image:scpivs44_image14.png["错误：缺少图形映像"]
+
+. 单击要查看的备份。
+

@@ -1,0 +1,63 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_access_the_maintenance_console.html 
+keywords:  
+summary:  
+---
+= 访问维护控制台
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+您可以使用适用于 VMware vSphere 的 SnapCenter 插件的维护控制台来管理应用程序，系统和网络配置。您可以更改管理员密码，维护密码，生成支持包以及启动远程诊断。
+
+在停止并重新启动适用于 VMware vSphere 的 SnapCenter 插件服务之前，您应暂停所有计划。
+
+.关于此任务
+* 默认值为 "maint" 作为用户名， "admin123" 作为密码登录到适用于 VMware vSphere 的 SnapCenter 插件的维护控制台。
++
+
+TIP: 部署后，修改默认登录凭据。
+
+* 在启用远程诊断时，您必须为 diag 用户设置密码。
++
+要获取 root 用户执行命令的权限，请使用 sudo <command> 。
+
+
+
+.步骤
+. 从 VMware vSphere Web Client 中，选择 SnapCenter VMware 插件所在的虚拟机。
+. 右键单击虚拟机，然后在虚拟设备的 * 摘要 * 选项卡上单击 * 启动远程控制台 * 以打开维护控制台窗口。
++
+SnapCenter VMware 插件维护控制台的登录默认设置如下：
+
++
+用户名： `m熟悉` 密码： `admin123`
+
++
+image:scpivs44_image11.png["错误：缺少图形映像"]
+
+. 您可以执行以下操作：
++
+** 选项 1 ：应用程序配置
++
+显示 SnapCenter VMware 插件摘要启动或停止 SnapCenter VMware 插件服务更改 SnapCenter VMware 插件的登录用户名或密码更改 MySQL 密码备份和还原 MySQL
+
+** 选项 2 ：系统配置
++
+重新启动或关闭虚拟机更改 " 熟悉 " 用户密码更改时区更改 NTP 服务器启用 / 禁用 SSH 访问增加 jail 磁盘大小（ /jail ）升级安装 VMware Tools
+
+** 选项 3 ：网络配置
++
+显示或更改 IP 地址设置显示或更改域名搜索设置显示或更改静态路由提交更改 Ping 主机
+
+** 选项 4 ：支持和诊断
++
+生成支持包访问诊断 Shell 启用远程诊断访问生成核心转储包
+
+
+
+

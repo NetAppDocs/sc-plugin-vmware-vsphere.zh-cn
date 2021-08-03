@@ -1,0 +1,197 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_deployment_planning_and_requirements.html 
+keywords:  
+summary:  
+---
+= 部署规划和要求
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+在部署虚拟设备之前，您应了解部署要求。以下四个表列出了部署要求。
+
+
+
+== 主机要求
+
+开始部署适用于 VMware vSphere 的 SnapCenter 插件之前，您应熟悉主机要求。
+
+* 您必须将 SnapCenter VMware 插件部署为 Linux VM 。
++
+无论您是使用 SnapCenter VMware 插件保护 Windows 系统上的数据还是使用 Linux 系统上的数据，该插件都将部署为 Linux VM 。
+
+* 您应在 vCenter Server 上部署 SnapCenter VMware 插件。
++
+备份计划在部署 SnapCenter VMware 插件的时区执行。vCenter 将报告 vCenter 所在时区的数据。因此，如果 SnapCenter VMware 插件和 vCenter 位于不同时区，则 SnapCenter VMware 插件信息板中的数据可能与报告中的数据不同。
+
+* 您不能将 SnapCenter VMware 插件部署在名称包含特殊字符的文件夹中。
++
+文件夹名称不应包含以下特殊字符： $ ！@ #%^ & （） _+ ｛ ｝ ' ；， * ？ "<>
+
+* 您必须为每个 vCenter Server 部署和注册一个单独的唯一 SnapCenter VMware 插件实例。
++
+** 每个 vCenter Server （无论是否处于链接模式）都必须与一个单独的 SnapCenter VMware 插件实例配对。
+** SnapCenter VMware 插件的每个实例都必须部署为一个单独的 Linux VM 。
++
+例如，如果要从六个不同的 vCenter Server 实例执行备份，则必须在六个主机上部署 SnapCenter VMware 插件，并且每个 vCenter Server 都必须与一个唯一的 SnapCenter VMware 插件实例配对。
+
+
+
+* 由于虚拟机在支持 Storage vMotion 方面的限制， SnapCenter VMware 插件对共享 PCI 或 PCIe 设备（例如 NVIDIA Grid GPU ）的支持有限。有关详细信息，请参见供应商文档《 VMware 部署指南》。
++
+** 支持的功能：
++
+创建资源组
+
++
+创建无 VM 一致性的备份
+
++
+当所有 VMDK 都位于 NFS 数据存储库上且插件不需要使用 Storage vMotion 时，还原整个 VM
+
++
+连接和断开 VMDK
+
++
+挂载和卸载数据存储库
+
++
+子文件还原
+
+** 不支持的功能：
++
+创建具有 VM 一致性的备份
+
++
+当一个或多个 VMDK 位于 VMFS 数据存储库上时还原整个 VM 。
+
+
+
+* 有关 SnapCenter VMware 插件限制的详细列表，请参见 link:scpivs44_release_notes.html["适用于 VMware vSphere 的 SnapCenter 插件发行说明"^]。
+
+
+
+
+== 许可证要求
+
+|===
+| 您必须为… 提供许可证 | 许可证要求 
+
+
+| ONTAP | 其中之一： SnapMirror 或 SnapVault （用于二级数据保护，而不管关系类型如何） 
+
+
+| 其他产品 | vSphere Standard ， Enterprise 或 Enterprise Plus 要执行使用 Storage vMotion 的还原操作，需要 vSphere 许可证。vSphere Essentials 或 Essentials Plus 许可证不包括 Storage vMotion 。 
+
+
+| 主目标 | 要通过 VMware SnapCenter 标准执行基于应用程序的保护以仅保护 VMware VM 和数据存储库，请执行 SnapRestore ：用于还原操作 FlexClone ：用于挂载和连接操作 
+
+
+| 二级目标 | 要通过 VMware SnapCenter 标准执行基于应用程序的保护，请执行故障转移操作，仅对 VMware VM 和数据存储库执行保护 FlexClone ：用于挂载和连接操作 
+|===
+
+
+== 软件支持
+
+|===
+| 项目 | 支持的版本 
+
+
+| vCenter vSphere | HTML5 客户端： 6.5U2/U3 ， 6.7x ， 7.0 ， 7.0U1 ， 7.0U2 Flex 客户端不受支持。 
+
+
+| ESXi | 6.0u1 或更高版本 
+
+
+| IP 地址 | IPv4 ， IPv6 
+
+
+| Java | 8. 
+
+
+| .Net 核心 | 2.1 
+
+
+| 适用于 VMware vSphere 的 SnapCenter 插件 MySQL 数据库 | MySQL 8.0.23 
+
+
+| VMware TLS | 1.2 
+
+
+| SnapCenter 服务器上的 TLS | TLSv1.1 及更高版本 SnapCenter 服务器使用此插件通过 VMDK 数据保护操作与 SnapCenter VMware 插件进行通信。 
+
+
+| 适用于阵列集成的 VMware 应用程序 vStorage API （ VAAI ） | 适用于 VMware vSphere 的 SnapCenter 插件可通过此功能提高还原操作的性能。它还可以提高 NFS 环境中的性能。 
+|===
+有关受支持版本的最新信息，请参见 https://mysupport.netapp.com/matrix/imt.jsp?components=91324;&solution=1517&isHWU&src=IMT["NetApp 互操作性表工具"^]。
+
+
+
+== 空间和规模估算要求
+
+|===
+| 项目 | 要求 
+
+
+| 操作系统 | Linux 
+
+
+| 最小 CPU 计数 | 4 个核心 
+
+
+| 最小 RAM | 最小值： 12 GB 建议值： 16 GB 
+
+
+| 适用于 VMware vSphere 的 SnapCenter 插件，日志和 MySQL 数据库的最小硬盘空间 | 100 GB 
+|===
+
+
+== 连接和端口要求
+
+|===
+| 端口类型 | 预配置的端口 
+
+
+| 适用于 VMware vSphere 的 SnapCenter 插件端口 | 8144 （ HTTPS ），双向端口用于从 VMware vSphere Web Client 和 SnapCenter 服务器进行通信。8080 双向此端口用于管理虚拟设备。注意：您不能修改端口配置。 
+
+
+| VMware vSphere vCenter Server 端口 | 443 （ HTTPS ），双向端口用于在适用于 VMware vSphere 的 SnapCenter 插件与 vCenter 之间进行通信。 
+|===
+
+
+== 支持的配置
+
+每个插件实例仅支持一个 vCenter Server 。支持处于链接模式的 vCenter 。多个插件实例可以支持相同的 SnapCenter 服务器，如下图所示。
+
+image:scpivs44_image4.png["错误：缺少图形映像"]
+
+
+
+== 需要 RBAC 权限
+
+vCenter 管理员帐户必须具有所需的 vCenter 权限，如下表所示。
+
+|===
+| 执行此操作… | 您必须具有这些 vCenter 权限… 
+
+
+| 在 vCenter 中部署和注册适用于 VMware vSphere 的 SnapCenter 插件 | 扩展：注册扩展 
+
+
+| 升级或删除适用于 VMware vSphere 的 SnapCenter 插件 | 扩展 * 更新扩展 * 取消注册扩展 
+
+
+| 允许在 SnapCenter 中注册的 vCenter 凭据用户帐户验证用户对适用于 VMware vSphere 的 SnapCenter 插件的访问权限 | sessions.validate.session 
+
+
+| 允许用户访问适用于 VMware vSphere 的 SnapCenter 插件 | SCV 管理员 SCV 备份 SCV 子文件还原 SCV 还原 SCV 视图必须在 vCenter 根分配权限。 
+|===
+
+
+== AutoSupport
+
+适用于 VMware vSphere 的 SnapCenter 插件提供了用于跟踪其使用情况的最少信息，包括插件 URL 。AutoSupport 包含一个已安装插件表， AutoSupport 查看器会显示此表。

@@ -1,0 +1,196 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_manage_snapcenter_plug-in_for_vmware_vsphere.html 
+keywords:  
+summary:  
+---
+= 管理适用于 VMware vSphere 的 SnapCenter 插件
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您需要使用适用于 VMware vSphere 的 SnapCenter 插件管理 GUI 停止，禁用或启用适用于 VMware vSphere 的 SnapCenter 插件设备。
+
+
+
+== 访问维护控制台
+
+您可以使用适用于 VMware vSphere 的 SnapCenter 插件的维护控制台来管理应用程序，系统和网络配置。您可以更改管理员密码，维护密码，生成支持包以及启动远程诊断。
+
+在停止并重新启动适用于 VMware vSphere 的 SnapCenter 插件服务之前，您应暂停所有计划。
+
+.关于此任务
+* 默认值为 "maint" 作为用户名， "admin123" 作为密码登录到适用于 VMware vSphere 的 SnapCenter 插件的维护控制台。
++
+
+TIP: 部署后，修改默认登录凭据。
+
+* 在启用远程诊断时，您必须为 diag 用户设置密码。
++
+要获取 root 用户执行命令的权限，请使用 sudo <command> 。
+
+
+
+.步骤
+. 从 VMware vSphere Web Client 中，选择 SnapCenter VMware 插件所在的虚拟机。
+. 右键单击虚拟机，然后在虚拟设备的 * 摘要 * 选项卡上单击 * 启动远程控制台 * 以打开维护控制台窗口。
++
+SnapCenter VMware 插件维护控制台的登录默认设置如下：
+
++
+用户名： `m熟悉` 密码： `admin123`
+
++
+image:scpivs44_image11.png["错误：缺少图形映像"]
+
+. 您可以执行以下操作：
++
+** 选项 1 ：应用程序配置
++
+启动或停止 SnapCenter VMware 插件服务更改登录用户名或密码更改 MySQL 密码配置 MySQL 备份列表 MySQL 备份还原 MySQL 备份
+
+** 选项 2 ：系统配置
++
+重新启动或关闭虚拟机更改 " 熟悉 " 用户密码更改时区更改 NTP 服务器启用 / 禁用 SSH 访问增加 jail 磁盘大小（ /jail ）升级安装 VMware Tools
+
+** 选项 3 ：网络配置
++
+显示或更改 IP 地址设置显示或更改域名搜索设置显示或更改静态路由提交更改 Ping 主机
+
+** 选项 4 ：支持和诊断
++
+生成支持包访问诊断 Shell 启用远程诊断访问生成核心转储包
+
+
+
+
+
+
+
+== 从维护控制台修改 SnapCenter VMware 插件密码
+
+如果您不知道适用于 VMware vSphere 的 SnapCenter 插件管理 GUI 的管理员密码，则可以从维护控制台设置新密码。
+
+在停止并重新启动适用于 VMware vSphere 的 SnapCenter 插件服务之前，您应暂停所有计划。
+
+要登录到 SnapCenter VMware 插件的维护控制台，您必须使用默认的 ` "maint"` 作为用户名，并使用 ` "admin123"` 作为密码。
+
+.步骤
+. 从 VMware vSphere Web Client 中，选择 SnapCenter VMware 插件所在的虚拟机。
+. 右键单击虚拟机，然后在虚拟设备的 * 摘要 * 选项卡上单击 * 启动远程控制台 * 以打开维护控制台窗口。
++
+SnapCenter VMware 插件维护控制台的登录默认设置如下：
+
++
+用户名： `m熟悉` 密码： `admin123`
+
++
+image:scpivs44_image29.jpg["错误：缺少图形映像"]
+
+. 为应用程序配置输入 "*1*" 。
+. 输入 "*4* " 作为更改用户名或密码。
+. 输入新密码。
++
+SnapCenter VMware 虚拟设备服务将停止并重新启动。
+
+
+
+
+
+== 创建和导入证书
+
+SnapCenter VMware 插件采用 SSL 加密，可与客户端浏览器进行安全通信。虽然这样可以跨网启用加密数据，但创建新的自签名证书，或者使用您自己的证书颁发机构（ CA ）基础架构或第三方 CA 来确保此证书对于您的环境是唯一的。请参见 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_create_and_or_import_an_SSL_certificate_to_SnapCenter_Plug-in_for_VMware_vSphere_(SCV)["知识库文章：如何创建和 / 或将 SSL 证书导入到适用于 SnapCenter 的 VMware 插件中"^]。
+
+
+
+== 从 vCenter 取消注册适用于 VMware vSphere 的 SnapCenter 插件
+
+如果在处于链接模式的 vCenter 中停止 SnapCenter VMware 插件服务，则并非所有链接的 vCenter 都提供资源组，即使 SnapCenter VMware 插件服务正在其他链接的 vCenter 中运行也是如此。
+
+您必须手动取消注册 SnapCenter VMware 插件扩展。
+
+.步骤
+. 在已停止 SnapCenter VMware 插件服务的链接 vCenter 上，导航到受管对象参考（ Managed Object Reference ， MOB ）管理器。
+. 在属性选项中，选择扩展管理器以显示已注册扩展的列表。
+. 取消注册扩展名 `com.netapp.scvm.webclient` 和 `com.netapp.aegis` 。
+
+
+
+
+== 禁用并启用适用于 VMware vSphere 的 SnapCenter 插件
+
+如果您不再需要 SnapCenter 数据保护功能，则必须更改 SnapCenter VMware 插件的配置。例如，如果在测试环境中部署了此插件，则可能需要在该环境中禁用 SnapCenter 功能，并在生产环境中启用这些功能。
+
+.开始之前
+* 您必须具有管理员权限。
+* 确保未运行任何 SnapCenter 作业。
+
+
+禁用 SnapCenter VMware 插件后，所有资源组都将暂停，并且此插件将作为 vCenter 中的扩展取消注册。
+
+启用 SnapCenter VMware 插件后，此插件将在 vCenter 中注册为扩展，所有资源组均处于生产模式，并且所有计划均已启用。
+
+.步骤
+. 可选：备份 SnapCenter VMware 插件 MySQL 存储库，以防您要将其还原到新的虚拟设备。
++
+link:scpivs44_back_up_the_snapcenter_plug-in_for_vmware_vsphere_mysql_database.html["备份适用于 VMware vSphere 的 SnapCenter 插件 MySQL 数据库"]。
+
+. 使用格式 `https://<OVA-IP-address>:8080` 登录到 SnapCenter VMware 插件管理 GUI 。
++
+部署 SnapCenter VMware 插件时，将显示该插件的 IP 。
+
+. 单击左侧导航窗格中的 * 配置 * ，然后取消选择 * 插件详细信息 * 部分中的服务选项以禁用此插件。
+. 确认您的选择。
++
+** 如果您仅使用 SnapCenter VMware 插件执行 VM 一致的备份
++
+此插件已禁用，无需执行进一步操作。
+
+** 使用 SnapCenter VMware 插件执行应用程序一致的备份时
++
+此插件已禁用，需要进一步清理。
+
++
+... 登录到 VMware vSphere 。
+... 关闭虚拟机，然后删除此虚拟机。
+... 在左侧导航屏幕中，右键单击 SnapCenter VMware 插件的实例（` `部署虚拟设备时使用的 ` .ova` 文件的名称），然后选择 * 从磁盘删除 * 。
+... 登录到 SnapCenter 并删除 vSphere 主机。
+
+
+
+
+
+
+
+
+== 删除适用于 VMware vSphere 的 SnapCenter 插件
+
+如果您不再需要使用 SnapCenter 数据保护功能，则必须禁用 SnapCenter VMware 插件才能从 vCenter 中将其注销，然后从 vCenter 中删除 SnapCenter VMware 插件，然后手动删除剩余文件。
+
+.开始之前
+* 您必须具有管理员权限。
+* 确保未运行任何 SnapCenter 作业。
+
+
+.步骤
+. 使用格式 `https://<OVA-IP-address>:8080` 登录到 SnapCenter VMware 插件管理 GUI 。
++
+部署 SnapCenter VMware 插件时，将显示该插件的 IP 。
+
+. 单击左侧导航窗格中的 * 配置 * ，然后取消选择 * 插件详细信息 * 部分中的服务选项以禁用此插件。
+. 登录到 VMware vSphere 。
+. 在左侧导航屏幕中，右键单击 SnapCenter VMware 插件的实例（部署虚拟设备时使用的 ` .ova` 文件的名称），然后选择 * 从磁盘删除 * 。
+. 手动删除 vCenter 服务器的 ` /etc/vmware/vsphere-ui/vc-packages/vsphere-client-serene/com.netapp.scvm.webclient-4.5.0.5942045/plugins` 文件夹中的以下文件：
++
+`VSC-httpclient3-security.jar` `sCV-api-model.jar` `sCVM_WebUI_service.jar` `sCVM_WebUI_ui.war` `gson-2.5.jar`
+
+. 如果您已使用 SnapCenter VMware 插件支持其他 SnapCenter 插件进行应用程序一致的备份，请登录到 SnapCenter 并删除 vSphere 主机。
+
+
+虚拟设备仍会部署，但 SnapCenter VMware 插件会被删除。
+
+删除 SnapCenter VMware 插件的主机 VM 后，此插件可能仍会列在 vCenter 中，直到刷新本地 vCenter 缓存为止。但是，由于已删除此插件，因此无法对该主机执行任何 SnapCenter VMware vSphere 操作。如果要刷新本地 vCenter 缓存，请先在 SnapCenter VMware 插件配置页面上确保此设备处于已禁用状态，然后重新启动 vCenter Web 客户端服务。

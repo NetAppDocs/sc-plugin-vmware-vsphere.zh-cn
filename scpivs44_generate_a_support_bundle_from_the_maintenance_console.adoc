@@ -1,0 +1,31 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_generate_a_support_bundle_from_the_maintenance_console.html 
+keywords:  
+summary:  
+---
+= 从维护控制台生成支持包
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+.步骤
+. 从 VMware vSphere Web Client 中，选择 SnapCenter VMware 插件所在的虚拟机。
+. 右键单击虚拟机，然后在虚拟设备的 * 摘要 * 选项卡上单击 * 启动远程控制台或启动 Web Console* 以打开维护控制台窗口。
++
+SnapCenter VMware 插件维护控制台的登录默认设置如下：
+
++
+用户名： `m熟悉` 密码： `admin123`
+
++
+image:scpivs44_image11.png["错误：缺少图形映像"]
+
+. 在主菜单中输入选项 *4 ）支持和诊断 * 。
+. 在 Support and Diagnostics Menu 中，输入选项 * ） Generate support bundle* 。
+
+
+要访问支持包，请在 "Support and Diagnostics Menu" （支持和诊断菜单）中输入选项 *2 ）访问诊断 Shell * 。在控制台中，导航到 ` /support/support/<bundle_name>.tar.gz` 。

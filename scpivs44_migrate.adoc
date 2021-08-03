@@ -1,0 +1,51 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_migrate.html 
+keywords:  
+summary:  
+---
+= 迁移选项
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以使用 SnapCenter Windows PowerShell cmdlet 将适用于 VMware vSphere 的 SnapCenter 插件元数据从基于 Windows 的 SnapCenter 服务器迁移到基于 Linux 的适用于 VMware vSphere 的 SnapCenter 插件虚拟设备。
+
+迁移选项有两种：
+
+* 从 SnapCenter 迁移
++
+您必须从基于 Windows 的 SnapCenter 迁移以下项的元数据：
+
++
+** 当适用于 VMware vSphere 的 SnapCenter 插件作为 SnapCenter 的基于 Windows 的组件运行时，该插件会执行 VM 一致的备份。
+** 当适用于 VMware vSphere 的 SnapCenter 插件作为 SnapCenter 的基于 Windows 的组件运行时，由基于 SnapCenter 应用程序的插件在该插件的支持下执行的虚拟化数据库或文件系统的应用程序一致数据保护元数据。
++
+要进行迁移，请使用 Windows SnapCenter PowerShell cmdlet `invoke-SCVOVAMigraation 。`
+
++
+您只能从 SnapCenter 4.0 或更高版本迁移元数据。
+
+
+
+* 从 VSC 迁移
++
+您可以为未与 SnapCenter 集成的备份作业迁移 VSC 6.2.x （ SMVI ）元数据。
+
++
+要进行迁移，请使用适用于 SnapCenter 和虚拟存储控制台的 NetApp ToolChest ： NetApp 导入实用程序。确保选择 VSC 到 SnapCenter 的迁移选项。
+
++
+您只能迁移现有备份的元数据。例如，如果您没有现有备份，则不能仅迁移策略。
+
+
+
+
+
+= 支持的迁移路径
+
+请参见 link:scpivs44_release_notes.html["适用于 VMware vSphere 的 SnapCenter 插件发行说明"^] 有关支持的升级和迁移路径的信息。

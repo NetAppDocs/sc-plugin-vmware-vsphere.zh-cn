@@ -1,0 +1,71 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_deploy_snapcenter_plug-in_for_vmware_vsphere_01.html 
+keywords:  
+summary:  
+---
+= 部署适用于 VMware vSphere 的 SnapCenter 插件
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+. 在浏览器中，导航到 VMware vSphere vCenter 。
++
+
+NOTE: 对于 IPv6 HTML Web 客户端，必须使用 Chrome 或 Firefox 。
+
+. 在 VMware 屏幕上，单击 * vSphere Web Client （ HTML5 ） * ，然后登录到 * VMware vCenter 单点登录页面 * 。
+. 右键单击作为虚拟机的有效父对象的任何清单对象，例如数据中心，文件夹，集群或主机，然后选择 * 部署 OVF 模板 * 以启动向导。
+. 在 * 选择 OVF 模板 * 页面上，指定 ` .ova` 文件的位置（如下表所示），然后单击 * 下一步 * 。
++
+|===
+| 在此向导页面上… | 执行此操作… 
+
+
+| 选择名称和文件夹 | 输入虚拟机或 vApp 的唯一名称，然后选择部署位置。 
+
+
+| 选择一个资源 | 选择要运行已部署 VM 模板的资源。 
+
+
+| 查看详细信息 | 验证 ` .ova` 模板详细信息。 
+
+
+| 许可协议 | 选中 * 我接受所有许可证协议 * 复选框。 
+
+
+| 选择存储 | 定义将已部署 OVF 模板的文件存储在何处以及如何存储。 
+
+
+| 选择网络 | 选择一个源网络并将其映射到一个目标网络。 
+
+
+| 自定义模板 | 在 * 注册到现有 vCenter * 中，输入 vCenter 凭据。在 * 创建适用于 VMware vSphere 的 SnapCenter 插件凭据 * 中，输入适用于 VMware vSphere 的 SnapCenter 插件凭据。* 注意： * 记下您指定的用户名和密码。如果要稍后修改适用于 VMware vSphere 的 SnapCenter 插件配置，则需要使用这些凭据。在 * 设置网络属性 * 中，输入网络信息。在 * 设置日期和时间 * 中，选择 vCenter 所在的时区。 
+
+
+| 准备完成 | 查看此页面，然后单击 * 完成 * 。 
+|===
++
+
+NOTE: 所有主机都必须配置 IP 地址（不支持 FQDN 主机名）。在部署之前， Deploy 操作不会验证您的输入。
+
+. 导航到部署了适用于 VMware vSphere 的 SnapCenter 插件的虚拟机，然后单击 * 摘要 * 选项卡，再单击 * 启动 * 框以启动 SnapCenter VMware 插件。
+. 在 SnapCenter VMware 插件启动时，右键单击已部署的 SnapCenter VMware 插件，选择 * 来宾操作系统 * ，然后单击 * 安装 VMware 工具 * 。
++
+完成部署可能需要几分钟时间。在启动 SnapCenter VMware 插件，安装 VMware 工具以及屏幕提示您登录到 SnapCenter VMware 插件后，系统将显示部署成功。
+
++
+此屏幕将显示部署 SnapCenter VMware 插件的 IP 地址。记下 IP 地址。如果要更改 SnapCenter SnapCenter 插件配置，您需要登录到 VMware 插件管理 GUI 。
+
+. 使用部署向导中提供的凭据，使用部署屏幕上显示的 IP 地址登录到 SnapCenter VMware 插件管理 GUI ，然后在信息板上验证 SnapCenter VMware 插件是否已成功连接到 vCenter 并已启用。
++
+请使用格式 `https://<appliance-IP-address>:8080` 访问管理 GUI 。
+
++
+默认情况下，维护控制台用户名设置为 "maint" ，密码设置为 "admin123" 。
+
+. 登录到 vCenter HTML5 客户端，然后单击工具栏中的 * 菜单 * ，然后选择 * 适用于 VMware vSphere 的 SnapCenter 插件 *
+

@@ -1,0 +1,53 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_migrate_snapcenter_backup_metadata_to_the_virtual_appliance.html 
+keywords:  
+summary:  
+---
+= 迁移基于 Windows 的 SnapCenter VMware 备份元数据
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以使用 SnapCenter Windows PowerShell cmdlet 将适用于虚拟化数据备份元数据的 SnapCenter VM 一致备份元数据和 SnapCenter 应用程序一致的 SnapCenter 迁移到适用于 VMware vSphere 的 插件虚拟设备。
+
+.步骤
+. 备份 MySQL 数据库，然后将该备份复制并移动到其他位置，以确保不会因保留策略而被删除。
++
+link:scpivs44_back_up_the_snapcenter_plug-in_for_vmware_vsphere_mysql_database.html["备份适用于 VMware vSphere 的 SnapCenter 插件 MySQL 数据库"]
+
+. 登录到 VMware vSphere Web Client 并验证是否未运行任何作业。
+. 使用 SnapCenter 管理员用户名登录到 SnapCenter 图形用户界面。
++
+请勿使用任何其他用户名登录发生原因，即使该用户名具有所有权限，因为它可能会出现迁移错误。
+
+. 在 Windows SnapCenter 图形用户界面左侧导航窗格中，单击 * 设置 * ，然后单击 * 凭据 * 选项卡，最后单击 * 添加 * 以添加虚拟设备的凭据。
+. 创建要在 `invoke-SCVOVAMigraation `cmdlet 中使用的 Run as 凭据的名称。
++
+
+NOTE: 您必须为身份验证字段选择 Linux 。
+
++
+此步骤将添加 SnapCenter 服务器在迁移期间用于访问虚拟设备的凭据。
+
+. 打开 Windows PowerShell 窗口并运行以下 cmdlet ：
++
+`Open-SmConnection`
+
++
+`invoke-SCVOVAMigraation -SourceSCVHost <old-SCV-Rost-IP> -DestinationSCVOVAHost <new-appliance-IP> -OVACredential <appliance-credentials> -ByPassValidationCheck -Overwrite -ContinueMigrationOnStorageError -ScheduleOffsetTime <time-offset>`
+
++
+有关迁移工作流的概述，请参见 link:scpivs44_migration_overview.html#migration_workflow["迁移工作流"]
+
+
+
+
+IMPORTANT: 可选的 ` -Overwrite` 参数可加快大型环境的迁移速度。此参数会覆盖适用于 VMware vSphere 的 SnapCenter 插件主机上的 MySQL 数据库中的数据。请勿多次使用 ` -Overwrite` 参数。如果迁移为部分迁移，则再次使用 ` -Overwrite` 参数可能会覆盖已迁移的现有数据。如果在不使用 ` -Overwrite` 参数的情况下多次运行 `invoke-SCVOVAMigraation` ，则先前迁移的数据将重复。
+
+
+NOTE: 如果源 SnapCenter 主机和目标 SnapCenter VMware 虚拟设备主机位于不同时区，请使用 ScheduleOffsetTime 参数。该值可以是正或负时间偏移，以调整计划的备份运行时间。以 hh ： mm ： ss 格式指定时间差；例如，对于负值，为 06 ： 00 ： 00 或 -06 ： 00 ： 00 ： 00 。

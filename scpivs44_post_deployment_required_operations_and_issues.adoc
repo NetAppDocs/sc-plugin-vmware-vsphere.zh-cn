@@ -1,0 +1,165 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_post_deployment_required_operations_and_issues.html 
+keywords:  
+summary:  
+---
+= 部署后需要执行的操作和出现的问题
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+
+
+== 部署后需要执行的操作
+
+* 新 SnapCenter 用户
++
+如果您是新的 SnapCenter 用户，则必须先将 Storage VM 添加到 SnapCenter ，然后才能执行任何数据保护操作。添加 Storage VM 时，请指定管理 LIF 。您还可以添加集群并指定集群管理 LIF 。有关添加存储的信息，请参见 link:scpivs44_add_storage_01.html["添加存储"^]。
+
+* 现有 SnapCenter 用户
++
+如果您是现有 SnapCenter 用户，则必须迁移现有 SnapCenter VM 以及数据存储库备份和元数据。有关迁移的信息，请参见 link:scpivs44_migrate.html#migration-options.html["迁移选项"^]。
+
+
+
+
+
+== 可能会遇到的部署问题
+
+* 部署虚拟设备后，在以下情况下，信息板上的 * 备份作业 * 选项卡可能无法加载：
++
+** 您正在运行 IPv4 ，并且 SnapCenter VMware vSphere 主机具有两个 IP 地址。因此，作业请求将发送到 SnapCenter 服务器无法识别的 IP 地址。要阻止此问题描述，请添加要使用的 IP 地址，如下所示：
++
+... 导航到 SnapCenter VMware 插件的部署位置： ` /opt/netapp/scvservice/standalone aeg/etc`
+... 打开文件 network- interface.properties 。
+... 在 `network.interface=10.10.10.10` 字段中，添加要使用的 IP 地址。
+
+
+** 您有两个 NIC 。
+
+
+* 部署 SnapCenter VMware 插件后，适用于 VMware vSphere 的 vCenter SnapCenter 插件中的 MOB 条目可能仍会显示旧版本号。当其他作业在 vCenter 中运行时，可能会发生这种情况。vCenter 最终将更新此条目。
+* 在部署后或升级之前安装了适用于 VMware vSphere 的 Virtual Storage Console （ VSC ）的虚拟机后，可能会发生以下情况：
++
+** 不会显示为挂载，卸载，连接和断开操作记录的右键单击菜单。
+** VMware vSphere Web Client 图形用户界面与文档不匹配。
+** 信息板显示不正确。
+** 在正常使用期间，页面显示（例如 " 资源组 " 页面）可能会停止或加载停滞。
+
+
+
+
+要更正其中任何问题，请执行以下操作：
+
+. 清除浏览器缓存，然后检查 GUI 是否运行正常。
++
+如果此问题仍然存在，请重新启动 VMware vSphere Web Client 服务
+
++
+image:scpivs44_image5.png["错误：缺少图形映像"]
+
+. 登录到 vCenter ，然后单击工具栏中的 * 菜单 * ，然后选择 * 适用于 VMware vSphere 的 SnapCenter 插件 * 。
+
+
+
+
+== 管理身份验证错误
+
+如果不使用管理员凭据，则在部署适用于 VMware vSphere 的 SnapCenter 插件后或迁移后，可能会收到身份验证错误。如果遇到身份验证错误，则必须重新启动此服务。
+
+.步骤
+. 使用格式 `https://<appliance-IP-address>:8080` 登录到 SnapCenter VMware 插件管理 GUI 。
+. 重新启动服务。
+
+
+
+
+== 创建用于迁移备份的凭据
+
+如果您是 SnapCenter 客户，并且拥有虚拟机一致的备份或虚拟机崩溃状态一致的备份，或者虚拟化数据的应用程序一致的备份，则必须将这些备份迁移到适用于 VMware vSphere 的 SnapCenter 插件。迁移之前，必须将 SnapCenter VMware 插件凭据添加到 SnapCenter 服务器。
+
+.开始之前
+* 您必须运行 SnapCenter 服务器 4.2 或更高版本。
+* 您必须已部署并启用适用于 VMware vSphere 的 SnapCenter 插件。
+
+
+.步骤
+. 在 SnapCenter 图形用户界面的左侧导航窗格中，单击 * 设置 * 。
+. 在设置页面中，单击 * 凭据 * ，然后单击 * 新建 * 以启动向导。
+. 输入下表中列出的凭据信息：
+
+
+|===
+| 对于此字段… | 执行此操作… 
+
+
+| 凭据名称 | 输入凭据的名称。 
+
+
+| Username | 输入部署适用于 VMware vSphere 的 SnapCenter 插件时指定的用户名。 
+
+
+| Password | 输入部署适用于 VMware vSphere 的 SnapCenter 插件时指定的密码。 
+
+
+| 身份验证 | 选择 * Linux * 。 
+|===
+
+
+== 向 SnapCenter 服务器注册适用于 VMware vSphere 的 SnapCenter 插件
+
+如果要在 SnapCenter 中执行基于 VMDK 的应用程序工作流（适用于虚拟化数据库和文件系统的基于应用程序的保护工作流），则必须向 SnapCenter 服务器注册适用于 VMware vSphere 的 SnapCenter 插件。
+
+如果您是 SnapCenter 用户，并且已升级到 SnapCenter 4.2 并将应用程序基于 VMDK 的备份迁移到适用于 VMware 的 SnapCenter 插件，则迁移命令会自动注册此插件。
+
+.开始之前
+* 您必须运行 SnapCenter 服务器 4.2 或更高版本。
+* 您必须已部署并启用适用于 VMware vSphere 的 SnapCenter 插件。
+
+
+.关于此任务
+* 您可以使用 SnapCenter 图形用户界面添加 "vsphere" 类型的主机，从而在 SnapCenter 服务器中注册适用于 VMware vSphere 的 SnapCenter 插件。
++
+端口 8144 是为 SnapCenter VMware 插件中的通信预定义的。
+
++
+您可以在同一个 SnapCenter 服务器 4.2 上注册多个适用于 VMware vSphere 的 SnapCenter 插件实例，以支持在 VM 上执行基于应用程序的数据保护操作。您不能在多个 SnapCenter 服务器上注册同一个适用于 VMware vSphere 的 SnapCenter 插件。
+
+* 对于处于链接模式的 vCenter ，您必须为每个 vCenter 注册适用于 VMware vSphere 的 SnapCenter 插件。
+
+
+.步骤
+. 在 SnapCenter 图形用户界面左侧导航窗格中，单击 * 主机 * 。
+. 验证顶部是否已选中 * 受管主机 * 选项卡，然后找到虚拟设备主机名并验证它是否已从 SnapCenter 服务器解析。
+. 单击 * 添加 * 以启动向导。
+. 在 * 添加主机 * 对话框中，指定要添加到 SnapCenter 服务器的主机，如下表所示：
++
+|===
+| 对于此字段… | 执行此操作… 
+
+
+| 主机类型 | 选择 * vSphere * 作为主机类型。 
+
+
+| 主机名 | 验证虚拟设备的 IP 地址。 
+
+
+| 凭据 | 输入部署期间提供的 SnapCenter VMware 插件的用户名和密码。 
+|===
+. 单击 * 提交 * 。
++
+成功添加 VM 主机后，该主机将显示在受管主机选项卡上。
+
+. 在左侧导航窗格中，单击 * 设置 * ，然后单击 * 凭据 * 选项卡，最后单击 image:scpivs44_image6.png["错误：缺少图形映像"] * 添加 * 以添加虚拟设备的凭据。
+. 提供在部署适用于 VMware vSphere 的 SnapCenter 插件期间指定的凭据信息。
++
+
+NOTE: 您必须为身份验证字段选择 Linux 。
+
+
+
+如果修改了适用于 VMware vSphere 的 SnapCenter 插件凭据，则必须使用 SnapCenter 受管主机页面在 SnapCenter 服务器中更新注册。

@@ -1,0 +1,65 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_register_snapcenter_plugin_vmware_vsphere_with_snapcenter_server.html 
+keywords:  
+summary:  
+---
+= 向 SnapCenter 服务器注册适用于 VMware vSphere 的 SnapCenter 插件
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+如果要在 SnapCenter 中执行基于 VMDK 的应用程序工作流（适用于虚拟化数据库和文件系统的基于应用程序的保护工作流），则必须向 SnapCenter 服务器注册适用于 VMware vSphere 的 SnapCenter 插件。
+
+如果您是 SnapCenter 用户，并且已升级到 SnapCenter 4.2 并将应用程序基于 VMDK 的备份迁移到适用于 VMware 的 SnapCenter 插件，则迁移命令会自动注册此插件。
+
+.开始之前
+* 您必须运行 SnapCenter 服务器 4.2 或更高版本。
+* 您必须已部署并启用适用于 VMware vSphere 的 SnapCenter 插件。
+
+
+.关于此任务
+* 您可以使用 SnapCenter 图形用户界面添加 "vsphere" 类型的主机，从而在 SnapCenter 服务器中注册适用于 VMware vSphere 的 SnapCenter 插件。
++
+端口 8144 是为 SnapCenter VMware 插件中的通信预定义的。
+
++
+您可以在同一个 SnapCenter 服务器 4.2 上注册多个适用于 VMware vSphere 的 SnapCenter 插件实例，以支持在 VM 上执行基于应用程序的数据保护操作。您不能在多个 SnapCenter 服务器上注册同一个适用于 VMware vSphere 的 SnapCenter 插件。
+
+* 对于处于链接模式的 vCenter ，您必须为每个 vCenter 注册适用于 VMware vSphere 的 SnapCenter 插件。
+
+
+.步骤
+. 在 SnapCenter 图形用户界面左侧导航窗格中，单击 * 主机 * 。
+. 验证顶部是否已选中 * 受管主机 * 选项卡，然后找到虚拟设备主机名并验证它是否已从 SnapCenter 服务器解析。
+. 单击 * 添加 * 以启动向导。
+. 在 * 添加主机 * 对话框中，指定要添加到 SnapCenter 服务器的主机，如下表所示：
++
+|===
+| 对于此字段… | 执行此操作… 
+
+
+| 主机类型 | 选择 * vSphere * 作为主机类型。 
+
+
+| 主机名 | 验证虚拟设备的 IP 地址。 
+
+
+| 凭据 | 输入部署期间提供的 SnapCenter VMware 插件的用户名和密码。 
+|===
+. 单击 * 提交 * 。
++
+成功添加 VM 主机后，该主机将显示在受管主机选项卡上。
+
+. 在左侧导航窗格中，单击 * 设置 * ，然后单击 * 凭据 * 选项卡，最后单击 image:scpivs44_image6.png["错误：缺少图形映像"] * 添加 * 以添加虚拟设备的凭据。
+. 提供在部署适用于 VMware vSphere 的 SnapCenter 插件期间指定的凭据信息。
++
+
+NOTE: 您必须为身份验证字段选择 Linux 。
+
+
+
+如果修改了适用于 VMware vSphere 的 SnapCenter 插件凭据，则必须使用 SnapCenter 受管主机页面在 SnapCenter 服务器中更新注册。

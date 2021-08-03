@@ -1,0 +1,30 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_unmount_a_backup.html 
+keywords:  
+summary:  
+---
+= 卸载备份
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+如果您不再需要访问数据存储库中的文件，则可以卸载备份。
+
+如果某个备份在 VMware vSphere Web Client 图形用户界面中列为已挂载，但未在卸载备份屏幕中列出，则您需要使用 REST API ` /backup/ ｛ backup-ID ｝ /cleanup` 清理已绑定的数据存储库，然后重试卸载操作步骤。
+
+如果您尝试在 Storage VM （ SVM ）上挂载 NFS 数据存储库的备份副本，并且根卷处于负载共享镜像关系中，则可能会遇到错误 `您可能已达到在 vCenter 中配置的最大 NFS 卷数。检查 vSphere Client 是否存在任何错误消息。` 要防止出现此问题，请导航到 * ESX * > * 管理 * > * 设置 * > * 高级系统设置 * 并更改 NFS.MaxVolumes 值，以更改最大卷设置。最大值为 256 。
+
+.步骤
+. 在 VMware vSphere Web Client 中，单击工具栏中的 * 菜单 * ，然后从下拉列表中选择 * 存储 * 。
+. 在左侧导航器窗格中，右键单击某个数据存储库，然后从下拉列表中选择 * NetApp SnapCenter * ，然后在二级下拉列表中选择卸载。
++
+
+IMPORTANT: 请确保选择正确的数据存储库以卸载。否则，您可能会对生产工作产生发生原因影响。
+
+. 在 * 卸载克隆的数据存储库 * 对话框中，选择一个数据存储库，选中 * 卸载克隆的数据存储库 * 复选框，然后单击 * 卸载 * 。
+

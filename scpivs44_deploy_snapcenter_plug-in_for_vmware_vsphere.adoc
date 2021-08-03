@@ -1,0 +1,146 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_deploy_snapcenter_plug-in_for_vmware_vsphere.html 
+keywords:  
+summary:  
+---
+= 部署适用于 VMware vSphere 的 SnapCenter 插件
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+要使用 SnapCenter 功能保护虚拟机上的 VM ，数据存储库和应用程序一致的数据库，您必须部署适用于 VMware vSphere 的 SnapCenter 插件。
+
+.开始之前
+* 您必须已阅读部署要求。
++
+部署向导不会验证空间要求。如果数据存储库上没有足够的空间，则部署可能看起来成功，但虚拟设备无法启动。
+
+* 您必须运行受支持的 vCenter Server 版本。
+* 您必须已配置和设置 vCenter Server 环境。
+* 您必须已为 SnapCenter VMware 插件虚拟机设置 ESXi 主机。
+* 您必须已下载适用于 VMware vSphere 的 SnapCenter 插件 .ova 文件。
+* 您必须具有 vCenter Server 实例的登录凭据。
+* 您必须已注销并关闭 vSphere Web Client 的所有浏览器会话，并删除浏览器缓存，以避免在部署 SnapCenter VMware 插件期间出现任何浏览器缓存问题描述。
+* 您必须已在 vCenter 中启用传输层安全（ TLS ）。请参见 VMware 文档。
+* 您可以将 SnapCenter VMware 插件与 VSC 7.x 及更高版本的虚拟设备部署在同一 vCenter 中。
+* 如果您计划在部署了 SnapCenter VMware 插件的 vCenter 以外的 vCenter 中执行备份，则 ESXi 服务器， SnapCenter VMware 插件和每个 vCenter 必须同时同步。
+
+
+在与 vCenter 相同的时区部署 SnapCenter VMware 插件。备份计划在部署 SnapCenter VMware 插件的时区执行。vCenter 将报告 vCenter 所在时区的数据。因此，如果 SnapCenter VMware 插件和 vCenter 位于不同时区，则 SnapCenter VMware 插件信息板中的数据可能与报告中的数据不同。
+
+.步骤
+. 在浏览器中，导航到 VMware vSphere vCenter 。
++
+
+NOTE: 对于 IPv6 HTML Web 客户端，必须使用 Chrome 或 Firefox 。
+
+. 在 VMware 屏幕上，单击 * vSphere Web Client （ HTML5 ） * 。
+. 登录到 * VMware vCenter Single Sign-On* 页面。
+. 在导航器窗格中，右键单击作为虚拟机的有效父对象的任何清单对象，例如数据中心，集群或主机，然后选择 * 部署 OVF 模板 * 以启动 VMware Deploy 向导。
+. 在 * 选择 OVF 模板 * 页面上，指定 ` .ova` 文件的位置（如下表所示），然后单击 * 下一步 * 。
++
+|===
+| 将 ` .ova` 文件下载到… | 执行此操作… 
+
+
+| 互联网位置 | 输入 URL 。支持的 URL 源为 HTTP 和 HTTPS 。 
+
+
+| 本地文件 | 单击 * 选择文件 * 并导航到 .ova 文件。 
+|===
+. 在 * 选择名称和文件夹 * 页面上，输入虚拟机或 vApp 的唯一名称，并选择部署位置，然后单击 * 下一步 * 。
++
+此步骤指定将 ` .ova` 文件导入到 vCenter 的位置。虚拟机的默认名称与选定 ` .ova` 文件的名称相同。如果更改了默认名称，请在每个 vCenter Server VM 文件夹中选择一个唯一的名称。
+
++
+VM 的默认部署位置是启动向导的清单对象。
+
+. 在 * 选择资源 * 页面上，选择要运行已部署 VM 模板的资源，然后单击 * 下一步 * 。
+. 在 * 查看详细信息 * 页面上，验证 ` .ova` 模板详细信息，然后单击 * 下一步 * 。
+. 在 * 许可协议 * 页面上，选中 * 我接受所有许可协议 * 复选框。
+. 在 * 选择存储 * 页面上，定义为已部署的 OVF 模板存储文件的位置和方式。
++
+.. 选择 VMDK 的磁盘格式。
+.. 选择 VM 存储策略。
++
+只有在目标资源上启用了存储策略时，此选项才可用。
+
+.. 选择一个数据存储库以存储已部署的 OVA 模板。
++
+配置文件和虚拟磁盘文件存储在数据存储库中。
+
++
+选择一个足以容纳虚拟机或 vApp 以及所有关联虚拟磁盘文件的数据存储库。
+
+
+
+. 在 * 选择网络 * 页面上，选择一个源网络并将其映射到目标网络，然后单击 * 下一步 * 。
++
+源网络列列出了 OVA 模板中定义的所有网络。
+
++
+适用于 VMware vSphere 的 SnapCenter 插件支持一个网络接口。如果需要多个网络适配器，则必须手动设置。请参见 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_create_additional_network_adapters_in_NDB_and_SCV_4.3["知识库文章：如何创建其他网络适配器"^]。
+
+. 在 * 自定义模板 * 页面上，执行以下操作：
++
+.. 在 * 注册到现有 vCenter * 部分中，输入 vCenter 虚拟设备凭据。
++
+在 * vCenter username* 字段中，输入格式为 `domain\username` 的用户名。
+
+.. 在 * 创建 SCV 凭据 * 部分中，输入本地凭据。
++
+在 * 用户名 * 字段中，输入本地用户名；不包括域详细信息。
+
++
+
+IMPORTANT: 记下您指定的用户名和密码。如果要稍后修改 SnapCenter VMware 插件配置，则需要使用这些凭据。
+
+.. 在 * 设置网络属性 * 中，输入网络信息。
++
+选择 IPv4 或 IPv6 字段，或者根据需要选择这两者。如果同时使用 IPv4 和 IPv6 ，则只需要为其中一个指定主 DNS 。
+
+.. 在 * 设置日期和时间 * 中，选择 vCenter 所在的时区。
+
+
+. 在 * 准备完成 * 页面上，查看此页面并单击 * 完成 * 。
++
+所有主机都必须配置 IP 地址（不支持 FQDN 主机名）。在部署之前， Deploy 操作不会验证您的输入。
+
++
+在等待 OVF 导入和部署任务完成时，您可以从 " 近期任务 " 窗口查看部署进度。
+
++
+成功部署 SnapCenter VMware 插件后，该插件将部署为 Linux VM ，并在 vCenter 中注册，同时安装 VMware vSphere Web Client 。
+
+. 导航到部署了 SnapCenter VMware 插件的虚拟机，然后单击 * 摘要 * 选项卡，再单击 * 启动 * 框以启动虚拟设备。
+. 在 SnapCenter VMware 插件启动时，右键单击已部署的 SnapCenter VMware 插件，选择 * 来宾操作系统 * ，然后单击 * 安装 VMware 工具 * 。
++
+VMware 工具安装在部署了 SnapCenter VMware 插件的虚拟机上。有关安装 VMware Tools 的详细信息，请参见 VMware 文档。
+
++
+完成部署可能需要几分钟时间。在启动 SnapCenter VMware 插件，安装 VMware 工具以及屏幕提示您登录到 SnapCenter VMware 插件后，系统将显示部署成功。
+
++
+此屏幕将显示部署 SnapCenter VMware 插件的 IP 地址。记下 IP 地址。如果要更改 SnapCenter SnapCenter 插件配置，您需要登录到 VMware 插件管理 GUI 。
+
+. 使用部署屏幕上显示的 IP 地址并使用您在部署向导中提供的凭据登录到 SnapCenter VMware 插件管理 GUI ，然后在信息板上验证 SnapCenter VMware 插件是否已成功连接到 vCenter 并已启用。
++
+请使用格式 `https://<appliance-IP-address>:8080` 访问管理 GUI 。
+
++
+默认情况下，维护控制台用户名设置为 "maint" ，密码设置为 "admin123" 。
+
++
+如果未启用 SnapCenter VMware 插件，请参见 link:scpivs44_restart_the_vmware_vsphere_web_client_service.html["重新启动 VMware vSphere Web Client 服务"]。
+
++
+如果主机名称为 "UnifiedVSC/SCV ，则重新启动设备。如果重新启动设备时未将主机名更改为指定的主机名，则必须重新安装该设备。
+
+
+
+您应完成所需的 link:scpivs44_post_deployment_required_operations_and_issues.html["部署后操作"]。

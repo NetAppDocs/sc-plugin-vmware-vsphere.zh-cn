@@ -1,0 +1,36 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_search_for_backups.html 
+keywords:  
+summary:  
+---
+= 搜索备份
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以使用还原向导搜索并查找虚拟机或数据存储库的特定备份。找到备份后，您可以将其还原。
+
+.步骤
+. 在 VMware vSphere Web Client 图形用户界面中，单击工具栏中的 * 菜单 * ，然后执行以下操作之一：
++
+|===
+| 查看… 的备份 | 执行以下操作… 
+
+
+| 虚拟机 | 单击 * 主机和集群 * 菜单选项，选择一个 VM ，然后单击 * 配置 * 选项卡，然后单击 * 适用于 VMware vSphere 的 SnapCenter 插件 * 部分中的 * 备份 * 。 
+
+
+| 数据存储库 | 单击 * 存储 * 菜单选项，选择一个数据存储库，然后单击 * 配置 * 选项卡，然后单击 * 适用于 VMware vSphere 的 SnapCenter 插件 * 部分中的 * 备份 * 。 
+|===
+. 在左侧导航器窗格中，展开包含虚拟机或数据存储库的数据中心。
+. 可选：右键单击虚拟机或数据存储库，然后从下拉列表中选择 * NetApp SnapCenter * ，然后在二级下拉列表中选择 * 还原 * 。
+. 在 * 还原 * 向导中，输入搜索名称并单击 * 搜索 * 。
++
+您可以通过单击来筛选备份列表 image:scpivs44_image41.png["错误：缺少图形映像"] 筛选图标并选择日期和时间范围，选择是否要备份包含 VMware Snapshot ，是否要挂载备份以及位置。单击 * 确定 * 。
+
+

@@ -1,0 +1,24 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_download_the_snapcenter_plug-in_for_vmware_vsphere_ova_open_virtual_appliance.html 
+keywords:  
+summary:  
+---
+= 下载适用于 VMware vSphere OVA 的 SnapCenter 插件（开放式虚拟设备）
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以从 NetApp 支持站点下载适用于 VMware vSphere 的 SnapCenter 插件的 ` …… ova` 文件。
+
+` .ova` 文件包含一组用于 VM 和数据存储库数据保护的微服务，这些服务由 SnapCenter VMware 插件执行。部署完成后，所有组件都会安装在您环境中的 Linux VM 上。
+
+.步骤
+. 登录到 NetApp 支持站点（ https://mysupport.netapp.com/products/index.html["https://mysupport.netapp.com/products/index.html"^]）。
+. 从产品列表中，选择 * 适用于 VMware vSphere 的 SnapCenter 插件 * ，然后单击 * 下载最新版本 * 按钮。
+. 将适用于 VMware vSphere 的 SnapCenter 插件 ` .ova` 文件下载到任意位置。
+

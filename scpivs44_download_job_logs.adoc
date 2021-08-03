@@ -1,0 +1,39 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_download_job_logs.html 
+keywords:  
+summary:  
+---
+= 下载作业日志
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以从 SnapCenter VMware vSphere Web Client 的信息板上的作业监控选项卡下载作业日志。
+
+如果在使用 VMware vSphere Web Client 时遇到意外行为，您可以使用日志文件确定发生原因并解决此问题。
+
+
+NOTE: 作业和作业消息保留 90 天。早于所配置保留时间的作业日志每六小时清除一次。您不能修改此计划。
+
+.步骤
+. 在 vSphere Web Client 的左侧导航器窗格中，单击 * 信息板 * ，选择一个 vCenter Server ，然后单击 * 作业监控器 * 选项卡。
++
+image:scpivs44_image9.png["错误：缺少图形映像"]
+
+. 单击 image:scpivs44_image37.png["错误：缺少图形映像"] 作业监控器标题栏中的下载图标。
++
+您可能需要向右滚动才能看到图标。
+
++
+您也可以双击作业以访问作业详细信息窗口，然后单击 * 下载作业日志 * 。
+
+
+
+作业日志位于部署了 SnapCenter VMware 插件的 Linux VM 主机上。默认作业日志位置为 ` /var/log/netapp` 。
+
+如果您尝试下载作业日志，但错误消息中名为的日志文件已被删除，则可能会遇到以下错误： `HTTP error 500 problem accessing /export-SCV -logs` 。要更正此错误，请检查错误消息中命名的文件的文件访问状态和权限，并更正访问问题。

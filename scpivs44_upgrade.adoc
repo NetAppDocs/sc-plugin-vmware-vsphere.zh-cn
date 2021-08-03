@@ -1,0 +1,70 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_upgrade.html 
+keywords:  
+summary:  
+---
+= 升级
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+如果您使用的是适用于 VMware vSphere 的 SnapCenter 插件虚拟设备，则可以升级到更高版本。
+
+
+
+== 支持的升级路径
+
+请参见 link:scpivs44_release_notes.html["适用于 VMware vSphere 的 SnapCenter 插件发行说明"] 有关支持的升级和迁移路径的信息。
+
+
+
+== 从适用于 VMware vSphere 的 SnapCenter 插件的早期版本升级
+
+
+TIP: 在开始升级之前，请备份适用于 VMware vSphere 的 SnapCenter 插件 OVA 。
+
+.步骤
+. 禁用适用于 VMware vSphere 的 SnapCenter 插件，为升级做准备。
++
+.. 登录到适用于 VMware vSphere 的 SnapCenter 插件管理 GUI 。部署 SnapCenter VMware 插件时，将显示此 IP 。
+.. 单击左侧导航窗格中的 * 配置 * ，然后单击插件详细信息部分中的 * 服务 * 选项以禁用此插件。
+
+
+. 下载升级 ` .iso` 文件。
++
+.. 登录到 NetApp 支持站点。 (https://mysupport.netapp.com/products/index.html)[]。
+.. 从产品列表中，选择 * 适用于 VMware vSphere 的 SnapCenter 插件 * ，然后单击 * 下载最新版本 * 按钮。
+.. 将适用于 VMware vSphere 的 SnapCenter 插件升级 ` .iso` 文件下载到任意位置。
+
+
+. 安装升级。
++
+.. 在浏览器中，导航到 VMware vSphere vCenter 。
+.. 在 vCenter 图形用户界面上，单击 * vSphere Web Client （ HTML ） * 。
+.. 登录到 * VMware vCenter Single Sign-On* 页面。
+.. 在导航器窗格中，单击要升级的虚拟机，然后单击 * 摘要 * 选项卡。
+.. 在 * 相关对象 * 窗格中，单击列表中的任何数据存储库，然后单击 * 摘要 * 选项卡。
+.. 在选定数据存储库的 * 文件 * 选项卡上，单击列表中的任何文件夹，然后单击 * 上传文件 * 。
+.. 在上传弹出屏幕上，导航到下载 ` .iso` 文件的位置，然后单击 ` .iso` 文件映像，然后单击 * 打开 * 。此文件将上传到数据存储库。
+.. 导航回要升级的虚拟机，然后单击 * 摘要 * 选项卡。在 * 虚拟机硬件 * 窗格的 CD/DVD 字段中，此值应为 " 已断开连接 " 。
+.. 单击 CD/DVD 字段中的连接图标，然后选择 * 连接到数据存储库上的 CD/DVD 映像 * 。
++
+image:scpivs44_image42.png["错误：缺少图形映像"]
+
+.. 在向导中，执行以下操作：
++
+... 在 Datastores 列中，选择您上传了 ` .iso` 文件的数据存储库。
+... 在目录列中，导航到您上传的 ` .iso` 文件，确保在文件类型字段中选择了 "ISO image" ，然后单击 * 确定 * 。请等待此字段显示 " 已连接 " 状态。
+
+
+.. 访问虚拟设备的 * 摘要 * 选项卡登录到维护控制台，然后单击绿色运行箭头以启动维护控制台。
+.. 对于 System Configuration ，输入 * 。 2 * ，然后输入 * 。 8 * 进行升级。
+.. 输入 * 。 * 继续并开始升级。
+
+
+

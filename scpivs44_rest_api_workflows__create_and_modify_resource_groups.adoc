@@ -1,0 +1,44 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_rest_api_workflows__create_and_modify_resource_groups.html 
+keywords:  
+summary:  
+---
+= 用于创建和修改资源组的 REST API 工作流
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+要使用适用于 VMware vSphere 的 SnapCenter 插件 REST API 执行创建和修改资源组操作，您必须遵循规定的 REST API 调用顺序。
+
+对于每个 REST API ，在 REST API 的前面添加 `https://<server>:<port>` 以形成完整的端点。
+
+要创建资源组，请按照以下工作流进行操作：
+
+|===
+| 步骤 | REST API | 注释 
+
+
+| 1. | ` /4.1/ 策略` | `获取策略` 获取 VMware vSphere Web Client 策略列表。请注意在创建资源组和策略 * 频率 * 时要使用的 * 策略 Id* 。如果未列出任何策略，请使用 `Create Policy` REST API 创建新策略。 
+
+
+| 2. | ` /4.1/resource-groups` | `创建资源组` 使用指定的策略创建资源组。传递步骤 1 中的 * 策略 Id* 并输入策略 * 频率 * 详细信息以及所有其他必需属性。 
+|===
+要修改资源组，请按照以下工作流进行操作：
+
+|===
+| 步骤 | REST API | 注释 
+
+
+| 1. | ` /4.1/resource-groups` | `获取资源组列表` 获取 VMware vSphere Web Client 资源组列表。记下要修改的 * 资源组 Id* 。 
+
+
+| 2. | ` /4.1/ 策略` | 如果要修改已分配的策略，请 `Get policies` 获取 VMware vSphere Web Client 策略列表。请注意在修改资源组和策略 * 频率 * 时要使用的 * 策略 Id* 。 
+
+
+| 3. | ` /4.1/resource-groups/ ｛ resouceGroupId ｝` | `更新资源组` 修改指定的资源组。传递步骤 1 中的 * 资源组 Id* 。或者，传递步骤 2 中的 * 策略 Id* 并输入 * 频率 * 详细信息以及所有其他必需属性。 
+|===

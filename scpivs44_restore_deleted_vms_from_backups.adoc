@@ -1,0 +1,72 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_restore_deleted_vms_from_backups.html 
+keywords:  
+summary:  
+---
+= 从备份中还原已删除的 VM
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以将已删除的虚拟机从数据存储库主备份或二级备份还原到所选的 ESXi 主机。
+
+在适用于 VMware vSphere 4.4 及更早版本的 SnapCenter 插件中，您只能将虚拟机还原到原始主机和数据存储库。
+
+从适用于 VMware vSphere 4.5 的 SnapCenter 插件开始，您可以将虚拟机还原到以下位置：
+
+* 还原到原始位置
++
+** 挂载到原始 ESXi 主机上的原始数据存储库（此操作会创建虚拟机的副本）
+
+
+* 还原到备用位置
++
+** 挂载到原始 ESXi 主机上的其他数据存储库
+** 挂载到由同一 vCenter 管理的其他 ESXi 主机上的原始数据存储库
+** 挂载到由同一 vCenter 管理的不同 ESXi 主机上的其他数据存储库
+** 挂载在其他 ESXi 主机上的另一个数据存储库，该主机由其他 vCenter 以链接模式管理
+
+
+
+
+
+NOTE: 还原到其他位置时，适用于 VMware vSphere 的 SnapCenter 插件必须在作为还原操作目标的链接 vCenter 中运行。目标数据存储库必须具有足够的空间。
+
+.开始之前
+* 在 VMware vSphere Web Client 的存储系统页面上，存储系统的用户帐户必须具有 link:scpivs44_minimum_ontap_privileges_required.html["ONTAP 所需的最小 ONTAP 权限"]。
+* 必须存在备份。
++
+您必须先使用适用于 VMware vSphere 的 SnapCenter 插件创建虚拟机的备份，然后才能在该虚拟机上还原 VMDK 。
+
+
+
+
+TIP: 要提高 NFS 环境中还原操作的性能，请启用 VMware 应用程序 vStorage API for Array Integration （ VAAI ）。
+
+您不能还原数据存储库，但可以还原数据存储库中的任何 VM 。
+
+如果虚拟机所在的 FabricPool 存储层不可用，还原操作可能会失败。
+
+.步骤
+. 单击 * 菜单 * 并选择 * 存储 * 菜单选项，然后选择一个数据存储库，再选择 * 配置 * 选项卡，然后单击 * 适用于 VMware vSphere 的 SnapCenter 插件 * 部分中的 * 备份 * 。
+. 双击备份以查看备份中包含的所有 VM 的列表。
+. 从备份列表中选择已删除的虚拟机，然后单击 * 还原 * 。
+. 在 * 还原 * 向导的 * 选择备份 * 页面上，选择要从中还原的备份副本。
++
+您可以搜索特定备份名称或部分备份名称，也可以通过单击筛选器图标并选择日期和时间范围，选择是否要包含 VMware Snapshot 的备份，是否要挂载备份以及位置来筛选备份列表。单击 * 确定 * 以返回到向导。
+
+. 在 * 选择范围 * 页面上，在 * 还原范围 * 字段中选择 * 整个虚拟机 * ，然后选择还原位置，然后输入应挂载备份的目标 ESXi 信息。
++
+还原目标可以是已添加到 SnapCenter 的任何 ESXi 主机。此选项将从具有指定时间和日期的 Snapshot 副本还原虚拟机所在的选定备份的内容。如果选择此选项，则会选中 * 重新启动 VM* 复选框，并且虚拟机将启动。
+
++
+如果要将 NFS 数据存储库中的虚拟机还原到 ESXi 集群中的备用 ESXi 主机，则在还原此虚拟机后，此虚拟机将注册到备用主机上。
+
+. 在 * 选择位置 * 页面上，选择要从中还原的备份的位置（主备份或二级备份）。
+. 查看摘要页面，然后单击 * 完成 * 。
+

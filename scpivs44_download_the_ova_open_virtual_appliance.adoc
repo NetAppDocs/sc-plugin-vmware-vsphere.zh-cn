@@ -1,0 +1,24 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_download_the_ova_open_virtual_appliance.html 
+keywords:  
+summary:  
+---
+= 下载 OVA （开放式虚拟设备）
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+` .ova` 文件包含一组用于 VM 和数据存储库数据保护的微服务，这些服务由适用于 VMware vSphere 的 SnapCenter 插件执行
+
+
+IMPORTANT: 下载过程不会检查是否存在现有的 `sCV.ova` 文件。因此，在下载之前，您必须确保 vCenter 上不存在其他 `sCV.ova` 文件。
+
+. 登录到 NetApp 支持站点（ https://mysupport.netapp.com/products/index.html["https://mysupport.netapp.com/products/index.html"^]）。
+. 从产品列表中，选择 * 适用于 VMware vSphere 的 SnapCenter 插件 * ，然后单击 * 下载最新版本 * 按钮。
+. 将适用于 VMware vSphere 的 SnapCenter 插件 ` .ova` 文件下载到任意位置。
+

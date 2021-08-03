@@ -1,0 +1,200 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_create_resource_groups_for_vms_and_datastores.html 
+keywords:  
+summary:  
+---
+= 为 VM 和数据存储库创建资源组
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+资源组是要保护的一个或多个 VM 或数据存储库的容器。
+
+资源组可以包含 VM 和数据存储库的任意组合。从适用于 VMware vSphere 的 SnapCenter 插件 4.4 开始，一个资源组还可以包含一个 FlexGroup 卷或一个或多个 FlexVol 卷，但不能同时包含这两者。
+
+
+NOTE: 对于跨接 VM ，不支持同时使用 FlexGroup 和 FlexVol 。
+
+适用于 VMware vSphere 4.5 及更高版本的 SnapCenter 插件在 ASA 聚合上支持大小高达 128 TB 的大型 LUN 上的数据存储库。对于大型 LUN ， SnapCenter 仅使用厚配置 LUN 来避免延迟。
+
+您可以随时在资源组中添加或删除 VM 和数据存储库。
+
+* 备份单个资源
++
+要备份单个资源（例如，单个 VM ），必须创建一个包含该单个资源的资源组。
+
+* 备份多个资源
++
+要备份多个资源，您必须创建一个包含多个资源的资源组。
+
+* MetroCluster 环境中包含 FlexGroup 卷的资源组
++
+如果您运行的是 ONTAP 9.8 或 ONTAP 9.9 ，则在切换或切回之后，必须重新启动 SnapCenter VMware 插件服务并重新同步 SnapMirror 关系，然后才能在 MetroCluster 环境中备份资源组。
+
++
+在 ONTAP 9.8 中，备份会在切回后挂起。此问题描述已在 ONTAP 9.9 中修复。
+
+* 优化 Snapshot 副本
++
+要优化 Snapshot 副本，应将与同一卷关联的 VM 和数据存储库分组到一个资源组中。
+
+* 备份策略
++
+虽然可以在没有备份策略的情况下创建资源组，但只有在至少有一个策略附加到资源组时，才能执行计划的数据保护操作。您可以使用现有策略，也可以在创建资源组时创建新策略。
+
++
+
+NOTE: 资源组可以包含 VM 以及 SAN 和 NAS 数据存储库；它不能包含 VSAN 或 VVol 数据存储库。
+
++
+
+IMPORTANT: 请勿添加处于不可访问状态的 VM 。尽管您可以创建一个包含无法访问的 VM 的资源组，但该资源组的备份将失败。
+
+* 兼容性检查
++
+SnapCenter 会在您创建资源组时执行兼容性检查。
+
++
+<<Manage compatibility check failures>>
+
+
+
+.步骤
+. 在 VMware vSphere Web Client 的左侧导航器窗格中，单击 * 资源组 * ，然后单击 image:scpivs44_image6.png["错误：缺少图形映像"] * 创建 * 以启动向导。
++
+image:scpivs44_image16.png["错误：缺少图形映像"]
+
++
+这是创建资源组的最简单方法。但是，您也可以通过执行以下操作之一来创建包含一个资源的资源组：
+
++
+** 要为一个 VM 创建资源组，请单击 * 菜单 * > * 主机和集群 * ，然后右键单击一个 VM ，选择 NetApp SnapCenter ，然后单击 image:scpivs44_image6.png["错误：缺少图形映像"] * 创建资源组 * 。
+** 要为一个数据存储库创建资源组，请单击 * 菜单 * > * 主机和集群 * ，然后右键单击一个数据存储库，选择 * NetApp SnapCenter * ，然后单击 image:scpivs44_image6.png["错误：缺少图形映像"] * 创建资源组 * 。
+
+
+. 在向导的 * 常规信息和通知 * 页面上，执行以下操作：
++
+|===
+| 对于此字段… | 执行此操作… 
+
+
+| vCenter Server | 选择一个 vCenter Server 。 
+
+
+| Name | 输入资源组的名称。请勿在虚拟机，数据存储库，策略，备份或资源组名称中使用以下特殊字符： % & * $ # @ ！\ / ： * ？" < > - [ 垂直条 ] ； " ，。允许使用下划线字符（ _ ）。具有特殊字符的虚拟机或数据存储库名称会被截断，因此很难搜索特定备份。在链接模式下，每个 vCenter 都有一个单独的 SnapCenter VMware 插件存储库。因此，您可以在 vCenter 中使用重复的名称。 
+
+
+| Description | 输入资源组的问题描述。 
+
+
+| 通知 | 选择何时接收有关此资源组上的操作的通知：错误或警告：仅发送错误和警告通知错误：仅发送错误通知始终：发送所有消息类型的通知从不：不发送通知 
+
+
+| 电子邮件发件人 | 输入要从中发送通知的电子邮件地址。 
+
+
+| 电子邮件发送到 | 输入要接收通知的人员的电子邮件地址。对于多个收件人，请使用逗号分隔电子邮件地址。 
+
+
+| 电子邮件主题 | 输入通知电子邮件所需的主题。 
+
+
+| 最新 Snapshot 名称 | 从适用于 VMware vSphere 的 SnapCenter 插件 4.4 开始，如果要将后缀 "_recent " 添加到最新的 Snapshot 副本中，请选中此框。"_recent " 后缀将替换日期和时间戳。* 注： * 系统会为附加到资源组的每个策略创建 ` - 最新` 备份。因此，具有多个策略的资源组将具有多个 ` - 最新` 备份。 
+
+
+| 自定义 Snapshot 格式 | 如果要对 Snapshot 副本名称使用自定义格式，请选中此框并输入名称格式。* 默认情况下，此功能处于禁用状态。* 默认 Snapshot 副本名称使用格式 ` <ResourceGroup>_<Date-timestamp>` 但是，您可以使用变量 $ResourceGroup ， $Policy ， $hostname ， $scheduleType 和 $CustomText 指定自定义格式。使用自定义名称字段中的下拉列表选择要使用的变量及其使用顺序。如果选择 $CustomText ，则名称格式为 ` <CustomName>_<Date-timestamp>` 。在提供的附加框中输入自定义文本。注意：如果您还选择了 "_recent " 后缀，则必须确保自定义 Snapshot 名称在数据存储库中是唯一的，因此，您应在此名称中添加 $ResourceGroup 和 $Policy 变量。* 名称中特殊字符的特殊字符，请遵循 " 名称 " 字段中提供的相同准则。 
+|===
+. 在 * 资源 * 页面的可用实体列表中，选择资源组中所需的资源，然后单击 * > * 将所选内容移动到选定实体列表。
++
+image:scpivs44_image17.png["错误：缺少图形映像"]
+
++
+单击 * 下一步 * 时，系统会首先检查 SnapCenter 是否管理选定虚拟机或数据存储库所在的存储并与其兼容。
+
++
+如果显示消息 `Sselected virtual machine is not SnapCenter compatible or selected datastore is not SnapCenter compatible` ，则选定虚拟机或数据存储库与 SnapCenter 不兼容。请参见 <<Manage compatibility check failures>> 有关详细信息 ...
+
+. 在 * 生成磁盘 * 页面上，为多个数据存储库中具有多个 VMDK 的 VM 选择一个选项：
++
+始终排除所有跨区数据存储库（这是数据存储库的默认设置）。
+
++
+始终包括所有跨区数据存储库（这是 VM 的默认设置）。
+
++
+手动选择要包括的跨区数据存储库
+
+. 在 * 策略 * 页面上，选择或创建一个或多个备份策略，如下表所示：
++
+|===
+| 使用… | 执行此操作… 
+
+
+| 现有策略 | 从列表中选择一个或多个策略。 
+
+
+| 新策略 | 1. 单击 image:scpivs44_image6.png["错误：缺少图形映像"] * 创建 * 。2. 完成新建备份策略向导以返回到创建资源组向导。 
+|===
++
+在链接模式下，此列表包含所有链接 vCenter 中的策略。您必须选择与资源组位于同一 vCenter 上的策略。
+
+. 在 * 计划 * 页面上，为每个选定策略配置备份计划。
++
+image:scpivs44_image18.png["错误：缺少图形映像"]
+
++
+在开始时间字段中，输入一个非零时间。
+
++
+您必须填写每个字段。SnapCenter VMware 插件会在部署 SnapCenter VMware 插件的时区创建计划。您可以使用适用于 VMware vSphere 的 SnapCenter 插件 GUI 修改时区。
+
++
+link:scpivs44_manage_your_configuration.html#modify-the-time-zones-for-backups["修改备份的时区"]。
+
+. 查看摘要，然后单击 * 完成 * 。
++
+在单击 * 完成 * 之前，您可以返回到向导中的任何页面并更改信息。
+
++
+单击 * 完成 * 后，新资源组将添加到资源组列表中。
+
++
+
+NOTE: 如果备份中任何 VM 的暂停操作失败，则备份将标记为不是 VM 一致，即使选定策略已选择 VM 一致性也是如此。在这种情况下，某些虚拟机可能已成功暂停。
+
+
+
+
+
+=== 管理兼容性检查失败
+
+在尝试创建资源组时， SnapCenter 会执行兼容性检查。
+
+不兼容的原因可能是：
+
+* VMDK 位于不受支持的存储上；例如，在 7- 模式下运行的 ONTAP 系统或非 ONTAP 设备上。
+* 数据存储库位于运行集群模式 Data ONTAP 8.2.1 或更早版本的 NetApp 存储上。
++
+SnapCenter 4.x 版支持 ONTAP 8.3.1 及更高版本。
+
++
+适用于 VMware vSphere 的 SnapCenter 插件不会对所有 ONTAP 版本执行兼容性检查；仅对 ONTAP 8.2.1 及更早版本执行兼容性检查。因此，请始终参见 https://mysupport.netapp.com/matrix/imt.jsp?components=91324;&solution=1517&isHWU&src=IMT["NetApp 互操作性表工具（ IMT ）"^] 有关 SnapCenter 支持的最新信息。
+
+* 共享 PCI 设备已连接到 VM 。
+* 未在 SnapCenter 中配置首选 IP 。
+* 您尚未将 Storage VM （ SVM ）管理 IP 添加到 SnapCenter 。
+* 此 Storage VM 已关闭。
+
+
+要更正兼容性错误，请执行以下操作：
+
+. 确保 Storage VM 正在运行。
+. 确保已将 VM 所在的存储系统添加到适用于 VMware vSphere 的 SnapCenter 插件清单中。
+. 确保已将 Storage VM 添加到 SnapCenter 。使用 VMware vSphere Web Client 图形用户界面上的添加存储系统选项。
+. 如果跨区 VM 在 NetApp 和非 NetApp 数据存储库上都具有 VMDK ，则将 VMDK 移动到 NetApp 数据存储库。
+

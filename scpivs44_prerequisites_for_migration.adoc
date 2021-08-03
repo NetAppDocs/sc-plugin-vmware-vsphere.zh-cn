@@ -1,0 +1,26 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_prerequisites_for_migration.html 
+keywords:  
+summary:  
+---
+= 迁移的前提条件
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+* 您必须运行 SnapCenter 服务器 4.2 或更高版本。
+* 您必须使用管理员凭据。
+* 部署适用于 VMware vSphere 的 SnapCenter 插件虚拟设备时，必须启用 SnapCenter VMware 插件并在 vCenter 上注册该插件。
+* 在 SnapCenter VMware 插件信息板上，适用于 VMware vSphere 的 SnapCenter 插件的状态必须为 " 已连接 " 。
+* 您必须已使用部署 SnapCenter VMware 插件期间指定的帐户创建 Linux 类型的 " 以运行身份 " 凭据。
+* 必须删除所有子文件还原会话。
+* SnapCenter 主机必须配置 IP 地址，而不是完全限定域名（ FQDN ）。
++
+在链接模式环境中，必须同时迁移所有链接节点。
+
+* Storage VM 的名称必须解析为管理 LIF 。如果您在 SnapCenter 中为 Storage VM 名称添加了 `etc` 主机条目，则必须验证这些条目是否也可从虚拟设备解析。
+

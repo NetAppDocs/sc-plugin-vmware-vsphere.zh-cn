@@ -1,0 +1,91 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_add_storage_01.html 
+keywords:  
+summary:  
+---
+= 添加存储
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+在备份或还原 VM 之前，您必须先添加存储集群或 Storage VM 。通过添加存储，适用于 VMware vSphere 的 SnapCenter 插件可以识别和管理 vCenter 中的备份和还原操作。
+
+* 要使用的 GUI
++
+使用 VMware vSphere Web Client 添加存储。
+
+* 大型 LUN
++
+适用于 VMware vSphere 4.5 及更高版本的 SnapCenter 插件在 ASA 聚合上支持大小高达 128 TB 的大型 LUN 上的数据存储库。对于大型 LUN ， SnapCenter 仅支持厚配置 LUN 以避免延迟。
+
+
+
+ESXi 服务器， SnapCenter VMware 插件和每个 vCenter 必须同时同步。如果您尝试添加存储，但 vCenter 的时间设置未同步，则此操作可能会失败并显示 Java 证书错误。
+
+SnapCenter VMware 插件可对直接连接的 Storage VM 和存储集群中的 Storage VM 执行备份和还原操作。
+
+
+NOTE: 如果您使用 SnapCenter VMware 插件在 VMDK 上支持基于应用程序的备份，则必须使用 SnapCenter 图形用户界面输入存储凭据并注册存储系统。
+
+* 对于处于链接模式的 vCenter ，您必须分别向每个 vCenter 添加存储系统。
+* Storage VM 的名称必须解析为管理 LIF 。
++
+如果您在 SnapCenter 中为 Storage VM 名称添加了 Etc 主机条目，则必须验证它们是否也可从虚拟设备解析。
+
++
+如果您添加的 Storage VM 名称无法解析为管理 LIF ，则计划的备份作业将失败，因为此插件无法发现此 Storage VM 上的任何数据存储库或卷。如果发生这种情况，请将此 Storage VM 添加到 SnapCenter 并指定管理 LIF ，或者添加一个包含此 Storage VM 的集群并指定集群管理 LIF 。
+
+* 存储凭据不会在 SnapCenter VMware 插件的多个实例之间共享，也不会在 vCenter 上的 Windows SnapCenter Server 和 SnapCenter 插件之间共享。
+
+
+.步骤
+. 在 vSphere Web Client 的左侧导航器窗格中，单击 * 存储系统 * 。
+. 在存储系统页面上，单击 image:scpivs44_image6.png["错误：缺少图形映像"] * 添加 * 。
++
+image:scpivs44_image12.png["错误：缺少图形映像"]
+
+. 在 * 添加存储系统 * 向导中，输入下表列出的基本 Storage VM 或集群信息：
++
+|===
+| 对于此字段… | 执行此操作… 
+
+
+| 存储系统 | 输入存储集群或 Storage VM 的 FQDN 或 IP 地址。SnapCenter VMware 插件不支持在不同集群上使用相同名称的多个存储系统。SnapCenter 支持的每个存储系统都必须具有唯一的数据 LIF IP 地址。 
+
+
+| 平台 | 选择平台。 
+
+
+| Username | 输入用于登录到 Storage VM 的 ONTAP 用户名。 
+
+
+| Password | 输入 Storage VM 登录密码。 
+
+
+| 协议 | 选择存储协议。 
+
+
+| Port | 选择端口 443 （默认值）或端口 80 以与 vCenter 进行通信。 
+
+
+| 超时 | 输入 vCenter 在超时操作之前应等待的秒数。默认值为 60 秒 
+
+
+| 首选 IP | 如果 Storage VM 具有多个管理 IP 地址，请选中此框并输入要 SnapCenter 使用的 IP 地址。* 注： * 输入 IP 地址时，请勿使用方括号（）。 
+
+
+| 将 SnapCenter 服务器事件记录到系统日志中 | 选中此框可记录 SnapCenter VMware 插件的事件。 
+
+
+| 向存储系统发送操作失败的 AutoSupport 通知 | 如果要为失败的数据保护作业发送 AutoSupport 通知，请选中此复选框。您还必须在 Storage VM 上启用 AutoSupport 并配置 AutoSupport 电子邮件设置。 
+|===
+. 单击 * 添加 * 。
++
+如果添加了存储集群，则会自动添加该集群中的所有 Storage VM 。自动添加的 Storage VM （有时称为 " 隐式 " Storage VM ）会显示在集群摘要页面上，并使用连字符（ - ）而非用户名。只有显式存储实体才会显示用户名。
+
+

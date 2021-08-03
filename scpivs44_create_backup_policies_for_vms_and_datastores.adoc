@@ -1,0 +1,104 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_create_backup_policies_for_vms_and_datastores.html 
+keywords:  
+summary:  
+---
+= 为 VM 和数据存储库创建备份策略
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+在使用适用于 VMware vSphere 的 SnapCenter 插件备份 VM 和数据存储库之前，必须先创建备份策略。
+
+.开始之前
+* 您必须已阅读前提条件。
+* 您必须已配置二级存储关系。
++
+** 如果要将 Snapshot 副本复制到镜像或存储二级存储，则必须配置关系，并且 SnapCenter 管理员必须已为源卷和目标卷分配 Storage VM 。
+** 要成功将 Snapshot 副本传输到 NFS 或 VMFS 数据存储库上的 Version-FlexibleMirror 关系的二级存储，请确保 SnapMirror 策略类型为异步镜像并选中 "all_source_snapshots" 选项。
+** 当二级存储（镜像存储）上的 Snapshot 副本数量达到最大限制时，在备份操作中注册备份并应用保留的活动将失败，并显示以下错误： `一个或多个 SnapMirror 关系当前使用此 Snapshot 副本作为参考 Snapshot 副本。删除 Snapshot 副本可能会导致发生原因未来的 SnapMirror 操作失败。`
++
+要更正此问题描述，请为二级存储配置 SnapMirror 保留策略，以避免达到 Snapshot 副本的最大限制。
+
++
+有关管理员如何为用户分配资源的信息，请参见 https://docs.netapp.com/us-en/snapcenter/concept/concept_snapcenter_role_based_access_control_rbac.html["有关使用基于角色的访问控制的 SnapCenter 信息"^]。
+
+
+
+* 如果要使用 VM 一致的备份，则必须安装并运行 VMware Tools 。需要使用 VMware Tools 暂停 VM 。
+
+
+这些向导页面上的大多数字段都是不言自明的。以下信息介绍了一些可能需要指导的字段。
+
+.步骤
+. 在 VMware vSphere Web Client 的左侧导航器窗格中，单击 * 策略 * 。
+. 在 * 策略 * 页面上，单击 image:scpivs44_image6.png["错误：缺少图形映像"] * 创建 * 以启动向导。
++
+image:scpivs44_image15.png["错误：缺少图形映像"]
+
+. 在 * 新建备份策略 * 页面上，选择要使用此策略的 vCenter Server ，然后输入策略名称和问题描述。
++
+** 链接模式
++
+在链接模式下，每个 vCenter 都有一个单独的虚拟设备。因此，您可以在 vCenter 中使用重复的名称。但是，您必须在与资源组相同的 vCenter 中创建策略。
+
+** 不支持的字符
++
+请勿在虚拟机，数据存储库，集群，策略，备份， 或资源组名称： % & * $ # @ ！\ / ： * ？" < >-| ； " ，。
+
++
+允许使用下划线字符（ _ ）。
+
+
+
+. 指定保留设置。
++
+
+IMPORTANT: 如果计划启用 SnapVault 复制，则应将保留数量设置为 2 个或更多备份。如果将保留计数设置为 1 个要保留的备份，则保留操作可能会失败。这是因为在将较新的 Snapshot 副本复制到目标之前，第一个 Snapshot 副本是 SnapVault 关系的参考 Snapshot 副本。
+
++
+
+NOTE: 对于 ONTAP 9.4 或更高版本上的资源，最大保留值为 1018 次备份；对于 ONTAP 9.3 或更早版本上的资源，最大保留值为 254 次备份。如果将保留设置为高于底层 ONTAP 版本支持的值，则备份将失败。对于跨区数据存储库也是如此。如果生成数据存储库包含 ONTAP 9.3 及更早版本以及 ONTAP 9.4 及更高版本上的资源，请确保将保留值设置为 254 以下。
+
+. 指定频率设置。
++
+此策略仅指定备份频率。用于备份的特定保护计划在资源组中定义。因此，两个或更多资源组可以共享相同的策略和备份频率，但备份计划不同。
+
+. 在 * 复制 * 字段中，指定复制到二级存储的类型，如下表所示：
++
+|===
+| 对于此字段… | 执行此操作… 
+
+
+| 备份后更新 SnapMirror | 选择此选项可在与主备份卷具有 SnapMirror 关系的另一个卷上创建备份集的镜像副本。如果卷配置了镜像 - 存储关系，则如果要将备份复制到镜像 - 存储目标，则只能选择 * 备份后更新 SnapVault * 选项。* 注意： * 从适用于 VMware vSphere 4.5 的 SnapCenter 插件开始， FlexGroup 卷中的数据存储库支持此选项。适用于 VMware vSphere 4.4 及更早版本的 SnapCenter 插件中的 FlexGroup 卷中的数据存储库不支持此选项。 
+
+
+| 备份后更新 SnapVault | 选择此选项可在与主备份卷具有 SnapVault 关系的另一个卷上执行磁盘到磁盘备份复制。* 重要说明： * 如果为卷配置了镜像 - 存储关系，则如果要将备份复制到镜像 - 存储目标，则只能选择此选项。* 注意： * 从适用于 VMware vSphere 4.5 的 SnapCenter 插件开始， FlexGroup 卷中的数据存储库支持此选项。适用于 VMware vSphere 4.4 及更早版本的 SnapCenter 插件中的 FlexGroup 卷中的数据存储库不支持此选项。 
+
+
+| Snapshot 标签 | 输入要添加到使用此策略创建的 SnapVault 和 SnapMirror Snapshot 副本的可选自定义标签。Snapshot 标签有助于将使用此策略创建的快照与二级存储系统上的其他快照区分开。* 注： * Snapshot 副本标签最多允许包含 31 个字符。 
+|===
+. 可选：在 * 高级 * 字段中，选择所需的字段。下表列出了高级字段详细信息。
++
+|===
+| 对于此字段… | 执行此操作… 
+
+
+| 虚拟机一致性 | 选中此框可在每次运行备份作业时暂停 VM 并创建 VMware 快照。* 重要信息： * 要执行虚拟机一致的备份，必须在虚拟机上运行 VMware Tools 。如果 VMware Tools 未运行，则会执行崩溃状态一致的备份。* 注意： * 选中 VM 一致性复选框后，备份操作可能需要更长时间并需要更多存储空间。在这种情况下， VM 会先暂停，然后 VMware 执行 VM 一致的快照，然后 SnapCenter 执行其备份操作，最后恢复 VM 操作。VM 子系统内存不包括在 VM 一致性 Snapshot 中。 
+
+
+| 包括具有独立磁盘的数据存储库 | 选中此框可在备份中包含包含临时数据的任何具有独立磁盘的数据存储库。 
+
+
+| 脚本 | 输入希望 SnapCenter VMware 插件在备份操作前后运行的预处理程序或后脚本的完全限定路径。例如，您可以运行脚本来更新 SNMP 陷阱，自动执行警报和发送日志。执行脚本时会验证脚本路径。* 注： * 预处理脚本和后处理脚本必须位于虚拟设备虚拟机上。要输入多个脚本，请在每个脚本路径后按 * Enter * ，以便在单独的行中列出每个脚本。不允许使用字符 " ； " 。 
+|===
+. 单击 * 添加。 *
++
+您可以通过在策略页面中选择策略来验证是否已创建策略并查看策略配置。
+
+

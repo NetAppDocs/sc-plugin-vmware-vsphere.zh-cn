@@ -1,0 +1,30 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_rest_api_workflows__modify_built-in_schedules.html 
+keywords:  
+summary:  
+---
+= 用于修改内置计划的 REST API 工作流
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+要使用适用于 VMware vSphere 的 SnapCenter 插件 REST API 修改 VMware vSphere Web Client 作业的内置计划，您必须按照规定的 REST API 调用顺序进行操作。
+
+内置计划是指作为产品一部分提供的计划，例如 MySQL 数据库转储计划。您可以修改以下计划： `sschedule-DatabaseDump` `Sschedule-PurgeBackups` `Sschedule-AsapDataCollection` `Sschedule-ComputeStorageSaving` `Sschedule-PurgeJobs`
+
+对于每个 REST API ，在 REST API 的前面添加 `https://<server>:<port>` 以形成完整的端点。
+
+|===
+| 步骤 | REST API | 注释 
+
+
+| 1. | ` /4.1/schedules` | `获取所有内置计划` 计划获取产品中最初提供的作业计划列表。记下要修改的计划名称以及关联的 cron 表达式。 
+
+
+| 2. | ` /4.1/schedules` | `m修改任何内置计划` 更改已命名的计划。传递步骤 1 中的计划名称，并为此计划创建新的 cron 表达式。 
+|===

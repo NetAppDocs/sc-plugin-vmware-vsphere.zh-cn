@@ -1,0 +1,16 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_quick_start_overview.html 
+keywords:  
+summary:  
+---
+= 概述
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+开始之前，请参见 link:scpivs44_deployment_planning_and_requirements.html["部署规划和要求"]。

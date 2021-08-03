@@ -1,0 +1,40 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_remove_plugin.html 
+keywords:  
+summary:  
+---
+= 删除适用于 VMware vSphere 的 SnapCenter 插件
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+如果您不再需要使用 SnapCenter 数据保护功能，则必须禁用 SnapCenter VMware 插件才能从 vCenter 中将其注销，然后从 vCenter 中删除 SnapCenter VMware 插件，然后手动删除剩余文件。
+
+.开始之前
+* 您必须具有管理员权限。
+* 确保未运行任何 SnapCenter 作业。
+
+
+.步骤
+. 使用格式 `https://<OVA-IP-address>:8080` 登录到 SnapCenter VMware 插件管理 GUI 。
++
+部署 SnapCenter VMware 插件时，将显示该插件的 IP 。
+
+. 单击左侧导航窗格中的 * 配置 * ，然后取消选择 * 插件详细信息 * 部分中的服务选项以禁用此插件。
+. 登录到 VMware vSphere 。
+. 在左侧导航屏幕中，右键单击 SnapCenter VMware 插件的实例（部署虚拟设备时使用的 ` .ova` 文件的名称），然后选择 * 从磁盘删除 * 。
+. 导航到 ` /etc/vmware/vsphere-ui/vc-packages/vsphere-client-serene/com.netapp.scvm.webclient-4.5.0.5942045/plugins` ，并手动删除 vCenter 服务器的 pickup 文件夹中的以下文件：
++
+`VSC-httpclient3-security.jar` `sCV-api-model.jar` `sCVM_WebUI_service.jar` `sCVM_WebUI_ui.war` `gson-2.5.jar`
+
+. 如果您已使用 SnapCenter VMware 插件支持其他 SnapCenter 插件进行应用程序一致的备份，请登录到 SnapCenter 并删除 vSphere 主机。
+
+
+虚拟设备仍会部署，但 SnapCenter VMware 插件会被删除。
+
+删除 SnapCenter VMware 插件的主机 VM 后，此插件可能仍会列在 vCenter 中，直到刷新本地 vCenter 缓存为止。但是，由于已删除此插件，因此无法对该主机执行任何 SnapCenter VMware vSphere 操作。如果要刷新本地 vCenter 缓存，请先在 SnapCenter VMware 插件配置页面上确保此设备处于已禁用状态，然后重新启动 vCenter Web 客户端服务。

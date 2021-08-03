@@ -1,0 +1,38 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_rest_api_workflows__add_and_modify_storage_vms.html 
+keywords:  
+summary:  
+---
+= 用于添加和修改 Storage VM 的 REST API 工作流
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+要使用适用于 VMware vSphere 的 SnapCenter 插件 REST API 执行添加和修改 Storage VM 操作，您必须遵循规定的 REST API 调用顺序。
+
+对于每个 REST API ，在 REST API 的前面添加 `https://<server>:<port>` 以形成完整的端点。
+
+要添加 Storage VM 操作，请按照以下工作流进行操作：
+
+|===
+| 步骤 | REST API | 注释 
+
+
+| 1. | ` /4.1/storage-system` | `添加存储系统` 将指定的 Storage VM 添加到适用于 VMware vSphere 的 SnapCenter 插件。 
+|===
+要修改 Storage VM 操作，请遵循以下工作流：
+
+|===
+| 步骤 | REST API | 注释 
+
+
+| 1. | ` /4.1/storage-system` | `getSvmAll` 获取所有可用 Storage VM 的列表。记下要修改的 Storage VM 的 * 名称 * 。 
+
+
+| 2. | ` /4.1/storage-system` | `m修改存储系统` 修改指定的 Storage VM 。除了传递所有其他必需属性之外，还传递步骤 1 中的 * 名称 * 。 
+|===

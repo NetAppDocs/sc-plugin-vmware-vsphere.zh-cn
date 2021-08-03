@@ -1,0 +1,43 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_restore_from_backups_overview.html 
+keywords:  
+summary:  
+---
+= 概述
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以从主备份或二级备份还原 VM ， VMDK ，文件和文件夹。
+
+* VM 还原目标
++
+在适用于 VMware vSphere 4.4 及更早版本的 SnapCenter 插件中，您只能将虚拟机还原到原始主机和数据存储库。
+
++
+从适用于 VMware vSphere 4.5 的 SnapCenter 插件开始，您可以将虚拟机还原到原始主机，同一 vCenter Server 中的备用主机，或者同一 vCenter 管理的备用 ESXi 主机或链接模式下的任何 vCenter 。
+
+* VMDK 还原目标
++
+您可以将 VMDK 还原到原始数据存储库或备用数据存储库。
+
+
+
+您还可以在子文件还原会话中还原单个文件和文件夹，此会话会附加虚拟磁盘的备份副本，然后还原选定的文件或文件夹。
+
+您无法还原以下内容：
+
+* 数据存储库
++
+您不能使用适用于 VMware vSphere 的 SnapCenter 插件还原数据存储库，而只能还原数据存储库中的各个 VM 。
+
+* 已删除 VM 的备份
++
+您无法还原已删除的 Storage VM 的备份。例如，如果您使用管理 LIF 添加一个 Storage VM ，然后创建备份，然后删除该 Storage VM 并添加包含同一 Storage VM 的集群，则备份的还原操作将失败。
+
+

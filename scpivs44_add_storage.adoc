@@ -1,0 +1,17 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_add_storage.html 
+keywords:  
+summary:  
+---
+= 添加存储
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+. 在 VMware vSphere Web Client 的左侧导航器窗格中，单击 * 存储系统 * ，然后单击 image:scpivs44_image6.png["错误：缺少图形映像"] * 添加 * 。
+. 在添加存储系统对话框中，输入基本 SVM 或集群信息，然后单击 * 添加 * 。
+

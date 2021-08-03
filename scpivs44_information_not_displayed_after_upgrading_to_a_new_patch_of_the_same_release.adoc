@@ -1,0 +1,64 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_information_not_displayed_after_upgrading_to_a_new_patch_of_the_same_release.html 
+keywords:  
+summary:  
+---
+= 升级到同一版本的新修补程序后，不会显示信息
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+将适用于 VMware vSphere 的 SnapCenter 插件升级到同一版本的新修补程序后，信息板和作业监控器中可能不会显示最近的作业或其他信息。
+
+如果要升级到同一版本的新修补程序，则必须清除 vCenter Web Server 上适用于 VMware vSphere 的 SnapCenter 插件缓存，并在升级或注册之前重新启动服务器。
+
+如果未清除插件缓存，则在以下情况下，信息板和作业监控器不会显示最近的作业：
+
+* 适用于 VMware vSphere 的 SnapCenter 插件是使用 vCenter 部署的，之后升级到同一版本中的修补程序。
+* SnapCenter VMware 虚拟设备部署在 vCenter 1 中。稍后，此 SnapCenter VMware 插件会注册到新的 vCenter2 中。此时将使用修补程序创建一个新的 SnapCenter VMware 插件实例，并将其注册到 vCenter1 。但是，由于 vCenter1 仍具有第一个 SnapCenter VMware 插件中的缓存插件，而没有修补程序，因此需要清除缓存。
+
+
+根据服务器操作系统的类型，缓存位于以下位置：
+
+* 适用于 Windows 的 vCenter Server
++
+`C ： \ProgramData\VMware\vCenterServer\cfg\vsphere-client\vc-packages\vsphere-client-serenation\`
+
+* vCenter Server Linux 设备
++
+` /etc/vmware/vsphere-client/vc-packages/vsphere-client-serenation/`
+
+* Windows 操作系统
++
+` %ProgramFiles%/VMware/vSphere Web Client/vc-packages/vsphere-client-serention/`
+
+
+
+
+
+=== 临时解决策（如果在清除缓存之前已升级）
+
+. 登录到 SnapCenter VMware 插件管理 GUI 。
++
+部署 SnapCenter VMware 插件时，将显示此 IP 。
+
+. 单击左侧导航窗格中的 * 配置 * ，然后单击 * 插件详细信息 * 部分中的服务选项以禁用此插件。
++
+已禁用 SnapCenter VMware 插件服务，并且此扩展已在 vCenter 中取消注册。
+
+. 找到 `vsphere-client-serenity` 文件夹，然后找到 `com.netapp.scvm.webclient-4.2.0` 文件夹并将其删除。
++
+每个版本的文件夹名称都会发生变化。
+
+. 重新启动 vCenter Server 。
+. 登录到 VMware vSphere Web Client 。
+. 单击左侧导航窗格中的 * 配置 * ，然后单击 * 插件详细信息 * 部分中的服务选项以启用此插件。
++
+此时将启用 SnapCenter VMware 插件服务，并在 vCenter 中注册此扩展。
+
+

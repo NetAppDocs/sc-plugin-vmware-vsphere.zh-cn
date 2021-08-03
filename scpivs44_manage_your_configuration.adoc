@@ -1,0 +1,404 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_manage_your_configuration.html 
+keywords:  
+summary:  
+---
+= 管理您的配置
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您需要使用适用于 VMware vSphere 的 SnapCenter 插件管理 GUI 更新虚拟设备配置，其中包括 vCenter 凭据，虚拟设备凭据和备份时区。
+
+
+
+== 修改备份的时区
+
+在为适用于 VMware vSphere 的 SnapCenter 插件资源组配置备份计划时，系统会自动为部署 SnapCenter VMware 插件的时区设置此计划。您可以使用适用于 VMware vSphere 的 SnapCenter 插件管理 GUI 修改该时区。
+
+您必须知道适用于 VMware vSphere 的 SnapCenter 插件管理 GUI 的 IP 地址和登录凭据。
+
+* 部署 SnapCenter VMware 插件时会显示此 IP 地址。
+* 使用在部署 SnapCenter VMware 插件期间提供的或稍后修改的登录凭据。
+
+
+.步骤
+. 登录到 SnapCenter VMware 插件管理 GUI 。
++
+格式为 `https://<appliance-IP-address>:8080`
+
+. 单击顶部工具栏中的设置图标。
++
+image:scpivs44_image28.jpg["错误：缺少图形映像"]
+
+. 在 * 设置 * 页面的 * 日期和时间 * 部分中，单击 * 编辑 * 。
+. 选择新时区并单击 * 保存 * 。
++
+新时区将用于 SnapCenter VMware 插件执行的所有备份。
+
+
+
+
+
+== 修改适用于 VMware vSphere 的 SnapCenter 插件的登录凭据
+
+您可以修改适用于 VMware vSphere 的 SnapCenter 插件管理 GUI 的登录凭据。
+
+您必须知道适用于 VMware vSphere 的 SnapCenter 插件管理 GUI 的 IP 地址和登录凭据。
+
+* 部署 SnapCenter VMware 插件时会显示此 IP 地址。
+* 使用在部署 SnapCenter VMware 插件期间提供的或稍后修改的登录凭据。
+
+
+.步骤
+. 登录到 SnapCenter VMware 插件管理 GUI 。
++
+格式为 `https://<appliance-IP-address>:8080`
+
+. 单击顶部工具栏中的设置图标。
++
+image:scpivs44_image28.jpg["错误：缺少图形映像"]
+
+. 在 * 设置 * 页面的 * 用户 * 部分中，单击 * 编辑 * 。
+. 输入新密码并单击 * 保存 * 。
++
+可能需要几分钟才能恢复所有服务。
+
+
+
+
+
+== 在适用于 VMware vSphere 的 SnapCenter 插件中修改 vCenter 登录凭据
+
+您可以修改在适用于 VMware vSphere 的 SnapCenter 插件中配置的 vCenter 登录凭据。插件使用这些设置访问 vCenter 。
+
+您必须知道适用于 VMware vSphere 的 SnapCenter 插件管理 GUI 的 IP 地址和登录凭据。
+
+* 部署 SnapCenter VMware 插件时会显示此 IP 地址。
+* 使用在部署 SnapCenter VMware 插件期间提供的或稍后修改的登录凭据。
+
+
+.步骤
+. 登录到 SnapCenter VMware 插件管理 GUI 。
++
+格式为 `https://<appliance-IP-address>:8080`
+
+. 在左侧导航窗格中，单击 * 配置 * 。
++
+image:scpivs44_image30.png["错误：缺少图形映像"]
+
+. 在 * 配置 * 页面的 * vCenter * 部分中，单击 * 编辑 * 。
+. 输入新密码，然后单击 * 保存 * 。
++
+请勿修改端口号。
+
+
+
+
+
+== 修改网络设置
+
+您可以修改在适用于 VMware vSphere 的 SnapCenter 插件中配置的网络设置。插件使用这些设置访问 vCenter 。
+
+您必须知道适用于 VMware vSphere 的 SnapCenter 插件管理 GUI 的 IP 地址和登录凭据。
+
+* 部署 SnapCenter VMware 插件时会显示此 IP 地址。
+* 使用在部署 SnapCenter VMware 插件期间提供的或稍后修改的登录凭据。
+
+
+.步骤
+. 登录到 SnapCenter VMware 插件管理 GUI 。
++
+格式为 `https://<appliance-IP-address>:8080`
+
+. 单击顶部工具栏中的设置图标。
++
+image:scpivs44_image31.png["错误：缺少图形映像"]
+
+. 在 * 设置 * 页面的 * 网络设置 * 部分中，单击 * IPv4 * 或 * IPv6 * ，然后单击 * 编辑 * 。
++
+输入新信息并单击 * 保存 * 。
+
+. 如果要删除网络设置，请执行以下操作：
++
+** IPv4 ：在 * IP Address* 字段中，输入 `0.0.0.0` ，然后单击 * 保存 * 。
+** IPv6 ：在 * IP Address* 字段中：输入 ` ： 0` ，然后单击 * 保存 * 。
+
+
+
+
+
+NOTE: 如果同时使用 IPv4 和 IPv6 ，则不能同时删除这两个网络设置。其余网络必须指定 DNS 服务器和搜索域字段。
+
+
+
+== 修改配置默认值
+
+要提高操作效率，您可以修改 `sCBR.override` 配置文件以更改默认值。这些值控制备份期间创建或删除的 VMware 快照数量或备份脚本停止运行之前的时间等设置。
+
+适用于 VMware vSphere 的 SnapCenter 插件环境使用 `sCBR.override` 配置文件，该插件支持基于 SnapCenter 应用程序的数据保护操作。如果此文件不存在，则必须从模板文件创建它。
+
+
+
+== 创建 scbr.override 配置文件
+
+. 转至 ` /opt/netapp/scvservice/standalone aeg/etc/scbr/scbr.override-template` 。
+. 将 `sCBR.override-template` 文件复制到 ` \opt\NetApp\scvservice\standalone aeg\etc\scbr` 目录中名为 `sCBR.override` 的新文件。
+
+
+
+
+== 可以覆盖的属性
+
+* 默认情况下，模板使用哈希符号来注释配置属性。要使用属性修改配置值，必须删除 ` #` 字符。
+* 要使更改生效，您必须在适用于 VMware vSphere 的 SnapCenter 插件主机上重新启动此服务。
+
+
+您可以使用 `sCBR.override` 配置文件中列出的以下属性来更改默认值。
+
+* * dashboard.protected.vm.count.interval=7*
++
+指定信息板显示 VM 保护状态的天数。
+
++
+默认值为 "7" 。
+
+* * guestFileRestore.guest.operation.interval=5*
++
+指定适用于 VMware vSphere 的 SnapCenter 插件在子系统上完成子系统操作（联机磁盘和还原文件）时所监控的时间间隔（以秒为单位）。总等待时间由 `guestFileRestore.online.disk.timeout` 和 `guestFileRestore.restore.files.timeout` 设置。
+
++
+默认值为 "5" 。
+
+* * 来宾 FileRestore.monitorInterval=30*
++
+指定 SnapCenter VMware 插件监控已过期子文件还原会话的时间间隔（以分钟为单位）。超过所配置的会话时间运行的任何会话都将断开连接。
+
++
+默认值为 "30" 。
+
+* * 来宾 FileRestore.online.disk.timeout=100*
++
+指定 SnapCenter VMware 插件等待子虚拟机上的联机磁盘操作完成的时间（以秒为单位）。请注意，在插件轮询联机磁盘操作完成之前，还有 30 秒的等待时间。
+
++
+默认值为 "100" 。
+
+* * 来宾 FileRestore.restore.files.timeout=3600*
++
+指定 SnapCenter VMware 插件等待子虚拟机上的还原文件操作完成的时间（以秒为单位）。如果超过此时间，此过程将结束，并且作业将标记为失败。
+
++
+默认值为 "3600" （ 1 小时）。
+
+* * guestFileRestore.Robocopy.directory.flags=/R ： 0 /W ： 0 /ZB /CopyAll /EFSRAW /A- ： SH /e /NJH /NDL /Np*
++
+指定在子系统文件还原操作期间复制目录时要使用的额外 Robocopy 标志。
+
++
+请勿删除 ` /NJH` 或添加 ` /NJS` ，因为这将中断还原输出的解析。
+
++
+请勿允许无限制重试（通过删除 ` /R` 标志），因为这样可能发生原因会对失败的副本执行无限重试。
+
++
+默认值为 ` "/R ： 0 /W ： 0 /ZB /CopyAll /EFSRAW /A-： SH /e /NJH /NDL /NP"` 。
+
+* * guestFileRestore.Robocopy.file.flags=/R ： 0 /W ： 0 /ZB /CopyAll /EFSRAW /A- ： SH /NJH /NDL /Np*
++
+指定在子系统文件还原操作期间复制单个文件时要使用的额外 Robocopy 标志。
+
++
+请勿删除 ` /NJH` 或添加 ` /NJS` ，因为这将中断还原输出的解析。
+
++
+请勿允许无限制重试（通过删除 ` /R` 标志），因为这样可能发生原因会对失败的副本执行无限重试。
+
++
+默认值为 ` "/R ： 0 /W ： 0 /ZB /CopyAll /EFSRAW /A-： SH /NJH /NDL /NP"` 。
+
+* * guestFileRestore.sessionTime=1440*
++
+指定适用于 VMware vSphere 的 SnapCenter 插件保持子系统文件还原会话处于活动状态的时间（以分钟为单位）。
+
++
+默认值为 "1440" （ 24 小时）。
+
+* * guestFileRestore.use.custom.online.disk.script=true*
++
+指定在创建子系统文件还原会话时是否使用自定义脚本使磁盘联机并检索驱动器盘符。该脚本必须位于 ` 安装路径 >\etc\guestFileRestore_onlineDisk.ps1` 。安装时会提供一个默认脚本。在连接过程中，脚本中的值 ` [Disk_Serial_Number]` ， ` [Online_Disk_Output]` 和 ` 驱动器输出` 将被替换。
+
++
+默认值为 "false" 。
+
+* * include.esx.initiator.id.from.cluster=true*
++
+指定 SnapCenter VMware 插件应包含通过 VMDK 工作流在应用程序中集群中所有 ESXi 主机的 iSCSI 和 FCP 启动程序 ID 。
+
++
+默认值为 "false" 。
+
+* * 最大并发 .ds.storage.query.count=15*
++
+指定 SnapCenter VMware 插件可对 SnapCenter 服务器进行的最大并发调用数，以发现数据存储库的存储占用空间。当您在 SnapCenter VMware 插件 VM 主机上重新启动 Linux 服务时，此插件会发出这些调用。
+
+* * 。 nfs.datastore.mount.retry.count=3*
++
+指定 SnapCenter VMware 插件尝试在 vCenter 中将卷挂载为 NFS 数据存储库的最大次数。
+
++
+默认值为 "3" 。
+
+* * nfs.datastore.mount.retry.delay=60000*
++
+指定 SnapCenter VMware 插件在尝试将卷作为 NFS 数据存储库挂载到 vCenter 时等待的时间（以毫秒为单位）。
+
++
+默认值为 "60000 " （ 60 秒）。
+
+* * script.virtual.machine.count.variable.name = virtual_machines*
++
+指定包含虚拟机计数的环境变量名称。在备份作业期间执行任何用户定义的脚本之前，必须定义变量。
+
++
+例如， virtual_machines=2 表示正在备份两个虚拟机。
+
+* * script.virtual.machine.info.variable.name=VIRTUAL_MACHINE.%s*
++
+提供环境变量的名称，该变量包含有关备份中第 n 个虚拟机的信息。在备份期间执行任何用户定义的脚本之前，必须设置此变量。
+
++
+例如，环境变量 virtual_machine.2 提供了有关备份中第二个虚拟机的信息。
+
+* * script.virtual.machine.info.format= %s=%s=%s=%s=%s*
++
+提供有关虚拟机的信息。此信息在环境变量中设置的格式如下： `VM name"VM UUUUUUID" VM power state （ on_off ） "VM snapshot taken （ true_false ） "IP address （ es ）`
+
++
+以下是您可能提供的信息示例：
+
++
+`virtual_machine.2=VM 1|564d6769-f07d-6e3b-68b1f3c29b03a9a=powed_on|true_10.0.4.2`
+
+* * 存储 .connection.timeout=600000*
++
+指定 SnapCenter 服务器等待存储系统响应的时间量（以毫秒为单位）。
+
++
+默认值为 "600000" （ 10 分钟）。
+
+* * vmware.esx.ip.kernel.ip.map*
++
+没有默认值。您可以使用此值将 ESXi IP 地址映射到 VMkernel IP 地址。默认情况下， SnapCenter VMware 插件使用 ESXi 主机的管理 VMkernel 适配器 IP 地址。如果您希望 SnapCenter VMware 插件使用不同的 VMkernel 适配器 IP 地址，则必须提供覆盖值。
+
++
+在以下示例中，管理 VMkernel 适配器 IP 地址为 10.225.10.56 ；但是， SnapCenter VMware 插件使用指定地址 10.225.11.57 和 10.225.11.58 。如果管理 VMkernel 适配器 IP 地址为 10.225.10.60 ，则此插件将使用地址 10.225.11.61 。
+
++
+`vmware.esx.ip.kernel.ip.map=10.225.10.56:10.225.11.57,10.225.11.58; 10.225.10.60 ： 10.225.11.61`
+
+* * 。 vmware.max.concurrent-snapshots=30*
++
+指定 SnapCenter VMware 插件在服务器上同时执行的 VMware 快照的最大数量。
+
++
+此数字会按数据存储库进行检查，只有在策略选择了 "VM consisting" 时才会进行检查。如果要执行崩溃状态一致的备份，则此设置不适用。
+
++
+默认值为 "30" 。
+
+* * vmware.max.concurrent.snapshots.delete=30*
++
+指定 SnapCenter VMware 插件在服务器上对每个数据存储库执行的并发 VMware 快照删除操作的最大数量。
+
++
+此数量会按数据存储库进行检查。
+
++
+默认值为 "30" 。
+
+* * 。 vmware.query.unresolvedy.count=10*
++
+指定 SnapCenter VMware 插件因出现 "... 阻止 I/O 的时间限制 " 错误而重试发送有关未解析卷的查询的最大次数。
+
++
+默认值为 "10" 。
+
+* * 。 vmware.quiesce.retry.count=0*
++
+指定 SnapCenter VMware 插件因备份期间出现 "... 限制 I/O 的时间 " 错误而重试发送有关 VMware 快照的查询的最大次数。
+
++
+默认值为 "0" 。
+
+* * vmware.quiesce.retry.interval=5*
++
+指定 SnapCenter VMware 插件在备份期间发送有关 VMware 快照 "... 延迟 I/O 的时间限制 " 错误的查询之间等待的时间（以秒为单位）。
+
++
+默认值为 "5" 。
+
+* * vmware.query.unresolved.retry.delay= 60000*
++
+指定 SnapCenter VMware 插件在因出现 "... 阻止 I/O 的时间限制 " 错误而发送有关未解析卷的查询时等待的时间（以毫秒为单位）。克隆 VMFS 数据存储库时会发生此错误。
+
++
+默认值为 "60000 " （ 60 秒）。
+
+* * 。 vmware.reconfig.vm.retry.count=10*
++
+指定 SnapCenter VMware 插件因出现 "... 阻止 I/O 的时间限制 " 错误而重试发送有关重新配置虚拟机的查询的最大次数。
+
++
+默认值为 "10" 。
+
+* * vmware.reconfig.vm.retry.delay=30000*
++
+指定 SnapCenter VMware 插件在因出现 "... 阻止 I/O 的时间限制 " 错误而发送有关重新配置虚拟机的查询之间等待的最长时间（以毫秒为单位）。
+
++
+默认值为 "30000" （ 30 秒）。
+
+* * 。 vmware.rescan 。 hBA.retry.count=3*
++
+指定 SnapCenter VMware 插件在两次发送有关重新扫描主机总线适配器的查询之间等待的时间量，以毫秒为单位，因为出现 "... 用于保留 I/O 的时间限制 " 错误。
+
++
+默认值为 "3" 。
+
+* * vmware.rescan.hba.retry.delay=30000*
++
+指定 SnapCenter VMware 插件重试请求重新扫描主机总线适配器的最大次数。
+
++
+默认值为 "30000 " 。
+
+
+
+
+
+== 为适用于 VMware vSphere 的 SnapCenter 插件启用 SSH
+
+部署 SnapCenter VMware 插件时， SSH 默认处于禁用状态。
+
+.步骤
+. 从 VMware vSphere Web Client 中，选择 SnapCenter VMware 插件所在的虚拟机。
+. 右键单击虚拟机，然后在虚拟设备的 * 摘要 * 选项卡上单击 * 启动远程控制台 * 以打开维护控制台窗口。
++
+SnapCenter VMware 插件维护控制台的登录默认设置如下：
+
++
+用户名： `m熟悉` 密码： `admin123`
+
++
+image:scpivs44_image11.png["错误：缺少图形映像"]
+
+. 从主菜单中选择菜单选项 *2 ） System Configuration* 。
+. 从 System Configuration Menu 中，选择菜单选项 * ） Enable SSH access* ，然后在确认提示符处输入 "* y" 。
+. 等待消息 " 正在启用 SSH 访问… " 然后按 * 输入 * 继续，然后在提示符处输入 * X 退出维护模式。
+

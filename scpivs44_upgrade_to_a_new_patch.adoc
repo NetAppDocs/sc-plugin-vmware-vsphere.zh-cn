@@ -1,0 +1,56 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_upgrade_to_a_new_patch.html 
+keywords:  
+summary:  
+---
+= 升级到适用于 VMware vSphere 的同一版本 SnapCenter 插件的新修补程序
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+如果要升级到同一版本的新修补程序，则必须清除 vCenter Web Server 上适用于 VMware vSphere 的 SnapCenter 插件缓存，并在升级或注册之前重新启动服务器。
+
+如果未清除插件缓存，则在以下情况下，信息板和作业监控器不会显示最近的作业：
+
+* 适用于 VMware vSphere 的 SnapCenter 插件是使用 vCenter 部署的，之后升级到同一版本中的修补程序。
+* SnapCenter VMware 虚拟设备部署在 vCenter 1 中。稍后，此 SnapCenter VMware 插件会注册到新的 vCenter2 中。此时将使用修补程序创建一个新的 SnapCenter VMware 插件实例，并将其注册到 vCenter1 。但是，由于 vCenter1 仍具有第一个 SnapCenter VMware 插件中的缓存插件，而没有修补程序，因此需要清除缓存。
+
+
+根据服务器操作系统的类型，缓存位于以下位置：
+
+* 适用于 Windows 的 vCenter Server
++
+`C ： \ProgramData\VMware\vCenterServer\cfg\vsphere-client\vc-packages\vsphere-client-serenation\`
+
+* vCenter Server Linux 设备
++
+` /etc/vmware/vsphere-client/vc-packages/vsphere-client-serenation/`
+
+* Windows 操作系统
++
+` %ProgramFiles%/VMware/vSphere Web Client/vc-packages/vsphere-client-serention/`
+
+* Mac OS
++
+` /var/lib/vmware/vsphere-client/vsphere-client/vc-packages/vsphere-client-sereni/`
+
+
+
+
+
+=== 清除缓存的步骤
+
+. 找到 `vsphere-client-serenity` 文件夹，然后找到 `com.netapp.scvm.webclient-4.2.0` 文件夹并将其删除。
++
+每个版本的文件夹名称都会发生变化。
+
+. 重新启动 vCenter Server 。
++
+然后，您可以升级 SnapCenter VMware 插件。
+
+

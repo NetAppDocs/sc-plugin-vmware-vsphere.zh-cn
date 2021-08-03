@@ -1,0 +1,26 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_extend_the_time_of_a_guest_file_restore_session.html 
+keywords:  
+summary:  
+---
+= 延长子系统文件还原会话的时间
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+默认情况下，连接的子文件还原 VMDK 可在 24 小时内使用，然后它会自动断开连接。您可以在 * 子系统配置 * 页面中延长此时间。
+
+如果您稍后要从连接的 VMDK 还原其他文件或文件夹，则可能需要延长子系统文件还原会话。但是，由于子系统文件还原会话占用大量资源，因此只能偶尔延长会话时间。
+
+.步骤
+. 在 VMware vSphere Web Client 中，单击 * 子文件还原 * 。
+. 选择子系统文件还原会话，然后单击子系统会话监控器标题栏中的扩展选定子系统会话图标。
++
+会话将再延长 24 小时。
+
+

@@ -1,0 +1,66 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_concepts_overview.html 
+keywords:  
+summary:  
+---
+= 产品概述
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+适用于 VMware vSphere 的 SnapCenter 插件是一种独立虚拟设备（开放式虚拟设备格式），可为 VM 和数据存储库提供数据保护服务，并支持为基于 SnapCenter 应用程序的插件提供数据保护服务。本文档介绍如何部署和使用适用于 VMware vSphere 的 SnapCenter 插件，并提供了快速入门信息。
+
+适用于 VMware vSphere 的 SnapCenter 插件部署为基于 Linux 的虚拟设备。
+
+SnapCenter VMware 插件可为您的环境添加以下功能：
+
+* 支持 VM 一致和崩溃一致的数据保护操作。
++
+您可以在 vCenter 中使用 VMware vSphere Web Client GUI 执行 VMware 虚拟机（ VM ）， VMDK 和数据存储库的所有备份和还原操作。您还可以还原 VM 和 VMDK 以及还原子操作系统上的文件和文件夹。
+
++
+备份 VM ， VMDK 和数据存储库时，此插件不支持 RDM 。VM 的备份作业会忽略 RDM 。如果需要备份 RDM ，则必须使用基于 SnapCenter 应用程序的插件。
+
++
+SnapCenter VMware 插件包括一个 MySQL 数据库，其中包含 SnapCenter VMware 插件元数据。为了实现虚拟机一致和崩溃状态一致的数据保护，您无需安装 SnapCenter 服务器。
+
+* 支持应用程序一致的（基于 VMDB/RDM 的应用程序）数据保护操作。
++
+您可以使用 SnapCenter 图形用户界面和相应的 SnapCenter 应用程序插件对 VM 上的主存储和二级存储上的数据库和文件系统执行所有备份和还原操作。
+
++
+SnapCenter 本机利用 SnapCenter VMware 插件对 VMDK ，原始设备映射（ RDM ）和 NFS 数据存储库执行所有数据保护操作。部署虚拟设备后，此插件将处理与 vCenter 的所有交互。SnapCenter VMware 插件支持所有基于 SnapCenter 应用程序的插件。
+
++
+SnapCenter 不支持同时为数据库和 VM 创建一个 Snapshot 副本。VM 和数据库的备份必须单独计划和运行，这样可以创建单独的 Snapshot 副本，即使数据库和 VM 托管在同一个卷中也是如此。必须使用 SnapCenter 图形用户界面计划数据库应用程序备份；必须使用 VMware vSphere Web Client 图形用户界面计划 VM 和数据存储库备份。
+
+* 虚拟机一致的 Snapshot 副本需要使用 VMware Tools
++
+如果未安装并运行 VMware Tools ，则不会暂停文件系统，并创建崩溃状态一致的 Snapshot 。
+
+* 在 SAN （ VMFS ）环境中执行还原操作需要使用 VMware Storage vMotion
++
+VMware 文件系统（ VMFS ）的还原工作流利用了 VMware Storage vMotion 功能。Storage vMotion 是 vSphere 标准许可证的一部分，但 vSphere Essentials 或 Essentials Plus 许可证不提供。
+
++
+NFS 环境中的大多数还原操作都使用原生 ONTAP 功能（例如单个文件 SnapRestore ），而不需要 VMware Storage vMotion 。
+
+* SnapCenter VMware 插件作为虚拟设备部署在 Linux VM 中
++
+尽管虚拟设备必须作为 Linux VM 安装，但 SnapCenter VMware 插件既支持基于 Windows 的 vCenter ，也支持基于 Linux 的 vCenter 。SnapCenter 本机使用此插件，无需用户干预，即可与 vCenter 进行通信，以支持基于 SnapCenter 应用程序的插件，这些插件可在 Windows 和 Linux 虚拟化应用程序上执行数据保护操作。
+
+
+
+除了这些主要功能之外，适用于 VMware vSphere 的 SnapCenter 插件还支持 iSCSI ，光纤通道， FCoE ，基于 NFS 3.0 和 4.1 的 VMDK 以及基于 VMFS 5.0 和 6.0 的 VMDK 。
+
+有关受支持版本的最新信息，请参见 https://mysupport.netapp.com/matrix/imt.jsp?components=91324;&solution=1517&isHWU&src=IMT["NetApp 互操作性表工具"^] IMT
+
+有关 NFS 协议和 ESXi 的信息，请参见 VMware 提供的 vSphere 存储文档。
+
+有关 SnapCenter 数据保护的信息，请参见中适用于 SnapCenter 插件的数据保护信息 http://docs.netapp.com/us-en/snapcenter/index.html["SnapCenter 文档"^]。
+
+有关支持的升级和迁移路径的信息，请参见 link:scpivs44_release_notes.html["适用于 VMware vSphere 的 SnapCenter 插件发行说明"^]。

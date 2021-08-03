@@ -1,0 +1,44 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_access_rest_apis_using_the_swagger_api_web_page.html 
+keywords:  
+summary:  
+---
+= 使用 Swagger API 网页访问 REST API
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+REST API 通过 Swagger 网页公开。您可以访问 Swagger 网页以显示适用于 VMware vSphere 的 SnapCenter 服务器或 SnapCenter 插件 REST API ，并手动对 API 调用执行问题描述操作。您可以使用适用于 VMware vSphere 的 SnapCenter 插件 REST API 对 VM 和数据存储库执行保护操作。
+
+此插件具有与 Windows SnapCenter Swagger 网页不同的 Swagger 网页。
+
+对于适用于 VMware vSphere 的 SnapCenter 插件 REST API ，您必须知道 SnapCenter VMware 插件的 IP 地址或主机名。
+
+
+NOTE: 此插件仅支持用于与第三方应用程序集成的 REST API ，不支持 PowerShell cmdlet 或 CLI 。
+
+.步骤
+. 在浏览器中，输入 URL 以访问插件 Swagger 网页：
++
+`https://<appliance_IP_address_or_host_name>:8144/api/swagger-ui.html#`
+
++
+
+IMPORTANT: 请勿在 REST API URL 中使用以下字符： + ，。， % 和 & 。
+
++
+访问 SnapCenter VMware 插件 REST API ：
+
++
+`https://192.0.2.82:8144/api/swagger-ui.html#https://OVAhost:8144/api/swagger-ui.html#`
+
++
+登录使用 vCenter 身份验证机制生成令牌。
+
+. 单击 API 资源类型可显示该资源类型的 API 。
+

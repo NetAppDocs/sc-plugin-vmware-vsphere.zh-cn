@@ -1,0 +1,53 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_rest_api_workflows__attach_and_detach_vmdks.html 
+keywords:  
+summary:  
+---
+= 用于连接和断开 VMDK 的 REST API 工作流
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+要使用适用于 VMware vSphere 的 SnapCenter 插件 REST API 对 VMDK 执行连接和断开操作，您必须遵循规定的 REST API 调用顺序。
+
+对于每个 REST API ，在 REST API 的前面添加 `https://<server>:<port>` 以形成完整的端点。
+
+要连接 VMDK ，请按照以下工作流进行操作：
+
+|===
+| 步骤 | REST API | 注释 
+
+
+| 1. | 转至 `http://<vCenter-IP>/mob` | 从 VMware 受管对象 URL 中查找 VM moref 。记下要将 VMDK 连接到的虚拟机的 * moref* 。 
+
+
+| 2. | ` /4.1/VM/ ｛ moref ｝ / 备份` | `获取虚拟机备份` 获取指定虚拟机的备份列表。传递步骤 1 中的 * moref* 。记下要还原的备份的 * 备份 Id* 。 
+
+
+| 3. | ` /4.1/VM/ ｛ moref ｝ /backup/ ｛ backupId ｝ /vmdklocations` | `获取 VMDK 位置` 获取指定虚拟机的 VMDK 列表。传递步骤 2 中的 * 备份 Id* 和步骤 1 中的 * moref* 。请注意 * vmdkLocationsList* 信息。 
+
+
+| 4. | ` /4.1/VM/ ｛ moref ｝ /attvmdks` | `Attach VMDK` 将指定的 VMDK 连接到原始虚拟机。传递步骤 2 中的 * 备份 Id* 和步骤 1 中的 * moref* 。将步骤 3 中的 * vmdkLocationsList* 传递到 * vmdkLocations* 属性。* 注： * 要将 VMDK 附加到其他 VM ，请在 alternateVmMoref 属性中传递目标 VM 的 moref 。 
+|===
+要断开 VMDK ，请按照以下工作流进行操作：
+
+|===
+| 步骤 | REST API | 注释 
+
+
+| 1. | 转至 `http://<vCenter-IP>/mob` | 从 VMware 受管对象 URL 中查找 VM moref 。记下要断开 VMDK 的虚拟机的 * moref* 。 
+
+
+| 2. | ` /4.1/VM/ ｛ moref ｝ / 备份` | `获取虚拟机备份` 获取指定虚拟机的备份列表。传递步骤 1 中的 * moref* 。记下要还原的备份的 * 备份 Id* 。 
+
+
+| 3. | ` /4.1/VM/ ｛ moref ｝ /backup/ ｛ backupId ｝ /vmdklocations` | `获取 VMDK 位置` 获取指定虚拟机的 VMDK 列表。传递步骤 2 中的 * 备份 Id* 和步骤 1 中的 * moref* 。请注意 * vmdkLocationsList* 信息。 
+
+
+| 4. | ` /4.1/VM/ ｛ moref ｝ /detachvmdks` | `dVMDK` 断开指定的 VMDK 。传递步骤 1 中的 * moref* 。将 VMDK * vmdkLocationsList* 详细信息从步骤 3 传递到 * vmdksToDetach* 属性。 
+|===

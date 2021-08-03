@@ -1,0 +1,17 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_deployment_workflow_for_new_users.html 
+keywords:  
+summary:  
+---
+= 新用户的部署工作流
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+如果您之前未使用过 SnapCenter ，并且没有任何 SnapCenter 备份，请使用以下工作流开始操作。
+
+image:scpivs44_image2.png["错误：缺少图形映像"]

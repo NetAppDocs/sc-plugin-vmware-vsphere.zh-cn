@@ -1,0 +1,27 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_rest_apis_fail_stuck_jobs.html 
+keywords:  
+summary:  
+---
+= REST API ，用于将停滞的作业标记为失败
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+要使用适用于 VMware vSphere 的 SnapCenter 插件 REST API 查找 VMware vSphere Web Client 作业的作业 ID ，必须对 VMware vSphere 使用 REST API 调用。这些 REST API 已添加到适用于 VMware vSphere 的 SnapCenter 插件 4.4 中。
+
+对于每个 REST API ，在 REST API 的前面添加 `https://<server>:<port>` 以形成完整的端点。
+
+使用作业部分中的以下 REST API 将停留在运行状态的作业更改为失败状态：
+
+|===
+| REST API | 注释 
+
+
+| ` /4.1/Jobs/ ｛ id ｝ /failJobs` | 当您传递的作业 ID 停留在运行状态时， `failJobs` 会将这些作业标记为失败。要确定停留在运行状态的作业，请使用作业监控器图形用户界面查看每个作业的状态和作业 ID 。 
+|===

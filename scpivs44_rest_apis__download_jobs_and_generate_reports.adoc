@@ -1,0 +1,49 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_rest_apis__download_jobs_and_generate_reports.html 
+keywords:  
+summary:  
+---
+= 用于下载作业和生成报告的 REST API
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+要使用适用于 VMware vSphere 的 SnapCenter 插件 REST API 为 VMware vSphere Web Client 作业生成报告和下载日志，必须对 VMware vSphere 使用 REST API 调用。这些 REST API 已添加到适用于 VMware vSphere 的 SnapCenter 插件 4.4 中。
+
+对于每个 REST API ，在 REST API 的前面添加 `https://<server>:<port>` 以形成完整的端点。
+
+从适用于 VMware vSphere 4.4 的 SnapCenter 插件开始，请在作业部分中使用以下 REST API 来获取有关作业的详细信息：
+
+|===
+| REST API | 注释 
+
+
+| ` /4.1/Jobs` | `获取所有作业` 获取多个作业的作业详细信息。您可以通过指定作业类型缩小请求范围，例如 `backup` ， `mountBackup` 或 `restore` 。 
+
+
+| ` /4.1/jobs/｛ id ｝` | `获取作业详细信息` 获取指定作业的详细信息。 
+|===
+使用作业部分中的以下 REST API 下载作业日志：
+
+|===
+| REST API | 注释 
+
+
+| ` /4.1/jobs/｛ id ｝ /logs` | `getJobLogsById` 下载指定作业的日志。 
+|===
+使用报告部分中的以下 REST API 生成报告：
+
+|===
+| REST API | 注释 
+
+
+| `4.1/reports/protectedVM` | `Get protected VM List` 获取过去七天内受保护的 VM 的列表。 
+
+
+| ` /4.1/reports/unProtectedVM` | `获取未受保护的虚拟机列表` 获取过去七天内未受保护的虚拟机的列表。 
+|===

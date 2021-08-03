@@ -1,0 +1,35 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_back_up_resource_groups_on_demand.html 
+keywords:  
+summary:  
+---
+= 按需备份资源组
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+备份操作对资源组中定义的所有资源执行。如果资源组附加了策略并配置了计划，则会根据计划自动进行备份。
+
+您必须已创建附加了策略的资源组。
+
+
+IMPORTANT: 当用于备份 SnapCenter VMware 插件 MySQL 数据库的作业已在运行时，请勿启动按需备份作业。使用维护控制台查看为 MySQL 数据库配置的备份计划。
+
+在早期版本的 Virtual Storage Console （ VSC ）中，您可以执行按需备份，而无需为虚拟机或数据存储库配置备份作业。但是，对于 SnapCenter VMware 插件，虚拟机和数据存储库必须位于资源组中，然后才能执行备份。
+
+.步骤
+. 在 VMware vSphere Web Client 的左侧导航器窗格中，单击 * 资源组 * ，选择一个资源组，然后单击 image:scpivs44_image38.png["错误：缺少图形映像"] * 立即运行 * 以启动备份。
++
+image:scpivs44_image20.png["错误：缺少图形映像"]
+
+. 如果资源组配置了多个策略，则在 * 立即备份 * 对话框中，选择要用于此备份操作的策略。
+. 单击 * 确定 * 以启动备份。
+. 可选：有关详细信息，请单击窗口底部或信息板上的 * 近期任务 * 来监控操作进度。结果
+
+
+如果备份中任何 VM 的暂停操作失败，则备份完成后会显示警告，并标记为 VM 不一致，即使选定策略已选择 VM 一致性也是如此。在这种情况下，某些虚拟机可能已成功暂停。在作业监控器中，失败的虚拟机详细信息将显示暂停失败。

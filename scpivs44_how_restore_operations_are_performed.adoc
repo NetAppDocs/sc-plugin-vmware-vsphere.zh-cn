@@ -1,0 +1,43 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_how_restore_operations_are_performed.html 
+keywords:  
+summary:  
+---
+= 如何执行还原操作
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+对于 VMFS 环境，适用于 VMware vSphere 的 SnapCenter 插件使用 Storage VMotion 的克隆和挂载操作来执行还原操作。对于 NFS 环境，此插件使用原生 ONTAP 单文件 SnapRestore （ SFSR ）来提高大多数还原操作的效率。下表列出了如何执行还原操作。
+
+|===
+| 还原操作 | 在 NFS 环境中使用 ONTAP SFSR 执行 | 在 NFS 环境中使用克隆并使用 Storage VMotion 挂载来执行 | 在 VMFS 环境中使用克隆和 Storage VMotion 挂载来执行 
+
+
+| 从主备份还原 VM 和 VMDK | 是的。 |  | 是的。 
+
+
+| 从二级备份还原 VM 和 VMDK | 是的。 |  | 是的。 
+
+
+| 从主备份还原已删除的 VM 和 VMDK | 是的。 |  | 是的。 
+
+
+| 从二级备份还原已删除的 VM 和 VMDK |  | 是的。 | 是的。 
+
+
+| 从 VM 一致的主备份还原 VM 和 VMDK | 是的。 |  | 是的。 
+
+
+| 从 VM 一致的二级备份还原 VM 和 VMDK |  | 是的。 | 是的。 
+|===
+子系统文件还原操作可在 NFS 和 VMFS 环境中使用克隆和挂载操作（而不是 Storage VMotion ）来执行。
+
+
+IMPORTANT: 在还原操作期间，在选择控制器… 上调用预还原时，可能会遇到错误 `Host unresolved volumes is null` or `exception 。将克隆的 LUN 挂载为数据存储库时出错…` 如果 SnapCenter VMware 插件尝试重新对克隆签名，则会发生这种情况。由于 VMware 的限制， SnapCenter VMware 插件无法控制高级 ESXi 配置中的自动重新签名值。
+
+有关此错误的详细信息，请参见 ｛ link-for-underscores ｝ ｛ 知识库文章： SCV 克隆或还原失败，并显示错误 " 主机未解析的卷为空^ 。
