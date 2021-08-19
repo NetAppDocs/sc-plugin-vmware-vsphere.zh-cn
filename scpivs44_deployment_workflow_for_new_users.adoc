@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_deployment_workflow_for_new_users.html 
 keywords:  
-summary:  
+summary: 如果您之前未使用过 SnapCenter ，并且没有任何 SnapCenter 备份，则可以使用此工作流。 
 ---
 = 新用户的部署工作流
 :hardbreaks:

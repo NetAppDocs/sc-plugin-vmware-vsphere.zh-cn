@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_rest_api_workflows__modify_built-in_schedules.html 
 keywords:  
-summary:  
+summary: 要使用适用于 VMware vSphere 的 SnapCenter 插件 REST API 修改 VMware vSphere Web Client 作业的内置计划，您必须按照规定的 REST API 调用顺序进行操作。 
 ---
 = 用于修改内置计划的 REST API 工作流
 :hardbreaks:

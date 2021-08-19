@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_download_job_logs.html 
 keywords:  
-summary:  
+summary: 您可以从 SnapCenter VMware vSphere Web Client 的信息板上的作业监控选项卡下载作业日志。 
 ---
 = 下载作业日志
 :hardbreaks:

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_restore_deleted_vms_from_backups.html 
 keywords:  
-summary:  
+summary: 您可以将已删除的虚拟机从数据存储库主备份或二级备份还原到所选的 ESXi 主机。 
 ---
 = 从备份中还原已删除的 VM
 :hardbreaks:

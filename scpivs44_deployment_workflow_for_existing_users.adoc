@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_deployment_workflow_for_existing_users.html 
 keywords:  
-summary:  
+summary: 如果您是 SnapCenter 用户并具有 SnapCenter 备份，则可以使用此工作流。 
 ---
 = 现有用户的部署工作流
 :hardbreaks:

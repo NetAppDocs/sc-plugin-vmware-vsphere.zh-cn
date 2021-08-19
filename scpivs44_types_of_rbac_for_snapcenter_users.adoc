@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_types_of_rbac_for_snapcenter_users.html 
 keywords:  
-summary:  
+summary: 如果您使用的是适用于 VMware vSphere 的 SnapCenter 插件，则 vCenter Server 会提供一个额外级别的 RBAC 。此插件同时支持 vCenter Server RBAC 和 ONTAP RBAC 。 
 ---
 = 适用于 VMware vSphere 的 SnapCenter 插件用户的 RBAC 类型
 :hardbreaks:
@@ -12,6 +12,7 @@ summary:
 :imagesdir: ./media/
 
 
+[role="lead"]
 如果您使用的是适用于 VMware vSphere 的 SnapCenter 插件，则 vCenter Server 会提供一个额外级别的 RBAC 。此插件同时支持 vCenter Server RBAC 和 ONTAP RBAC 。
 
 

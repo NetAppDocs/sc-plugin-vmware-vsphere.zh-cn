@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_guest_file_restore_scenarios_you_might_encounter.html 
 keywords:  
-summary:  
+summary: 尝试还原子文件时，可能会遇到以下情形：子文件还原会话为空，子文件还原连接磁盘操作失败或在子文件还原会话中断后备份未断开。 
 ---
 = 可能会遇到的子系统文件还原情形
 :hardbreaks:

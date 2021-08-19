@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_manage_your_configuration.html 
 keywords:  
-summary:  
+summary: 您需要使用适用于 VMware vSphere 的 SnapCenter 插件管理 GUI 更新虚拟设备配置，其中包括 vCenter 凭据，虚拟设备凭据和备份时区。 
 ---
 = 管理您的配置
 :hardbreaks:
@@ -45,7 +45,7 @@ image:scpivs44_image28.jpg["错误：缺少图形映像"]
 
 
 
-== 修改适用于 VMware vSphere 的 SnapCenter 插件的登录凭据
+== 修改登录凭据
 
 您可以修改适用于 VMware vSphere 的 SnapCenter 插件管理 GUI 的登录凭据。
 
@@ -73,7 +73,7 @@ image:scpivs44_image28.jpg["错误：缺少图形映像"]
 
 
 
-== 在适用于 VMware vSphere 的 SnapCenter 插件中修改 vCenter 登录凭据
+== 修改 vCenter 登录凭据
 
 您可以修改在适用于 VMware vSphere 的 SnapCenter 插件中配置的 vCenter 登录凭据。插件使用这些设置访问 vCenter 。
 

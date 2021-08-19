@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_rest_api_workflow__restore_vmdks.html 
 keywords:  
-summary:  
+summary: 要使用适用于 VMware vSphere 的 SnapCenter 插件 REST API 对 VMDK 执行还原操作，您必须遵循规定的 REST API 调用顺序。 
 ---
 = 用于还原 VMDK 的 REST API 工作流
 :hardbreaks:
@@ -13,7 +13,7 @@ summary:
 
 
 [role="lead"]
-要使用适用于 VMware vSphere 的 SnapCenter 插件 REST API 对 VMDK 执行还原操作，必须遵循下表所示的预定 REST API 调用顺序。
+要使用适用于 VMware vSphere 的 SnapCenter 插件 REST API 对 VMDK 执行还原操作，您必须遵循规定的 REST API 调用顺序。
 
 对于每个 REST API ，在 REST API 的前面添加 `https://<server>:<port>` 以形成完整的端点。
 
@@ -39,5 +39,12 @@ summary:
 | 6. | ` /4.1/VM/ ｛ moref ｝ /backup/ availableesxhosts` | `获取可用 ESX 主机` 获取存储备份的主机的信息。传递步骤 1 中的 * moref* 。请注意 * 可用的 EssxHostsList* 信息。 
 
 
-| 7. | ` /4.1/VM/ ｛ moref ｝ /backup/ ｛ backupId ｝ /restorevmdks` | `从备份还原 VMDK` 从指定备份还原指定的 VMDK 。在 * esxHost* 属性中，传递步骤 6 中 * availableEssxHostsList* 中的信息。将步骤 3 到 5 中的信息传递到 * vmdkRestoreLocations* 属性： * 在 restoreFromLocation 属性中，传递步骤 3 中 snapshotLocationsList 中的信息。* 在 vmdkToRestore 属性中，传递步骤 4 中 vmdkLocationsList 中的信息。* 在 restoreToDatastore 属性中，传递步骤 5 中 DatastoreNameList 中的信息。 
+| 7. | ` /4.1/VM/ ｛ moref ｝ /backup/ ｛ backupId ｝ /restorevmdks`  a| 
+`从备份还原 VMDK` 从指定备份还原指定的 VMDK 。在 * esxHost* 属性中，传递步骤 6 中 * availableEssxHostsList* 中的信息。将步骤 3 到 5 中的信息传递到 * vmdkRestoreLocations* 属性：
+
+* 在 restoreFromLocation 属性中，传递步骤 3 中 snapshotLocationsList 中的信息。
+* 在 vmdkToRestore 属性中，传递步骤 4 中 vmdkLocationsList 中的信息。
+* 在 restoreToDatastore 属性中，传递步骤 5 中 DatastoreNameList 中的信息。
+
+
 |===

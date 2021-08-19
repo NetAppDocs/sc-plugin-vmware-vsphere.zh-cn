@@ -43,7 +43,14 @@ NOTE: 对于 IPv6 HTML Web 客户端，必须使用 Chrome 或 Firefox 。
 | 选择网络 | 选择一个源网络并将其映射到一个目标网络。 
 
 
-| 自定义模板 | 在 * 注册到现有 vCenter * 中，输入 vCenter 凭据。在 * 创建适用于 VMware vSphere 的 SnapCenter 插件凭据 * 中，输入适用于 VMware vSphere 的 SnapCenter 插件凭据。* 注意： * 记下您指定的用户名和密码。如果要稍后修改适用于 VMware vSphere 的 SnapCenter 插件配置，则需要使用这些凭据。在 * 设置网络属性 * 中，输入网络信息。在 * 设置日期和时间 * 中，选择 vCenter 所在的时区。 
+| 自定义模板  a| 
+在 * 注册到现有 vCenter * 中，输入 vCenter 凭据。在 * 创建适用于 VMware vSphere 的 SnapCenter 插件凭据 * 中，输入适用于 VMware vSphere 的 SnapCenter 插件凭据。
+
+
+NOTE: 记下您指定的用户名和密码。如果要稍后修改适用于 VMware vSphere 的 SnapCenter 插件配置，则需要使用这些凭据。
+
+在 * 设置网络属性 * 中，输入网络信息。在 * 设置日期和时间 * 中，选择 vCenter 所在的时区。
+
 
 
 | 准备完成 | 查看此页面，然后单击 * 完成 * 。 

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_information_not_displayed_after_upgrading_to_a_new_patch_of_the_same_release.html 
 keywords:  
-summary:  
+summary: 将适用于 VMware vSphere 的 SnapCenter 插件升级到同一版本的新修补程序后，信息板和作业监控器中可能不会显示最近的作业或其他信息。 
 ---
 = 升级到同一版本的新修补程序后，不会显示信息
 :hardbreaks:

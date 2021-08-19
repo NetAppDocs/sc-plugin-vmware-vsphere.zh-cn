@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_back_up_the_snapcenter_plug-in_for_vmware_vsphere_mysql_database.html 
 keywords:  
-summary:  
+summary: SnapCenter VMware 插件包括一个 MySQL 数据库（也称为 NSM 数据库），其中包含该插件执行的所有作业的元数据。您应定期备份此存储库。 
 ---
 = 备份适用于 VMware vSphere 的 SnapCenter 插件 MySQL 数据库
 :hardbreaks:

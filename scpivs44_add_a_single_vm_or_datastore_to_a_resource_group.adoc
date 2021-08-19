@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_add_a_single_vm_or_datastore_to_a_resource_group.html 
 keywords:  
-summary:  
+summary: 您可以将单个虚拟机或数据存储库快速添加到适用于 VMware vSphere 的 SnapCenter 插件管理的任何现有资源组中。 
 ---
 = 将单个虚拟机或数据存储库添加到资源组
 :hardbreaks:

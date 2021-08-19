@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_role_based_access_control.html 
 keywords:  
-summary:  
+summary: 适用于 VMware vSphere 的 SnapCenter 插件为管理虚拟化资源提供了一个额外级别的 RBAC 。此插件同时支持 vCenter Server RBAC 和 Data ONTAP RBAC 。 
 ---
 = 基于角色的访问控制（ Role-Based Access Control ， RBAC ）
 :hardbreaks:
@@ -12,6 +12,7 @@ summary:
 :imagesdir: ./media/
 
 
+[role="lead"]
 适用于 VMware vSphere 的 SnapCenter 插件为管理虚拟化资源提供了一个额外级别的 RBAC 。此插件同时支持 vCenter Server RBAC 和 Data ONTAP RBAC 。
 
 SnapCenter 和 ONTAP RBAC 仅适用于 SnapCenter 服务器应用程序一致（基于 VMDK 的应用程序）作业。如果您使用 SnapCenter VMware 插件支持 SnapCenter 应用程序一致的作业，则必须分配 SnapCenterAdmin 角色；您不能更改 SnapCenterAdmin 角色的权限。

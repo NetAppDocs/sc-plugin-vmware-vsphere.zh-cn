@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_upgrade_to_a_new_patch.html 
 keywords:  
-summary:  
+summary: 如果要升级到同一版本的新修补程序，则必须清除 vCenter Web Server 上适用于 VMware vSphere 的 SnapCenter 插件缓存，并在升级或注册之前重新启动服务器。 
 ---
 = 升级到适用于 VMware vSphere 的同一版本 SnapCenter 插件的新修补程序
 :hardbreaks:

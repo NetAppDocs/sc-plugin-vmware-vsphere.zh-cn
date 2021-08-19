@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: scpivs44_upgrade.html 
 keywords:  
-summary:  
+summary: 如果您使用的是适用于 VMware vSphere 的 SnapCenter 插件虚拟设备，则可以升级到更高版本。 
 ---
-= 升级
+= 从适用于 VMware vSphere 的 SnapCenter 插件的早期版本升级
 :hardbreaks:
 :nofooter: 
 :icons: font
@@ -15,15 +15,7 @@ summary:
 [role="lead"]
 如果您使用的是适用于 VMware vSphere 的 SnapCenter 插件虚拟设备，则可以升级到更高版本。
 
-
-
-== 支持的升级路径
-
-请参见 link:scpivs44_release_notes.html["适用于 VMware vSphere 的 SnapCenter 插件发行说明"] 有关支持的升级和迁移路径的信息。
-
-
-
-== 从适用于 VMware vSphere 的 SnapCenter 插件的早期版本升级
+请参见 link:scpivs44_release_notes.html["适用于 VMware vSphere 的 SnapCenter 插件发行说明"] 有关支持的升级路径的信息。
 
 
 TIP: 在开始升级之前，请备份适用于 VMware vSphere 的 SnapCenter 插件 OVA 。

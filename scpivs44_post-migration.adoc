@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_post-migration.html 
 keywords:  
-summary:  
+summary: 将备份元数据迁移到适用于 VMware vSphere 的 SnapCenter 插件后可能会遇到的问题。 
 ---
 = 迁移后
 :hardbreaks:
@@ -11,6 +11,9 @@ summary:
 :linkattrs: 
 :imagesdir: ./media/
 
+
+[role="lead"]
+将备份元数据迁移到适用于 VMware vSphere 的 SnapCenter 插件后可能会遇到的问题。
 
 * 迁移日志包
 +

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_back_up_resource_groups_on_demand.html 
 keywords:  
-summary:  
+summary: 备份操作对资源组中定义的所有资源执行。如果资源组附加了策略并配置了计划，则会根据计划自动进行备份。 
 ---
 = 按需备份资源组
 :hardbreaks:

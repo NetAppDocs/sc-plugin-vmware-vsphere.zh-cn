@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_post_deployment_required_operations_and_issues.html 
 keywords:  
-summary:  
+summary: 部署适用于 VMware vSphere 的 SnapCenter 插件后，您必须完成安装。 
 ---
 = 部署后需要执行的操作和出现的问题
 :hardbreaks:

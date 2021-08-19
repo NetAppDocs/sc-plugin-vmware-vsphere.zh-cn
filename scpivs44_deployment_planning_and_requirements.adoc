@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_deployment_planning_and_requirements.html 
 keywords:  
-summary:  
+summary: 在部署虚拟设备之前，您应了解部署要求。 
 ---
 = 部署规划和要求
 :hardbreaks:
@@ -12,6 +12,7 @@ summary:
 :imagesdir: ./media/
 
 
+[role="lead"]
 在部署虚拟设备之前，您应了解部署要求。以下四个表列出了部署要求。
 
 
@@ -182,7 +183,13 @@ vCenter 管理员帐户必须具有所需的 vCenter 权限，如下表所示。
 | 在 vCenter 中部署和注册适用于 VMware vSphere 的 SnapCenter 插件 | 扩展：注册扩展 
 
 
-| 升级或删除适用于 VMware vSphere 的 SnapCenter 插件 | 扩展 * 更新扩展 * 取消注册扩展 
+| 升级或删除适用于 VMware vSphere 的 SnapCenter 插件  a| 
+扩展
+
+* 更新扩展
+* 取消注册扩展
+
+
 
 
 | 允许在 SnapCenter 中注册的 vCenter 凭据用户帐户验证用户对适用于 VMware vSphere 的 SnapCenter 插件的访问权限 | sessions.validate.session 

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_remove_plugin.html 
 keywords:  
-summary:  
+summary: 如果您不再需要使用 SnapCenter 数据保护功能，则必须禁用 SnapCenter VMware 插件才能从 vCenter 中将其注销，然后从 vCenter 中删除 SnapCenter VMware 插件，然后手动删除剩余文件。 
 ---
 = 删除适用于 VMware vSphere 的 SnapCenter 插件
 :hardbreaks:

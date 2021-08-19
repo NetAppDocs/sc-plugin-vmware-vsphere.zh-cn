@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_how_restore_operations_are_performed.html 
 keywords:  
-summary:  
+summary: 对于 VMFS 环境，适用于 VMware vSphere 的 SnapCenter 插件使用 Storage VMotion 的克隆和挂载操作来执行还原操作。对于 NFS 环境，此插件使用原生 ONTAP 单文件 SnapRestore （ SFSR ）来提高大多数还原操作的效率。 
 ---
 = 如何执行还原操作
 :hardbreaks:

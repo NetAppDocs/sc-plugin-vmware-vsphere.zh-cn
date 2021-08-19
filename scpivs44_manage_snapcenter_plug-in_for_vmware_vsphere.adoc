@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_manage_snapcenter_plug-in_for_vmware_vsphere.html 
 keywords:  
-summary:  
+summary: 您需要使用适用于 VMware vSphere 的 SnapCenter 插件管理 GUI 停止，禁用或启用适用于 VMware vSphere 的 SnapCenter 插件设备。 
 ---
 = 管理适用于 VMware vSphere 的 SnapCenter 插件
 :hardbreaks:

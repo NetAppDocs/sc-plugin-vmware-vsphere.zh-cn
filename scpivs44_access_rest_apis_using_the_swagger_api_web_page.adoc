@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_access_rest_apis_using_the_swagger_api_web_page.html 
 keywords:  
-summary:  
+summary: REST API 通过 Swagger 网页公开。您可以访问 Swagger 网页以显示适用于 VMware vSphere 的 SnapCenter 服务器或 SnapCenter 插件 REST API ，并手动对 API 调用执行问题描述操作。您可以使用适用于 VMware vSphere 的 SnapCenter 插件 REST API 对 VM 和数据存储库执行保护操作。 
 ---
 = 使用 Swagger API 网页访问 REST API
 :hardbreaks:

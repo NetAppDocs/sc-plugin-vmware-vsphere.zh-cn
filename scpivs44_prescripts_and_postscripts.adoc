@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_prescripts_and_postscripts.html 
 keywords:  
-summary:  
+summary: 您可以在数据保护操作中使用自定义预处理和后处理脚本。这些脚本可以在数据保护作业之前或之后启用自动化。 
 ---
 = 预处理脚本和后处理脚本
 :hardbreaks:

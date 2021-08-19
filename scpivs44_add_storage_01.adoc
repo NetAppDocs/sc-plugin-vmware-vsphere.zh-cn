@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_add_storage_01.html 
 keywords:  
-summary:  
+summary: 通过添加存储，适用于 VMware vSphere 的 SnapCenter 插件可以识别和管理 vCenter 中的备份和还原操作。 
 ---
 = 添加存储
 :hardbreaks:

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_migration_overview.html 
 keywords:  
-summary:  
+summary: migration 命令仅从 SnapCenter 4.0 及更高版本迁移元数据。如果您使用的是早期版本的 SnapCenter ，则必须先升级，然后才能进行迁移。 
 ---
 = 迁移概述
 :hardbreaks:

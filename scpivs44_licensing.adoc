@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_licensing.html 
 keywords:  
-summary:  
+summary: 本节提供适用于 VMware vSphere 的 SnapCenter 插件的许可信息。 
 ---
 = 许可
 :hardbreaks:

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_log_in_to_the_snapcenter_vmware_vsphere_web_client.html 
 keywords:  
-summary:  
+summary: 部署适用于 VMware vSphere 的 SnapCenter 插件后，它会在 vCenter 上安装 VMware vSphere Web 客户端，此客户端会与其他 vSphere Web 客户端一起显示在 vCenter 屏幕上。 
 ---
 = 登录到 SnapCenter VMware vSphere Web Client
 :hardbreaks:

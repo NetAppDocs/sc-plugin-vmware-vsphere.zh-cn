@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_restore_vms_from_backups.html 
 keywords:  
-summary:  
+summary: 还原虚拟机时，您可以使用所选的备份副本覆盖现有内容，也可以创建虚拟机的副本。 
 ---
 = 从备份还原 VM
 :hardbreaks:

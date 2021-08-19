@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_rest_apis__download_jobs_and_generate_reports.html 
 keywords:  
-summary:  
+summary: 要使用适用于 VMware vSphere 的 SnapCenter 插件 REST API 为 VMware vSphere Web Client 作业生成报告和下载日志，必须对 VMware vSphere 使用 REST API 调用。 
 ---
 = 用于下载作业和生成报告的 REST API
 :hardbreaks:

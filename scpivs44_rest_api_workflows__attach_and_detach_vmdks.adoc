@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_rest_api_workflows__attach_and_detach_vmdks.html 
 keywords:  
-summary:  
+summary: 要使用适用于 VMware vSphere 的 SnapCenter 插件 REST API 对 VMDK 执行连接和断开操作，您必须遵循规定的 REST API 调用顺序。 
 ---
 = 用于连接和断开 VMDK 的 REST API 工作流
 :hardbreaks:
@@ -32,7 +32,12 @@ summary:
 | 3. | ` /4.1/VM/ ｛ moref ｝ /backup/ ｛ backupId ｝ /vmdklocations` | `获取 VMDK 位置` 获取指定虚拟机的 VMDK 列表。传递步骤 2 中的 * 备份 Id* 和步骤 1 中的 * moref* 。请注意 * vmdkLocationsList* 信息。 
 
 
-| 4. | ` /4.1/VM/ ｛ moref ｝ /attvmdks` | `Attach VMDK` 将指定的 VMDK 连接到原始虚拟机。传递步骤 2 中的 * 备份 Id* 和步骤 1 中的 * moref* 。将步骤 3 中的 * vmdkLocationsList* 传递到 * vmdkLocations* 属性。* 注： * 要将 VMDK 附加到其他 VM ，请在 alternateVmMoref 属性中传递目标 VM 的 moref 。 
+| 4. | ` /4.1/VM/ ｛ moref ｝ /attvmdks`  a| 
+`Attach VMDK` 将指定的 VMDK 连接到原始虚拟机。传递步骤 2 中的 * 备份 Id* 和步骤 1 中的 * moref* 。将步骤 3 中的 * vmdkLocationsList* 传递到 * vmdkLocations* 属性。
+
+
+NOTE: 要将 VMDK 连接到其他虚拟机，请在 alternateVmMoref 属性中传递目标虚拟机的 moref 。
+
 |===
 要断开 VMDK ，请按照以下工作流进行操作：
 

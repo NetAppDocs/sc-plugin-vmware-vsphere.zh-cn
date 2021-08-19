@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_detach_a_virtual_disk.html 
 keywords:  
-summary:  
+summary: 在连接虚拟磁盘以还原单个文件后，您可以将虚拟磁盘与父虚拟机断开。 
 ---
 = 断开虚拟磁盘
 :hardbreaks:

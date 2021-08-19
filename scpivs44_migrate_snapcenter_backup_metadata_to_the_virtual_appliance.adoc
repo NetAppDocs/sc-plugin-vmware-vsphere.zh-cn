@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_migrate_snapcenter_backup_metadata_to_the_virtual_appliance.html 
 keywords:  
-summary:  
+summary: 您可以使用 SnapCenter Windows PowerShell cmdlet 将适用于虚拟化数据备份元数据的 SnapCenter VM 一致备份元数据和 SnapCenter 应用程序一致的 SnapCenter 迁移到适用于 VMware vSphere 的 插件虚拟设备。 
 ---
 = 迁移基于 Windows 的 SnapCenter VMware 备份元数据
 :hardbreaks:

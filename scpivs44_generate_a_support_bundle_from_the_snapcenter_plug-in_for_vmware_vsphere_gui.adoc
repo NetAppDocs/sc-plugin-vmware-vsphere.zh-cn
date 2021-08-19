@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_generate_a_support_bundle_from_the_snapcenter_plug-in_for_vmware_vsphere_gui.html 
 keywords:  
-summary:  
+summary: 您可以从适用于 VMware vSphere 的 SnapCenter 插件 GUI 生成支持包。 
 ---
 = 从适用于 VMware vSphere 的 SnapCenter 插件 GUI 生成支持包
 :hardbreaks:

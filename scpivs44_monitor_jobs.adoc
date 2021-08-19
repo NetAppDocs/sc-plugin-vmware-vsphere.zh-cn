@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_monitor_jobs.html 
 keywords:  
-summary:  
+summary: 使用 VMware vSphere Web Client 执行任何数据保护操作后，您可以从信息板中的作业监控选项卡监控作业状态并查看作业详细信息。 
 ---
 = 监控作业
 :hardbreaks:

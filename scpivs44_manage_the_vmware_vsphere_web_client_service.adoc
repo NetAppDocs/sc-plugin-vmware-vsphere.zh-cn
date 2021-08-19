@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_manage_the_vmware_vsphere_web_client_service.html 
 keywords:  
-summary:  
+summary: 如果 SnapCenter VMware vSphere Web Client 行为不正确，您可能需要清除浏览器缓存。如果此问题仍然存在，请重新启动 VMware vSphere Web Client 服务。 
 ---
 = 重新启动 VMware vSphere Web Client 服务
 :hardbreaks:

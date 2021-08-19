@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_download_the_ova_open_virtual_appliance.html 
 keywords:  
-summary:  
+summary: ova 文件包含一组用于 VM 和数据存储库数据保护的微服务，这些服务由适用于 VMware vSphere 的 SnapCenter 插件执行。 
 ---
 = 下载 OVA （开放式虚拟设备）
 :hardbreaks:

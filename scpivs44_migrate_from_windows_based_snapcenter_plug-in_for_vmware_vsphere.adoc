@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_migrate_from_windows_based_snapcenter_plug-in_for_vmware_vsphere.html 
 keywords:  
-summary:  
+summary: 如果您使用的是基于 Windows 的 SnapCenter VMware 插件，并且希望使用适用于 VMware vSphere 的 SnapCenter 插件虚拟设备提供的功能，则必须部署虚拟设备并迁移备份元数据。 
 ---
 = 从适用于 VMware vSphere 的基于 Windows 的 SnapCenter 插件迁移
 :hardbreaks:

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_view_vm_and_datastore_backups.html 
 keywords:  
-summary:  
+summary: 在准备备份或还原虚拟机或数据存储库时，您可能希望查看可用于该资源的所有备份并查看这些备份的详细信息。 
 ---
 = 查看虚拟机和数据存储库备份
 :hardbreaks:

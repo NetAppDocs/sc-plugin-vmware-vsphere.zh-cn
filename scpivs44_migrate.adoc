@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: scpivs44_migrate.html 
 keywords:  
-summary:  
+summary: 您可以使用 SnapCenter Windows PowerShell cmdlet 将适用于 VMware vSphere 的 SnapCenter 插件元数据从基于 Windows 的 SnapCenter 服务器迁移到基于 Linux 的适用于 VMware vSphere 的 SnapCenter 插件虚拟设备。 
 ---
-= 迁移选项
+= 迁移选项和支持的路径
 :hardbreaks:
 :nofooter: 
 :icons: font
@@ -14,6 +14,10 @@ summary:
 
 [role="lead"]
 您可以使用 SnapCenter Windows PowerShell cmdlet 将适用于 VMware vSphere 的 SnapCenter 插件元数据从基于 Windows 的 SnapCenter 服务器迁移到基于 Linux 的适用于 VMware vSphere 的 SnapCenter 插件虚拟设备。
+
+
+
+== 迁移选项
 
 迁移选项有两种：
 
@@ -46,6 +50,6 @@ summary:
 
 
 
-= 支持的迁移路径
+== 支持的迁移路径
 
 请参见 link:scpivs44_release_notes.html["适用于 VMware vSphere 的 SnapCenter 插件发行说明"^] 有关支持的升级和迁移路径的信息。

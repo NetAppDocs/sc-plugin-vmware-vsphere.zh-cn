@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_register_snapcenter_plugin_vmware_vsphere_with_snapcenter_server.html 
 keywords:  
-summary:  
+summary: 如果要在 SnapCenter 中执行基于 VMDK 的应用程序工作流（适用于虚拟化数据库和文件系统的基于应用程序的保护工作流），则必须向 SnapCenter 服务器注册适用于 VMware vSphere 的 SnapCenter 插件。 
 ---
 = 向 SnapCenter 服务器注册适用于 VMware vSphere 的 SnapCenter 插件
 :hardbreaks:
@@ -12,6 +12,7 @@ summary:
 :imagesdir: ./media/
 
 
+[role="lead"]
 如果要在 SnapCenter 中执行基于 VMDK 的应用程序工作流（适用于虚拟化数据库和文件系统的基于应用程序的保护工作流），则必须向 SnapCenter 服务器注册适用于 VMware vSphere 的 SnapCenter 插件。
 
 如果您是 SnapCenter 用户，并且已升级到 SnapCenter 4.2 并将应用程序基于 VMDK 的备份迁移到适用于 VMware 的 SnapCenter 插件，则迁移命令会自动注册此插件。

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_customize_your_configuration.html 
 keywords:  
-summary:  
+summary: 要提高操作效率，您可以修改 scbr.override 配置文件以更改默认值。这些值控制备份期间创建或删除的 VMware 快照数量或备份脚本停止运行之前的时间等设置。 
 ---
 = 自定义配置
 :hardbreaks:

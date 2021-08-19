@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_rest_api_workflows__mount_and_unmount_datastores.html 
 keywords:  
-summary:  
+summary: 要使用适用于 VMware vSphere 的 SnapCenter 插件 REST API 对数据存储库备份执行挂载和卸载操作，您必须遵循规定的 REST API 调用顺序。 
 ---
 = 用于挂载和卸载数据存储库的 REST API 工作流
 :hardbreaks:

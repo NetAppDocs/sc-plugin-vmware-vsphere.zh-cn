@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_generate_a_support_bundle_from_the_maintenance_console.html 
 keywords:  
-summary:  
+summary: 您可以从维护控制台生成支持包。 
 ---
 = 从维护控制台生成支持包
 :hardbreaks:

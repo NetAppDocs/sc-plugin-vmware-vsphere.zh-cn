@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_prerequisites_for_migration.html 
 keywords:  
-summary:  
+summary: 在迁移到适用于 VMware vSphere 的 SnapCenter 插件之前，请确保满足所有前提条件。 
 ---
 = 迁移的前提条件
 :hardbreaks:
@@ -11,6 +11,9 @@ summary:
 :linkattrs: 
 :imagesdir: ./media/
 
+
+[role="lead"]
+在迁移到适用于 VMware vSphere 的 SnapCenter 插件之前，请确保满足所有前提条件。
 
 * 您必须运行 SnapCenter 服务器 4.2 或更高版本。
 * 您必须使用管理员凭据。

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_download_the_snapcenter_plug-in_for_vmware_vsphere_ova_open_virtual_appliance.html 
 keywords:  
-summary:  
+summary: 您可以从 NetApp 支持站点下载适用于 VMware vSphere 的 SnapCenter 插件的 .ova 文件。 
 ---
 = 下载适用于 VMware vSphere OVA 的 SnapCenter 插件（开放式虚拟设备）
 :hardbreaks:

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_concepts_overview.html 
 keywords:  
-summary:  
+summary: 适用于 VMware vSphere 的 SnapCenter 插件是一种独立虚拟设备（开放式虚拟设备格式），可为 VM 和数据存储库提供数据保护服务，并支持为基于 SnapCenter 应用程序的插件提供数据保护服务。本文档介绍如何部署和使用适用于 VMware vSphere 的 SnapCenter 插件，并提供了快速入门信息。 
 ---
 = 产品概述
 :hardbreaks:

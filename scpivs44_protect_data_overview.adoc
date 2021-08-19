@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_protect_data_overview.html 
 keywords:  
-summary:  
+summary: 所有备份操作都对资源组执行，该资源组可以包含一个或多个虚拟机和数据存储库的任意组合。您可以按需备份，也可以根据定义的保护计划进行备份。 
 ---
 = 数据保护工作流
 :hardbreaks:
@@ -12,6 +12,7 @@ summary:
 :imagesdir: ./media/
 
 
+[role="lead"]
 使用 SnapCenter vSphere Web 客户端对 VM ， VMDK 和数据存储库执行数据保护操作。所有备份操作都对资源组执行，该资源组可以包含一个或多个虚拟机和数据存储库的任意组合。您可以按需备份，也可以根据定义的保护计划进行备份。
 
 备份数据存储库时，您将备份该数据存储库中的所有 VM 。

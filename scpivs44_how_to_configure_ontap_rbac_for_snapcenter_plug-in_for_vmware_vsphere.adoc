@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_how_to_configure_ontap_rbac_for_snapcenter_plug-in_for_vmware_vsphere.html 
 keywords:  
-summary:  
+summary: ONTAP RBAC 仅适用于 SnapCenter 服务器应用程序一致（基于 VMDK 的应用程序）作业。 
 ---
 = 如何为适用于 VMware vSphere 的 SnapCenter 插件配置 ONTAP RBAC
 :hardbreaks:

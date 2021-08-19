@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_overview_of_different_snapcenter_guis.html 
 keywords:  
-summary:  
+summary: 适用于 VMware vSphere 的 SnapCenter 插件是一个独立插件，与其他 SnapCenter 插件不同。您必须在 vCenter 中使用 VMware vSphere Web Client GUI 执行 VM ， VMDK 和数据存储库的所有备份和还原操作。 
 ---
 = 不同 SnapCenter GUI 的概述
 :hardbreaks:
@@ -12,7 +12,8 @@ summary:
 :imagesdir: ./media/
 
 
-在 SnapCenter 环境中，您必须使用相应的图形用户界面执行数据保护和管理操作，如下表所示。
+[role="lead"]
+在 SnapCenter 环境中，您必须使用相应的图形用户界面执行数据保护和管理操作。
 
 适用于 VMware vSphere 的 SnapCenter 插件是一个独立插件，与其他 SnapCenter 插件不同。您必须在 vCenter 中使用 VMware vSphere Web Client GUI 执行 VM ， VMDK 和数据存储库的所有备份和还原操作。您还可以使用 Web 客户端 GUI 信息板监控受保护和未受保护的 VM 列表。对于所有其他 SnapCenter 插件（基于应用程序的插件），您可以使用 SnapCenter 图形用户界面进行备份和还原操作以及作业监控。
 

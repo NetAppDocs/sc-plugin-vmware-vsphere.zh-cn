@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_add_multiple_vms_and_datastores_to_a_resource_group.html 
 keywords:  
-summary:  
+summary: 您可以使用 SnapCenter VMware vSphere Web 客户端的编辑资源组向导向任何现有资源组添加多个 VM 和数据存储库。 
 ---
 = 将多个 VM 和数据存储库添加到一个资源组
 :hardbreaks:

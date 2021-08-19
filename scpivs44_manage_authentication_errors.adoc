@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_manage_authentication_errors.html 
 keywords:  
-summary:  
+summary: 如果不使用管理员凭据，则在部署适用于 VMware vSphere 的 SnapCenter 插件后或迁移后，可能会收到身份验证错误。如果遇到身份验证错误，则必须重新启动此服务。 
 ---
 = 管理身份验证错误
 :hardbreaks:

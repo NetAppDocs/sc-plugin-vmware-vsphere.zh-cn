@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_restore_a_specific_backup_of_the_mysql_database.html 
 keywords:  
-summary:  
+summary: 您可以使用维护控制台还原适用于 VMware vSphere 的 SnapCenter 插件虚拟设备的 MySQL 数据库（也称为 NSM 数据库）的特定备份。 
 ---
 = 还原 MySQL 数据库的特定备份
 :hardbreaks:

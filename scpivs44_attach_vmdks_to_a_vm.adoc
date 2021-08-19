@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_attach_vmdks_to_a_vm.html 
 keywords:  
-summary:  
+summary: 您可以将一个或多个 VMDK 从备份连接到父虚拟机，同一 ESXi 主机上的备用虚拟机，或者连接到由同一 vCenter 或不同 vCenter 以链接模式管理的备用 ESXi 主机上的备用虚拟机。 
 ---
 = 将 VMDK 连接到虚拟机
 :hardbreaks:

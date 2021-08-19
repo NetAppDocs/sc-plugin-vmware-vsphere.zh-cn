@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_create_resource_groups_for_vms_and_datastores.html 
 keywords:  
-summary:  
+summary: 资源组是要保护的一个或多个 VM 或数据存储库的容器。 
 ---
 = 为 VM 和数据存储库创建资源组
 :hardbreaks:
@@ -104,10 +104,22 @@ image:scpivs44_image16.png["错误：缺少图形映像"]
 | 电子邮件主题 | 输入通知电子邮件所需的主题。 
 
 
-| 最新 Snapshot 名称 | 从适用于 VMware vSphere 的 SnapCenter 插件 4.4 开始，如果要将后缀 "_recent " 添加到最新的 Snapshot 副本中，请选中此框。"_recent " 后缀将替换日期和时间戳。* 注： * 系统会为附加到资源组的每个策略创建 ` - 最新` 备份。因此，具有多个策略的资源组将具有多个 ` - 最新` 备份。 
+| 最新 Snapshot 名称  a| 
+从适用于 VMware vSphere 的 SnapCenter 插件 4.4 开始，如果要将后缀 "_recent " 添加到最新的 Snapshot 副本中，请选中此框。"_recent " 后缀将替换日期和时间戳。
 
 
-| 自定义 Snapshot 格式 | 如果要对 Snapshot 副本名称使用自定义格式，请选中此框并输入名称格式。* 默认情况下，此功能处于禁用状态。* 默认 Snapshot 副本名称使用格式 ` <ResourceGroup>_<Date-timestamp>` 但是，您可以使用变量 $ResourceGroup ， $Policy ， $hostname ， $scheduleType 和 $CustomText 指定自定义格式。使用自定义名称字段中的下拉列表选择要使用的变量及其使用顺序。如果选择 $CustomText ，则名称格式为 ` <CustomName>_<Date-timestamp>` 。在提供的附加框中输入自定义文本。注意：如果您还选择了 "_recent " 后缀，则必须确保自定义 Snapshot 名称在数据存储库中是唯一的，因此，您应在此名称中添加 $ResourceGroup 和 $Policy 变量。* 名称中特殊字符的特殊字符，请遵循 " 名称 " 字段中提供的相同准则。 
+NOTE: 系统会为连接到资源组的每个策略创建 ` - 最新` 备份。因此，具有多个策略的资源组将具有多个 ` - 最新` 备份。
+
+
+
+| 自定义 Snapshot 格式  a| 
+如果要对 Snapshot 副本名称使用自定义格式，请选中此框并输入名称格式。
+
+** 默认情况下，此功能处于禁用状态。
+** 默认 Snapshot 副本名称使用格式 ` <ResourceGroup>_<Date-timestamp>` 但是，您可以使用变量 $ResourceGroup ， $Policy ， $hostname ， $scheduleType 和 $CustomText 指定自定义格式。使用自定义名称字段中的下拉列表选择要使用的变量及其使用顺序。如果选择 $CustomText ，则名称格式为 ` <CustomName>_<Date-timestamp>` 。在提供的附加框中输入自定义文本。注意：如果您还选择了 "_recent " 后缀，则必须确保自定义 Snapshot 名称在数据存储库中是唯一的，因此，您应在此名称中添加 $ResourceGroup 和 $Policy 变量。
+** 名称中特殊字符的特殊字符，请遵循为名称字段提供的相同准则。
+
+
 |===
 . 在 * 资源 * 页面的可用实体列表中，选择资源组中所需的资源，然后单击 * > * 将所选内容移动到选定实体列表。
 +
@@ -138,7 +150,11 @@ image:scpivs44_image17.png["错误：缺少图形映像"]
 | 现有策略 | 从列表中选择一个或多个策略。 
 
 
-| 新策略 | 1. 单击 image:scpivs44_image6.png["错误：缺少图形映像"] * 创建 * 。2. 完成新建备份策略向导以返回到创建资源组向导。 
+| 新策略  a| 
+.. 单击 image:scpivs44_image6.png["错误：缺少图形映像"] * 创建 * 。
+.. 完成新建备份策略向导以返回到创建资源组向导。
+
+
 |===
 +
 在链接模式下，此列表包含所有链接 vCenter 中的策略。您必须选择与资源组位于同一 vCenter 上的策略。

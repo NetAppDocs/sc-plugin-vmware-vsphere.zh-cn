@@ -195,7 +195,6 @@ sidebar:
     - title: REST API ，用于将停滞的作业标记为失败
       url: "/scpivs44_rest_apis_fail_stuck_jobs.html"
   - title: 升级
-    url: "/scpivs44_upgrade.html"
     entries:
     - title: 从适用于 VMware vSphere 的 SnapCenter 插件的早期版本升级
       url: "/scpivs44_upgrade.html"
@@ -204,10 +203,9 @@ sidebar:
     - title: 升级到同一版本的新修补程序后，不会显示信息
       url: "/scpivs44_information_not_displayed_after_upgrading_to_a_new_patch_of_the_same_release.html"
   - title: 迁移
-    url: "/scpivs44_migrate.html"
     entries:
-    - title: 迁移选项
-      url: "/scpivs44_migrate.html#migration-options"
+    - title: 迁移选项和支持的路径
+      url: "/scpivs44_migrate.html"
     - title: 迁移概述
       url: "/scpivs44_migration_overview.html"
     - title: 迁移的前提条件

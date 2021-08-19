@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_rest_api_workflows__add_and_modify_storage_vms.html 
 keywords:  
-summary:  
+summary: 要使用适用于 VMware vSphere 的 SnapCenter 插件 REST API 执行添加和修改 Storage VM 操作，您必须遵循规定的 REST API 调用顺序。 
 ---
 = 用于添加和修改 Storage VM 的 REST API 工作流
 :hardbreaks:

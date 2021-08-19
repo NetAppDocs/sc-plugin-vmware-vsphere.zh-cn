@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_correct_bad_gateway_errors_during_migration.html 
 keywords:  
-summary:  
+summary: '在手动将文件或其他内容添加到适用于 VMware vSphere 的 SnapCenter 插件并进行迁移时，可能会遇到 " 网关错误 " 。' 
 ---
 = 更正迁移期间出现的 " 网关错误 "
 :hardbreaks:

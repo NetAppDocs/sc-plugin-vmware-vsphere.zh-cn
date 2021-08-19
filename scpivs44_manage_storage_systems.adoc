@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_manage_storage_systems.html 
 keywords:  
-summary:  
+summary: 在使用 VMware vSphere Web Client 备份或还原 VM 或数据存储库之前，必须添加存储。 
 ---
 = 管理存储系统
 :hardbreaks:
