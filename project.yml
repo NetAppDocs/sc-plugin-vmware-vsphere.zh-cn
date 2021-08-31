@@ -31,9 +31,10 @@ sidebar:
       url: scpivs44_deployment_workflow_for_new_users.html
     - title: 现有用户的部署工作流
       url: "/scpivs44_deployment_workflow_for_existing_users.html"
-    - title: 部署规划和要求
-      url: "/scpivs44_deployment_planning_and_requirements.html"
+    - title: 部署 SCV 的要求
       entries:
+      - title: 部署规划和要求
+        url: "/scpivs44_deployment_planning_and_requirements.html"
       - title: 所需的最小 ONTAP 权限
         url: "/scpivs44_minimum_ontap_privileges_required.html"
     - title: 下载适用于 VMware vSphere OVA 的 SnapCenter 插件（开放式虚拟设备）

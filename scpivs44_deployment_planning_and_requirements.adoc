@@ -105,7 +105,7 @@ summary: 在部署虚拟设备之前，您应了解部署要求。
 | vCenter vSphere | HTML5 客户端： 6.5U2/U3 ， 6.7x ， 7.0 ， 7.0U1 ， 7.0U2 Flex 客户端不受支持。 
 
 
-| ESXi | 6.0u1 或更高版本 
+| ESXi | 6.5U2 
 
 
 | IP 地址 | IPv4 ， IPv6 

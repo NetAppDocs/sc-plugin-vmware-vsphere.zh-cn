@@ -1270,7 +1270,6 @@
   <block id="3a0876e0b5495dccbbd15a5eff86d17a" category="cell">vCenter vSphere</block>
   <block id="ca9510a61127c5bd195660cc67d5bb32" category="cell">HTML5 客户端： 6.5U2/U3 ， 6.7x ， 7.0 ， 7.0U1 ， 7.0U2 Flex 客户端不受支持。</block>
   <block id="1aa66ef3a8e34a7a538960a80d2e1e31" category="cell">ESXi</block>
-  <block id="bd648818e89f84aa216bdab57900affe" category="cell">6.0u1 或更高版本</block>
   <block id="1d9e509ddb93a176b7d369a91ad7deaf" category="cell">IP 地址</block>
   <block id="57750e92b36b7db69376c18af7d940a5" category="cell">IPv4 ， IPv6</block>
   <block id="d52387880e1ea22817a72d3759213819" category="cell">Java</block>
@@ -1984,4 +1983,6 @@
   <block id="fd9ca72572d4ab5e600c85b32f8a9e6a" category="list-text">完成新建备份策略向导以返回到创建资源组向导。</block>
   <block id="2d611cef8c845765881d408c7f4ca34d" category="paragraph">请参见 <block ref="7b21f43f6f2c3f2cfd7e9a930ea43d44" category="inline-link-macro-rx"></block> 有关支持的升级路径的信息。</block>
   <block id="67a580fa6b9be72db53618ccd5526438" category="summary">要使用适用于 VMware vSphere 的 SnapCenter 插件 REST API 查找 VMware vSphere Web Client 作业的作业 ID ，必须对 VMware vSphere 使用 REST API 调用。</block>
+  <block id="5498cf6a89c35bb5ae9ee180679222d5" category="cell">6.5U2</block>
+  <block id="8b1375f200206162c06fc46aeb476858" category="sidebar">部署 SCV 的要求</block>
 </blocks>
