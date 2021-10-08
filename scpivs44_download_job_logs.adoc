@@ -18,7 +18,7 @@ summary: 您可以从 SnapCenter VMware vSphere Web Client 的信息板上的作
 如果在使用 VMware vSphere Web Client 时遇到意外行为，您可以使用日志文件确定发生原因并解决此问题。
 
 
-NOTE: 作业和作业消息保留 90 天。早于所配置保留时间的作业日志每六小时清除一次。您不能修改此计划。
+NOTE: 保留作业日志的默认值为 30 天；保留作业的默认值为 90 天。早于所配置保留时间的作业日志和作业每六小时清除一次。您不能修改清除计划。
 
 .步骤
 . 在 vSphere Web Client 的左侧导航器窗格中，单击 * 信息板 * ，选择一个 vCenter Server ，然后单击 * 作业监控器 * 选项卡。

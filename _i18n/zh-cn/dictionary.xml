@@ -816,7 +816,6 @@
   <block id="096ea6f3f334f93dc0a0d1a707e8a4cf" category="doc">下载作业日志</block>
   <block id="1cf921151e2b781f9ff5584eb19ef88f" category="paragraph">您可以从 SnapCenter VMware vSphere Web Client 的信息板上的作业监控选项卡下载作业日志。</block>
   <block id="b8229c937e584671584740a3427c438b" category="paragraph">如果在使用 VMware vSphere Web Client 时遇到意外行为，您可以使用日志文件确定发生原因并解决此问题。</block>
-  <block id="6142b1cb089843396d93263ac0866500" category="admonition">作业和作业消息保留 90 天。早于所配置保留时间的作业日志每六小时清除一次。您不能修改此计划。</block>
   <block id="b5eccb33a6e9fc43167e135ae64e8e47" category="paragraph"><block ref="b5eccb33a6e9fc43167e135ae64e8e47" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c3d0386263532e580416a5dbd1d0745e" category="list-text">单击 <block ref="a67ddb5fca578f4d04d131713a74724b" category="inline-image-macro-rx" type="image"></block> 作业监控器标题栏中的下载图标。</block>
   <block id="1101d50ae81430281bce448efa2ea34a" category="paragraph">您可能需要向右滚动才能看到图标。</block>
@@ -1985,4 +1984,5 @@
   <block id="67a580fa6b9be72db53618ccd5526438" category="summary">要使用适用于 VMware vSphere 的 SnapCenter 插件 REST API 查找 VMware vSphere Web Client 作业的作业 ID ，必须对 VMware vSphere 使用 REST API 调用。</block>
   <block id="5498cf6a89c35bb5ae9ee180679222d5" category="cell">6.5U2</block>
   <block id="8b1375f200206162c06fc46aeb476858" category="sidebar">部署 SCV 的要求</block>
+  <block id="828dbe7f137dada7be8096dcd488c334" category="admonition">保留作业日志的默认值为 30 天；保留作业的默认值为 90 天。早于所配置保留时间的作业日志和作业每六小时清除一次。您不能修改清除计划。</block>
 </blocks>
