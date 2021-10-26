@@ -1,4 +1,12 @@
 ---
+settings:
+  name: SnapCenter Plug-in for VMware vSphere
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: true
+    langs: zh-cn,us-en,ja-jp
 sidebar:
   entries:
   - title: 适用于 VMware vSphere 的 SnapCenter 插件
