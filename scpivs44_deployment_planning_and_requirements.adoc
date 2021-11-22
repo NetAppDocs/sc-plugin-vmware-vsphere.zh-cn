@@ -165,9 +165,6 @@ NOTE: 您不能修改端口配置。
 
 
 
-| VMware vSphere vCenter Server 端口 | 如果您计划保护 VVol 虚拟机，则必须使用端口 443 。 
-
-
 | 存储集群或 Storage VM 端口 | 443 （ HTTPS ）双向 80 （ HTTP ）双向端口用于在虚拟设备与 Storage VM 或包含 Storage VM 的集群之间进行通信。 
 |===
 
