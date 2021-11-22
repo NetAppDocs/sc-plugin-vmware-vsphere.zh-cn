@@ -1298,9 +1298,7 @@
   <block id="3672cca688eb0474cd3fee2add1a2067" category="cell">端口类型</block>
   <block id="1af12a0ed126e7e6b194370c0c0be5eb" category="cell">预配置的端口</block>
   <block id="926bafe6b6d4e07892751c7ca73ad20d" category="cell">适用于 VMware vSphere 的 SnapCenter 插件端口</block>
-  <block id="36e5cc5b4b4a18a57e38d80baa6dc2e0" category="cell">8144 （ HTTPS ），双向端口用于从 VMware vSphere Web Client 和 SnapCenter 服务器进行通信。8080 双向此端口用于管理虚拟设备。注意：您不能修改端口配置。</block>
   <block id="7c1239972879fe0b69b4bb6d5c9a743e" category="cell">VMware vSphere vCenter Server 端口</block>
-  <block id="f5da94ad50f99b8a0c0be1cfb1d3790d" category="cell">443 （ HTTPS ），双向端口用于在适用于 VMware vSphere 的 SnapCenter 插件与 vCenter 之间进行通信。</block>
   <block id="bd6873be6e44dbd5504531679d8ca1ef" category="section-title">支持的配置</block>
   <block id="f377fb769eb12fc39f5abb7af2a27054" category="paragraph">每个插件实例仅支持一个 vCenter Server 。支持处于链接模式的 vCenter 。多个插件实例可以支持相同的 SnapCenter 服务器，如下图所示。</block>
   <block id="5dbdd6963b505190acf4e98b57729d40" category="paragraph"><block ref="5dbdd6963b505190acf4e98b57729d40" category="inline-image-macro-rx" type="image"></block></block>
@@ -1985,4 +1983,9 @@
   <block id="5498cf6a89c35bb5ae9ee180679222d5" category="cell">6.5U2</block>
   <block id="8b1375f200206162c06fc46aeb476858" category="sidebar">部署 SCV 的要求</block>
   <block id="828dbe7f137dada7be8096dcd488c334" category="admonition">保留作业日志的默认值为 30 天；保留作业的默认值为 90 天。早于所配置保留时间的作业日志和作业每六小时清除一次。您不能修改清除计划。</block>
+  <block id="9f0e863b35d7c0c7148fb01a2711d395" category="paragraph">8144 （ HTTPS ），双向端口用于从 VMware vSphere Web Client 和 SnapCenter 服务器进行通信。8080 双向此端口用于管理虚拟设备。</block>
+  <block id="edf66412620aee2fc1760a6bbf31b9a3" category="admonition">您不能修改端口配置。</block>
+  <block id="f069cda10b1931aae12abc5d5844fcfd" category="cell">如果您计划保护 VVol 虚拟机，则必须使用端口 443 。</block>
+  <block id="131b9f1c14d26ba7a0cce7389e7679a9" category="cell">存储集群或 Storage VM 端口</block>
+  <block id="4ebb46027adb5b26fc62dffc3aab358e" category="cell">443 （ HTTPS ）双向 80 （ HTTP ）双向端口用于在虚拟设备与 Storage VM 或包含 Storage VM 的集群之间进行通信。</block>
 </blocks>

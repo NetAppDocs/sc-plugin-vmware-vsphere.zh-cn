@@ -157,10 +157,18 @@ summary: 在部署虚拟设备之前，您应了解部署要求。
 | 端口类型 | 预配置的端口 
 
 
-| 适用于 VMware vSphere 的 SnapCenter 插件端口 | 8144 （ HTTPS ），双向端口用于从 VMware vSphere Web Client 和 SnapCenter 服务器进行通信。8080 双向此端口用于管理虚拟设备。注意：您不能修改端口配置。 
+| 适用于 VMware vSphere 的 SnapCenter 插件端口  a| 
+8144 （ HTTPS ），双向端口用于从 VMware vSphere Web Client 和 SnapCenter 服务器进行通信。8080 双向此端口用于管理虚拟设备。
 
 
-| VMware vSphere vCenter Server 端口 | 443 （ HTTPS ），双向端口用于在适用于 VMware vSphere 的 SnapCenter 插件与 vCenter 之间进行通信。 
+NOTE: 您不能修改端口配置。
+
+
+
+| VMware vSphere vCenter Server 端口 | 如果您计划保护 VVol 虚拟机，则必须使用端口 443 。 
+
+
+| 存储集群或 Storage VM 端口 | 443 （ HTTPS ）双向 80 （ HTTP ）双向端口用于在虚拟设备与 Storage VM 或包含 Storage VM 的集群之间进行通信。 
 |===
 
 
