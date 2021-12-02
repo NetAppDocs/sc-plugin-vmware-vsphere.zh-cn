@@ -1,0 +1,1659 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head class="at-element-marker">
+  <title>自定义配置</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="自定义配置" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/zh-cn/sc-plugin-vmware-vsphere/scpivs44_customize_your_configuration.html" />
+	<meta property="og:description" content="要提高操作效率，您可以修改 scbr.override 配置文件以更改默认值。这些值控制备份期间创建或删除的 VMware 快照数量或备份脚本停止运行之前的时间等设置。" />
+  <meta property="og:image" content="https://docs.netapp.com/zh-cn/sc-plugin-vmware-vsphere/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/>
+  
+  <meta name="description" content="要提高操作效率，您可以修改 scbr.override 配置文件以更改默认值。这些值控制备份期间创建或删除的 VMware 快照数量或备份脚本停止运行之前的时间等设置。">
+  <meta name="keywords" content=" ">
+  
+  
+
+  <!-- Icons -->
+  <link rel="icon" href="/zh-cn/sc-plugin-vmware-vsphere/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed -->
+  
+
+  <!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+  <!-- Elastic Search -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/searchkit/0.10.0/theme.css">
+
+  <!-- Controls AsciiDoctor Admonition Blocks -->
+  <link rel="stylesheet" type="text/css" href="/zh-cn/sc-plugin-vmware-vsphere/css/font-awesome.min.css">
+
+  <!-- Controls the shadow effect for search dropdown menu -->
+  <link rel="stylesheet" href="/zh-cn/sc-plugin-vmware-vsphere/css/boxshadowproperties.css">
+
+  <!-- NetApp CSS controls the technical content -->
+  <link rel="stylesheet" type="text/css" href="/zh-cn/sc-plugin-vmware-vsphere/css/netapp.css">
+
+  <!-- WWW CSS Content -->
+  <link rel="stylesheet" type="text/css" href="/zh-cn/sc-plugin-vmware-vsphere/css/www-luci-dotcom.min.css">
+  <link rel="stylesheet" type="text/css" href="/zh-cn/sc-plugin-vmware-vsphere/css/www-netapp-dotcom.css">
+  <link rel="stylesheet" href="/zh-cn/sc-plugin-vmware-vsphere/css/www-netapp-library-critical.min.css" media="all" >
+  <link rel="stylesheet" href="/zh-cn/sc-plugin-vmware-vsphere/css/www-netapp-library-non-critical.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="stylesheet" href="/zh-cn/sc-plugin-vmware-vsphere/css/www-netapp-library-global-header-footer.min.css">
+
+  <!-- NetApp IE Customizations -->
+  <link rel="stylesheet" href='/zh-cn/sc-plugin-vmware-vsphere/css/na-utility.css' type='text/css'>
+  <link rel="stylesheet" href='/zh-cn/sc-plugin-vmware-vsphere/css/na-sidebar.css' type='text/css'>
+  <link rel='stylesheet' href='/zh-cn/sc-plugin-vmware-vsphere/css/clouddocs.css' type='text/css'>
+  <link rel='stylesheet' href='/zh-cn/sc-plugin-vmware-vsphere/css/na-pagenav.css' type='text/css'>
+
+  
+  <link rel="stylesheet" href="/zh-cn/sc-plugin-vmware-vsphere/css/landing-page.css" type="text/css">
+  <link rel="stylesheet" href="/zh-cn/sc-plugin-vmware-vsphere/css/tabbed-blocks.css" type="text/css">
+  <link rel="stylesheet" href='/zh-cn/sc-plugin-vmware-vsphere/css/product-family.css' type="text/css">
+  
+
+  
+  <link rel='stylesheet' href='/zh-cn/sc-plugin-vmware-vsphere/css/na-feature.css' type='text/css'>
+  
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+  <!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script>
+  
+    <script src='/zh-cn/sc-plugin-vmware-vsphere/js/na-search.js'></script>
+  
+
+  
+  <script src='/zh-cn/sc-plugin-vmware-vsphere/js/na-pagenav.js'></script>
+  
+
+  <link rel='stylesheet' href='/zh-cn/sc-plugin-vmware-vsphere/css/prism.css' type='text/css'>
+  <link rel='stylesheet' href='/zh-cn/sc-plugin-vmware-vsphere/css/prism-netapp.css' type='text/css'>
+
+
+  <script src='/zh-cn/sc-plugin-vmware-vsphere/js/na-utility.js'></script>
+  <script src='/zh-cn/sc-plugin-vmware-vsphere/js/clouddocs.js'></script>
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    var head = document.getElementsByTagName('head')[0];
+    var adobe = document.createElement("script");
+    adobe.type = "text/javascript";
+    adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
+    head.appendChild(adobe);
+  }
+  </script>
+  <script src='/zh-cn/sc-plugin-vmware-vsphere/js/jquery.navgoco.min.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src='/zh-cn/sc-plugin-vmware-vsphere/js/toc.js'></script>
+  <script src='/zh-cn/sc-plugin-vmware-vsphere/js/customscripts.js'></script>
+
+  <script>
+      $(document).ready(function() {
+          
+          var collapseOnInit = true;
+          
+
+          var navSettings = {
+              "caretHtml": '',
+              "accordion": collapseOnInit,
+              "openClass": 'active', // open
+              "save": false, // leave false or nav highlighting doesn't work right
+              "cookie": {
+                  "name": 'navgoco',
+                  "expires": false,
+                  "path": '/'
+              },
+              "slide": {
+                  "duration": 400,
+                  "easing": 'swing'
+              }
+          };
+
+          // Initialize navgoco with default options
+          $("#mysidebar").navgoco(navSettings);
+          
+
+          $("#collapseAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', false);
+          });
+
+          $("#expandAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', true);
+          });
+
+      });
+
+  </script>
+  <script>
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+  </script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-81697994-3"></script>
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-81697994-3');
+  }
+  </script>
+  <script src='/zh-cn/sc-plugin-vmware-vsphere/js/version-dropdown.js'></script>
+  <script src='/zh-cn/sc-plugin-vmware-vsphere/js/product-family.js'></script>
+  <script src='/zh-cn/sc-plugin-vmware-vsphere/js/FileSaver.min.js'></script>
+  <script src='/zh-cn/sc-plugin-vmware-vsphere/js/jszip-utils.min.js'></script>
+  <script src='/zh-cn/sc-plugin-vmware-vsphere/js/jszip.min.js'></script>
+  <script src='/zh-cn/sc-plugin-vmware-vsphere/js/pdf-ux.js'></script>
+</head>
+
+
+  <body class role="document">
+    <div id="page" class="n-off-canvas-menu">
+      <div class="n-off-canvas-menu__menu"><!--TODO: Add offcanvas code --></div>
+      <div class="n-off-canvas-menu__content-wrap">
+        <header class="site-header" id="banner">
+  <!-- Start top_hat -->
+  <div class="n-top-hat">
+    <div class="n-container">
+      <div class="n-top-hat__cross-property-nav">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/products-a-z/" class="n-top-hat__link">产品和解决方案</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/support-and-training/netapp-university/" class="n-top-hat__link">支持和培训</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://cloud.netapp.com" class="n-top-hat__link">云中心</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://community.netapp.com/" class="n-top-hat__link">社区</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://blog.netapp.com/" class="n-top-hat__link">日志</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://customers.netapp.com/en/" class="n-top-hat__link">客户案例</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/us/contact-us/index.aspx" target="_self" class="n-top-hat__link" data-ntap-ui="contact-us">联系人</a>
+          </li>
+        </ul>
+      </div>
+      <div class="n-top-hat__utils">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/us/contact-us/index.aspx" target="_self" class="n-top-hat__link" data-ntap-ui="contact-us">联系人</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- End top_hat -->
+
+  <!-- Start property bar -->
+  <style>
+    .n-property-navigation-bar__menus--desktop-experience .n-menu--mega__default-content__heading span {
+    color: #34B0FF;
+    }
+  </style>
+  <div class="n-property-bar " data-ntap-ui="sticky-nav">
+    <div class="n-property-bar__inner-wrap">
+      <div class="n-property-bar__menu-toggle">
+        <a href="#" class="n-property-bar__menu-toggle-link">
+          <span class="n-property-bar__menu-toggle-text">Menu</span>
+          <svg class="n-icon-bars n-property-bar__menu-toggle-icon" aria-labelledby="title">
+            <title>bars</title>
+            <use xlink:href="/zh-cn/sc-plugin-vmware-vsphere/common/svg/sprite.svg#bars"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="n-property-bar__property-mark ">
+        <a href="https://www.netapp.com" class="n-property-bar__property-link">
+          <div class="n-property-bar__logo">
+            <svg class="n-icon-netapp-mark n-icon-netapp-mark n-property-bar__netapp-mark-icon" aria-labelledby="title">
+              <title>netapp-mark</title>
+              <use xlink:href="/zh-cn/sc-plugin-vmware-vsphere/common/svg/sprite.svg#netapp-mark"></use>
+            </svg>
+            <svg class="n-icon-netapp-logo n-property-bar__logo-svg" aria-labelledby="title">
+              <title>netapp-logo</title>
+              <use xlink:href="/zh-cn/sc-plugin-vmware-vsphere/common/svg/sprite.svg#netapp-logo"></use>
+            </svg>
+          </div>
+        </a>
+      </div>
+
+      
+      <div class="search-property-bar">
+        <div id="search-demo-container" class="searchbox n-property-bar__search">
+          <div id="react-search" 
+          data-search-html="/zh-cn/sc-plugin-vmware-vsphere/search.html"
+          data-type="widget" 
+          data-placeholder="搜索文档" 
+          data-no-results-found="未找到与 {query} 匹配的结果。" 
+          data-did-you-mean="搜索 {suggestion}。" 
+          data-no-results-found-did-you-mean="未找到与 {query} 匹配的结果。您是否要搜索 {suggestion}?" 
+          data-results-found="找到 {hitCount} 个结果"  
+          data-sk-es-pf-indexes=""></div>
+          <button class="n-property-bar__search-toggle-button" type="button">
+            <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
+              <title>search</title>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/sc-plugin-vmware-vsphere/common/svg/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <div class="n-property-bar__toolbar">
+    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
+      <div id="ie-i18n-menu">
+      <span class="ie-i18n-lang">简体中文</span>
+        <button class="ie-i18n-icon-container" type="button">
+          <svg class="n-globe__icon" aria-labelledby="title">
+            <title>globe</title>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/sc-plugin-vmware-vsphere/common/svg/sprite.svg#globe"></use>
+          </svg>
+        </button>
+      </div>
+      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
+        <div class="n-language-selector-menu">
+          <ul class="n-menu__list">
+            <li class="n-menu__list-column">
+              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/zh-cn/sc-plugin-vmware-vsphere/scpivs44_customize_your_configuration.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_customize_your_configuration.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/ja-jp/sc-plugin-vmware-vsphere/scpivs44_customize_your_configuration.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
+                </li></ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div><!-- End Language Selector -->
+
+    <div class="n-property-bar__cta"></div>
+  </div>
+  <script>
+    $(function(){
+        var currentLocalization = $('html').attr('lang');
+
+        var localizationsDictionary = {
+            "en-CA" : "https://www.netapp.com/search/index.aspx?for_cr=canada&",
+            "en-IN" : "https://www.netapp.com/search/index.aspx?for_cr=india&",
+            "nl-NL" : "https://www.netapp.com/search/index.aspx?for_cr=netherlands&",
+            "ru-RU" : "https://www.netapp.com/search/index.aspx?for_cr=russia&",
+            "sv-SE" : "https://www.netapp.com/search/index.aspx?for_cr=sweden&",
+            "it-IT" : "https://www.netapp.com/search/index.aspx?for_cr=italy&",
+            "he-IL" : "https://www.netapp.com/search/index.aspx?for_cr=israel&",
+            "ko-KR" : "https://www.netapp.com/search/index.aspx?for_cr=korea&",
+            "zh-TW" : "https://www.netapp.com/search/index.aspx?for_cr=taiwan&",
+            "en-GB" : "https://www.netapp.com/search/index.aspx?for_cr=unitedkingdom&",
+            "en-SG" : "https://www.netapp.com/search/index.aspx?for_cr=asean&",
+            "en-AU" : "https://www.netapp.com/search/index.aspx?for_cr=australia&",
+            "pt-BR" : "https://www.netapp.com/search/index.aspx?for_cr=brasil&",
+            "de-CH" : "https://www.netapp.com/search/index.aspx?for_cr=switzerland&",
+            "es-MX" : "https://www.netapp.com/search/index.aspx?for_cr=mexico&"
+        };
+
+        if($('html').hasClass('ntap-whitelisted') && localizationsDictionary.hasOwnProperty(currentLocalization)) {
+            $('.n-property-bar__property-link').attr('href', '/');
+        }
+    });
+  </script>
+  <!-- End property bar -->
+</header>
+
+
+        <main id="n-main-content" class="n-main-content">
+          <!-- Start Documentation Content -->
+<div class="ie-main">
+  <!-- Sidebar Column -->
+  
+  <div class="col-md-3" >
+      <div class="n-pdf-header">
+  <a id="toggleButtonPdf" class="n-pdf-button" type="button">
+    <img src="/zh-cn/sc-plugin-vmware-vsphere/images/pdf.png" width="16" height="16"/>可用的 PDF<span>
+    </span>
+  </a>
+</div>
+<div class="n-pdf-body-container">
+  <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+        <a target="_blank" href="/zh-cn/sc-plugin-vmware-vsphere/pdfs/fullsite-sidebar/适用于_VMware_vSphere_的_SnapCenter_插件文档.pdf" >
+          <img src="/zh-cn/sc-plugin-vmware-vsphere/images/pdf.png" width="16" height="16"/>此文档站点的 PDF</a>
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/zh-cn/sc-plugin-vmware-vsphere/pdfs/sidebar/概念.pdf" 
+            
+          >
+            <img src="/zh-cn/sc-plugin-vmware-vsphere/images/pdf.png" width="16" height="16"/>
+            概念
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/zh-cn/sc-plugin-vmware-vsphere/pdfs/sidebar/入门.pdf" 
+            
+          >
+            <img src="/zh-cn/sc-plugin-vmware-vsphere/images/pdf.png" width="16" height="16"/>
+            入门
+          </a>
+          
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/zh-cn/sc-plugin-vmware-vsphere/pdfs/sidebar/部署_SCV_的要求.pdf" 
+            
+          >
+            <img src="/zh-cn/sc-plugin-vmware-vsphere/images/pdf.png" width="16" height="16"/>
+            部署 SCV 的要求
+          </a>
+          
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/zh-cn/sc-plugin-vmware-vsphere/pdfs/sidebar/快速入门.pdf" 
+            
+          >
+            <img src="/zh-cn/sc-plugin-vmware-vsphere/images/pdf.png" width="16" height="16"/>
+            快速入门
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/zh-cn/sc-plugin-vmware-vsphere/pdfs/sidebar/监控和报告.pdf" 
+            
+          >
+            <img src="/zh-cn/sc-plugin-vmware-vsphere/images/pdf.png" width="16" height="16"/>
+            监控和报告
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/zh-cn/sc-plugin-vmware-vsphere/pdfs/sidebar/管理存储.pdf" 
+            
+          >
+            <img src="/zh-cn/sc-plugin-vmware-vsphere/images/pdf.png" width="16" height="16"/>
+            管理存储
+          </a>
+          
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/zh-cn/sc-plugin-vmware-vsphere/pdfs/sidebar/保护数据.pdf" 
+            
+          >
+            <img src="/zh-cn/sc-plugin-vmware-vsphere/images/pdf.png" width="16" height="16"/>
+            保护数据
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/zh-cn/sc-plugin-vmware-vsphere/pdfs/sidebar/挂载和卸载数据存储库.pdf" 
+            
+          >
+            <img src="/zh-cn/sc-plugin-vmware-vsphere/images/pdf.png" width="16" height="16"/>
+            挂载和卸载数据存储库
+          </a>
+          
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/zh-cn/sc-plugin-vmware-vsphere/pdfs/sidebar/从备份还原.pdf" 
+            
+          >
+            <img src="/zh-cn/sc-plugin-vmware-vsphere/images/pdf.png" width="16" height="16"/>
+            从备份还原
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/zh-cn/sc-plugin-vmware-vsphere/pdfs/sidebar/还原子系统文件和文件夹.pdf" 
+            
+          >
+            <img src="/zh-cn/sc-plugin-vmware-vsphere/images/pdf.png" width="16" height="16"/>
+            还原子系统文件和文件夹
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/zh-cn/sc-plugin-vmware-vsphere/pdfs/sidebar/管理适用于_VMware_vSphere_设备的_SnapCenter_插件.pdf" 
+            
+          >
+            <img src="/zh-cn/sc-plugin-vmware-vsphere/images/pdf.png" width="16" height="16"/>
+            管理适用于 VMware vSphere 设备的 SnapCenter 插件
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/zh-cn/sc-plugin-vmware-vsphere/pdfs/sidebar/REST_API.pdf" 
+            
+          >
+            <img src="/zh-cn/sc-plugin-vmware-vsphere/images/pdf.png" width="16" height="16"/>
+            REST API
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/zh-cn/sc-plugin-vmware-vsphere/pdfs/sidebar/升级.pdf" 
+            
+          >
+            <img src="/zh-cn/sc-plugin-vmware-vsphere/images/pdf.png" width="16" height="16"/>
+            升级
+          </a>
+          
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/zh-cn/sc-plugin-vmware-vsphere/pdfs/sidebar/迁移.pdf" 
+            
+          >
+            <img src="/zh-cn/sc-plugin-vmware-vsphere/images/pdf.png" width="16" height="16"/>
+            迁移
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+</li></ul>
+  <div class="zip-pdf-link-container" style="display: none;">   
+    <a href="#" id="zipPdf">
+      <img src="/zh-cn/sc-plugin-vmware-vsphere/images/pdf-zip.png" width="16" height="16"/>
+      <pre>收集单独的 PDF 文档<span class="zip-size"></span></pre>
+    </a><div id="zip-link-popup" class="hide">
+    <div class="inner-modal">
+        <div class="downloading-progress">
+            <div class="spinner"></div>
+            <h1>Creating your file...</h1>
+            <div>This may take a few minutes. Thanks for your patience.</div>
+            <button class="cancel-download-btn" type="button">Cancel</button>
+        </div>
+        <div class="download-complete hide">
+            <div class="done-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+            </div>
+            <div>Your file is ready</div>
+            <button class="cancel-download-btn" type="button">OK</button>
+        </div>
+    </div>
+</div>
+<script>
+    $(".cancel-download-btn").click(function(){
+        $("#zip-link-popup").addClass("hide");
+        $("#zip-link-popup .downloading-progress").removeClass("hide");
+        $("#zip-link-popup .download-complete").addClass("hide");
+    });
+</script></div>
+</div>
+<script>
+  $("#toggleContainerPdf li.active:last-child").parents('ul.subfolders').toggle('display');
+  $("#toggleButtonPdf").click(function () {
+    $("#toggleContainerPdf").toggle('display');
+    $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+  });
+</script><div class="sidebar-nav-container">
+  <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/index.html">
+        适用于 VMware vSphere 的 SnapCenter 插件
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_release_notes.html">
+        发行说明
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 概念</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_concepts_overview.html">
+        产品概述
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_overview_of_different_snapcenter_guis.html">
+        不同 SnapCenter GUI 的概述
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_licensing.html">
+        许可
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_role_based_access_control.html">
+        基于角色的访问控制（ Role-Based Access Control ， RBAC ）
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_types_of_rbac_for_snapcenter_users.html">
+        适用于 VMware vSphere 的 SnapCenter 插件用户的 RBAC 类型
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_ontap_rbac_features_in_snapcenter.html">
+        适用于 VMware vSphere 的 SnapCenter 插件中的 ONTAP RBAC 功能
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_predefined_roles_packaged_with_snapcenter.html">
+        适用于 VMware vSphere 的 SnapCenter 插件附带的预定义角色
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_how_to_configure_ontap_rbac_for_snapcenter_plug-in_for_vmware_vsphere.html">
+        如何为适用于 VMware vSphere 的 SnapCenter 插件配置 ONTAP RBAC
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 入门</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_get_started_overview.html">
+        部署概述
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_deployment_workflow_for_new_users.html">
+        新用户的部署工作流
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_deployment_workflow_for_existing_users.html">
+        现有用户的部署工作流
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 部署 SCV 的要求</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_deployment_planning_and_requirements.html">
+        部署规划和要求
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_minimum_ontap_privileges_required.html">
+        所需的最小 ONTAP 权限
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_download_the_snapcenter_plug-in_for_vmware_vsphere_ova_open_virtual_appliance.html">
+        下载适用于 VMware vSphere OVA 的 SnapCenter 插件（开放式虚拟设备）
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_deploy_snapcenter_plug-in_for_vmware_vsphere.html">
+        部署适用于 VMware vSphere 的 SnapCenter 插件
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_post_deployment_required_operations_and_issues.html">
+        部署后需要执行的操作和出现的问题
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_log_in_to_the_snapcenter_vmware_vsphere_web_client.html">
+        登录到 SnapCenter VMware vSphere Web 客户端
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 快速入门</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_quick_start_overview.html">
+        概述
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_download_the_ova_open_virtual_appliance.html">
+        下载 OVA （开放式虚拟设备）
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_deploy_snapcenter_plug-in_for_vmware_vsphere_01.html">
+        部署适用于 VMware vSphere 的 SnapCenter 插件
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_add_storage.html">
+        添加存储
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_create_backup_policies.html">
+        创建备份策略
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_create_resource_groups.html">
+        创建资源组
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 监控和报告</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_view_status_information.html">
+        查看状态信息
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_monitor_jobs.html">
+        监控作业
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_download_job_logs.html">
+        下载作业日志
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_access_reports.html">
+        访问报告
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_generate_a_support_bundle_from_the_snapcenter_plug-in_for_vmware_vsphere_gui.html">
+        从适用于 VMware vSphere 的 SnapCenter 插件 GUI 生成支持包
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_generate_a_support_bundle_from_the_maintenance_console.html">
+        从维护控制台生成支持包
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 管理存储</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_add_storage_01.html">
+        添加存储
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_manage_storage_systems.html">
+        Manage Storage VM —修改，重命名，删除
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_modify_storage_timeout.html">
+        修改已配置的存储超时
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 保护数据</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_protect_data_overview.html">
+        数据保护工作流
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_view_vm_and_datastore_backups.html">
+        查看虚拟机和数据存储库备份
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_create_backup_policies_for_vms_and_datastores.html">
+        为 VM 和数据存储库创建备份策略
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_create_resource_groups_for_vms_and_datastores.html">
+        为 VM 和数据存储库创建资源组
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_prescripts_and_postscripts.html">
+        预处理脚本和后处理脚本
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_add_a_single_vm_or_datastore_to_a_resource_group.html">
+        将单个虚拟机或数据存储库添加到资源组
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_add_multiple_vms_and_datastores_to_a_resource_group.html">
+        将多个 VM 和数据存储库添加到一个资源组
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_back_up_resource_groups_on_demand.html">
+        按需备份资源组
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_back_up_the_snapcenter_plug-in_for_vmware_vsphere_mysql_database.html">
+        备份适用于 VMware vSphere 的 SnapCenter 插件 MySQL 数据库
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_manage_resource_groups.html">
+        管理资源组—暂停，恢复，修改，删除
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_manage_policies.html">
+        管理策略—断开，修改，删除
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_manage_backups.html">
+        管理备份—重命名，删除
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 挂载和卸载数据存储库</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_mount_a_backup.html">
+        挂载备份
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_unmount_a_backup.html">
+        卸载备份
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 从备份还原</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_restore_from_backups_overview.html">
+        概述
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_how_restore_operations_are_performed.html">
+        如何执行还原操作
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_search_for_backups.html">
+        搜索备份
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_restore_vms_from_backups.html">
+        从备份还原 VM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_restore_deleted_vms_from_backups.html">
+        从备份中还原已删除的 VM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_restore_vmdks_from_backups.html">
+        从备份还原 VMDK
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_restore_the_most_recent_backup_of_the_mysql_database.html">
+        还原 MySQL 数据库的最新备份
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_restore_a_specific_backup_of_the_mysql_database.html">
+        还原 MySQL 数据库的特定备份
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_attach_vmdks_to_a_vm.html">
+        将 VMDK 连接到虚拟机
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_detach_a_virtual_disk.html">
+        断开虚拟磁盘
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 还原子系统文件和文件夹</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_restore_guest_files_and_folders_overview.html">
+        工作流，前提条件和限制
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_restore_guest_files_and_folders_from_vmdks.html">
+        从 VMDK 还原子系统文件和文件夹
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_set_up_proxy_vms_for_restore_operations.html">
+        设置代理 VM 以执行还原操作
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_configure_credentials_for_vm_guest_file_restores.html">
+        配置 VM 子文件还原的凭据
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_extend_the_time_of_a_guest_file_restore_session.html">
+        延长子系统文件还原会话的时间
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_guest_file_restore_scenarios_you_might_encounter.html">
+        可能会遇到的子系统文件还原情形
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 管理适用于 VMware vSphere 设备的 SnapCenter 插件</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_restart_the_vmware_vsphere_web_client_service.html">
+        重新启动 VMware vSphere Web Client 服务
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_access_the_maintenance_console.html">
+        访问维护控制台
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_modify_plugin_password.html">
+        从维护控制台修改 SnapCenter VMware 插件密码
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_create_and_import_certificates.html">
+        创建和导入证书
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_unregister_plugin_from_vcenter.html">
+        从 vCenter 取消注册适用于 VMware vSphere 的 SnapCenter 插件
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_disable_and_enable_plugin.html">
+        禁用并启用适用于 VMware vSphere 的 SnapCenter 插件
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_remove_plugin.html">
+        删除适用于 VMware vSphere 的 SnapCenter 插件
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_manage_your_configuration.html">
+        管理您的配置
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> REST API</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_rest_apis_overview.html">
+        概述
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_access_rest_apis_using_the_swagger_api_web_page.html">
+        使用 Swagger API 网页访问 REST API
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_rest_api_workflows__add_and_modify_storage_vms.html">
+        用于添加和修改 Storage VM 的 REST API 工作流
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_rest_api_workflows__create_and_modify_resource_groups.html">
+        用于创建和修改资源组的 REST API 工作流
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_rest_api_workflow__back_up_on_demand.html">
+        用于按需备份的 REST API 工作流
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_rest_api_workflow__restore_vms.html">
+        用于还原 VM 的 REST API 工作流
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_rest_api_workflow__restore_deleted_vms.html">
+        用于还原已删除 VM 的 REST API 工作流
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_rest_api_workflow__restore_vmdks.html">
+        用于还原 VMDK 的 REST API 工作流
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_rest_api_workflows__attach_and_detach_vmdks.html">
+        用于连接和断开 VMDK 的 REST API 工作流
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_rest_api_workflows__mount_and_unmount_datastores.html">
+        用于挂载和卸载数据存储库的 REST API 工作流
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_rest_apis__download_jobs_and_generate_reports.html">
+        用于下载作业和生成报告的 REST API
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_rest_api_workflows__modify_built-in_schedules.html">
+        用于修改内置计划的 REST API 工作流
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_rest_apis_fail_stuck_jobs.html">
+        REST API ，用于将停滞的作业标记为失败
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 升级</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_upgrade.html">
+        从适用于 VMware vSphere 的 SnapCenter 插件的早期版本升级
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_upgrade_to_a_new_patch.html">
+        升级到同一版本的新修补程序
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_information_not_displayed_after_upgrading_to_a_new_patch_of_the_same_release.html">
+        升级到同一版本的新修补程序后，不会显示信息
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 迁移</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_migrate.html">
+        迁移选项和支持的路径
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_migration_overview.html">
+        迁移概述
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_prerequisites_for_migration.html">
+        迁移的前提条件
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_migrate_from_windows_based_snapcenter_plug-in_for_vmware_vsphere.html">
+        从适用于 VMware vSphere 的基于 Windows 的 SnapCenter 插件迁移
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_migrate_snapcenter_backup_metadata_to_the_virtual_appliance.html">
+        迁移基于 Windows 的 SnapCenter VMware 备份元数据
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_post-migration.html">
+        迁移后
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_correct_bad_gateway_errors_during_migration.html">
+        更正迁移期间出现的错误网关
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_manage_authentication_errors.html">
+        管理身份验证错误
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/netapp_legal_notices.html">
+        法律声明
+      </a></li></ul>
+</div>
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+  </div>
+  
+
+  <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
+    <!-- Begin of page container -->
+    <article class="page-content">
+      <div class="ie-utility">
+  <div class="ie-menu">
+    <div class="n-breadcrumb">
+      <ul class="n-breadcrumb__list">
+        <li class="n-breadcrumb__list-item">
+          <a href="https://www.netapp.com">主页</a>
+        </li>
+        <li class="n-breadcrumb__list-item">
+          <a href="https://docs.netapp.com">文档</a>
+        </li>
+        
+
+        <li class="n-breadcrumb__list-item">
+          <a href="/zh-cn/sc-plugin-vmware-vsphere/">SnapCenter&nbsp;Plug-in&nbsp;for&nbsp;VMware&nbsp;vSphere</a>
+        </li>
+        <li class="n-breadcrumb__list-item">
+          自定义配置
+        </li>
+      </ul>
+    </div>
+    <div style="clear: both"></div><!-- Main needs to have height -->
+  </div>
+</div>
+
+      <div class="ie-nmt-disclaimer">
+  <span>
+    <div class="ie-nmt-disclaimer-container">
+      <div class="ie-nmt-disclaimer-icon">
+        <svg class="luci-icon" aria-hidden="true">
+          <use xlink:href="/zh-cn/sc-plugin-vmware-vsphere/common/svg/sprite.svg#circle-info">
+        </svg>
+      </div>
+      <div class="ie-nmt-disclaimer-content">
+        <span> 简体中文版经机器翻译而成，仅供参考。如与英语版出现任何冲突，应以英语版为准。 </span>
+      </div>
+      <div style="clear:both;"></div>
+    </div>
+  </span>
+</div><div class="n-doc__component-detail-heading-wrap">
+  <h1 class="n-doc__component-detail-heading">自定义配置</h1>
+</div>
+
+
+<p class="page-details">
+  
+    
+    <time datetime="2021-08-19 11:25:29 +0000">08/19/2021</time>
+    
+  
+
+<span>提供者
+  <a target="_blank" href="https://github.com/netapp-madhulik">
+    <img  class="avatar avatar-small"
+          alt="netapp-madhulik"
+          width="20" height="20"
+          src="https://avatars.githubusercontent.com/u/64965028?v=4"
+          style="border-radius: 50%;"/>
+  </a>
+  
+</span>
+
+
+</p>
+
+
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>要提高操作效率，您可以修改 <code>sCBR.override</code> 配置文件以更改默认值。这些值控制备份期间创建或删除的 VMware 快照数量或备份脚本停止运行之前的时间等设置。</p>
+</div>
+<div class="paragraph">
+<p>适用于 VMware vSphere 的 SnapCenter 插件环境使用 <code>sCBR.override</code> 配置文件，该插件支持基于 SnapCenter 应用程序的数据保护操作。如果此文件不存在，则必须从模板文件创建它。</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="创建-scbr-override-配置文件">创建 scbr.override 配置文件</h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>转至 ` /opt/netapp/scvservice/standalone aeg/etc/scbr/scbr.override-template` 。</p>
+</li>
+<li>
+<p>将 <code>sCBR.override-template</code> 文件复制到 ` \opt\NetApp\scvservice\standalone aeg\etc\scbr` 目录中名为 <code>sCBR.override</code> 的新文件。</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="可以覆盖的属性">可以覆盖的属性</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>默认情况下，模板使用哈希符号来注释配置属性。要使用属性修改配置值，必须删除 ` #` 字符。</p>
+</li>
+<li>
+<p>要使更改生效，您必须在适用于 VMware vSphere 的 SnapCenter 插件主机上重新启动此服务。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>您可以使用 <code>sCBR.override</code> 配置文件中列出的以下属性来更改默认值。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>* dashboard.protected.vm.count.interval=7*</p>
+<div class="paragraph">
+<p>指定信息板显示 VM 保护状态的天数。</p>
+</div>
+<div class="paragraph">
+<p>默认值为 "7" 。</p>
+</div>
+</li>
+<li>
+<p>* guestFileRestore.guest.operation.interval=5*</p>
+<div class="paragraph">
+<p>指定适用于 VMware vSphere 的 SnapCenter 插件在子系统上完成子系统操作（联机磁盘和还原文件）时所监控的时间间隔（以秒为单位）。总等待时间由 <code>guestFileRestore.online.disk.timeout</code> 和 <code>uestFileRestore.restore.files.timeout</code> 设置。</p>
+</div>
+<div class="paragraph">
+<p>默认值为 "5" 。</p>
+</div>
+</li>
+<li>
+<p>* 来宾 FileRestore.monitorInterval=30*</p>
+<div class="paragraph">
+<p>指定 SnapCenter VMware 插件监控已过期子文件还原会话的时间间隔（以分钟为单位）。超过所配置的会话时间运行的任何会话都将断开连接。</p>
+</div>
+<div class="paragraph">
+<p>默认值为 "30" 。</p>
+</div>
+</li>
+<li>
+<p>* 来宾 FileRestore.online.disk.timeout=100*</p>
+<div class="paragraph">
+<p>指定 SnapCenter VMware 插件等待子虚拟机上的联机磁盘操作完成的时间（以秒为单位）。请注意，在插件轮询联机磁盘操作完成之前，还有 30 秒的等待时间。</p>
+</div>
+<div class="paragraph">
+<p>默认值为 "100" 。</p>
+</div>
+</li>
+<li>
+<p>* 来宾 FileRestore.restore.files.timeout=3600*</p>
+<div class="paragraph">
+<p>指定 SnapCenter VMware 插件等待子虚拟机上的还原文件操作完成的时间（以秒为单位）。如果超过此时间，此过程将结束，并且作业将标记为失败。</p>
+</div>
+<div class="paragraph">
+<p>默认值为 "3600" （ 1 小时）。</p>
+</div>
+</li>
+<li>
+<p>* guestFileRestore.Robocopy.directory.flags=/R ： 0 /W ： 0 /ZB /CopyAll /EFSRAW /A- ： SH /e /NJH /NDL /Np*</p>
+<div class="paragraph">
+<p>指定在子系统文件还原操作期间复制目录时要使用的额外 Robocopy 标志。</p>
+</div>
+<div class="paragraph">
+<p>请勿删除 ` /NJH` 或添加 ` /NJS` ，因为这将中断还原输出的解析。</p>
+</div>
+<div class="paragraph">
+<p>请勿允许无限制重试（通过删除 ` /R` 标志），因为这样可能发生原因会对失败的副本执行无限重试。</p>
+</div>
+<div class="paragraph">
+<p>默认值为 ` "/R ： 0 /W ： 0 /ZB /CopyAll /EFSRAW /A-： SH /e /NJH /NDL /NP"` 。</p>
+</div>
+</li>
+<li>
+<p>* guestFileRestore.Robocopy.file.flags=/R ： 0 /W ： 0 /ZB /CopyAll /EFSRAW /A- ： SH /NJH /NDL /Np*</p>
+<div class="paragraph">
+<p>指定在子系统文件还原操作期间复制单个文件时要使用的额外 Robocopy 标志。</p>
+</div>
+<div class="paragraph">
+<p>请勿删除 ` /NJH` 或添加 ` /NJS` ，因为这将中断还原输出的解析。</p>
+</div>
+<div class="paragraph">
+<p>请勿允许无限制重试（通过删除 ` /R` 标志），因为这样可能发生原因会对失败的副本执行无限重试。</p>
+</div>
+<div class="paragraph">
+<p>默认值为 ` "/R ： 0 /W ： 0 /ZB /CopyAll /EFSRAW /A-： SH /NJH /NDL /NP"` 。</p>
+</div>
+</li>
+<li>
+<p>* guestFileRestore.sessionTime=1440*</p>
+<div class="paragraph">
+<p>指定适用于 VMware vSphere 的 SnapCenter 插件保持子系统文件还原会话处于活动状态的时间（以分钟为单位）。</p>
+</div>
+<div class="paragraph">
+<p>默认值为 "1440" （ 24 小时）。</p>
+</div>
+</li>
+<li>
+<p>* guestFileRestore.use.custom.online.disk.script=true*</p>
+<div class="paragraph">
+<p>指定在创建子系统文件还原会话时是否使用自定义脚本使磁盘联机并检索驱动器盘符。该脚本必须位于 ` 安装路径 &gt;\etc\guestFileRestore_onlineDisk.ps1` 。安装时会提供一个默认脚本。在连接过程中，脚本中的值 ` [Disk_Serial_Number]` ， ` [Online_Disk_Output]` 和 ` 驱动器输出` 将被替换。</p>
+</div>
+<div class="paragraph">
+<p>默认值为 "false" 。</p>
+</div>
+</li>
+<li>
+<p>* include.esx.initiator.id.from.cluster=true*</p>
+<div class="paragraph">
+<p>指定 SnapCenter VMware 插件应包含通过 VMDK 工作流在应用程序中集群中所有 ESXi 主机的 iSCSI 和 FCP 启动程序 ID 。</p>
+</div>
+<div class="paragraph">
+<p>默认值为 "false" 。</p>
+</div>
+</li>
+<li>
+<p>* 最大并发 .ds.storage.query.count=15*</p>
+<div class="paragraph">
+<p>指定 SnapCenter VMware 插件可对 SnapCenter 服务器进行的最大并发调用数，以发现数据存储库的存储占用空间。当您在 SnapCenter VMware 插件 VM 主机上重新启动 Linux 服务时，此插件会发出这些调用。</p>
+</div>
+</li>
+<li>
+<p>* 。 nfs.datastore.mount.retry.count=3*</p>
+<div class="paragraph">
+<p>指定 SnapCenter VMware 插件尝试在 vCenter 中将卷挂载为 NFS 数据存储库的最大次数。</p>
+</div>
+<div class="paragraph">
+<p>默认值为 "3" 。</p>
+</div>
+</li>
+<li>
+<p>* nfs.datastore.mount.retry.delay=60000*</p>
+<div class="paragraph">
+<p>指定 SnapCenter VMware 插件在尝试将卷作为 NFS 数据存储库挂载到 vCenter 时等待的时间（以毫秒为单位）。</p>
+</div>
+<div class="paragraph">
+<p>默认值为 "60000 " （ 60 秒）。</p>
+</div>
+</li>
+<li>
+<p>* script.virtual.machine.count.variable.name = virtual_machines*</p>
+<div class="paragraph">
+<p>指定包含虚拟机计数的环境变量名称。在备份作业期间执行任何用户定义的脚本之前，必须定义变量。</p>
+</div>
+<div class="paragraph">
+<p>例如， virtual_machines=2 表示正在备份两个虚拟机。</p>
+</div>
+</li>
+<li>
+<p>* script.virtual.machine.info.variable.name=VIRTUAL_MACHINE.%s*</p>
+<div class="paragraph">
+<p>提供环境变量的名称，该变量包含有关备份中第 n 个虚拟机的信息。在备份期间执行任何用户定义的脚本之前，必须设置此变量。</p>
+</div>
+<div class="paragraph">
+<p>例如，环境变量 virtual_machine.2 提供了有关备份中第二个虚拟机的信息。</p>
+</div>
+</li>
+<li>
+<p>* script.virtual.machine.info.format= %s=%s=%s=%s=%s*</p>
+<div class="paragraph">
+<p>提供有关虚拟机的信息。此信息在环境变量中设置的格式如下： <code>VM name"VM UUUUUUID" VM power state （ on_off ） "VM snapshot taken （ true_false ） "IP address （ es ）</code></p>
+</div>
+<div class="paragraph">
+<p>以下是您可能提供的信息示例：</p>
+</div>
+<div class="paragraph">
+<p><code>virtual_machine.2=VM 1|564d6769-f07d-6e3b-68b1f3c29b03a9a=powed_on|true_10.0.4.2</code></p>
+</div>
+</li>
+<li>
+<p>* 存储 .connection.timeout=600000*</p>
+<div class="paragraph">
+<p>指定 SnapCenter 服务器等待存储系统响应的时间量（以毫秒为单位）。</p>
+</div>
+<div class="paragraph">
+<p>默认值为 "600000" （ 10 分钟）。</p>
+</div>
+</li>
+<li>
+<p>* vmware.esx.ip.kernel.ip.map*</p>
+<div class="paragraph">
+<p>没有默认值。您可以使用此值将 ESXi IP 地址映射到 VMkernel IP 地址。默认情况下， SnapCenter VMware 插件使用 ESXi 主机的管理 VMkernel 适配器 IP 地址。如果您希望 SnapCenter VMware 插件使用不同的 VMkernel 适配器 IP 地址，则必须提供覆盖值。</p>
+</div>
+<div class="paragraph">
+<p>在以下示例中，管理 VMkernel 适配器 IP 地址为 10.225.10.56 ；但是， SnapCenter VMware 插件使用指定地址 10.225.11.57 和 10.225.11.58 。如果管理 VMkernel 适配器 IP 地址为 10.225.10.60 ，则此插件将使用地址 10.225.11.61 。</p>
+</div>
+<div class="paragraph">
+<p><code>vmware.esx.ip.kernel.ip.map=10.225.10.56:10.225.11.57,10.225.11.58; 10.225.10.60 ： 10.225.11.61</code></p>
+</div>
+</li>
+<li>
+<p>* 。 vmware.max.concurrent-snapshots=30*</p>
+<div class="paragraph">
+<p>指定 SnapCenter VMware 插件在服务器上同时执行的 VMware 快照的最大数量。</p>
+</div>
+<div class="paragraph">
+<p>此数字会按数据存储库进行检查，只有在策略选择了 "VM consisting" 时才会进行检查。如果要执行崩溃状态一致的备份，则此设置不适用。</p>
+</div>
+<div class="paragraph">
+<p>默认值为 "30" 。</p>
+</div>
+</li>
+<li>
+<p>* vmware.max.concurrent.snapshots.delete=30*</p>
+<div class="paragraph">
+<p>指定 SnapCenter VMware 插件在服务器上对每个数据存储库执行的并发 VMware 快照删除操作的最大数量。</p>
+</div>
+<div class="paragraph">
+<p>此数量会按数据存储库进行检查。</p>
+</div>
+<div class="paragraph">
+<p>默认值为 "30" 。</p>
+</div>
+</li>
+<li>
+<p>* 。 vmware.query.unresolvedy.count=10*</p>
+<div class="paragraph">
+<p>指定 SnapCenter VMware 插件因出现 "&#8230;&#8203; 阻止 I/O 的时间限制 " 错误而重试发送有关未解析卷的查询的最大次数。</p>
+</div>
+<div class="paragraph">
+<p>默认值为 "10" 。</p>
+</div>
+</li>
+<li>
+<p>* 。 vmware.quiesce.retry.count=0*</p>
+<div class="paragraph">
+<p>指定 SnapCenter VMware 插件因备份期间出现 "&#8230;&#8203; 限制 I/O 的时间 " 错误而重试发送有关 VMware 快照的查询的最大次数。</p>
+</div>
+<div class="paragraph">
+<p>默认值为 "0" 。</p>
+</div>
+</li>
+<li>
+<p>* vmware.quiesce.retry.interval=5*</p>
+<div class="paragraph">
+<p>指定 SnapCenter VMware 插件在备份期间发送有关 VMware 快照 "&#8230;&#8203; 延迟 I/O 的时间限制 " 错误的查询之间等待的时间（以秒为单位）。</p>
+</div>
+<div class="paragraph">
+<p>默认值为 "5" 。</p>
+</div>
+</li>
+<li>
+<p>* vmware.query.unresolved.retry.delay= 60000*</p>
+<div class="paragraph">
+<p>指定 SnapCenter VMware 插件在因出现 "&#8230;&#8203; 阻止 I/O 的时间限制 " 错误而发送有关未解析卷的查询时等待的时间（以毫秒为单位）。克隆 VMFS 数据存储库时会发生此错误。</p>
+</div>
+<div class="paragraph">
+<p>默认值为 "60000 " （ 60 秒）。</p>
+</div>
+</li>
+<li>
+<p>* 。 vmware.reconfig.vm.retry.count=10*</p>
+<div class="paragraph">
+<p>指定 SnapCenter VMware 插件因出现 "&#8230;&#8203; 阻止 I/O 的时间限制 " 错误而重试发送有关重新配置虚拟机的查询的最大次数。</p>
+</div>
+<div class="paragraph">
+<p>默认值为 "10" 。</p>
+</div>
+</li>
+<li>
+<p>* vmware.reconfig.vm.retry.delay=30000*</p>
+<div class="paragraph">
+<p>指定 SnapCenter VMware 插件在因出现 "&#8230;&#8203; 阻止 I/O 的时间限制 " 错误而发送有关重新配置虚拟机的查询之间等待的最长时间（以毫秒为单位）。</p>
+</div>
+<div class="paragraph">
+<p>默认值为 "30000" （ 30 秒）。</p>
+</div>
+</li>
+<li>
+<p>* 。 vmware.rescan 。 hBA.retry.count=3*</p>
+<div class="paragraph">
+<p>指定 SnapCenter VMware 插件在两次发送有关重新扫描主机总线适配器的查询之间等待的时间量，以毫秒为单位，因为出现 "&#8230;&#8203; 用于保留 I/O 的时间限制 " 错误。</p>
+</div>
+<div class="paragraph">
+<p>默认值为 "3" 。</p>
+</div>
+</li>
+<li>
+<p>* vmware.rescan.hba.retry.delay=30000*</p>
+<div class="paragraph">
+<p>指定 SnapCenter VMware 插件重试请求重新扫描主机总线适配器的最大次数。</p>
+</div>
+<div class="paragraph">
+<p>默认值为 "30000 " 。</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+
+    </article>
+    <!-- Page Container -->
+  </div>
+
+  
+  <!-- Start Page Toolbar -->
+  <div class="page-nav-toolbar">
+    <div id="version-dropdown"></div>
+    <div class="page-nav-contribute"  >
+      <a target="_blank" href="https://github.com/NetAppDocs/sc-plugin-vmware-vsphere/issues/new?body=Page%3A%20[自定义配置](https://docs.netapp.com/zh-cn/sc-plugin-vmware-vsphere/scpivs44_customize_your_configuration.html)" class="page-nav-contribute-link" role="button"><img src="/zh-cn/sc-plugin-vmware-vsphere/images/discuss-sm.svg" class="github-icon" />请求文档变更</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/sc-plugin-vmware-vsphere/blob/main/scpivs44_customize_your_configuration.adoc" class="page-nav-contribute-link" role="button"><img src="/zh-cn/sc-plugin-vmware-vsphere/images/edit-sm.svg" class="github-icon" />在 GitHub 上编辑</a>
+      <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/zh-cn/sc-plugin-vmware-vsphere/images/article-sm.svg" class="github-icon" />提供者指南</a>
+    </div>
+    <div class="page-nav-container">
+      <nav class="page-nav-fixed">
+        <div class="page-nav-title">在此页面上</div>
+        <div class="page-nav-links">
+          <ul class="page-nav-inner" id="page-menu"></ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  
+  <div style="clear: both"></div><!-- Main needs to have height -->
+</div>
+
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+      <div class="n-footer__bottom-left">
+
+        <div class="n-footer__copyright">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+            <a href="https://www.netapp.com/us/legal/copyright.aspx">© 2021 NetApp, Inc.</a>
+            </li>
+
+</ul>
+</div>
+<div class="n-footer__social-links">
+<ul class="n-footer__social-link-list">
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-blog" href="https://blog.netapp.com" target="_blank" title="blog" alt="blog">
+<span class="n-footer__social-link-text">blog</span>
+<svg class="n-icon-blog n-footer__social-link-icon" aria-labelledby="title">
+  <title>blog@</title>
+  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/sc-plugin-vmware-vsphere/common/svg/sprite.svg#blog"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-community" href="https://community.netapp.com/" target="_blank" title="community" alt="community">
+<span class="n-footer__social-link-text">community</span>
+<svg class="n-icon-community n-footer__social-link-icon" aria-labelledby="title">
+<title>community@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/sc-plugin-vmware-vsphere/common/svg/sprite.svg#comments"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-twitter" href="https://twitter.com/netapp" target="_blank" title="twitter" alt="twitter">
+<span class="n-footer__social-link-text">twitter</span>
+<svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
+<title>twitter@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/sc-plugin-vmware-vsphere/common/svg/sprite.svg#twitter"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-facebook" href="https://www.facebook.com/NetApp" target="_blank" title="facebook" alt="facebook">
+<span class="n-footer__social-link-text">facebook</span>
+<svg class="n-icon-facebook n-footer__social-link-icon" aria-labelledby="title">
+<title>facebook@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/sc-plugin-vmware-vsphere/common/svg/sprite.svg#facebook"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-linkedin" href="https://www.linkedin.com/company/netapp" target="_blank" title="linkedin" alt="linkedin">
+<span class="n-footer__social-link-text">linkedin</span>
+<svg class="n-icon-linkedin n-footer__social-link-icon" aria-labelledby="title">
+<title>linkedin@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/sc-plugin-vmware-vsphere/common/svg/sprite.svg#linkedin"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-youtube" href="https://www.youtube.com/user/NetAppTV" target="_blank" title="youtube" alt="youtube">
+<span class="n-footer__social-link-text">youtube</span>
+<svg class="n-icon-youtube n-footer__social-link-icon" aria-labelledby="title">
+<title>youtube@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/sc-plugin-vmware-vsphere/common/svg/sprite.svg#youtube"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-slideshare" href="https://www.slideshare.net/NetApp" target="_blank" title="slideshare" alt="slideshare">
+<span class="n-footer__social-link-text">slideshare</span>
+<svg class="n-icon-slideshare n-footer__social-link-icon" aria-labelledby="title">
+<title>slideshare@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/sc-plugin-vmware-vsphere/common/svg/sprite.svg#slideshare"></use>
+</svg>
+
+</a>
+</li>
+</ul>
+</div>
+
+</div>
+<div class="n-footer__bottom-right">
+  <p class="n-footer__fine-print">想就我们的网站提供反馈?<a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">请告诉我们</a>
+  <a href="https://docs.netapp.com/zh-cn/announcements/" class="n-footer__copyright">通知</a>
+  </p>
+</div>
+</div>
+</div>
+</footer>
+
+      </div>
+
+      <!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/zh-cn/sc-plugin-vmware-vsphere/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/zh-cn/sc-plugin-vmware-vsphere/js/prism.js'></script>
+      <script type="text/javascript" src='/zh-cn/sc-plugin-vmware-vsphere/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/zh-cn/sc-plugin-vmware-vsphere/js/www-ntap.js'></script>
+    <script src='/zh-cn/sc-plugin-vmware-vsphere/js/tabbed-blocks.js'></script>
+  </body>
+
+  
+</html>
