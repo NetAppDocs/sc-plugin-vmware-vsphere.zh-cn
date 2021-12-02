@@ -647,7 +647,6 @@
   <block id="8ebed4cc71ebae0e8a4f0dcea24cd08f" category="paragraph">尽管虚拟设备必须作为 Linux VM 安装，但 SnapCenter VMware 插件既支持基于 Windows 的 vCenter ，也支持基于 Linux 的 vCenter 。SnapCenter 本机使用此插件，无需用户干预，即可与 vCenter 进行通信，以支持基于 SnapCenter 应用程序的插件，这些插件可在 Windows 和 Linux 虚拟化应用程序上执行数据保护操作。</block>
   <block id="b9c9e7f1948911f3919c87ac446095a1" category="paragraph">除了这些主要功能之外，适用于 VMware vSphere 的 SnapCenter 插件还支持 iSCSI ，光纤通道， FCoE ，基于 NFS 3.0 和 4.1 的 VMDK 以及基于 VMFS 5.0 和 6.0 的 VMDK 。</block>
   <block id="9ed4a475dd3705157a9fed8811f63ce2" category="inline-link">NetApp 互操作性表工具</block>
-  <block id="1574212099c9efa2c0e956aadfb87b02" category="paragraph">有关受支持版本的最新信息，请参见<block ref="884307cabdefa32f362a0eb030a51256" category="inline-link-rx"></block> IMT</block>
   <block id="b13a4247d22cd0a43d54ca7d80210144" category="paragraph">有关 NFS 协议和 ESXi 的信息，请参见 VMware 提供的 vSphere 存储文档。</block>
   <block id="799fee4408785caa314299fa0125daec" category="inline-link">SnapCenter 文档</block>
   <block id="9e91a63458c500b0f59284f504d93fff" category="paragraph">有关 SnapCenter 数据保护的信息，请参见中适用于 SnapCenter 插件的数据保护信息<block ref="4be00348c5f700eec4bebc72bc1bc49c" category="inline-link-rx"></block>。</block>
@@ -1283,7 +1282,6 @@
   <block id="d6312859824de97c98284f93070c7d4d" category="cell">TLSv1.1 及更高版本 SnapCenter 服务器使用此插件通过 VMDK 数据保护操作与 SnapCenter VMware 插件进行通信。</block>
   <block id="91a33043fc7eebee30634cb063fa6e2c" category="cell">适用于阵列集成的 VMware 应用程序 vStorage API （ VAAI ）</block>
   <block id="16e729ceefd4cd71e291d0800dd9e9c0" category="cell">适用于 VMware vSphere 的 SnapCenter 插件可通过此功能提高还原操作的性能。它还可以提高 NFS 环境中的性能。</block>
-  <block id="621ca03a5a7f2c703ec88cff15143ab7" category="paragraph">有关受支持版本的最新信息，请参见<block ref="884307cabdefa32f362a0eb030a51256" category="inline-link-rx"></block>。</block>
   <block id="18cd7192921dd5ac27a1a7c5ef795c20" category="section-title">空间和规模估算要求</block>
   <block id="5a2ebfb8baa378cfcfcba58bbb1380c2" category="cell">要求</block>
   <block id="696c660ff8d9323e55146a6dbd4e4088" category="cell">操作系统</block>
@@ -1298,7 +1296,6 @@
   <block id="3672cca688eb0474cd3fee2add1a2067" category="cell">端口类型</block>
   <block id="1af12a0ed126e7e6b194370c0c0be5eb" category="cell">预配置的端口</block>
   <block id="926bafe6b6d4e07892751c7ca73ad20d" category="cell">适用于 VMware vSphere 的 SnapCenter 插件端口</block>
-  <block id="7c1239972879fe0b69b4bb6d5c9a743e" category="cell">VMware vSphere vCenter Server 端口</block>
   <block id="bd6873be6e44dbd5504531679d8ca1ef" category="section-title">支持的配置</block>
   <block id="f377fb769eb12fc39f5abb7af2a27054" category="paragraph">每个插件实例仅支持一个 vCenter Server 。支持处于链接模式的 vCenter 。多个插件实例可以支持相同的 SnapCenter 服务器，如下图所示。</block>
   <block id="5dbdd6963b505190acf4e98b57729d40" category="paragraph"><block ref="5dbdd6963b505190acf4e98b57729d40" category="inline-image-macro-rx" type="image"></block></block>
@@ -1512,7 +1509,6 @@
   <block id="0584a4eafed573c2dc210c534594afdd" category="paragraph">SnapCenter 使用 VMware Tools 中的信息与 VMware 子操作系统建立连接。</block>
   <block id="1572f8be6f1646b62b5c0d4d4c380fe8" category="list-text">Windows 子操作系统必须运行 Windows Server 2008 R2 或更高版本。</block>
   <block id="697ea025ecb303d4f40d1bf3a8b4bde0" category="inline-link">NetApp 互操作性表工具（ IMT ）</block>
-  <block id="650f02d629872e23cf0887ac9c2b4e68" category="paragraph">有关受支持版本的最新信息，请参见<block ref="520f05d53aa4c25631cd1051f0b96b28" category="inline-link-rx"></block>。</block>
   <block id="8eafca0087eab5ecb2870b27ade88f3c" category="list-text">目标 VM 的凭据必须指定内置域管理员帐户或内置本地管理员帐户。用户名必须为 "Administrator" 。 在开始还原操作之前，必须为要将虚拟磁盘连接到的虚拟机配置凭据。连接操作和后续还原操作都需要这些凭据。工作组用户可以使用内置的本地管理员帐户。</block>
   <block id="ae010d54b0afb3a6e93783bbe5550d22" category="admonition">如果您必须使用非内置管理员帐户，但在 VM 中具有管理权限的帐户，则必须在子 VM 上禁用 UAC 。</block>
   <block id="37f8dfd8c74bc4597ec29e99bf89bf26" category="list-text">您必须知道要从中还原的备份 Snapshot 副本和 VMDK 。</block>
@@ -1524,7 +1520,6 @@
   <block id="7f395b83396bafcd5e1d1206370ba67d" category="list-text">对于非英文字母名称的文件，您必须将其还原到目录中，而不是作为单个文件。</block>
   <block id="ee1c70a48815e066082eefeebc34049f" category="paragraph">您可以通过还原文件所在的目录来还原非字母名称的文件，例如日语的 kanji 。</block>
   <block id="1ff1b21f136ea0663a63cc457f347949" category="list-text">不支持从 Linux 子操作系统还原</block>
-  <block id="4634d3e23a8025f0fe91b205133293d0" category="paragraph">您不能从运行 Linux 子操作系统的虚拟机还原文件和文件夹。但是，您可以连接 VMDK ，然后手动还原文件和文件夹。有关支持的子操作系统的最新信息，请参见<block ref="520f05d53aa4c25631cd1051f0b96b28" category="inline-link-rx"></block>。</block>
   <block id="9229096468701d10aab6b30f546310c1" category="section-title">子文件还原限制</block>
   <block id="f59c7bff803fde0d7ac5c2117ba8b07a" category="paragraph">在从子操作系统还原文件或文件夹之前，您应了解此功能不支持的内容。</block>
   <block id="0938c50db6a8d08637c074ab0c183305" category="list-text">您不能在子操作系统中还原动态磁盘类型。</block>
@@ -1775,7 +1770,6 @@
   <block id="7007a0750d953e128d4f70c36217f054" category="list-text">VMDK 位于不受支持的存储上；例如，在 7- 模式下运行的 ONTAP 系统或非 ONTAP 设备上。</block>
   <block id="fcd86cc596f822c816f0c6770a216f38" category="list-text">数据存储库位于运行集群模式 Data ONTAP 8.2.1 或更早版本的 NetApp 存储上。</block>
   <block id="62fc2c3502f537ee988c89c46b547a37" category="paragraph">SnapCenter 4.x 版支持 ONTAP 8.3.1 及更高版本。</block>
-  <block id="cc3685f9c60f18bd73475c2ee47c5716" category="paragraph">适用于 VMware vSphere 的 SnapCenter 插件不会对所有 ONTAP 版本执行兼容性检查；仅对 ONTAP 8.2.1 及更早版本执行兼容性检查。因此，请始终参见<block ref="520f05d53aa4c25631cd1051f0b96b28" category="inline-link-rx"></block> 有关 SnapCenter 支持的最新信息。</block>
   <block id="4f11690e32499ec1417798db9cb86f8c" category="list-text">共享 PCI 设备已连接到 VM 。</block>
   <block id="0706a3a0aad11229773c1704d2e28c53" category="list-text">未在 SnapCenter 中配置首选 IP 。</block>
   <block id="6b2f6276dbeab613805dd6faa40c0b96" category="list-text">您尚未将 Storage VM （ SVM ）管理 IP 添加到 SnapCenter 。</block>
@@ -1985,7 +1979,11 @@
   <block id="828dbe7f137dada7be8096dcd488c334" category="admonition">保留作业日志的默认值为 30 天；保留作业的默认值为 90 天。早于所配置保留时间的作业日志和作业每六小时清除一次。您不能修改清除计划。</block>
   <block id="9f0e863b35d7c0c7148fb01a2711d395" category="paragraph">8144 （ HTTPS ），双向端口用于从 VMware vSphere Web Client 和 SnapCenter 服务器进行通信。8080 双向此端口用于管理虚拟设备。</block>
   <block id="edf66412620aee2fc1760a6bbf31b9a3" category="admonition">您不能修改端口配置。</block>
-  <block id="f069cda10b1931aae12abc5d5844fcfd" category="cell">如果您计划保护 VVol 虚拟机，则必须使用端口 443 。</block>
   <block id="131b9f1c14d26ba7a0cce7389e7679a9" category="cell">存储集群或 Storage VM 端口</block>
   <block id="4ebb46027adb5b26fc62dffc3aab358e" category="cell">443 （ HTTPS ）双向 80 （ HTTP ）双向端口用于在虚拟设备与 Storage VM 或包含 Storage VM 的集群之间进行通信。</block>
+  <block id="ece8866dc116913236f566def5c3cbbb" category="paragraph">适用于 VMware vSphere 的 SnapCenter 插件不会对所有 ONTAP 版本执行兼容性检查；仅对 ONTAP 8.2.1 及更早版本执行兼容性检查。因此，请始终参见<block ref="b70b13b0328bd152e9cb0b130ae7283f" category="inline-link-rx"></block> 有关 SnapCenter 支持的最新信息。</block>
+  <block id="cbd78f87e065a91779c062c1ac3b69a9" category="paragraph">有关受支持版本的最新信息，请参见<block ref="3518519dc3a8dfeb899a0490cec06f4d" category="inline-link-rx"></block>。</block>
+  <block id="36c26f0e4c358dc944595e82caf8c5b6" category="paragraph">有关受支持版本的最新信息，请参见<block ref="3518519dc3a8dfeb899a0490cec06f4d" category="inline-link-rx"></block> IMT</block>
+  <block id="fa5eccf92d09c211caf5b8fd9d74b4bf" category="paragraph">有关受支持版本的最新信息，请参见<block ref="b70b13b0328bd152e9cb0b130ae7283f" category="inline-link-rx"></block>。</block>
+  <block id="1f5796b5427c9b766d8dc96dc0591b3a" category="paragraph">您不能从运行 Linux 子操作系统的虚拟机还原文件和文件夹。但是，您可以连接 VMDK ，然后手动还原文件和文件夹。有关支持的子操作系统的最新信息，请参见<block ref="b70b13b0328bd152e9cb0b130ae7283f" category="inline-link-rx"></block>。</block>
 </blocks>

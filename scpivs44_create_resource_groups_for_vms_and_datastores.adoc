@@ -199,7 +199,7 @@ NOTE: 如果备份中任何 VM 的暂停操作失败，则备份将标记为不�
 SnapCenter 4.x 版支持 ONTAP 8.3.1 及更高版本。
 
 +
-适用于 VMware vSphere 的 SnapCenter 插件不会对所有 ONTAP 版本执行兼容性检查；仅对 ONTAP 8.2.1 及更早版本执行兼容性检查。因此，请始终参见 https://mysupport.netapp.com/matrix/imt.jsp?components=91324;&solution=1517&isHWU&src=IMT["NetApp 互操作性表工具（ IMT ）"^] 有关 SnapCenter 支持的最新信息。
+适用于 VMware vSphere 的 SnapCenter 插件不会对所有 ONTAP 版本执行兼容性检查；仅对 ONTAP 8.2.1 及更早版本执行兼容性检查。因此，请始终参见 https://mysupport.netapp.com/matrix/imt.jsp?components=100571;&solution=1517&isHWU&src=IMT["NetApp 互操作性表工具（ IMT ）"^] 有关 SnapCenter 支持的最新信息。
 
 * 共享 PCI 设备已连接到 VM 。
 * 未在 SnapCenter 中配置首选 IP 。
