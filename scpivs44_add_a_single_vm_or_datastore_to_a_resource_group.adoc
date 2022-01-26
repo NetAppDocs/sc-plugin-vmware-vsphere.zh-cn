@@ -28,6 +28,6 @@ summary: 您可以将单个虚拟机或数据存储库快速添加到适用于 V
 单击 * 确定 * 时，系统会首先检查 SnapCenter 是否管理选定虚拟机或数据存储库所在的存储并与其兼容。
 
 +
-如果显示消息 `Sselected virtual machine is not SnapCenter compatible` 或 `Sselected datastore is not SnapCenter compatible` ，则选定虚拟机或数据存储库与 SnapCenter 不兼容。请参见 link:scpivs44_create_resource_groups_for_vms_and_datastores.html#manage-compatibility-check-failures["管理兼容性检查失败"] 有关详细信息 ...
+如果显示消息 `Sselected <resource-name> is not SnapCenter compatible` ，则选定虚拟机或数据存储库与 SnapCenter 不兼容。请参见 link:scpivs44_create_resource_groups_for_vms_and_datastores.html#manage-compatibility-check-failures["管理兼容性检查失败"] 有关详细信息 ...
 
 

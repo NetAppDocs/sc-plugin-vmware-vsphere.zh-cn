@@ -13,11 +13,13 @@ summary: 要使用适用于 VMware vSphere 的 SnapCenter 插件 REST API 为 VM
 
 
 [role="lead"]
-要使用适用于 VMware vSphere 的 SnapCenter 插件 REST API 为 VMware vSphere Web Client 作业生成报告和下载日志，必须对 VMware vSphere 使用 REST API 调用。这些 REST API 已添加到适用于 VMware vSphere 的 SnapCenter 插件 4.4 中。
+要使用适用于 VMware vSphere 的 SnapCenter 插件 REST API 为 VMware vSphere Web Client 作业生成报告和下载日志，必须对 VMware vSphere 使用 REST API 调用。
 
 对于每个 REST API ，在 REST API 的前面添加 `https://<server>:<port>` 以形成完整的端点。
 
-从适用于 VMware vSphere 4.4 的 SnapCenter 插件开始，请在作业部分中使用以下 REST API 来获取有关作业的详细信息：
+
+
+=== 使用作业部分中的以下 REST API 可获取有关作业的详细信息：
 
 |===
 | REST API | 注释 
@@ -28,7 +30,9 @@ summary: 要使用适用于 VMware vSphere 的 SnapCenter 插件 REST API 为 VM
 
 | ` /4.1/jobs/｛ id ｝` | `获取作业详细信息` 获取指定作业的详细信息。 
 |===
-使用作业部分中的以下 REST API 下载作业日志：
+
+
+=== 使用作业部分中的以下 REST API 下载作业日志：
 
 |===
 | REST API | 注释 
@@ -36,7 +40,9 @@ summary: 要使用适用于 VMware vSphere 的 SnapCenter 插件 REST API 为 VM
 
 | ` /4.1/jobs/｛ id ｝ /logs` | `getJobLogsById` 下载指定作业的日志。 
 |===
-使用报告部分中的以下 REST API 生成报告：
+
+
+=== 使用报告部分中的以下 REST API 生成报告：
 
 |===
 | REST API | 注释 

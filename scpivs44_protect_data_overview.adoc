@@ -27,6 +27,6 @@ summary: 所有备份操作都对资源组执行，该资源组可以包含一�
 * 如果备份失败并显示错误 `Unable to discover resources on SCV ： <xxx>…` 对于切换 / 切回后的 NFS 和 VMFS VM ，请从维护控制台重新启动 SnapCenter VMware 服务。
 
 
-下图中的工作流显示了必须执行备份操作的顺序：
+以下工作流图显示了必须执行备份操作的顺序：
 
 image:scpivs44_image13.png["错误：缺少图形映像"]

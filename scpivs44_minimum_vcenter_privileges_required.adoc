@@ -1,0 +1,28 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_minimum_vcenter_privileges_required.html 
+keywords:  
+summary: 在开始部署适用于 VMware vSphere 的 SnapCenter 插件之前，您应确保具有所需的最低 vCenter 特权。 
+---
+= 所需的最低 vCenter 权限
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+在开始部署适用于 VMware vSphere 的 SnapCenter 插件之前，您应确保具有所需的最低 vCenter 特权。
+
+
+
+== vCenter 管理员角色所需的特权
+
+System.Anonymous System.View System.Read Datastore.Rename Datastore.Move Datastore.Browse Datastore.FileManagement Datastore.AllocateSpace Network.Assign Host.Config.Storage Host.Config.AdvancedConfig Host.Config.SettingHost.Local.CreateVM Host.Local.ReconfigurVM Host.Local.DeleteVM Host.Remove.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Storage.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Storage Machine.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Storage
+
+
+
+== 适用于 VMware vCenter 的 SnapCenter 插件所需的特权
+
+netSCC.Guest.RestoreFile netappSCC.Recover.MountUnMount netappSCC.Backup.DeleteBackupJob netappSCC.Configure.Configure.ConfigureStorageSystems.Delete netappSCC.View netappSCC.Recover.RecoverVM netappConfigure.Configure.StorageSystems.AddUpdate netappSCC.Backup.Backup.SnapUpNow netappnow.SnapSCC.SnapSCC.SnapSCC.SnapSCC.SnapSCC.SnapSCC.Reset.SnapSCC.Reset.Server.SnapSCC.SnapSCC.SnapSCC.Rest.SnapSCC.Reset.Rest.Snap

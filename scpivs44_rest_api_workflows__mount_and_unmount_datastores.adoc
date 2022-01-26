@@ -17,7 +17,9 @@ summary: 要使用适用于 VMware vSphere 的 SnapCenter 插件 REST API 对数
 
 对于每个 REST API ，在 REST API 的前面添加 `https://<server>:<port>` 以形成完整的端点。
 
-要挂载数据存储库，请按照以下工作流进行操作：
+
+
+== 要挂载数据存储库，请按照以下工作流进行操作：
 
 |===
 | 步骤 | REST API | 注释 
@@ -37,7 +39,9 @@ summary: 要使用适用于 VMware vSphere 的 SnapCenter 插件 REST API 对数
 
 | 5. | ` /4.1/数据 存储库 / 备份 / ｛ backupId ｝ /mount` | `m为备份挂载数据存储库` 挂载指定的数据存储库备份。传递步骤 2 中的 * 备份 Id* 。在 * 数据存储库 * 和 * 位置 * 属性中，传递步骤 3 中 `snapshotLocationsList` 中的信息。在 * esxHostName* 属性中，传递步骤 4 中 * availableEssxHostsList* 中的信息。 
 |===
-要卸载数据存储库，请按照以下工作流进行操作：
+
+
+== 要卸载数据存储库，请按照以下工作流进行操作：
 
 |===
 | 步骤 | REST API | 注释 

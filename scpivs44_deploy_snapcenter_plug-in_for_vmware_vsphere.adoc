@@ -29,6 +29,7 @@ summary: 要使用 SnapCenter 功能保护虚拟机上的 VM ，数据存储库�
 * 您必须已在 vCenter 中启用传输层安全（ TLS ）。请参见 VMware 文档。
 * 您可以将 SnapCenter VMware 插件与 VSC 7.x 及更高版本的虚拟设备部署在同一 vCenter 中。
 * 如果您计划在部署了 SnapCenter VMware 插件的 vCenter 以外的 vCenter 中执行备份，则 ESXi 服务器， SnapCenter VMware 插件和每个 vCenter 必须同时同步。
+* 要保护 VVOL 数据存储库上的 VM ，必须先部署适用于 VMware vSphere 的 ONTAP 工具。ONTAP 工具可在 ONTAP 和 VMware Web 客户端上配置和配置存储。
 
 
 在与 vCenter 相同的时区部署 SnapCenter VMware 插件。备份计划在部署 SnapCenter VMware 插件的时区执行。vCenter 将报告 vCenter 所在时区的数据。因此，如果 SnapCenter VMware 插件和 vCenter 位于不同时区，则 SnapCenter VMware 插件信息板中的数据可能与报告中的数据不同。
@@ -79,16 +80,21 @@ VM 的默认部署位置是启动向导的清单对象。
 
 
 
-. 在 * 选择网络 * 页面上，选择一个源网络并将其映射到目标网络，然后单击 * 下一步 * 。
+. 在 * 选择网络 * 页面上，执行以下操作：
++
+.. 选择一个源网络并将其映射到一个目标网络，
 +
 源网络列列出了 OVA 模板中定义的所有网络。
 
+.. 在 * IP 分配设置 * 部分中，选择所需的 IP 协议，然后单击 * 下一步 * 。
 +
 适用于 VMware vSphere 的 SnapCenter 插件支持一个网络接口。如果需要多个网络适配器，则必须手动设置。请参见 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_create_additional_network_adapters_in_NDB_and_SCV_4.3["知识库文章：如何创建其他网络适配器"^]。
 
+
+
 . 在 * 自定义模板 * 页面上，执行以下操作：
 +
-.. 在 * 注册到现有 vCenter * 部分中，输入 vCenter 虚拟设备凭据。
+.. 在 * 注册到现有 vCenter * 部分中，输入虚拟设备的 vCenter 名称和 vCenter 凭据。
 +
 在 * vCenter username* 字段中，输入格式为 `domain\username` 的用户名。
 
@@ -100,9 +106,18 @@ VM 的默认部署位置是启动向导的清单对象。
 
 IMPORTANT: 记下您指定的用户名和密码。如果要稍后修改 SnapCenter VMware 插件配置，则需要使用这些凭据。
 
-.. 在 * 设置网络属性 * 中，输入网络信息。
+.. 在 * 设置网络属性 * 中，输入主机名。
++
+... 在 * 设置 IPv4 网络属性 * 部分中，输入网络信息，例如 IPv4 地址， IPv4 网络掩码， IPv4 网关， IPv4 主 DNS ， IPv4 二级 DNS ， 和 IPv4 搜索域。
+... 在 * 设置 IPv6 网络属性 * 部分中，输入网络信息，例如 IPv6 地址， IPv6 网络掩码， IPv6 网关， IPv6 主 DNS ， IPv6 二级 DNS ， 和 IPv6 搜索域。
 +
 选择 IPv4 或 IPv6 字段，或者根据需要选择这两者。如果同时使用 IPv4 和 IPv6 ，则只需要为其中一个指定主 DNS 。
+
++
+
+IMPORTANT: 如果要继续使用 DHCP 作为网络配置，可以跳过这些步骤并将 * 设置网络属性 * 部分中的条目留空。
+
+
 
 .. 在 * 设置日期和时间 * 中，选择 vCenter 所在的时区。
 
@@ -123,7 +138,7 @@ IMPORTANT: 记下您指定的用户名和密码。如果要稍后修改 SnapCent
 VMware 工具安装在部署了 SnapCenter VMware 插件的虚拟机上。有关安装 VMware Tools 的详细信息，请参见 VMware 文档。
 
 +
-完成部署可能需要几分钟时间。在启动 SnapCenter VMware 插件，安装 VMware 工具以及屏幕提示您登录到 SnapCenter VMware 插件后，系统将显示部署成功。
+完成部署可能需要几分钟时间。在启动 SnapCenter VMware 插件，安装 VMware 工具以及屏幕提示您登录到 SnapCenter VMware 插件后，系统将显示部署成功。您可以在首次重新启动期间将网络配置从 DHCP 切换到静态。但是，不支持从静态切换到 DHCP 。
 
 +
 此屏幕将显示部署 SnapCenter VMware 插件的 IP 地址。记下 IP 地址。如果要更改 SnapCenter SnapCenter 插件配置，您需要登录到 VMware 插件管理 GUI 。

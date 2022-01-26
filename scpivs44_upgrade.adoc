@@ -20,6 +20,9 @@ summary: 如果您使用的是适用于 VMware vSphere 的 SnapCenter 插件虚�
 
 TIP: 在开始升级之前，请备份适用于 VMware vSphere 的 SnapCenter 插件 OVA 。
 
+
+NOTE: 不支持将网络配置从静态切换到 DHCP 。
+
 .步骤
 . 禁用适用于 VMware vSphere 的 SnapCenter 插件，为升级做准备。
 +

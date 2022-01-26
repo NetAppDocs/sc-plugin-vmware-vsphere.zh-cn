@@ -20,7 +20,7 @@ SnapCenter VMware 插件可为您的环境添加以下功能：
 
 * 支持 VM 一致和崩溃一致的数据保护操作。
 +
-您可以在 vCenter 中使用 VMware vSphere Web Client GUI 执行 VMware 虚拟机（ VM ）， VMDK 和数据存储库的所有备份和还原操作。您还可以还原 VM 和 VMDK 以及还原子操作系统上的文件和文件夹。
+您可以在 vCenter 中使用 VMware vSphere Web Client GUI 执行 VMware 虚拟机（传统 VM 和 VVol VM ）， VMDK 和数据存储库的所有备份和还原操作。对于 VVol 虚拟机（ VVol 数据存储库中的虚拟机），仅支持崩溃状态一致的备份。您还可以还原 VM 和 VMDK 以及还原子操作系统上的文件和文件夹。
 
 +
 备份 VM ， VMDK 和数据存储库时，此插件不支持 RDM 。VM 的备份作业会忽略 RDM 。如果需要备份 RDM ，则必须使用基于 SnapCenter 应用程序的插件。
@@ -49,6 +49,13 @@ VMware 文件系统（ VMFS ）的还原工作流利用了 VMware Storage vMotio
 +
 NFS 环境中的大多数还原操作都使用原生 ONTAP 功能（例如单个文件 SnapRestore ），而不需要 VMware Storage vMotion 。
 
+* 要保护 VMware VVol 虚拟机，需要使用适用于 VMware vSphere 的 ONTAP 工具。
++
+您可以使用 ONTAP 工具在 ONTAP 和 VMware Web Client 中为 VVOL 配置和配置存储。
+
++
+有关详细信息，请参见 https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html["适用于 VMware vSphere 的 ONTAP 工具"^]
+
 * SnapCenter VMware 插件作为虚拟设备部署在 Linux VM 中
 +
 尽管虚拟设备必须作为 Linux VM 安装，但 SnapCenter VMware 插件既支持基于 Windows 的 vCenter ，也支持基于 Linux 的 vCenter 。SnapCenter 本机使用此插件，无需用户干预，即可与 vCenter 进行通信，以支持基于 SnapCenter 应用程序的插件，这些插件可在 Windows 和 Linux 虚拟化应用程序上执行数据保护操作。
@@ -57,7 +64,7 @@ NFS 环境中的大多数还原操作都使用原生 ONTAP 功能（例如单个
 
 除了这些主要功能之外，适用于 VMware vSphere 的 SnapCenter 插件还支持 iSCSI ，光纤通道， FCoE ，基于 NFS 3.0 和 4.1 的 VMDK 以及基于 VMFS 5.0 和 6.0 的 VMDK 。
 
-有关受支持版本的最新信息，请参见 https://mysupport.netapp.com/matrix/imt.jsp?components=100571;&solution=1517&isHWU&src=IMT["NetApp 互操作性表工具"^] IMT
+有关受支持版本的最新信息，请参见 https://imt.netapp.com/matrix/imt.jsp?components=103284;&solution=1517&isHWU&src=IMT["NetApp 互操作性表工具"^] IMT
 
 有关 NFS 协议和 ESXi 的信息，请参见 VMware 提供的 vSphere 存储文档。
 

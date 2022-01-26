@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: scpivs44_create_resource_groups_for_vms_and_datastores.html 
 keywords:  
-summary: 资源组是要保护的一个或多个 VM 或数据存储库的容器。 
+summary: 资源组是指要保护的 VM ，数据存储库或 VVOL VM 的容器。 
 ---
-= 为 VM 和数据存储库创建资源组
+= 创建资源组
 :hardbreaks:
 :nofooter: 
 :icons: font
@@ -13,16 +13,51 @@ summary: 资源组是要保护的一个或多个 VM 或数据存储库的容器�
 
 
 [role="lead"]
-资源组是要保护的一个或多个 VM 或数据存储库的容器。
+资源组是指要保护的 VM ，数据存储库或 VVOL VM 的容器。
 
-资源组可以包含 VM 和数据存储库的任意组合。从适用于 VMware vSphere 的 SnapCenter 插件 4.4 开始，一个资源组还可以包含一个 FlexGroup 卷或一个或多个 FlexVol 卷，但不能同时包含这两者。
+资源组可以包含以下内容之一：
+
+* 传统 VM 和数据存储库
++
+传统 VM ，传统 SAN 数据存储库和传统 NAS 数据存储库的任意组合。传统 VM 不能与 VVol VM 结合使用。
+
+* FlexGroup 数据存储库
++
+一个 FlexGroup 数据存储库。不支持跨区 FlexGroup 数据存储库。FlexGroup 数据存储库不能与传统 VM 或数据存储库结合使用。
+
+* FlexVol 数据存储库
++
+一个或多个 FlexVol 数据存储库。支持跨区数据存储库。
+
+* VVol 虚拟机
++
+一个或多个 VVol 虚拟机。VVol 虚拟机不能与传统虚拟机或数据存储库结合使用。
+
+* 带有标记的 VVol VM
++
+具有指定 vCenter 标记的所有 VVol 虚拟机。不支持在同一 vCenter 或不同 vCenter 中具有相同标记的其他具有标记的实体，例如数据存储库或传统 VM 。如果具有指定标记的 VM 列表包含 VVol VM 和传统 VM 的混合，则适用于 VMware vSphere 的 SnapCenter 插件将备份 VVol VM 并跳过传统 VM 。
+
+* 文件夹中的 VVol VM
++
+所有 VVOL 都位于一个指定的 VVOL 文件夹中。如果此文件夹同时包含 VVOL VM 和传统 VM ，则适用于 VMware vSphere 的 SnapCenter 插件会备份 VVOL VM 并跳过传统 VM 。
 
 
-NOTE: 对于跨接 VM ，不支持同时使用 FlexGroup 和 FlexVol 。
+
+对于所有资源组：
+
+
+IMPORTANT: 如果您使用的是 VMware vSphere 集群服务（ vCL ），请勿在 SnapCenter VMware 插件资源组中包含由 vCL 管理的虚拟机。
 
 适用于 VMware vSphere 4.5 及更高版本的 SnapCenter 插件在 ASA 聚合上支持大小高达 128 TB 的大型 LUN 上的数据存储库。对于大型 LUN ， SnapCenter 仅使用厚配置 LUN 来避免延迟。
 
-您可以随时在资源组中添加或删除 VM 和数据存储库。
+
+IMPORTANT: 请勿添加处于不可访问状态的 VM 。尽管可以创建包含无法访问的 VM 的资源组，但该资源组的备份将失败。
+
+在创建包含 VVOL VM 的资源组之前，必须先部署适用于 VMware 的 ONTAP 工具。
+
+有关详细信息，请参见 https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html["适用于 VMware vSphere 的 ONTAP 工具"^]。
+
+您可以随时在资源组中添加或删除资源。
 
 * 备份单个资源
 +
@@ -46,14 +81,6 @@ NOTE: 对于跨接 VM ，不支持同时使用 FlexGroup 和 FlexVol 。
 * 备份策略
 +
 虽然可以在没有备份策略的情况下创建资源组，但只有在至少有一个策略附加到资源组时，才能执行计划的数据保护操作。您可以使用现有策略，也可以在创建资源组时创建新策略。
-
-+
-
-NOTE: 资源组可以包含 VM 以及 SAN 和 NAS 数据存储库；它不能包含 VSAN 或 VVol 数据存储库。
-
-+
-
-IMPORTANT: 请勿添加处于不可访问状态的 VM 。尽管您可以创建一个包含无法访问的 VM 的资源组，但该资源组的备份将失败。
 
 * 兼容性检查
 +
@@ -105,7 +132,7 @@ image:scpivs44_image16.png["错误：缺少图形映像"]
 
 
 | 最新 Snapshot 名称  a| 
-从适用于 VMware vSphere 的 SnapCenter 插件 4.4 开始，如果要将后缀 "_recent " 添加到最新的 Snapshot 副本中，请选中此框。"_recent " 后缀将替换日期和时间戳。
+如果要将后缀 "_recent " 添加到最新 Snapshot 副本中，请选中此框。"_recent " 后缀将替换日期和时间戳。
 
 
 NOTE: 系统会为连接到资源组的每个策略创建 ` - 最新` 备份。因此，具有多个策略的资源组将具有多个 ` - 最新` 备份。
@@ -121,25 +148,35 @@ NOTE: 系统会为连接到资源组的每个策略创建 ` - 最新` 备份。�
 
 
 |===
-. 在 * 资源 * 页面的可用实体列表中，选择资源组中所需的资源，然后单击 * > * 将所选内容移动到选定实体列表。
+. 在 * 资源 * 页面上，执行以下操作：
 +
-image:scpivs44_image17.png["错误：缺少图形映像"]
+|===
+| 对于此字段… | 执行此操作… 
+
+
+| 范围 | 选择要保护的资源类型： * 数据存储库（一个或多个指定数据存储库中的所有传统虚拟机） * 虚拟机（单个传统虚拟机或 VVol 虚拟机； 在字段中，您必须导航到包含 VM 或 VVOL VM 的数据存储库） * 标记（具有单个指定 VMware 标记的所有 VVOL VM ；在列表框中，必须输入此标记） * VM 文件夹（指定文件夹中的所有 VVOL VM ； 在弹出字段中，您必须导航到文件夹所在的数据中心） 
+
+
+| 数据中心 | 导航到要添加的 VM 或数据存储库或文件夹。 
+
+
+| 可用实体 | 选择要保护的资源，然后单击 * > * 将所选内容移动到 " 选定实体 " 列表。 
+|===
++
+单击 * 下一步 * 时，系统会首先检查 SnapCenter 是否管理选定资源所在的存储并与其兼容。
 
 +
-单击 * 下一步 * 时，系统会首先检查 SnapCenter 是否管理选定虚拟机或数据存储库所在的存储并与其兼容。
-
-+
-如果显示消息 `Sselected virtual machine is not SnapCenter compatible or selected datastore is not SnapCenter compatible` ，则选定虚拟机或数据存储库与 SnapCenter 不兼容。请参见 <<Manage compatibility check failures>> 有关详细信息 ...
+如果显示消息 `Sselected <resource-name> is not SnapCenter compatible` ，则选定资源与 SnapCenter 不兼容。请参见 <<Manage compatibility check failures>> 有关详细信息 ...
 
 . 在 * 生成磁盘 * 页面上，为多个数据存储库中具有多个 VMDK 的 VM 选择一个选项：
 +
-始终排除所有跨区数据存储库（这是数据存储库的默认设置）。
-
+** 始终排除所有跨区数据存储库（这是数据存储库的默认设置）。
+** 始终包括所有跨区数据存储库（这是 VM 的默认设置）。
+** 手动选择要包括的跨区数据存储库
 +
-始终包括所有跨区数据存储库（这是 VM 的默认设置）。
+FlexGroup 和 VVOL 数据存储库不支持跨接 VM 。
 
-+
-手动选择要包括的跨区数据存储库
+
 
 . 在 * 策略 * 页面上，选择或创建一个或多个备份策略，如下表所示：
 +
@@ -170,7 +207,7 @@ image:scpivs44_image18.png["错误：缺少图形映像"]
 您必须填写每个字段。SnapCenter VMware 插件会在部署 SnapCenter VMware 插件的时区创建计划。您可以使用适用于 VMware vSphere 的 SnapCenter 插件 GUI 修改时区。
 
 +
-link:scpivs44_manage_your_configuration.html#modify-the-time-zones-for-backups["修改备份的时区"]。
+link:scpivs44_modify_the_time_zones.html["修改备份的时区"]。
 
 . 查看摘要，然后单击 * 完成 * 。
 +
@@ -199,7 +236,7 @@ NOTE: 如果备份中任何 VM 的暂停操作失败，则备份将标记为不�
 SnapCenter 4.x 版支持 ONTAP 8.3.1 及更高版本。
 
 +
-适用于 VMware vSphere 的 SnapCenter 插件不会对所有 ONTAP 版本执行兼容性检查；仅对 ONTAP 8.2.1 及更早版本执行兼容性检查。因此，请始终参见 https://mysupport.netapp.com/matrix/imt.jsp?components=100571;&solution=1517&isHWU&src=IMT["NetApp 互操作性表工具（ IMT ）"^] 有关 SnapCenter 支持的最新信息。
+适用于 VMware vSphere 的 SnapCenter 插件不会对所有 ONTAP 版本执行兼容性检查；仅对 ONTAP 8.2.1 及更早版本执行兼容性检查。因此，请始终参见 https://imt.netapp.com/matrix/imt.jsp?components=103284;&solution=1517&isHWU&src=IMT["NetApp 互操作性表工具（ IMT ）"^] 有关 SnapCenter 支持的最新信息。
 
 * 共享 PCI 设备已连接到 VM 。
 * 未在 SnapCenter 中配置首选 IP 。

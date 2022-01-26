@@ -23,6 +23,13 @@ summary: 通过添加存储，适用于 VMware vSphere 的 SnapCenter 插件可�
 +
 适用于 VMware vSphere 4.5 及更高版本的 SnapCenter 插件在 ASA 聚合上支持大小高达 128 TB 的大型 LUN 上的数据存储库。对于大型 LUN ， SnapCenter 仅支持厚配置 LUN 以避免延迟。
 
+* VMware 虚拟卷（ VVOL ）
++
+您必须先将 VVOL 存储系统添加到适用于 VMware vSphere 的 ONTAP 工具中，然后将 VVOL 存储系统添加到适用于 VMware vSphere 的 SnapCenter 插件中。
+
++
+有关详细信息，请参见 https://docs.netapp.com/vapp-98/index.jsp["适用于 VMware vSphere 的 ONTAP 工具"^]
+
 
 
 ESXi 服务器， SnapCenter VMware 插件和每个 vCenter 必须同时同步。如果您尝试添加存储，但 vCenter 的时间设置未同步，则此操作可能会失败并显示 Java 证书错误。
@@ -70,7 +77,7 @@ image:scpivs44_image12.png["错误：缺少图形映像"]
 | 协议 | 选择存储协议。 
 
 
-| Port | 选择端口 443 （默认值）或端口 80 以与 vCenter 进行通信。 
+| Port | 选择端口 443 （默认值）或端口 80 以与 vCenter 进行通信。在执行 VM 和数据存储库备份和还原操作时，端口 443 用于在适用于 VMware vSphere 的 SnapCenter 插件的 Storage VM 主机与 vCenter 之间进行通信。如果您计划保护 VVol 虚拟机，则必须选择默认端口 443 。 
 
 
 | 超时 | 输入 vCenter 在超时操作之前应等待的秒数。默认值为 60 秒 

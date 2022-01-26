@@ -1,159 +1,16 @@
 ---
 sidebar: sidebar 
-permalink: scpivs44_manage_your_configuration.html 
+permalink: scpivs44_properties_you_can_override.html 
 keywords:  
-summary: 您需要使用适用于 VMware vSphere 的 SnapCenter 插件管理 GUI 更新虚拟设备配置，其中包括 vCenter 凭据，虚拟设备凭据和备份时区。 
+summary: '您可以使用 `sCBR.override` 配置文件中列出的属性来更改默认值。' 
 ---
-= 管理您的配置
+= 可以覆盖的属性
 :hardbreaks:
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
 
-
-[role="lead"]
-您需要使用适用于 VMware vSphere 的 SnapCenter 插件管理 GUI 更新虚拟设备配置，其中包括 vCenter 凭据，虚拟设备凭据和备份时区。
-
-
-
-== 修改备份的时区
-
-在为适用于 VMware vSphere 的 SnapCenter 插件资源组配置备份计划时，系统会自动为部署 SnapCenter VMware 插件的时区设置此计划。您可以使用适用于 VMware vSphere 的 SnapCenter 插件管理 GUI 修改该时区。
-
-您必须知道适用于 VMware vSphere 的 SnapCenter 插件管理 GUI 的 IP 地址和登录凭据。
-
-* 部署 SnapCenter VMware 插件时会显示此 IP 地址。
-* 使用在部署 SnapCenter VMware 插件期间提供的或稍后修改的登录凭据。
-
-
-.步骤
-. 登录到 SnapCenter VMware 插件管理 GUI 。
-+
-格式为 `https://<appliance-IP-address>:8080`
-
-. 单击顶部工具栏中的设置图标。
-+
-image:scpivs44_image28.jpg["错误：缺少图形映像"]
-
-. 在 * 设置 * 页面的 * 日期和时间 * 部分中，单击 * 编辑 * 。
-. 选择新时区并单击 * 保存 * 。
-+
-新时区将用于 SnapCenter VMware 插件执行的所有备份。
-
-
-
-
-
-== 修改登录凭据
-
-您可以修改适用于 VMware vSphere 的 SnapCenter 插件管理 GUI 的登录凭据。
-
-您必须知道适用于 VMware vSphere 的 SnapCenter 插件管理 GUI 的 IP 地址和登录凭据。
-
-* 部署 SnapCenter VMware 插件时会显示此 IP 地址。
-* 使用在部署 SnapCenter VMware 插件期间提供的或稍后修改的登录凭据。
-
-
-.步骤
-. 登录到 SnapCenter VMware 插件管理 GUI 。
-+
-格式为 `https://<appliance-IP-address>:8080`
-
-. 单击顶部工具栏中的设置图标。
-+
-image:scpivs44_image28.jpg["错误：缺少图形映像"]
-
-. 在 * 设置 * 页面的 * 用户 * 部分中，单击 * 编辑 * 。
-. 输入新密码并单击 * 保存 * 。
-+
-可能需要几分钟才能恢复所有服务。
-
-
-
-
-
-== 修改 vCenter 登录凭据
-
-您可以修改在适用于 VMware vSphere 的 SnapCenter 插件中配置的 vCenter 登录凭据。插件使用这些设置访问 vCenter 。
-
-您必须知道适用于 VMware vSphere 的 SnapCenter 插件管理 GUI 的 IP 地址和登录凭据。
-
-* 部署 SnapCenter VMware 插件时会显示此 IP 地址。
-* 使用在部署 SnapCenter VMware 插件期间提供的或稍后修改的登录凭据。
-
-
-.步骤
-. 登录到 SnapCenter VMware 插件管理 GUI 。
-+
-格式为 `https://<appliance-IP-address>:8080`
-
-. 在左侧导航窗格中，单击 * 配置 * 。
-+
-image:scpivs44_image30.png["错误：缺少图形映像"]
-
-. 在 * 配置 * 页面的 * vCenter * 部分中，单击 * 编辑 * 。
-. 输入新密码，然后单击 * 保存 * 。
-+
-请勿修改端口号。
-
-
-
-
-
-== 修改网络设置
-
-您可以修改在适用于 VMware vSphere 的 SnapCenter 插件中配置的网络设置。插件使用这些设置访问 vCenter 。
-
-您必须知道适用于 VMware vSphere 的 SnapCenter 插件管理 GUI 的 IP 地址和登录凭据。
-
-* 部署 SnapCenter VMware 插件时会显示此 IP 地址。
-* 使用在部署 SnapCenter VMware 插件期间提供的或稍后修改的登录凭据。
-
-
-.步骤
-. 登录到 SnapCenter VMware 插件管理 GUI 。
-+
-格式为 `https://<appliance-IP-address>:8080`
-
-. 单击顶部工具栏中的设置图标。
-+
-image:scpivs44_image31.png["错误：缺少图形映像"]
-
-. 在 * 设置 * 页面的 * 网络设置 * 部分中，单击 * IPv4 * 或 * IPv6 * ，然后单击 * 编辑 * 。
-+
-输入新信息并单击 * 保存 * 。
-
-. 如果要删除网络设置，请执行以下操作：
-+
-** IPv4 ：在 * IP Address* 字段中，输入 `0.0.0.0` ，然后单击 * 保存 * 。
-** IPv6 ：在 * IP Address* 字段中：输入 ` ： 0` ，然后单击 * 保存 * 。
-
-
-
-
-
-NOTE: 如果同时使用 IPv4 和 IPv6 ，则不能同时删除这两个网络设置。其余网络必须指定 DNS 服务器和搜索域字段。
-
-
-
-== 修改配置默认值
-
-要提高操作效率，您可以修改 `sCBR.override` 配置文件以更改默认值。这些值控制备份期间创建或删除的 VMware 快照数量或备份脚本停止运行之前的时间等设置。
-
-适用于 VMware vSphere 的 SnapCenter 插件环境使用 `sCBR.override` 配置文件，该插件支持基于 SnapCenter 应用程序的数据保护操作。如果此文件不存在，则必须从模板文件创建它。
-
-
-
-== 创建 scbr.override 配置文件
-
-. 转至 ` /opt/netapp/scvservice/standalone aeg/etc/scbr/scbr.override-template` 。
-. 将 `sCBR.override-template` 文件复制到 ` \opt\NetApp\scvservice\standalone aeg\etc\scbr` 目录中名为 `sCBR.override` 的新文件。
-
-
-
-
-== 可以覆盖的属性
 
 * 默认情况下，模板使用哈希符号来注释配置属性。要使用属性修改配置值，必须删除 ` #` 字符。
 * 要使更改生效，您必须在适用于 VMware vSphere 的 SnapCenter 插件主机上重新启动此服务。
@@ -378,27 +235,4 @@ NOTE: 如果同时使用 IPv4 和 IPv6 ，则不能同时删除这两个网络�
 +
 默认值为 "30000 " 。
 
-
-
-
-
-== 为适用于 VMware vSphere 的 SnapCenter 插件启用 SSH
-
-部署 SnapCenter VMware 插件时， SSH 默认处于禁用状态。
-
-.步骤
-. 从 VMware vSphere Web Client 中，选择 SnapCenter VMware 插件所在的虚拟机。
-. 右键单击虚拟机，然后在虚拟设备的 * 摘要 * 选项卡上单击 * 启动远程控制台 * 以打开维护控制台窗口。
-+
-SnapCenter VMware 插件维护控制台的登录默认设置如下：
-
-+
-用户名： `m熟悉` 密码： `admin123`
-
-+
-image:scpivs44_image11.png["错误：缺少图形映像"]
-
-. 从主菜单中选择菜单选项 *2 ） System Configuration* 。
-. 从 System Configuration Menu 中，选择菜单选项 * ） Enable SSH access* ，然后在确认提示符处输入 "* y" 。
-. 等待消息 " 正在启用 SSH 访问… " 然后按 * 输入 * 继续，然后在提示符处输入 * X 退出维护模式。
 

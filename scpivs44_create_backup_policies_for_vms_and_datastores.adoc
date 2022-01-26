@@ -30,7 +30,7 @@ summary: 在使用适用于 VMware vSphere 的 SnapCenter 插件备份 VM 和数
 
 
 
-* 如果要使用 VM 一致的备份，则必须安装并运行 VMware Tools 。需要使用 VMware Tools 暂停 VM 。
+* 如果您希望进行 VM 一致的备份，则必须安装并运行 VMware Tools 。需要使用 VMware Tools 暂停 VM 。VVOL VM 不支持 VM 一致的备份。
 
 
 这些向导页面上的大多数字段都是不言自明的。以下信息介绍了一些可能需要指导的字段。
@@ -79,7 +79,7 @@ NOTE: 对于 ONTAP 9.4 或更高版本上的资源，最大保留值为 1018 次
 选择此选项可在与主备份卷具有 SnapMirror 关系的另一个卷上创建备份集的镜像副本。如果卷配置了镜像 - 存储关系，则如果要将备份复制到镜像 - 存储目标，则只能选择 * 备份后更新 SnapVault * 选项。
 
 
-NOTE: 从适用于 VMware vSphere 4.5 的 SnapCenter 插件开始， FlexGroup 卷中的数据存储库支持此选项。适用于 VMware vSphere 4.4 及更早版本的 SnapCenter 插件中的 FlexGroup 卷中的数据存储库不支持此选项。
+NOTE: 适用于 VMware vSphere 4.5 及更高版本的 SnapCenter 插件中的 FlexGroup 卷中的数据存储库支持此选项。
 
 
 
@@ -90,7 +90,7 @@ NOTE: 从适用于 VMware vSphere 4.5 的 SnapCenter 插件开始， FlexGroup �
 IMPORTANT: 如果为卷配置了镜像 - 存储关系，则只有在需要将备份复制到镜像 - 存储目标时，才必须选择此选项。
 
 
-NOTE: 从适用于 VMware vSphere 4.5 的 SnapCenter 插件开始， FlexGroup 卷中的数据存储库支持此选项。适用于 VMware vSphere 4.4 及更早版本的 SnapCenter 插件中的 FlexGroup 卷中的数据存储库不支持此选项。
+NOTE: 适用于 VMware vSphere 4.5 及更高版本的 SnapCenter 插件中的 FlexGroup 卷中的数据存储库支持此选项。
 
 
 
@@ -109,6 +109,8 @@ NOTE: Snapshot 副本标签最多允许包含 31 个字符。
 
 | 虚拟机一致性  a| 
 选中此框可在每次运行备份作业时暂停 VM 并创建 VMware 快照。
+
+VVOL 不支持此选项。对于 VVol 虚拟机，仅执行崩溃状态一致的备份。
 
 
 IMPORTANT: 要执行虚拟机一致的备份，必须在虚拟机上运行 VMware Tools 。如果 VMware Tools 未运行，则会执行崩溃状态一致的备份。

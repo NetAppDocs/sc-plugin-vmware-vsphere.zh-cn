@@ -5,8 +5,9 @@ settings:
     pdf_enabled: true
   prod:
     pdf_enabled: true
-    harmony_enabled: true
+    harmony_enabled: false
     langs: zh-cn,us-en,ja-jp
+  langs: zh-cn,us-en,ja-jp
 sidebar:
   entries:
   - title: 适用于 VMware vSphere 的 SnapCenter 插件
@@ -45,6 +46,8 @@ sidebar:
         url: "/scpivs44_deployment_planning_and_requirements.html"
       - title: 所需的最小 ONTAP 权限
         url: "/scpivs44_minimum_ontap_privileges_required.html"
+      - title: 所需的最低 vCenter 权限
+        url: "/scpivs44_minimum_vcenter_privileges_required.html"
     - title: 下载适用于 VMware vSphere OVA 的 SnapCenter 插件（开放式虚拟设备）
       url: "/scpivs44_download_the_snapcenter_plug-in_for_vmware_vsphere_ova_open_virtual_appliance.html"
     - title: 部署适用于 VMware vSphere 的 SnapCenter 插件
@@ -93,11 +96,11 @@ sidebar:
     entries:
     - title: 数据保护工作流
       url: "/scpivs44_protect_data_overview.html"
-    - title: 查看虚拟机和数据存储库备份
+    - title: 查看备份
       url: "/scpivs44_view_vm_and_datastore_backups.html"
-    - title: 为 VM 和数据存储库创建备份策略
+    - title: 创建备份策略
       url: "/scpivs44_create_backup_policies_for_vms_and_datastores.html"
-    - title: 为 VM 和数据存储库创建资源组
+    - title: 创建资源组
       url: "/scpivs44_create_resource_groups_for_vms_and_datastores.html"
     - title: 预处理脚本和后处理脚本
       url: "/scpivs44_prescripts_and_postscripts.html"
@@ -107,7 +110,7 @@ sidebar:
       url: "/scpivs44_add_multiple_vms_and_datastores_to_a_resource_group.html"
     - title: 按需备份资源组
       url: "/scpivs44_back_up_resource_groups_on_demand.html"
-    - title: 备份适用于 VMware vSphere 的 SnapCenter 插件 MySQL 数据库
+    - title: 备份 MySQL 数据库
       url: "/scpivs44_back_up_the_snapcenter_plug-in_for_vmware_vsphere_mysql_database.html"
     - title: 管理资源组—暂停，恢复，修改，删除
       url: "/scpivs44_manage_resource_groups.html"
@@ -174,7 +177,23 @@ sidebar:
     - title: 删除适用于 VMware vSphere 的 SnapCenter 插件
       url: "/scpivs44_remove_plugin.html"
   - title: 管理您的配置
-    url: "/scpivs44_manage_your_configuration.html"
+    entries:
+    - title: 修改时区
+      url: "/scpivs44_modify_the_time_zones.html"
+    - title: 修改登录凭据
+      url: "/scpivs44_modify_the_logon_credentials.html"
+    - title: 修改 vCenter 登录凭据
+      url: "/scpivs44_modify_the_vcenter_logon_credentials.html"
+    - title: 修改网络设置
+      url: "/scpivs44_modify_the_network_settings.html"
+    - title: 修改配置默认值
+      url: "/scpivs44_modify_configuration_default_values.html"
+    - title: 创建 scbr.override 文件
+      url: "/scpivs44_create_the_scbr_override_file.html"
+    - title: 您可以覆盖的配置属性
+      url: "/scpivs44_properties_you_can_override.html"
+    - title: 启用 SSH ：
+      url: "/scpivs44_enable_ssh.html"
   - title: REST API
     entries:
     - title: 概述
@@ -211,32 +230,14 @@ sidebar:
       url: "/scpivs44_upgrade_to_a_new_patch.html"
     - title: 升级到同一版本的新修补程序后，不会显示信息
       url: "/scpivs44_information_not_displayed_after_upgrading_to_a_new_patch_of_the_same_release.html"
-  - title: 迁移
-    entries:
-    - title: 迁移选项和支持的路径
-      url: "/scpivs44_migrate.html"
-    - title: 迁移概述
-      url: "/scpivs44_migration_overview.html"
-    - title: 迁移的前提条件
-      url: "/scpivs44_prerequisites_for_migration.html"
-    - title: 从适用于 VMware vSphere 的基于 Windows 的 SnapCenter 插件迁移
-      url: "/scpivs44_migrate_from_windows_based_snapcenter_plug-in_for_vmware_vsphere.html"
-    - title: 迁移基于 Windows 的 SnapCenter VMware 备份元数据
-      url: "/scpivs44_migrate_snapcenter_backup_metadata_to_the_virtual_appliance.html"
-    - title: 迁移后
-      url: "/scpivs44_post-migration.html"
-    - title: 更正迁移期间出现的错误网关
-      url: "/scpivs44_correct_bad_gateway_errors_during_migration.html"
-    - title: 管理身份验证错误
-      url: "/scpivs44_manage_authentication_errors.html"
   - title: 法律声明
-    url: "/netapp_legal_notices.html"
+    url: "/legal-notices.html"
 homepage:
   tiles:
   - title: 入门
     links:
     - title: 发行说明
-      url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2877232
+      url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2881136
     - title: 了解 SCV
       url: "/scpivs44_concepts_overview.html"
     - title: 部署要求

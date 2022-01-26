@@ -15,9 +15,7 @@ summary: 您可以将已删除的虚拟机从数据存储库主备份或二级�
 [role="lead"]
 您可以将已删除的虚拟机从数据存储库主备份或二级备份还原到所选的 ESXi 主机。
 
-在适用于 VMware vSphere 4.4 及更早版本的 SnapCenter 插件中，您只能将虚拟机还原到原始主机和数据存储库。
-
-从适用于 VMware vSphere 4.5 的 SnapCenter 插件开始，您可以将虚拟机还原到以下位置：
+您可以将 VM 还原到以下位置：
 
 * 还原到原始位置
 +
@@ -37,8 +35,12 @@ summary: 您可以将已删除的虚拟机从数据存储库主备份或二级�
 
 NOTE: 还原到其他位置时，适用于 VMware vSphere 的 SnapCenter 插件必须在作为还原操作目标的链接 vCenter 中运行。目标数据存储库必须具有足够的空间。
 
+
+NOTE: 还原已删除的虚拟机时，不会还原最初分配给该虚拟机的任何标记。
+
 .开始之前
 * 在 VMware vSphere Web Client 的存储系统页面上，存储系统的用户帐户必须具有 link:scpivs44_minimum_ontap_privileges_required.html["ONTAP 所需的最小 ONTAP 权限"]。
+* vCenter 中的用户帐户必须具有 link:scpivs44_minimum_vcenter_privileges_required.html["适用于 VMware vSphere 的 SnapCenter 插件所需的最低 vCenter 特权"]。
 * 必须存在备份。
 +
 您必须先使用适用于 VMware vSphere 的 SnapCenter 插件创建虚拟机的备份，然后才能在该虚拟机上还原 VMDK 。

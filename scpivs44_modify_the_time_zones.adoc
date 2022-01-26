@@ -1,0 +1,37 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_modify_the_time_zones.html 
+keywords:  
+summary: 在为适用于 VMware vSphere 的 SnapCenter 插件资源组配置备份计划时，系统会自动为部署 SnapCenter VMware 插件的时区设置此计划。您可以使用适用于 VMware vSphere 的 SnapCenter 插件管理 GUI 修改该时区。 
+---
+= 修改备份的时区
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+在为适用于 VMware vSphere 的 SnapCenter 插件资源组配置备份计划时，系统会自动为部署 SnapCenter VMware 插件的时区设置此计划。您可以使用适用于 VMware vSphere 的 SnapCenter 插件管理 GUI 修改该时区。
+
+您必须知道适用于 VMware vSphere 的 SnapCenter 插件管理 GUI 的 IP 地址和登录凭据。
+
+* 部署 SnapCenter VMware 插件时会显示此 IP 地址。
+* 使用在部署 SnapCenter VMware 插件期间提供的或稍后修改的登录凭据。
+
+
+.步骤
+. 登录到 SnapCenter VMware 插件管理 GUI 。
++
+格式为 `https://<appliance-IP-address>:8080`
+
+. 单击顶部工具栏中的设置图标。
++
+image:scpivs44_image28.jpg["错误：缺少图形映像"]
+
+. 在 * 设置 * 页面的 * 日期和时间 * 部分中，单击 * 编辑 * 。
+. 选择新时区并单击 * 保存 * 。
++
+新时区将用于 SnapCenter VMware 插件执行的所有备份。
+
+

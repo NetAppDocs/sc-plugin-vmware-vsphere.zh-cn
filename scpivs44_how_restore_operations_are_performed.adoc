@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_how_restore_operations_are_performed.html 
 keywords:  
-summary: 对于 VMFS 环境，适用于 VMware vSphere 的 SnapCenter 插件使用 Storage VMotion 的克隆和挂载操作来执行还原操作。对于 NFS 环境，此插件使用原生 ONTAP 单文件 SnapRestore （ SFSR ）来提高大多数还原操作的效率。 
+summary: 对于 VMFS 环境，适用于 VMware vSphere 的 SnapCenter 插件使用 Storage VMotion 的克隆和挂载操作来执行还原操作。对于 NFS 环境，此插件使用原生 ONTAP 单文件 SnapRestore （ SFSR ）来提高大多数还原操作的效率。对于 VVOL VM ，此插件使用 ONTAP 单文件快照还原和 SnapMirror 还原执行还原操作。 
 ---
 = 如何执行还原操作
 :hardbreaks:
@@ -12,29 +12,56 @@ summary: 对于 VMFS 环境，适用于 VMware vSphere 的 SnapCenter 插件使�
 :imagesdir: ./media/
 
 
-对于 VMFS 环境，适用于 VMware vSphere 的 SnapCenter 插件使用 Storage VMotion 的克隆和挂载操作来执行还原操作。对于 NFS 环境，此插件使用原生 ONTAP 单文件 SnapRestore （ SFSR ）来提高大多数还原操作的效率。下表列出了如何执行还原操作。
+对于 VMFS 环境，适用于 VMware vSphere 的 SnapCenter 插件使用 Storage VMotion 的克隆和挂载操作来执行还原操作。对于 NFS 环境，此插件使用原生 ONTAP 单文件 SnapRestore （ SFSR ）来提高大多数还原操作的效率。对于 VVOL VM ，此插件使用 ONTAP 单文件快照还原（ ONTAP SFSR ）和 SnapMirror 还原执行还原操作。下表列出了如何执行还原操作。
 
 |===
-| 还原操作 | 在 NFS 环境中使用 ONTAP SFSR 执行 | 在 NFS 环境中使用克隆并使用 Storage VMotion 挂载来执行 | 在 VMFS 环境中使用克隆和 Storage VMotion 挂载来执行 
+| 还原操作 | from | 使用执行 
 
 
-| 从主备份还原 VM 和 VMDK | 是的。 |  | 是的。 
+| VM 和 VMDK | 主备份 | NFS 环境： ONTAP 单文件 SnapRestore VMFS 环境：使用 Storage VMotion 克隆和挂载 
 
 
-| 从二级备份还原 VM 和 VMDK | 是的。 |  | 是的。 
+| VM 和 VMDK | 二级备份 | NFS 环境： ONTAP 单文件 SnapRestore VMFS 环境：使用 Storage VMotion 克隆和挂载 
 
 
-| 从主备份还原已删除的 VM 和 VMDK | 是的。 |  | 是的。 
+| 已删除 VM 和 VMDK | 主备份 | NFS 环境： ONTAP 单文件 SnapRestore VMFS 环境：使用 Storage VMotion 克隆和挂载 
 
 
-| 从二级备份还原已删除的 VM 和 VMDK |  | 是的。 | 是的。 
+| 已删除 VM 和 VMDK | 二级备份 | NFS 环境：使用 Storage VMotion VMFS 环境克隆和挂载：使用 Storage VMotion 克隆和挂载 
 
 
-| 从 VM 一致的主备份还原 VM 和 VMDK | 是的。 |  | 是的。 
+| VM 和 VMDK | VM 一致的主备份 | NFS 环境： ONTAP 单文件 SnapRestore VMFS 环境：使用 Storage VMotion 克隆和挂载 
 
 
-| 从 VM 一致的二级备份还原 VM 和 VMDK |  | 是的。 | 是的。 
+| VM 和 VMDK | VM 一致的二级备份 | NFS 环境：使用 Storage VMotion VMFS 环境克隆和挂载：使用 Storage VMotion 克隆和挂载 
+
+
+| VVol 虚拟机 | 崩溃状态一致的主备份 | 适用于所有协议的 ONTAP 单文件 SnapRestore 
+
+
+| VVol 虚拟机 | 崩溃状态一致的二级备份 | 适用于所有协议的 ONTAP SnapMirror 还原 
+
+
+| FlexGroup VM | 主备份  a| 
+NFS 环境： * ONTAP 单文件 SnapRestore （如果使用的是 ONTAP 9.10.1 及更高版本） * 在 ONTAP 先前版本上使用 Storage VMotion 克隆并挂载
+
+VMFS 环境：不支持 FlexGroup
+
+
+
+| FlexGroup VM | 二级备份  a| 
+NFS 环境：
+
+* ONTAP SnapMirror 还原（如果使用的是 ONTAP 9.10.1 及更高版本）
+* 使用适用于 ONTAP 的 Storage VMotion 先前版本克隆和挂载
+
+
+VMFS 环境：不支持 FlexGroup
+
 |===
+
+NOTE: 在 VVol 容器重新平衡之后，您无法还原 VVol 虚拟机。
+
 子系统文件还原操作可在 NFS 和 VMFS 环境中使用克隆和挂载操作（而不是 Storage VMotion ）来执行。
 
 

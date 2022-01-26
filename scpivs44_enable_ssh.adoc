@@ -1,0 +1,32 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_enable_ssh.html 
+keywords:  
+summary: 部署 SnapCenter VMware 插件时， SSH 默认处于禁用状态。 
+---
+= 为适用于 VMware vSphere 的 SnapCenter 插件启用 SSH
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+部署 SnapCenter VMware 插件时， SSH 默认处于禁用状态。
+
+.步骤
+. 从 VMware vSphere Web Client 中，选择 SnapCenter VMware 插件所在的虚拟机。
+. 右键单击虚拟机，然后在虚拟设备的 * 摘要 * 选项卡上单击 * 启动远程控制台 * 以打开维护控制台窗口。
++
+SnapCenter VMware 插件维护控制台的登录默认设置如下：
+
++
+用户名： `m熟悉` 密码： `admin123`
+
++
+image:scpivs44_image11.png["错误：缺少图形映像"]
+
+. 从主菜单中选择菜单选项 *2 ） System Configuration* 。
+. 从 System Configuration Menu 中，选择菜单选项 * ） Enable SSH access* ，然后在确认提示符处输入 "* y" 。
+. 等待消息 " 正在启用 SSH 访问… " 然后按 * 输入 * 继续，然后在提示符处输入 * X 退出维护模式。
+

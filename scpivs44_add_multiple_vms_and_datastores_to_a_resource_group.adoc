@@ -13,21 +13,31 @@ summary: 您可以使用 SnapCenter VMware vSphere Web 客户端的编辑资源�
 
 
 [role="lead"]
-您可以使用 SnapCenter VMware vSphere Web 客户端的编辑资源组向导向任何现有资源组添加多个 VM 和数据存储库。
+您可以使用 SnapCenter VMware vSphere Web 客户端的 " 编辑资源组 " 向导向现有资源组添加多个资源。
 
-您可以添加 SAN 和 NAS 数据存储库，但不能添加 VSAN 或 VVol 数据存储库。
+资源组可以包含以下内容之一：
+
+* 传统 VM 以及 SAN 和 NAS 数据存储库的任意组合（不支持 VVol 数据存储库）。
+* 一个 FlexGroup 数据存储库（不支持跨区 VM ）。
+* 一个或多个 FlexVol 数据存储库（支持跨区 VM ）。
+* 一个或多个 VVol 虚拟机。
+* 具有指定 vCenter 标记的所有 VVol 虚拟机。
+* 指定文件夹中的所有 VVol 虚拟机。
+
 
 .步骤
 . 在 VMware vSphere Web Client 的左侧导航器窗格中，单击 * 资源组 * ，选择一个资源组，然后单击 image:scpivs44_image39.png["错误：缺少图形映像"] * 编辑资源组 * 以启动向导。
-. 在 * 资源 * 页面的可用实体列表中，选择要添加到资源组的虚拟机或数据存储库，然后单击 * > * 将所选内容移动到选定实体列表。您可以通过单击 * > * 来移动所有可用实体。
+. 在 * 资源 * 页面上，执行以下操作：
 +
-image:scpivs44_image19.png["错误：缺少图形映像"]
-
+.. 在 Datastores 字段中，导航到要添加的 VM 或数据存储库。
+.. 在 Available entities 列表中，选择要添加到资源组的一个或多个 VM 或数据存储库，然后单击 * > * 将所选内容移动到 Selected entities 列表。您可以通过单击 * > * 来移动所有可用实体。
 +
 默认情况下，可用实体列表显示 Datacenter 对象。您可以单击某个数据存储库以查看该数据存储库中的 VM 并将其添加到资源组中。
 
 +
 单击 * 下一步 * 时，系统会首先检查 SnapCenter 是否管理选定虚拟机或数据存储库所在的存储并与其兼容。如果显示消息 `S某些实体与 SnapCenter 不兼容` ，则选定虚拟机或数据存储库与 SnapCenter 不兼容。请参见 link:scpivs44_create_resource_groups_for_vms_and_datastores.html#manage-compatibility-check-failures["管理兼容性检查失败"] 有关详细信息 ...
+
+
 
 . 对要添加的每个 VM 或数据存储库重复步骤 2 。
 . 单击 * 下一步 * ，直到显示 * 摘要 * 页面，然后查看摘要并单击 * 完成 * 。

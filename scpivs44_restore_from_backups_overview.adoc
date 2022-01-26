@@ -4,7 +4,7 @@ permalink: scpivs44_restore_from_backups_overview.html
 keywords:  
 summary: 您可以从主备份或二级备份还原 VM ， VMDK ，文件和文件夹。 
 ---
-= 概述
+= 还原概述
 :hardbreaks:
 :nofooter: 
 :icons: font
@@ -17,14 +17,17 @@ summary: 您可以从主备份或二级备份还原 VM ， VMDK ，文件和文�
 
 * VM 还原目标
 +
-在适用于 VMware vSphere 4.4 及更早版本的 SnapCenter 插件中，您只能将虚拟机还原到原始主机和数据存储库。
+您可以将传统 VM 还原到原始主机，同一 vCenter Server 中的备用主机，或由同一 vCenter 管理的备用 ESXi 主机或处于链接模式的任何 vCenter 。
 
 +
-从适用于 VMware vSphere 4.5 的 SnapCenter 插件开始，您可以将虚拟机还原到原始主机，同一 vCenter Server 中的备用主机，或者同一 vCenter 管理的备用 ESXi 主机或链接模式下的任何 vCenter 。
+您可以将 VVol 虚拟机还原到原始主机。
 
 * VMDK 还原目标
 +
-您可以将 VMDK 还原到原始数据存储库或备用数据存储库。
+您可以将传统 VM 中的 VMDK 还原到原始数据存储库或备用数据存储库。
+
++
+您可以将 VVol 虚拟机中的 VMDK 还原到原始数据存储库。
 
 
 
