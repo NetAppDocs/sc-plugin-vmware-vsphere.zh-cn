@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
   <head class="at-element-marker">
-  <title>管理您的配置</title>
+  <title>为适用于 VMware vSphere 的 SnapCenter 插件启用 SSH</title>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
   <meta http-equiv="language" content="en">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="管理您的配置" />
+  <meta property="og:title" content="为适用于 VMware vSphere 的 SnapCenter 插件启用 SSH" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://docs.netapp.com/zh-cn/sc-plugin-vmware-vsphere/scpivs44_manage_your_configuration.html" />
-	<meta property="og:description" content="您需要使用适用于 VMware vSphere 的 SnapCenter 插件管理 GUI 更新虚拟设备配置，其中包括 vCenter 凭据，虚拟设备凭据和备份时区。" />
+	<meta property="og:url" content="https://docs.netapp.com/zh-cn/sc-plugin-vmware-vsphere/scpivs44_enable_ssh.html" />
+	<meta property="og:description" content="部署 SnapCenter VMware 插件时， SSH 默认处于禁用状态。" />
   <meta property="og:image" content="https://docs.netapp.com/zh-cn/sc-plugin-vmware-vsphere/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="format-detection" content="telephone=no">
@@ -18,7 +18,7 @@
   <meta http-equiv="nss-type" content="Product Documentation"/>
   <meta http-equiv="nss-subtype" content="User Guide"/>
   
-  <meta name="description" content="您需要使用适用于 VMware vSphere 的 SnapCenter 插件管理 GUI 更新虚拟设备配置，其中包括 vCenter 凭据，虚拟设备凭据和备份时区。">
+  <meta name="description" content="部署 SnapCenter VMware 插件时， SSH 默认处于禁用状态。">
   <meta name="keywords" content=" ">
   
   
@@ -281,11 +281,11 @@
           <ul class="n-menu__list">
             <li class="n-menu__list-column">
               <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/sc-plugin-vmware-vsphere/scpivs44_manage_your_configuration.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
+                  <a href="https://docs.netapp.com/zh-cn/sc-plugin-vmware-vsphere/scpivs44_enable_ssh.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
                 </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_manage_your_configuration.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
+                  <a href="https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_enable_ssh.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
                 </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/sc-plugin-vmware-vsphere/scpivs44_manage_your_configuration.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
+                  <a href="https://docs.netapp.com/ja-jp/sc-plugin-vmware-vsphere/scpivs44_enable_ssh.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
                 </li></ul>
             </li>
           </ul>
@@ -416,6 +416,8 @@
             部署 SCV 的要求
           </a>
           
+
+
 
 
 
@@ -726,14 +728,50 @@
   
 
 
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/zh-cn/sc-plugin-vmware-vsphere/pdfs/sidebar/管理您的配置.pdf" 
+            
+          >
+            <img src="/zh-cn/sc-plugin-vmware-vsphere/images/pdf.png" width="16" height="16"/>
+            管理您的配置
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <ul class="subfolders" style="display:none;"><li class="active pdf-hide">
-  <a target="_blank" href="/zh-cn/sc-plugin-vmware-vsphere/pdfs/pages/scpivs44_manage_your_configuration.pdf" >
+  <a target="_blank" href="/zh-cn/sc-plugin-vmware-vsphere/pdfs/pages/scpivs44_enable_ssh.pdf" >
     <img src="/zh-cn/sc-plugin-vmware-vsphere/images/pdf.png" width="16" height="16"/>
     PDF of this page
   </a>
 </li>
 
 </ul>
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
   
 
 
@@ -798,44 +836,6 @@
             升级
           </a>
           
-
-
-
-
-
-
-
-          
-        </li>
-      </ul>
-    
-
-  
-
-
-
-    
-      <ul class="subfolders" style="display:none;">
-        <li class="pdf-ux-container">
-          <a target="_blank" 
-            
-              href="/zh-cn/sc-plugin-vmware-vsphere/pdfs/sidebar/迁移.pdf" 
-            
-          >
-            <img src="/zh-cn/sc-plugin-vmware-vsphere/images/pdf.png" width="16" height="16"/>
-            迁移
-          </a>
-          
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -929,6 +929,8 @@
         部署规划和要求
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_minimum_ontap_privileges_required.html">
         所需的最小 ONTAP 权限
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_minimum_vcenter_privileges_required.html">
+        所需的最低 vCenter 权限
       </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_download_the_snapcenter_plug-in_for_vmware_vsphere_ova_open_virtual_appliance.html">
         下载适用于 VMware vSphere OVA 的 SnapCenter 插件（开放式虚拟设备）
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_deploy_snapcenter_plug-in_for_vmware_vsphere.html">
@@ -982,11 +984,11 @@
       <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_protect_data_overview.html">
         数据保护工作流
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_view_vm_and_datastore_backups.html">
-        查看虚拟机和数据存储库备份
+        查看备份
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_create_backup_policies_for_vms_and_datastores.html">
-        为 VM 和数据存储库创建备份策略
+        创建备份策略
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_create_resource_groups_for_vms_and_datastores.html">
-        为 VM 和数据存储库创建资源组
+        创建资源组
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_prescripts_and_postscripts.html">
         预处理脚本和后处理脚本
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_add_a_single_vm_or_datastore_to_a_resource_group.html">
@@ -996,7 +998,7 @@
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_back_up_resource_groups_on_demand.html">
         按需备份资源组
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_back_up_the_snapcenter_plug-in_for_vmware_vsphere_mysql_database.html">
-        备份适用于 VMware vSphere 的 SnapCenter 插件 MySQL 数据库
+        备份 MySQL 数据库
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_manage_resource_groups.html">
         管理资源组—暂停，恢复，修改，删除
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_manage_policies.html">
@@ -1065,9 +1067,26 @@
         禁用并启用适用于 VMware vSphere 的 SnapCenter 插件
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_remove_plugin.html">
         删除适用于 VMware vSphere 的 SnapCenter 插件
-      </a></li></ul></li><li class="  active "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_manage_your_configuration.html">
-        管理您的配置
-      </a></li><li class="subfolders "><a href="#">
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 管理您的配置</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_modify_the_time_zones.html">
+        修改时区
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_modify_the_logon_credentials.html">
+        修改登录凭据
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_modify_the_vcenter_logon_credentials.html">
+        修改 vCenter 登录凭据
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_modify_the_network_settings.html">
+        修改网络设置
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_modify_configuration_default_values.html">
+        修改配置默认值
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_create_the_scbr_override_file.html">
+        创建 scbr.override 文件
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_properties_you_can_override.html">
+        您可以覆盖的配置属性
+      </a></li><li class="  active "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_enable_ssh.html">
+        启用 SSH ：
+      </a></li></ul></li><li class="subfolders "><a href="#">
         <div class="na-navbar-padding"> REST API</div>
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_rest_apis_overview.html">
@@ -1105,26 +1124,7 @@
         升级到同一版本的新修补程序
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_information_not_displayed_after_upgrading_to_a_new_patch_of_the_same_release.html">
         升级到同一版本的新修补程序后，不会显示信息
-      </a></li></ul></li><li class="subfolders "><a href="#">
-        <div class="na-navbar-padding"> 迁移</div>
-      </a>
-      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_migrate.html">
-        迁移选项和支持的路径
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_migration_overview.html">
-        迁移概述
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_prerequisites_for_migration.html">
-        迁移的前提条件
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_migrate_from_windows_based_snapcenter_plug-in_for_vmware_vsphere.html">
-        从适用于 VMware vSphere 的基于 Windows 的 SnapCenter 插件迁移
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_migrate_snapcenter_backup_metadata_to_the_virtual_appliance.html">
-        迁移基于 Windows 的 SnapCenter VMware 备份元数据
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_post-migration.html">
-        迁移后
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_correct_bad_gateway_errors_during_migration.html">
-        更正迁移期间出现的错误网关
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_manage_authentication_errors.html">
-        管理身份验证错误
-      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/netapp_legal_notices.html">
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/legal-notices.html">
         法律声明
       </a></li></ul>
 </div>
@@ -1153,7 +1153,7 @@
           <a href="/zh-cn/sc-plugin-vmware-vsphere/">SnapCenter&nbsp;Plug-in&nbsp;for&nbsp;VMware&nbsp;vSphere</a>
         </li>
         <li class="n-breadcrumb__list-item">
-          管理您的配置
+          为适用于 VMware vSphere 的 SnapCenter 插件启用 SSH
         </li>
       </ul>
     </div>
@@ -1176,14 +1176,14 @@
     </div>
   </span>
 </div><div class="n-doc__component-detail-heading-wrap">
-  <h1 class="n-doc__component-detail-heading">管理您的配置</h1>
+  <h1 class="n-doc__component-detail-heading">为适用于 VMware vSphere 的 SnapCenter 插件启用 SSH</h1>
 </div>
 
 
 <p class="page-details">
   
     
-    <time datetime="2022-01-17 14:47:15 +0000">01/17/2022</time>
+    <time datetime="2022-01-27 16:53:29 +0000">01/27/2022</time>
     
   
 
@@ -1202,547 +1202,6 @@
 </p>
 
 
-<div id="preamble">
-<div class="sectionbody">
-<div class="paragraph lead">
-<p>您需要使用适用于 VMware vSphere 的 SnapCenter 插件管理 GUI 更新虚拟设备配置，其中包括 vCenter 凭据，虚拟设备凭据和备份时区。</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="修改备份的时区">修改备份的时区</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>在为适用于 VMware vSphere 的 SnapCenter 插件资源组配置备份计划时，系统会自动为部署 SnapCenter VMware 插件的时区设置此计划。您可以使用适用于 VMware vSphere 的 SnapCenter 插件管理 GUI 修改该时区。</p>
-</div>
-<div class="paragraph">
-<p>您必须知道适用于 VMware vSphere 的 SnapCenter 插件管理 GUI 的 IP 地址和登录凭据。</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>部署 SnapCenter VMware 插件时会显示此 IP 地址。</p>
-</li>
-<li>
-<p>使用在部署 SnapCenter VMware 插件期间提供的或稍后修改的登录凭据。</p>
-</li>
-</ul>
-</div>
-<div class="olist arabic">
-<div class="title">步骤</div>
-<ol class="arabic">
-<li>
-<p>登录到 SnapCenter VMware 插件管理 GUI 。</p>
-<div class="paragraph">
-<p>格式为 <code><a href="https://&lt;appliance-IP-address&gt;:8080" class="bare">https://&lt;appliance-IP-address&gt;:8080</a></code></p>
-</div>
-</li>
-<li>
-<p>单击顶部工具栏中的设置图标。</p>
-<div class="paragraph">
-<p><span class="image"><img src="./media/scpivs44_image28.jpg" alt="错误：缺少图形映像"></span></p>
-</div>
-</li>
-<li>
-<p>在 * 设置 * 页面的 * 日期和时间 * 部分中，单击 * 编辑 * 。</p>
-</li>
-<li>
-<p>选择新时区并单击 * 保存 * 。</p>
-<div class="paragraph">
-<p>新时区将用于 SnapCenter VMware 插件执行的所有备份。</p>
-</div>
-</li>
-</ol>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="修改登录凭据">修改登录凭据</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>您可以修改适用于 VMware vSphere 的 SnapCenter 插件管理 GUI 的登录凭据。</p>
-</div>
-<div class="paragraph">
-<p>您必须知道适用于 VMware vSphere 的 SnapCenter 插件管理 GUI 的 IP 地址和登录凭据。</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>部署 SnapCenter VMware 插件时会显示此 IP 地址。</p>
-</li>
-<li>
-<p>使用在部署 SnapCenter VMware 插件期间提供的或稍后修改的登录凭据。</p>
-</li>
-</ul>
-</div>
-<div class="olist arabic">
-<div class="title">步骤</div>
-<ol class="arabic">
-<li>
-<p>登录到 SnapCenter VMware 插件管理 GUI 。</p>
-<div class="paragraph">
-<p>格式为 <code><a href="https://&lt;appliance-IP-address&gt;:8080" class="bare">https://&lt;appliance-IP-address&gt;:8080</a></code></p>
-</div>
-</li>
-<li>
-<p>单击顶部工具栏中的设置图标。</p>
-<div class="paragraph">
-<p><span class="image"><img src="./media/scpivs44_image28.jpg" alt="错误：缺少图形映像"></span></p>
-</div>
-</li>
-<li>
-<p>在 * 设置 * 页面的 * 用户 * 部分中，单击 * 编辑 * 。</p>
-</li>
-<li>
-<p>输入新密码并单击 * 保存 * 。</p>
-<div class="paragraph">
-<p>可能需要几分钟才能恢复所有服务。</p>
-</div>
-</li>
-</ol>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="修改-vcenter-登录凭据">修改 vCenter 登录凭据</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>您可以修改在适用于 VMware vSphere 的 SnapCenter 插件中配置的 vCenter 登录凭据。插件使用这些设置访问 vCenter 。</p>
-</div>
-<div class="paragraph">
-<p>您必须知道适用于 VMware vSphere 的 SnapCenter 插件管理 GUI 的 IP 地址和登录凭据。</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>部署 SnapCenter VMware 插件时会显示此 IP 地址。</p>
-</li>
-<li>
-<p>使用在部署 SnapCenter VMware 插件期间提供的或稍后修改的登录凭据。</p>
-</li>
-</ul>
-</div>
-<div class="olist arabic">
-<div class="title">步骤</div>
-<ol class="arabic">
-<li>
-<p>登录到 SnapCenter VMware 插件管理 GUI 。</p>
-<div class="paragraph">
-<p>格式为 <code><a href="https://&lt;appliance-IP-address&gt;:8080" class="bare">https://&lt;appliance-IP-address&gt;:8080</a></code></p>
-</div>
-</li>
-<li>
-<p>在左侧导航窗格中，单击 * 配置 * 。</p>
-<div class="paragraph">
-<p><span class="image"><img src="./media/scpivs44_image30.png" alt="错误：缺少图形映像"></span></p>
-</div>
-</li>
-<li>
-<p>在 * 配置 * 页面的 * vCenter * 部分中，单击 * 编辑 * 。</p>
-</li>
-<li>
-<p>输入新密码，然后单击 * 保存 * 。</p>
-<div class="paragraph">
-<p>请勿修改端口号。</p>
-</div>
-</li>
-</ol>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="修改网络设置">修改网络设置</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>您可以修改在适用于 VMware vSphere 的 SnapCenter 插件中配置的网络设置。插件使用这些设置访问 vCenter 。</p>
-</div>
-<div class="paragraph">
-<p>您必须知道适用于 VMware vSphere 的 SnapCenter 插件管理 GUI 的 IP 地址和登录凭据。</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>部署 SnapCenter VMware 插件时会显示此 IP 地址。</p>
-</li>
-<li>
-<p>使用在部署 SnapCenter VMware 插件期间提供的或稍后修改的登录凭据。</p>
-</li>
-</ul>
-</div>
-<div class="olist arabic">
-<div class="title">步骤</div>
-<ol class="arabic">
-<li>
-<p>登录到 SnapCenter VMware 插件管理 GUI 。</p>
-<div class="paragraph">
-<p>格式为 <code><a href="https://&lt;appliance-IP-address&gt;:8080" class="bare">https://&lt;appliance-IP-address&gt;:8080</a></code></p>
-</div>
-</li>
-<li>
-<p>单击顶部工具栏中的设置图标。</p>
-<div class="paragraph">
-<p><span class="image"><img src="./media/scpivs44_image31.png" alt="错误：缺少图形映像"></span></p>
-</div>
-</li>
-<li>
-<p>在 * 设置 * 页面的 * 网络设置 * 部分中，单击 * IPv4 * 或 * IPv6 * ，然后单击 * 编辑 * 。</p>
-<div class="paragraph">
-<p>输入新信息并单击 * 保存 * 。</p>
-</div>
-</li>
-<li>
-<p>如果要删除网络设置，请执行以下操作：</p>
-<div class="ulist">
-<ul>
-<li>
-<p>IPv4 ：在 * IP Address* 字段中，输入 <code>0.0.0.0</code> ，然后单击 * 保存 * 。</p>
-</li>
-<li>
-<p>IPv6 ：在 * IP Address* 字段中：输入 ` ： 0` ，然后单击 * 保存 * 。</p>
-</li>
-</ul>
-</div>
-</li>
-</ol>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<img src="/us-en/sc-plugin-vmware-vsphere/images/note.svg" alt="注">
-</td>
-<td class="content">
-如果同时使用 IPv4 和 IPv6 ，则不能同时删除这两个网络设置。其余网络必须指定 DNS 服务器和搜索域字段。
-</td>
-</tr>
-</table>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="修改配置默认值">修改配置默认值</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>要提高操作效率，您可以修改 <code>sCBR.override</code> 配置文件以更改默认值。这些值控制备份期间创建或删除的 VMware 快照数量或备份脚本停止运行之前的时间等设置。</p>
-</div>
-<div class="paragraph">
-<p>适用于 VMware vSphere 的 SnapCenter 插件环境使用 <code>sCBR.override</code> 配置文件，该插件支持基于 SnapCenter 应用程序的数据保护操作。如果此文件不存在，则必须从模板文件创建它。</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="创建-scbr-override-配置文件">创建 scbr.override 配置文件</h2>
-<div class="sectionbody">
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>转至 ` /opt/netapp/scvservice/standalone aeg/etc/scbr/scbr.override-template` 。</p>
-</li>
-<li>
-<p>将 <code>sCBR.override-template</code> 文件复制到 ` \opt\NetApp\scvservice\standalone aeg\etc\scbr` 目录中名为 <code>sCBR.override</code> 的新文件。</p>
-</li>
-</ol>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="可以覆盖的属性">可以覆盖的属性</h2>
-<div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p>默认情况下，模板使用哈希符号来注释配置属性。要使用属性修改配置值，必须删除 ` #` 字符。</p>
-</li>
-<li>
-<p>要使更改生效，您必须在适用于 VMware vSphere 的 SnapCenter 插件主机上重新启动此服务。</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>您可以使用 <code>sCBR.override</code> 配置文件中列出的以下属性来更改默认值。</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>* dashboard.protected.vm.count.interval=7*</p>
-<div class="paragraph">
-<p>指定信息板显示 VM 保护状态的天数。</p>
-</div>
-<div class="paragraph">
-<p>默认值为 "7" 。</p>
-</div>
-</li>
-<li>
-<p>* guestFileRestore.guest.operation.interval=5*</p>
-<div class="paragraph">
-<p>指定适用于 VMware vSphere 的 SnapCenter 插件在子系统上完成子系统操作（联机磁盘和还原文件）时所监控的时间间隔（以秒为单位）。总等待时间由 <code>guestFileRestore.online.disk.timeout</code> 和 <code>guestFileRestore.restore.files.timeout</code> 设置。</p>
-</div>
-<div class="paragraph">
-<p>默认值为 "5" 。</p>
-</div>
-</li>
-<li>
-<p>* 来宾 FileRestore.monitorInterval=30*</p>
-<div class="paragraph">
-<p>指定 SnapCenter VMware 插件监控已过期子文件还原会话的时间间隔（以分钟为单位）。超过所配置的会话时间运行的任何会话都将断开连接。</p>
-</div>
-<div class="paragraph">
-<p>默认值为 "30" 。</p>
-</div>
-</li>
-<li>
-<p>* 来宾 FileRestore.online.disk.timeout=100*</p>
-<div class="paragraph">
-<p>指定 SnapCenter VMware 插件等待子虚拟机上的联机磁盘操作完成的时间（以秒为单位）。请注意，在插件轮询联机磁盘操作完成之前，还有 30 秒的等待时间。</p>
-</div>
-<div class="paragraph">
-<p>默认值为 "100" 。</p>
-</div>
-</li>
-<li>
-<p>* 来宾 FileRestore.restore.files.timeout=3600*</p>
-<div class="paragraph">
-<p>指定 SnapCenter VMware 插件等待子虚拟机上的还原文件操作完成的时间（以秒为单位）。如果超过此时间，此过程将结束，并且作业将标记为失败。</p>
-</div>
-<div class="paragraph">
-<p>默认值为 "3600" （ 1 小时）。</p>
-</div>
-</li>
-<li>
-<p>* guestFileRestore.Robocopy.directory.flags=/R ： 0 /W ： 0 /ZB /CopyAll /EFSRAW /A- ： SH /e /NJH /NDL /Np*</p>
-<div class="paragraph">
-<p>指定在子系统文件还原操作期间复制目录时要使用的额外 Robocopy 标志。</p>
-</div>
-<div class="paragraph">
-<p>请勿删除 ` /NJH` 或添加 ` /NJS` ，因为这将中断还原输出的解析。</p>
-</div>
-<div class="paragraph">
-<p>请勿允许无限制重试（通过删除 ` /R` 标志），因为这样可能发生原因会对失败的副本执行无限重试。</p>
-</div>
-<div class="paragraph">
-<p>默认值为 ` "/R ： 0 /W ： 0 /ZB /CopyAll /EFSRAW /A-： SH /e /NJH /NDL /NP"` 。</p>
-</div>
-</li>
-<li>
-<p>* guestFileRestore.Robocopy.file.flags=/R ： 0 /W ： 0 /ZB /CopyAll /EFSRAW /A- ： SH /NJH /NDL /Np*</p>
-<div class="paragraph">
-<p>指定在子系统文件还原操作期间复制单个文件时要使用的额外 Robocopy 标志。</p>
-</div>
-<div class="paragraph">
-<p>请勿删除 ` /NJH` 或添加 ` /NJS` ，因为这将中断还原输出的解析。</p>
-</div>
-<div class="paragraph">
-<p>请勿允许无限制重试（通过删除 ` /R` 标志），因为这样可能发生原因会对失败的副本执行无限重试。</p>
-</div>
-<div class="paragraph">
-<p>默认值为 ` "/R ： 0 /W ： 0 /ZB /CopyAll /EFSRAW /A-： SH /NJH /NDL /NP"` 。</p>
-</div>
-</li>
-<li>
-<p>* guestFileRestore.sessionTime=1440*</p>
-<div class="paragraph">
-<p>指定适用于 VMware vSphere 的 SnapCenter 插件保持子系统文件还原会话处于活动状态的时间（以分钟为单位）。</p>
-</div>
-<div class="paragraph">
-<p>默认值为 "1440" （ 24 小时）。</p>
-</div>
-</li>
-<li>
-<p>* guestFileRestore.use.custom.online.disk.script=true*</p>
-<div class="paragraph">
-<p>指定在创建子系统文件还原会话时是否使用自定义脚本使磁盘联机并检索驱动器盘符。该脚本必须位于 ` 安装路径 &gt;\etc\guestFileRestore_onlineDisk.ps1` 。安装时会提供一个默认脚本。在连接过程中，脚本中的值 ` [Disk_Serial_Number]` ， ` [Online_Disk_Output]` 和 ` 驱动器输出` 将被替换。</p>
-</div>
-<div class="paragraph">
-<p>默认值为 "false" 。</p>
-</div>
-</li>
-<li>
-<p>* include.esx.initiator.id.from.cluster=true*</p>
-<div class="paragraph">
-<p>指定 SnapCenter VMware 插件应包含通过 VMDK 工作流在应用程序中集群中所有 ESXi 主机的 iSCSI 和 FCP 启动程序 ID 。</p>
-</div>
-<div class="paragraph">
-<p>默认值为 "false" 。</p>
-</div>
-</li>
-<li>
-<p>* 最大并发 .ds.storage.query.count=15*</p>
-<div class="paragraph">
-<p>指定 SnapCenter VMware 插件可对 SnapCenter 服务器进行的最大并发调用数，以发现数据存储库的存储占用空间。当您在 SnapCenter VMware 插件 VM 主机上重新启动 Linux 服务时，此插件会发出这些调用。</p>
-</div>
-</li>
-<li>
-<p>* 。 nfs.datastore.mount.retry.count=3*</p>
-<div class="paragraph">
-<p>指定 SnapCenter VMware 插件尝试在 vCenter 中将卷挂载为 NFS 数据存储库的最大次数。</p>
-</div>
-<div class="paragraph">
-<p>默认值为 "3" 。</p>
-</div>
-</li>
-<li>
-<p>* nfs.datastore.mount.retry.delay=60000*</p>
-<div class="paragraph">
-<p>指定 SnapCenter VMware 插件在尝试将卷作为 NFS 数据存储库挂载到 vCenter 时等待的时间（以毫秒为单位）。</p>
-</div>
-<div class="paragraph">
-<p>默认值为 "60000 " （ 60 秒）。</p>
-</div>
-</li>
-<li>
-<p>* script.virtual.machine.count.variable.name = virtual_machines*</p>
-<div class="paragraph">
-<p>指定包含虚拟机计数的环境变量名称。在备份作业期间执行任何用户定义的脚本之前，必须定义变量。</p>
-</div>
-<div class="paragraph">
-<p>例如， virtual_machines=2 表示正在备份两个虚拟机。</p>
-</div>
-</li>
-<li>
-<p>* script.virtual.machine.info.variable.name=VIRTUAL_MACHINE.%s*</p>
-<div class="paragraph">
-<p>提供环境变量的名称，该变量包含有关备份中第 n 个虚拟机的信息。在备份期间执行任何用户定义的脚本之前，必须设置此变量。</p>
-</div>
-<div class="paragraph">
-<p>例如，环境变量 virtual_machine.2 提供了有关备份中第二个虚拟机的信息。</p>
-</div>
-</li>
-<li>
-<p>* script.virtual.machine.info.format= %s=%s=%s=%s=%s*</p>
-<div class="paragraph">
-<p>提供有关虚拟机的信息。此信息在环境变量中设置的格式如下： <code>VM name"VM UUUUUUID" VM power state （ on_off ） "VM snapshot taken （ true_false ） "IP address （ es ）</code></p>
-</div>
-<div class="paragraph">
-<p>以下是您可能提供的信息示例：</p>
-</div>
-<div class="paragraph">
-<p><code>virtual_machine.2=VM 1|564d6769-f07d-6e3b-68b1f3c29b03a9a=powed_on|true_10.0.4.2</code></p>
-</div>
-</li>
-<li>
-<p>* 存储 .connection.timeout=600000*</p>
-<div class="paragraph">
-<p>指定 SnapCenter 服务器等待存储系统响应的时间量（以毫秒为单位）。</p>
-</div>
-<div class="paragraph">
-<p>默认值为 "600000" （ 10 分钟）。</p>
-</div>
-</li>
-<li>
-<p>* vmware.esx.ip.kernel.ip.map*</p>
-<div class="paragraph">
-<p>没有默认值。您可以使用此值将 ESXi IP 地址映射到 VMkernel IP 地址。默认情况下， SnapCenter VMware 插件使用 ESXi 主机的管理 VMkernel 适配器 IP 地址。如果您希望 SnapCenter VMware 插件使用不同的 VMkernel 适配器 IP 地址，则必须提供覆盖值。</p>
-</div>
-<div class="paragraph">
-<p>在以下示例中，管理 VMkernel 适配器 IP 地址为 10.225.10.56 ；但是， SnapCenter VMware 插件使用指定地址 10.225.11.57 和 10.225.11.58 。如果管理 VMkernel 适配器 IP 地址为 10.225.10.60 ，则此插件将使用地址 10.225.11.61 。</p>
-</div>
-<div class="paragraph">
-<p><code>vmware.esx.ip.kernel.ip.map=10.225.10.56:10.225.11.57,10.225.11.58; 10.225.10.60 ： 10.225.11.61</code></p>
-</div>
-</li>
-<li>
-<p>* 。 vmware.max.concurrent-snapshots=30*</p>
-<div class="paragraph">
-<p>指定 SnapCenter VMware 插件在服务器上同时执行的 VMware 快照的最大数量。</p>
-</div>
-<div class="paragraph">
-<p>此数字会按数据存储库进行检查，只有在策略选择了 "VM consisting" 时才会进行检查。如果要执行崩溃状态一致的备份，则此设置不适用。</p>
-</div>
-<div class="paragraph">
-<p>默认值为 "30" 。</p>
-</div>
-</li>
-<li>
-<p>* vmware.max.concurrent.snapshots.delete=30*</p>
-<div class="paragraph">
-<p>指定 SnapCenter VMware 插件在服务器上对每个数据存储库执行的并发 VMware 快照删除操作的最大数量。</p>
-</div>
-<div class="paragraph">
-<p>此数量会按数据存储库进行检查。</p>
-</div>
-<div class="paragraph">
-<p>默认值为 "30" 。</p>
-</div>
-</li>
-<li>
-<p>* 。 vmware.query.unresolvedy.count=10*</p>
-<div class="paragraph">
-<p>指定 SnapCenter VMware 插件因出现 "&#8230;&#8203; 阻止 I/O 的时间限制 " 错误而重试发送有关未解析卷的查询的最大次数。</p>
-</div>
-<div class="paragraph">
-<p>默认值为 "10" 。</p>
-</div>
-</li>
-<li>
-<p>* 。 vmware.quiesce.retry.count=0*</p>
-<div class="paragraph">
-<p>指定 SnapCenter VMware 插件因备份期间出现 "&#8230;&#8203; 限制 I/O 的时间 " 错误而重试发送有关 VMware 快照的查询的最大次数。</p>
-</div>
-<div class="paragraph">
-<p>默认值为 "0" 。</p>
-</div>
-</li>
-<li>
-<p>* vmware.quiesce.retry.interval=5*</p>
-<div class="paragraph">
-<p>指定 SnapCenter VMware 插件在备份期间发送有关 VMware 快照 "&#8230;&#8203; 延迟 I/O 的时间限制 " 错误的查询之间等待的时间（以秒为单位）。</p>
-</div>
-<div class="paragraph">
-<p>默认值为 "5" 。</p>
-</div>
-</li>
-<li>
-<p>* vmware.query.unresolved.retry.delay= 60000*</p>
-<div class="paragraph">
-<p>指定 SnapCenter VMware 插件在因出现 "&#8230;&#8203; 阻止 I/O 的时间限制 " 错误而发送有关未解析卷的查询时等待的时间（以毫秒为单位）。克隆 VMFS 数据存储库时会发生此错误。</p>
-</div>
-<div class="paragraph">
-<p>默认值为 "60000 " （ 60 秒）。</p>
-</div>
-</li>
-<li>
-<p>* 。 vmware.reconfig.vm.retry.count=10*</p>
-<div class="paragraph">
-<p>指定 SnapCenter VMware 插件因出现 "&#8230;&#8203; 阻止 I/O 的时间限制 " 错误而重试发送有关重新配置虚拟机的查询的最大次数。</p>
-</div>
-<div class="paragraph">
-<p>默认值为 "10" 。</p>
-</div>
-</li>
-<li>
-<p>* vmware.reconfig.vm.retry.delay=30000*</p>
-<div class="paragraph">
-<p>指定 SnapCenter VMware 插件在因出现 "&#8230;&#8203; 阻止 I/O 的时间限制 " 错误而发送有关重新配置虚拟机的查询之间等待的最长时间（以毫秒为单位）。</p>
-</div>
-<div class="paragraph">
-<p>默认值为 "30000" （ 30 秒）。</p>
-</div>
-</li>
-<li>
-<p>* 。 vmware.rescan 。 hBA.retry.count=3*</p>
-<div class="paragraph">
-<p>指定 SnapCenter VMware 插件在两次发送有关重新扫描主机总线适配器的查询之间等待的时间量，以毫秒为单位，因为出现 "&#8230;&#8203; 用于保留 I/O 的时间限制 " 错误。</p>
-</div>
-<div class="paragraph">
-<p>默认值为 "3" 。</p>
-</div>
-</li>
-<li>
-<p>* vmware.rescan.hba.retry.delay=30000*</p>
-<div class="paragraph">
-<p>指定 SnapCenter VMware 插件重试请求重新扫描主机总线适配器的最大次数。</p>
-</div>
-<div class="paragraph">
-<p>默认值为 "30000 " 。</p>
-</div>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="为适用于-vmware-vsphere-的-snapcenter-插件启用-ssh">为适用于 VMware vSphere 的 SnapCenter 插件启用 SSH</h2>
-<div class="sectionbody">
 <div class="paragraph">
 <p>部署 SnapCenter VMware 插件时， SSH 默认处于禁用状态。</p>
 </div>
@@ -1775,8 +1234,6 @@
 </li>
 </ol>
 </div>
-</div>
-</div>
 
     </article>
     <!-- Page Container -->
@@ -1787,8 +1244,8 @@
   <div class="page-nav-toolbar">
     <div id="version-dropdown"></div>
     <div class="page-nav-contribute"  >
-      <a target="_blank" href="https://github.com/NetAppDocs/sc-plugin-vmware-vsphere/issues/new?body=Page%3A%20[管理您的配置](https://docs.netapp.com/zh-cn/sc-plugin-vmware-vsphere/scpivs44_manage_your_configuration.html)" class="page-nav-contribute-link" role="button"><img src="/zh-cn/sc-plugin-vmware-vsphere/images/discuss-sm.svg" class="github-icon" />请求文档变更</a>
-      <a target="_blank" href="https://github.com/NetAppDocs/sc-plugin-vmware-vsphere/blob/main/scpivs44_manage_your_configuration.adoc" class="page-nav-contribute-link" role="button"><img src="/zh-cn/sc-plugin-vmware-vsphere/images/edit-sm.svg" class="github-icon" />在 GitHub 上编辑</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/sc-plugin-vmware-vsphere/issues/new?body=Page%3A%20[为适用于 VMware vSphere 的 SnapCenter 插件启用 SSH](https://docs.netapp.com/zh-cn/sc-plugin-vmware-vsphere/scpivs44_enable_ssh.html)" class="page-nav-contribute-link" role="button"><img src="/zh-cn/sc-plugin-vmware-vsphere/images/discuss-sm.svg" class="github-icon" />请求文档变更</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/sc-plugin-vmware-vsphere/blob/main/scpivs44_enable_ssh.adoc" class="page-nav-contribute-link" role="button"><img src="/zh-cn/sc-plugin-vmware-vsphere/images/edit-sm.svg" class="github-icon" />在 GitHub 上编辑</a>
       <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/zh-cn/sc-plugin-vmware-vsphere/images/article-sm.svg" class="github-icon" />提供者指南</a>
     </div>
     <div class="page-nav-container">

@@ -9,7 +9,7 @@
   <meta property="og:title" content="迁移概述" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://docs.netapp.com/zh-cn/sc-plugin-vmware-vsphere/scpivs44_migration_overview.html" />
-	<meta property="og:description" content="migration 命令仅从 SnapCenter 4.0 及更高版本迁移元数据。如果您使用的是早期版本的 SnapCenter ，则必须先升级，然后才能进行迁移。" />
+	<meta property="og:description" content="" />
   <meta property="og:image" content="https://docs.netapp.com/zh-cn/sc-plugin-vmware-vsphere/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="format-detection" content="telephone=no">
@@ -18,7 +18,7 @@
   <meta http-equiv="nss-type" content="Product Documentation"/>
   <meta http-equiv="nss-subtype" content="User Guide"/>
   
-  <meta name="description" content="migration 命令仅从 SnapCenter 4.0 及更高版本迁移元数据。如果您使用的是早期版本的 SnapCenter ，则必须先升级，然后才能进行迁移。">
+  <meta name="description" content="">
   <meta name="keywords" content=" ">
   
   
@@ -421,6 +421,8 @@
 
 
 
+
+
           
         </li>
       </ul>
@@ -727,6 +729,42 @@
 
 
 
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/zh-cn/sc-plugin-vmware-vsphere/pdfs/sidebar/管理您的配置.pdf" 
+            
+          >
+            <img src="/zh-cn/sc-plugin-vmware-vsphere/images/pdf.png" width="16" height="16"/>
+            管理您的配置
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
 
 
     
@@ -789,53 +827,6 @@
             升级
           </a>
           
-
-
-
-
-
-
-
-          
-        </li>
-      </ul>
-    
-
-  
-
-
-
-    
-      <ul class="subfolders" style="display:none;">
-        <li class="pdf-ux-container">
-          <a target="_blank" 
-            
-              href="/zh-cn/sc-plugin-vmware-vsphere/pdfs/sidebar/迁移.pdf" 
-            
-          >
-            <img src="/zh-cn/sc-plugin-vmware-vsphere/images/pdf.png" width="16" height="16"/>
-            迁移
-          </a>
-          
-
-
-    <ul class="subfolders" style="display:none;"><li class="active pdf-hide">
-  <a target="_blank" href="/zh-cn/sc-plugin-vmware-vsphere/pdfs/pages/scpivs44_migration_overview.pdf" >
-    <img src="/zh-cn/sc-plugin-vmware-vsphere/images/pdf.png" width="16" height="16"/>
-    PDF of this page
-  </a>
-</li>
-
-</ul>
-  
-
-
-
-
-
-
-
-
 
 
 
@@ -929,6 +920,8 @@
         部署规划和要求
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_minimum_ontap_privileges_required.html">
         所需的最小 ONTAP 权限
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_minimum_vcenter_privileges_required.html">
+        所需的最低 vCenter 权限
       </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_download_the_snapcenter_plug-in_for_vmware_vsphere_ova_open_virtual_appliance.html">
         下载适用于 VMware vSphere OVA 的 SnapCenter 插件（开放式虚拟设备）
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_deploy_snapcenter_plug-in_for_vmware_vsphere.html">
@@ -982,11 +975,11 @@
       <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_protect_data_overview.html">
         数据保护工作流
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_view_vm_and_datastore_backups.html">
-        查看虚拟机和数据存储库备份
+        查看备份
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_create_backup_policies_for_vms_and_datastores.html">
-        为 VM 和数据存储库创建备份策略
+        创建备份策略
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_create_resource_groups_for_vms_and_datastores.html">
-        为 VM 和数据存储库创建资源组
+        创建资源组
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_prescripts_and_postscripts.html">
         预处理脚本和后处理脚本
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_add_a_single_vm_or_datastore_to_a_resource_group.html">
@@ -996,7 +989,7 @@
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_back_up_resource_groups_on_demand.html">
         按需备份资源组
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_back_up_the_snapcenter_plug-in_for_vmware_vsphere_mysql_database.html">
-        备份适用于 VMware vSphere 的 SnapCenter 插件 MySQL 数据库
+        备份 MySQL 数据库
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_manage_resource_groups.html">
         管理资源组—暂停，恢复，修改，删除
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_manage_policies.html">
@@ -1065,9 +1058,26 @@
         禁用并启用适用于 VMware vSphere 的 SnapCenter 插件
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_remove_plugin.html">
         删除适用于 VMware vSphere 的 SnapCenter 插件
-      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_manage_your_configuration.html">
-        管理您的配置
-      </a></li><li class="subfolders "><a href="#">
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 管理您的配置</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_modify_the_time_zones.html">
+        修改时区
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_modify_the_logon_credentials.html">
+        修改登录凭据
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_modify_the_vcenter_logon_credentials.html">
+        修改 vCenter 登录凭据
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_modify_the_network_settings.html">
+        修改网络设置
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_modify_configuration_default_values.html">
+        修改配置默认值
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_create_the_scbr_override_file.html">
+        创建 scbr.override 文件
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_properties_you_can_override.html">
+        您可以覆盖的配置属性
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_enable_ssh.html">
+        启用 SSH ：
+      </a></li></ul></li><li class="subfolders "><a href="#">
         <div class="na-navbar-padding"> REST API</div>
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_rest_apis_overview.html">
@@ -1105,26 +1115,7 @@
         升级到同一版本的新修补程序
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_information_not_displayed_after_upgrading_to_a_new_patch_of_the_same_release.html">
         升级到同一版本的新修补程序后，不会显示信息
-      </a></li></ul></li><li class="subfolders "><a href="#">
-        <div class="na-navbar-padding"> 迁移</div>
-      </a>
-      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_migrate.html">
-        迁移选项和支持的路径
-      </a></li><li class="  active "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_migration_overview.html">
-        迁移概述
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_prerequisites_for_migration.html">
-        迁移的前提条件
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_migrate_from_windows_based_snapcenter_plug-in_for_vmware_vsphere.html">
-        从适用于 VMware vSphere 的基于 Windows 的 SnapCenter 插件迁移
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_migrate_snapcenter_backup_metadata_to_the_virtual_appliance.html">
-        迁移基于 Windows 的 SnapCenter VMware 备份元数据
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_post-migration.html">
-        迁移后
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_correct_bad_gateway_errors_during_migration.html">
-        更正迁移期间出现的错误网关
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_manage_authentication_errors.html">
-        管理身份验证错误
-      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/netapp_legal_notices.html">
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/legal-notices.html">
         法律声明
       </a></li></ul>
 </div>
@@ -1183,7 +1174,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-01-17 14:47:15 +0000">01/17/2022</time>
+    <time datetime="2022-01-27 16:53:29 +0000">01/27/2022</time>
     
   
 
@@ -1196,83 +1187,61 @@
           style="border-radius: 50%;"/>
   </a>
   
-  <a target="_blank" href="https://github.com/netapp-madhulik">
-    <img  class="avatar avatar-small"
-          alt="netapp-madhulik"
-          width="20" height="20"
-          src="https://avatars.githubusercontent.com/u/64965028?v=4"
-          style="border-radius: 50%;"/>
-  </a>
-  
 </span>
 
 
 </p>
 
 
-<div id="preamble">
-<div class="sectionbody">
 <div class="paragraph lead">
-<p>migration 命令仅从 SnapCenter 4.0 及更高版本迁移元数据。如果您使用的是早期版本的 SnapCenter ，则必须先升级，然后才能进行迁移。</p>
+<p>migration 命令仅从 #SnapCenter 4.0 及更高版本 # 迁移元数据。如果您使用的是早期版本的 SnapCenter ，则必须先升级，然后才能进行迁移。</p>
 </div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="迁移的内容">迁移的内容</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>SnapCenter 元数据，包括存储系统，自定义限制以及 SnapCenter 配置文件，策略，资源组，备份元数据和挂载中的电子邮件设置。（迁移遇到预处理或后处理脚本时失败）</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="未迁移的内容">未迁移的内容</h2>
-<div class="sectionbody">
 <div class="ulist">
 <ul>
 <li>
+<p>迁移的内容包括</p>
+<div class="ulist">
+<ul>
+<li>
+<p>迁移的内容</p>
+<div class="paragraph">
+<p>SnapCenter 元数据，包括存储系统，自定义限制以及 SnapCenter 配置文件，策略，资源组，备份元数据和挂载中的电子邮件设置。（迁移遇到预处理或后处理脚本时失败）</p>
+</div>
+</li>
+<li>
+<p>未迁移的内容</p>
+<div class="paragraph">
 <p>为资源组配置的预脚本和后脚本</p>
-</li>
-<li>
+</div>
+<div class="paragraph">
 <p>活动子文件还原会话，子文件还原凭据和代理 VM</p>
-</li>
-<li>
-<p><code>sCBR.override</code> 配置文件中的自定义配置设置</p>
-</li>
-<li>
+</div>
+<div class="paragraph">
 <p>如果在子系统文件还原会话处于活动状态时开始迁移，则会删除此会话，并且不会卸载连接的磁盘。您可能需要手动删除连接的磁盘。</p>
+</div>
 </li>
 </ul>
 </div>
+<div class="paragraph">
+<p><code>sCBR.override</code> 配置文件</p>
 </div>
-</div>
-<div class="sect1">
-<h2 id="snapcenter-主机已暂停">SnapCenter 主机已暂停</h2>
-<div class="sectionbody">
+</li>
+<li>
+<p>SnapCenter 主机已暂停</p>
 <div class="paragraph">
 <p>为确保迁移成功，迁移命令会暂停已向 SnapCenter 注册的所有主机。迁移过程成功完成后， SnapCenter 主机将恢复。</p>
 </div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="元数据的存储位置">元数据的存储位置</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>用于基于应用程序的 VMDK 备份的元数据存储在 SnapCenter 服务器存储库中。VM 和数据存储库备份的元数据存储在 SnapCenter VMware 插件 MySQL 存储库中。</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="迁移工作流">迁移工作流</h2>
-<div class="sectionbody">
+</li>
+<li>
+<p>迁移 cmdlet 过程</p>
 <div class="paragraph">
 <p>您必须对向 SnapCenter 注册的每个 SnapCenter VMware 插件实例使用 Windows PowerShell cmdlet <code>invoke-scvAMigraation</code> 。</p>
 </div>
 <div class="paragraph">
 <p>cmdlet 可执行以下操作：</p>
 </div>
-<div class="olist arabic">
-<ol class="arabic">
+<div class="ulist">
+<ul>
 <li>
 <p>暂停所有计划，以防止迁移期间出现作业失败。成功迁移后，系统会自动重新启用计划。</p>
 </li>
@@ -1295,11 +1264,18 @@
 <p>激活基于 Linux 的 SnapCenter VMware 插件上的备份作业。</p>
 </li>
 <li>
-<p>将 vSphere 主机注册到 SnapCenter 中的 SnapCenter VMware 插件，以支持对虚拟化数据库和文件系统（基于应用程序的 VMDK 备份应用程序）进行基于应用程序的备份。</p>
+<p>将 vSphere 主机注册到 SnapCenter 中的 SnapCenter VMware 插件 `，以支持基于应用程序对虚拟化数据库和文件系统进行备份（基于 VMDK 的应用程序备份）。</p>
 </li>
-</ol>
+</ul>
 </div>
+</li>
+<li>
+<p>元数据的存储位置</p>
+<div class="paragraph">
+<p>用于基于应用程序的 VMDK 备份的元数据存储在 SnapCenter 服务器存储库中。VM 和数据存储库备份的元数据存储在 SnapCenter VMware 插件 MySQL 存储库中。</p>
 </div>
+</li>
+</ul>
 </div>
 
     </article>
@@ -1312,7 +1288,7 @@
     <div id="version-dropdown"></div>
     <div class="page-nav-contribute"  >
       <a target="_blank" href="https://github.com/NetAppDocs/sc-plugin-vmware-vsphere/issues/new?body=Page%3A%20[迁移概述](https://docs.netapp.com/zh-cn/sc-plugin-vmware-vsphere/scpivs44_migration_overview.html)" class="page-nav-contribute-link" role="button"><img src="/zh-cn/sc-plugin-vmware-vsphere/images/discuss-sm.svg" class="github-icon" />请求文档变更</a>
-      <a target="_blank" href="https://github.com/NetAppDocs/sc-plugin-vmware-vsphere/blob/main/scpivs44_migration_overview.adoc" class="page-nav-contribute-link" role="button"><img src="/zh-cn/sc-plugin-vmware-vsphere/images/edit-sm.svg" class="github-icon" />在 GitHub 上编辑</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/sc-plugin-vmware-vsphere/blob/main/media/scpivs44_migration_overview.adoc" class="page-nav-contribute-link" role="button"><img src="/zh-cn/sc-plugin-vmware-vsphere/images/edit-sm.svg" class="github-icon" />在 GitHub 上编辑</a>
       <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/zh-cn/sc-plugin-vmware-vsphere/images/article-sm.svg" class="github-icon" />提供者指南</a>
     </div>
     <div class="page-nav-container">

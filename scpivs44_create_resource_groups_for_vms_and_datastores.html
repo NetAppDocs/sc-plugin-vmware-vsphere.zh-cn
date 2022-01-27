@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
   <head class="at-element-marker">
-  <title>为 VM 和数据存储库创建资源组</title>
+  <title>创建资源组</title>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
   <meta http-equiv="language" content="en">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="为 VM 和数据存储库创建资源组" />
+  <meta property="og:title" content="创建资源组" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://docs.netapp.com/zh-cn/sc-plugin-vmware-vsphere/scpivs44_create_resource_groups_for_vms_and_datastores.html" />
-	<meta property="og:description" content="资源组是要保护的一个或多个 VM 或数据存储库的容器。" />
+	<meta property="og:description" content="资源组是指要保护的 VM ，数据存储库或 VVOL VM 的容器。" />
   <meta property="og:image" content="https://docs.netapp.com/zh-cn/sc-plugin-vmware-vsphere/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="format-detection" content="telephone=no">
@@ -18,7 +18,7 @@
   <meta http-equiv="nss-type" content="Product Documentation"/>
   <meta http-equiv="nss-subtype" content="User Guide"/>
   
-  <meta name="description" content="资源组是要保护的一个或多个 VM 或数据存储库的容器。">
+  <meta name="description" content="资源组是指要保护的 VM ，数据存储库或 VVOL VM 的容器。">
   <meta name="keywords" content=" ">
   
   
@@ -421,6 +421,8 @@
 
 
 
+
+
           
         </li>
       </ul>
@@ -736,6 +738,42 @@
 
 
 
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/zh-cn/sc-plugin-vmware-vsphere/pdfs/sidebar/管理您的配置.pdf" 
+            
+          >
+            <img src="/zh-cn/sc-plugin-vmware-vsphere/images/pdf.png" width="16" height="16"/>
+            管理您的配置
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
 
 
     
@@ -798,44 +836,6 @@
             升级
           </a>
           
-
-
-
-
-
-
-
-          
-        </li>
-      </ul>
-    
-
-  
-
-
-
-    
-      <ul class="subfolders" style="display:none;">
-        <li class="pdf-ux-container">
-          <a target="_blank" 
-            
-              href="/zh-cn/sc-plugin-vmware-vsphere/pdfs/sidebar/迁移.pdf" 
-            
-          >
-            <img src="/zh-cn/sc-plugin-vmware-vsphere/images/pdf.png" width="16" height="16"/>
-            迁移
-          </a>
-          
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -929,6 +929,8 @@
         部署规划和要求
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_minimum_ontap_privileges_required.html">
         所需的最小 ONTAP 权限
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_minimum_vcenter_privileges_required.html">
+        所需的最低 vCenter 权限
       </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_download_the_snapcenter_plug-in_for_vmware_vsphere_ova_open_virtual_appliance.html">
         下载适用于 VMware vSphere OVA 的 SnapCenter 插件（开放式虚拟设备）
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_deploy_snapcenter_plug-in_for_vmware_vsphere.html">
@@ -982,11 +984,11 @@
       <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_protect_data_overview.html">
         数据保护工作流
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_view_vm_and_datastore_backups.html">
-        查看虚拟机和数据存储库备份
+        查看备份
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_create_backup_policies_for_vms_and_datastores.html">
-        为 VM 和数据存储库创建备份策略
+        创建备份策略
       </a></li><li class="  active "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_create_resource_groups_for_vms_and_datastores.html">
-        为 VM 和数据存储库创建资源组
+        创建资源组
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_prescripts_and_postscripts.html">
         预处理脚本和后处理脚本
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_add_a_single_vm_or_datastore_to_a_resource_group.html">
@@ -996,7 +998,7 @@
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_back_up_resource_groups_on_demand.html">
         按需备份资源组
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_back_up_the_snapcenter_plug-in_for_vmware_vsphere_mysql_database.html">
-        备份适用于 VMware vSphere 的 SnapCenter 插件 MySQL 数据库
+        备份 MySQL 数据库
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_manage_resource_groups.html">
         管理资源组—暂停，恢复，修改，删除
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_manage_policies.html">
@@ -1065,9 +1067,26 @@
         禁用并启用适用于 VMware vSphere 的 SnapCenter 插件
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_remove_plugin.html">
         删除适用于 VMware vSphere 的 SnapCenter 插件
-      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_manage_your_configuration.html">
-        管理您的配置
-      </a></li><li class="subfolders "><a href="#">
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 管理您的配置</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_modify_the_time_zones.html">
+        修改时区
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_modify_the_logon_credentials.html">
+        修改登录凭据
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_modify_the_vcenter_logon_credentials.html">
+        修改 vCenter 登录凭据
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_modify_the_network_settings.html">
+        修改网络设置
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_modify_configuration_default_values.html">
+        修改配置默认值
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_create_the_scbr_override_file.html">
+        创建 scbr.override 文件
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_properties_you_can_override.html">
+        您可以覆盖的配置属性
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_enable_ssh.html">
+        启用 SSH ：
+      </a></li></ul></li><li class="subfolders "><a href="#">
         <div class="na-navbar-padding"> REST API</div>
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_rest_apis_overview.html">
@@ -1105,26 +1124,7 @@
         升级到同一版本的新修补程序
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_information_not_displayed_after_upgrading_to_a_new_patch_of_the_same_release.html">
         升级到同一版本的新修补程序后，不会显示信息
-      </a></li></ul></li><li class="subfolders "><a href="#">
-        <div class="na-navbar-padding"> 迁移</div>
-      </a>
-      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_migrate.html">
-        迁移选项和支持的路径
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_migration_overview.html">
-        迁移概述
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_prerequisites_for_migration.html">
-        迁移的前提条件
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_migrate_from_windows_based_snapcenter_plug-in_for_vmware_vsphere.html">
-        从适用于 VMware vSphere 的基于 Windows 的 SnapCenter 插件迁移
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_migrate_snapcenter_backup_metadata_to_the_virtual_appliance.html">
-        迁移基于 Windows 的 SnapCenter VMware 备份元数据
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_post-migration.html">
-        迁移后
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_correct_bad_gateway_errors_during_migration.html">
-        更正迁移期间出现的错误网关
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_manage_authentication_errors.html">
-        管理身份验证错误
-      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/netapp_legal_notices.html">
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/legal-notices.html">
         法律声明
       </a></li></ul>
 </div>
@@ -1153,7 +1153,7 @@
           <a href="/zh-cn/sc-plugin-vmware-vsphere/">SnapCenter&nbsp;Plug-in&nbsp;for&nbsp;VMware&nbsp;vSphere</a>
         </li>
         <li class="n-breadcrumb__list-item">
-          为 VM 和数据存储库创建资源组
+          创建资源组
         </li>
       </ul>
     </div>
@@ -1176,31 +1176,31 @@
     </div>
   </span>
 </div><div class="n-doc__component-detail-heading-wrap">
-  <h1 class="n-doc__component-detail-heading">为 VM 和数据存储库创建资源组</h1>
+  <h1 class="n-doc__component-detail-heading">创建资源组</h1>
 </div>
 
 
 <p class="page-details">
   
     
-    <time datetime="2022-01-17 14:47:15 +0000">01/17/2022</time>
+    <time datetime="2022-01-27 16:53:29 +0000">01/27/2022</time>
     
   
 
 <span>提供者
-  <a target="_blank" href="https://github.com/netapp-madhulik">
-    <img  class="avatar avatar-small"
-          alt="netapp-madhulik"
-          width="20" height="20"
-          src="https://avatars.githubusercontent.com/u/64965028?v=4"
-          style="border-radius: 50%;"/>
-  </a>
-  
   <a target="_blank" href="https://github.com/Ronya-Robinson">
     <img  class="avatar avatar-small"
           alt="Ronya-Robinson"
           width="20" height="20"
           src="https://avatars.githubusercontent.com/u/65731034?v=4"
+          style="border-radius: 50%;"/>
+  </a>
+  
+  <a target="_blank" href="https://github.com/netapp-madhulik">
+    <img  class="avatar avatar-small"
+          alt="netapp-madhulik"
+          width="20" height="20"
+          src="https://avatars.githubusercontent.com/u/64965028?v=4"
           style="border-radius: 50%;"/>
   </a>
   
@@ -1213,19 +1213,62 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph lead">
-<p>资源组是要保护的一个或多个 VM 或数据存储库的容器。</p>
+<p>资源组是指要保护的 VM ，数据存储库或 VVOL VM 的容器。</p>
 </div>
 <div class="paragraph">
-<p>资源组可以包含 VM 和数据存储库的任意组合。从适用于 VMware vSphere 的 SnapCenter 插件 4.4 开始，一个资源组还可以包含一个 FlexGroup 卷或一个或多个 FlexVol 卷，但不能同时包含这两者。</p>
+<p>资源组可以包含以下内容之一：</p>
 </div>
-<div class="admonitionblock note">
+<div class="ulist">
+<ul>
+<li>
+<p>传统 VM 和数据存储库</p>
+<div class="paragraph">
+<p>传统 VM ，传统 SAN 数据存储库和传统 NAS 数据存储库的任意组合。传统 VM 不能与 VVol VM 结合使用。</p>
+</div>
+</li>
+<li>
+<p>FlexGroup 数据存储库</p>
+<div class="paragraph">
+<p>一个 FlexGroup 数据存储库。不支持跨区 FlexGroup 数据存储库。FlexGroup 数据存储库不能与传统 VM 或数据存储库结合使用。</p>
+</div>
+</li>
+<li>
+<p>FlexVol 数据存储库</p>
+<div class="paragraph">
+<p>一个或多个 FlexVol 数据存储库。支持跨区数据存储库。</p>
+</div>
+</li>
+<li>
+<p>VVol 虚拟机</p>
+<div class="paragraph">
+<p>一个或多个 VVol 虚拟机。VVol 虚拟机不能与传统虚拟机或数据存储库结合使用。</p>
+</div>
+</li>
+<li>
+<p>带有标记的 VVol VM</p>
+<div class="paragraph">
+<p>具有指定 vCenter 标记的所有 VVol 虚拟机。不支持在同一 vCenter 或不同 vCenter 中具有相同标记的其他具有标记的实体，例如数据存储库或传统 VM 。如果具有指定标记的 VM 列表包含 VVol VM 和传统 VM 的混合，则适用于 VMware vSphere 的 SnapCenter 插件将备份 VVol VM 并跳过传统 VM 。</p>
+</div>
+</li>
+<li>
+<p>文件夹中的 VVol VM</p>
+<div class="paragraph">
+<p>所有 VVOL 都位于一个指定的 VVOL 文件夹中。如果此文件夹同时包含 VVOL VM 和传统 VM ，则适用于 VMware vSphere 的 SnapCenter 插件会备份 VVOL VM 并跳过传统 VM 。</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>对于所有资源组：</p>
+</div>
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<img src="/us-en/sc-plugin-vmware-vsphere/images/note.svg" alt="注">
+<img src="/us-en/sc-plugin-vmware-vsphere/images/important.svg" alt="重要">
 </td>
 <td class="content">
-对于跨接 VM ，不支持同时使用 FlexGroup 和 FlexVol 。
+如果您使用的是 VMware vSphere 集群服务（ vCL ），请勿在 SnapCenter VMware 插件资源组中包含由 vCL 管理的虚拟机。
 </td>
 </tr>
 </table>
@@ -1233,8 +1276,26 @@
 <div class="paragraph">
 <p>适用于 VMware vSphere 4.5 及更高版本的 SnapCenter 插件在 ASA 聚合上支持大小高达 128 TB 的大型 LUN 上的数据存储库。对于大型 LUN ， SnapCenter 仅使用厚配置 LUN 来避免延迟。</p>
 </div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/sc-plugin-vmware-vsphere/images/important.svg" alt="重要">
+</td>
+<td class="content">
+请勿添加处于不可访问状态的 VM 。尽管可以创建包含无法访问的 VM 的资源组，但该资源组的备份将失败。
+</td>
+</tr>
+</table>
+</div>
 <div class="paragraph">
-<p>您可以随时在资源组中添加或删除 VM 和数据存储库。</p>
+<p>在创建包含 VVOL VM 的资源组之前，必须先部署适用于 VMware 的 ONTAP 工具。</p>
+</div>
+<div class="paragraph">
+<p>有关详细信息，请参见 <a href="https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html" target="_blank" rel="noopener">"适用于 VMware vSphere 的 ONTAP 工具"</a>。</p>
+</div>
+<div class="paragraph">
+<p>您可以随时在资源组中添加或删除资源。</p>
 </div>
 <div class="ulist">
 <ul>
@@ -1269,30 +1330,6 @@
 <p>备份策略</p>
 <div class="paragraph">
 <p>虽然可以在没有备份策略的情况下创建资源组，但只有在至少有一个策略附加到资源组时，才能执行计划的数据保护操作。您可以使用现有策略，也可以在创建资源组时创建新策略。</p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<img src="/us-en/sc-plugin-vmware-vsphere/images/note.svg" alt="注">
-</td>
-<td class="content">
-资源组可以包含 VM 以及 SAN 和 NAS 数据存储库；它不能包含 VSAN 或 VVol 数据存储库。
-</td>
-</tr>
-</table>
-</div>
-<div class="admonitionblock important">
-<table>
-<tr>
-<td class="icon">
-<img src="/us-en/sc-plugin-vmware-vsphere/images/important.svg" alt="重要">
-</td>
-<td class="content">
-请勿添加处于不可访问状态的 VM 。尽管您可以创建一个包含无法访问的 VM 的资源组，但该资源组的备份将失败。
-</td>
-</tr>
-</table>
 </div>
 </li>
 <li>
@@ -1373,7 +1410,7 @@
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">最新 Snapshot 名称</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>从适用于 VMware vSphere 的 SnapCenter 插件 4.4 开始，如果要将后缀 "_recent " 添加到最新的 Snapshot 副本中，请选中此框。"_recent " 后缀将替换日期和时间戳。</p>
+<p>如果要将后缀 "_recent " 添加到最新 Snapshot 副本中，请选中此框。"_recent " 后缀将替换日期和时间戳。</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -1411,27 +1448,57 @@
 </table>
 </li>
 <li>
-<p>在 * 资源 * 页面的可用实体列表中，选择资源组中所需的资源，然后单击 * &gt; * 将所选内容移动到选定实体列表。</p>
+<p>在 * 资源 * 页面上，执行以下操作：</p>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">对于此字段…</th>
+<th class="tableblock halign-left valign-top">执行此操作…</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">范围</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">选择要保护的资源类型： * 数据存储库（一个或多个指定数据存储库中的所有传统虚拟机） * 虚拟机（单个传统虚拟机或 VVol 虚拟机； 在字段中，您必须导航到包含 VM 或 VVOL VM 的数据存储库） * 标记（具有单个指定 VMware 标记的所有 VVOL VM ；在列表框中，必须输入此标记） * VM 文件夹（指定文件夹中的所有 VVOL VM ； 在弹出字段中，您必须导航到文件夹所在的数据中心）</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">数据中心</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">导航到要添加的 VM 或数据存储库或文件夹。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">可用实体</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">选择要保护的资源，然后单击 * &gt; * 将所选内容移动到 " 选定实体 " 列表。</p></td>
+</tr>
+</tbody>
+</table>
 <div class="paragraph">
-<p><span class="image"><img src="./media/scpivs44_image17.png" alt="错误：缺少图形映像"></span></p>
+<p>单击 * 下一步 * 时，系统会首先检查 SnapCenter 是否管理选定资源所在的存储并与其兼容。</p>
 </div>
 <div class="paragraph">
-<p>单击 * 下一步 * 时，系统会首先检查 SnapCenter 是否管理选定虚拟机或数据存储库所在的存储并与其兼容。</p>
-</div>
-<div class="paragraph">
-<p>如果显示消息 <code>Sselected virtual machine is not SnapCenter compatible or selected datastore is not SnapCenter compatible</code> ，则选定虚拟机或数据存储库与 SnapCenter 不兼容。请参见 <a href="#Manage compatibility check failures">[Manage compatibility check failures]</a> 有关详细信息 &#8230;&#8203;</p>
+<p>如果显示消息 <code>Sselected &lt;resource-name&gt; is not SnapCenter compatible</code> ，则选定资源与 SnapCenter 不兼容。请参见 <a href="#Manage compatibility check failures">[Manage compatibility check failures]</a> 有关详细信息 &#8230;&#8203;</p>
 </div>
 </li>
 <li>
 <p>在 * 生成磁盘 * 页面上，为多个数据存储库中具有多个 VMDK 的 VM 选择一个选项：</p>
-<div class="paragraph">
+<div class="ulist">
+<ul>
+<li>
 <p>始终排除所有跨区数据存储库（这是数据存储库的默认设置）。</p>
-</div>
-<div class="paragraph">
+</li>
+<li>
 <p>始终包括所有跨区数据存储库（这是 VM 的默认设置）。</p>
-</div>
-<div class="paragraph">
+</li>
+<li>
 <p>手动选择要包括的跨区数据存储库</p>
+<div class="paragraph">
+<p>FlexGroup 和 VVOL 数据存储库不支持跨接 VM 。</p>
+</div>
+</li>
+</ul>
 </div>
 </li>
 <li>
@@ -1483,7 +1550,7 @@
 <p>您必须填写每个字段。SnapCenter VMware 插件会在部署 SnapCenter VMware 插件的时区创建计划。您可以使用适用于 VMware vSphere 的 SnapCenter 插件 GUI 修改时区。</p>
 </div>
 <div class="paragraph">
-<p><a href="scpivs44_manage_your_configuration.html#modify-the-time-zones-for-backups">"修改备份的时区"</a>。</p>
+<p><a href="scpivs44_modify_the_time_zones.html">"修改备份的时区"</a>。</p>
 </div>
 </li>
 <li>
@@ -1530,7 +1597,7 @@
 <p>SnapCenter 4.x 版支持 ONTAP 8.3.1 及更高版本。</p>
 </div>
 <div class="paragraph">
-<p>适用于 VMware vSphere 的 SnapCenter 插件不会对所有 ONTAP 版本执行兼容性检查；仅对 ONTAP 8.2.1 及更早版本执行兼容性检查。因此，请始终参见 <a href="https://mysupport.netapp.com/matrix/imt.jsp?components=100571;&amp;solution=1517&amp;isHWU&amp;src=IMT" target="_blank" rel="noopener">"NetApp 互操作性表工具（ IMT ）"</a> 有关 SnapCenter 支持的最新信息。</p>
+<p>适用于 VMware vSphere 的 SnapCenter 插件不会对所有 ONTAP 版本执行兼容性检查；仅对 ONTAP 8.2.1 及更早版本执行兼容性检查。因此，请始终参见 <a href="https://imt.netapp.com/matrix/imt.jsp?components=103284;&amp;solution=1517&amp;isHWU&amp;src=IMT" target="_blank" rel="noopener">"NetApp 互操作性表工具（ IMT ）"</a> 有关 SnapCenter 支持的最新信息。</p>
 </div>
 </li>
 <li>
@@ -1577,7 +1644,7 @@
   <div class="page-nav-toolbar">
     <div id="version-dropdown"></div>
     <div class="page-nav-contribute"  >
-      <a target="_blank" href="https://github.com/NetAppDocs/sc-plugin-vmware-vsphere/issues/new?body=Page%3A%20[为 VM 和数据存储库创建资源组](https://docs.netapp.com/zh-cn/sc-plugin-vmware-vsphere/scpivs44_create_resource_groups_for_vms_and_datastores.html)" class="page-nav-contribute-link" role="button"><img src="/zh-cn/sc-plugin-vmware-vsphere/images/discuss-sm.svg" class="github-icon" />请求文档变更</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/sc-plugin-vmware-vsphere/issues/new?body=Page%3A%20[创建资源组](https://docs.netapp.com/zh-cn/sc-plugin-vmware-vsphere/scpivs44_create_resource_groups_for_vms_and_datastores.html)" class="page-nav-contribute-link" role="button"><img src="/zh-cn/sc-plugin-vmware-vsphere/images/discuss-sm.svg" class="github-icon" />请求文档变更</a>
       <a target="_blank" href="https://github.com/NetAppDocs/sc-plugin-vmware-vsphere/blob/main/scpivs44_create_resource_groups_for_vms_and_datastores.adoc" class="page-nav-contribute-link" role="button"><img src="/zh-cn/sc-plugin-vmware-vsphere/images/edit-sm.svg" class="github-icon" />在 GitHub 上编辑</a>
       <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/zh-cn/sc-plugin-vmware-vsphere/images/article-sm.svg" class="github-icon" />提供者指南</a>
     </div>

@@ -9,7 +9,7 @@
   <meta property="og:title" content="如何执行还原操作" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://docs.netapp.com/zh-cn/sc-plugin-vmware-vsphere/scpivs44_how_restore_operations_are_performed.html" />
-	<meta property="og:description" content="对于 VMFS 环境，适用于 VMware vSphere 的 SnapCenter 插件使用 Storage VMotion 的克隆和挂载操作来执行还原操作。对于 NFS 环境，此插件使用原生 ONTAP 单文件 SnapRestore （ SFSR ）来提高大多数还原操作的效率。" />
+	<meta property="og:description" content="对于 VMFS 环境，适用于 VMware vSphere 的 SnapCenter 插件使用 Storage VMotion 的克隆和挂载操作来执行还原操作。对于 NFS 环境，此插件使用原生 ONTAP 单文件 SnapRestore （ SFSR ）来提高大多数还原操作的效率。对于 VVOL VM ，此插件..." />
   <meta property="og:image" content="https://docs.netapp.com/zh-cn/sc-plugin-vmware-vsphere/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="format-detection" content="telephone=no">
@@ -18,7 +18,7 @@
   <meta http-equiv="nss-type" content="Product Documentation"/>
   <meta http-equiv="nss-subtype" content="User Guide"/>
   
-  <meta name="description" content="对于 VMFS 环境，适用于 VMware vSphere 的 SnapCenter 插件使用 Storage VMotion 的克隆和挂载操作来执行还原操作。对于 NFS 环境，此插件使用原生 ONTAP 单文件 SnapRestore （ SFSR ）来提高大多数还原操作的效率。">
+  <meta name="description" content="对于 VMFS 环境，适用于 VMware vSphere 的 SnapCenter 插件使用 Storage VMotion 的克隆和挂载操作来执行还原操作。对于 NFS 环境，此插件使用原生 ONTAP 单文件 SnapRestore （ SFSR ）来提高大多数还原操作的效率。对于 VVOL VM ，此插件...">
   <meta name="keywords" content=" ">
   
   
@@ -421,6 +421,8 @@
 
 
 
+
+
           
         </li>
       </ul>
@@ -736,6 +738,42 @@
 
 
 
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/zh-cn/sc-plugin-vmware-vsphere/pdfs/sidebar/管理您的配置.pdf" 
+            
+          >
+            <img src="/zh-cn/sc-plugin-vmware-vsphere/images/pdf.png" width="16" height="16"/>
+            管理您的配置
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
 
 
     
@@ -798,44 +836,6 @@
             升级
           </a>
           
-
-
-
-
-
-
-
-          
-        </li>
-      </ul>
-    
-
-  
-
-
-
-    
-      <ul class="subfolders" style="display:none;">
-        <li class="pdf-ux-container">
-          <a target="_blank" 
-            
-              href="/zh-cn/sc-plugin-vmware-vsphere/pdfs/sidebar/迁移.pdf" 
-            
-          >
-            <img src="/zh-cn/sc-plugin-vmware-vsphere/images/pdf.png" width="16" height="16"/>
-            迁移
-          </a>
-          
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -929,6 +929,8 @@
         部署规划和要求
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_minimum_ontap_privileges_required.html">
         所需的最小 ONTAP 权限
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_minimum_vcenter_privileges_required.html">
+        所需的最低 vCenter 权限
       </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_download_the_snapcenter_plug-in_for_vmware_vsphere_ova_open_virtual_appliance.html">
         下载适用于 VMware vSphere OVA 的 SnapCenter 插件（开放式虚拟设备）
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_deploy_snapcenter_plug-in_for_vmware_vsphere.html">
@@ -982,11 +984,11 @@
       <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_protect_data_overview.html">
         数据保护工作流
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_view_vm_and_datastore_backups.html">
-        查看虚拟机和数据存储库备份
+        查看备份
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_create_backup_policies_for_vms_and_datastores.html">
-        为 VM 和数据存储库创建备份策略
+        创建备份策略
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_create_resource_groups_for_vms_and_datastores.html">
-        为 VM 和数据存储库创建资源组
+        创建资源组
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_prescripts_and_postscripts.html">
         预处理脚本和后处理脚本
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_add_a_single_vm_or_datastore_to_a_resource_group.html">
@@ -996,7 +998,7 @@
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_back_up_resource_groups_on_demand.html">
         按需备份资源组
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_back_up_the_snapcenter_plug-in_for_vmware_vsphere_mysql_database.html">
-        备份适用于 VMware vSphere 的 SnapCenter 插件 MySQL 数据库
+        备份 MySQL 数据库
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_manage_resource_groups.html">
         管理资源组—暂停，恢复，修改，删除
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_manage_policies.html">
@@ -1065,9 +1067,26 @@
         禁用并启用适用于 VMware vSphere 的 SnapCenter 插件
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_remove_plugin.html">
         删除适用于 VMware vSphere 的 SnapCenter 插件
-      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_manage_your_configuration.html">
-        管理您的配置
-      </a></li><li class="subfolders "><a href="#">
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 管理您的配置</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_modify_the_time_zones.html">
+        修改时区
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_modify_the_logon_credentials.html">
+        修改登录凭据
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_modify_the_vcenter_logon_credentials.html">
+        修改 vCenter 登录凭据
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_modify_the_network_settings.html">
+        修改网络设置
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_modify_configuration_default_values.html">
+        修改配置默认值
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_create_the_scbr_override_file.html">
+        创建 scbr.override 文件
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_properties_you_can_override.html">
+        您可以覆盖的配置属性
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_enable_ssh.html">
+        启用 SSH ：
+      </a></li></ul></li><li class="subfolders "><a href="#">
         <div class="na-navbar-padding"> REST API</div>
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_rest_apis_overview.html">
@@ -1105,26 +1124,7 @@
         升级到同一版本的新修补程序
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_information_not_displayed_after_upgrading_to_a_new_patch_of_the_same_release.html">
         升级到同一版本的新修补程序后，不会显示信息
-      </a></li></ul></li><li class="subfolders "><a href="#">
-        <div class="na-navbar-padding"> 迁移</div>
-      </a>
-      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_migrate.html">
-        迁移选项和支持的路径
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_migration_overview.html">
-        迁移概述
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_prerequisites_for_migration.html">
-        迁移的前提条件
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_migrate_from_windows_based_snapcenter_plug-in_for_vmware_vsphere.html">
-        从适用于 VMware vSphere 的基于 Windows 的 SnapCenter 插件迁移
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_migrate_snapcenter_backup_metadata_to_the_virtual_appliance.html">
-        迁移基于 Windows 的 SnapCenter VMware 备份元数据
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_post-migration.html">
-        迁移后
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_correct_bad_gateway_errors_during_migration.html">
-        更正迁移期间出现的错误网关
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/scpivs44_manage_authentication_errors.html">
-        管理身份验证错误
-      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/netapp_legal_notices.html">
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/sc-plugin-vmware-vsphere/legal-notices.html">
         法律声明
       </a></li></ul>
 </div>
@@ -1183,7 +1183,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-01-17 14:47:15 +0000">01/17/2022</time>
+    <time datetime="2022-01-27 16:53:29 +0000">01/27/2022</time>
     
   
 
@@ -1211,62 +1211,106 @@
 
 
 <div class="paragraph">
-<p>对于 VMFS 环境，适用于 VMware vSphere 的 SnapCenter 插件使用 Storage VMotion 的克隆和挂载操作来执行还原操作。对于 NFS 环境，此插件使用原生 ONTAP 单文件 SnapRestore （ SFSR ）来提高大多数还原操作的效率。下表列出了如何执行还原操作。</p>
+<p>对于 VMFS 环境，适用于 VMware vSphere 的 SnapCenter 插件使用 Storage VMotion 的克隆和挂载操作来执行还原操作。对于 NFS 环境，此插件使用原生 ONTAP 单文件 SnapRestore （ SFSR ）来提高大多数还原操作的效率。对于 VVOL VM ，此插件使用 ONTAP 单文件快照还原（ ONTAP SFSR ）和 SnapMirror 还原执行还原操作。下表列出了如何执行还原操作。</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
-<col style="width: 25%;">
-<col style="width: 25%;">
-<col style="width: 25%;">
-<col style="width: 25%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
 </colgroup>
 <thead>
 <tr>
 <th class="tableblock halign-left valign-top">还原操作</th>
-<th class="tableblock halign-left valign-top">在 NFS 环境中使用 ONTAP SFSR 执行</th>
-<th class="tableblock halign-left valign-top">在 NFS 环境中使用克隆并使用 Storage VMotion 挂载来执行</th>
-<th class="tableblock halign-left valign-top">在 VMFS 环境中使用克隆和 Storage VMotion 挂载来执行</th>
+<th class="tableblock halign-left valign-top">from</th>
+<th class="tableblock halign-left valign-top">使用执行</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">从主备份还原 VM 和 VMDK</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">是的。</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">是的。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">VM 和 VMDK</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">主备份</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NFS 环境： ONTAP 单文件 SnapRestore VMFS 环境：使用 Storage VMotion 克隆和挂载</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">从二级备份还原 VM 和 VMDK</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">是的。</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">是的。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">VM 和 VMDK</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">二级备份</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NFS 环境： ONTAP 单文件 SnapRestore VMFS 环境：使用 Storage VMotion 克隆和挂载</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">从主备份还原已删除的 VM 和 VMDK</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">是的。</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">是的。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">已删除 VM 和 VMDK</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">主备份</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NFS 环境： ONTAP 单文件 SnapRestore VMFS 环境：使用 Storage VMotion 克隆和挂载</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">从二级备份还原已删除的 VM 和 VMDK</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">是的。</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">是的。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">已删除 VM 和 VMDK</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">二级备份</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NFS 环境：使用 Storage VMotion VMFS 环境克隆和挂载：使用 Storage VMotion 克隆和挂载</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">从 VM 一致的主备份还原 VM 和 VMDK</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">是的。</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">是的。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">VM 和 VMDK</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">VM 一致的主备份</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NFS 环境： ONTAP 单文件 SnapRestore VMFS 环境：使用 Storage VMotion 克隆和挂载</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">从 VM 一致的二级备份还原 VM 和 VMDK</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">是的。</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">是的。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">VM 和 VMDK</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">VM 一致的二级备份</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NFS 环境：使用 Storage VMotion VMFS 环境克隆和挂载：使用 Storage VMotion 克隆和挂载</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">VVol 虚拟机</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">崩溃状态一致的主备份</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">适用于所有协议的 ONTAP 单文件 SnapRestore</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">VVol 虚拟机</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">崩溃状态一致的二级备份</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">适用于所有协议的 ONTAP SnapMirror 还原</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">FlexGroup VM</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">主备份</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>NFS 环境： * ONTAP 单文件 SnapRestore （如果使用的是 ONTAP 9.10.1 及更高版本） * 在 ONTAP 先前版本上使用 Storage VMotion 克隆并挂载</p>
+</div>
+<div class="paragraph">
+<p>VMFS 环境：不支持 FlexGroup</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">FlexGroup VM</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">二级备份</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>NFS 环境：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>ONTAP SnapMirror 还原（如果使用的是 ONTAP 9.10.1 及更高版本）</p>
+</li>
+<li>
+<p>使用适用于 ONTAP 的 Storage VMotion 先前版本克隆和挂载</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>VMFS 环境：不支持 FlexGroup</p>
+</div></div></td>
 </tr>
 </tbody>
 </table>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/sc-plugin-vmware-vsphere/images/note.svg" alt="注">
+</td>
+<td class="content">
+在 VVol 容器重新平衡之后，您无法还原 VVol 虚拟机。
+</td>
+</tr>
+</table>
+</div>
 <div class="paragraph">
 <p>子系统文件还原操作可在 NFS 和 VMFS 环境中使用克隆和挂载操作（而不是 Storage VMotion ）来执行。</p>
 </div>
