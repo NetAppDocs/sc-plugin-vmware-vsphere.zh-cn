@@ -159,7 +159,9 @@ summary: 在部署虚拟设备之前，您应了解部署要求。
 
 
 | 适用于 VMware vSphere 的 SnapCenter 插件端口  a| 
-8144 （ HTTPS ），双向端口用于从 VMware vSphere Web Client 和 SnapCenter 服务器进行通信。8080 双向此端口用于管理虚拟设备。注意：您不能修改端口配置。
+8144 （ HTTPS ），双向端口用于从 VMware vSphere Web Client 和 SnapCenter 服务器进行通信。8080 双向此端口用于管理虚拟设备。
+
+注意：您不能修改端口配置。
 
 
 

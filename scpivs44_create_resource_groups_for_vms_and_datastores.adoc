@@ -201,7 +201,7 @@ FlexGroup 和 VVOL 数据存储库不支持跨接 VM 。
 image:scpivs44_image18.png["错误：缺少图形映像"]
 
 +
-在开始时间字段中，输入一个非零时间。
+在起始小时字段中，输入一个非零的日期和时间。日期格式必须为 `day/month/year` 。
 
 +
 您必须填写每个字段。SnapCenter VMware 插件会在部署 SnapCenter VMware 插件的时区创建计划。您可以使用适用于 VMware vSphere 的 SnapCenter 插件 GUI 修改时区。

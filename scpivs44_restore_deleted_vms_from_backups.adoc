@@ -36,7 +36,7 @@ summary: 您可以将已删除的虚拟机从数据存储库主备份或二级�
 NOTE: 还原到其他位置时，适用于 VMware vSphere 的 SnapCenter 插件必须在作为还原操作目标的链接 vCenter 中运行。目标数据存储库必须具有足够的空间。
 
 
-NOTE: 还原已删除的虚拟机时，不会还原最初分配给该虚拟机的任何标记。
+NOTE: 还原已删除的 VM 时，不会还原最初分配给该 VM 的任何标记或文件夹。
 
 .开始之前
 * 在 VMware vSphere Web Client 的存储系统页面上，存储系统的用户帐户必须具有 link:scpivs44_minimum_ontap_privileges_required.html["ONTAP 所需的最小 ONTAP 权限"]。

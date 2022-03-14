@@ -383,7 +383,6 @@
   <block id="9e51876f1626b29bef8363e8e49f4399" category="paragraph"><block ref="9e51876f1626b29bef8363e8e49f4399" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e36997657270b76894de3e4df7a0bfea" category="paragraph">作业监控选项卡可列出每个作业及其状态，开始时间和结束时间。如果作业名称较长，则可能需要向右滚动以查看开始和结束时间。显示内容每 30 秒刷新一次。</block>
   <block id="6877b4359705f09d5cae8f90b7263c8a" category="list-text">单击 <block ref="7af497620571fc05b49f8954481b7140" category="inline-image-macro-rx" type="image"></block> 工具栏中的刷新图标可按需刷新显示内容。</block>
-  <block id="de43f564191b23e6a59c556cc7f93041" category="list-text">单击 <block ref="7381c96683fb50d316b765b33a279a1f" category="inline-image-macro-rx" type="image"></block> 筛选器图标，用于选择要显示的作业的时间范围，类型和状态。</block>
   <block id="1e5d7883bd10140e35399af7097dca80" category="list-text">单击 <block ref="7af497620571fc05b49f8954481b7140" category="inline-image-macro-rx" type="image"></block> 在作业详细信息窗口中刷新图标，以便在作业运行时刷新显示内容。</block>
   <block id="998d28e7400255771ac581f9219e9a7f" category="inline-link">知识库文章： SnapCenter vSphere Web Client 信息板不显示作业</block>
   <block id="9f9e4f1f94fce90c2461c88b48d97eff" category="paragraph">如果信息板不显示作业信息，请参见<block ref="41548c972cbca01447f4997545abfec9" category="inline-link-rx"></block>。</block>
@@ -1586,7 +1585,6 @@
   <block id="f756ba31a99a4185d9ca1e432a20a83f" category="paragraph">在链接模式下，此列表包含所有链接 vCenter 中的策略。您必须选择与资源组位于同一 vCenter 上的策略。</block>
   <block id="5049311e411f306df5ef01765b9dc8ec" category="list-text">在 * 计划 * 页面上，为每个选定策略配置备份计划。</block>
   <block id="c4c45b2b283ca2fa9057abb408ea2d4d" category="paragraph"><block ref="c4c45b2b283ca2fa9057abb408ea2d4d" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="7fb7ad8e3535da92bb1912857e528122" category="paragraph">在开始时间字段中，输入一个非零时间。</block>
   <block id="c80a367628429b7e21115a777438508a" category="paragraph">您必须填写每个字段。SnapCenter VMware 插件会在部署 SnapCenter VMware 插件的时区创建计划。您可以使用适用于 VMware vSphere 的 SnapCenter 插件 GUI 修改时区。</block>
   <block id="c32889f5fe21a50841ec14f3184ac30b" category="paragraph">单击 * 完成 * 后，新资源组将添加到资源组列表中。</block>
   <block id="2ff2dc58f2ec2635705f09ff662f69ce" category="admonition">如果备份中任何 VM 的暂停操作失败，则备份将标记为不是 VM 一致，即使选定策略已选择 VM 一致性也是如此。在这种情况下，某些虚拟机可能已成功暂停。</block>
@@ -1832,7 +1830,6 @@
   <block id="91d4b2fc300bcf471a4e610b941c1e32" category="cell">适用于 VMware 的 ONTAP 工具</block>
   <block id="47ff422f78a776fed1a1b024f1205717" category="cell">适用于 VMware vSphere 的 SnapCenter 插件可通过此插件管理 VVol 数据存储库（ VMware 虚拟卷）。有关支持的版本，请参见 NetApp 互操作性表工具。</block>
   <block id="272ac1abd82997e2442d32a79e6f5271" category="paragraph">有关受支持版本的最新信息，请参见<block ref="25eb2128e948e2544fabd66492bfb7a4" category="inline-link-rx"></block>。</block>
-  <block id="36e5cc5b4b4a18a57e38d80baa6dc2e0" category="paragraph">8144 （ HTTPS ），双向端口用于从 VMware vSphere Web Client 和 SnapCenter 服务器进行通信。8080 双向此端口用于管理虚拟设备。注意：您不能修改端口配置。</block>
   <block id="7c1239972879fe0b69b4bb6d5c9a743e" category="cell">VMware vSphere vCenter Server 端口</block>
   <block id="1f5ccbd5c3e6d6be1c440296630a5678" category="cell">如果要保护 VVol 虚拟机，则必须使用端口 443 。</block>
   <block id="a4ba122796d9be1187615f3e4e5f759f" category="list-text">如果您希望进行 VM 一致的备份，则必须安装并运行 VMware Tools 。需要使用 VMware Tools 暂停 VM 。VVOL VM 不支持 VM 一致的备份。</block>
@@ -1908,7 +1905,6 @@
   <block id="bd3b3958722363127e54a9e8e7a3d8e0" category="paragraph">您可以将 VVol 虚拟机中的 VMDK 还原到原始数据存储库。</block>
   <block id="a5497137d298c957e9578d038ccb451d" category="paragraph">您不能从 VVol 备份连接 VMDK 。</block>
   <block id="c59ae8d7beeb519a23478ab048af482c" category="paragraph"><block ref="c59ae8d7beeb519a23478ab048af482c" category="inline-link-macro-rx"></block></block>
-  <block id="5aaff5e3519cb05a480cee3030d87ebc" category="admonition">还原已删除的虚拟机时，不会还原最初分配给该虚拟机的任何标记。</block>
   <block id="e2496f7f30be021f22d563d55a9d9a77" category="inline-link-macro">适用于 VMware vSphere 的 SnapCenter 插件所需的最低 vCenter 特权</block>
   <block id="a57f357cda6b120bf6909f719837db9d" category="list-text">vCenter 中的用户帐户必须具有 <block ref="db7461a22bb1a1369320da1099e48c51" category="inline-link-macro-rx"></block>。</block>
   <block id="ef4a97108133e7715327ed1b569844e9" category="inline-link">适用于 VMware vSphere 的 SnapCenter 插件 4.6 发行说明</block>
@@ -1922,4 +1918,9 @@
   <block id="e8c19d50a62ef0c84239952feb395afa" category="sidebar">创建 scbr.override 文件</block>
   <block id="e83ed49b67b001041250970bfbe7efab" category="sidebar">您可以覆盖的配置属性</block>
   <block id="e7d694813a2146a3ab31b4b907988620" category="sidebar">启用 SSH ：</block>
+  <block id="122cb6830661325b4e6605ab0ebf6879" category="admonition">还原已删除的 VM 时，不会还原最初分配给该 VM 的任何标记或文件夹。</block>
+  <block id="62feac6f129e2303fab52cf1bd2e90c4" category="list-text">单击 <block ref="7381c96683fb50d316b765b33a279a1f" category="inline-image-macro-rx" type="image"></block> 筛选器图标，用于选择要显示的作业的时间范围，类型，标记和状态。此筛选器区分大小写。</block>
+  <block id="9f0e863b35d7c0c7148fb01a2711d395" category="paragraph">8144 （ HTTPS ），双向端口用于从 VMware vSphere Web Client 和 SnapCenter 服务器进行通信。8080 双向此端口用于管理虚拟设备。</block>
+  <block id="34fe6318217e13219322f9f481788cfa" category="paragraph">注意：您不能修改端口配置。</block>
+  <block id="9d53fb85cd7b48e31e4ae938dd8a9d13" category="paragraph">在起始小时字段中，输入一个非零的日期和时间。日期格式必须为 `day/month/year` 。</block>
 </blocks>
