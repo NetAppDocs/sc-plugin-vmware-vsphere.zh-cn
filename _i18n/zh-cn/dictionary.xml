@@ -37,50 +37,19 @@
   <block id="9680d30329a2703f92f1f40d6c654592" category="list-text">在 MySQL Backup and Restore Configuration Menu 中，输入选项 * 1 ） Configure MySQL backup* 。</block>
   <block id="916491856dc6463b52669f1a72d9f59b" category="list-text">在提示符处，输入存储库的备份位置，要保留的备份数以及备份应开始的时间。</block>
   <block id="c3441cef2cabb9f29c458f1cc6459f0f" category="paragraph">输入时，所有输入都将保存。达到备份保留数量后，执行新备份时会删除较早的备份。</block>
-  <block id="0c003d82499f0d438805114b812d8bcc" category="doc">从 NetApp Data Broker 升级</block>
   <block id="135b308ed83c53f1516b7c754566d1c4" category="list-title">开始之前</block>
-  <block id="aea46fc42440d1dbca56b7c0cb8f4168" category="list-text">要升级的虚拟机必须具有 12 GB 的可用 RAM 。</block>
-  <block id="2b8d5dd3a5c1ca1af7a5c7fe4f2dbbeb" category="list-text">要升级的虚拟机必须已启动。</block>
-  <block id="436e62866185df0411370b63e2ba2df2" category="list-text">最佳做法是，在升级之前备份包含 NetApp Data Broker 的虚拟机。</block>
-  <block id="4e5bb808269336045054fde60aaed517" category="paragraph">基本升级步骤有三个：</block>
-  <block id="b1d47c4a14f5322478dec76f2c8db9b5" category="list-text">准备升级。</block>
-  <block id="20713c70d68b79148e8f656e0aed11c6" category="list-text">下载升级 .`ISO` 文件。</block>
   <block id="f5b0696bfd02863abb2d114ef575a203" category="list-text">安装升级。</block>
-  <block id="9c56b7173c04da16b16d23e721c8ef6b" category="list-text">将 .`ISO` 文件上传到数据存储库。</block>
-  <block id="05ebcb88aebe04d4b7554752e4d737a6" category="list-text">将虚拟机连接到数据存储库中的 .`ISO` 文件。</block>
-  <block id="2afdb167552320e31d47753be88be213" category="list-text">运行升级。</block>
   <block id="a115e2512005f81c492d368a9613ee58" category="list-text">禁用适用于 VMware vSphere 的 SnapCenter 插件，为升级做准备。</block>
-  <block id="f4c357fe473ebd5b4c7be135748546ac" category="list-text">登录到 NetApp Data Broker 管理 GUI 。</block>
-  <block id="38d44809ade2f141c8f7b87b3634fecc" category="paragraph">部署 NetApp Data Broker 时会显示此 IP 。</block>
-  <block id="7d62575d3bc7b58e343cd30785c90d70" category="list-text">单击左侧导航窗格中的配置，然后单击 * 插件详细信息 * 部分中的服务选项以禁用此插件。</block>
   <block id="7c7ae5acd39e33d9d69f3338f6b09a4a" category="inline-link"><block ref="7c7ae5acd39e33d9d69f3338f6b09a4a" category="inline-link-rx"></block></block>
   <block id="49b20de0665dbf0adffcce8449969e05" category="list-text">登录到 NetApp 支持站点（<block ref="d9a31f976cefd9412c7b34e5af784f14" category="inline-link-rx"></block>）。</block>
   <block id="186741bf5d776ef0cdc89239ec5d6b01" category="list-text">从产品列表中，选择 * 适用于 VMware vSphere 的 SnapCenter 插件 * ，然后单击 * 下载最新版本 * 按钮。</block>
-  <block id="4718b614042c278ab3f31609ccad935a" category="list-text">将适用于 VMware vSphere 的 SnapCenter 插件升级 .`ISO` 文件下载到任意位置。</block>
   <block id="1ced0a64a9eacafaada35a9482d31c57" category="list-text">在浏览器中，导航到 VMware vSphere vCenter 。</block>
-  <block id="1d49eddb57c81eca8d44353e2baa9d71" category="list-text">在 vCenter 图形用户界面上，单击 * vSphere Web Client （ HTML5 ） * 。</block>
   <block id="8d668d142d0f3d31fe81d5725d775268" category="list-text">登录到 * VMware vCenter Single Sign-On* 页面。</block>
-  <block id="eb6b2dd3e5dae796ca58dcdc57b93939" category="list-text">在导航器窗格中，单击要升级的 NetApp Data Broker VM ，然后单击 * 摘要 * 选项卡。</block>
   <block id="3630c5d0152e5c45485f4ec788813d5f" category="list-text">在 * 相关对象 * 窗格中，单击列表中的任何数据存储库，然后单击 * 摘要 * 选项卡。</block>
-  <block id="4848248fa016f7d9a3f4b825140bfe39" category="list-text">在选定数据存储库的 * 文件 * 选项卡上，单击列表中的任何文件夹，然后单击存储图标（ * 将文件上传到数据存储库 * ）。</block>
-  <block id="a3e2c931b223f74b176cac001786dce0" category="list-text">在升级弹出屏幕上，导航到下载 ` .iso` 文件的位置，然后单击 ` .iso` 文件映像，然后单击 * 打开 * 。</block>
-  <block id="e852a9f29449b4d56c8d1dd100313e99" category="paragraph">此文件将上传到数据存储库。</block>
-  <block id="990f34fb256d02bbeddd9a234eab6c8c" category="list-text">导航回要升级的 NetApp Data Broker VM ，然后单击 * 摘要 * 选项卡。</block>
-  <block id="be6b8c415d1ea5fdd3030094d35ec8fd" category="paragraph">在 * 虚拟机硬件 * 窗格的 CD/DVD 字段中，此值应为 " 已断开连接 " 。</block>
   <block id="9bdc956870fb4f8eda0fc93c8639dda1" category="list-text">单击 CD/DVD 字段中的连接图标，然后选择 * 连接到数据存储库上的 CD/DVD 映像 * 。</block>
-  <block id="492474fade2f410b24197c85ee42b361" category="paragraph"><block ref="492474fade2f410b24197c85ee42b361" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4e36d9630c525be29c9f2b987c378c3a" category="list-text">在向导中，执行以下操作：</block>
-  <block id="3e4a9be60d5e083433692b7b1708dd9d" category="paragraph">在 Datastores 列中，选择您上传的 .`ISO` 文件所在的数据存储库。</block>
-  <block id="39128cd7dc9ff926f481dd21b5a561e3" category="paragraph">在目录列中，导航到您上传的 ` .iso` 文件，确保在文件类型字段中选择了 "ISO image" ，然后单击 * 确定 * 。</block>
-  <block id="fcf7170f3e231a560dd115ff4bb9954a" category="paragraph">请等待此字段显示 " 已连接 " 状态。</block>
-  <block id="1d4f38dc0cf132a9ff747c89e48c6ef8" category="list-text">访问虚拟设备的 * 摘要 * 选项卡登录到维护控制台，然后单击开始图标启动维护控制台。</block>
   <block id="1b9c2951979b9427336de3c6b89e109a" category="list-text">对于 System Configuration ，输入 * 。 2 * ，然后输入 * 。 8 * 进行升级。</block>
   <block id="3fa27d5cda1efe2ca10c0731abce440c" category="list-text">输入 * 。 * 继续并开始升级。</block>
-  <block id="420d8efc5aac14e2c2c1dc0542e42a7c" category="paragraph">系统显示升级成功消息后，系统将尝试启动服务。</block>
-  <block id="c90b9b19a408b027f2f8721ca87c1711" category="list-text">请稍候，直到显示 " 按 Enter 继续 " 消息，然后登录到适用于 VMware vSphere 的 SnapCenter 插件管理图形用户界面。</block>
-  <block id="e3cf3231f3996b49b271f37ffe99bf4e" category="paragraph">此 IP 地址与以前的 NetApp Data Broker 地址相同。</block>
-  <block id="c6fcc40c750cc3136cb59f9ce953d7d8" category="list-text">在 * 插件详细信息 * 部分中，启用适用于 VMware vSphere 的 SnapCenter 插件服务并确保状态显示为 " 已连接 " 。</block>
-  <block id="5a44c0e5e0af7cae22096ca96276f0d1" category="paragraph">如果您正在使用适用于 VMware vSphere 的 SnapCenter 插件来支持基于应用程序的数据保护，并且此插件无法与 SnapCenter 服务器通信，请刷新与 SnapCenter 服务器的连接：在 SnapCenter 图形用户界面上，单击 * 主机 * ，选择 VMware 主机，然后单击 * 推送服务器凭据 * 。</block>
   <block id="0f575d4c6e589b4ccb8be23f00713b60" category="doc">重新启动 VMware vSphere Web Client 服务</block>
   <block id="c4ba4f340f36e94783d25ae6298d357a" category="paragraph">如果 SnapCenter VMware vSphere Web Client 行为不正确，您可能需要清除浏览器缓存。如果问题仍然存在，请重新启动 Web 客户端服务。</block>
   <block id="fe7a5d7c21fd6618d11878bbe4c58d46" category="section-title">在 Linux vCenter 中重新启动 VMware vSphere Web Client 服务</block>
@@ -1672,7 +1641,6 @@
   <block id="7608e75619cff3eeb4e8bce40481b456" category="sidebar">SnapCenter 软件文档</block>
   <block id="11d88a82190664755120fc16494310df" category="sidebar">早期版本的 SCV 文档</block>
   <block id="74fe1f888648848c4fd5f85ae847a16c" category="sidebar">NetApp 知识库— SCV</block>
-  <block id="058c063e71e7a372dedf168e2a604eb9" category="summary">如果要使用适用于 VMware vSphere 的 SnapCenter 插件提供的新功能，则必须从 NetApp Data Broker 1.0.x 升级到适用于 VMware vSphere 的 SnapCenter 插件。</block>
   <block id="012ec6632937d7152731cacee30c59bf" category="list-text">单击 <block ref="915ca28449bbaaf9ebf3b6ab40e1c545" category="inline-image-macro-rx" type="image"></block>* 添加 * 。</block>
   <block id="8c1fdca1d8c0cd47a5190895b6695a25" category="list-text">在 * 作为凭据运行 * 对话框中，输入凭据。对于用户名，必须输入 " 管理员 " 。</block>
   <block id="c2b926872850e499819e1c163bfb05f6" category="list-text">单击 * 选择 VM* ，然后在 * 代理 VM* 对话框中选择一个 VM 。单击 * 保存 * 以返回到 * 作为凭据运行 * 对话框。选择应用于对凭据进行身份验证的虚拟机。</block>
@@ -1923,4 +1891,5 @@
   <block id="9f0e863b35d7c0c7148fb01a2711d395" category="paragraph">8144 （ HTTPS ），双向端口用于从 VMware vSphere Web Client 和 SnapCenter 服务器进行通信。8080 双向此端口用于管理虚拟设备。</block>
   <block id="34fe6318217e13219322f9f481788cfa" category="paragraph">注意：您不能修改端口配置。</block>
   <block id="9d53fb85cd7b48e31e4ae938dd8a9d13" category="paragraph">在起始小时字段中，输入一个非零的日期和时间。日期格式必须为 `day/month/year` 。</block>
+  <block id="3bff0f18ac6484a23a602a095461c45e" category="paragraph">如果在 * 间隔 * 字段中选择了天数，则会在每月的第 1 天执行备份，之后会按指定的间隔执行备份。例如，如果选择 * 每 2 天 * ，则无论起始数据是偶数数据还是奇数，在整个月内都将在第 1 天，第 3 天，第 5 天，第 7 天等执行备份。</block>
 </blocks>
