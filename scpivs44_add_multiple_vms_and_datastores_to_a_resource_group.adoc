@@ -6,6 +6,7 @@ summary: 您可以使用 SnapCenter VMware vSphere Web 客户端的编辑资源�
 ---
 = 将多个 VM 和数据存储库添加到一个资源组
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

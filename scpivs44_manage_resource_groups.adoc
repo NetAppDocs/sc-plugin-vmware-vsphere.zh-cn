@@ -6,6 +6,7 @@ summary: 您可以创建，修改和删除备份资源组，并对资源组执�
 ---
 = 管理资源组
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

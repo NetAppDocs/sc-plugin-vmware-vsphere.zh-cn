@@ -6,6 +6,7 @@ summary: 您可以将单个虚拟机或数据存储库快速添加到适用于 V
 ---
 = 将单个虚拟机或数据存储库添加到资源组
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: 您可以从 Windows 子操作系统上的虚拟机磁盘（ VMDK ）�
 ---
 = 工作流，前提条件和限制
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

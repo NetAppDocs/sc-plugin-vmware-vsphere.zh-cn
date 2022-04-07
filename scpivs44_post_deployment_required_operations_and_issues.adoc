@@ -6,6 +6,7 @@ summary: 部署适用于 VMware vSphere 的 SnapCenter 插件后，您必须完�
 ---
 = 部署后需要执行的操作和出现的问题
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

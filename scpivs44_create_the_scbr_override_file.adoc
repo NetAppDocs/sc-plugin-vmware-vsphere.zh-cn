@@ -6,6 +6,7 @@ summary: '适用于 VMware vSphere 的 SnapCenter 插件在支持基于 SnapCent
 ---
 = 创建 scbr.override 配置文件
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

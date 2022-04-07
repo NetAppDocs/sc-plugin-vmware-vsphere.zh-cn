@@ -6,6 +6,7 @@ summary: 通过添加存储，适用于 VMware vSphere 的 SnapCenter 插件可�
 ---
 = 添加存储
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

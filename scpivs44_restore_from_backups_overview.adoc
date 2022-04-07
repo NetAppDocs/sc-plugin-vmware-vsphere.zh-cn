@@ -6,6 +6,7 @@ summary: 您可以从主备份或二级备份还原 VM ， VMDK ，文件和文�
 ---
 = 还原概述
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: 如果要升级到同一版本的新修补程序，则必须清除 vCen
 ---
 = 升级到适用于 VMware vSphere 的同一版本 SnapCenter 插件的新修补程序
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

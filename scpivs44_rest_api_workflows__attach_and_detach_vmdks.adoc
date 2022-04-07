@@ -6,6 +6,7 @@ summary: 要使用适用于 VMware vSphere 的 SnapCenter 插件 REST API 对 VM
 ---
 = 用于连接和断开 VMDK 的 REST API 工作流
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

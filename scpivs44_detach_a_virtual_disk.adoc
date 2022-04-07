@@ -6,6 +6,7 @@ summary: 在连接虚拟磁盘以还原单个文件后，您可以将虚拟磁�
 ---
 = 断开虚拟磁盘
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

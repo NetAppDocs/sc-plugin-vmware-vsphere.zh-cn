@@ -6,6 +6,7 @@ summary: '要提高操作效率，您可以修改 `sCBR.override` 配置文件�
 ---
 = 修改配置默认值
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

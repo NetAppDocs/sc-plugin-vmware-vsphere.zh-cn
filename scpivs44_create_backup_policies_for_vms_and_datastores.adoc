@@ -6,6 +6,7 @@ summary: 在使用适用于 VMware vSphere 的 SnapCenter 插件备份 VM 和数
 ---
 = 为 VM 和数据存储库创建备份策略
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

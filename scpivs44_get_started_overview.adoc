@@ -6,6 +6,7 @@ summary: 要使用 SnapCenter 功能保护虚拟机上的 VM ，数据存储库�
 ---
 = 部署概述
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

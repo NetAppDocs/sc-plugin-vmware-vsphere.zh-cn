@@ -6,6 +6,7 @@ summary: 如果您不再需要 SnapCenter 数据保护功能，则必须更改 S
 ---
 = 禁用并启用适用于 VMware vSphere 的 SnapCenter 插件
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

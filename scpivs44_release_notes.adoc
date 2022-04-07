@@ -6,6 +6,7 @@ summary: 发行说明提供了有关此版本的适用于 VMware vSphere 的 Sna
 ---
 = 发行说明
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

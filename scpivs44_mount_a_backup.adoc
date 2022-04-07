@@ -6,6 +6,7 @@ summary: 如果要访问备份中的文件，可以从备份挂载传统数据�
 ---
 = 挂载备份
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

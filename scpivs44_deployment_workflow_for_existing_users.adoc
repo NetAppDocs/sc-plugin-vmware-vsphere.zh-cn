@@ -6,6 +6,7 @@ summary: 如果您是 SnapCenter 用户并具有 SnapCenter 备份，则可以�
 ---
 = 现有用户的部署工作流
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

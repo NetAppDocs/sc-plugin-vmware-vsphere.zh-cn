@@ -6,6 +6,7 @@ summary: REST API 通过 Swagger 网页公开。您可以访问 Swagger 网页�
 ---
 = 使用 Swagger API 网页访问 REST API
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

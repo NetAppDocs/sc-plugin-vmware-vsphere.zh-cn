@@ -6,6 +6,7 @@ summary: 资源组是指要保护的 VM ，数据存储库或 VVOL VM 的容器�
 ---
 = 创建资源组
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

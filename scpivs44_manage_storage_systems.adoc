@@ -6,6 +6,7 @@ summary: 在使用 VMware vSphere Web Client 备份或还原 VM 或数据存储�
 ---
 = 管理存储系统
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

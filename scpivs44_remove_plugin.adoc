@@ -6,6 +6,7 @@ summary: 如果您不再需要使用 SnapCenter 数据保护功能，则必须�
 ---
 = 删除适用于 VMware vSphere 的 SnapCenter 插件
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

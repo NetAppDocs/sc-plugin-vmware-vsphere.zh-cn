@@ -6,6 +6,7 @@ summary: 如果在处于链接模式的 vCenter 中停止 SnapCenter VMware 插�
 ---
 = 从 vCenter 取消注册适用于 VMware vSphere 的 SnapCenter 插件
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

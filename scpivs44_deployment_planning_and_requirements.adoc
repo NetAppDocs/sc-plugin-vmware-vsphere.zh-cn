@@ -6,6 +6,7 @@ summary: 在部署虚拟设备之前，您应了解部署要求。
 ---
 = 部署规划和要求
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

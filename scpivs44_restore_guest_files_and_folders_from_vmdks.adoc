@@ -6,6 +6,7 @@ summary: 您可以从 Windows 子操作系统上的 VMDK 还原一个或多个�
 ---
 = 从 VMDK 还原子系统文件和文件夹
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

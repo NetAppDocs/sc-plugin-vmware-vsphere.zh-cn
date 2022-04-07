@@ -7,6 +7,7 @@ summary: 适用于 VMware vSphere 的 SnapCenter 插件（ SCV ）是一种基�
 ---
 = 适用于 VMware vSphere 的 SnapCenter 插件文档
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

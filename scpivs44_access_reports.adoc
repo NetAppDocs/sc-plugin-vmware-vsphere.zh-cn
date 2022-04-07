@@ -6,6 +6,7 @@ summary: 您可以从信息板请求一个或多个作业的报告。
 ---
 = 访问报告
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

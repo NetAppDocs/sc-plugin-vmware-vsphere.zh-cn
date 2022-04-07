@@ -6,6 +6,7 @@ summary: 还原虚拟机时，您可以使用所选的备份副本覆盖现有�
 ---
 = 从备份还原 VM
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

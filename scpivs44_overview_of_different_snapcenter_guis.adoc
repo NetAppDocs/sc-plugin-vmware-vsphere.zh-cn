@@ -6,6 +6,7 @@ summary: 适用于 VMware vSphere 的 SnapCenter 插件是一个独立插件，�
 ---
 = 不同 SnapCenter GUI 的概述
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

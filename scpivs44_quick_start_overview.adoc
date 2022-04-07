@@ -6,6 +6,7 @@ summary: 快速入门文档提供了一组简要说明，用于部署适用于 V
 ---
 = 概述
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

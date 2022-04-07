@@ -6,6 +6,7 @@ summary: 您可以将一个或多个 VMDK 从备份连接到父虚拟机，同�
 ---
 = 将 VMDK 连接到虚拟机
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

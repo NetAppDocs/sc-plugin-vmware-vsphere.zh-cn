@@ -6,6 +6,7 @@ summary: 默认情况下，连接的子文件还原 VMDK 可在 24 小时内使�
 ---
 = 延长子系统文件还原会话的时间
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

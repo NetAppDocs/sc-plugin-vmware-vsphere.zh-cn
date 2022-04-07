@@ -6,6 +6,7 @@ summary: 所有备份操作都对资源组执行，该资源组可以包含一�
 ---
 = 数据保护工作流
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

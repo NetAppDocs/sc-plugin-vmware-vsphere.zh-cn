@@ -6,6 +6,7 @@ summary: 您可以从 SnapCenter VMware vSphere Web Client 的信息板上的作
 ---
 = 下载作业日志
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

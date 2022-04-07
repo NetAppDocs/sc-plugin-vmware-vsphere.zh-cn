@@ -6,6 +6,7 @@ summary: 您可以将已删除的虚拟机从数据存储库主备份或二级�
 ---
 = 从备份中还原已删除的 VM
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

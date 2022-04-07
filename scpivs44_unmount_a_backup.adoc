@@ -6,6 +6,7 @@ summary: 如果您不再需要访问数据存储库中的文件，则可以卸�
 ---
 = 卸载备份
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

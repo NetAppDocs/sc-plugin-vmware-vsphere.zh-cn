@@ -6,6 +6,7 @@ summary: 您可以从主备份或二级备份还原现有 VMDK ，也可以从�
 ---
 = 从备份还原 VMDK
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

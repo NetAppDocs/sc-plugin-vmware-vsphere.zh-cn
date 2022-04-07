@@ -6,6 +6,7 @@ summary: 适用于 VMware vSphere 的 SnapCenter 插件是一种独立虚拟设�
 ---
 = 产品概述
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: 使用 VMware vSphere Web Client 执行任何数据保护操作后，�
 ---
 = 监控作业
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: 您可以重命名和删除适用于 VMware vSphere 的 SnapCenter 插�
 ---
 = 管理备份
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

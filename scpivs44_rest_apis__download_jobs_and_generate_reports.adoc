@@ -6,6 +6,7 @@ summary: 要使用适用于 VMware vSphere 的 SnapCenter 插件 REST API 为 VM
 ---
 = 用于下载作业和生成报告的 REST API
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

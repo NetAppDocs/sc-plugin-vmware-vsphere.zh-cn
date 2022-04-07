@@ -6,6 +6,7 @@ summary: 本节提供适用于 VMware vSphere 的 SnapCenter 插件的许可信�
 ---
 = 许可
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

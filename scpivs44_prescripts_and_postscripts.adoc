@@ -6,6 +6,7 @@ summary: 您可以在数据保护操作中使用自定义预处理和后处理�
 ---
 = 预处理脚本和后处理脚本
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

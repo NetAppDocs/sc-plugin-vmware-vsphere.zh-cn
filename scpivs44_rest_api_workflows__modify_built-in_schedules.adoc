@@ -6,6 +6,7 @@ summary: 要使用适用于 VMware vSphere 的 SnapCenter 插件 REST API 修改
 ---
 = 用于修改内置计划的 REST API 工作流
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

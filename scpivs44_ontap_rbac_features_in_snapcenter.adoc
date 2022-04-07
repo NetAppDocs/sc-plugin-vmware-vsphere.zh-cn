@@ -6,6 +6,7 @@ summary: SnapCenter VMware 插件可与 vCenter Server RBAC ， SnapCenter RBAC 
 ---
 = 适用于 VMware vSphere 的 SnapCenter 插件中的 ONTAP RBAC 功能
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

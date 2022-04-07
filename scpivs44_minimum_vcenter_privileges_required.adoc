@@ -6,6 +6,7 @@ summary: 在开始部署适用于 VMware vSphere 的 SnapCenter 插件之前，�
 ---
 = 所需的最低 vCenter 权限
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

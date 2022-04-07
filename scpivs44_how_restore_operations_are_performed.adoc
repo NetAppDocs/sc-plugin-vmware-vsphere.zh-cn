@@ -6,6 +6,7 @@ summary: 对于 VMFS 环境，适用于 VMware vSphere 的 SnapCenter 插件使�
 ---
 = 如何执行还原操作
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

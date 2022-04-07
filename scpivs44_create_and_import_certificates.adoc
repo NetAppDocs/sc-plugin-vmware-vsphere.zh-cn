@@ -6,6 +6,7 @@ summary: SnapCenter VMware 插件采用 SSL 加密，可与客户端浏览器进
 ---
 = 创建和导入证书
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

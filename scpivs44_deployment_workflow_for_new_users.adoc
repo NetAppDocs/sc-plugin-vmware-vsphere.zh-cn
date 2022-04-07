@@ -6,6 +6,7 @@ summary: 如果您之前未使用过 SnapCenter ，并且没有任何 SnapCenter
 ---
 = 新用户的部署工作流
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

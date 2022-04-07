@@ -6,6 +6,7 @@ summary:
 ---
 = 创建备份策略
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

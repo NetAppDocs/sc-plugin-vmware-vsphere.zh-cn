@@ -6,6 +6,7 @@ summary: '您可以使用 `sCBR.override` 配置文件中列出的属性来更�
 ---
 = 可以覆盖的属性
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

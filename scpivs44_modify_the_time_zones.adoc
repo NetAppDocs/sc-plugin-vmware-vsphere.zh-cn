@@ -6,6 +6,7 @@ summary: 在为适用于 VMware vSphere 的 SnapCenter 插件资源组配置备�
 ---
 = 修改备份的时区
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

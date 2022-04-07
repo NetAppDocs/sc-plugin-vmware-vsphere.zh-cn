@@ -6,6 +6,7 @@ summary: 即使备份过去已成功运行，但当适用于 VMware vSphere 的 
 ---
 = 修改已配置的存储超时
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

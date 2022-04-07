@@ -6,6 +6,7 @@ summary: 适用于 VMware vSphere 的 SnapCenter 插件为管理虚拟化资源�
 ---
 = 基于角色的访问控制（ Role-Based Access Control ， RBAC ）
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

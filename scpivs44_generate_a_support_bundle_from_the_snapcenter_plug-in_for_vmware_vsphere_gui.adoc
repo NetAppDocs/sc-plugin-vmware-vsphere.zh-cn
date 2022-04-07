@@ -6,6 +6,7 @@ summary: 您可以从适用于 VMware vSphere 的 SnapCenter 插件 GUI 生成�
 ---
 = 从适用于 VMware vSphere 的 SnapCenter 插件 GUI 生成支持包
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

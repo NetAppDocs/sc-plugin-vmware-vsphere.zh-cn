@@ -6,6 +6,7 @@ summary: 如果您使用的是适用于 VMware vSphere 的 SnapCenter 插件，�
 ---
 = 适用于 VMware vSphere 的 SnapCenter 插件用户的 RBAC 类型
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

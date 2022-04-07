@@ -6,6 +6,7 @@ summary: 为了简化 vCenter Server RBAC 的使用， SnapCenter VMware 插件�
 ---
 = 适用于 VMware vSphere 的 SnapCenter 插件附带的预定义角色
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

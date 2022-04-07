@@ -6,6 +6,7 @@ summary: 如果要使用代理 VM 连接虚拟磁盘以执行子系统文件还�
 ---
 = 设置代理 VM 以执行还原操作
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

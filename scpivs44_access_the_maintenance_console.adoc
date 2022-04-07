@@ -6,6 +6,7 @@ summary: 您可以使用适用于 VMware vSphere 的 SnapCenter 插件的维护�
 ---
 = 访问维护控制台
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

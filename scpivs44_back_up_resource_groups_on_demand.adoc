@@ -6,6 +6,7 @@ summary: 备份操作对资源组中定义的所有资源执行。如果资源�
 ---
 = 按需备份资源组
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

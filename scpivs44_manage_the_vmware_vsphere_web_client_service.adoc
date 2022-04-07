@@ -6,6 +6,7 @@ summary: 如果 SnapCenter VMware vSphere Web Client 行为不正确，您可能
 ---
 = 重新启动 VMware vSphere Web Client 服务
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

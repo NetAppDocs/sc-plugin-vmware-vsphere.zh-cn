@@ -6,6 +6,7 @@ summary: 您可以从 NetApp 支持站点下载适用于 VMware vSphere 的 Snap
 ---
 = 下载适用于 VMware vSphere OVA 的 SnapCenter 插件（开放式虚拟设备）
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

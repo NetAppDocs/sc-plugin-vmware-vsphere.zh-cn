@@ -1872,7 +1872,6 @@
   <block id="68109f809a0ab91cdd8972e06d907043" category="paragraph">您可以将传统 VM 中的 VMDK 还原到原始数据存储库或备用数据存储库。</block>
   <block id="bd3b3958722363127e54a9e8e7a3d8e0" category="paragraph">您可以将 VVol 虚拟机中的 VMDK 还原到原始数据存储库。</block>
   <block id="a5497137d298c957e9578d038ccb451d" category="paragraph">您不能从 VVol 备份连接 VMDK 。</block>
-  <block id="c59ae8d7beeb519a23478ab048af482c" category="paragraph"><block ref="c59ae8d7beeb519a23478ab048af482c" category="inline-link-macro-rx"></block></block>
   <block id="e2496f7f30be021f22d563d55a9d9a77" category="inline-link-macro">适用于 VMware vSphere 的 SnapCenter 插件所需的最低 vCenter 特权</block>
   <block id="a57f357cda6b120bf6909f719837db9d" category="list-text">vCenter 中的用户帐户必须具有 <block ref="db7461a22bb1a1369320da1099e48c51" category="inline-link-macro-rx"></block>。</block>
   <block id="ef4a97108133e7715327ed1b569844e9" category="inline-link">适用于 VMware vSphere 的 SnapCenter 插件 4.6 发行说明</block>
@@ -1892,4 +1891,15 @@
   <block id="34fe6318217e13219322f9f481788cfa" category="paragraph">注意：您不能修改端口配置。</block>
   <block id="9d53fb85cd7b48e31e4ae938dd8a9d13" category="paragraph">在起始小时字段中，输入一个非零的日期和时间。日期格式必须为 `day/month/year` 。</block>
   <block id="ac5e163a794b06c9f175b63840f2db02" category="paragraph">如果在 * 间隔 * 字段中选择了天数，则会在每月的第 1 天执行备份，之后会按指定的间隔执行备份。例如，如果选择 * 每 2 天 * ，则无论开始日期是偶数还是奇数，备份都会在整个月内的第 1 天，第 3 天，第 5 天，第 7 天等执行。</block>
+  <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">法律声明提供对版权声明、商标、专利等的访问。</block>
+  <block id="6016a2b341113bf496b719905398ecd2" category="section-title">版权</block>
+  <block id="09e95b77ffe81fe465a83ba99efad5c8" category="paragraph"><block ref="09e95b77ffe81fe465a83ba99efad5c8" category="inline-link-rx"></block></block>
+  <block id="126a02652da6de02962cf1b654fd6376" category="section-title">商标</block>
+  <block id="c4ce4761e466527d26b3e3d5ed1006fd" category="paragraph">NetApp 、 NetApp 徽标和 NetApp 商标页面上列出的标记是 NetApp 、 Inc. 的商标。其他公司和产品名称可能是其各自所有者的商标。</block>
+  <block id="7aa531e9acfe2b98e34d2c92fe9846ff" category="paragraph"><block ref="7aa531e9acfe2b98e34d2c92fe9846ff" category="inline-link-rx"></block></block>
+  <block id="be89498d2f8a22ce47c02ba9795fe2af" category="section-title">专利</block>
+  <block id="d0b19d36be2c5f16e9aef46c8a452d3d" category="paragraph">有关 NetApp 拥有的专利的最新列表，请访问：</block>
+  <block id="d7f1fbcf9ce4e42f705add574d262b2c" category="paragraph"><block ref="d7f1fbcf9ce4e42f705add574d262b2c" category="inline-link-rx"></block></block>
+  <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">隐私政策</block>
+  <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
 </blocks>

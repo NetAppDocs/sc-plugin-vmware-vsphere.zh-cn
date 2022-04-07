@@ -6,6 +6,7 @@ summary: 如果要在 SnapCenter 中执行基于 VMDK 的应用程序工作流�
 ---
 = 向 SnapCenter 服务器注册适用于 VMware vSphere 的 SnapCenter 插件
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

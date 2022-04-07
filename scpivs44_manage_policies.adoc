@@ -6,6 +6,7 @@ summary: 您可以为适用于 VMware vSphere 的 SnapCenter 插件创建，修�
 ---
 = 管理策略
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

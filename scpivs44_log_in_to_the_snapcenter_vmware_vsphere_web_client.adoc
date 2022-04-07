@@ -6,6 +6,7 @@ summary: 部署适用于 VMware vSphere 的 SnapCenter 插件后，它会在 vCe
 ---
 = 登录到 SnapCenter VMware vSphere Web Client
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

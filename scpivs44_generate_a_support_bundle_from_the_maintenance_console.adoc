@@ -6,6 +6,7 @@ summary: 您可以从维护控制台生成支持包。
 ---
 = 从维护控制台生成支持包
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

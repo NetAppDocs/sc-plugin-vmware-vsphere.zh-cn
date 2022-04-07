@@ -6,6 +6,7 @@ summary: 您可以使用维护控制台还原适用于 VMware vSphere 的 SnapCe
 ---
 = 还原 MySQL 数据库的最新备份
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

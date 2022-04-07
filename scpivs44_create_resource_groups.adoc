@@ -6,6 +6,7 @@ summary:
 ---
 = 创建资源组
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

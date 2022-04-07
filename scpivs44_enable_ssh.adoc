@@ -6,6 +6,7 @@ summary: 部署 SnapCenter VMware 插件时， SSH 默认处于禁用状态。
 ---
 = 为适用于 VMware vSphere 的 SnapCenter 插件启用 SSH
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: ova 文件包含一组用于 VM 和数据存储库数据保护的微服
 ---
 = 下载 OVA （开放式虚拟设备）
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

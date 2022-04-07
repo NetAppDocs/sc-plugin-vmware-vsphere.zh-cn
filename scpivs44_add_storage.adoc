@@ -6,6 +6,7 @@ summary:
 ---
 = 添加存储
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

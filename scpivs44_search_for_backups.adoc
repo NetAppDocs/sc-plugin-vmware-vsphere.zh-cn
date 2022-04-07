@@ -6,6 +6,7 @@ summary: 您可以使用还原向导搜索并查找虚拟机或数据存储库�
 ---
 = 搜索备份
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 
