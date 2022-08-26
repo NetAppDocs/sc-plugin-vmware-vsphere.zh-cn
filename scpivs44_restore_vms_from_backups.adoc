@@ -34,7 +34,7 @@ summary: 还原虚拟机时，您可以使用所选的备份副本覆盖现有�
 
 
 
-NOTE: 还原到其他位置时，适用于 VMware vSphere 的 SnapCenter 插件必须在作为还原操作目标的链接 vCenter 中运行。目标数据存储库必须具有足够的空间。
+NOTE: 您不能将VVol虚拟机还原到备用主机。
 
 
 NOTE: 不支持以下还原工作流：添加一个 Storage VM ，然后对该 VM 执行备份，然后删除该 Storage VM 并添加一个包含同一 Storage VM 的集群，最后尝试还原原始备份。
@@ -51,6 +51,12 @@ TIP: 要提高 NFS 环境中还原操作的性能，请启用 VMware 应用程�
 
 NOTE: 如果虚拟机的 Snapshot 副本是由适用于 VMware vSphere 的 SnapCenter 插件以外的软件执行的，则还原操作无法成功完成。
 
+* 目标数据存储库必须已准备就绪。
++
+** 用于还原操作的目标数据存储库必须具有足够的空间来容纳所有VM文件的副本(例如：vmdk、vmx、vmsd)。
+** 目标数据存储库不能包含先前还原操作失败导致的过时VM文件。陈旧文件的名称格式为`restore_xxx_xxxxxx_<filename>`。
+
+
 * 虚拟机不得处于传输状态。
 +
 要还原的虚拟机不能处于 vMotion 或 Storage vMotion 状态。
@@ -61,7 +67,9 @@ NOTE: 如果虚拟机的 Snapshot 副本是由适用于 VMware vSphere 的 SnapC
 
 * 还原到其他位置
 +
-还原到其他位置时，适用于 VMware vSphere 的 SnapCenter 插件必须在作为还原操作目标的 vCenter 中运行。目标数据存储库必须具有足够的空间。
+** 还原到其他位置时，适用于 VMware vSphere 的 SnapCenter 插件必须在作为还原操作目标的 vCenter 中运行。目标数据存储库必须具有足够的空间。
+** 还原到备用位置字段中的目标vCenter必须可通过DNS解析。
+
 
 
 
@@ -73,6 +81,13 @@ VM 的还原操作将取消注册原始 VM ，从备份 Snapshot 副本还原 VM
 * 还原数据存储库
 +
 您不能还原数据存储库，但可以还原数据存储库中的任何 VM 。
+
+* 正在还原VVol虚拟机
++
+** 不支持跨VM的VVol数据存储库。由于不会备份跨VM VVol数据存储库中连接的VMDK、因此还原的VM将仅包含部分VMDK。
+** 您不能将VVOL还原到备用主机。
+** 不支持VVol自动重新平衡。
+
 
 * 虚拟机的 VMware 一致性 Snapshot 失败
 +

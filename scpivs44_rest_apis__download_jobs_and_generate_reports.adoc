@@ -20,7 +20,7 @@ summary: 要使用适用于 VMware vSphere 的 SnapCenter 插件 REST API 为 VM
 
 
 
-=== 使用作业部分中的以下 REST API 可获取有关作业的详细信息：
+== 使用作业部分中的以下 REST API 可获取有关作业的详细信息：
 
 |===
 | REST API | 注释 
@@ -33,7 +33,7 @@ summary: 要使用适用于 VMware vSphere 的 SnapCenter 插件 REST API 为 VM
 |===
 
 
-=== 使用作业部分中的以下 REST API 下载作业日志：
+== 使用作业部分中的以下 REST API 下载作业日志：
 
 |===
 | REST API | 注释 
@@ -43,7 +43,7 @@ summary: 要使用适用于 VMware vSphere 的 SnapCenter 插件 REST API 为 VM
 |===
 
 
-=== 使用报告部分中的以下 REST API 生成报告：
+== 使用报告部分中的以下 REST API 生成报告：
 
 |===
 | REST API | 注释 

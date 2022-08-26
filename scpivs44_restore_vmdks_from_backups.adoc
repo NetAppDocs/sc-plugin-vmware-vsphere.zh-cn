@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_restore_vmdks_from_backups.html 
 keywords:  
-summary: 您可以从主备份或二级备份还原现有 VMDK ，也可以从已删除或断开的 VMDK 。 
+summary: 您可以从传统VM或VVol VM的主备份或二级备份还原现有VMDK、或者从已删除或断开的VMDK。 
 ---
 = 从备份还原 VMDK
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 您可以从主备份或二级备份还原现有 VMDK ，也可以从�
 
 
 [role="lead"]
-您可以从主备份或二级备份还原现有 VMDK ，也可以从已删除或断开的 VMDK 。
+您可以从传统VM或VVol VM的主备份或二级备份还原现有VMDK、或者从已删除或断开的VMDK。
 
 您可以将虚拟机上的一个或多个虚拟机磁盘（ VMDK ）还原到同一数据存储库。
 

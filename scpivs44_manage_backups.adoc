@@ -18,7 +18,7 @@ summary: 您可以重命名和删除适用于 VMware vSphere 的 SnapCenter 插�
 
 
 
-=== 重命名备份
+== 重命名备份
 
 如果要提供更好的名称以提高可搜索性，您可以重命名适用于 VMware vSphere 的 SnapCenter 插件备份。
 
@@ -36,7 +36,7 @@ image:scpivs44_image14.png["错误：缺少图形映像"]
 
 
 
-=== 删除备份
+== 删除备份
 
 如果您不再需要备份来执行其他数据保护操作，则可以删除适用于 VMware vSphere 的 SnapCenter 插件备份。您可以同时删除一个备份或多个备份。
 

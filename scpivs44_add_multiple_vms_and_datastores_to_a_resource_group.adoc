@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_add_multiple_vms_and_datastores_to_a_resource_group.html 
 keywords:  
-summary: 您可以使用 SnapCenter VMware vSphere Web 客户端的编辑资源组向导向任何现有资源组添加多个 VM 和数据存储库。 
+summary: '您可以使用 SnapCenter VMware vSphere Web 客户端的 " 编辑资源组 " 向导向现有资源组添加多个资源。' 
 ---
 = 将多个 VM 和数据存储库添加到一个资源组
 :hardbreaks:
@@ -25,6 +25,9 @@ summary: 您可以使用 SnapCenter VMware vSphere Web 客户端的编辑资源�
 * 具有指定 vCenter 标记的所有 VVol 虚拟机。
 * 指定文件夹中的所有 VVol 虚拟机。
 
+
+
+NOTE: 不支持跨多个VVol数据存储库的VVol虚拟机、因为SnapCenter 仅备份选定主VVol数据存储库中的VVol。
 
 .步骤
 . 在 VMware vSphere Web Client 的左侧导航器窗格中，单击 * 资源组 * ，选择一个资源组，然后单击 image:scpivs44_image39.png["错误：缺少图形映像"] * 编辑资源组 * 以启动向导。

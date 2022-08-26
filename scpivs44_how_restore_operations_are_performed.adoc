@@ -61,7 +61,7 @@ VMFS 环境：不支持 FlexGroup
 
 |===
 
-NOTE: 在 VVol 容器重新平衡之后，您无法还原 VVol 虚拟机。
+NOTE: 在VVol容器重新平衡之后、您无法还原VVol虚拟机。
 
 子系统文件还原操作可在 NFS 和 VMFS 环境中使用克隆和挂载操作（而不是 Storage VMotion ）来执行。
 

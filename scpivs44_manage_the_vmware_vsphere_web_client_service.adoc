@@ -18,7 +18,7 @@ summary: 如果 SnapCenter VMware vSphere Web Client 行为不正确，您可能
 
 
 
-=== 在 Linux vCenter 中重新启动 Web 客户端服务
+== 在 Linux vCenter 中重新启动 Web 客户端服务
 
 如果 vCenter 位于 Linux 设备上，则必须使用 Linux 命令重新启动 SnapCenter VMware vSphere Web Client 服务。
 
@@ -50,7 +50,7 @@ IMPORTANT: 请勿删除 VASA 或 VSC7.x 及更高版本的软件包。
 
 
 
-=== 在 Windows vCenter 中重新启动 Web 客户端服务
+== 在 Windows vCenter 中重新启动 Web 客户端服务
 
 如果 vCenter 位于 Windows 主机上，则必须使用 Windows 命令重新启动 SnapCenter Web 客户端服务。
 

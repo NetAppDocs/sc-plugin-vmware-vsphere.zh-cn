@@ -14,9 +14,9 @@ summary: 资源组是指要保护的 VM ，数据存储库或 VVOL VM 的容器�
 
 
 [role="lead"]
-资源组是指要保护的 VM ，数据存储库或 VVOL VM 的容器。
+资源组是要保护的VM、数据存储库和VVol VM的容器。
 
-资源组可以包含以下内容之一：
+资源组可以包含以下内容：
 
 * 传统 VM 和数据存储库
 +
@@ -24,7 +24,7 @@ summary: 资源组是指要保护的 VM ，数据存储库或 VVOL VM 的容器�
 
 * FlexGroup 数据存储库
 +
-一个 FlexGroup 数据存储库。不支持跨区 FlexGroup 数据存储库。FlexGroup 数据存储库不能与传统 VM 或数据存储库结合使用。
+一个FlexGroup 数据存储库。不支持跨区 FlexGroup 数据存储库。FlexGroup 数据存储库不能与传统VM或数据存储库结合使用。
 
 * FlexVol 数据存储库
 +
@@ -49,7 +49,8 @@ summary: 资源组是指要保护的 VM ，数据存储库或 VVOL VM 的容器�
 
 IMPORTANT: 如果您使用的是 VMware vSphere 集群服务（ vCL ），请勿在 SnapCenter VMware 插件资源组中包含由 vCL 管理的虚拟机。
 
-适用于 VMware vSphere 4.5 及更高版本的 SnapCenter 插件在 ASA 聚合上支持大小高达 128 TB 的大型 LUN 上的数据存储库。对于大型 LUN ， SnapCenter 仅使用厚配置 LUN 来避免延迟。
+
+TIP: 适用于 VMware vSphere 4.5 及更高版本的 SnapCenter 插件在 ASA 聚合上支持大小高达 128 TB 的大型 LUN 上的数据存储库。如果要保护大型LUN、请仅使用厚配置LUN以避免延迟。
 
 
 IMPORTANT: 请勿添加处于不可访问状态的 VM 。尽管可以创建包含无法访问的 VM 的资源组，但该资源组的备份将失败。
@@ -136,7 +137,7 @@ image:scpivs44_image16.png["错误：缺少图形映像"]
 如果要将后缀 "_recent " 添加到最新 Snapshot 副本中，请选中此框。"_recent " 后缀将替换日期和时间戳。
 
 
-NOTE: 系统会为连接到资源组的每个策略创建 ` - 最新` 备份。因此，具有多个策略的资源组将具有多个 ` - 最新` 备份。
+NOTE: 系统会为附加到资源组的每个策略创建`_recent`备份。因此、具有多个策略的资源组将具有多个`_recent`备份。请勿手动重命名`_recent`备份。
 
 
 
@@ -155,7 +156,7 @@ NOTE: 系统会为连接到资源组的每个策略创建 ` - 最新` 备份。�
 | 对于此字段… | 执行此操作… 
 
 
-| 范围 | 选择要保护的资源类型： * 数据存储库（一个或多个指定数据存储库中的所有传统虚拟机） * 虚拟机（单个传统虚拟机或 VVol 虚拟机； 在字段中，您必须导航到包含 VM 或 VVOL VM 的数据存储库） * 标记（具有单个指定 VMware 标记的所有 VVOL VM ；在列表框中，必须输入此标记） * VM 文件夹（指定文件夹中的所有 VVOL VM ； 在弹出字段中，您必须导航到文件夹所在的数据中心） 
+| 范围 | 选择要保护的资源类型：*数据存储库(一个或多个指定数据存储库中的所有传统虚拟机)。您不能选择VVol数据存储库。*虚拟机(单个传统虚拟机或VVol虚拟机；在该字段中、您必须导航到包含VM或VVol虚拟机的数据存储库)。您不能选择FlexGroup 数据存储库中的单个VM。*标记(具有单个指定VMware标记的所有VVol虚拟机；在列表框中、必须输入此标记)* VM文件夹(指定文件夹中的所有VVol虚拟机；在弹出字段中、必须导航到该文件夹所在的数据中心) 
 
 
 | 数据中心 | 导航到要添加的 VM 或数据存储库或文件夹。 
@@ -168,6 +169,9 @@ NOTE: 系统会为连接到资源组的每个策略创建 ` - 最新` 备份。�
 
 +
 如果显示消息 `Sselected <resource-name> is not SnapCenter compatible` ，则选定资源与 SnapCenter 不兼容。请参见 <<Manage compatibility check failures>> 有关详细信息 ...
+
++
+要从备份中全局排除一个或多个数据存储库、您必须在`sCBR.override`配置文件的`global.ds.excludation.pattern`属性中指定数据存储库名称。请参见 <<Properties you can override>>。
 
 . 在 * 生成磁盘 * 页面上，为多个数据存储库中具有多个 VMDK 的 VM 选择一个选项：
 +
@@ -228,7 +232,7 @@ NOTE: 如果备份中任何 VM 的暂停操作失败，则备份将标记为不�
 
 
 
-=== 管理兼容性检查失败
+== 管理兼容性检查失败
 
 在尝试创建资源组时， SnapCenter 会执行兼容性检查。
 

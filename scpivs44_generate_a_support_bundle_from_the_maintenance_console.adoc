@@ -15,12 +15,9 @@ summary: 您可以从维护控制台生成支持包。
 
 .步骤
 . 从 VMware vSphere Web Client 中，选择 SnapCenter VMware 插件所在的虚拟机。
-. 右键单击虚拟机，然后在虚拟设备的 * 摘要 * 选项卡上单击 * 启动远程控制台或启动 Web Console* 以打开维护控制台窗口。
+. 右键单击虚拟机、然后在虚拟设备的*摘要*选项卡上单击*启动远程控制台或启动Web Console*以打开维护控制台窗口、然后登录。
 +
-SnapCenter VMware 插件维护控制台的登录默认设置如下：
-
-+
-用户名： `m熟悉` 密码： `admin123`
+有关访问和登录维护控制台的信息、请参见 link:scpivs44_access_the_maintenance_console.html["访问维护控制台"^]。
 
 +
 image:scpivs44_image11.png["错误：缺少图形映像"]

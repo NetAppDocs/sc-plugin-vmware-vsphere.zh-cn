@@ -119,10 +119,10 @@ summary: 在部署虚拟设备之前，您应了解部署要求。
 | IP 地址 | IPv4 ， IPv6 
 
 
-| VMware TLS | 1.2 
+| VMware TLS | 1.2、1.3 
 
 
-| SnapCenter 服务器上的 TLS | TLSv1.1 及更高版本 SnapCenter 服务器使用此插件通过 VMDK 数据保护操作与 SnapCenter VMware 插件进行通信。 
+| SnapCenter 服务器上的 TLS | 1.2和1.3 SnapCenter 服务器使用此插件通过VMDK数据保护操作与SnapCenter VMware插件进行通信。 
 
 
 | 适用于阵列集成的 VMware 应用程序 vStorage API （ VAAI ） | 适用于 VMware vSphere 的 SnapCenter 插件可通过此功能提高还原操作的性能。它还可以提高 NFS 环境中的性能。 

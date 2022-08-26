@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_modify_the_time_zones.html 
 keywords:  
-summary: 在为适用于 VMware vSphere 的 SnapCenter 插件资源组配置备份计划时，系统会自动为部署 SnapCenter VMware 插件的时区设置此计划。您可以使用适用于 VMware vSphere 的 SnapCenter 插件管理 GUI 修改该时区。 
+summary: 在为适用于 VMware vSphere 的 SnapCenter 插件资源组配置备份计划时，系统会自动为部署 SnapCenter VMware 插件的时区设置此计划。您可以使用适用于VMware vSphere的SnapCenter 插件管理GUI或维护控制台修改该时区。 
 ---
 = 修改备份的时区
 :hardbreaks:
@@ -13,7 +13,7 @@ summary: 在为适用于 VMware vSphere 的 SnapCenter 插件资源组配置备�
 :imagesdir: ./media/
 
 
-在为适用于 VMware vSphere 的 SnapCenter 插件资源组配置备份计划时，系统会自动为部署 SnapCenter VMware 插件的时区设置此计划。您可以使用适用于 VMware vSphere 的 SnapCenter 插件管理 GUI 修改该时区。
+在为适用于 VMware vSphere 的 SnapCenter 插件资源组配置备份计划时，系统会自动为部署 SnapCenter VMware 插件的时区设置此计划。您可以使用适用于VMware vSphere的SnapCenter 插件管理GUI或维护控制台修改该时区。
 
 您必须知道适用于 VMware vSphere 的 SnapCenter 插件管理 GUI 的 IP 地址和登录凭据。
 

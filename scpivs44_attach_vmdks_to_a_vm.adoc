@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: scpivs44_attach_vmdks_to_a_vm.html 
 keywords:  
-summary: 您可以将一个或多个 VMDK 从备份连接到父虚拟机，同一 ESXi 主机上的备用虚拟机，或者连接到由同一 vCenter 或不同 vCenter 以链接模式管理的备用 ESXi 主机上的备用虚拟机。 
+summary: 您可以将一个或多个 VMDK 从备份连接到父虚拟机，同一 ESXi 主机上的备用虚拟机，或者连接到由同一 vCenter 或不同 vCenter 以链接模式管理的备用 ESXi 主机上的备用虚拟机。支持传统数据存储库和VVol数据存储库中的VM。 
 ---
-= 将 VMDK 连接到虚拟机
+= 将VMDK连接到虚拟机或VVol虚拟机
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,11 +14,9 @@ summary: 您可以将一个或多个 VMDK 从备份连接到父虚拟机，同�
 
 
 [role="lead"]
-您可以将一个或多个 VMDK 从备份连接到父虚拟机，同一 ESXi 主机上的备用虚拟机，或者连接到由同一 vCenter 或不同 vCenter 以链接模式管理的备用 ESXi 主机上的备用虚拟机。
+您可以将一个或多个 VMDK 从备份连接到父虚拟机，同一 ESXi 主机上的备用虚拟机，或者连接到由同一 vCenter 或不同 vCenter 以链接模式管理的备用 ESXi 主机上的备用虚拟机。支持传统数据存储库和VVol数据存储库中的VM。
 
 这样可以更轻松地从驱动器还原一个或多个单个文件，而不是还原整个驱动器。您可以在还原或访问所需文件后断开 VMDK 。
-
-您不能从 VVol 备份连接 VMDK 。
 
 您可以使用以下连接选项：
 

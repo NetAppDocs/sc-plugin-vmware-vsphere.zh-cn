@@ -24,9 +24,9 @@ summary: 如果要升级到同一版本的新修补程序，则必须清除 vCen
 
 
 
-=== 清除缓存的步骤
+== 清除缓存的步骤
 
-. 找到 `vsphere-client-serenity` 文件夹，然后找到 `com.netapp.scvm.webclient-4.6.0` 文件夹并将其删除。
+. 找到`vsphere-client-serenity`文件夹、然后找到`com.netapp.scvm.webclient-<release-number>`文件夹并将其删除。
 +
 每个版本的文件夹名称都会发生变化。
 

@@ -20,7 +20,7 @@ summary: 要提高操作效率，您可以修改 scbr.override 配置文件以�
 
 
 
-=== 创建 scbr.override 配置文件
+== 创建 scbr.override 配置文件
 
 . 转至 ` /opt/netapp/scvservice/standalone aeg/etc/scbr/scbr.override-template` 。
 . 将 `sCBR.override-template` 文件复制到 ` \opt\NetApp\scvservice\standalone aeg\etc\scbr` 目录中名为 `sCBR.override` 的新文件。
@@ -28,7 +28,7 @@ summary: 要提高操作效率，您可以修改 scbr.override 配置文件以�
 
 
 
-=== 可以覆盖的属性
+== 可以覆盖的属性
 
 * 默认情况下，模板使用哈希符号来注释配置属性。要使用属性修改配置值，必须删除 ` #` 字符。
 * 要使更改生效，您必须在适用于 VMware vSphere 的 SnapCenter 插件主机上重新启动此服务。
