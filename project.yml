@@ -246,7 +246,7 @@ homepage:
   - title: 入门
     links:
     - title: 发行说明
-      url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2881136
+      url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2883356
     - title: 了解 SCV
       url: "/scpivs44_concepts_overview.html"
     - title: 部署要求

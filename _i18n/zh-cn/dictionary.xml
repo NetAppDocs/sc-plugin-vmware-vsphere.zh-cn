@@ -1750,7 +1750,6 @@
   <block id="985e4f2c2c2709eb57d50d5cec83e1dc" category="paragraph">如果显示消息 `Sselected &lt;resource-name&gt; is not SnapCenter compatible` ，则选定资源与 SnapCenter 不兼容。请参见 <block ref="6c9b49ac3dbdf01a593410d52afe429e" category="inline-xref-macro-rx"></block> 有关详细信息 ...</block>
   <block id="731942548689f6a5287491346edb98a1" category="paragraph">FlexGroup 和 VVOL 数据存储库不支持跨接 VM 。</block>
   <block id="381ccd52bbe70b77caebf5b7721bc854" category="paragraph"><block ref="a1b611f7f1d7d8197cb1d43fb49ccfda" category="inline-link-macro-rx"></block>。</block>
-  <block id="f5568de9c9e0caa3283e8f2bcf00b4f9" category="paragraph">适用于 VMware vSphere 的 SnapCenter 插件不会对所有 ONTAP 版本执行兼容性检查；仅对 ONTAP 8.2.1 及更早版本执行兼容性检查。因此，请始终参见<block ref="58191ff79dfed9aa80c7f0f097ed65be" category="inline-link-rx"></block> 有关 SnapCenter 支持的最新信息。</block>
   <block id="647d788e610e73ba524ca460bf9fe8c0" category="paragraph">要更正上述任一问题，请执行以下操作：</block>
   <block id="f84217315ca1bc8cd21e87ac07c218df" category="paragraph">您可以在同一个 SnapCenter 服务器上注册多个适用于 VMware vSphere 的 SnapCenter 插件实例，以支持在 VM 上执行基于应用程序的数据保护操作。您不能在多个 SnapCenter 服务器上注册同一个适用于 VMware vSphere 的 SnapCenter 插件。</block>
   <block id="3c41488122e916d8d25efa353f26b05c" category="list-text">VMware 虚拟卷（ VVOL ）</block>
@@ -1795,7 +1794,6 @@
   <block id="daca1e93dd5c12f410189b61d7109b55" category="paragraph">您可以在 vCenter 中使用 VMware vSphere Web Client GUI 执行 VMware 虚拟机（传统 VM 和 VVol VM ）， VMDK 和数据存储库的所有备份和还原操作。对于 VVol 虚拟机（ VVol 数据存储库中的虚拟机），仅支持崩溃状态一致的备份。您还可以还原 VM 和 VMDK 以及还原子操作系统上的文件和文件夹。</block>
   <block id="4d321ef60e934c76c6019b92233a4f5e" category="list-text">要保护 VMware VVol 虚拟机，需要使用适用于 VMware vSphere 的 ONTAP 工具。</block>
   <block id="c72690a0952048b4b9f7be4f17878ccf" category="paragraph">您可以使用 ONTAP 工具在 ONTAP 和 VMware Web Client 中为 VVOL 配置和配置存储。</block>
-  <block id="9856ec9f087c5eba592abce3501cda06" category="paragraph">有关受支持版本的最新信息，请参见<block ref="25eb2128e948e2544fabd66492bfb7a4" category="inline-link-rx"></block> IMT</block>
   <block id="5bb67bc2606ffec4f4a2898e8e5fdcee" category="summary">要提高操作效率，您可以修改 `sCBR.override` 配置文件以更改默认值。</block>
   <block id="28111e56292c4d39c392d49f07b8af86" category="paragraph">适用于 VMware vSphere 的 SnapCenter 插件在支持基于 SnapCenter 应用程序的数据保护操作的环境中使用 `sCBR.override` 配置文件。如果此文件不存在，则必须从模板文件创建它。</block>
   <block id="4226443be37b8a9b27f73b04fe77055d" category="summary">适用于 VMware vSphere 的 SnapCenter 插件在支持基于 SnapCenter 应用程序的数据保护操作的环境中使用 `sCBR.override` 配置文件。</block>
@@ -1839,8 +1837,6 @@
   <block id="860885b8f814b49a1b238883de3a87df" category="list-text">ONTAP SnapMirror 还原（如果使用的是 ONTAP 9.10.1 及更高版本）</block>
   <block id="51a5d5da98cf5178b170023fee4cbe00" category="list-text">使用适用于 ONTAP 的 Storage VMotion 先前版本克隆和挂载</block>
   <block id="f83f370ebfc87bd5302ce9c0f4e15d6d" category="paragraph">`https://&lt;appliance_IP_address_or_host_name&gt;:8144/api/swagger-ui.html`</block>
-  <block id="9308bc3137849178f2a1d4b2f840f1f3" category="paragraph">有关受支持版本的最新信息，请参见<block ref="58191ff79dfed9aa80c7f0f097ed65be" category="inline-link-rx"></block>。</block>
-  <block id="ba7d5ae17e05f117613f6c9d8ce94a33" category="paragraph">您不能从运行 Linux 子操作系统的虚拟机还原文件和文件夹。但是，您可以连接 VMDK ，然后手动还原文件和文件夹。有关支持的子操作系统的最新信息，请参见<block ref="58191ff79dfed9aa80c7f0f097ed65be" category="inline-link-rx"></block>。</block>
   <block id="629ec47b81132f329d4136880bd3bbde" category="list-text">您无法还原加密的子文件。</block>
   <block id="cee41b55e417d2c681bd345802b719fd" category="doc">还原概述</block>
   <block id="83cd4af85c0a253d77f0a1f740716cce" category="paragraph">您可以将传统 VM 还原到原始主机，同一 vCenter Server 中的备用主机，或由同一 vCenter 管理的备用 ESXi 主机或处于链接模式的任何 vCenter 。</block>
@@ -1929,4 +1925,8 @@
   <block id="3517efb765e07026ad62bc8e70a5e01a" category="list-text">您不能将VVOL还原到备用主机。</block>
   <block id="c06551216ac3dfe9b7ff1f728845efe6" category="list-text">不支持VVol自动重新平衡。</block>
   <block id="40d9577d304cdcb387b725468407241e" category="sidebar">适用于VMware vSphere的SnapCenter 插件4.7文档</block>
+  <block id="2475c9dd54056833d6396fbed1f941d8" category="paragraph">适用于 VMware vSphere 的 SnapCenter 插件不会对所有 ONTAP 版本执行兼容性检查；仅对 ONTAP 8.2.1 及更早版本执行兼容性检查。因此，请始终参见<block ref="a1b283c4671de73f5e64651c8e98491f" category="inline-link-rx"></block> 有关 SnapCenter 支持的最新信息。</block>
+  <block id="ca3bf2cb39f62342194d0f6777ffe162" category="paragraph">有关受支持版本的最新信息，请参见<block ref="a1b283c4671de73f5e64651c8e98491f" category="inline-link-rx"></block>。</block>
+  <block id="fb80b6fccf5f1cdcfd342989b34962c7" category="paragraph">您不能从运行 Linux 子操作系统的虚拟机还原文件和文件夹。但是，您可以连接 VMDK ，然后手动还原文件和文件夹。有关支持的子操作系统的最新信息，请参见<block ref="a1b283c4671de73f5e64651c8e98491f" category="inline-link-rx"></block>。</block>
+  <block id="a888ab84707631c86f5006309e186d1d" category="paragraph">有关受支持版本的最新信息，请参见<block ref="56392423f5d438aef305a97c794e0835" category="inline-link-rx"></block> IMT</block>
 </blocks>
