@@ -64,4 +64,5 @@ summary: 所需的最小 ONTAP 权限因用于数据保护的 SnapCenter 插件�
 +
 您必须以 `vsadmin` 或具有上表中列出的最低权限的角色登录。
 
+* 您必须是集群管理员才能创建和管理用户角色。您可以将用户与集群Storage VM或Storage VM相关联。
 
