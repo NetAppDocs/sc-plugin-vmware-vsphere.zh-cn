@@ -1930,4 +1930,6 @@
   <block id="a888ab84707631c86f5006309e186d1d" category="paragraph">有关受支持版本的最新信息，请参见<block ref="56392423f5d438aef305a97c794e0835" category="inline-link-rx"></block> IMT</block>
   <block id="0f928371dde9bb28b5372e8e7729ebb0" category="paragraph">要从备份中全局排除一个或多个数据存储库、您必须在`sCBR.override`配置文件的`global.ds.excludation.pattern`属性中指定数据存储库名称。请参见 <block ref="37a0363725b373caf92b58503affefad" category="inline-xref-macro-rx"></block>。</block>
   <block id="ec6b0c2e1fb8998a9149b0e870ce2442" category="list-text">您必须是集群管理员才能创建和管理用户角色。您可以将用户与集群Storage VM或Storage VM相关联。</block>
+  <block id="2cb2843b629d315325aac076907ec4b9" category="cell">VMware ESXi服务器端口</block>
+  <block id="ad676153bac7535311261fab671b77b9" category="cell">443 (HTTPS)、双向子文件还原功能使用此端口。</block>
 </blocks>
