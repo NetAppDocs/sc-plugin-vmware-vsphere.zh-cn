@@ -20,6 +20,7 @@ summary: 如果您不再需要 SnapCenter 数据保护功能，则必须更改 S
 * 确保未运行任何 SnapCenter 作业。
 
 
+.关于此任务
 禁用 SnapCenter VMware 插件后，所有资源组都将暂停，并且此插件将作为 vCenter 中的扩展取消注册。
 
 启用 SnapCenter VMware 插件后，此插件将在 vCenter 中注册为扩展，所有资源组均处于生产模式，并且所有计划均已启用。

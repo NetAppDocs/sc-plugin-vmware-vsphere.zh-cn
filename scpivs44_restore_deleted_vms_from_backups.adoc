@@ -54,6 +54,7 @@ NOTE: 还原已删除的 VM 时，不会还原最初分配给该 VM 的任何标
 
 TIP: 要提高 NFS 环境中还原操作的性能，请启用 VMware 应用程序 vStorage API for Array Integration （ VAAI ）。
 
+.关于此任务
 您不能还原数据存储库，但可以还原数据存储库中的任何 VM 。
 
 如果虚拟机所在的 FabricPool 存储层不可用，还原操作可能会失败。

@@ -16,6 +16,7 @@ summary: 您可以使用适用于 VMware vSphere 的 SnapCenter 插件的维护�
 [role="lead"]
 您可以使用适用于 VMware vSphere 的 SnapCenter 插件的维护控制台来管理应用程序，系统和网络配置。您可以更改管理员密码，维护密码，生成支持包以及启动远程诊断。
 
+.开始之前
 在停止并重新启动适用于 VMware vSphere 的 SnapCenter 插件服务之前，您应暂停所有计划。
 
 .关于此任务

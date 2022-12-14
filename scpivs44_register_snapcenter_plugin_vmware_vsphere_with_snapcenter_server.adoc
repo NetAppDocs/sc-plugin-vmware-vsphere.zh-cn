@@ -64,4 +64,5 @@ NOTE: 您必须为身份验证字段选择 Linux 。
 
 
 
+.完成后
 如果修改了适用于 VMware vSphere 的 SnapCenter 插件凭据，则必须使用 SnapCenter 受管主机页面在 SnapCenter 服务器中更新注册。

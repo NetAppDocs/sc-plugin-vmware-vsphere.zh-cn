@@ -159,4 +159,5 @@ VMware 工具安装在部署了 SnapCenter VMware 插件的虚拟机上。有关
 
 
 
+.完成后
 您应完成所需的 link:scpivs44_post_deployment_required_operations_and_issues.html["部署后操作"]。

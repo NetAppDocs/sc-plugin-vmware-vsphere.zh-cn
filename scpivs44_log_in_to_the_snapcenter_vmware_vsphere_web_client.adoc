@@ -16,6 +16,7 @@ summary: 部署适用于 VMware vSphere 的 SnapCenter 插件后，它会在 vCe
 [role="lead"]
 部署适用于 VMware vSphere 的 SnapCenter 插件后，它会在 vCenter 上安装 VMware vSphere Web 客户端，此客户端会与其他 vSphere Web 客户端一起显示在 vCenter 屏幕上。
 
+.开始之前
 必须在 vCenter 中启用传输层安全（ TLS ）。请参见 VMware 文档。
 
 .步骤

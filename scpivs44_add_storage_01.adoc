@@ -33,8 +33,10 @@ summary: 通过添加存储，适用于 VMware vSphere 的 SnapCenter 插件可�
 
 
 
+.开始之前
 ESXi 服务器， SnapCenter VMware 插件和每个 vCenter 必须同时同步。如果您尝试添加存储，但 vCenter 的时间设置未同步，则此操作可能会失败并显示 Java 证书错误。
 
+.关于此任务
 SnapCenter VMware 插件可对直接连接的 Storage VM 和存储集群中的 Storage VM 执行备份和还原操作。
 
 

@@ -13,6 +13,7 @@ summary: 您可以从适用于 VMware vSphere 的 SnapCenter 插件 GUI 生成�
 :imagesdir: ./media/
 
 
+.开始之前
 [role="lead"]
 要登录到适用于 VMware vSphere 的 SnapCenter 插件管理 GUI ，您必须知道 IP 地址和登录凭据。
 

@@ -22,6 +22,7 @@ summary: 您需要使用适用于 VMware vSphere 的 SnapCenter 插件管理 GUI
 
 您可以使用适用于 VMware vSphere 的 SnapCenter 插件的维护控制台来管理应用程序，系统和网络配置。您可以更改管理员密码，维护密码，生成支持包以及启动远程诊断。
 
+.开始之前
 在停止并重新启动适用于 VMware vSphere 的 SnapCenter 插件服务之前，您应暂停所有计划。
 
 .关于此任务
@@ -76,8 +77,10 @@ image:scpivs44_image11.png["错误：缺少图形映像"]
 
 如果您不知道适用于 VMware vSphere 的 SnapCenter 插件管理 GUI 的管理员密码，则可以从维护控制台设置新密码。
 
+.开始之前
 在停止并重新启动适用于 VMware vSphere 的 SnapCenter 插件服务之前，您应暂停所有计划。
 
+.关于此任务
 要登录到 SnapCenter VMware 插件的维护控制台，您必须使用默认的 ` "maint"` 作为用户名，并使用 ` "admin123"` 作为密码。
 
 .步骤
@@ -131,6 +134,7 @@ SnapCenter VMware 插件采用 SSL 加密，可与客户端浏览器进行安全
 * 确保未运行任何 SnapCenter 作业。
 
 
+.关于此任务
 禁用 SnapCenter VMware 插件后，所有资源组都将暂停，并且此插件将作为 vCenter 中的扩展取消注册。
 
 启用 SnapCenter VMware 插件后，此插件将在 vCenter 中注册为扩展，所有资源组均处于生产模式，并且所有计划均已启用。
@@ -192,6 +196,7 @@ link:scpivs44_back_up_the_snapcenter_plug-in_for_vmware_vsphere_mysql_database.h
 . 如果您已使用 SnapCenter VMware 插件支持其他 SnapCenter 插件进行应用程序一致的备份，请登录到 SnapCenter 并删除 vSphere 主机。
 
 
+.完成后
 虚拟设备仍会部署，但 SnapCenter VMware 插件会被删除。
 
 删除 SnapCenter VMware 插件的主机 VM 后，此插件可能仍会列在 vCenter 中，直到刷新本地 vCenter 缓存为止。但是，由于已删除此插件，因此无法对该主机执行任何 SnapCenter VMware vSphere 操作。如果要刷新本地 vCenter 缓存，请先在 SnapCenter VMware 插件配置页面上确保此设备处于已禁用状态，然后重新启动 vCenter Web 客户端服务。

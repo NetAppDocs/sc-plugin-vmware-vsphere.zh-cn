@@ -1932,4 +1932,6 @@
   <block id="ec6b0c2e1fb8998a9149b0e870ce2442" category="list-text">您必须是集群管理员才能创建和管理用户角色。您可以将用户与集群Storage VM或Storage VM相关联。</block>
   <block id="2cb2843b629d315325aac076907ec4b9" category="cell">VMware ESXi服务器端口</block>
   <block id="ad676153bac7535311261fab671b77b9" category="cell">443 (HTTPS)、双向子文件还原功能使用此端口。</block>
+  <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">结果</block>
+  <block id="0a52730597fb4ffa01fc117d9e71e3a9" category="paragraph-title">示例</block>
 </blocks>

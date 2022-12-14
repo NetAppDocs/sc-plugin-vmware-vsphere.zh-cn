@@ -16,6 +16,7 @@ summary: 您可以将单个虚拟机或数据存储库快速添加到适用于 V
 [role="lead"]
 您可以将单个虚拟机或数据存储库快速添加到适用于 VMware vSphere 的 SnapCenter 插件管理的任何现有资源组中。
 
+.关于此任务
 您可以添加 SAN 和 NAS 数据存储库，但不能添加 VSAN 或 VVol 数据存储库。
 
 .步骤

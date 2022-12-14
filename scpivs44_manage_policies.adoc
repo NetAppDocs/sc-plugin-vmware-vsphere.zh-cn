@@ -22,6 +22,7 @@ summary: 您可以为适用于 VMware vSphere 的 SnapCenter 插件创建，修�
 
 如果您不再希望 SnapCenter VMware 插件资源组中的策略控制资源的数据保护，则可以将这些策略与这些资源组分离。必须先断开策略，然后才能将其删除或修改计划频率。
 
+.关于此任务
 将策略与 SnapCenter VMware 插件资源组分离的准则与 SnapCenter 资源组的准则不同。对于 VMware vSphere Web Client 资源组，可以断开所有策略，这样就会使资源组无策略。但是，要对该资源组执行任何数据保护操作，必须至少附加一个策略。
 
 .步骤
@@ -39,6 +40,7 @@ summary: 您可以为适用于 VMware vSphere 的 SnapCenter 插件创建，修�
 
 您可以修改适用于 VMware vSphere 的 SnapCenter 插件资源组的策略。在策略附加到资源组时，您可以修改频率，复制选项， Snapshot 副本保留设置或脚本信息。
 
+.关于此任务
 修改 SnapCenter VMware 插件备份策略与修改基于 SnapCenter 应用程序的插件的备份策略不同。修改插件策略时，您无需将策略与资源组分离。
 
 在修改复制或保留设置之前，应考虑可能的后果。
@@ -70,6 +72,7 @@ NOTE: 要修改 SnapCenter VMware 插件策略计划，您必须修改插件资�
 
 如果您不再需要为适用于 VMware vSphere 的 SnapCenter 插件配置备份策略，则可能需要将其删除。
 
+.开始之前
 您必须先将策略与 SnapCenter 虚拟设备中的所有资源组断开连接，然后才能将其删除。
 
 .步骤

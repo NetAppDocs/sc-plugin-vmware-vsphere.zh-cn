@@ -58,8 +58,10 @@ image:scpivs44_image26.png["错误：缺少图形映像"]
 
 NOTE: 如果您使用 SnapCenter 图形用户界面为基于应用程序的数据保护操作添加了 Storage VM ，则必须使用相同的图形用户界面来修改这些 Storage VM 。
 
+.开始之前
 您必须先卸载 Storage VM 中的所有数据存储库，然后才能删除此 Storage VM 。
 
+.关于此任务
 如果某个资源组的备份驻留在要删除的 Storage VM 上，则该资源组的后续备份将失败。
 
 .步骤

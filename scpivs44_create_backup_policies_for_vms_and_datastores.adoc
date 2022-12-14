@@ -34,6 +34,7 @@ summary: 在使用适用于 VMware vSphere 的 SnapCenter 插件备份 VM 和数
 * 如果您希望进行 VM 一致的备份，则必须安装并运行 VMware Tools 。需要使用 VMware Tools 暂停 VM 。VVOL VM 不支持 VM 一致的备份。
 
 
+.关于此任务
 这些向导页面上的大多数字段都是不言自明的。以下信息介绍了一些可能需要指导的字段。
 
 .步骤
