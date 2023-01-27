@@ -31,7 +31,7 @@ vSphere 管理员通过执行以下操作来设置 vCenter Server RBAC ：
 * 在根对象（也称为根文件夹）上设置 vCenter Server 权限。然后，您可以通过限制不需要这些权限的子实体来细化安全性。
 * 将 SCV 角色分配给 Active Directory 用户。
 +
-所有用户必须至少能够查看 vCenter 对象。如果没有此权限，用户将无法访问 VMware vSphere Web Client 图形用户界面。
+所有用户必须至少能够查看 vCenter 对象。如果没有此权限、用户将无法访问VMware vSphere客户端GUI。
 
 
 

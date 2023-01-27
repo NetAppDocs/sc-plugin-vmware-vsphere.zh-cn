@@ -31,18 +31,15 @@ summary: 在使用适用于 VMware vSphere 的 SnapCenter 插件备份 VM 和数
 
 
 
-* 如果您希望进行 VM 一致的备份，则必须安装并运行 VMware Tools 。需要使用 VMware Tools 暂停 VM 。VVOL VM 不支持 VM 一致的备份。
+* 如果您希望进行VM一致的备份、则必须安装并运行VMware工具。需要使用VMware工具来暂停VM。VVOL VM 不支持 VM 一致的备份。
 
 
 .关于此任务
 这些向导页面上的大多数字段都是不言自明的。以下信息介绍了一些可能需要指导的字段。
 
 .步骤
-. 在 VMware vSphere Web Client 的左侧导航器窗格中，单击 * 策略 * 。
+. 在选择控制器插件的左侧导航器窗格中、单击*策略*。
 . 在 * 策略 * 页面上，单击 image:scpivs44_image6.png["错误：缺少图形映像"] * 创建 * 以启动向导。
-+
-image:scpivs44_image15.png["错误：缺少图形映像"]
-
 . 在 * 新建备份策略 * 页面上，选择要使用此策略的 vCenter Server ，然后输入策略名称和问题描述。
 +
 ** 链接模式
@@ -115,7 +112,7 @@ NOTE: Snapshot 副本标签最多允许包含 31 个字符。
 VVOL 不支持此选项。对于 VVol 虚拟机，仅执行崩溃状态一致的备份。
 
 
-IMPORTANT: 要执行虚拟机一致的备份，必须在虚拟机上运行 VMware Tools 。如果 VMware Tools 未运行，则会执行崩溃状态一致的备份。
+IMPORTANT: 要执行虚拟机一致的备份、必须在虚拟机上运行VMware工具。如果 VMware Tools 未运行，则会执行崩溃状态一致的备份。
 
 
 NOTE: 选中 VM 一致性复选框后，备份操作可能需要更长时间并需要更多存储空间。在这种情况下， VM 会先暂停，然后 VMware 执行 VM 一致的快照，然后 SnapCenter 执行其备份操作，最后恢复 VM 操作。VM 子系统内存不包括在 VM 一致性 Snapshot 中。

@@ -52,9 +52,9 @@ summary: 您可以从 Windows 子操作系统上的虚拟机磁盘（ VMDK ）�
 
 在 Windows 子操作系统上从 VMDK 还原一个或多个文件或文件夹之前，您必须了解所有要求。
 
-* 必须安装并运行 VMware Tools 。
+* 必须安装并运行VMware工具。
 +
-SnapCenter 使用 VMware Tools 中的信息与 VMware 子操作系统建立连接。
+SnapCenter 使用VMware工具中的信息与VMware子操作系统建立连接。
 
 * Windows 子操作系统必须运行 Windows Server 2008 R2 或更高版本。
 +

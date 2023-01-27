@@ -20,5 +20,5 @@ summary: 如果在处于链接模式的 vCenter 中停止 SnapCenter VMware 插�
 .步骤
 . 在已停止 SnapCenter VMware 插件服务的链接 vCenter 上，导航到受管对象参考（ Managed Object Reference ， MOB ）管理器。
 . 在属性选项的值列中选择 * 内容 * ，然后在下一屏幕的值列中选择 * 扩展管理器 * 以显示注册的扩展列表。
-. 取消注册扩展名 `com.netapp.scvm.webclient` 和 `com.netapp.aegis` 。
+. 取消注册扩展 `com.netapp.scv.client` 和 `com.netapp.aegis`。
 

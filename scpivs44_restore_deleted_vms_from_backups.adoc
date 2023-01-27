@@ -43,7 +43,7 @@ NOTE: 您不能将VVol虚拟机还原到备用位置。
 NOTE: 还原已删除的 VM 时，不会还原最初分配给该 VM 的任何标记或文件夹。
 
 .开始之前
-* 在 VMware vSphere Web Client 的存储系统页面上，存储系统的用户帐户必须具有 link:scpivs44_minimum_ontap_privileges_required.html["ONTAP 所需的最小 ONTAP 权限"]。
+* 在VMware vSphere客户端的存储系统页面上、存储系统的用户帐户必须具有 link:scpivs44_minimum_ontap_privileges_required.html["ONTAP 所需的最小 ONTAP 权限"]。
 * vCenter 中的用户帐户必须具有 link:scpivs44_minimum_vcenter_privileges_required.html["适用于 VMware vSphere 的 SnapCenter 插件所需的最低 vCenter 特权"]。
 * 必须存在备份。
 +

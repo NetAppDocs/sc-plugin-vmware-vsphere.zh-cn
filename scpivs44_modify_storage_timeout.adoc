@@ -19,7 +19,7 @@ summary: 即使备份过去已成功运行，但当适用于 VMware vSphere 的 
 您可能会遇到错误 `Unable to discover resources on SCV ： Unable to get storage details for datastore <xxx>…`
 
 .步骤
-. 在 VMware vSphere Web Client 中，单击 * 存储系统 * 。
+. 在VMware vSphere客户端中、单击*存储系统*。
 . 在存储系统页面上，选择要修改的存储系统，然后单击 * 编辑 * 。
 . 在超时字段中，增加秒数。
 +

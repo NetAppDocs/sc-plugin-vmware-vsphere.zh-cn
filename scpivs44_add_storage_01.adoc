@@ -18,7 +18,7 @@ summary: 通过添加存储，适用于 VMware vSphere 的 SnapCenter 插件可�
 
 * 要使用的 GUI
 +
-使用 VMware vSphere Web Client 添加存储。
+使用VMware vSphere客户端添加存储。
 
 * 大型 LUN
 +
@@ -26,7 +26,7 @@ summary: 通过添加存储，适用于 VMware vSphere 的 SnapCenter 插件可�
 
 * VMware 虚拟卷（ VVOL ）
 +
-您必须先将 VVOL 存储系统添加到适用于 VMware vSphere 的 ONTAP 工具中，然后将 VVOL 存储系统添加到适用于 VMware vSphere 的 SnapCenter 插件中。
+您必须先将VVOL存储系统添加到适用于VMware vSphere的ONTAP 工具中、然后将VVOL存储系统添加到适用于VMware vSphere的SnapCenter 插件中。
 
 +
 有关详细信息，请参见 https://docs.netapp.com/vapp-98/index.jsp["适用于 VMware vSphere 的 ONTAP 工具"^]
@@ -40,7 +40,7 @@ ESXi 服务器， SnapCenter VMware 插件和每个 vCenter 必须同时同步�
 SnapCenter VMware 插件可对直接连接的 Storage VM 和存储集群中的 Storage VM 执行备份和还原操作。
 
 
-NOTE: 如果您使用 SnapCenter VMware 插件在 VMDK 上支持基于应用程序的备份，则必须使用 SnapCenter 图形用户界面输入存储凭据并注册存储系统。
+NOTE: 如果您使用SnapCenter VMware插件在VMDK上支持基于应用程序的备份、则必须使用SnapCenter 图形用户界面输入存储身份验证详细信息并注册存储系统。
 
 * 对于处于链接模式的 vCenter ，您必须分别向每个 vCenter 添加存储系统。
 * Storage VM 的名称必须解析为管理 LIF 。
@@ -50,15 +50,12 @@ NOTE: 如果您使用 SnapCenter VMware 插件在 VMDK 上支持基于应用程�
 +
 如果您添加的 Storage VM 名称无法解析为管理 LIF ，则计划的备份作业将失败，因为此插件无法发现此 Storage VM 上的任何数据存储库或卷。如果发生这种情况，请将此 Storage VM 添加到 SnapCenter 并指定管理 LIF ，或者添加一个包含此 Storage VM 的集群并指定集群管理 LIF 。
 
-* 存储凭据不会在 SnapCenter VMware 插件的多个实例之间共享，也不会在 vCenter 上的 Windows SnapCenter Server 和 SnapCenter 插件之间共享。
+* 存储身份验证详细信息不会在SnapCenter VMware插件的多个实例之间共享、也不会在vCenter上的Windows SnapCenter Server和SnapCenter 插件之间共享。
 
 
 .步骤
-. 在 vSphere Web Client 的左侧导航器窗格中，单击 * 存储系统 * 。
+. 在vSphere客户端的左侧导航器窗格中、单击*存储系统*。
 . 在存储系统页面上，单击 image:scpivs44_image6.png["错误：缺少图形映像"] * 添加 * 。
-+
-image:scpivs44_image12.png["错误：缺少图形映像"]
-
 . 在 * 添加存储系统 * 向导中，输入下表列出的基本 Storage VM 或集群信息：
 +
 |===
@@ -71,10 +68,19 @@ image:scpivs44_image12.png["错误：缺少图形映像"]
 | 平台 | 选择平台。 
 
 
-| Username | 输入用于登录到 Storage VM 的 ONTAP 用户名。 
+| 身份验证方法 | 选择Credentials或Certificate。支持两种类型的证书：- https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_configure_a_CA_signed_certificate_for_storage_system_authentication_with_SCV["CA签名证书"^]- https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_configure_a_self-signed_certificate_for_storage_system_authentication_with_SCV["自签名证书"^] 
 
 
-| Password | 输入 Storage VM 登录密码。 
+| Username | 如果选择凭据作为身份验证方法、则会显示此字段。输入用于登录到 Storage VM 的 ONTAP 用户名。 
+
+
+| Password | 如果选择凭据作为身份验证方法、则会显示此字段。输入 Storage VM 登录密码。 
+
+
+| 证书 | 如果选择证书作为身份验证方法、则会显示此字段。浏览以选择证书文件。 
+
+
+| 专用密钥 | 如果选择证书作为身份验证方法、则会显示此字段。浏览以选择私钥文件。 
 
 
 | 协议 | 选择存储协议。 
@@ -87,6 +93,9 @@ image:scpivs44_image12.png["错误：缺少图形映像"]
 
 
 | 首选 IP | 如果 Storage VM 具有多个管理 IP 地址，请选中此框并输入要 SnapCenter 使用的 IP 地址。* 注： * 输入 IP 地址时，请勿使用方括号（）。 
+
+
+| 事件管理系统(EMS)和AutoSupport 设置 | 如果要将 EMS 消息发送到存储系统系统系统日志，或者要将 AutoSupport 消息发送到存储系统以应用保护，完成还原操作或失败操作，请选中相应的复选框。选中*向存储系统发送失败操作的AutoSupport 通知*复选框和*将SnapCenter 服务器事件记录到系统日志*复选框以启用AutoSupport 通知。 
 
 
 | 将 SnapCenter 服务器事件记录到系统日志中 | 选中此框可记录 SnapCenter VMware 插件的事件。 

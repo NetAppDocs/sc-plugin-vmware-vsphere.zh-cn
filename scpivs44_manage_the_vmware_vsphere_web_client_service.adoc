@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: scpivs44_manage_the_vmware_vsphere_web_client_service.html 
 keywords:  
-summary: 如果 SnapCenter VMware vSphere Web Client 行为不正确，您可能需要清除浏览器缓存。如果此问题仍然存在，请重新启动 VMware vSphere Web Client 服务。 
+summary: 如果SnapCenter VMware vSphere客户端行为不正确、您可能需要清除浏览器缓存。如果此问题仍然存在、请重新启动VMware vSphere客户端服务。 
 ---
-= 重新启动 VMware vSphere Web Client 服务
+= 重新启动VMware vSphere客户端服务
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,13 +14,13 @@ summary: 如果 SnapCenter VMware vSphere Web Client 行为不正确，您可能
 
 
 [role="lead"]
-如果 SnapCenter VMware vSphere Web Client 行为不正确，您可能需要清除浏览器缓存。如果此问题仍然存在，请重新启动 VMware vSphere Web Client 服务。
+如果SnapCenter VMware vSphere客户端行为不正确、您可能需要清除浏览器缓存。如果此问题仍然存在、请重新启动VMware vSphere客户端服务。
 
 
 
 == 在 Linux vCenter 中重新启动 Web 客户端服务
 
-如果 vCenter 位于 Linux 设备上，则必须使用 Linux 命令重新启动 SnapCenter VMware vSphere Web Client 服务。
+如果vCenter位于Linux设备上、则必须使用Linux命令重新启动SnapCenter VMware vSphere客户端服务。
 
 .开始之前
 您必须运行 vCenter 6.5 或更高版本。
@@ -37,52 +37,14 @@ summary: 如果 SnapCenter VMware vSphere Web Client 行为不正确，您可能
 
 . 使用以下 HTML5 命令删除 vCenter 上所有陈旧的 scvm 软件包：
 +
-`etc/vmware/vsphere-ui/vc-packages/vsphere-client-serene/rm -RF com.netapp.scvm.webclient-<version_number>`
+`etc/vmware/vsphere-ui/vc-packages/vsphere-client-serenity/rm -rf com.netapp.scv.client-<version_number>`
 
 +
 
-IMPORTANT: 请勿删除 VASA 或 VSC7.x 及更高版本的软件包。
+IMPORTANT: 请勿删除VASA或vCenter 7.x及更高版本的软件包。
 
 . 使用以下 HTML5 命令启动 Web 客户端服务：
 +
 `sservice-control —启动 vsphere-ui`
-
-
-
-
-
-== 在 Windows vCenter 中重新启动 Web 客户端服务
-
-如果 vCenter 位于 Windows 主机上，则必须使用 Windows 命令重新启动 SnapCenter Web 客户端服务。
-
-.开始之前
-您必须运行 vCenter 6.5 或更高版本。
-
-.步骤
-. 使用以下 HTML5 命令停止 Web 客户端服务：
-+
-`sservice-control —停止 vsphere-ui`
-
-+
-等待消息 `已完成停止服务请求` 。
-
-. 通过执行以下操作删除 vCenter 上所有陈旧的 scvm 软件包：
-+
-.. 导航到 vCenter vsphere-client-serenity 文件夹：
-+
-`C ： \ProgramData\VMware\vCenterServer\cfg\vsphere-ui\vc-packages\vsphere-client-serenation\`
-
-.. 删除名称如下的所有插件文件夹：
-+
-`com.netapp.scvm.webclient-<version_number>.`
-
-
-
-. 使用以下 HTML5 命令重新启动 Web 客户端服务：
-+
-`sservice-control —启动 vsphere-ui`
-
-+
-等待消息 `已完成启动服务请求` 。
 
 

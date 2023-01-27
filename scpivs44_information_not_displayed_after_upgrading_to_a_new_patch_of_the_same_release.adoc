@@ -26,17 +26,13 @@ summary: 将适用于 VMware vSphere 的 SnapCenter 插件升级到同一版本�
 
 根据服务器操作系统的类型，缓存位于以下位置：
 
-* 适用于 Windows 的 vCenter Server
-+
-`C ： \ProgramData\VMware\vCenterServer\cfg\vsphere-client\vc-packages\vsphere-client-serenation\`
-
 * vCenter Server Linux 设备
 +
 ` /etc/vmware/vsphere-client/vc-packages/vsphere-client-serenation/`
 
 * Windows 操作系统
 +
-` %ProgramFiles%/VMware/vSphere Web Client/vc-packages/vsphere-client-serention/`
+`%PROGRAMFILES%/VMware/vSphere client/vc-packages/vsphere-client-serenity/`
 
 
 
@@ -52,12 +48,12 @@ summary: 将适用于 VMware vSphere 的 SnapCenter 插件升级到同一版本�
 +
 已禁用 SnapCenter VMware 插件服务，并且此扩展已在 vCenter 中取消注册。
 
-. 找到`vsphere-client-serenity`文件夹、然后找到`com.netapp.scvm.webclient-<release-number>`文件夹并将其删除。
+. 找到 `vsphere-client-serenity` 文件夹中、然后找到 `com.netapp.scv.client-<release-number>` 文件夹并将其删除。
 +
 每个版本的文件夹名称都会发生变化。
 
 . 重新启动 vCenter Server 。
-. 登录到 VMware vSphere Web Client 。
+. 登录到VMware vSphere客户端。
 . 单击左侧导航窗格中的 * 配置 * ，然后单击 * 插件详细信息 * 部分中的服务选项以启用此插件。
 +
 此时将启用 SnapCenter VMware 插件服务，并在 vCenter 中注册此扩展。

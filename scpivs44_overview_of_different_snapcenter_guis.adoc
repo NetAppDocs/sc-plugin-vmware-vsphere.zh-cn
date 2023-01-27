@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_overview_of_different_snapcenter_guis.html 
 keywords:  
-summary: 适用于 VMware vSphere 的 SnapCenter 插件是一个独立插件，与其他 SnapCenter 插件不同。您必须在 vCenter 中使用 VMware vSphere Web Client GUI 执行 VM ， VMDK 和数据存储库的所有备份和还原操作。 
+summary: 适用于 VMware vSphere 的 SnapCenter 插件是一个独立插件，与其他 SnapCenter 插件不同。您必须在vCenter中使用VMware vSphere客户端GUI执行VM、VMDK和数据存储库的所有备份和还原操作。 
 ---
 = 不同 SnapCenter GUI 的概述
 :hardbreaks:
@@ -16,11 +16,9 @@ summary: 适用于 VMware vSphere 的 SnapCenter 插件是一个独立插件，�
 [role="lead"]
 在 SnapCenter 环境中，您必须使用相应的图形用户界面执行数据保护和管理操作。
 
-适用于 VMware vSphere 的 SnapCenter 插件是一个独立插件，与其他 SnapCenter 插件不同。您必须在 vCenter 中使用 VMware vSphere Web Client GUI 执行 VM ， VMDK 和数据存储库的所有备份和还原操作。您还可以使用 Web 客户端 GUI 信息板监控受保护和未受保护的 VM 列表。对于所有其他 SnapCenter 插件（基于应用程序的插件），您可以使用 SnapCenter 图形用户界面进行备份和还原操作以及作业监控。
+适用于 VMware vSphere 的 SnapCenter 插件是一个独立插件，与其他 SnapCenter 插件不同。您必须在vCenter中使用VMware vSphere客户端GUI执行VM、VMDK和数据存储库的所有备份和还原操作。您还可以使用 Web 客户端 GUI 信息板监控受保护和未受保护的 VM 列表。对于所有其他 SnapCenter 插件（基于应用程序的插件），您可以使用 SnapCenter 图形用户界面进行备份和还原操作以及作业监控。
 
-SnapCenter VMware 插件支持 HTML5 vSphere Web Client 。它不支持 vCenter Flex 或胖客户端。
-
-要保护 VM 和数据存储库，请使用 VMware vSphere Web 客户端界面。Web 客户端图形用户界面可与存储系统上的 NetApp Snapshot 副本技术相集成。这样，您就可以在几秒钟内备份 VM 和数据存储库，并还原 VM ，而无需使 ESXi 主机脱机。
+要保护VM和数据存储库、请使用VMware vSphere客户端界面。Web 客户端图形用户界面可与存储系统上的 NetApp Snapshot 副本技术相集成。这样，您就可以在几秒钟内备份 VM 和数据存储库，并还原 VM ，而无需使 ESXi 主机脱机。
 
 此外，还提供了一个管理 GUI ，用于对 SnapCenter VMware 插件执行管理操作。
 
@@ -30,7 +28,7 @@ SnapCenter VMware 插件支持 HTML5 vSphere Web Client 。它不支持 vCenter 
 | 使用此 GUI… | 要执行这些操作 ... | 要访问这些备份 ... 
 
 
-| SnapCenter vSphere Web 客户端图形用户界面 | VM 和数据存储库备份 VMDK 连接和断开数据存储库挂载和卸载 VM 和 VMDK 还原子文件和文件夹还原 | 使用 VMware vSphere Web Client GUI 对 VM 和数据存储库执行备份。 
+| SnapCenter vSphere客户端图形用户界面 | VM 和数据存储库备份 VMDK 连接和断开数据存储库挂载和卸载 VM 和 VMDK 还原子文件和文件夹还原 | 使用VMware vSphere客户端GUI对VM和数据存储库执行备份。 
 
 
 | SnapCenter 图形用户界面 | 备份和还原 VM 上的数据库和应用程序，包括保护 Microsoft SQL Server ， Microsoft Exchange 和 Oracle 的数据库。数据库克隆 | 使用 SnapCenter 图形用户界面执行的备份。 
@@ -41,6 +39,6 @@ SnapCenter VMware 插件支持 HTML5 vSphere Web Client 。它不支持 vCenter 
 
 | vCenter 图形用户界面 | 向 vCenter Active Directory 用户添加 SCV 角色向用户或组添加资源访问权限 | 不适用 
 |===
-对于 VM 一致的备份和还原操作，您必须使用 VMware vSphere Web Client GUI 。虽然可以使用 VMware 工具执行某些操作，例如挂载或重命名数据存储库，但这些操作不会注册到 SnapCenter 存储库中，并且无法识别。
+对于VM一致的备份和还原操作、您必须使用VMware vSphere客户端GUI。虽然可以使用 VMware 工具执行某些操作，例如挂载或重命名数据存储库，但这些操作不会注册到 SnapCenter 存储库中，并且无法识别。
 
-SnapCenter 不支持同时为数据库和 VM 创建一个 Snapshot 副本。VM 和数据库的备份必须单独计划和运行，这样即使数据库和 VM 托管在同一个卷中，也会创建单独的 Snapshot 副本。必须使用 SnapCenter 图形用户界面计划基于应用程序的备份；必须使用 VMware vSphere Web Client 图形用户界面计划 VM 一致的备份。
+SnapCenter 不支持同时为数据库和 VM 创建一个 Snapshot 副本。VM 和数据库的备份必须单独计划和运行，这样即使数据库和 VM 托管在同一个卷中，也会创建单独的 Snapshot 副本。必须使用SnapCenter 图形用户界面计划基于应用程序的备份；必须使用VMware vSphere客户端图形用户界面计划VM一致的备份。

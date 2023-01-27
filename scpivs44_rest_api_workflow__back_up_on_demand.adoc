@@ -22,7 +22,7 @@ summary: 要使用适用于 VMware vSphere 的 SnapCenter 插件 REST API 按需
 | 步骤 | REST API | 注释 
 
 
-| 1. | ` /4.1/resource-groups` | `获取资源组列表` 获取 VMware vSphere Web Client 资源组列表。记下要备份的资源组的 * 资源组 Id* 和 * 策略 Id* 。 
+| 1. | ` /4.1/resource-groups` | `Get List of Resource Groups` 获取VMware vSphere客户端资源组的列表。记下要备份的资源组的 * 资源组 Id* 和 * 策略 Id* 。 
 
 
 | 2. | ` /4.1/resource-groups/backupnow` | `对资源组运行备份` 按需备份资源组。传递步骤 1 中的 * 资源组 Id* 和 * 策略 Id* 。 

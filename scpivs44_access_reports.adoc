@@ -19,7 +19,7 @@ summary: 您可以从信息板请求一个或多个作业的报告。
 报告选项卡包含有关在信息板的作业页面上选择的作业的信息。如果未选择任何作业，则 " 报告 " 选项卡为空。
 
 .步骤
-. 在 vSphere Web Client 的左侧导航器窗格中，单击 * 信息板 * ，选择一个 vCenter Server ，然后单击 * 报告 * 选项卡。
+. 在vSphere客户端的左侧导航器窗格中、单击*信息板*、选择一个vCenter Server、然后单击*报告*选项卡。
 . 对于备份报告，您可以执行以下操作：
 +
 .. 修改报告
@@ -40,12 +40,12 @@ summary: 您可以从信息板请求一个或多个作业的报告。
 
 
 
-== VMware vSphere Web Client 中的报告类型
+== 来自VMware vSphere客户端的报告类型
 
-适用于 SnapCenter 的 VMware vSphere Web Client 提供了可自定义的报告选项，可为您提供有关数据保护作业和插件资源状态的详细信息。您只能为主保护生成报告。
+适用于SnapCenter 的VMware vSphere客户端提供了可自定义的报告选项、可为您提供有关数据保护作业和插件资源状态的详细信息。您只能为主保护生成报告。
 
 
-NOTE: 备份计划在部署 SnapCenter VMware 插件的时区执行。vCenter 将报告 vCenter 所在时区的数据。因此，如果 SnapCenter VMware 插件和 vCenter 位于不同时区，则 VMware vSphere Web Client 信息板中的数据可能与报告中的数据不同。
+NOTE: 备份计划在部署 SnapCenter VMware 插件的时区执行。vCenter 将报告 vCenter 所在时区的数据。因此、如果SnapCenter VMware插件和vCenter位于不同时区、则VMware vSphere客户端信息板中的数据可能与报告中的数据不同。
 
 只有在执行迁移后备份后，信息板才会显示有关已迁移备份的信息。
 

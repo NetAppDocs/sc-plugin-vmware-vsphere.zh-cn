@@ -26,7 +26,7 @@ summary: 您需要使用适用于 VMware vSphere 的 SnapCenter 插件管理 GUI
 在停止并重新启动适用于 VMware vSphere 的 SnapCenter 插件服务之前，您应暂停所有计划。
 
 .关于此任务
-* 默认值为 "maint" 作为用户名， "admin123" 作为密码登录到适用于 VMware vSphere 的 SnapCenter 插件的维护控制台。
+* 系统将为您提供默认用户名和密码。
 +
 
 TIP: 部署后，修改默认登录凭据。
@@ -38,13 +38,10 @@ TIP: 部署后，修改默认登录凭据。
 
 
 .步骤
-. 从 VMware vSphere Web Client 中，选择 SnapCenter VMware 插件所在的虚拟机。
+. 从VMware vSphere客户端中、选择SnapCenter VMware插件所在的虚拟机。
 . 右键单击虚拟机，然后在虚拟设备的 * 摘要 * 选项卡上单击 * 启动远程控制台 * 以打开维护控制台窗口。
 +
-SnapCenter VMware 插件维护控制台的登录默认设置如下：
-
-+
-用户名： `m熟悉` 密码： `admin123`
+使用提供给您的默认维护控制台用户名和密码登录。
 
 +
 image:scpivs44_image11.png["错误：缺少图形映像"]
@@ -81,16 +78,13 @@ image:scpivs44_image11.png["错误：缺少图形映像"]
 在停止并重新启动适用于 VMware vSphere 的 SnapCenter 插件服务之前，您应暂停所有计划。
 
 .关于此任务
-要登录到 SnapCenter VMware 插件的维护控制台，您必须使用默认的 ` "maint"` 作为用户名，并使用 ` "admin123"` 作为密码。
+使用默认用户名密码登录到SnapCenter VMware插件的维护控制台。
 
 .步骤
-. 从 VMware vSphere Web Client 中，选择 SnapCenter VMware 插件所在的虚拟机。
+. 从VMware vSphere客户端中、选择SnapCenter VMware插件所在的虚拟机。
 . 右键单击虚拟机，然后在虚拟设备的 * 摘要 * 选项卡上单击 * 启动远程控制台 * 以打开维护控制台窗口。
 +
-SnapCenter VMware 插件维护控制台的登录默认设置如下：
-
-+
-用户名： `m熟悉` 密码： `admin123`
+使用提供给您的默认维护控制台用户名和密码登录。
 
 +
 image:scpivs44_image29.jpg["错误：缺少图形映像"]
@@ -120,7 +114,7 @@ SnapCenter VMware 插件采用 SSL 加密，可与客户端浏览器进行安全
 .步骤
 . 在已停止 SnapCenter VMware 插件服务的链接 vCenter 上，导航到受管对象参考（ Managed Object Reference ， MOB ）管理器。
 . 在属性选项中，选择扩展管理器以显示已注册扩展的列表。
-. 取消注册扩展名 `com.netapp.scvm.webclient` 和 `com.netapp.aegis` 。
+. 取消注册扩展 `com.netapp.scv.client` 和 `com.netapp.aegis`。
 
 
 
@@ -188,7 +182,7 @@ link:scpivs44_back_up_the_snapcenter_plug-in_for_vmware_vsphere_mysql_database.h
 
 . 单击左侧导航窗格中的 * 配置 * ，然后取消选择 * 插件详细信息 * 部分中的服务选项以禁用此插件。
 . 登录到 VMware vSphere 。
-. 在左侧导航屏幕中，右键单击 SnapCenter VMware 插件的实例（部署虚拟设备时使用的 ` .ova` 文件的名称），然后选择 * 从磁盘删除 * 。
+. 在左侧导航屏幕中、右键单击SnapCenter VMware插件的实例(的名称 `.tar` 部署虚拟设备时使用的文件)、然后选择*从磁盘删除*。
 . 手动删除 vCenter 服务器的 ` /etc/vmware/vsphere-ui/vc-packages/vsphere-client-serene/com.netapp.scvm.webclient-4.5.0.5942045/plugins` 文件夹中的以下文件：
 +
 `VSC-httpclient3-security.jar` `sCV-api-model.jar` `sCVM_WebUI_service.jar` `sCVM_WebUI_ui.war` `gson-2.5.jar`

@@ -16,21 +16,21 @@ summary: 要使用 SnapCenter 功能保护虚拟机上的 VM ，数据存储库�
 [role="lead"]
 要使用 SnapCenter 功能保护虚拟机上的 VM ，数据存储库和应用程序一致的数据库，您必须部署适用于 VMware vSphere 的 SnapCenter 插件。
 
-.开始之前
+....
+[Note]
+The OVA deployment is supported in VMware vCenter 7u1 and above.
+....
 * 您必须已阅读部署要求。
-+
-部署向导不会验证空间要求。如果数据存储库上没有足够的空间，则部署可能看起来成功，但虚拟设备无法启动。
-
 * 您必须运行受支持的 vCenter Server 版本。
 * 您必须已配置和设置 vCenter Server 环境。
 * 您必须已为 SnapCenter VMware 插件虚拟机设置 ESXi 主机。
-* 您必须已下载适用于 VMware vSphere 的 SnapCenter 插件 .ova 文件。
-* 您必须具有 vCenter Server 实例的登录凭据。
-* 您必须已注销并关闭 vSphere Web Client 的所有浏览器会话，并删除浏览器缓存，以避免在部署 SnapCenter VMware 插件期间出现任何浏览器缓存问题描述。
+* 您必须已下载适用于VMware vSphere的SnapCenter 插件.tar文件。
+* 您必须具有vCenter Server实例的登录身份验证详细信息。
+* 您必须拥有一个包含有效公共密钥和专用密钥文件的证书。有关详细信息、请参见下的文章 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/SnapCenter_Certificate_Resolution_Guide["存储证书管理"] 部分。
+* 您必须已注销并关闭vSphere客户端的所有浏览器会话、并删除浏览器缓存、以避免在部署SnapCenter VMware插件期间出现任何浏览器缓存问题描述。
 * 您必须已在 vCenter 中启用传输层安全（ TLS ）。请参见 VMware 文档。
-* 您可以将 SnapCenter VMware 插件与 VSC 7.x 及更高版本的虚拟设备部署在同一 vCenter 中。
 * 如果您计划在部署了 SnapCenter VMware 插件的 vCenter 以外的 vCenter 中执行备份，则 ESXi 服务器， SnapCenter VMware 插件和每个 vCenter 必须同时同步。
-* 要保护 VVOL 数据存储库上的 VM ，必须先部署适用于 VMware vSphere 的 ONTAP 工具。ONTAP 工具可在 ONTAP 和 VMware Web 客户端上配置和配置存储。
+* 要保护VVOL数据存储库上的VM、您必须先部署适用于VMware vSphere的ONTAP 工具。支持适用于VMware vSphere 9.10及更高版本的ONTAP 工具。ONTAP 工具可在ONTAP 和VMware Web客户端上配置和配置存储。
 
 
 在与 vCenter 相同的时区部署 SnapCenter VMware 插件。备份计划在部署 SnapCenter VMware 插件的时区执行。vCenter 将报告 vCenter 所在时区的数据。因此，如果 SnapCenter VMware 插件和 vCenter 位于不同时区，则 SnapCenter VMware 插件信息板中的数据可能与报告中的数据不同。
@@ -41,29 +41,19 @@ summary: 要使用 SnapCenter 功能保护虚拟机上的 VM ，数据存储库�
 
 NOTE: 对于 IPv6 HTML Web 客户端，必须使用 Chrome 或 Firefox 。
 
-. 在 VMware 屏幕上，单击 * vSphere Web Client （ HTML5 ） * 。
 . 登录到 * VMware vCenter Single Sign-On* 页面。
 . 在导航器窗格中，右键单击作为虚拟机的有效父对象的任何清单对象，例如数据中心，集群或主机，然后选择 * 部署 OVF 模板 * 以启动 VMware Deploy 向导。
-. 在 * 选择 OVF 模板 * 页面上，指定 ` .ova` 文件的位置（如下表所示），然后单击 * 下一步 * 。
-+
-|===
-| 将 ` .ova` 文件下载到… | 执行此操作… 
-
-
-| 互联网位置 | 输入 URL 。支持的 URL 源为 HTTP 和 HTTPS 。 
-
-
-| 本地文件 | 单击 * 选择文件 * 并导航到 .ova 文件。 
-|===
+. 解压缩包含.ova文件的.tar文件到本地系统。在*选择OVF模板*页面上、指定的位置 `.ova` 已提取.tar文件夹中的文件。
+. 单击 * 下一步 * 。
 . 在 * 选择名称和文件夹 * 页面上，输入虚拟机或 vApp 的唯一名称，并选择部署位置，然后单击 * 下一步 * 。
 +
-此步骤指定将 ` .ova` 文件导入到 vCenter 的位置。虚拟机的默认名称与选定 ` .ova` 文件的名称相同。如果更改了默认名称，请在每个 vCenter Server VM 文件夹中选择一个唯一的名称。
+此步骤指定导入位置 `.tar` 文件到vCenter中。虚拟机的默认名称与选定的名称相同 `.ova` 文件如果更改了默认名称，请在每个 vCenter Server VM 文件夹中选择一个唯一的名称。
 
 +
 VM 的默认部署位置是启动向导的清单对象。
 
 . 在 * 选择资源 * 页面上，选择要运行已部署 VM 模板的资源，然后单击 * 下一步 * 。
-. 在 * 查看详细信息 * 页面上，验证 ` .ova` 模板详细信息，然后单击 * 下一步 * 。
+. 在*查看详细信息*页面上、验证 `.tar` 模板详细信息、然后单击*下一步*。
 . 在 * 许可协议 * 页面上，选中 * 我接受所有许可协议 * 复选框。
 . 在 * 选择存储 * 页面上，定义为已部署的 OVF 模板存储文件的位置和方式。
 +
@@ -107,6 +97,7 @@ VM 的默认部署位置是启动向导的清单对象。
 
 IMPORTANT: 记下您指定的用户名和密码。如果要稍后修改 SnapCenter VMware 插件配置，则需要使用这些凭据。
 
+.. 输入maint用户的凭据。
 .. 在 * 设置网络属性 * 中，输入主机名。
 +
 ... 在 * 设置 IPv4 网络属性 * 部分中，输入网络信息，例如 IPv4 地址， IPv4 网络掩码， IPv4 网关， IPv4 主 DNS ， IPv4 二级 DNS ， 和 IPv4 搜索域。
@@ -131,12 +122,12 @@ IMPORTANT: 如果要继续使用 DHCP 作为网络配置，可以跳过这些步
 在等待 OVF 导入和部署任务完成时，您可以从 " 近期任务 " 窗口查看部署进度。
 
 +
-成功部署 SnapCenter VMware 插件后，该插件将部署为 Linux VM ，并在 vCenter 中注册，同时安装 VMware vSphere Web Client 。
+成功部署SnapCenter VMware插件后、该插件将部署为Linux VM、并在vCenter中注册、同时安装VMware vSphere客户端。
 
 . 导航到部署了 SnapCenter VMware 插件的虚拟机，然后单击 * 摘要 * 选项卡，再单击 * 启动 * 框以启动虚拟设备。
 . 在 SnapCenter VMware 插件启动时，右键单击已部署的 SnapCenter VMware 插件，选择 * 来宾操作系统 * ，然后单击 * 安装 VMware 工具 * 。
 +
-VMware 工具安装在部署了 SnapCenter VMware 插件的虚拟机上。有关安装 VMware Tools 的详细信息，请参见 VMware 文档。
+VMware工具安装在部署了SnapCenter VMware插件的虚拟机上。有关安装VMware工具的详细信息、请参见VMware文档。
 
 +
 完成部署可能需要几分钟时间。在启动 SnapCenter VMware 插件，安装 VMware 工具以及屏幕提示您登录到 SnapCenter VMware 插件后，系统将显示部署成功。您可以在首次重新启动期间将网络配置从 DHCP 切换到静态。但是，不支持从静态切换到 DHCP 。
@@ -149,10 +140,10 @@ VMware 工具安装在部署了 SnapCenter VMware 插件的虚拟机上。有关
 请使用格式 `https://<appliance-IP-address>:8080` 访问管理 GUI 。
 
 +
-默认情况下，维护控制台用户名设置为 "maint" ，密码设置为 "admin123" 。
+使用默认维护控制台用户名登录 `maint` 和您在安装时设置的密码。
 
 +
-如果未启用 SnapCenter VMware 插件，请参见 link:scpivs44_restart_the_vmware_vsphere_web_client_service.html["重新启动 VMware vSphere Web Client 服务"]。
+如果未启用 SnapCenter VMware 插件，请参见 link:scpivs44_restart_the_vmware_vsphere_web_client_service.html["重新启动VMware vSphere客户端服务"]。
 
 +
 如果主机名称为 "UnifiedVSC/SCV ，则重新启动设备。如果重新启动设备时未将主机名更改为指定的主机名，则必须重新安装该设备。

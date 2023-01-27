@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
-permalink: scpivs44_download_the_ova_open_virtual_appliance.html 
+permalink: scv48_add_certificates_to_certificate_store.html 
 keywords:  
-summary: tar文件包括OVA、这是一组用于VM和数据存储库数据保护的微服务以及证书文件。 
+summary: 将证书颁发机构的根证书和中间证书添加到VMware vCenter、以便信任该证书及其签名的项目。 
 ---
-= 下载Open Virtual Appliance (OVA)
+= 将证书添加到VMware证书存储
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -19,13 +19,6 @@ summary: tar文件包括OVA、这是一组用于VM和数据存储库数据保护
 在VMware vCenter 7.0.3及更高版本中、通过Entrustly证书签名的OVA不再受信任。要解析此问题描述 、您需要执行以下操作步骤。
 
 .步骤
-. 下载适用于VMware的SnapCenter 插件：
-+
-** 登录到 NetApp 支持站点（ https://mysupport.netapp.com/products/index.html["https://mysupport.netapp.com/products/index.html"^]）。
-** 从产品列表中，选择 * 适用于 VMware vSphere 的 SnapCenter 插件 * ，然后单击 * 下载最新版本 * 按钮。
-** 下载适用于VMware vSphere的SnapCenter 插件 `.tar` 文件到任何位置。
-
-
 . 使用vSphere Client登录到vCenter Server。
 . 导航到*管理>证书>证书管理*。
 . 在*可信根存储*旁边、单击*添加*

@@ -56,7 +56,7 @@ TIP: 适用于 VMware vSphere 4.5 及更高版本的 SnapCenter 插件在 ASA �
 IMPORTANT: 请勿添加处于不可访问状态的 VM 。尽管可以创建包含无法访问的 VM 的资源组，但该资源组的备份将失败。
 
 .开始之前
-在创建包含 VVOL VM 的资源组之前，必须先部署适用于 VMware 的 ONTAP 工具。
+在创建包含VVOL VM的资源组之前、必须先部署适用于VMware的ONTAP 工具。
 
 有关详细信息，请参见 https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html["适用于 VMware vSphere 的 ONTAP 工具"^]。
 
@@ -96,17 +96,12 @@ SnapCenter 会在您创建资源组时执行兼容性检查。
 
 
 .步骤
-. 在 VMware vSphere Web Client 的左侧导航器窗格中，单击 * 资源组 * ，然后单击 image:scpivs44_image6.png["错误：缺少图形映像"] * 创建 * 以启动向导。
-+
-image:scpivs44_image16.png["错误：缺少图形映像"]
+. 在选择控制器插件的左侧导航器窗格中、单击*资源组*、然后单击 image:scpivs44_image6.png["错误：缺少图形映像"] * 创建 * 以启动向导。
 
-+
+
 这是创建资源组的最简单方法。但是，您也可以通过执行以下操作之一来创建包含一个资源的资源组：
 
-+
-** 要为一个 VM 创建资源组，请单击 * 菜单 * > * 主机和集群 * ，然后右键单击一个 VM ，选择 NetApp SnapCenter ，然后单击 image:scpivs44_image6.png["错误：缺少图形映像"] * 创建资源组 * 。
-** 要为一个数据存储库创建资源组，请单击 * 菜单 * > * 主机和集群 * ，然后右键单击一个数据存储库，选择 * NetApp SnapCenter * ，然后单击 image:scpivs44_image6.png["错误：缺少图形映像"] * 创建资源组 * 。
-
++*要为一个VM创建资源组、请单击*菜单*>*主机和集群*、然后右键单击一个VM、选择NetApp SnapCenter 、然后单击 image:scpivs44_image6.png["错误：缺少图形映像"] * 创建资源组 * 。*要为一个数据存储库创建资源组、请单击*菜单*>*主机和集群*、然后右键单击一个数据存储库、选择* NetApp SnapCenter *、然后单击 image:scpivs44_image6.png["错误：缺少图形映像"] * 创建资源组 * 。
 
 . 在向导的 * 常规信息和通知 * 页面上，执行以下操作：
 +
@@ -258,6 +253,6 @@ SnapCenter 4.x 版支持 ONTAP 8.3.1 及更高版本。
 
 . 确保 Storage VM 正在运行。
 . 确保已将 VM 所在的存储系统添加到适用于 VMware vSphere 的 SnapCenter 插件清单中。
-. 确保已将 Storage VM 添加到 SnapCenter 。使用 VMware vSphere Web Client 图形用户界面上的添加存储系统选项。
+. 确保已将 Storage VM 添加到 SnapCenter 。使用VMware vSphere客户端图形用户界面上的添加存储系统选项。
 . 如果跨区 VM 在 NetApp 和非 NetApp 数据存储库上都具有 VMDK ，则将 VMDK 移动到 NetApp 数据存储库。
 

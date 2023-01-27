@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_rest_api_workflows__modify_built-in_schedules.html 
 keywords:  
-summary: 要使用适用于 VMware vSphere 的 SnapCenter 插件 REST API 修改 VMware vSphere Web Client 作业的内置计划，您必须按照规定的 REST API 调用顺序进行操作。 
+summary: 要使用适用于VMware vSphere的SnapCenter 插件REST API修改VMware vSphere客户端作业的内置计划、您必须遵循规定的REST API调用顺序。 
 ---
 = 用于修改内置计划的 REST API 工作流
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 要使用适用于 VMware vSphere 的 SnapCenter 插件 REST API 修改
 
 
 [role="lead"]
-要使用适用于 VMware vSphere 的 SnapCenter 插件 REST API 修改 VMware vSphere Web Client 作业的内置计划，您必须按照规定的 REST API 调用顺序进行操作。
+要使用适用于VMware vSphere的SnapCenter 插件REST API修改VMware vSphere客户端作业的内置计划、您必须遵循规定的REST API调用顺序。
 
 内置计划是指作为产品一部分提供的计划，例如 MySQL 数据库转储计划。您可以修改以下计划： `sschedule-DatabaseDump` `Sschedule-PurgeBackups` `Sschedule-AsapDataCollection` `Sschedule-ComputeStorageSaving` `Sschedule-PurgeJobs`
 

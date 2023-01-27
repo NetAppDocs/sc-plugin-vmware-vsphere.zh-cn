@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_rest_apis_fail_stuck_jobs.html 
 keywords:  
-summary: 要使用适用于 VMware vSphere 的 SnapCenter 插件 REST API 查找 VMware vSphere Web Client 作业的作业 ID ，必须对 VMware vSphere 使用 REST API 调用。 
+summary: 要使用适用于VMware vSphere的SnapCenter 插件REST API查找VMware vSphere客户端作业的作业ID、必须对VMware vSphere使用REST API调用。 
 ---
 = REST API ，用于将停滞的作业标记为失败
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 要使用适用于 VMware vSphere 的 SnapCenter 插件 REST API 查找
 
 
 [role="lead"]
-要使用适用于 VMware vSphere 的 SnapCenter 插件 REST API 查找 VMware vSphere Web Client 作业的作业 ID ，必须对 VMware vSphere 使用 REST API 调用。这些 REST API 已添加到适用于 VMware vSphere 的 SnapCenter 插件 4.4 中。
+要使用适用于VMware vSphere的SnapCenter 插件REST API查找VMware vSphere客户端作业的作业ID、必须对VMware vSphere使用REST API调用。这些 REST API 已添加到适用于 VMware vSphere 的 SnapCenter 插件 4.4 中。
 
 对于每个 REST API ，在 REST API 的前面添加 `https://<server>:<port>` 以形成完整的端点。
 

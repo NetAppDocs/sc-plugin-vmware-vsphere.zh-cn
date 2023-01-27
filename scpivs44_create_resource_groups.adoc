@@ -13,7 +13,7 @@ summary:
 :imagesdir: ./media/
 
 
-. 在 VMware vSphere Web Client 的左侧导航器窗格中，单击 * 资源组 * ，然后单击 image:scpivs44_image6.png["错误：缺少图形映像"] * 创建 * 。
+. 在选择控制器插件的左侧导航器窗格中、单击*资源组*、然后单击 image:scpivs44_image6.png["错误：缺少图形映像"] * 创建 * 。
 . 在创建资源组向导的每个页面上输入所需信息，选择要包含在资源组中的 VM 和数据存储库，然后选择要应用于资源组的备份策略并指定备份计划。
 
 

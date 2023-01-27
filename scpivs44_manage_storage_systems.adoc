@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_manage_storage_systems.html 
 keywords:  
-summary: 在使用 VMware vSphere Web Client 备份或还原 VM 或数据存储库之前，必须添加存储。 
+summary: 在使用VMware vSphere客户端备份或还原VM或数据存储库之前、必须添加存储。 
 ---
 = 管理存储系统
 :hardbreaks:
@@ -14,46 +14,33 @@ summary: 在使用 VMware vSphere Web Client 备份或还原 VM 或数据存储�
 
 
 [role="lead"]
-在使用 VMware vSphere Web Client 备份或还原 VM 或数据存储库之前，必须添加存储。
+在使用VMware vSphere客户端备份或还原VM或数据存储库之前、必须添加存储。
 
 
 
 == 修改 Storage VM
 
-您可以使用 VMware vSphere Web Client 修改已在适用于 VMware vSphere 的 SnapCenter 插件中注册并用于 VM 数据保护操作的集群和 Storage VM 的配置。
+您可以使用VMware vSphere客户端修改已在适用于VMware vSphere的SnapCenter 插件中注册并用于VM数据保护操作的集群和Storage VM的配置。
 
-如果修改作为集群一部分自动添加的 Storage VM （有时称为隐式 Storage VM ），则该 Storage VM 将更改为显式 Storage VM ，并且可以单独删除，而不更改该集群中其余的 Storage VM 。在存储系统页面上，隐式 Storage VM 的用户名显示为 "-" ；只有集群列表中的显式 Storage VM 才会显示用户名，并将 ExploricitSVM 标志设置为 true 。所有 Storage VM 始终列在关联集群下。
+如果修改作为集群一部分自动添加的 Storage VM （有时称为隐式 Storage VM ），则该 Storage VM 将更改为显式 Storage VM ，并且可以单独删除，而不更改该集群中其余的 Storage VM 。如果身份验证方法是通过证书进行的、则在存储系统页面上、用户名显示为不适用；只有集群列表中的显式Storage VM才会显示用户名、并将ExploricitSVM标志设置为true。所有 Storage VM 始终列在关联集群下。
 
 
 IMPORTANT: 如果您使用 SnapCenter 图形用户界面为基于应用程序的数据保护操作添加了 Storage VM ，则必须使用相同的图形用户界面来修改这些 Storage VM 。
 
 .步骤
-. 在 VMware vSphere Web Client 的左侧导航器窗格中，单击 * 存储系统 * 。
+. 在选择控制器插件的左侧导航器窗格中、单击*存储系统*。
 . 在 * 存储系统 * 页面上，选择要修改的 Storage VM ，然后单击 image:scpivs44_image25.png["错误：缺少图形映像"] * 编辑 * 。
 . 在 * 编辑存储系统 * 窗口中，输入新值，然后单击 * 更新 * 以应用更改。
 +
-image:scpivs44_image26.png["错误：缺少图形映像"]
+image:scpivs44_image43.png["错误：缺少图形映像"]
 
-
-
-
-
-== 重命名 Storage VM
-
-如果在将 VM 添加到资源组后对其进行重命名，则新名称可能不会显示在 " 资源 " 页面上，因为适用于 VMware vSphere 的 SnapCenter 插件会使用 VM UUID ，而不是名称。
-
-要确保新虚拟机名称显示在 "Resources" 页面上，请执行以下操作。
-
-. 编辑资源组并删除虚拟机。
-. 重命名虚拟机。
-. 将虚拟机重新添加到资源组。
 
 
 
 
 == 删除 Storage VM
 
-您可以使用 VMware vSphere Web Client 从 vCenter 中的清单中删除 Storage VM 。
+您可以使用VMware vSphere客户端从vCenter中的清单中删除Storage VM。
 
 
 NOTE: 如果您使用 SnapCenter 图形用户界面为基于应用程序的数据保护操作添加了 Storage VM ，则必须使用相同的图形用户界面来修改这些 Storage VM 。
@@ -65,11 +52,10 @@ NOTE: 如果您使用 SnapCenter 图形用户界面为基于应用程序的数�
 如果某个资源组的备份驻留在要删除的 Storage VM 上，则该资源组的后续备份将失败。
 
 .步骤
-. 在 VMware vSphere Web Client 的左侧导航器窗格中，单击 * 存储系统 * 。
+. 在选择控制器插件的左侧导航器窗格中、单击*存储系统*。
 . 在 * 存储系统 * 页面上，选择要删除的 Storage VM ，然后单击 * 删除 * 。
-. 在 * 删除存储系统 * 确认框中，选中 * 删除存储系统 * 复选框，然后单击 * 是 * 进行确认。
-. 如果删除的 Storage VM 由 ESXi 6.7 Server 管理，则必须重新启动 Web 客户端服务。
+. 在 * 删除存储系统 * 确认框中，选中 * 删除存储系统 * 复选框，然后单击 * 是 * 进行确认。*注：*仅支持ESXi 7.0U1及更高版本。
 +
-link:scpivs44_manage_the_vmware_vsphere_web_client_service.html["重新启动 VMware vSphere Web Client 服务"]。
+link:scpivs44_manage_the_vmware_vsphere_web_client_service.html["重新启动VMware vSphere客户端服务"]。
 
 

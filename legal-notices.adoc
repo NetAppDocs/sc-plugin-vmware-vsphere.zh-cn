@@ -40,3 +40,11 @@ https://www.netapp.com/us/media/patents-page.pdf[]
 == 隐私政策
 
 https://www.netapp.com/us/legal/privacypolicy/index.aspx[]
+
+
+
+== 开放源代码
+
+通知文件提供有关 NetApp 软件中使用的第三方版权和许可证的信息。
+
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2884815["适用于VMware vSphere 4.8的SnapCenter 插件注意事项"^]

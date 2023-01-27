@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_view_status_information.html 
 keywords:  
-summary: 您可以在 vSphere Web Client 信息板上查看状态信息。状态信息每小时更新一次。 
+summary: 您可以在vSphere客户端信息板上查看状态信息。状态信息每小时更新一次。 
 ---
 = 查看状态信息
 :hardbreaks:
@@ -13,13 +13,10 @@ summary: 您可以在 vSphere Web Client 信息板上查看状态信息。状态
 :imagesdir: ./media/
 
 
-您可以在 vSphere Web Client 信息板上查看状态信息。状态信息每小时更新一次。
+您可以在vSphere客户端信息板上查看状态信息。状态信息每小时更新一次。
 
 .步骤
-. 在 vSphere Web Client 的左侧导航器窗格中，单击 * 信息板 * ，选择一个 vCenter Server ，然后单击 * 状态 * 选项卡。
-+
-image:scpivs44_image7.png["错误：缺少图形映像"]
-
+. 在vSphere客户端的左侧导航器窗格中、单击*信息板*、选择一个vCenter Server、然后单击信息板窗格中的*状态*选项卡。
 . 查看概述状态信息或单击链接以查看更多详细信息，如下表所示。
 +
 |===

@@ -42,10 +42,7 @@ summary: 部署适用于 VMware vSphere 的 SnapCenter 插件后，您必须完�
 
 . 清除浏览器缓存，然后检查 GUI 是否运行正常。
 +
-如果此问题仍然存在，请重新启动 VMware vSphere Web Client 服务
-
-+
-image:scpivs44_image5.png["错误：缺少图形映像"]
+如果此问题仍然存在、请重新启动VMware vSphere客户端服务
 
 . 登录到 vCenter ，然后单击工具栏中的 * 菜单 * ，然后选择 * 适用于 VMware vSphere 的 SnapCenter 插件 * 。
 

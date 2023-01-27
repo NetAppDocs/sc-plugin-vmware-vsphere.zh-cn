@@ -1,6 +1,6 @@
 ---
 settings:
-  name: SnapCenter Plug-in for VMware vSphere 4.7
+  name: SnapCenter Plug-in for VMware vSphere 4.8
   internal:
     pdf_enabled: true
   prod:
@@ -9,6 +9,9 @@ settings:
   versions:
   - name: 适用于 VMware vSphere 的 SnapCenter 插件
     url: "/sc-plugin-vmware-vsphere"
+    version-number: '4.8'
+  - name: 适用于 VMware vSphere 的 SnapCenter 插件
+    url: "/sc-plugin-vmware-vsphere-47"
     version-number: '4.7'
   - name: 适用于 VMware vSphere 的 SnapCenter 插件
     url: "/sc-plugin-vmware-vsphere-46"
@@ -19,7 +22,7 @@ settings:
   langs: zh-cn,us-en,ja-jp,zh-tw,ko-kr,fr-fr,de-de
 sidebar:
   entries:
-  - title: 适用于VMware vSphere的SnapCenter 插件4.7文档
+  - title: 适用于VMware vSphere的SnapCenter 插件4.8文档
     url: "/index.html"
   - title: 发行说明
     url: "/scpivs44_release_notes.html"
@@ -53,23 +56,23 @@ sidebar:
       entries:
       - title: 部署规划和要求
         url: "/scpivs44_deployment_planning_and_requirements.html"
-      - title: 所需的最小 ONTAP 权限
+      - title: 需要ONTAP 权限
         url: "/scpivs44_minimum_ontap_privileges_required.html"
       - title: 所需的最低 vCenter 权限
         url: "/scpivs44_minimum_vcenter_privileges_required.html"
-    - title: 下载适用于 VMware vSphere OVA 的 SnapCenter 插件（开放式虚拟设备）
-      url: "/scpivs44_download_the_snapcenter_plug-in_for_vmware_vsphere_ova_open_virtual_appliance.html"
+    - title: 下载Open Virtual Appliance (OVA)
+      url: "/scpivs44_download_the_ova_open_virtual_appliance.html"
     - title: 部署适用于 VMware vSphere 的 SnapCenter 插件
       url: "/scpivs44_deploy_snapcenter_plug-in_for_vmware_vsphere.html"
     - title: 部署后需要执行的操作和出现的问题
       url: "/scpivs44_post_deployment_required_operations_and_issues.html"
-    - title: 登录到 SnapCenter VMware vSphere Web 客户端
+    - title: 登录到SnapCenter VMware vSphere客户端
       url: "/scpivs44_log_in_to_the_snapcenter_vmware_vsphere_web_client.html"
   - title: 快速入门
     entries:
     - title: 概述
       url: "/scpivs44_quick_start_overview.html"
-    - title: 下载 OVA （开放式虚拟设备）
+    - title: 下载Open Virtual Appliance (OVA)
       url: "/scpivs44_download_the_ova_open_virtual_appliance.html"
     - title: 部署适用于 VMware vSphere 的 SnapCenter 插件
       url: "/scpivs44_deploy_snapcenter_plug-in_for_vmware_vsphere_01.html"
@@ -93,6 +96,8 @@ sidebar:
       url: "/scpivs44_generate_a_support_bundle_from_the_snapcenter_plug-in_for_vmware_vsphere_gui.html"
     - title: 从维护控制台生成支持包
       url: "/scpivs44_generate_a_support_bundle_from_the_maintenance_console.html"
+    - title: 审核日志
+      url: "/scv48_audit_logs.html"
   - title: 管理存储
     entries:
     - title: 添加存储
@@ -151,6 +156,8 @@ sidebar:
       url: "/scpivs44_restore_the_most_recent_backup_of_the_mysql_database.html"
     - title: 还原 MySQL 数据库的特定备份
       url: "/scpivs44_restore_a_specific_backup_of_the_mysql_database.html"
+  - title: 连接和断开 VMDK
+    entries:
     - title: 将VMDK连接到虚拟机或VVol虚拟机
       url: "/scpivs44_attach_vmdks_to_a_vm.html"
     - title: 断开虚拟磁盘
@@ -171,7 +178,7 @@ sidebar:
       url: "/scpivs44_guest_file_restore_scenarios_you_might_encounter.html"
   - title: 管理适用于 VMware vSphere 设备的 SnapCenter 插件
     entries:
-    - title: 重新启动 VMware vSphere Web Client 服务
+    - title: 重新启动VMware vSphere客户端服务
       url: "/scpivs44_restart_the_vmware_vsphere_web_client_service.html"
     - title: 访问维护控制台
       url: "/scpivs44_access_the_maintenance_console.html"
@@ -231,6 +238,8 @@ sidebar:
       url: "/scpivs44_rest_api_workflows__modify_built-in_schedules.html"
     - title: REST API ，用于将停滞的作业标记为失败
       url: "/scpivs44_rest_apis_fail_stuck_jobs.html"
+    - title: 用于生成审核日志的REST API
+      url: "/scpivs48_rest_apis_audit_logs.html"
   - title: 升级
     entries:
     - title: 从适用于 VMware vSphere 的 SnapCenter 插件的早期版本升级
@@ -246,7 +255,7 @@ homepage:
   - title: 入门
     links:
     - title: 发行说明
-      url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2883356
+      url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2885659
     - title: 了解 SCV
       url: "/scpivs44_concepts_overview.html"
     - title: 部署要求

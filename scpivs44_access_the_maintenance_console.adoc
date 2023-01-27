@@ -20,10 +20,7 @@ summary: 您可以使用适用于 VMware vSphere 的 SnapCenter 插件的维护�
 在停止并重新启动适用于 VMware vSphere 的 SnapCenter 插件服务之前，您应暂停所有计划。
 
 .关于此任务
-* 对于适用于VMware vSphere的SnapCenter 插件4.6及更早版本、默认值为"maint"作为用户名、而"admin123"作为密码、用于登录到适用于VMware vSphere的SnapCenter 插件的维护控制台。
-+
-从适用于VMware vSphere的SnapCenter 插件4.6P1开始、您必须在首次安装适用于VMware vSphere的SnapCenter 插件时指定密码。如果从4.6或更早版本升级到4.6P1或更高版本、则会接受更早的默认密码。
-
+* 在适用于VMware vSphere的SnapCenter 插件4.6P1中、您必须在首次安装适用于VMware vSphere的SnapCenter 插件时指定密码。如果从4.6或更早版本升级到4.6P1或更高版本、则会接受更早的默认密码。
 * 在启用远程诊断时，您必须为 diag 用户设置密码。
 +
 要获取 root 用户执行命令的权限，请使用 sudo <command> 。
@@ -31,13 +28,10 @@ summary: 您可以使用适用于 VMware vSphere 的 SnapCenter 插件的维护�
 
 
 .步骤
-. 从 VMware vSphere Web Client 中，选择 SnapCenter VMware 插件所在的虚拟机。
+. 从VMware vSphere客户端中、选择SnapCenter VMware插件所在的虚拟机。
 . 右键单击虚拟机，然后在虚拟设备的 * 摘要 * 选项卡上单击 * 启动远程控制台 * 以打开维护控制台窗口。
 +
-SnapCenter VMware 插件维护控制台的登录默认设置如下：
-
-+
-用户名： `m熟悉` 密码： `admin123`
+使用默认维护控制台用户名登录 `maint` 和您在安装时设置的密码。
 
 +
 image:scpivs44_image11.png["错误：缺少图形映像"]

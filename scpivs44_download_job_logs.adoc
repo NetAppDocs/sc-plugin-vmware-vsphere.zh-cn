@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_download_job_logs.html 
 keywords:  
-summary: 您可以从 SnapCenter VMware vSphere Web Client 的信息板上的作业监控选项卡下载作业日志。 
+summary: 您可以从SnapCenter VMware vSphere客户端的信息板上的作业监控选项卡下载作业日志。 
 ---
 = 下载作业日志
 :hardbreaks:
@@ -14,18 +14,15 @@ summary: 您可以从 SnapCenter VMware vSphere Web Client 的信息板上的作
 
 
 [role="lead"]
-您可以从 SnapCenter VMware vSphere Web Client 的信息板上的作业监控选项卡下载作业日志。
+您可以从SnapCenter VMware vSphere客户端的信息板上的作业监控选项卡下载作业日志。
 
-如果在使用 VMware vSphere Web Client 时遇到意外行为，您可以使用日志文件确定发生原因并解决此问题。
+如果在使用VMware vSphere客户端时遇到意外行为、您可以使用日志文件确定发生原因 并解决问题。
 
 
 NOTE: 保留作业日志的默认值为 30 天；保留作业的默认值为 90 天。早于所配置保留时间的作业日志和作业每六小时清除一次。您可以使用配置`作业/清理` REST API来修改作业和作业日志的保留时间。您不能修改清除计划。
 
 .步骤
-. 在 vSphere Web Client 的左侧导航器窗格中，单击 * 信息板 * ，选择一个 vCenter Server ，然后单击 * 作业监控器 * 选项卡。
-+
-image:scpivs44_image9.png["错误：缺少图形映像"]
-
+. 在vSphere客户端的左侧导航器窗格中、单击*信息板*、选择一个vCenter Server、然后单击信息板窗格中的*作业监控器*选项卡。
 . 单击 image:scpivs44_image37.png["错误：缺少图形映像"] 作业监控器标题栏中的下载图标。
 +
 您可能需要向右滚动才能看到图标。

@@ -97,7 +97,7 @@ VM 的还原操作将取消注册原始 VM ，从备份 Snapshot 副本还原 VM
 
 
 .步骤
-. 在 VMware vSphere Web Client 图形用户界面中，单击工具栏中的 * 菜单 * ，然后从下拉列表中选择 * 虚拟机和模板 * 。
+. 在VMware vSphere客户端图形用户界面中、单击工具栏中的*菜单*、然后从下拉列表中选择*虚拟机和模板*。
 +
 
 NOTE: 如果要还原已删除的虚拟机，则添加到 SnapCenter VMware 插件的 Storage VM 凭据必须为 `vsadmin` 或与 `vsadmin` 具有所有相同权限的用户帐户。主机必须位于运行 ONTAP 8.2.2 或更高版本的存储系统上。

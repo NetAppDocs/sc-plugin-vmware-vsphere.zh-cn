@@ -1,0 +1,43 @@
+---
+sidebar: sidebar 
+permalink: scpivs48_rest_apis_audit_logs.html 
+keywords:  
+summary: 用于生成审核日志的REST API 
+---
+= 用于生成审核日志的REST API
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以从Swagger REST API以及SCV插件用户界面收集审核日志详细信息。
+
+下面提供了Swagger REST API：
+
+. 获取4.1/audit/logs：获取所有日志的审核数据
+. 获取4.1/audit/logs/｛filename｝：获取特定日志文件的审核数据
+. 4.1/audit/verify之后：触发审核日志验证。
+
+
+要使用适用于VMware vSphere的SnapCenter 插件REST API为VMware vSphere客户端作业生成审核日志、您必须对VMware vSphere使用REST API调用。
+
+对于每个REST API、添加 `https://<server>:<port>/api` 在REST API的前面、形成一个完整的端点。
+
+使用作业部分中的以下 REST API 可获取有关作业的详细信息：
+
+|===
+| REST API | 注释 
+
+
+| `4.1/audit/logs` | 返回包含完整性数据的审核日志文件 
+
+
+| `4.1/audit/logs/{filename}` | 获取包含完整性数据的特定审核日志文件 
+
+
+| `4.1/audit/verify` | 触发审核验证 
+|===
