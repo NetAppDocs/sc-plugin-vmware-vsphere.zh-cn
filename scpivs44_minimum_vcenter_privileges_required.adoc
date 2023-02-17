@@ -26,4 +26,41 @@ System.Anonymous System.View System.Read Datastore.Rename Datastore.Move Datasto
 
 == 适用于 VMware vCenter 的 SnapCenter 插件所需的特权
 
-netSCC.Guest.RestoreFile netappSCC.Recover.MountUnMount netappSCC.Backup.DeleteBackupJob netappSCC.Configure.Configure.ConfigureStorageSystems.Delete netappSCC.View netappSCC.Recover.RecoverVM netappConfigure.Configure.StorageSystems.AddUpdate netappSCC.Backup.Backup.SnapUpNow netappnow.SnapSCC.SnapSCC.SnapSCC.SnapSCC.SnapSCC.SnapSCC.Reset.SnapSCC.Reset.Server.SnapSCC.SnapSCC.SnapSCC.Rest.SnapSCC.Reset.Rest.Snap
+|===
+
+
+| * 权限 * | *标签* 
+
+
+| netappSCC.Guest.RestoreFile | 子系统文件还原 
+
+
+| netappSCC.Recovery.MountUnMount | 挂载/卸载 
+
+
+| netappSCC.Backup.DeleteBackupJob | 删除资源组/备份 
+
+
+| netappSCC.Configure.ConfigureStorageSystems.Delete | 删除存储系统 
+
+
+| netappSCV视图 | 查看 
+
+
+| netappSCC.Recover.RecoverVM | 恢复VM 
+
+
+| netappSCC.Configure.ConfigureStorageSystems.AddUpdate | 添加/修改存储系统 
+
+
+| netappSCC.Backup.BackupNow | 立即备份 
+
+
+| netappSCC.Guest.Configure | 子系统配置 
+
+
+| netappSCC.Configure.ConfigureSnapCenterServer | 配置SnapCenter 服务器 
+
+
+| netappSCC.Backup.BackupScheduleed | 创建资源组 
+|===

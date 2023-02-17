@@ -13,6 +13,7 @@ summary: 您可以在vSphere客户端信息板上查看状态信息。状态信�
 :imagesdir: ./media/
 
 
+[role="lead"]
 您可以在vSphere客户端信息板上查看状态信息。状态信息每小时更新一次。
 
 .步骤

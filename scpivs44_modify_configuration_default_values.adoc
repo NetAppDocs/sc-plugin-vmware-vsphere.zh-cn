@@ -13,6 +13,7 @@ summary: '要提高操作效率，您可以修改 `sCBR.override` 配置文件�
 :imagesdir: ./media/
 
 
+[role="lead"]
 要提高操作效率，您可以修改 `sCBR.override` 配置文件以更改默认值。这些值控制备份期间创建或删除的 VMware 快照数量或备份脚本停止运行之前的时间等设置。
 
 适用于 VMware vSphere 的 SnapCenter 插件在支持基于 SnapCenter 应用程序的数据保护操作的环境中使用 `sCBR.override` 配置文件。如果此文件不存在，则必须从模板文件创建它。

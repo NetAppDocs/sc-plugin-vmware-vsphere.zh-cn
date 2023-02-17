@@ -13,6 +13,9 @@ summary: '您可以使用 `sCBR.override` 配置文件中列出的属性来更�
 :imagesdir: ./media/
 
 
+[role="lead"]
+您可以使用 `sCBR.override` 配置文件中列出的属性来更改默认值。
+
 * 默认情况下，模板使用哈希符号来注释配置属性。要使用属性修改配置值，必须删除 ` #` 字符。
 * 要使更改生效，您必须在适用于 VMware vSphere 的 SnapCenter 插件主机上重新启动此服务。
 

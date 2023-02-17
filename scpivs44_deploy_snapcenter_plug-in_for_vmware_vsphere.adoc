@@ -42,6 +42,7 @@ The OVA deployment is supported in VMware vCenter 7u1 and above.
 NOTE: 对于 IPv6 HTML Web 客户端，必须使用 Chrome 或 Firefox 。
 
 . 登录到 * VMware vCenter Single Sign-On* 页面。
+. 对于VMware vCenter 7.0.3及更高版本、请按照中的步骤进行操作 link:scpivs44_download_the_ova_open_virtual_appliance.html["下载Open Virtual Appliance (OVA)"^] 将证书导入到vCenter。
 . 在导航器窗格中，右键单击作为虚拟机的有效父对象的任何清单对象，例如数据中心，集群或主机，然后选择 * 部署 OVF 模板 * 以启动 VMware Deploy 向导。
 . 解压缩包含.ova文件的.tar文件到本地系统。在*选择OVF模板*页面上、指定的位置 `.ova` 已提取.tar文件夹中的文件。
 . 单击 * 下一步 * 。

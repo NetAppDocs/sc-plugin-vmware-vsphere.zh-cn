@@ -13,6 +13,7 @@ summary: 如果在处于链接模式的 vCenter 中停止 SnapCenter VMware 插�
 :imagesdir: ./media/
 
 
+[role="lead"]
 如果在处于链接模式的 vCenter 中停止 SnapCenter VMware 插件服务，则并非所有链接的 vCenter 都提供资源组，即使 SnapCenter VMware 插件服务正在其他链接的 vCenter 中运行也是如此。
 
 您必须手动取消注册 SnapCenter VMware 插件扩展。

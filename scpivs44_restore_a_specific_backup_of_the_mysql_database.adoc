@@ -24,7 +24,7 @@ link:scpivs44_manage_snapcenter_plug-in_for_vmware_vsphere.html#access-the-maint
 . 在主菜单中，输入选项 * ）应用程序配置 * 。
 . 在 Application Configuration Menu 中，输入选项 * ） mysql backup and restore* 。
 . 在 "MySQL 备份和还原配置 " 菜单中，输入选项 * ）列出 MySQL 备份 * ，然后记下要还原的备份。
-. 在 MySQL Backup and Restore Configuration Menu 中，输入选项 * 3 ） Restore MySQL backup* 。
+. 在"MySQL备份和还原配置"菜单中、输入选项*4)还原MySQL备份*。
 . 在提示 "Restore using the most recent backup" 时，输入 * 。
 . 在提示 "Backup to restore from" 时，输入备份名称，然后按 * 输入 * 。
 +

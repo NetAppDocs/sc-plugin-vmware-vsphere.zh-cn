@@ -13,6 +13,7 @@ summary: 部署 SnapCenter VMware 插件时， SSH 默认处于禁用状态。
 :imagesdir: ./media/
 
 
+[role="lead"]
 部署 SnapCenter VMware 插件时， SSH 默认处于禁用状态。
 
 .步骤

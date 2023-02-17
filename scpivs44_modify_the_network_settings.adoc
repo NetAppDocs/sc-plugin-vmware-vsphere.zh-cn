@@ -13,6 +13,7 @@ summary: 您可以修改在适用于 VMware vSphere 的 SnapCenter 插件中配�
 :imagesdir: ./media/
 
 
+[role="lead"]
 您可以修改在适用于 VMware vSphere 的 SnapCenter 插件中配置的网络设置。插件使用这些设置访问 vCenter 。
 
 .开始之前

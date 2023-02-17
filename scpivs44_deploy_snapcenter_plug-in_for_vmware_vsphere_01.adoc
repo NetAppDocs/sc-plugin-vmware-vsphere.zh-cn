@@ -13,13 +13,17 @@ summary:
 :imagesdir: ./media/
 
 
+[role="lead"]
+要使用 SnapCenter 功能保护虚拟机上的 VM ，数据存储库和应用程序一致的数据库，您必须部署适用于 VMware vSphere 的 SnapCenter 插件。
+
 . 在浏览器中，导航到 VMware vSphere vCenter 。
 +
 
 NOTE: 对于 IPv6 HTML Web 客户端，必须使用 Chrome 或 Firefox 。
 
 . 登录到* VMware vCenter单点登录页面*。
-. 右键单击作为虚拟机的有效父对象的任何清单对象，例如数据中心，文件夹，集群或主机，然后选择 * 部署 OVF 模板 * 以启动向导。
+. 对于VMware vCenter 7.0.3及更高版本、请按照中的步骤进行操作 link:scpivs44_download_the_ova_open_virtual_appliance.html["下载Open Virtual Appliance (OVA)"^] 将证书导入到vCenter。
+. 在导航窗格中、右键单击作为虚拟机有效父对象的任何清单对象、例如数据中心、文件夹、集群或主机、然后选择*部署OVF模板*以启动VMware Deploy向导。
 . 在 * 选择 OVF 模板 * 页面上，指定 ` .ova` 文件的位置（如下表所示），然后单击 * 下一步 * 。
 +
 |===

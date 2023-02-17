@@ -13,6 +13,7 @@ summary: 如果您不再需要 SnapCenter 数据保护功能，则必须更改 S
 :imagesdir: ./media/
 
 
+[role="lead"]
 如果您不再需要 SnapCenter 数据保护功能，则必须更改 SnapCenter VMware 插件的配置。例如，如果在测试环境中部署了此插件，则可能需要在该环境中禁用 SnapCenter 功能，并在生产环境中启用这些功能。
 
 .开始之前

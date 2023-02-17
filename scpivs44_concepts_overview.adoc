@@ -11,9 +11,13 @@ summary: 适用于 VMware vSphere 的 SnapCenter 插件是一种独立虚拟设�
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
+:firstname: [.lead]
+:author: [.lead]
+:authorinitials: [
+:authors: [.lead]
+:revnumber: 
+:revdate: and supports data protection services for SnapCenter application-based plug-ins. This document describes how to deploy and use SnapCenter Plug-in for VMware vSphere and includes quick start information.
 
-
-适用于 VMware vSphere 的 SnapCenter 插件是一种独立虚拟设备（开放式虚拟设备格式），可为 VM 和数据存储库提供数据保护服务，并支持为基于 SnapCenter 应用程序的插件提供数据保护服务。本文档介绍如何部署和使用适用于 VMware vSphere 的 SnapCenter 插件，并提供了快速入门信息。
 
 适用于 VMware vSphere 的 SnapCenter 插件部署为基于 Linux 的虚拟设备。
 
@@ -65,7 +69,7 @@ NFS 环境中的大多数还原操作都使用原生 ONTAP 功能（例如单个
 
 除了这些主要功能之外，适用于 VMware vSphere 的 SnapCenter 插件还支持 iSCSI ，光纤通道， FCoE ，基于 NFS 3.0 和 4.1 的 VMDK 以及基于 VMFS 5.0 和 6.0 的 VMDK 。
 
-有关受支持版本的最新信息，请参见 https://imt.netapp.com/matrix/imt.jsp?components=105164;&solution=1517&isHWU&src=IMT["NetApp 互操作性表工具"^] IMT
+有关受支持版本的最新信息，请参见 https://imt.netapp.com/matrix/imt.jsp?components=108380;&solution=1257&isHWU&src=IMT["NetApp 互操作性表工具"^] IMT
 
 有关 NFS 协议和 ESXi 的信息，请参见 VMware 提供的 vSphere 存储文档。
 

@@ -50,19 +50,19 @@ image:scpivs44_image11.png["错误：缺少图形映像"]
 +
 ** 选项 1 ：应用程序配置
 +
-启动或停止 SnapCenter VMware 插件服务更改登录用户名或密码更改 MySQL 密码配置 MySQL 备份列表 MySQL 备份还原 MySQL 备份
+1)显示适用于VMware vSphere的SnapCenter 插件摘要2)启动适用于VMware vSphere服务的SnapCenter 插件3)停止适用于VMware vSphere服务的SnapCenter 插件4)更改用户名和密码以登录适用于VMware vSphere的SnapCenter 插件UI 5)更改MySQL密码6) MySQL备份和还原
 
 ** 选项 2 ：系统配置
 +
-重新启动或关闭虚拟机更改 " 熟悉 " 用户密码更改时区更改 NTP 服务器启用 / 禁用 SSH 访问增加 jail 磁盘大小（ /jail ）升级安装 VMware Tools
+1)重新启动虚拟机2)关闭虚拟机3)更改"熟悉"用户密码4)更改时区5)更改NTP服务器6)禁用SSH访问7)增加Jail磁盘大小(/jail) 8)升级9)安装VMware Tools
 
 ** 选项 3 ：网络配置
 +
-显示或更改 IP 地址设置显示或更改域名搜索设置显示或更改静态路由提交更改 Ping 主机
+1)显示IP地址设置2)更改IP地址设置3)显示域名搜索设置4)更改域名搜索设置5)显示静态路由6)更改静态路由7)提交更改8)对主机执行Ping操作
 
 ** 选项 4 ：支持和诊断
 +
-生成支持包访问诊断 Shell 启用远程诊断访问生成核心转储包
+1)生成支持包2)访问诊断Shell 3)启用远程诊断访问4)生成核心转储包
 
 
 
