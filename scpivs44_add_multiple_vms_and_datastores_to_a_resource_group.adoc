@@ -14,7 +14,7 @@ summary: 您可以使用SnapCenter VMware vSphere客户端的编辑资源组向�
 
 
 [role="lead"]
-您可以使用SnapCenter VMware vSphere客户端的编辑资源组向导向现有资源组添加多个资源。
+使用SnapCenter VMware vSphere客户端编辑资源组向导、您可以向现有资源组添加多个资源。
 
 资源组可以包含以下内容之一：
 
@@ -34,7 +34,7 @@ NOTE: 不支持跨多个VVol数据存储库的VVol虚拟机、因为SnapCenter �
 . 在 * 资源 * 页面上，执行以下操作：
 +
 .. 在 Datastores 字段中，导航到要添加的 VM 或数据存储库。
-.. 在 Available entities 列表中，选择要添加到资源组的一个或多个 VM 或数据存储库，然后单击 * > * 将所选内容移动到 Selected entities 列表。您可以通过单击 * > * 来移动所有可用实体。
+.. 在 Available entities 列表中，选择要添加到资源组的一个或多个 VM 或数据存储库，然后单击 * > * 将所选内容移动到 Selected entities 列表。单击*>*以移动所有可用实体。
 +
 默认情况下，可用实体列表显示 Datacenter 对象。您可以单击某个数据存储库以查看该数据存储库中的 VM 并将其添加到资源组中。
 
