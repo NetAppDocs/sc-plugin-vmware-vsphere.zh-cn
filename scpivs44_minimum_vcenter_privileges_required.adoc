@@ -20,7 +20,7 @@ summary: 在开始部署适用于 VMware vSphere 的 SnapCenter 插件之前，�
 
 == vCenter 管理员角色所需的特权
 
-System.Anonymous System.View System.Read Datastore.Rename Datastore.Move Datastore.Browse Datastore.FileManagement Datastore.AllocateSpace Network.Assign Host.Config.Storage Host.Config.AdvancedConfig Host.Config.SettingHost.Local.CreateVM Host.Local.ReconfigurVM Host.Local.DeleteVM Host.Remove.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Storage.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Storage Machine.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Storage
+数据存储库.AllocateSpace数据存储库。浏览数据存储库.Delete数据存储库.FileManagement数据存储库.Move数据存储库.重 命名扩展.Register扩展.Unregistrate扩展.Update Host.Config.AdvancedConfig Host.Config.Settings Host.Config.Storage Host.Local.CreateVM Host.Local.DeleteVM Host.Local.RecomedVirtual Machine Network.VirtualMachine.VirtualDisk.Unigrate.Unigrate.Unigrate.VirtualMachine.Unigrate.VirtualMachine.Unigrate.VirtualMachine.Unigrate.VirtualMachine.Unigrate.VirtualMachine.Unigrate.VirtualMachine.Unigrate.VirtualMachine.Unigrate.VirtualMachine.Unigrate.VirtualMachine.Unigrate.VirtualMachine.Resety.VirtualMachine.Unigrate.VirtualMachine.Res.Res.Resete.Disk.Res.Res.VirtualMachine.Disk.Unigrate.VirtualMachine.Unigrate.VirtualMachine.Unigrate.VirtualMachine.Unigrate.VirtualMachine.Disk.Res.VirtualMachine.Unigrate.VirtualMachine.Unigrate.VirtualMachine.Un
 
 
 

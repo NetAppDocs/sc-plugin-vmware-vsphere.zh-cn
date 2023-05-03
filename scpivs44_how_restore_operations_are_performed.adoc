@@ -69,4 +69,4 @@ NOTE: 在VVol容器重新平衡之后、您无法还原VVol虚拟机。
 
 IMPORTANT: 在还原操作期间，在选择控制器… 上调用预还原时，可能会遇到错误 `Host unresolved volumes is null` or `exception 。将克隆的 LUN 挂载为数据存储库时出错…` 如果 SnapCenter VMware 插件尝试重新对克隆签名，则会发生这种情况。由于 VMware 的限制， SnapCenter VMware 插件无法控制高级 ESXi 配置中的自动重新签名值。
 
-有关此错误的详细信息，请参见 ｛ link-for-underscores ｝ ｛ 知识库文章： SCV 克隆或还原失败，并显示错误 " 主机未解析的卷为空^ 。
+请参见 https://kb.netapp.com/mgmt/SnapCenter/SCV_clone_or_restores_fail_with_error_'Host_Unresolved_volumes_is_null'#["知识库文章：SCV克隆或还原失败、并显示错误"主机未解析的卷为空"^] 有关此错误的详细信息、请参见。

@@ -129,7 +129,6 @@
   <block id="f5843b30a2a766ab4eace2681fcbee4a" category="cell">还原操作</block>
   <block id="764c22e450dbc5e74f71923d5157420e" category="paragraph">子系统文件还原操作可在 NFS 和 VMFS 环境中使用克隆和挂载操作（而不是 Storage VMotion ）来执行。</block>
   <block id="d926b139950371ea24c296bdd377c68f" category="admonition">在还原操作期间，在选择控制器… 上调用预还原时，可能会遇到错误 `Host unresolved volumes is null` or `exception 。将克隆的 LUN 挂载为数据存储库时出错…` 如果 SnapCenter VMware 插件尝试重新对克隆签名，则会发生这种情况。由于 VMware 的限制， SnapCenter VMware 插件无法控制高级 ESXi 配置中的自动重新签名值。</block>
-  <block id="749560c83bd9672bf5dd0ec151afa4bf" category="paragraph">有关此错误的详细信息，请参见 ｛ link-for-underscores ｝ ｛ 知识库文章： SCV 克隆或还原失败，并显示错误 " 主机未解析的卷为空^ 。</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法律声明</block>
   <block id="d3520107017d5a966a91cb89b0a1057f" category="inline-link-macro">部署规划和要求</block>
   <block id="6a9e01d968ae5eb6da7525d4e8f4812f" category="paragraph">开始之前，请参见 <block ref="a00337a9991b14e4173adaeb83b5a3ec" category="inline-link-macro-rx"></block>。</block>
@@ -1453,7 +1452,6 @@
   <block id="f87889e78c8188fffcbd96ceaef56759" category="sidebar">保护 VM ， VMDK 和数据存储库</block>
   <block id="222e11fb018a824c05f5fc6a922f5240" category="sidebar">保护您的数据</block>
   <block id="13f1397303dbc6596a7d0adff2836250" category="sidebar">使用 REST API</block>
-  <block id="26ad26eacebffe3e8571ecf8c6cc3eaf" category="sidebar">从基于 Windows 的 SCV 迁移</block>
   <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">博客社区</block>
   <block id="8a49edffe2e22d8746e8c1676b54b1e5" category="sidebar">NetApp 博客— SCV</block>
   <block id="f62203a113eda99708c4011593033d16" category="sidebar">NetApp 社区— SCV</block>
@@ -1581,7 +1579,6 @@
   <block id="b148e71859cffdb60779d0fd79307d95" category="summary">在开始部署适用于 VMware vSphere 的 SnapCenter 插件之前，您应确保具有所需的最低 vCenter 特权。</block>
   <block id="e49b2704cb3fef8c492858dfc3f6dbce" category="doc">所需的最低 vCenter 权限</block>
   <block id="370cf061cf511b1663901c8a1fa77c6f" category="section-title">vCenter 管理员角色所需的特权</block>
-  <block id="98b6d2abbb9e53348f4ee8d871b00548" category="paragraph">System.Anonymous System.View System.Read Datastore.Rename Datastore.Move Datastore.Browse Datastore.FileManagement Datastore.AllocateSpace Network.Assign Host.Config.Storage Host.Config.AdvancedConfig Host.Config.SettingHost.Local.CreateVM Host.Local.ReconfigurVM Host.Local.DeleteVM Host.Remove.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Storage.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Storage Machine.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Alone.Storage</block>
   <block id="84ecd316e231a4baee8cc1858eaf3625" category="section-title">适用于 VMware vCenter 的 SnapCenter 插件所需的特权</block>
   <block id="49faef39fd8cc416975b581514fff5a9" category="paragraph">以下工作流图显示了必须执行备份操作的顺序：</block>
   <block id="73934ea1f6162165f9e34a06fb1999b6" category="section-title">使用作业部分中的以下 REST API 可获取有关作业的详细信息：</block>
@@ -2027,4 +2024,7 @@
   <block id="28f971e28dfc95cd1f45e3f3e43cb5ae" category="list-text">一次安装一个证书。</block>
   <block id="cf76c520da4a702698c81207090e0cc9" category="list-text">这些证书将添加到*可信根证书*下的面板中。安装证书后、可以验证并部署OVA。</block>
   <block id="6c0ad8767c3f6938eed064d72ff1e8e3" category="cell">显示有关 SnapCenter VMware 插件管理的 VM 和数据存储库在配置的天数内的保护状态的概述信息。默认值为 7 天。要修改属性文件中的值，请参见 <block ref="716011655678aa6d92cdd15196f612ff" category="inline-link-macro-rx"></block>。单击主保护图表上的一个部分 / 状态，可在 * 报告 * 选项卡上查看具有该状态的 VM 或数据存储库列表。受保护 VM 和数据存储库的 VM 或数据存储库保护状态报告可显示在配置的天数内备份的 VM 或数据存储库的名称，最新的 Snapshot 副本名称以及最新备份运行的开始和结束时间。未受保护的 VM 或数据存储库的 VM 或数据存储库保护状态报告显示在配置的天数内没有任何成功备份的 VM 或数据存储库的名称。您可以下载 HTML 或 CSV 格式的报告表。您还可以下载所有作业（而不仅仅是报告中的作业）的作业监控器作业日志。刷新插件缓存后，此报告每小时刷新一次。因此，此报告可能不会显示最近备份的 VM 或数据存储库。</block>
+  <block id="db5fdb9b050a01b11abea23e40b9585d" category="inline-link">知识库文章：SCV克隆或还原失败、并显示错误"主机未解析的卷为空</block>
+  <block id="ecb770a7a8cc6bd835e08ae2f656b56b" category="paragraph">请参见<block ref="1077fe6ba26e5db8ea58ede2a1d4f949" category="inline-link-rx"></block> 有关此错误的详细信息、请参见。</block>
+  <block id="02794ea4bb0d5fb663080c701c897f97" category="paragraph">数据存储库.AllocateSpace数据存储库。浏览数据存储库.Delete数据存储库.FileManagement数据存储库.Move数据存储库.重 命名扩展.Register扩展.Unregistrate扩展.Update Host.Config.AdvancedConfig Host.Config.Settings Host.Config.Storage Host.Local.CreateVM Host.Local.DeleteVM Host.Local.RecomedVirtual Machine Network.VirtualMachine.VirtualDisk.Unigrate.Unigrate.Unigrate.VirtualMachine.Unigrate.VirtualMachine.Unigrate.VirtualMachine.Unigrate.VirtualMachine.Unigrate.VirtualMachine.Unigrate.VirtualMachine.Unigrate.VirtualMachine.Unigrate.VirtualMachine.Unigrate.VirtualMachine.Unigrate.VirtualMachine.Resety.VirtualMachine.Unigrate.VirtualMachine.Res.Res.Resete.Disk.Res.Res.VirtualMachine.Disk.Unigrate.VirtualMachine.Unigrate.VirtualMachine.Unigrate.VirtualMachine.Unigrate.VirtualMachine.Disk.Res.VirtualMachine.Unigrate.VirtualMachine.Unigrate.VirtualMachine.Un</block>
 </blocks>
