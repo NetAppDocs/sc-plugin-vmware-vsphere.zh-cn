@@ -25,7 +25,7 @@ SnapCenter VMware 插件包括一个 MySQL 数据库（也称为 NSM 数据库�
 . 从VMware vSphere客户端中、选择SnapCenter VMware插件所在的虚拟机。
 . 右键单击虚拟机，然后在虚拟设备的 * 摘要 * 选项卡上单击 * 启动远程控制台 * 或启动 Web 控制台 * 以打开维护控制台窗口。
 +
-image:scpivs44_image21.png["错误：缺少图形映像"]
+image:scpivs44_image21.png["维护控制台窗口"]
 
 . 在主菜单中，输入选项 * ）应用程序配置。 *
 . 在 Application Configuration Menu 中，输入选项 * 。 6 ） MySQL 备份和还原。 *

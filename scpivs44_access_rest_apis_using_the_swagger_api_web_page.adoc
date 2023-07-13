@@ -27,7 +27,7 @@ NOTE: 此插件仅支持用于与第三方应用程序集成的 REST API ，不�
 .步骤
 . 在浏览器中，输入 URL 以访问插件 Swagger 网页：
 +
-`https://<appliance_IP_address_or_host_name>:8144/api/swagger-ui.html`
+`https://<SCV_IP>:8144/api/swagger-ui/index.html`
 
 +
 
@@ -38,7 +38,8 @@ IMPORTANT: 请勿在 REST API URL 中使用以下字符： + ，。， % 和 & �
 访问 SnapCenter VMware 插件 REST API ：
 
 +
-`https://192.0.2.82:8144/api/swagger-ui.html``https://OVAhost:8144/api/swagger-ui.html`
+`https://<SCV_IP>:8144/api/swagger-ui/index.html`
+`https://OVAhost:8144/api/swagger-ui/index.html`
 
 +
 登录使用vCenter身份验证机制生成令牌。

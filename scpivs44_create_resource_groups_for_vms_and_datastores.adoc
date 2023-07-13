@@ -96,14 +96,15 @@ SnapCenter 会在您创建资源组时执行兼容性检查。
 
 
 .步骤
-. 在选择控制器插件的左侧导航器窗格中、单击*资源组*、然后单击 image:scpivs44_image6.png["错误：缺少图形映像"] * 创建 * 以启动向导。
+. 在选择控制阀插件的左侧导航器窗格中，单击*资源组*，然后选择*创建*以启动向导。
 
 
 这是创建资源组的最简单方法。但是，您也可以通过执行以下操作之一来创建包含一个资源的资源组：
 
-+*要为一个VM创建资源组、请单击*菜单*>*主机和集群*、然后右键单击一个VM、选择NetApp SnapCenter 、然后单击 image:scpivs44_image6.png["错误：缺少图形映像"] * 创建资源组 * 。*要为一个数据存储库创建资源组、请单击*菜单*>*主机和集群*、然后右键单击一个数据存储库、选择* NetApp SnapCenter *、然后单击 image:scpivs44_image6.png["错误：缺少图形映像"] * 创建资源组 * 。
-
-. 在向导的 * 常规信息和通知 * 页面上，执行以下操作：
+* 要为一个VM创建资源组，请单击*菜单*>*主机和群集*，然后右键单击一个VM，选择NetApp SnapCenter，然后选择*创建资源组*。
+* 要为一个数据存储库创建资源组，请单击*菜单*>*主机和群集*，然后右键单击某个数据存储库，选择* NetApp SnapCenter，然后选择*创建资源组*。
++
+.. 在向导的 * 常规信息和通知 * 页面上，执行以下操作：
 +
 |===
 | 对于此字段… | 执行此操作… 
@@ -141,13 +142,13 @@ NOTE: 系统会为附加到资源组的每个策略创建`_recent`备份。因�
 | 自定义 Snapshot 格式  a| 
 如果要对 Snapshot 副本名称使用自定义格式，请选中此框并输入名称格式。
 
-** 默认情况下，此功能处于禁用状态。
-** 默认 Snapshot 副本名称使用格式 ` <ResourceGroup>_<Date-timestamp>` 但是，您可以使用变量 $ResourceGroup ， $Policy ， $hostname ， $scheduleType 和 $CustomText 指定自定义格式。使用自定义名称字段中的下拉列表选择要使用的变量及其使用顺序。如果选择 $CustomText ，则名称格式为 ` <CustomName>_<Date-timestamp>` 。在提供的附加框中输入自定义文本。注意：如果您还选择了 "_recent " 后缀，则必须确保自定义 Snapshot 名称在数据存储库中是唯一的，因此，您应在此名称中添加 $ResourceGroup 和 $Policy 变量。
-** 名称中特殊字符的特殊字符，请遵循为名称字段提供的相同准则。
+*** 默认情况下，此功能处于禁用状态。
+*** 默认 Snapshot 副本名称使用格式 ` <ResourceGroup>_<Date-timestamp>` 但是，您可以使用变量 $ResourceGroup ， $Policy ， $hostname ， $scheduleType 和 $CustomText 指定自定义格式。使用自定义名称字段中的下拉列表选择要使用的变量及其使用顺序。如果选择 $CustomText ，则名称格式为 ` <CustomName>_<Date-timestamp>` 。在提供的附加框中输入自定义文本。注意：如果您还选择了 "_recent " 后缀，则必须确保自定义 Snapshot 名称在数据存储库中是唯一的，因此，您应在此名称中添加 $ResourceGroup 和 $Policy 变量。
+*** 名称中特殊字符的特殊字符，请遵循为名称字段提供的相同准则。
 
 
 |===
-. 在 * 资源 * 页面上，执行以下操作：
+.. 在 * 资源 * 页面上，执行以下操作：
 +
 |===
 | 对于此字段… | 执行此操作… 
@@ -170,17 +171,17 @@ NOTE: 系统会为附加到资源组的每个策略创建`_recent`备份。因�
 +
 要从备份中全局排除一个或多个数据存储库、您必须在`sCBR.override`配置文件的`global.ds.excludation.pattern`属性中指定数据存储库名称。请参见 <<scpivs44_properties_you_can_override.adoc#Properties you can override,可以覆盖的属性>>。
 
-. 在 * 生成磁盘 * 页面上，为多个数据存储库中具有多个 VMDK 的 VM 选择一个选项：
+.. 在 * 生成磁盘 * 页面上，为多个数据存储库中具有多个 VMDK 的 VM 选择一个选项：
 +
-** 始终排除所有跨区数据存储库（这是数据存储库的默认设置）。
-** 始终包括所有跨区数据存储库（这是 VM 的默认设置）。
-** 手动选择要包括的跨区数据存储库
+*** 始终排除所有跨区数据存储库（这是数据存储库的默认设置）。
+*** 始终包括所有跨区数据存储库（这是 VM 的默认设置）。
+*** 手动选择要包括的跨区数据存储库
 +
 FlexGroup 和 VVOL 数据存储库不支持跨接 VM 。
 
 
 
-. 在 * 策略 * 页面上，选择或创建一个或多个备份策略，如下表所示：
+.. 在 * 策略 * 页面上，选择或创建一个或多个备份策略，如下表所示：
 +
 |===
 | 使用… | 执行此操作… 
@@ -190,17 +191,17 @@ FlexGroup 和 VVOL 数据存储库不支持跨接 VM 。
 
 
 | 新策略  a| 
-.. 单击 image:scpivs44_image6.png["错误：缺少图形映像"] * 创建 * 。
-.. 完成新建备份策略向导以返回到创建资源组向导。
+... 选择 * 创建 * 。
+... 完成新建备份策略向导以返回到创建资源组向导。
 
 
 |===
 +
 在链接模式下，此列表包含所有链接 vCenter 中的策略。您必须选择与资源组位于同一 vCenter 上的策略。
 
-. 在 * 计划 * 页面上，为每个选定策略配置备份计划。
+.. 在 * 计划 * 页面上，为每个选定策略配置备份计划。
 +
-image:scpivs44_image18.png["错误：缺少图形映像"]
+image:scpivs44_image18.png["创建资源组窗口"]
 
 +
 在起始小时字段中，输入一个非零的日期和时间。日期格式必须为 `day/month/year` 。
@@ -214,7 +215,7 @@ image:scpivs44_image18.png["错误：缺少图形映像"]
 +
 link:scpivs44_modify_the_time_zones.html["修改备份的时区"]。
 
-. 查看摘要，然后单击 * 完成 * 。
+.. 查看摘要，然后单击 * 完成 * 。
 +
 在单击 * 完成 * 之前，您可以返回到向导中的任何页面并更改信息。
 
@@ -224,6 +225,8 @@ link:scpivs44_modify_the_time_zones.html["修改备份的时区"]。
 +
 
 NOTE: 如果备份中任何 VM 的暂停操作失败，则备份将标记为不是 VM 一致，即使选定策略已选择 VM 一致性也是如此。在这种情况下，某些虚拟机可能已成功暂停。
+
+
 
 
 
@@ -241,7 +244,7 @@ NOTE: 如果备份中任何 VM 的暂停操作失败，则备份将标记为不�
 SnapCenter 4.x 版支持 ONTAP 8.3.1 及更高版本。
 
 +
-适用于 VMware vSphere 的 SnapCenter 插件不会对所有 ONTAP 版本执行兼容性检查；仅对 ONTAP 8.2.1 及更早版本执行兼容性检查。因此，请始终参见 https://imt.netapp.com/matrix/imt.jsp?components=108380;&solution=1257&isHWU&src=IMT["NetApp 互操作性表工具（ IMT ）"^] 有关 SnapCenter 支持的最新信息。
+适用于 VMware vSphere 的 SnapCenter 插件不会对所有 ONTAP 版本执行兼容性检查；仅对 ONTAP 8.2.1 及更早版本执行兼容性检查。因此，请始终参见 https://imt.netapp.com/matrix/imt.jsp?components=112310;&solution=1517&isHWU&src=IMT["NetApp 互操作性表工具（ IMT ）"^] 有关 SnapCenter 支持的最新信息。
 
 * 共享 PCI 设备已连接到 VM 。
 * 未在 SnapCenter 中配置首选 IP 。

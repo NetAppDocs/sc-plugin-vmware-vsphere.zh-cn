@@ -55,4 +55,4 @@ vSphere 管理员通过执行以下操作来设置 vCenter Server RBAC ：
 
 下图概述了 RBAC 权限（ vCenter 和 ONTAP ）的验证工作流：
 
-image:scpivs44_image1.png["错误：缺少图形映像"]
+image:scpivs44_image1.png["RBAC 权限的验证工作流"]

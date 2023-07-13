@@ -30,4 +30,4 @@ summary: 所有备份操作都对资源组执行，该资源组可以包含一�
 
 以下工作流图显示了必须执行备份操作的顺序：
 
-image:scpivs44_image13.png["错误：缺少图形映像"]
+image:scpivs44_image13.png["备份操作工作流"]

@@ -39,7 +39,7 @@ summary: 在使用适用于 VMware vSphere 的 SnapCenter 插件备份 VM 和数
 
 .步骤
 . 在选择控制器插件的左侧导航器窗格中、单击*策略*。
-. 在 * 策略 * 页面上，单击 image:scpivs44_image6.png["错误：缺少图形映像"] * 创建 * 以启动向导。
+. 在*Policies*页上，选择*Cree*以启动向导。
 . 在 * 新建备份策略 * 页面上，选择要使用此策略的 vCenter Server ，然后输入策略名称和问题描述。
 +
 ** 链接模式

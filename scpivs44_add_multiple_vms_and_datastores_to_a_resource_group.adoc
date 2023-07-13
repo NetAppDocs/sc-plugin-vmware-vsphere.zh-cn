@@ -30,7 +30,7 @@ summary: 您可以使用SnapCenter VMware vSphere客户端的编辑资源组向�
 NOTE: 不支持跨多个VVol数据存储库的VVol虚拟机、因为SnapCenter 仅备份选定主VVol数据存储库中的VVol。
 
 .步骤
-. 在选择控制器插件的左侧导航器窗格中、单击*资源组*、选择一个资源组、然后单击 image:scpivs44_image39.png["错误：缺少图形映像"] * 编辑资源组 * 以启动向导。
+. 在选择控制器插件的左侧导航器窗格中、单击*资源组*、选择一个资源组、然后单击 image:scpivs44_image39.png["编辑图标"] * 编辑资源组 * 以启动向导。
 . 在 * 资源 * 页面上，执行以下操作：
 +
 .. 在 Datastores 字段中，导航到要添加的 VM 或数据存储库。

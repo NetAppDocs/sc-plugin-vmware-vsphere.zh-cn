@@ -43,7 +43,7 @@ SnapCenter VMware 插件可对直接连接的 Storage VM 和存储集群中的 S
 NOTE: 如果您使用SnapCenter VMware插件在VMDK上支持基于应用程序的备份、则必须使用SnapCenter 图形用户界面输入存储身份验证详细信息并注册存储系统。
 
 * 对于处于链接模式的 vCenter ，您必须分别向每个 vCenter 添加存储系统。
-* Storage VM 的名称必须解析为管理 LIF 。
+* 如果要添加SVM、则Storage VM的名称必须解析为管理LIF。
 +
 如果您在 SnapCenter 中为 Storage VM 名称添加了 Etc 主机条目，则必须验证它们是否也可从虚拟设备解析。
 
@@ -55,7 +55,7 @@ NOTE: 如果您使用SnapCenter VMware插件在VMDK上支持基于应用程序�
 
 .步骤
 . 在vSphere客户端的左侧导航器窗格中、单击*存储系统*。
-. 在存储系统页面上，单击 image:scpivs44_image6.png["错误：缺少图形映像"] * 添加 * 。
+. 在存储系统页面上、选择*添加*选项。
 . 在 * 添加存储系统 * 向导中，输入下表列出的基本 Storage VM 或集群信息：
 +
 |===
@@ -71,10 +71,10 @@ NOTE: 如果您使用SnapCenter VMware插件在VMDK上支持基于应用程序�
 | 身份验证方法 | 选择Credentials或Certificate。支持两种类型的证书：- https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_configure_a_CA_signed_certificate_for_storage_system_authentication_with_SCV["CA签名证书"^]- https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_configure_a_self-signed_certificate_for_storage_system_authentication_with_SCV["自签名证书"^] 
 
 
-| Username | 如果选择凭据作为身份验证方法、则会显示此字段。输入用于登录到 Storage VM 的 ONTAP 用户名。 
+| Username | 如果选择凭据作为身份验证方法、则会显示此字段。输入用于登录到Storage VM或集群的ONTAP用户名。 
 
 
-| Password | 如果选择凭据作为身份验证方法、则会显示此字段。输入 Storage VM 登录密码。 
+| Password | 如果选择凭据作为身份验证方法、则会显示此字段。输入Storage VM或集群登录密码。 
 
 
 | 证书 | 如果选择证书作为身份验证方法、则会显示此字段。浏览以选择证书文件。 

@@ -29,10 +29,10 @@ IMPORTANT: 如果您使用 SnapCenter 图形用户界面为基于应用程序的
 
 .步骤
 . 在选择控制器插件的左侧导航器窗格中、单击*存储系统*。
-. 在 * 存储系统 * 页面上，选择要修改的 Storage VM ，然后单击 image:scpivs44_image25.png["错误：缺少图形映像"] * 编辑 * 。
+. 在*Storage Systems*页面上，选择要修改的Storage VM，然后选择*Edit*。
 . 在 * 编辑存储系统 * 窗口中，输入新值，然后单击 * 更新 * 以应用更改。
 +
-image:scpivs44_image43.png["错误：缺少图形映像"]
+image:scpivs44_image43.png["编辑存储系统窗口"]
 
 
 

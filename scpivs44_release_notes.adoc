@@ -14,4 +14,5 @@ summary: 发行说明提供了有关此版本的适用于 VMware vSphere 的 Sna
 
 
 [role="lead"]
-发行说明提供了有关此版本的适用于 VMware vSphere 的 SnapCenter 插件的重要信息，包括许可要求，已知问题，注意事项，限制， 以及任何文档更新或更正。有关详细信息，请参见 https://library.netapp.com/ecm/ecm_download_file/ECMLP2885659["适用于VMware vSphere的SnapCenter 插件4.8发行说明"^]
+发行说明提供了有关此版本的适用于 VMware vSphere 的 SnapCenter 插件的重要信息，包括许可要求，已知问题，注意事项，限制， 以及任何文档更新或更正。
+有关详细信息，请参见 https://library.netapp.com/ecm/ecm_download_file/ECMLP2886207["《适用于VMware vSphere 4.9的SnapCenter插件发行说明》"^]

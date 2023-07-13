@@ -15,10 +15,11 @@ summary: 您可以从适用于 VMware vSphere 的 SnapCenter 插件 GUI 生成�
 
 .开始之前
 [role="lead"]
-要登录到适用于 VMware vSphere 的 SnapCenter 插件管理 GUI ，您必须知道 IP 地址和登录凭据。
+要登录到适用于 VMware vSphere 的 SnapCenter 插件管理 GUI ，您必须知道 IP 地址和登录凭据。您还必须记下从维护控制台生成的MFA令牌。
 
 * 部署 SnapCenter VMware 插件时会显示此 IP 地址。
 * 使用在部署 SnapCenter VMware 插件期间提供的或稍后修改的登录凭据。
+* 使用维护控制台的系统配置选项生成6位MFA令牌。
 
 
 .步骤
@@ -28,7 +29,7 @@ summary: 您可以从适用于 VMware vSphere 的 SnapCenter 插件 GUI 生成�
 
 . 单击顶部工具栏中的设置图标。
 +
-image:scpivs44_image10.png["错误：缺少图形映像"]
+image:scpivs44_image10.png["适用于VMware vSphere的SnapCenter插件界面"]
 
 . 在 * 设置 * 页面的 * 支持 * 部分中，单击 * 生成支持 * 包。
 . 生成支持包后，单击提供的链接将此包下载到 NetApp 。

@@ -14,7 +14,7 @@ summary: 如果您使用的是适用于 VMware vSphere 的 SnapCenter 插件虚�
 
 
 
-NOTE: 只有VMware vCenter Server 7 Update 1及更高版本才支持升级到4号选择控制器4.8。对于版本7 Update 1之前的VMware vCenter Server、您应继续使用4号选择控制器4.7。在不受支持的VMware vCenter Server版本上、升级会造成中断。
+NOTE: 只有VMware vCenter Server 7 Update 1及更高版本才支持升级到4.9号选择控制阀。对于VMware vCenter Server 7 Update 1之前的版本、您应继续使用4.7号选择控制阀。在不受支持的VMware vCenter Server版本上、升级会造成中断。
 
 如果您使用的是适用于 VMware vSphere 的 SnapCenter 插件虚拟设备，则可以升级到更高版本。升级过程将取消注册现有插件、并部署一个仅与vSphere 7.0U1及更高版本兼容的插件。
 
@@ -52,7 +52,7 @@ NOTE: 不支持将网络配置从静态切换到 DHCP 。
 .. 导航回要升级的虚拟机，然后单击 * 摘要 * 选项卡。在 * 虚拟机硬件 * 窗格的 CD/DVD 字段中，此值应为 " 已断开连接 " 。
 .. 单击 CD/DVD 字段中的连接图标，然后选择 * 连接到数据存储库上的 CD/DVD 映像 * 。
 +
-image:scpivs44_image42.png["错误：缺少图形映像"]
+image:scpivs44_image42.png["vCenter UI"]
 
 .. 在向导中，执行以下操作：
 +

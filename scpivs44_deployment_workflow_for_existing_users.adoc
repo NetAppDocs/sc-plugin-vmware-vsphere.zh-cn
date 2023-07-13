@@ -16,4 +16,4 @@ summary: 如果您是 SnapCenter 用户并具有 SnapCenter 备份，则可以�
 [role="lead"]
 如果您是 SnapCenter 用户且拥有 SnapCenter 备份，请使用以下工作流开始操作。
 
-image:scpivs44_image3.png["错误：缺少图形映像"]
+image:scpivs44_image3.png["部署工作流"]

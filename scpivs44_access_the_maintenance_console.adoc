@@ -34,7 +34,7 @@ summary: 您可以使用适用于 VMware vSphere 的 SnapCenter 插件的维护�
 使用默认维护控制台用户名登录 `maint` 和您在安装时设置的密码。
 
 +
-image:scpivs44_image11.png["错误：缺少图形映像"]
+image:scpivs44_image11.png["维护控制台窗口"]
 
 . 您可以执行以下操作：
 +
@@ -44,7 +44,20 @@ image:scpivs44_image11.png["错误：缺少图形映像"]
 
 ** 选项 2 ：系统配置
 +
-重新启动或关闭虚拟机更改 " 熟悉 " 用户密码更改时区更改 NTP 服务器启用 / 禁用 SSH 访问增加 jail 磁盘大小（ /jail ）升级安装 VMware Tools
+重新启动虚拟机
+关闭虚拟机
+更改 "maint" 用户密码
+更改时区
+更改NTP服务器
+启用SSH访问
+增加 jail 磁盘大小（ /jail ）
+升级
+安装 VMware Tools
+生成MFA令牌
+
++
+
+NOTE: MFA始终处于启用状态、无法禁用MFA。
 
 ** 选项 3 ：网络配置
 +

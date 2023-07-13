@@ -20,10 +20,11 @@ summary: 在为适用于 VMware vSphere 的 SnapCenter 插件资源组配置备�
 
 
 .开始之前
-您必须知道适用于 VMware vSphere 的 SnapCenter 插件管理 GUI 的 IP 地址和登录凭据。
+您必须知道适用于 VMware vSphere 的 SnapCenter 插件管理 GUI 的 IP 地址和登录凭据。您还必须记下从维护控制台生成的MFA令牌。
 
 * 部署 SnapCenter VMware 插件时会显示此 IP 地址。
 * 使用在部署 SnapCenter VMware 插件期间提供的或稍后修改的登录凭据。
+* 使用维护控制台的系统配置选项生成6位MFA令牌。
 
 
 .步骤
@@ -33,7 +34,7 @@ summary: 在为适用于 VMware vSphere 的 SnapCenter 插件资源组配置备�
 
 . 单击顶部工具栏中的设置图标。
 +
-image:scpivs44_image28.jpg["错误：缺少图形映像"]
+image:scpivs44_image28.jpg["适用于 VMware vSphere 的 SnapCenter 插件"]
 
 . 在 * 设置 * 页面的 * 日期和时间 * 部分中，单击 * 编辑 * 。
 . 选择新时区并单击 * 保存 * 。

@@ -21,6 +21,8 @@ summary: 用于生成审核日志的REST API
 . 获取4.1/audit/logs：获取所有日志的审核数据
 . 获取4.1/audit/logs/｛filename｝：获取特定日志文件的审核数据
 . 4.1/audit/verify之后：触发审核日志验证。
+. GET 4.1/audy/config：获取审核和系统日志服务器配置
+. put 4.1/audy/config：更新审核和系统日志服务器配置
 
 
 要使用适用于VMware vSphere的SnapCenter 插件REST API为VMware vSphere客户端作业生成审核日志、您必须对VMware vSphere使用REST API调用。
@@ -40,4 +42,7 @@ summary: 用于生成审核日志的REST API
 
 
 | `4.1/audit/verify` | 触发审核验证 
+
+
+| `4.1/audit/syslogcert` | 更新系统日志服务器证书 
 |===

@@ -77,7 +77,7 @@ NOTE: 所有主机都必须配置 IP 地址（不支持 FQDN 主机名）。在�
 请使用格式 `https://<appliance-IP-address>:8080` 访问管理 GUI 。
 
 +
-维护控制台用户名设置为 `maint` 默认情况下、您可以在安装时设置密码。
+使用部署时设置的管理员用户名和密码以及使用维护控制台生成的MFA令牌登录。
 
 . 登录到 vCenter HTML5 客户端，然后单击工具栏中的 * 菜单 * ，然后选择 * 适用于 VMware vSphere 的 SnapCenter 插件 *
 
