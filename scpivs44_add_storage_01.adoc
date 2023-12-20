@@ -26,7 +26,7 @@ summary: 通过添加存储，适用于 VMware vSphere 的 SnapCenter 插件可�
 
 * VMware 虚拟卷（ VVOL ）
 +
-您必须先将VVOL存储系统添加到适用于VMware vSphere的ONTAP 工具中、然后将VVOL存储系统添加到适用于VMware vSphere的SnapCenter 插件中。
+您必须先将vvol存储系统添加到适用于VMware vSphere的ONTAP工具中、然后再将其添加到适用于VMware vSphere的SnapCenter插件中。
 
 +
 有关详细信息，请参见 https://docs.netapp.com/vapp-98/index.jsp["适用于 VMware vSphere 的 ONTAP 工具"^]
@@ -45,7 +45,7 @@ NOTE: 如果您使用SnapCenter VMware插件在VMDK上支持基于应用程序�
 * 对于处于链接模式的 vCenter ，您必须分别向每个 vCenter 添加存储系统。
 * 如果要添加SVM、则Storage VM的名称必须解析为管理LIF。
 +
-如果您在 SnapCenter 中为 Storage VM 名称添加了 Etc 主机条目，则必须验证它们是否也可从虚拟设备解析。
+如果已在SnapCenter中向_ETC\Hosts_文件添加Storage VM名称的条目、则必须确保这些条目也可从虚拟设备进行解决。如果不是、则应将类似条目添加到设备中的_/etc/hosts_文件中。
 
 +
 如果您添加的 Storage VM 名称无法解析为管理 LIF ，则计划的备份作业将失败，因为此插件无法发现此 Storage VM 上的任何数据存储库或卷。如果发生这种情况，请将此 Storage VM 添加到 SnapCenter 并指定管理 LIF ，或者添加一个包含此 Storage VM 的集群并指定集群管理 LIF 。
@@ -62,10 +62,8 @@ NOTE: 如果您使用SnapCenter VMware插件在VMDK上支持基于应用程序�
 | 对于此字段… | 执行此操作… 
 
 
-| 存储系统 | 输入存储集群或 Storage VM 的 FQDN 或 IP 地址。SnapCenter VMware 插件不支持在不同集群上使用相同名称的多个存储系统。SnapCenter 支持的每个存储系统都必须具有唯一的数据 LIF IP 地址。 
-
-
-| 平台 | 选择平台。 
+| 存储系统 | 输入存储集群或Storage VM的FQDN或管理LIF的IP地址。
+SnapCenter VMware插件不支持在不同集群上使用多个同名Storage VM。 
 
 
 | 身份验证方法 | 选择Credentials或Certificate。支持两种类型的证书：- https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_configure_a_CA_signed_certificate_for_storage_system_authentication_with_SCV["CA签名证书"^]- https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_configure_a_self-signed_certificate_for_storage_system_authentication_with_SCV["自签名证书"^] 
@@ -86,13 +84,16 @@ NOTE: 如果您使用SnapCenter VMware插件在VMDK上支持基于应用程序�
 | 协议 | 选择存储协议。 
 
 
-| Port | 选择端口 443 （默认值）或端口 80 以与 vCenter 进行通信。在执行 VM 和数据存储库备份和还原操作时，端口 443 用于在适用于 VMware vSphere 的 SnapCenter 插件的 Storage VM 主机与 vCenter 之间进行通信。如果您计划保护 VVol 虚拟机，则必须选择默认端口 443 。 
+| Port | 存储系统接受的端口。
+- 443用于HTTPS连接
+- 80表示HTTP连接 
 
 
-| 超时 | 输入 vCenter 在超时操作之前应等待的秒数。默认值为 60 秒 
+| 超时 | 输入SnapCenter VMware插件在超时操作之前应等待的秒数。默认值为 60 秒 
 
 
-| 首选 IP | 如果 Storage VM 具有多个管理 IP 地址，请选中此框并输入要 SnapCenter 使用的 IP 地址。* 注： * 输入 IP 地址时，请勿使用方括号（）。 
+| 首选 IP | 如果此Storage VM具有多个管理IP地址、请选中此框并输入您希望SnapCenter VMware插件使用的IP地址。
+* 注： * 输入 IP 地址时，请勿使用方括号（）。 
 
 
 | 事件管理系统(EMS)和AutoSupport 设置 | 如果要将 EMS 消息发送到存储系统系统系统日志，或者要将 AutoSupport 消息发送到存储系统以应用保护，完成还原操作或失败操作，请选中相应的复选框。选中*向存储系统发送失败操作的AutoSupport 通知*复选框和*将SnapCenter 服务器事件记录到系统日志*复选框以启用AutoSupport 通知。 

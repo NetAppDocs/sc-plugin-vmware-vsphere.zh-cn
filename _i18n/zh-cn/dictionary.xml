@@ -409,22 +409,16 @@
   <block id="6086125ba3b16c9db6f89397f48fc616" category="paragraph">ESXi 服务器， SnapCenter VMware 插件和每个 vCenter 必须同时同步。如果您尝试添加存储，但 vCenter 的时间设置未同步，则此操作可能会失败并显示 Java 证书错误。</block>
   <block id="9aac8d0b8942f0e2048e58de3b7be108" category="paragraph">SnapCenter VMware 插件可对直接连接的 Storage VM 和存储集群中的 Storage VM 执行备份和还原操作。</block>
   <block id="b99edf353b52c5792e35401298cc1119" category="list-text">对于处于链接模式的 vCenter ，您必须分别向每个 vCenter 添加存储系统。</block>
-  <block id="9b0a1c41413ba0bd6082cc3e1b84f315" category="paragraph">如果您在 SnapCenter 中为 Storage VM 名称添加了 Etc 主机条目，则必须验证它们是否也可从虚拟设备解析。</block>
   <block id="f6bf07ac5479cd87c5bc2e1e1e185478" category="paragraph">如果您添加的 Storage VM 名称无法解析为管理 LIF ，则计划的备份作业将失败，因为此插件无法发现此 Storage VM 上的任何数据存储库或卷。如果发生这种情况，请将此 Storage VM 添加到 SnapCenter 并指定管理 LIF ，或者添加一个包含此 Storage VM 的集群并指定集群管理 LIF 。</block>
   <block id="913caa3ee179d1d56a0a5a1d647e72c2" category="list-text">在 * 添加存储系统 * 向导中，输入下表列出的基本 Storage VM 或集群信息：</block>
   <block id="f31303ddb8ada38aed08c2bb8f9d8e6c" category="cell">存储系统</block>
-  <block id="fad18723d417fce1e95c966edce6b387" category="cell">输入存储集群或 Storage VM 的 FQDN 或 IP 地址。SnapCenter VMware 插件不支持在不同集群上使用相同名称的多个存储系统。SnapCenter 支持的每个存储系统都必须具有唯一的数据 LIF IP 地址。</block>
-  <block id="419f3742e6de8e0ec4b22cce005e7630" category="cell">平台</block>
-  <block id="cd5a35c139a8f0beea540baf32ecc554" category="cell">选择平台。</block>
   <block id="f6039d44b29456b20f8f373155ae4973" category="cell">Username</block>
   <block id="dc647eb65e6711e155375218212b3964" category="cell">Password</block>
   <block id="888a77f5ac0748b6c8001822417df8b6" category="cell">协议</block>
   <block id="cbb61ef47b30c9a254f01c17c56944ea" category="cell">选择存储协议。</block>
   <block id="60aaf44d4b562252c04db7f98497e9aa" category="cell">Port</block>
   <block id="c85a251cc457840f1e032f1b733e9398" category="cell">超时</block>
-  <block id="c123e7ec944a655ce6b0eb1994987cd7" category="cell">输入 vCenter 在超时操作之前应等待的秒数。默认值为 60 秒</block>
   <block id="13772e079123f6cc3b0a65f5912e0ac4" category="cell">首选 IP</block>
-  <block id="2870b54f4433265458cda5b06ab869ae" category="cell">如果 Storage VM 具有多个管理 IP 地址，请选中此框并输入要 SnapCenter 使用的 IP 地址。* 注： * 输入 IP 地址时，请勿使用方括号（）。</block>
   <block id="15cb2b9c090bdc4868f38d74b1626bca" category="cell">将 SnapCenter 服务器事件记录到系统日志中</block>
   <block id="c5f67140b8ebc3ad63f626b837c93a28" category="cell">选中此框可记录 SnapCenter VMware 插件的事件。</block>
   <block id="0adf9b7ec7bd1bc34fa619474f6709e0" category="cell">向存储系统发送操作失败的 AutoSupport 通知</block>
@@ -1522,7 +1516,6 @@
   <block id="647d788e610e73ba524ca460bf9fe8c0" category="paragraph">要更正上述任一问题，请执行以下操作：</block>
   <block id="f84217315ca1bc8cd21e87ac07c218df" category="paragraph">您可以在同一个 SnapCenter 服务器上注册多个适用于 VMware vSphere 的 SnapCenter 插件实例，以支持在 VM 上执行基于应用程序的数据保护操作。您不能在多个 SnapCenter 服务器上注册同一个适用于 VMware vSphere 的 SnapCenter 插件。</block>
   <block id="3c41488122e916d8d25efa353f26b05c" category="list-text">VMware 虚拟卷（ VVOL ）</block>
-  <block id="62977e65c9be4b337db0dff68f2781a8" category="cell">选择端口 443 （默认值）或端口 80 以与 vCenter 进行通信。在执行 VM 和数据存储库备份和还原操作时，端口 443 用于在适用于 VMware vSphere 的 SnapCenter 插件的 Storage VM 主机与 vCenter 之间进行通信。如果您计划保护 VVol 虚拟机，则必须选择默认端口 443 。</block>
   <block id="b148e71859cffdb60779d0fd79307d95" category="summary">在开始部署适用于 VMware vSphere 的 SnapCenter 插件之前，您应确保具有所需的最低 vCenter 特权。</block>
   <block id="e49b2704cb3fef8c492858dfc3f6dbce" category="doc">所需的最低 vCenter 权限</block>
   <block id="370cf061cf511b1663901c8a1fa77c6f" category="section-title">vCenter 管理员角色所需的特权</block>
@@ -1731,7 +1724,6 @@
   <block id="aa4d783fee816f8d21f67950ef7dcc20" category="paragraph">如果未启用 SnapCenter VMware 插件，请参见 <block ref="6f48ea8f284b5f5f2ad46612a3e37eec" category="inline-link-macro-rx"></block>。</block>
   <block id="1421137324c618036c21fb84413b93fd" category="list-text">在VMware vSphere客户端图形用户界面中、单击工具栏中的*菜单*、然后导航到要添加的虚拟机或数据存储库。</block>
   <block id="26dc1678973cf898baa325abda96cb6d" category="paragraph">使用VMware vSphere客户端添加存储。</block>
-  <block id="1931a868e4e40f746c1be3fe292582d4" category="paragraph">您必须先将VVOL存储系统添加到适用于VMware vSphere的ONTAP 工具中、然后将VVOL存储系统添加到适用于VMware vSphere的SnapCenter 插件中。</block>
   <block id="ed9018b2e8611a3d2c03bb6a205b9715" category="inline-link">适用于 VMware vSphere 的 ONTAP 工具</block>
   <block id="7598c46258085b3d4013c760f473771e" category="paragraph">有关详细信息，请参见<block ref="fdd966f4de047f12034d4cf35b0cc9b2" category="inline-link-rx"></block></block>
   <block id="de9e931cdaba9ca16191e1a4327cc0e8" category="admonition">如果您使用SnapCenter VMware插件在VMDK上支持基于应用程序的备份、则必须使用SnapCenter 图形用户界面输入存储身份验证详细信息并注册存储系统。</block>
@@ -2073,4 +2065,15 @@
   <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
   <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
+  <block id="d0ea0acf98adef65d75abe323fe90376" category="admonition">您需要先从适用于VMware vSphere的SnapCenter插件UI中删除此代理虚拟机、然后才能从ESXi中将其删除。</block>
+  <block id="a06bb07ae4f38addfa216f1bf6d50271" category="paragraph">您必须先将vvol存储系统添加到适用于VMware vSphere的ONTAP工具中、然后再将其添加到适用于VMware vSphere的SnapCenter插件中。</block>
+  <block id="0d4068754a5316289f4fe4cb2c9f06ab" category="paragraph">如果已在SnapCenter中向_ETC\Hosts_文件添加Storage VM名称的条目、则必须确保这些条目也可从虚拟设备进行解决。如果不是、则应将类似条目添加到设备中的_/etc/hosts_文件中。</block>
+  <block id="ec152cd63150806755f263280e145f0b" category="cell">输入存储集群或Storage VM的FQDN或管理LIF的IP地址。
+SnapCenter VMware插件不支持在不同集群上使用多个同名Storage VM。</block>
+  <block id="5c75867322c5948bda582697a669534b" category="cell">存储系统接受的端口。
+- 443用于HTTPS连接
+- 80表示HTTP连接</block>
+  <block id="1c5f9a41c5507d4adb0d486ee3d2b620" category="cell">输入SnapCenter VMware插件在超时操作之前应等待的秒数。默认值为 60 秒</block>
+  <block id="2dc5e487794f729ff43e4206e76d5676" category="cell">如果此Storage VM具有多个管理IP地址、请选中此框并输入您希望SnapCenter VMware插件使用的IP地址。
+* 注： * 输入 IP 地址时，请勿使用方括号（）。</block>
 </blocks>
