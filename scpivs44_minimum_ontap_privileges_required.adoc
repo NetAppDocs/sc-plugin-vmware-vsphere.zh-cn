@@ -53,7 +53,7 @@ summary: 所需的最小 ONTAP 权限因用于数据保护的 SnapCenter 插件�
 | Vserver Vserver对等 
 |===
 
-NOTE: 您可以忽略有关不受支持的vserver命令的警告消息。
+NOTE: 您可以忽略有关不受支持的Vserver命令的警告消息。
 
 
 
@@ -68,4 +68,14 @@ NOTE: 您可以忽略有关不受支持的vserver命令的警告消息。
 您必须以 `vsadmin` 或具有上表中列出的最低权限的角色登录。
 
 * 您必须是集群管理员才能创建和管理用户角色。您可以将用户与集群Storage VM或Storage VM相关联。
+* 要使用SnapMirror业务连续性(SM-BC)功能、您需要ONTAP 9.12.1或更高版本。
+* 要使用防篡改Snapshot (TPS)功能：
++
+** SAN需要ONTAP 9.13.1.及更高版本
+** 对于NFS、您需要ONTAP 9.12.1及更高版本
 
+
+
+
+
+NOTE: 对于ONTAP 9.11.1及更高版本、与ONTAP集群的通信将通过REST API进行。ONTAP用户应启用http应用程序。但是、如果发现ONTAP REST API存在问题、则配置密钥"FORCE-ZAPI"有助于切换到传统ZAPI工作流。您可能需要使用配置API添加或更新此密钥、并将其设置为true。请参见知识库文章、 https://kb.netapp.com/mgmt/SnapCenter/How_to_use_RestAPI_to_edit_configuration_parameters_in_SCV["如何使用RestAPI编辑选择控制阀中的配置参数"]。

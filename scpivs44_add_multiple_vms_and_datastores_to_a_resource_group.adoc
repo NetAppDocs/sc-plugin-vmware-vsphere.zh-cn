@@ -22,7 +22,7 @@ summary: 您可以使用SnapCenter VMware vSphere客户端的编辑资源组向�
 * 一个 FlexGroup 数据存储库（不支持跨区 VM ）。
 * 一个或多个 FlexVol 数据存储库（支持跨区 VM ）。
 * 一个或多个 VVol 虚拟机。
-* 具有指定 vCenter 标记的所有 VVol 虚拟机。
+* 具有指定vSphere标记的所有vVol VM。
 * 指定文件夹中的所有 VVol 虚拟机。
 
 

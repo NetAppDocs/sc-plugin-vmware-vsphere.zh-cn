@@ -32,6 +32,19 @@ summary: 在使用适用于 VMware vSphere 的 SnapCenter 插件备份 VM 和数
 
 
 * 如果您希望进行VM一致的备份、则必须安装并运行VMware工具。需要使用VMware工具来暂停VM。VVOL VM 不支持 VM 一致的备份。
+* 通过SnapMirror业务连续性(SM-BC)、即使在整个站点发生故障时、业务服务也可以继续运行、从而支持应用程序使用二级副本透明地进行故障转移。
++
+
+NOTE: 只有VMFS数据存储库才支持SM-BC。
+
++
+要保护SM-BC部署中的VMFS数据存储库、作为SnapCenter管理员、您需要：
+
++
+** 按照技术报告中所述配置集群和调解器： https://www.netapp.com/pdf.html?item=/media/21888-tr-4878.pdf["TR-4878：《SnapMirror业务连续性》"]。
+** 将与VMFS数据存储库关联的卷添加到一致性组中、然后使用_AutomatedFailOber保护策略在两个ONTAP存储系统之间创建数据保护关系。
+
+
 
 
 .关于此任务
@@ -55,6 +68,11 @@ summary: 在使用适用于 VMware vSphere 的 SnapCenter 插件备份 VM 和数
 
 
 
+. 指定频率设置。
++
+此策略仅指定备份频率。用于备份的特定保护计划在资源组中定义。因此，两个或更多资源组可以共享相同的策略和备份频率，但备份计划不同。
+
+. 选中*锁定期限*复选框以启用Snapshot锁定。您可以将Snapshot锁定期限选择为天/月/年。
 . 指定保留设置。
 +
 
@@ -63,10 +81,6 @@ IMPORTANT: 如果计划启用 SnapVault 复制，则应将保留数量设置为 
 +
 
 NOTE: 对于 ONTAP 9.4 或更高版本上的资源，最大保留值为 1018 次备份；对于 ONTAP 9.3 或更早版本上的资源，最大保留值为 254 次备份。如果将保留设置为高于底层 ONTAP 版本支持的值，则备份将失败。对于跨区数据存储库也是如此。如果生成数据存储库包含 ONTAP 9.3 及更早版本以及 ONTAP 9.4 及更高版本上的资源，请确保将保留值设置为 254 以下。
-
-. 指定频率设置。
-+
-此策略仅指定备份频率。用于备份的特定保护计划在资源组中定义。因此，两个或更多资源组可以共享相同的策略和备份频率，但备份计划不同。
 
 . 在 * 复制 * 字段中，指定复制到二级存储的类型，如下表所示：
 +
@@ -79,6 +93,9 @@ NOTE: 对于 ONTAP 9.4 或更高版本上的资源，最大保留值为 1018 次
 
 
 NOTE: 适用于 VMware vSphere 4.5 及更高版本的 SnapCenter 插件中的 FlexGroup 卷中的数据存储库支持此选项。
+
+
+NOTE: 要在SM-BC部署中保护VMFS数据存储库，您需要完成_before you BENTINE_一节中提到的前提条件，并启用*Update SnapMirror after backup*。
 
 
 

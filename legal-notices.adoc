@@ -47,4 +47,4 @@ link:https://www.netapp.com/company/legal/privacy-policy/["https://www.netapp.co
 
 通知文件提供有关 NetApp 软件中使用的第三方版权和许可证的信息。
 
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2886210["适用于VMware vSphere 4.9的SnapCenter插件的注意事项"^]
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2886921["适用于VMware vSphere 5.0的SnapCenter插件注意事项"^]

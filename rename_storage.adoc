@@ -1,0 +1,59 @@
+---
+sidebar: sidebar 
+permalink: rename_storage.html 
+keywords:  
+summary: 您可以使用REST API重命名存储。 
+---
+= 还原已重命名存储的备份
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+重命名存储后、使用重命名前创建的备份的工作流将失败。通过引入重命名备份功能(只能通过REST API访问)、现在可以使用在存储重命名之前创建的备份。下面介绍了REST API的工作流和使用情况。
+
+.步骤
+. 添加或更新新的存储连接、确保新的集群或SVM名称反映在选择控制阀中。
+. 重新启动服务以刷新缓存、如知识库文章中所述： https://kb.netapp.com/mgmt/SnapCenter/SCV_backups_fail_after_SVM_rename["重命名SVM后、选择控制阀备份失败"]
+. 创建新备份。
+. 使用备份详细信息查找新旧存储名称。
+. 在vSphere客户端的*备份*屏幕中、选择备份以查看其详细信息。
+. 从以下URL访问Swagger： https://<SCV-IP>:8144/api/swagger-ui/index.html[]
++
+使用以下API重命名存储：
+
++
+patch
+/4.1/storage-system
+
++
+示例
+｛
+  "existingSVM"：｛
+    "name"："string"
+  ｝、
+  "newSVM"：｛
+    "name"："string"
+  ｝
+｝
+
++
+响应：
+
++
+｛
+  "StatusMessage"："OK"、
+  "状态代码"：200、
+  "responseMessage"：[
+    "已成功重命名存储系统。"
+  ]
+｝
+
++
+运行此API后、您将能够运行所有工作流、包括从旧备份执行还原操作。
+
+

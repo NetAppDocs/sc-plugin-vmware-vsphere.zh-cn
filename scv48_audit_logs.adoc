@@ -30,14 +30,6 @@ summary: 审核日志可追溯谁执行了什么操作以及何时执行。审�
 * 最多保留10个审核日志文件
 
 
-要修改默认配置、请在/opt/netapp/scvservice/standalone aeg/etc/scbr/scbr.properties中添加一个密钥值对、然后重新启动scvservice。
-
-审核日志文件的配置如下：
-
-* auditMaxROFiles=auditroFiles=rofiles=auditmaxROFiles=15 <xx> 、其中xx是已回滚的审核日志文件的最大数量。
-* auditLogSize=6MB <XX> 、其中xx是文件的大小(以MB为单位)、例如：auditLogSize=15MB。
-
-
 系统会定期验证已回滚的审核日志的完整性。SCV提供了REST API来查看日志并验证其完整性。内置计划将触发并分配以下完整性状态之一。
 
 |===
@@ -79,6 +71,8 @@ SCV中的资源包括：
 * Resource Group
 * 策略
 * 备份
+* 订阅。
+* Account
 
 
 下表列出了可对每个资源执行的操作：
@@ -86,10 +80,16 @@ SCV中的资源包括：
 |===
 
 
-| Resources | 操作 
+| * 资源 * | * 操作 * 
 
 
 | 存储系统 | 已创建、已修改、已删除 
+
+
+| 订阅。 | 已创建、已修改、已删除 
+
+
+| Account | 已创建、已修改、已删除 
 
 
 | Resource Group | 已创建、已修改、已删除、已暂停、已恢复 
@@ -189,5 +189,5 @@ SCV中的资源包括：
 .步骤
 . 登录到适用于VMware vSphere的SnapCenter插件。
 . 在左侧导航窗格中，选择*Settings*>*Audit Logs*>*Settings*。
-. 在“*审核日志设置*”窗格中，根据需要输入*审核条目数*和*审核日志大小限制*。
+. 在*Audit Log Settings*(审核日志设置*)窗格中，输入审核日志文件的最大数量和审核日志文件大小限制。
 

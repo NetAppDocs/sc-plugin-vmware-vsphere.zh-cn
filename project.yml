@@ -1,14 +1,16 @@
 ---
 settings:
-  name: SnapCenter Plug-in for VMware vSphere 4.9
+  name: SnapCenter Plug-in for VMware vSphere 5.0
   internal:
     pdf_enabled: true
   prod:
     pdf_enabled: true
     harmony_enabled: false
   versions:
-  - version-number: '4.9'
+  - version-number: '5.0'
     url: "/sc-plugin-vmware-vsphere"
+  - version-number: '4.9'
+    url: "/sc-plugin-vmware-vsphere-49"
   - version-number: '4.8'
     url: "/sc-plugin-vmware-vsphere-48"
   - version-number: '4.7'
@@ -20,7 +22,7 @@ settings:
   langs: zh-cn,us-en,ja-jp,ko-kr,zh-tw,de-de,es-es,fr-fr,it-it
 sidebar:
   entries:
-  - title: 适用于VMware vSphere 4.9的SnapCenter插件文档
+  - title: 适用于VMware vSphere 5.0的SnapCenter插件文档
     url: "/index.html"
   - title: 发行说明
     url: "/scpivs44_release_notes.html"
@@ -120,6 +122,8 @@ sidebar:
       url: "/scpivs44_add_a_single_vm_or_datastore_to_a_resource_group.html"
     - title: 将多个 VM 和数据存储库添加到一个资源组
       url: "/scpivs44_add_multiple_vms_and_datastores_to_a_resource_group.html"
+    - title: 重命名存储
+      url: "/rename_storage.html"
     - title: 按需备份资源组
       url: "/scpivs44_back_up_resource_groups_on_demand.html"
     - title: 备份 MySQL 数据库
@@ -248,37 +252,3 @@ sidebar:
       url: "/scpivs44_information_not_displayed_after_upgrading_to_a_new_patch_of_the_same_release.html"
   - title: 法律声明
     url: "/legal-notices.html"
-homepage:
-  tiles:
-  - title: 入门
-    links:
-    - title: 发行说明
-      url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2886207
-    - title: 了解 SCV
-      url: "/scpivs44_concepts_overview.html"
-    - title: 部署要求
-      url: "/scpivs44_deployment_planning_and_requirements.html"
-    - title: 快速入门
-      url: "/scpivs44_download_the_ova_open_virtual_appliance.html"
-  - title: 保护 VM ， VMDK 和数据存储库
-    links:
-    - title: 保护您的数据
-      url: "/scpivs44_protect_data_overview.html"
-    - title: 从备份还原
-      url: "/scpivs44_restore_from_backups_overview.html"
-    - title: 使用 REST API
-      url: "/scpivs44_rest_apis_overview.html"
-  - title: 博客社区
-    links:
-    - title: NetApp 博客— SCV
-      url: https://blog.netapp.com/tag/snapcenter/
-    - title: NetApp 社区— SCV
-      url: https://community.netapp.com/t5/forums/filteredbylabelpage/board-id/backup-and-restore-discussions/label-name/snapcenter
-  - title: 更多资源
-    links:
-    - title: SnapCenter 软件文档
-      url: https://docs.netapp.com/us-en/snapcenter/index.html
-    - title: 早期版本的 SCV 文档
-      url: https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=63240
-    - title: NetApp 知识库— SCV
-      url: https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter

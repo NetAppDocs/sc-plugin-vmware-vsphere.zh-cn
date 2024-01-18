@@ -54,7 +54,7 @@ VMware 文件系统（ VMFS ）的还原工作流利用了 VMware Storage vMotio
 +
 NFS 环境中的大多数还原操作都使用原生 ONTAP 功能（例如单个文件 SnapRestore ），而不需要 VMware Storage vMotion 。
 
-* 要配置VMware VVOL VM、需要使用适用于VMware vSphere的ONTAP 工具。
+* 要配置VMware vVol VM、需要使用适用于VMware vSphere的ONTAP工具。
 +
 您可以使用ONTAP 工具在ONTAP 和VMware Web Client中为VVOL配置和配置存储。
 
