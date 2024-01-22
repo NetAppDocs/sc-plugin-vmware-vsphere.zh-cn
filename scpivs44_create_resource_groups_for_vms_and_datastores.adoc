@@ -50,7 +50,7 @@ summary: 资源组是指要保护的VM、数据存储库、vSphere标记和vSphe
 IMPORTANT: 如果您使用的是 VMware vSphere 集群服务（ vCL ），请勿在 SnapCenter VMware 插件资源组中包含由 vCL 管理的虚拟机。
 
 
-TIP: 适用于 VMware vSphere 4.5 及更高版本的 SnapCenter 插件在 ASA 聚合上支持大小高达 128 TB 的大型 LUN 上的数据存储库。如果要保护大型LUN、请仅使用厚配置LUN以避免延迟。
+TIP: 适用于VMware vSphere 4.5及更高版本的SnapCenter插件支持大型LUN上的数据存储库、以及最大128 TB的文件和最大300 TB的卷。如果要保护大型LUN、请仅使用厚配置LUN以避免延迟。
 
 
 IMPORTANT: 请勿添加处于不可访问状态的 VM 。尽管可以创建包含无法访问的 VM 的资源组，但该资源组的备份将失败。
@@ -149,7 +149,11 @@ NOTE: 系统会为附加到资源组的每个策略创建`_recent`备份。因�
 如果要对 Snapshot 副本名称使用自定义格式，请选中此框并输入名称格式。
 
 *** 默认情况下，此功能处于禁用状态。
-*** 默认 Snapshot 副本名称使用格式 ` <ResourceGroup>_<Date-timestamp>` 但是，您可以使用变量 $ResourceGroup ， $Policy ， $hostname ， $scheduleType 和 $CustomText 指定自定义格式。使用自定义名称字段中的下拉列表选择要使用的变量及其使用顺序。如果选择 $CustomText ，则名称格式为 ` <CustomName>_<Date-timestamp>` 。在提供的附加框中输入自定义文本。注意：如果您还选择了 "_recent " 后缀，则必须确保自定义 Snapshot 名称在数据存储库中是唯一的，因此，您应在此名称中添加 $ResourceGroup 和 $Policy 变量。
+*** 默认Snapshot副本名称采用的格式 `<ResourceGroup>_<Date-TimeStamp>`
+但是、您可以使用变量$ResourceGroup、$Policy、$hostname、$scheduleype和$CustomText指定自定义格式。使用自定义名称字段中的下拉列表选择要使用的变量及其使用顺序。
+如果选择$CustomText、则名称格式为 `<CustomName>_<Date-TimeStamp>`。在提供的附加框中输入自定义文本。
+[注意]：
+如果您还选择了"_Recent "后缀、则必须确保自定义Snapshot名称在数据存储库中是唯一的、因此、应将$ResourceGroup和$Policy变量添加到该名称中。
 *** 名称中特殊字符的特殊字符，请遵循为名称字段提供的相同准则。
 
 
@@ -169,7 +173,8 @@ NOTE: 系统会为附加到资源组的每个策略创建`_recent`备份。因�
 * VM文件夹(指定文件夹中的所有VVOV VM；必须在弹出字段中导航到该文件夹所在的数据中心) 
 
 
-| 数据中心 | 导航到要添加的 VM 或数据存储库或文件夹。 
+| 数据中心 | 导航到要添加的 VM 或数据存储库或文件夹。
+资源组中的虚拟机和数据存储库名称必须是唯一的。 
 
 
 | 可用实体 | 选择要保护的资源，然后单击 * > * 将所选内容移动到 " 选定实体 " 列表。 
