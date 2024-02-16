@@ -26,7 +26,7 @@ summary: 通过添加存储，适用于 VMware vSphere 的 SnapCenter 插件可�
 
 * VMware 虚拟卷（ VVOL ）
 +
-您必须先将vvol存储系统添加到适用于VMware vSphere的ONTAP工具中、然后再将其添加到适用于VMware vSphere的SnapCenter插件中。
+您必须将存储集群添加到适用于VMware vSphere的SnapCenter插件和适用于VMware vSphere的ONTAP工具中、以使VVOV数据保护正常工作。
 
 +
 有关详细信息，请参见 https://docs.netapp.com/vapp-98/index.jsp["适用于 VMware vSphere 的 ONTAP 工具"^]

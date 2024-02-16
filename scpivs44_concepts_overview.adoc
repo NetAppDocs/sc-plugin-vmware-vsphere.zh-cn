@@ -69,7 +69,8 @@ NFS 环境中的大多数还原操作都使用原生 ONTAP 功能（例如单个
 
 除了这些主要功能之外，适用于 VMware vSphere 的 SnapCenter 插件还支持 iSCSI ，光纤通道， FCoE ，基于 NFS 3.0 和 4.1 的 VMDK 以及基于 VMFS 5.0 和 6.0 的 VMDK 。
 
-有关受支持版本的最新信息，请参见 https://imt.netapp.com/matrix/imt.jsp?components=112310;&solution=1517&isHWU&src=IMT["NetApp 互操作性表工具"^] IMT
+有关受支持版本的最新信息，请参见 https://imt.netapp.com/matrix/imt.jsp?components=117018;&solution=1259&isHWU&src=IMT[]
+NetApp互操作性表工具^](IMT)。
 
 有关 NFS 协议和 ESXi 的信息，请参见 VMware 提供的 vSphere 存储文档。
 

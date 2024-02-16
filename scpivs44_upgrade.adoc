@@ -18,8 +18,27 @@ NOTE: 只有VMware vCenter Server 7 Update 1及更高版本才支持升级到5�
 
 如果您使用的是适用于 VMware vSphere 的 SnapCenter 插件虚拟设备，则可以升级到更高版本。升级过程将取消注册现有插件、并部署一个仅与vSphere 7.0U1及更高版本兼容的插件。
 
-请参见 link:scpivs44_release_notes.html["适用于 VMware vSphere 的 SnapCenter 插件发行说明"] 有关支持的升级路径的信息。
 
+
+== 升级路径
+
+|===
+
+
+| 适用于VMware vSphere的SnapCenter插件(SCV)版本 | 您可以将适用于VMware vSphere的SnapCenter插件直接升级到... 
+
+
+| 4.9号选择控制阀 | 升级到5.0号选择控制阀 
+
+
+| 4.8号选择控制阀 | 升级到4.9号和5.0号选择控制阀 
+
+
+| 4.7号选择控制阀 | 升级到4.8号和4.9号选择控制阀 
+
+
+| 4.6号选择控制阀 | 升级到4.7号选择控制阀和4.8号选择控制阀 
+|===
 
 TIP: 在开始升级之前，请备份适用于 VMware vSphere 的 SnapCenter 插件 OVA 。
 

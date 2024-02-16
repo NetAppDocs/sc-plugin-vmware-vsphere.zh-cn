@@ -1456,7 +1456,6 @@
   <block id="424f6337d74c16c2d02e5cb2e6d97f82" category="list-text">默认情况下，此功能处于禁用状态。</block>
   <block id="f6023484d4c2c1da1f8822ae43bc066a" category="list-text">名称中特殊字符的特殊字符，请遵循为名称字段提供的相同准则。</block>
   <block id="fd9ca72572d4ab5e600c85b32f8a9e6a" category="list-text">完成新建备份策略向导以返回到创建资源组向导。</block>
-  <block id="2d611cef8c845765881d408c7f4ca34d" category="paragraph">请参见 <block ref="7b21f43f6f2c3f2cfd7e9a930ea43d44" category="inline-link-macro-rx"></block> 有关支持的升级路径的信息。</block>
   <block id="8b1375f200206162c06fc46aeb476858" category="sidebar">部署 SCV 的要求</block>
   <block id="131b9f1c14d26ba7a0cce7389e7679a9" category="cell">存储集群或 Storage VM 端口</block>
   <block id="4ebb46027adb5b26fc62dffc3aab358e" category="cell">443 （ HTTPS ）双向 80 （ HTTP ）双向端口用于在虚拟设备与 Storage VM 或包含 Storage VM 的集群之间进行通信。</block>
@@ -1883,7 +1882,6 @@
   <block id="d90d97c73d9c4c24dc7be83a35c1ab51" category="list-text">在SCV插件的左侧“Navigator”(导航器)窗格中，单击“*资源组*”，然后选择“*创建*”。</block>
   <block id="f39d1b5ce3c4df954b444643fe062bd4" category="inline-image-macro">播放图标</block>
   <block id="388b702f54518810e19e7ac7da349911" category="paragraph">您可以通过选择在*Resource Groups*页面中按需执行备份 <block ref="3b0d2a888e66a4061c822e3f42e77666" category="inline-image-macro-rx" type="image"></block> * 立即运行 * 。</block>
-  <block id="efc0b04f06a29088ceba47c01100d18a" category="paragraph">有关受支持版本的最新信息，请参见<block ref="afaa5c2ff662f28d0c8c3429effcad87" category="inline-link-rx"></block> IMT</block>
   <block id="837adfe579e9f6e54bb71e607139e89e" category="paragraph"><block ref="837adfe579e9f6e54bb71e607139e89e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="bac80dc0b6b539e2676fb6e2f1e66985" category="inline-image-macro">维护控制台窗口</block>
   <block id="b6b7c58249919c09c14b897be2947b59" category="paragraph"><block ref="b6b7c58249919c09c14b897be2947b59" category="inline-image-macro-rx" type="image"></block></block>
@@ -1904,12 +1902,8 @@
   <block id="bf18811faac9b8e4fcaebab51afd1113" category="list-text">选择 * 创建 * 。</block>
   <block id="2d9c6a052b962f45f8525e4ec1dec880" category="inline-image-macro">创建资源组窗口</block>
   <block id="3ec7abcc0f628e9d54f81021b20cd0b8" category="paragraph"><block ref="3ec7abcc0f628e9d54f81021b20cd0b8" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="27622cb89e7a8739e00f582918ccbbf9" category="paragraph">适用于 VMware vSphere 的 SnapCenter 插件不会对所有 ONTAP 版本执行兼容性检查；仅对 ONTAP 8.2.1 及更早版本执行兼容性检查。因此，请始终参见<block ref="d081994606edbb1b5fb4741bf9627763" category="inline-link-rx"></block> 有关 SnapCenter 支持的最新信息。</block>
   <block id="0a9ba38bb4f35a4cc659e9264312419d" category="list-text">在SCV插件的左侧“Navigator”(导航器)窗格中，单击“*Policies*”(策略*)，然后选择“*New Policy*”(新建策略*)。</block>
   <block id="fa12509cfb8e8ccded16e2a254e988c4" category="list-text">选择 * 添加 * 。</block>
-  <block id="daa784a8a1fa3539432d36b3cba74c8f" category="paragraph">有关受支持的ONTAP 工具版本的最新信息、请参见<block ref="afaa5c2ff662f28d0c8c3429effcad87" category="inline-link-rx"></block>。</block>
-  <block id="7a1850db5de77ac7debf2683475ac36d" category="cell">适用于 VMware vSphere 的 SnapCenter 插件可通过此插件管理 VVol 数据存储库（ VMware 虚拟卷）。有关支持的版本，请参见<block ref="afaa5c2ff662f28d0c8c3429effcad87" category="inline-link-rx"></block>。</block>
-  <block id="138ca37c88473f8732582e7a16c36cdd" category="paragraph">有关受支持版本的最新信息，请参见<block ref="afaa5c2ff662f28d0c8c3429effcad87" category="inline-link-rx"></block>。</block>
   <block id="cf0ab757341ba6d3dc7ba387b7608080" category="inline-image-macro">支持的配置图形表示</block>
   <block id="9dfe68c8c0e7d63c6014f412ad6f64f4" category="paragraph"><block ref="9dfe68c8c0e7d63c6014f412ad6f64f4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8ef8968610fbd3a0de9ce23482e5a914" category="list-text">在*Storage Systems*页面上，选择要修改的Storage VM，然后选择*Edit*。</block>
@@ -1981,8 +1975,6 @@
   <block id="c3794c98b162b9ad9268737618829c92" category="list-text">在添加存储系统对话框中、输入基本SVM或集群信息、然后选择*添加*。</block>
   <block id="ab3ccb0be518e752d20f706d36d252c9" category="inline-image-macro">部署工作流</block>
   <block id="c26ad7db9fdd9afcec80cb243992f363" category="paragraph"><block ref="c26ad7db9fdd9afcec80cb243992f363" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="0c815b7acb1c06a9fdce13c84db10d63" category="paragraph">有关受支持版本的最新信息，请参见<block ref="d081994606edbb1b5fb4741bf9627763" category="inline-link-rx"></block>。</block>
-  <block id="09a955bc17c83be6473e1db023f65598" category="paragraph">您不能从运行 Linux 子操作系统的虚拟机还原文件和文件夹。但是，您可以连接 VMDK ，然后手动还原文件和文件夹。有关支持的子操作系统的最新信息，请参见<block ref="d081994606edbb1b5fb4741bf9627763" category="inline-link-rx"></block>。</block>
   <block id="07469a3427540cc9f743a04851332eb8" category="paragraph">您必须知道适用于 VMware vSphere 的 SnapCenter 插件管理 GUI 的 IP 地址和登录凭据。您还必须记下从维护控制台生成的MFA令牌。</block>
   <block id="bd891b75b7b195d1b26cc7dc247e67f0" category="paragraph"><block ref="bd891b75b7b195d1b26cc7dc247e67f0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f30c6912958443264ac38c6e96e6c0b1" category="inline-image-macro">备份操作工作流</block>
@@ -2008,7 +2000,6 @@
   <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
   <block id="d0ea0acf98adef65d75abe323fe90376" category="admonition">您需要先从适用于VMware vSphere的SnapCenter插件UI中删除此代理虚拟机、然后才能从ESXi中将其删除。</block>
-  <block id="a06bb07ae4f38addfa216f1bf6d50271" category="paragraph">您必须先将vvol存储系统添加到适用于VMware vSphere的ONTAP工具中、然后再将其添加到适用于VMware vSphere的SnapCenter插件中。</block>
   <block id="0d4068754a5316289f4fe4cb2c9f06ab" category="paragraph">如果已在SnapCenter中向_ETC\Hosts_文件添加Storage VM名称的条目、则必须确保这些条目也可从虚拟设备进行解决。如果不是、则应将类似条目添加到设备中的_/etc/hosts_文件中。</block>
   <block id="ec152cd63150806755f263280e145f0b" category="cell">输入存储集群或Storage VM的FQDN或管理LIF的IP地址。
 SnapCenter VMware插件不支持在不同集群上使用多个同名Storage VM。</block>
@@ -2118,7 +2109,6 @@ SnapCenter VMware插件不支持在不同集群上使用多个同名Storage VM�
   <block id="8857a92c9dd7ad8b9a97a4565e945efb" category="paragraph"><block ref="8857a92c9dd7ad8b9a97a4565e945efb" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d8c6c8a7a8f9e330585c15378277631e" category="sidebar">适用于VMware vSphere 5.0的SnapCenter插件文档</block>
   <block id="9f4e4670e68c9e84125d82202a3b5d12" category="sidebar">重命名存储</block>
-  <block id="8cf2f0f05d235c9fc28a55c8caf77bb9" category="admonition">适用于VMware vSphere 4.5及更高版本的SnapCenter插件支持大型LUN上的数据存储库、以及最大128 TB的文件和最大300 TB的卷。如果要保护大型LUN、请仅使用厚配置LUN以避免延迟。</block>
   <block id="ca70c61465600177453c8557e7c34dfb" category="list-text">默认Snapshot副本名称采用的格式<block ref="ba8f4cc4ace4f3315ea21bd52fbde9d9" prefix=" " category="inline-code"></block>
 但是、您可以使用变量$ResourceGroup、$Policy、$hostname、$scheduleype和$CustomText指定自定义格式。使用自定义名称字段中的下拉列表选择要使用的变量及其使用顺序。
 如果选择$CustomText、则名称格式为<block ref="ad231838859064f0fe437a9669c0d36f" prefix=" " category="inline-code"></block>。在提供的附加框中输入自定义文本。
@@ -2126,4 +2116,25 @@ SnapCenter VMware插件不支持在不同集群上使用多个同名Storage VM�
 如果您还选择了"_Recent "后缀、则必须确保自定义Snapshot名称在数据存储库中是唯一的、因此、应将$ResourceGroup和$Policy变量添加到该名称中。</block>
   <block id="d07079db3fe1ac66c315b010e4b99b35" category="cell">导航到要添加的 VM 或数据存储库或文件夹。
 资源组中的虚拟机和数据存储库名称必须是唯一的。</block>
+  <block id="854a748f8563eb3099b0bfa18a176d34" category="paragraph">有关受支持版本的最新信息，请参见<block ref="045f3ddde5c3413f11a91218d71b4b1a" category="inline-link-rx"></block>。</block>
+  <block id="1a455fa606ca1378d17326c892e16c90" category="paragraph">您不能从运行 Linux 子操作系统的虚拟机还原文件和文件夹。但是，您可以连接 VMDK ，然后手动还原文件和文件夹。有关支持的子操作系统的最新信息，请参见<block ref="045f3ddde5c3413f11a91218d71b4b1a" category="inline-link-rx"></block>。</block>
+  <block id="772cc7fa822f49dc4b192692e0632437" category="paragraph">有关受支持版本的最新信息，请参见<block ref="b52a20f044306968704839d484981363" category="inline-link-rx"></block>
+NetApp互操作性表工具^](IMT)。</block>
+  <block id="a5760e04dea15becd0f211df3320ab07" category="paragraph">您必须将存储集群添加到适用于VMware vSphere的SnapCenter插件和适用于VMware vSphere的ONTAP工具中、以使VVOV数据保护正常工作。</block>
+  <block id="db9f46474186d8c960347226166c2a57" category="admonition">适用于VMware vSphere 4.5及更高版本的SnapCenter插件支持大型LUN上的数据存储库、以及最大128 TB的文件和最大300 TB的卷。如果要保护大型LUN、请仅使用厚配置LUN以避免延迟。</block>
+  <block id="8e1e7b095ff12bdad81e079afe30b615" category="paragraph">适用于 VMware vSphere 的 SnapCenter 插件不会对所有 ONTAP 版本执行兼容性检查；仅对 ONTAP 8.2.1 及更早版本执行兼容性检查。因此，请始终参见<block ref="045f3ddde5c3413f11a91218d71b4b1a" category="inline-link-rx"></block> 有关 SnapCenter 支持的最新信息。</block>
+  <block id="e614f4fd5db40ad1197def61d63aaeef" category="section-title">升级路径</block>
+  <block id="8f5cac67a5239c3412476c9eee5d843b" category="cell">适用于VMware vSphere的SnapCenter插件(SCV)版本</block>
+  <block id="c6000eccbb9d2d80f767a17144086162" category="cell">您可以将适用于VMware vSphere的SnapCenter插件直接升级到...</block>
+  <block id="d6efd9a0701d44c2a386de616f0467d8" category="cell">4.9号选择控制阀</block>
+  <block id="fb7a6940ca16530832134b6d1fc68dd0" category="cell">升级到5.0号选择控制阀</block>
+  <block id="bfa55b54891f35acedca543067d8d978" category="cell">4.8号选择控制阀</block>
+  <block id="d50d1b713f54e3b00e5a58cb07663ae1" category="cell">升级到4.9号和5.0号选择控制阀</block>
+  <block id="57c532701e1b9a6e91035127c990e2d5" category="cell">4.7号选择控制阀</block>
+  <block id="9e3312df8e6fea31816b8ec7d06d6943" category="cell">升级到4.8号和4.9号选择控制阀</block>
+  <block id="3baea5f2b6a39ee42e75af8ff8dffaf8" category="cell">4.6号选择控制阀</block>
+  <block id="1bc72f3e2c1f0294eeae251d150eadaf" category="cell">升级到4.7号选择控制阀和4.8号选择控制阀</block>
+  <block id="be62a39629f9bf44c0b7764858df7180" category="paragraph">有关受支持的ONTAP 工具版本的最新信息、请参见<block ref="f480f082c29fcf628f934199402ad852" category="inline-link-rx"></block>。</block>
+  <block id="574bca4b9d134d315e5eca84b213c9cf" category="cell">适用于 VMware vSphere 的 SnapCenter 插件可通过此插件管理 VVol 数据存储库（ VMware 虚拟卷）。有关支持的版本，请参见<block ref="f480f082c29fcf628f934199402ad852" category="inline-link-rx"></block>。</block>
+  <block id="0c94c2c3fa58ffce83643eed644bb1ad" category="paragraph">有关受支持版本的最新信息，请参见<block ref="f480f082c29fcf628f934199402ad852" category="inline-link-rx"></block>。</block>
 </blocks>
