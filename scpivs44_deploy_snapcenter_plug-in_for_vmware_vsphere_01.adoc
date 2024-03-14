@@ -15,7 +15,7 @@ summary:
 
 [role="lead"]
 要使用 SnapCenter 功能保护虚拟机上的 VM ，数据存储库和应用程序一致的数据库，您必须部署适用于 VMware vSphere 的 SnapCenter 插件。
-按照中的说明进行操作 link:scpivs44_download_the_ova_open_virtual_appliance.html["下载Open Virtual Appliance (OVA)"^] 页面以下载OVA文件。
+。 link:scpivs44_download_the_ova_open_virtual_appliance.html["下载Open Virtual Appliance (OVA)"^] 页面提供了下载OVA文件的说明。
 
 . 对于VMware vCenter 7.0.3及更高版本、请按照中的步骤进行操作 link:scpivs44_download_the_ova_open_virtual_appliance.html["下载Open Virtual Appliance (OVA)"^] 将证书导入到vCenter。
 . 在浏览器中，导航到 VMware vSphere vCenter 。

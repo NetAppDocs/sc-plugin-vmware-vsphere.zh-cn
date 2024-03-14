@@ -2128,8 +2128,6 @@ NetApp互操作性表工具^](IMT)。</block>
   <block id="e4876fb0bd486e69e6d18f00ad595613" category="paragraph"><block ref="40ab977cb91f6614f74434651bca5a18" prefix="" category="inline-code"></block></block>
   <block id="5d4f06f4da45c0078547e4432bbcf0fa" category="paragraph"><block ref="40ab977cb91f6614f74434651bca5a18" prefix="" category="inline-code"></block><block ref="95e74a55a904a66f18be251d45fb5889" prefix=" " category="inline-code"></block></block>
   <block id="80f3158028945baa03dee7b07e5ba849" category="paragraph">对于每个REST API、在&lt;server&gt;的前面添加\https：//API：&lt;port&gt;`以构成完整的端点。</block>
-  <block id="bee8a2c870d9f36561d79948bcc7f115" category="paragraph">要使用 SnapCenter 功能保护虚拟机上的 VM ，数据存储库和应用程序一致的数据库，您必须部署适用于 VMware vSphere 的 SnapCenter 插件。
-按照中的说明进行操作 <block ref="205a43536d4d7a501f66e7fd657c91ca" category="inline-link-macro-rx"></block> 页面以下载OVA文件。</block>
   <block id="89c7e4a6f50b68ec3ede15d1584a492e" category="paragraph">使用格式<block ref="cf854de4a942e42c016ef31d206a66c3" prefix=" " category="inline-code"></block> 以访问管理GUI。</block>
   <block id="4dacb1d80a643a937acb6c45a683ec1b" category="admonition">从适用于VMware的SnapCenter插件(SCV) 5.0开始、您需要添加HTTP和ONTAPI类型的应用程序、作为对SCV具有基于角色的自定义访问权限的任何ONTAP用户的用户登录方法。如果无法访问这些应用程序、备份将失败。您需要重新启动选择控制阀服务才能识别对ONTAP用户登录方法所做的更改。</block>
   <block id="73bad5beeda4a2a6bd01d97def1d4e67" category="cell">cluster identity show</block>
@@ -2172,4 +2170,6 @@ volume snapshot show
   <block id="47d51cdb9bee4f5be50bff68bef7f005" category="paragraph">对于每个REST API、添加<block ref="3a8f2c381c875eef37ad96b7d70fc1a1" prefix=" " category="inline-code"></block> 在REST API的前面、形成一个完整的端点。</block>
   <block id="cf924216c679ed55d0b692e5bd6f4b14" category="list-text">使用格式登录到SnapCenter VMware插件管理GUI<block ref="3dfacd84c996ac983963942e2712a0bf" prefix=" " category="inline-code"></block>。使用部署时设置的管理员用户名和密码以及使用维护控制台生成的MFA令牌登录。</block>
   <block id="5b845076b112586b7fff13b10d9f0612" category="cell">转至<block ref="7c61e9e4b133f96dbd184942bce35796" prefix=" " category="inline-code"></block></block>
+  <block id="e4a70196caccbfc6c6d2c0d9df5e3013" category="paragraph">要使用 SnapCenter 功能保护虚拟机上的 VM ，数据存储库和应用程序一致的数据库，您必须部署适用于 VMware vSphere 的 SnapCenter 插件。
+。 <block ref="205a43536d4d7a501f66e7fd657c91ca" category="inline-link-macro-rx"></block> 页面提供了下载OVA文件的说明。</block>
 </blocks>
