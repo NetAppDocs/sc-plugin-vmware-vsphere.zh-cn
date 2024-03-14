@@ -22,7 +22,7 @@ summary: 您可以使用REST API重命名存储。
 . 创建新备份。
 . 使用备份详细信息查找新旧存储名称。
 . 在vSphere客户端的*备份*屏幕中、选择备份以查看其详细信息。
-. 从以下URL访问Swagger： https://<SCV-IP>:8144/api/swagger-ui/index.html[]
+. 从以下URL访问Swagger： `\https://<SCV-IP>:8144/api/swagger-ui/index.html`
 +
 使用以下API重命名存储：
 

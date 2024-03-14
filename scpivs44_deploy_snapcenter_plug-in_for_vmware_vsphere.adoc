@@ -140,7 +140,7 @@ VMware工具安装在部署了SnapCenter VMware插件的虚拟机上。有关安
 
 . 使用部署屏幕上显示的 IP 地址并使用您在部署向导中提供的凭据登录到 SnapCenter VMware 插件管理 GUI ，然后在信息板上验证 SnapCenter VMware 插件是否已成功连接到 vCenter 并已启用。
 +
-请使用格式 `https://<appliance-IP-address>:8080` 访问管理 GUI 。
+使用格式 `\https://<appliance-IP-address>:8080` 以访问管理GUI。
 
 +
 使用部署时设置的管理员用户名和密码以及使用维护控制台生成的MFA令牌登录。

@@ -18,7 +18,7 @@ summary: 要使用适用于VMware vSphere的SnapCenter 插件REST API修改VMwar
 
 内置计划是指作为产品一部分提供的计划，例如 MySQL 数据库转储计划。您可以修改以下计划： `sschedule-DatabaseDump` `Sschedule-PurgeBackups` `Sschedule-AsapDataCollection` `Sschedule-ComputeStorageSaving` `Sschedule-PurgeJobs`
 
-对于每个 REST API ，在 REST API 的前面添加 `https://<server>:<port>` 以形成完整的端点。
+对于每个REST API、添加 `\https://<server>:<port>` 在REST API的前面、形成一个完整的端点。
 
 |===
 | 步骤 | REST API | 注释 

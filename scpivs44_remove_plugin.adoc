@@ -22,7 +22,7 @@ summary: 如果您不再需要使用 SnapCenter 数据保护功能，则必须�
 
 
 .步骤
-. 使用格式 `https://<OVA-IP-address>:8080` 登录到 SnapCenter VMware 插件管理 GUI 。
+. 使用格式登录到SnapCenter VMware插件管理GUI `\https://<OVA-IP-address>:8080`。
 +
 部署 SnapCenter VMware 插件时，将显示该插件的 IP 。
 

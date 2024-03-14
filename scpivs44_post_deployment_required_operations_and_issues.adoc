@@ -57,7 +57,7 @@ summary: 部署适用于 VMware vSphere 的 SnapCenter 插件后，您必须完�
 如果不使用管理员凭据，则在部署适用于 VMware vSphere 的 SnapCenter 插件后或迁移后，可能会收到身份验证错误。如果遇到身份验证错误，则必须重新启动此服务。
 
 .步骤
-. 使用格式登录到SnapCenter VMware插件管理GUI `https://<appliance-IP-address>:8080`。使用管理员用户名、密码和MFA令牌详细信息进行登录。可以从维护控制台生成MFA令牌。
+. 使用格式登录到SnapCenter VMware插件管理GUI `\https://<appliance-IP-address>:8080`。使用管理员用户名、密码和MFA令牌详细信息进行登录。可以从维护控制台生成MFA令牌。
 . 重新启动服务。
 
 

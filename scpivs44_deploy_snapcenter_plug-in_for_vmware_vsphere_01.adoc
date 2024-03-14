@@ -15,6 +15,7 @@ summary:
 
 [role="lead"]
 要使用 SnapCenter 功能保护虚拟机上的 VM ，数据存储库和应用程序一致的数据库，您必须部署适用于 VMware vSphere 的 SnapCenter 插件。
+按照中的说明进行操作 link:scpivs44_download_the_ova_open_virtual_appliance.html["下载Open Virtual Appliance (OVA)"^] 页面以下载OVA文件。
 
 . 对于VMware vCenter 7.0.3及更高版本、请按照中的步骤进行操作 link:scpivs44_download_the_ova_open_virtual_appliance.html["下载Open Virtual Appliance (OVA)"^] 将证书导入到vCenter。
 . 在浏览器中，导航到 VMware vSphere vCenter 。
@@ -74,7 +75,7 @@ NOTE: 所有主机都必须配置 IP 地址（不支持 FQDN 主机名）。在�
 
 . 使用部署向导中提供的凭据，使用部署屏幕上显示的 IP 地址登录到 SnapCenter VMware 插件管理 GUI ，然后在信息板上验证 SnapCenter VMware 插件是否已成功连接到 vCenter 并已启用。
 +
-请使用格式 `https://<appliance-IP-address>:8080` 访问管理 GUI 。
+使用格式 `\https://<appliance-IP-address>:8080` 以访问管理GUI。
 
 +
 使用部署时设置的管理员用户名和密码以及使用维护控制台生成的MFA令牌登录。

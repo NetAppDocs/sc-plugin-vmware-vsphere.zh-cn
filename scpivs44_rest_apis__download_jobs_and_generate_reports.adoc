@@ -16,7 +16,7 @@ summary: 要使用适用于VMware vSphere的SnapCenter 插件REST API为VMware v
 [role="lead"]
 要使用适用于VMware vSphere的SnapCenter 插件REST API为VMware vSphere客户端作业生成报告和下载日志、必须对VMware vSphere使用REST API调用。
 
-对于每个 REST API ，在 REST API 的前面添加 `https://<server>:<port>` 以形成完整的端点。
+对于每个REST API、添加 `\https://<server>:<port>` 在REST API的前面、形成一个完整的端点。
 
 
 

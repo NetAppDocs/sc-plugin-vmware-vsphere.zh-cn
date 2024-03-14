@@ -25,7 +25,7 @@ summary: 您可以从适用于 VMware vSphere 的 SnapCenter 插件 GUI 生成�
 .步骤
 . 登录到适用于 VMware vSphere 的 SnapCenter 插件图形用户界面。
 +
-格式为 `https://<OVA-IP-address>:8080` 。
+使用格式 `\https://<OVA-IP-address>:8080`。
 
 . 单击顶部工具栏中的设置图标。
 +

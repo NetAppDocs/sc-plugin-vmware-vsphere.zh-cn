@@ -30,7 +30,7 @@ summary: 在为适用于 VMware vSphere 的 SnapCenter 插件资源组配置备�
 .步骤
 . 登录到 SnapCenter VMware 插件管理 GUI 。
 +
-格式为 `https://<appliance-IP-address>:8080`
+使用格式 `\https://<appliance-IP-address>:8080`
 
 . 单击顶部工具栏中的设置图标。
 +

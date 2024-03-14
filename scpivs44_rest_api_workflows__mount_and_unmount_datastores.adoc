@@ -16,7 +16,7 @@ summary: 要使用适用于 VMware vSphere 的 SnapCenter 插件 REST API 对数
 [role="lead"]
 要使用适用于 VMware vSphere 的 SnapCenter 插件 REST API 对数据存储库备份执行挂载和卸载操作，您必须遵循规定的 REST API 调用顺序。
 
-对于每个 REST API ，在 REST API 的前面添加 `https://<server>:<port>` 以形成完整的端点。
+对于每个REST API、添加 `\https://<server>:<port>` 在REST API的前面、形成一个完整的端点。
 
 
 
@@ -26,7 +26,7 @@ summary: 要使用适用于 VMware vSphere 的 SnapCenter 插件 REST API 对数
 | 步骤 | REST API | 注释 
 
 
-| 1. | 转至 `http://<vCenter-IP>/mob` | 从 VMware 受管对象 URL 中查找数据存储库 moref 。记下要挂载的数据存储库的 * moref* 。 
+| 1. | 转至 `\http://<vCenter-IP>/mob` | 从 VMware 受管对象 URL 中查找数据存储库 moref 。记下要挂载的数据存储库的 * moref* 。 
 
 
 | 2. | ` /4.1/数据 存储库 / ｛ moref ｝ / 备份` | `获取数据存储库的备份列表` 获取指定数据存储库的备份列表。传递步骤 1 中的 * moref* 。记下要挂载的 * 备份 Id* 。 

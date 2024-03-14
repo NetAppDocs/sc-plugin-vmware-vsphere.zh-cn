@@ -72,8 +72,6 @@ sidebar:
     entries:
     - title: 概述
       url: "/scpivs44_quick_start_overview.html"
-    - title: 下载Open Virtual Appliance (OVA)
-      url: "/scpivs44_download_the_ova_open_virtual_appliance.html"
     - title: 部署适用于 VMware vSphere 的 SnapCenter 插件
       url: "/scpivs44_deploy_snapcenter_plug-in_for_vmware_vsphere_01.html"
     - title: 添加存储

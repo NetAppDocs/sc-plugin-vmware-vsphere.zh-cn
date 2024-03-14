@@ -16,13 +16,13 @@ summary: 要使用适用于 VMware vSphere 的 SnapCenter 插件 REST API 对 VM
 [role="lead"]
 要使用适用于 VMware vSphere 的 SnapCenter 插件 REST API 对 VM 备份执行还原操作，您必须遵循规定的 REST API 调用顺序。
 
-对于每个 REST API ，在 REST API 的前面添加 `https://<server>:<port>` 以形成完整的端点。
+对于每个REST API、添加 `\https://<server>:<port>` 在REST API的前面、形成一个完整的端点。
 
 |===
 | 步骤 | REST API | 注释 
 
 
-| 1. | 转至 `http://<vCenter-IP>/mob` | 从 VMware 受管对象 URL 中查找 VM moref 。记下要还原的虚拟机的 * moref* 。 
+| 1. | 转至 `\http://<vCenter-IP>/mob` | 从 VMware 受管对象 URL 中查找 VM moref 。记下要还原的虚拟机的 * moref* 。 
 
 
 | 2. | ` /4.1/VM/ ｛ moref ｝ / 备份` | `获取虚拟机备份` 获取指定虚拟机的备份列表。传递步骤 1 中的 * moref* 。记下要还原的备份的 * 备份 Id* 。 

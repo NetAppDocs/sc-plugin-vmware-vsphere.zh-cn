@@ -20,7 +20,7 @@ summary: 在部署虚拟设备之前，您应了解部署要求。
 
 == 主机要求
 
-开始部署适用于 VMware vSphere 的 SnapCenter 插件之前，您应熟悉主机要求。
+在开始部署适用于VMware vSphere的SnapCenter插件(SCV)之前、您应熟悉主机要求。
 
 * 无论您是使用 SnapCenter VMware 插件保护 Windows 系统上的数据还是使用 Linux 系统上的数据，该插件都将部署为 Linux VM 。
 * 您应在 vCenter Server 上部署 SnapCenter VMware 插件。
