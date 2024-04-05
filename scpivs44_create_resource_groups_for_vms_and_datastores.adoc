@@ -78,9 +78,9 @@ IMPORTANT: 请勿添加处于不可访问状态的 VM 。尽管可以创建包�
 +
 在 ONTAP 9.8 中，备份会在切回后挂起。此问题描述已在 ONTAP 9.9 中修复。
 
-* 优化 Snapshot 副本
+* 优化快照
 +
-要优化 Snapshot 副本，应将与同一卷关联的 VM 和数据存储库分组到一个资源组中。
+要优化快照、应将与同一卷关联的虚拟机和数据存储库分组到一个资源组中。
 
 * 备份策略
 +
@@ -138,7 +138,7 @@ SnapCenter 会在您创建资源组时执行兼容性检查。
 
 
 | 最新 Snapshot 名称  a| 
-如果要将后缀 "_recent " 添加到最新 Snapshot 副本中，请选中此框。"_recent " 后缀将替换日期和时间戳。
+如果要将后缀"_Recent "添加到最新Snapshot、请选中此框。"_recent " 后缀将替换日期和时间戳。
 
 
 NOTE: 系统会为附加到资源组的每个策略创建`_recent`备份。因此、具有多个策略的资源组将具有多个`_recent`备份。请勿手动重命名`_recent`备份。
@@ -146,10 +146,10 @@ NOTE: 系统会为附加到资源组的每个策略创建`_recent`备份。因�
 
 
 | 自定义 Snapshot 格式  a| 
-如果要对 Snapshot 副本名称使用自定义格式，请选中此框并输入名称格式。
+如果要对Snapshot名称使用自定义格式、请选中此框并输入名称格式。
 
 *** 默认情况下，此功能处于禁用状态。
-*** 默认Snapshot副本名称采用的格式 `<ResourceGroup>_<Date-TimeStamp>`
+*** 默认Snapshot名称使用格式 `<ResourceGroup>_<Date-TimeStamp>`
 但是、您可以使用变量$ResourceGroup、$Policy、$hostname、$scheduleype和$CustomText指定自定义格式。使用自定义名称字段中的下拉列表选择要使用的变量及其使用顺序。
 如果选择$CustomText、则名称格式为 `<CustomName>_<Date-TimeStamp>`。在提供的附加框中输入自定义文本。
 [注意]：

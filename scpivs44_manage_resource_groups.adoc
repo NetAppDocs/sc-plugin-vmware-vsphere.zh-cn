@@ -64,10 +64,10 @@ NOTE: 资源组在 Virtual Storage Console （ VSC ）中称为备份作业。
 如果您不再需要保护 vCenter 中的资源，则可以删除该资源组。在从 vCenter 中删除适用于 VMware vSphere 的 SnapCenter 插件之前，必须确保删除所有资源组。
 
 .关于此任务
-所有资源组删除操作均以强制删除的形式执行。此删除操作会断开 vCenter 资源组中的所有策略，从适用于 VMware vSphere 的 SnapCenter 插件中删除资源组，并删除资源组的所有备份和 Snapshot 副本。
+所有资源组删除操作均以强制删除的形式执行。此删除操作会从vCenter资源组中断开所有策略、从适用于VMware vSphere的SnapCenter插件中删除此资源组、并删除此资源组的所有备份和快照。
 
 
-NOTE: 在 SnapVault 关系中，无法删除最后一个 Snapshot 副本；因此，无法删除资源组。在删除属于 SnapVault 关系的资源组之前，必须使用 OnCommand 系统管理器或 ONTAP 命令行界面删除 SnapVault 关系，然后必须删除最后一个 Snapshot 副本。
+NOTE: 在SnapVault关系中、无法删除最后一个Snapshot；因此、无法删除资源组。删除SnapVault关系中的资源组之前、必须使用OnCommand系统管理器或ONTAP命令行界面删除SnapVault关系、然后删除最后一个Snapshot。
 
 .步骤
 . 在选择控制器插件的左侧导航器窗格中、单击*资源组*、然后选择一个资源组并单击*删除*。

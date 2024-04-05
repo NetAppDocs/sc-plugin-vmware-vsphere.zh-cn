@@ -45,10 +45,10 @@ summary: 如果要访问备份中的文件，可以从备份挂载传统数据�
 .. 单击工具栏中的 * 菜单 * ，然后从下拉列表中选择 * 存储 * 。
 .. 左侧导航器窗格将在列表顶部显示您挂载的数据存储库。
 +
-如果在受 SnapVault 计划保护且运行 ONTAP 8.3 的 SnapVault 目标卷上执行连接或挂载操作，则可能会在连接或挂载对话框屏幕中显示一个额外的 Snapshot 副本。发生这种情况的原因是，连接或挂载操作会克隆 SnapVault 目标卷，而 ONTAP 会通过创建新的 Snapshot 副本来更新此卷。
+如果您对受SnapVault计划保护且运行ONTAP 8.3的SnapVault目标卷执行连接或挂载操作、则可能会在连接或挂载对话框屏幕中显示一个额外的Snapshot。出现这种情况的原因是、连接或挂载操作会克隆SnapVault目标卷、而ONTAP会通过创建新的Snapshot来更新此卷。
 
 +
-要防止在克隆卷时创建新的 Snapshot 副本，请关闭 SnapVault 卷的 ONTAP 计划。不会删除以前存在的 Snapshot 副本。
+要防止在克隆卷时创建新的快照、请关闭SnapVault卷的ONTAP计划。不会删除先前的现有快照。
 
 
 

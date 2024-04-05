@@ -49,7 +49,7 @@ TIP: 要提高 NFS 环境中还原操作的性能，请启用 VMware 应用程�
 
 +
 
-NOTE: 如果虚拟机的 Snapshot 副本是由适用于 VMware vSphere 的 SnapCenter 插件以外的软件执行的，则还原操作无法成功完成。
+NOTE: 如果虚拟机的快照是由适用于VMware vSphere的SnapCenter插件以外的软件执行的、则还原操作无法成功完成。
 
 * 目标数据存储库必须已准备就绪。
 +
@@ -76,7 +76,7 @@ NOTE: 如果虚拟机的 Snapshot 副本是由适用于 VMware vSphere 的 SnapC
 .关于此任务
 * 虚拟机已取消注册并重新注册
 +
-VM 的还原操作将取消注册原始 VM ，从备份 Snapshot 副本还原 VM ，并在同一 ESXi 服务器上注册名称和配置相同的已还原 VM 。还原后，您必须手动将 VM 添加到资源组。
+VM的还原操作会取消注册原始VM、从备份Snapshot还原VM、并在同一ESXi服务器上注册具有相同名称和配置的已还原VM。还原后，您必须手动将 VM 添加到资源组。
 
 * 还原数据存储库
 +
@@ -103,7 +103,7 @@ VM 的还原操作将取消注册原始 VM ，从备份 Snapshot 副本还原 VM
 NOTE: 如果要还原已删除的虚拟机，则添加到 SnapCenter VMware 插件的 Storage VM 凭据必须为 `vsadmin` 或与 `vsadmin` 具有所有相同权限的用户帐户。主机必须位于运行 ONTAP 8.2.2 或更高版本的存储系统上。
 
 . 在左侧导航器窗格中，右键单击某个虚拟机，然后从下拉列表中选择 * NetApp SnapCenter * ，然后在二级下拉列表中选择 * 还原 * 以启动向导。
-. 在 * 还原 * 向导的 * 选择备份 * 页面上，选择要还原的备份 Snapshot 副本。
+. 在*Restore*向导的*Select Backup*页面上，选择要还原的备份Snapshot。
 +
 您可以搜索特定备份名称或部分备份名称，也可以通过单击筛选器图标并选择日期和时间范围，选择是否要包含 VMware Snapshot 的备份，是否要挂载备份以及位置来筛选备份列表。单击 * 确定 * 以返回到向导。
 

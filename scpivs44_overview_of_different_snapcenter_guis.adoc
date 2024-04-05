@@ -18,7 +18,7 @@ summary: 适用于 VMware vSphere 的 SnapCenter 插件是一个独立插件，�
 
 适用于 VMware vSphere 的 SnapCenter 插件是一个独立插件，与其他 SnapCenter 插件不同。您必须在vCenter中使用VMware vSphere客户端GUI执行VM、VMDK和数据存储库的所有备份和还原操作。您还可以使用 Web 客户端 GUI 信息板监控受保护和未受保护的 VM 列表。对于备份和还原以及作业监控等所有其他SnapCenter插件(基于应用程序的插件)操作、您可以使用SnapCenter图形用户界面。
 
-要保护VM和数据存储库、请使用VMware vSphere客户端界面。Web 客户端图形用户界面可与存储系统上的 NetApp Snapshot 副本技术相集成。这样，您就可以在几秒钟内备份 VM 和数据存储库，并还原 VM ，而无需使 ESXi 主机脱机。
+要保护VM和数据存储库、请使用VMware vSphere客户端界面。Web客户端图形用户界面可与存储系统上的NetApp Snapshot技术集成。这样，您就可以在几秒钟内备份 VM 和数据存储库，并还原 VM ，而无需使 ESXi 主机脱机。
 
 此外、还提供了一个管理GUI、用于对SnapCenter VMware插件执行管理操作。
 
@@ -41,4 +41,4 @@ summary: 适用于 VMware vSphere 的 SnapCenter 插件是一个独立插件，�
 |===
 对于VM一致的备份和还原操作、您必须使用VMware vSphere客户端GUI。虽然可以使用 VMware 工具执行某些操作，例如挂载或重命名数据存储库，但这些操作不会注册到 SnapCenter 存储库中，并且无法识别。
 
-SnapCenter 不支持同时为数据库和 VM 创建一个 Snapshot 副本。VM 和数据库的备份必须单独计划和运行，这样即使数据库和 VM 托管在同一个卷中，也会创建单独的 Snapshot 副本。必须使用SnapCenter 图形用户界面计划基于应用程序的备份；必须使用VMware vSphere客户端图形用户界面计划VM一致的备份。
+SnapCenter不支持同时为数据库和VM创建一个快照。VM和数据库的备份必须单独计划和运行、这样即使数据库和VM托管在同一个卷中、也会创建单独的Snapshot。必须使用SnapCenter 图形用户界面计划基于应用程序的备份；必须使用VMware vSphere客户端图形用户界面计划VM一致的备份。

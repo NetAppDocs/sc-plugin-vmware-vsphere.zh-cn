@@ -20,11 +20,11 @@ summary: 在使用适用于 VMware vSphere 的 SnapCenter 插件备份 VM 和数
 * 您必须已阅读前提条件。
 * 您必须已配置二级存储关系。
 +
-** 如果要将 Snapshot 副本复制到镜像或存储二级存储，则必须配置关系，并且 SnapCenter 管理员必须已为源卷和目标卷分配 Storage VM 。
-** 要成功将 Snapshot 副本传输到 NFS 或 VMFS 数据存储库上的 Version-FlexibleMirror 关系的二级存储，请确保 SnapMirror 策略类型为异步镜像并选中 "all_source_snapshots" 选项。
-** 当二级存储（镜像存储）上的 Snapshot 副本数量达到最大限制时，在备份操作中注册备份并应用保留的活动将失败，并显示以下错误： `一个或多个 SnapMirror 关系当前使用此 Snapshot 副本作为参考 Snapshot 副本。删除 Snapshot 副本可能会导致发生原因未来的 SnapMirror 操作失败。`
+** 如果要将Snapshot复制到镜像或存储二级存储、则必须配置关系、并且SnapCenter管理员必须已为源卷和目标卷分配Storage VM。
+** 要成功将Snapshot传输到NFS或VMFS数据存储库上的Version-FlexithleMirror关系的二级存储、请确保SnapMirror策略类型为异步镜像、并且已选中"all_ssource_SnapMirror"选项。
+** 当二级存储(镜像存储)上的Snapshot数量达到最大限制时、在备份操作中注册备份并应用保留的活动将失败、并显示以下错误： `This Snapshot is currently used as a reference Snapshot by one or more SnapMirror relationships. Deleting the Snapshot can cause future SnapMirror operations to fail.`
 +
-要更正此问题描述，请为二级存储配置 SnapMirror 保留策略，以避免达到 Snapshot 副本的最大限制。
+要更正此问题描述、请为二级存储配置SnapMirror保留策略、以避免达到Snapshot的最大限制。
 
 +
 有关管理员如何为用户分配资源的信息，请参见 https://docs.netapp.com/us-en/snapcenter/concept/concept_types_of_role_based_access_control_in_snapcenter.html["有关使用基于角色的访问控制的 SnapCenter 信息"^]。
@@ -76,7 +76,7 @@ NOTE: 只有VMFS数据存储库才支持SM-BC。
 . 指定保留设置。
 +
 
-IMPORTANT: 如果计划启用 SnapVault 复制，则应将保留数量设置为 2 个或更多备份。如果将保留计数设置为 1 个要保留的备份，则保留操作可能会失败。这是因为在将较新的 Snapshot 副本复制到目标之前，第一个 Snapshot 副本是 SnapVault 关系的参考 Snapshot 副本。
+IMPORTANT: 如果计划启用 SnapVault 复制，则应将保留数量设置为 2 个或更多备份。如果将保留计数设置为 1 个要保留的备份，则保留操作可能会失败。这是因为第一个快照是SnapVault关系的参考快照、直到新的快照复制到目标为止。
 
 +
 
@@ -111,10 +111,11 @@ NOTE: 适用于 VMware vSphere 4.5 及更高版本的 SnapCenter 插件中的 Fl
 
 
 | Snapshot 标签  a| 
-输入要添加到使用此策略创建的 SnapVault 和 SnapMirror Snapshot 副本的可选自定义标签。Snapshot 标签有助于将使用此策略创建的快照与二级存储系统上的其他快照区分开。
+输入要添加到使用此策略创建的SnapVault和SnapMirror快照的可选自定义标签。
+Snapshot 标签有助于将使用此策略创建的快照与二级存储系统上的其他快照区分开。
 
 
-NOTE: Snapshot 副本标签最多允许包含 31 个字符。
+NOTE: Snapshot标签最多允许包含31个字符。
 
 |===
 . 可选：在 * 高级 * 字段中，选择所需的字段。下表列出了高级字段详细信息。

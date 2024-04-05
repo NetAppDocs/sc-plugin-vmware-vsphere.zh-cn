@@ -28,7 +28,9 @@ summary: 要使用适用于 VMware vSphere 的 SnapCenter 插件 REST API 对 VM
 | 2. | ` /4.1/VM/ ｛ moref ｝ / 备份` | `获取虚拟机备份` 获取指定虚拟机的备份列表。传递步骤 1 中的 * moref* 。记下要还原的备份的 * 备份 Id* 。 
 
 
-| 3. | ` /4.1/vm/backup/ ｛ backupId ｝ / snapshotlocations` | `获取快照位置` 获取指定备份的 Snapshot 副本的位置。传递步骤 2 中的 * 备份 Id* 。请注意 * 快照位置列表 * 信息。 
+| 3. | ` /4.1/vm/backup/ ｛ backupId ｝ / snapshotlocations` | `Get snapshot locations` 获取指定备份的Snapshot的位置。
+传递步骤 2 中的 * 备份 Id* 。
+请注意 * 快照位置列表 * 信息。 
 
 
 | 4. | ` /4.1/VM/ ｛ moref ｝ /backups/vmdklocations` | `获取 vmdk 位置` 获取指定虚拟机的 VMDK 列表。请注意 * vmdkLocationsList* 信息。 
