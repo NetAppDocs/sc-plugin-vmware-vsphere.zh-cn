@@ -55,7 +55,7 @@ NOTE: 对于 IPv6 HTML Web 客户端，必须使用 Chrome 或 Firefox 。
 
 NOTE: 记下您指定的用户名和密码。如果要稍后修改适用于 VMware vSphere 的 SnapCenter 插件配置，则需要使用这些凭据。
 
-在 * 设置网络属性 * 中，输入网络信息。在 * 设置日期和时间 * 中，选择 vCenter 所在的时区。
+在*设置网络属性*部分，输入网络信息。在*设置日期和时间*部分中，选择vCenter所在的时区。
 
 
 
@@ -65,15 +65,15 @@ NOTE: 记下您指定的用户名和密码。如果要稍后修改适用于 VMwa
 
 NOTE: 所有主机都必须配置 IP 地址（不支持 FQDN 主机名）。在部署之前， Deploy 操作不会验证您的输入。
 
-. 导航到部署了适用于 VMware vSphere 的 SnapCenter 插件的虚拟机，然后单击 * 摘要 * 选项卡，再单击 * 启动 * 框以启动 SnapCenter VMware 插件。
-. 在 SnapCenter VMware 插件启动时，右键单击已部署的 SnapCenter VMware 插件，选择 * 来宾操作系统 * ，然后单击 * 安装 VMware 工具 * 。
+. 导航到部署了适用于VMware vSphere的SnapCenter插件的虚拟机，单击*摘要*选项卡，然后单击*开机*框启动适用于VMware vSphere的SnapCenter插件。
+. 在适用于VMware vSphere的SnapCenter插件启动时，右键单击已部署的适用于VMware vSphere的SnapCenter插件，选择*Guest OS*，然后单击*Install VMware tools*。
 +
-完成部署可能需要几分钟时间。在启动 SnapCenter VMware 插件，安装 VMware 工具以及屏幕提示您登录到 SnapCenter VMware 插件后，系统将显示部署成功。
+完成部署可能需要几分钟时间。如果适用于VMware vSphere的SnapCenter插件已启动、VMware工具已安装、并且屏幕提示您登录到适用于VMware vSphere的SnapCenter插件、则表示部署成功。
 
 +
-此屏幕将显示部署 SnapCenter VMware 插件的 IP 地址。记下 IP 地址。如果要更改 SnapCenter SnapCenter 插件配置，您需要登录到 VMware 插件管理 GUI 。
+此屏幕将显示部署适用于VMware vSphere的SnapCenter插件的IP地址。记下 IP 地址。如果要更改适用于VMware vSphere的SnapCenter插件配置、您需要登录到SnapCenter管理图形用户界面。
 
-. 使用部署向导中提供的凭据，使用部署屏幕上显示的 IP 地址登录到 SnapCenter VMware 插件管理 GUI ，然后在信息板上验证 SnapCenter VMware 插件是否已成功连接到 vCenter 并已启用。
+. 使用部署向导中提供的凭据、使用部署屏幕上显示的IP地址登录到适用于VMware vSphere的SnapCenter插件管理图形用户界面、然后在信息板上验证适用于VMware vSphere的SnapCenter插件是否已成功连接到vCenter并启用。
 +
 使用格式 `\https://<appliance-IP-address>:8080` 以访问管理GUI。
 

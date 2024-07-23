@@ -29,18 +29,18 @@ summary: 通过添加存储，适用于 VMware vSphere 的 SnapCenter 插件可�
 您必须将存储集群添加到适用于VMware vSphere的SnapCenter插件和适用于VMware vSphere的ONTAP工具中、以使VVOV数据保护正常工作。
 
 +
-有关详细信息，请参见 https://docs.netapp.com/vapp-98/index.jsp["适用于 VMware vSphere 的 ONTAP 工具"^]
+有关详细信息、请参见 https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html["适用于 VMware vSphere 的 ONTAP 工具"^]
 
 
 
 .开始之前
-ESXi 服务器， SnapCenter VMware 插件和每个 vCenter 必须同时同步。如果您尝试添加存储，但 vCenter 的时间设置未同步，则此操作可能会失败并显示 Java 证书错误。
+ESXi服务器、适用于VMware vSphere的SnapCenter插件以及每个vCenter必须同步到同一时间。如果您尝试添加存储，但 vCenter 的时间设置未同步，则此操作可能会失败并显示 Java 证书错误。
 
 .关于此任务
-SnapCenter VMware 插件可对直接连接的 Storage VM 和存储集群中的 Storage VM 执行备份和还原操作。
+适用于VMware vSphere的SnapCenter插件可对直接连接的Storage VM以及存储集群中的Storage VM执行备份和还原操作。
 
 
-NOTE: 如果您使用SnapCenter VMware插件在VMDK上支持基于应用程序的备份、则必须使用SnapCenter 图形用户界面输入存储身份验证详细信息并注册存储系统。
+NOTE: 如果您使用适用于VMware vSphere的SnapCenter插件在VMDK上支持基于应用程序的备份、则必须使用SnapCenter图形用户界面输入存储身份验证详细信息并注册存储系统。
 
 * 对于处于链接模式的 vCenter ，您必须分别向每个 vCenter 添加存储系统。
 * 如果要添加SVM、则Storage VM的名称必须解析为管理LIF。
@@ -50,11 +50,12 @@ NOTE: 如果您使用SnapCenter VMware插件在VMDK上支持基于应用程序�
 +
 如果您添加的 Storage VM 名称无法解析为管理 LIF ，则计划的备份作业将失败，因为此插件无法发现此 Storage VM 上的任何数据存储库或卷。如果发生这种情况，请将此 Storage VM 添加到 SnapCenter 并指定管理 LIF ，或者添加一个包含此 Storage VM 的集群并指定集群管理 LIF 。
 
-* 存储身份验证详细信息不会在SnapCenter VMware插件的多个实例之间共享、也不会在vCenter上的Windows SnapCenter Server和SnapCenter 插件之间共享。
+* 存储身份验证详细信息不会在适用于VMware vSphere的SnapCenter插件的多个实例之间共享、也不会在Windows SnapCenter Server与vCenter上的SnapCenter插件之间共享。
 
 
 .步骤
-. 在vSphere客户端的左侧导航器窗格中、单击*存储系统*。
+. 从vCenter客户端快捷方式页面中、选择适用于VMware vSphere的SnapCenter插件(SCV)。
+. 在选择控制阀的左侧导航窗格中，选择*"Dard板*">"*存储系统*"。
 . 在存储系统页面上、选择*添加*选项。
 . 在 * 添加存储系统 * 向导中，输入下表列出的基本 Storage VM 或集群信息：
 +
@@ -62,11 +63,10 @@ NOTE: 如果您使用SnapCenter VMware插件在VMDK上支持基于应用程序�
 | 对于此字段… | 执行此操作… 
 
 
-| 存储系统 | 输入存储集群或Storage VM的FQDN或管理LIF的IP地址。
-SnapCenter VMware插件不支持在不同集群上使用多个同名Storage VM。 
+| 存储系统 | 输入存储集群或Storage VM的FQDN或管理LIF的IP地址。适用于VMware vSphere的SnapCenter插件不支持在不同集群上使用多个同名Storage VM。 
 
 
-| 身份验证方法 | 选择Credentials或Certificate。支持两种类型的证书：- https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_configure_a_CA_signed_certificate_for_storage_system_authentication_with_SCV["CA签名证书"^]- https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_configure_a_self-signed_certificate_for_storage_system_authentication_with_SCV["自签名证书"^] 
+| 身份验证方法 | 选择Credentials或Certificate。支持两种类型的证书：- https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_configure_a_self-signed_certificate_for_storage_system_authentication_with_SCV["自签名证书"^] - https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_configure_a_CA_signed_certificate_for_storage_system_authentication_with_SCV["CA签名证书"]。 
 
 
 | Username | 如果选择凭据作为身份验证方法、则会显示此字段。输入用于登录到Storage VM或集群的ONTAP用户名。 
@@ -89,17 +89,16 @@ SnapCenter VMware插件不支持在不同集群上使用多个同名Storage VM�
 - 80表示HTTP连接 
 
 
-| 超时 | 输入SnapCenter VMware插件在超时操作之前应等待的秒数。默认值为 60 秒 
+| 超时 | 输入适用于VMware vSphere的SnapCenter插件在超时操作之前应等待的秒数。默认值为60秒。 
 
 
-| 首选 IP | 如果此Storage VM具有多个管理IP地址、请选中此框并输入您希望SnapCenter VMware插件使用的IP地址。
-* 注： * 输入 IP 地址时，请勿使用方括号（）。 
+| 首选IP地址 | 如果Storage VM具有多个管理IP地址、请选中此框并输入您希望适用于VMware vSphere的SnapCenter插件使用的IP地址。* 注： * 输入 IP 地址时，请勿使用方括号（）。 
 
 
 | 事件管理系统(EMS)和AutoSupport 设置 | 如果要将 EMS 消息发送到存储系统系统系统日志，或者要将 AutoSupport 消息发送到存储系统以应用保护，完成还原操作或失败操作，请选中相应的复选框。选中*向存储系统发送失败操作的AutoSupport 通知*复选框和*将SnapCenter 服务器事件记录到系统日志*复选框以启用AutoSupport 通知。 
 
 
-| 将 SnapCenter 服务器事件记录到系统日志中 | 选中此框可记录 SnapCenter VMware 插件的事件。 
+| 将 SnapCenter 服务器事件记录到系统日志中 | 选中此复选框以记录适用于VMware vSphere的SnapCenter插件的事件。 
 
 
 | 向存储系统发送操作失败的 AutoSupport 通知 | 如果要为失败的数据保护作业发送 AutoSupport 通知，请选中此复选框。您还必须在 Storage VM 上启用 AutoSupport 并配置 AutoSupport 电子邮件设置。 

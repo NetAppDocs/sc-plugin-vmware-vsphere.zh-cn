@@ -47,7 +47,7 @@ summary: 资源组是指要保护的VM、数据存储库、vSphere标记和vSphe
 对于所有资源组：
 
 
-IMPORTANT: 如果您使用的是 VMware vSphere 集群服务（ vCL ），请勿在 SnapCenter VMware 插件资源组中包含由 vCL 管理的虚拟机。
+IMPORTANT: 如果您使用的是VMware vSphere集群服务(VCL)、请勿将VCL管理的VM包含在适用于VMware vSphere的SnapCenter插件资源组中。
 
 
 TIP: 适用于VMware vSphere 4.5及更高版本的SnapCenter插件支持大型LUN上的数据存储库、以及最大128 TB的文件和最大300 TB的卷。如果要保护大型LUN、请仅使用厚配置LUN以避免延迟。
@@ -58,7 +58,7 @@ IMPORTANT: 请勿添加处于不可访问状态的 VM 。尽管可以创建包�
 .开始之前
 在创建包含VVOL VM的资源组之前、必须先部署适用于VMware的ONTAP 工具。
 
-有关详细信息，请参见 https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html["适用于 VMware vSphere 的 ONTAP 工具"^]。
+有关详细信息，请参阅 https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html["适用于 VMware vSphere 的 ONTAP 工具"^]。
 
 .关于此任务
 您可以随时在资源组中添加或删除资源。
@@ -73,7 +73,7 @@ IMPORTANT: 请勿添加处于不可访问状态的 VM 。尽管可以创建包�
 
 * MetroCluster 环境中包含 FlexGroup 卷的资源组
 +
-如果您运行的是 ONTAP 9.8 或 ONTAP 9.9 ，则在切换或切回之后，必须重新启动 SnapCenter VMware 插件服务并重新同步 SnapMirror 关系，然后才能在 MetroCluster 环境中备份资源组。
+如果您运行的是ONTAP 9.8或ONTAP 9.9、则在切换或切回之后、必须重新启动适用于VMware vSphere的SnapCenter插件服务并重新同步SnapMirror关系、然后才能在MetroCluster环境中备份资源组。
 
 +
 在 ONTAP 9.8 中，备份会在切回后挂起。此问题描述已在 ONTAP 9.9 中修复。
@@ -102,13 +102,13 @@ SnapCenter 会在您创建资源组时执行兼容性检查。
 
 
 .步骤
-. 在选择控制阀插件的左侧导航器窗格中，单击*资源组*，然后选择*创建*以启动向导。
+. 在选择控制阀插件的左侧导航窗格中，单击*资源组*，然后选择*创建*以启动向导。
 
 
 这是创建资源组的最简单方法。但是，您也可以通过执行以下操作之一来创建包含一个资源的资源组：
 
-* 要为一个VM创建资源组，请单击*菜单*>*主机和群集*，然后右键单击一个VM，选择NetApp SnapCenter，然后选择*创建资源组*。
-* 要为一个数据存储库创建资源组，请单击*菜单*>*主机和群集*，然后右键单击某个数据存储库，选择* NetApp SnapCenter，然后选择*创建资源组*。
+* 要为一个VM创建资源组，请在快捷方式页面上选择*主机和群集*，然后右键单击某个VM，选择*适用于VMware VSphere的SnapCenter插件*>*创建资源组*。
+* 要为一个数据存储库创建资源组，请在快捷方式页面上选择*主机和群集*，然后右键单击某个数据存储库，选择*适用于VMware VSphere的SnapCenter插件*>*创建资源组*。
 +
 .. 在向导的 * 常规信息和通知 * 页面上，执行以下操作：
 +
@@ -119,7 +119,7 @@ SnapCenter 会在您创建资源组时执行兼容性检查。
 | vCenter Server | 选择一个 vCenter Server 。 
 
 
-| Name | 输入资源组的名称。请勿在虚拟机，数据存储库，策略，备份或资源组名称中使用以下特殊字符： % & * $ # @ ！\ / ： * ？" < > - [ 垂直条 ] ； " ，。允许使用下划线字符（ _ ）。具有特殊字符的虚拟机或数据存储库名称会被截断，因此很难搜索特定备份。在链接模式下，每个 vCenter 都有一个单独的 SnapCenter VMware 插件存储库。因此，您可以在 vCenter 中使用重复的名称。 
+| Name | 输入资源组的名称。请勿在虚拟机，数据存储库，策略，备份或资源组名称中使用以下特殊字符： % & * $ # @ ！\ / ： * ？" < > - [ 垂直条 ] ； " ，。允许使用下划线字符（ _ ）。具有特殊字符的虚拟机或数据存储库名称会被截断，因此很难搜索特定备份。在链接模式下、每个vCenter都有一个单独的适用于VMware vSphere的SnapCenter插件存储库。因此，您可以在 vCenter 中使用重复的名称。 
 
 
 | Description | 输入资源组的问题描述。 
@@ -183,10 +183,10 @@ NOTE: 系统会为附加到资源组的每个策略创建`_recent`备份。因�
 单击 * 下一步 * 时，系统会首先检查 SnapCenter 是否管理选定资源所在的存储并与其兼容。
 
 +
-如果显示消息 `Sselected <resource-name> is not SnapCenter compatible` ，则选定资源与 SnapCenter 不兼容。请参见 <<管理兼容性检查失败>> 有关详细信息 ...
+如果显示此消息 `Selected <resource-name> is not SnapCenter compatible` 、则表示选定资源与SnapCenter不兼容。
 
 +
-要从备份中全局排除一个或多个数据存储库、您必须在`sCBR.override`配置文件的`global.ds.excludation.pattern`属性中指定数据存储库名称。请参见 <<scpivs44_properties_you_can_override.adoc#Properties you can override,可以覆盖的属性>>。
+要从备份中全局排除一个或多个数据存储库、必须在配置文件的属性中指定数据存储库名称 `global.ds.exclusion.pattern` `scbr.override` 。请参阅 link:scpivs44_properties_you_can_override.html["可以覆盖的属性"]。
 
 .. 在 * 生成磁盘 * 页面上，为多个数据存储库中具有多个 VMDK 的 VM 选择一个选项：
 +
@@ -224,10 +224,10 @@ image:scpivs44_image18.png["创建资源组窗口"]
 在起始小时字段中，输入一个非零的日期和时间。日期格式必须为 `day/month/year` 。
 
 +
-如果在 * 间隔 * 字段中选择了天数，则会在每月的第 1 天执行备份，之后会按指定的间隔执行备份。例如，如果选择 * 每 2 天 * ，则无论开始日期是偶数还是奇数，备份都会在整个月内的第 1 天，第 3 天，第 5 天，第 7 天等执行。
+如果在每个字段中选择天数、则会在每月第1天执行备份、之后会按指定的间隔执行备份。例如，如果选择 * 每 2 天 * ，则无论开始日期是偶数还是奇数，备份都会在整个月内的第 1 天，第 3 天，第 5 天，第 7 天等执行。
 
 +
-您必须填写每个字段。SnapCenter VMware 插件会在部署 SnapCenter VMware 插件的时区创建计划。您可以使用适用于 VMware vSphere 的 SnapCenter 插件 GUI 修改时区。
+您必须填写每个字段。适用于VMware vSphere的SnapCenter插件会在部署适用于VMware vSphere的SnapCenter插件的时区创建计划。您可以使用适用于 VMware vSphere 的 SnapCenter 插件 GUI 修改时区。
 
 +
 link:scpivs44_modify_the_time_zones.html["修改备份的时区"]。
@@ -261,18 +261,18 @@ NOTE: 如果备份中任何 VM 的暂停操作失败，则备份将标记为不�
 SnapCenter 4.x 版支持 ONTAP 8.3.1 及更高版本。
 
 +
-适用于 VMware vSphere 的 SnapCenter 插件不会对所有 ONTAP 版本执行兼容性检查；仅对 ONTAP 8.2.1 及更早版本执行兼容性检查。因此，请始终参见 https://imt.netapp.com/matrix/imt.jsp?components=117018;&solution=1259&isHWU&src=IMT["NetApp 互操作性表工具（ IMT ）"^] 有关 SnapCenter 支持的最新信息。
+适用于VMware vSphere的SnapCenter插件不会对所有ONTAP版本执行兼容性检查、仅适用于ONTAP 8.2.1及更早版本。因此、请始终参考 https://imt.netapp.com/matrix/imt.jsp?components=117018;&solution=1259&isHWU&src=IMT["NetApp 互操作性表工具（ IMT ）"^] 以获取有关SnapCenter支持的最新信息。
 
 * 共享 PCI 设备已连接到 VM 。
-* 未在 SnapCenter 中配置首选 IP 。
-* 您尚未将 Storage VM （ SVM ）管理 IP 添加到 SnapCenter 。
+* 未在SnapCenter中配置首选IP地址。
+* 您尚未将Storage VM (SVM)管理IP地址添加到SnapCenter中。
 * 此 Storage VM 已关闭。
 
 
 要更正兼容性错误，请执行以下操作：
 
 . 确保 Storage VM 正在运行。
-. 确保已将 VM 所在的存储系统添加到适用于 VMware vSphere 的 SnapCenter 插件清单中。
+. 确保已将VM所在的存储系统添加到适用于VMware vSphere的SnapCenter插件清单中。
 . 确保已将 Storage VM 添加到 SnapCenter 。使用VMware vSphere客户端图形用户界面上的添加存储系统选项。
 . 如果跨区 VM 在 NetApp 和非 NetApp 数据存储库上都具有 VMDK ，则将 VMDK 移动到 NetApp 数据存储库。
 

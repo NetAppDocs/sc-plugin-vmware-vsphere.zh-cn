@@ -24,25 +24,25 @@ summary: 在使用适用于 VMware vSphere 的 SnapCenter 插件备份 VM 和数
 ** 要成功将Snapshot传输到NFS或VMFS数据存储库上的Version-FlexithleMirror关系的二级存储、请确保SnapMirror策略类型为异步镜像、并且已选中"all_ssource_SnapMirror"选项。
 ** 当二级存储(镜像存储)上的Snapshot数量达到最大限制时、在备份操作中注册备份并应用保留的活动将失败、并显示以下错误： `This Snapshot is currently used as a reference Snapshot by one or more SnapMirror relationships. Deleting the Snapshot can cause future SnapMirror operations to fail.`
 +
-要更正此问题描述、请为二级存储配置SnapMirror保留策略、以避免达到Snapshot的最大限制。
+要更正此问题、请为二级存储配置SnapMirror保留策略、以避免达到Snapshot的最大限制。
 
 +
-有关管理员如何为用户分配资源的信息，请参见 https://docs.netapp.com/us-en/snapcenter/concept/concept_types_of_role_based_access_control_in_snapcenter.html["有关使用基于角色的访问控制的 SnapCenter 信息"^]。
+有关管理员如何将资源分配给用户的信息，请参见 https://docs.netapp.com/us-en/snapcenter/concept/concept_types_of_role_based_access_control_in_snapcenter.html["有关使用基于角色的访问控制的 SnapCenter 信息"^]。
 
 
 
 * 如果您希望进行VM一致的备份、则必须安装并运行VMware工具。需要使用VMware工具来暂停VM。VVOL VM 不支持 VM 一致的备份。
-* 通过SnapMirror业务连续性(SM-BC)、即使在整个站点发生故障时、业务服务也可以继续运行、从而支持应用程序使用二级副本透明地进行故障转移。
+* 通过SnapMirror主动同步、即使在整个站点发生故障时、业务服务也可以继续运行、从而支持应用程序使用二级副本透明地进行故障转移。
 +
 
-NOTE: 只有VMFS数据存储库才支持SM-BC。
+NOTE: 只有VMFS数据存储库才支持SnapMirror活动同步。
 
 +
-要保护SM-BC部署中的VMFS数据存储库、作为SnapCenter管理员、您需要：
+要保护SnapMirror活动同步部署中的VMFS数据存储库、作为SnapCenter管理员、您需要：
 
 +
-** 按照技术报告中所述配置集群和调解器： https://www.netapp.com/pdf.html?item=/media/21888-tr-4878.pdf["TR-4878：《SnapMirror业务连续性》"]。
-** 将与VMFS数据存储库关联的卷添加到一致性组中、然后使用_AutomatedFailOber保护策略在两个ONTAP存储系统之间创建数据保护关系。
+** 按照技术报告中所述配置集群和调解器： https://www.netapp.com/pdf.html?item=/media/21888-tr-4878.pdf["TR-4878：SnapMirror活动同步(原SMBC)"]。
+** 将与VMFS数据存储库关联的卷添加到一致性组、然后使用_AutomatedFailOver_或_AutomatedFailOver双 工_保护策略在两个ONTAP存储系统之间创建数据保护关系。自ONTAP 9.15.1版起、支持_AutomatedFailOver双 工_策略。
 
 
 
@@ -51,7 +51,7 @@ NOTE: 只有VMFS数据存储库才支持SM-BC。
 这些向导页面上的大多数字段都是不言自明的。以下信息介绍了一些可能需要指导的字段。
 
 .步骤
-. 在选择控制器插件的左侧导航器窗格中、单击*策略*。
+. 在选择控制阀插件的左侧导航窗格中，单击*Policies*。
 . 在*Policies*页上，选择*Cree*以启动向导。
 . 在 * 新建备份策略 * 页面上，选择要使用此策略的 vCenter Server ，然后输入策略名称和问题描述。
 +
@@ -95,7 +95,7 @@ NOTE: 对于 ONTAP 9.4 或更高版本上的资源，最大保留值为 1018 次
 NOTE: 适用于 VMware vSphere 4.5 及更高版本的 SnapCenter 插件中的 FlexGroup 卷中的数据存储库支持此选项。
 
 
-NOTE: 要在SM-BC部署中保护VMFS数据存储库，您需要完成_before you BENTINE_一节中提到的前提条件，并启用*Update SnapMirror after backup*。
+NOTE: 要在SnapMirror活动同步部署中保护VMFS数据存储库，您需要完成_before you before beepment_一节中所述的前提条件，并启用*备份后更新SnapMirror *。
 
 
 
@@ -130,7 +130,7 @@ NOTE: Snapshot标签最多允许包含31个字符。
 VVOL 不支持此选项。对于 VVol 虚拟机，仅执行崩溃状态一致的备份。
 
 
-IMPORTANT: 要执行虚拟机一致的备份、必须在虚拟机上运行VMware工具。如果 VMware Tools 未运行，则会执行崩溃状态一致的备份。
+IMPORTANT: 要执行虚拟机一致的备份、必须在虚拟机上运行VMware工具。如果VMware工具未运行、则会执行崩溃状态一致的备份。
 
 
 NOTE: 选中 VM 一致性复选框后，备份操作可能需要更长时间并需要更多存储空间。在这种情况下， VM 会先暂停，然后 VMware 执行 VM 一致的快照，然后 SnapCenter 执行其备份操作，最后恢复 VM 操作。VM 子系统内存不包括在 VM 一致性 Snapshot 中。
@@ -141,7 +141,7 @@ NOTE: 选中 VM 一致性复选框后，备份操作可能需要更长时间并�
 
 
 | 脚本  a| 
-输入希望 SnapCenter VMware 插件在备份操作前后运行的预处理程序或后脚本的完全限定路径。例如，您可以运行脚本来更新 SNMP 陷阱，自动执行警报和发送日志。执行脚本时会验证脚本路径。
+输入要在备份操作前后运行适用于VMware vSphere的SnapCenter插件的规定或后处理脚本的完全限定路径。例如，您可以运行脚本来更新 SNMP 陷阱，自动执行警报和发送日志。执行脚本时会验证脚本路径。
 
 
 NOTE: 预处理脚本和后处理脚本必须位于虚拟设备虚拟机上。要输入多个脚本，请在每个脚本路径后按 * Enter * ，以便在单独的行中列出每个脚本。不允许使用字符 " ； " 。

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_unregister_plugin_from_vcenter.html 
 keywords:  
-summary: 如果在处于链接模式的 vCenter 中停止 SnapCenter VMware 插件服务，则并非所有链接的 vCenter 都提供资源组，即使 SnapCenter VMware 插件服务正在其他链接的 vCenter 中运行也是如此。您必须手动取消注册 SnapCenter VMware 插件扩展。 
+summary: 如果在处于链接模式的vCenter中停止适用于VMware vSphere的SnapCenter插件服务、则资源组不会在所有链接的vCenter中都可用、即使适用于VMware vSphere的SnapCenter插件服务正在其他链接的vCenter中运行也是如此。您必须手动取消注册适用于VMware vSphere的SnapCenter插件扩展。 
 ---
 = 从 vCenter 取消注册适用于 VMware vSphere 的 SnapCenter 插件
 :hardbreaks:
@@ -14,12 +14,12 @@ summary: 如果在处于链接模式的 vCenter 中停止 SnapCenter VMware 插�
 
 
 [role="lead"]
-如果在处于链接模式的 vCenter 中停止 SnapCenter VMware 插件服务，则并非所有链接的 vCenter 都提供资源组，即使 SnapCenter VMware 插件服务正在其他链接的 vCenter 中运行也是如此。
+如果在处于链接模式的vCenter中停止适用于VMware vSphere的SnapCenter插件服务、则资源组不会在所有链接的vCenter中都可用、即使适用于VMware vSphere的SnapCenter插件服务正在其他链接的vCenter中运行也是如此。
 
-您必须手动取消注册 SnapCenter VMware 插件扩展。
+您必须手动取消注册适用于VMware vSphere的SnapCenter插件扩展。
 
 .步骤
-. 在已停止 SnapCenter VMware 插件服务的链接 vCenter 上，导航到受管对象参考（ Managed Object Reference ， MOB ）管理器。
+. 在已停止适用于VMware vSphere的SnapCenter插件服务的链接vCenter上、导航到托管对象参考(Managed Object Reference、MOB)管理器。
 . 在属性选项的值列中选择 * 内容 * ，然后在下一屏幕的值列中选择 * 扩展管理器 * 以显示注册的扩展列表。
 . 取消注册扩展 `com.netapp.scv.client` 和 `com.netapp.aegis`。
 

@@ -43,7 +43,7 @@ SnapCenter 元数据，包括存储系统，自定义限制以及 SnapCenter 配
 
 * 迁移 cmdlet 过程
 +
-您必须对向 SnapCenter 注册的每个 SnapCenter VMware 插件实例使用 Windows PowerShell cmdlet `invoke-scvAMigraation` 。
+对于已向SnapCenter注册的适用于VMware vSphere的SnapCenter插件的每个实例、必须使用Windows PowerShell cmdlet `invoke-SCVOVAMigration` 。
 
 +
 cmdlet 可执行以下操作：
@@ -54,15 +54,15 @@ cmdlet 可执行以下操作：
 ** 为迁移后备份创建备份计划。
 ** 从 Windows 主机卸载适用于 VMware vSphere 的现有 SnapCenter 插件。
 +
-如果 SnapCenter VMware 插件安装在 SnapCenter 服务器主机上，并且为 SnapCenter 存储库配置了保护，则迁移过程还会卸载包含适用于 VMware vSphere 的 SnapCenter 插件和适用于 Windows 的 SnapCenter 插件的基于 Windows 的插件软件包， 然后，重新安装适用于 Windows 的最新版本 SnapCenter 插件以支持存储库保护。SnapCenter 图形用户界面中的主机类型从 "vsphere" 更改为 "Windows" 。
+如果适用于VMware vSphere的SnapCenter插件安装在SnapCenter服务器主机上、并且为SnapCenter存储库配置了保护、则迁移过程还会卸载基于Windows的插件软件包、其中包含适用于VMware vSphere的SnapCenter插件和适用于Windows的SnapCenter插件。 然后重新安装最新版本的适用于Windows的SnapCenter插件以支持存储库保护。SnapCenter 图形用户界面中的主机类型从 "vsphere" 更改为 "Windows" 。
 
 ** 从 Windows SnapCenter 服务器中删除 vSphere 主机和资源组。
-** 激活基于 Linux 的 SnapCenter VMware 插件上的备份作业。
-** 将 vSphere 主机注册到 SnapCenter 中的 SnapCenter VMware 插件 `，以支持基于应用程序对虚拟化数据库和文件系统进行备份（基于 VMDK 的应用程序备份）。
+** 激活适用于VMware vSphere的基于Linux的SnapCenter插件上的备份作业。
+** 向SnapCenter注册适用于VMware vSphere的SnapCenter插件`的vSphere主机、以支持对虚拟化数据库和文件系统进行基于应用程序的备份(基于VMDK备份的应用程序)。
 
 
 * 元数据的存储位置
 +
-用于基于应用程序的 VMDK 备份的元数据存储在 SnapCenter 服务器存储库中。VM 和数据存储库备份的元数据存储在 SnapCenter VMware 插件 MySQL 存储库中。
+用于基于应用程序的 VMDK 备份的元数据存储在 SnapCenter 服务器存储库中。VM和数据存储库备份的元数据存储在适用于VMware vSphere的SnapCenter插件MySQL存储库中。
 
 

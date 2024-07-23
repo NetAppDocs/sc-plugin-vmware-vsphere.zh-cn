@@ -28,10 +28,7 @@ NOTE: 从适用于VMware的SnapCenter插件(SCV) 5.0开始、您需要添加HTTP
 |===
 
 
-| all-access 命令： ONTAP 8.3 及更高版本所需的最低权限 
-
-
-| cluster identity show 
+| 完全访问命令：ONTAP 8.3及更高版本所需的最低权限。 
 
 
 | event generate-autosupport-log 
@@ -79,13 +76,13 @@ volume snapshot show
 卷卸载 
 
 
-| vserver cifs vserver cifs share create vserver cifs share delete vserver cifs ShadowCopy show vserver cifs share show vserver cifs show vserver export-policy vserver export-policy delete vserver export-policy rule create vserver export-policy rule show vserver export-policy show vserver iscsi vserver iscsi vserver iscsi connection show vserver show network interface. network interface failover-groups network interface show 
+| Vserver CIFS vserver cCIFS share create vserver cCIFS share delete vserver cCIFS卷影复制show vserver cCIFS share show vserver cCIFS show vserver export -policy vserver export -policy create vserver export -policy Rule create vserver export -policy规则show vserver export -policy show vserver iSCSI vserver iSCSI vserver iSCSI connection show vserver NVMe子系统控制器 vserver NVMe subsystem controller show vserver NVMe子系统映射vserver NVMe子系统映射show vserver NVMe子系统映射添加vserver NVMe子系统映射删除vserver NVMe子系统host show vserver NVMe子系统host添加vserver NVMe子系统主机删除vserver NVMe子系统显示vserver NVMe子系统删除vserver NVMe命名空间 show network interface network interface故障转移组 
 |===
 |===
 | 只读命令： ONTAP 8.3 及更高版本所需的最低权限 
 
 
-| Vserver Vserver对等 
+| cluster Identity show network interface show vserver vserver peer-vserver show 
 |===
 
 NOTE: 您可以忽略有关不受支持的Vserver命令的警告消息。
@@ -103,14 +100,15 @@ NOTE: 您可以忽略有关不受支持的Vserver命令的警告消息。
 您必须以 `vsadmin` 或具有上表中列出的最低权限的角色登录。
 
 * 您必须是集群管理员才能创建和管理用户角色。您可以将用户与集群Storage VM或Storage VM相关联。
-* 要使用SnapMirror业务连续性(SM-BC)功能、您需要ONTAP 9.12.1或更高版本。
+* 要使用SnapMirror活动同步功能、您需要ONTAP 9.12.1或更高版本。
 * 要使用防篡改Snapshot (TPS)功能：
 +
 ** SAN需要ONTAP 9.13.1.及更高版本
 ** 对于NFS、您需要ONTAP 9.12.1及更高版本
 
 
+* 对于基于TCP的NVMe协议、您需要ONTAP 9.10.1及更高版本。
 
 
 
-NOTE: 对于ONTAP 9.11.1及更高版本、与ONTAP集群的通信将通过REST API进行。ONTAP用户应启用http应用程序。但是、如果发现ONTAP REST API存在问题、则配置密钥"FORCE-ZAPI"有助于切换到传统ZAPI工作流。您可能需要使用配置API添加或更新此密钥、并将其设置为true。请参见知识库文章、 https://kb.netapp.com/mgmt/SnapCenter/How_to_use_RestAPI_to_edit_configuration_parameters_in_SCV["如何使用RestAPI编辑选择控制阀中的配置参数"]。
+NOTE: 从ONTAP 9.11.1版开始、与ONTAP集群的通信将通过REST API进行。ONTAP用户应启用http应用程序。但是、如果发现ONTAP REST API存在问题、则配置密钥"FORCE-ZAPI"有助于切换到传统ZAPI工作流。您可能需要使用配置API添加或更新此密钥、并将其设置为true。有关详细信息、请参见知识库文章 https://kb.netapp.com/mgmt/SnapCenter/How_to_use_RestAPI_to_edit_configuration_parameters_in_SCV["如何使用RestAPI编辑选择控制阀中的配置参数"] 。

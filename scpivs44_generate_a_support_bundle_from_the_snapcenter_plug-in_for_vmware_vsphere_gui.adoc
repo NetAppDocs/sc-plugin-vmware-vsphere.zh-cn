@@ -17,8 +17,8 @@ summary: 您可以从适用于 VMware vSphere 的 SnapCenter 插件 GUI 生成�
 [role="lead"]
 要登录到适用于 VMware vSphere 的 SnapCenter 插件管理 GUI ，您必须知道 IP 地址和登录凭据。您还必须记下从维护控制台生成的MFA令牌。
 
-* 部署 SnapCenter VMware 插件时会显示此 IP 地址。
-* 使用在部署 SnapCenter VMware 插件期间提供的或稍后修改的登录凭据。
+* 部署适用于VMware vSphere的SnapCenter插件时会显示此IP地址。
+* 使用在部署适用于VMware vSphere的SnapCenter插件期间提供的或以后修改的登录凭据。
 * 使用维护控制台的系统配置选项生成6位MFA令牌。
 
 

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_disable_and_enable_plugin.html 
 keywords:  
-summary: 如果您不再需要 SnapCenter 数据保护功能，则必须更改 SnapCenter VMware 插件的配置。例如，如果在测试环境中部署了此插件，则可能需要在该环境中禁用 SnapCenter 功能，并在生产环境中启用这些功能。 
+summary: 如果您不再需要SnapCenter数据保护功能、则必须更改适用于VMware vSphere的SnapCenter插件的配置。例如，如果在测试环境中部署了此插件，则可能需要在该环境中禁用 SnapCenter 功能，并在生产环境中启用这些功能。 
 ---
 = 禁用并启用适用于 VMware vSphere 的 SnapCenter 插件
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 如果您不再需要 SnapCenter 数据保护功能，则必须更改 S
 
 
 [role="lead"]
-如果您不再需要 SnapCenter 数据保护功能，则必须更改 SnapCenter VMware 插件的配置。例如，如果在测试环境中部署了此插件，则可能需要在该环境中禁用 SnapCenter 功能，并在生产环境中启用这些功能。
+如果您不再需要SnapCenter数据保护功能、则必须更改适用于VMware vSphere的SnapCenter插件的配置。例如，如果在测试环境中部署了此插件，则可能需要在该环境中禁用 SnapCenter 功能，并在生产环境中启用这些功能。
 
 .开始之前
 * 您必须具有管理员权限。
@@ -22,34 +22,34 @@ summary: 如果您不再需要 SnapCenter 数据保护功能，则必须更改 S
 
 
 .关于此任务
-禁用 SnapCenter VMware 插件后，所有资源组都将暂停，并且此插件将作为 vCenter 中的扩展取消注册。
+禁用适用于VMware vSphere的SnapCenter插件后、所有资源组都会暂停、并且此插件会在vCenter中作为扩展取消注册。
 
-启用 SnapCenter VMware 插件后，此插件将在 vCenter 中注册为扩展，所有资源组均处于生产模式，并且所有计划均已启用。
+启用适用于VMware vSphere的SnapCenter插件后、此插件将在vCenter中注册为扩展、所有资源组均处于生产模式、并且所有计划均已启用。
 
 .步骤
-. 可选：备份 SnapCenter VMware 插件 MySQL 存储库，以防您要将其还原到新的虚拟设备。
+. 可选：备份适用于VMware vSphere的SnapCenter插件MySQL存储库、以使其还原到新的虚拟设备。
 +
 link:scpivs44_back_up_the_snapcenter_plug-in_for_vmware_vsphere_mysql_database.html["备份适用于 VMware vSphere 的 SnapCenter 插件 MySQL 数据库"]。
 
-. 使用格式登录到SnapCenter VMware插件管理GUI `\https://<OVA-IP-address>:8080`。使用部署时设置的管理员用户名和密码以及使用维护控制台生成的MFA令牌登录。
+. 使用格式登录到适用于VMware vSphere的SnapCenter插件管理GUI `\https://<OVA-IP-address>:8080`。使用部署时设置的管理员用户名和密码以及使用维护控制台生成的MFA令牌登录。
 +
-部署 SnapCenter VMware 插件时，将显示该插件的 IP 。
+部署适用于VMware vSphere的SnapCenter插件时、将显示此插件的IP地址。
 
 . 单击左侧导航窗格中的 * 配置 * ，然后取消选择 * 插件详细信息 * 部分中的服务选项以禁用此插件。
 . 确认您的选择。
 +
-** 如果您仅使用 SnapCenter VMware 插件执行 VM 一致的备份
+** 仅使用适用于VMware vSphere的SnapCenter插件执行虚拟机一致的备份
 +
 此插件已禁用，无需执行进一步操作。
 
-** 使用 SnapCenter VMware 插件执行应用程序一致的备份时
+** 如果您使用适用于VMware vSphere的SnapCenter插件执行应用程序一致的备份
 +
 此插件已禁用，需要进一步清理。
 
 +
 ... 登录到 VMware vSphere 。
 ... 关闭虚拟机。
-... 在左侧导航屏幕中，右键单击 SnapCenter VMware 插件的实例（部署虚拟设备时使用的 ` .ova` 文件的名称），然后选择 * 从磁盘删除 * 。
+... 在左侧导航屏幕中，右键单击适用于VMware vSphere的SnapCenter插件实例(部署虚拟设备时使用的文件名 `.ova` )，然后选择*Delete from Disk*(从磁盘删除)。
 ... 登录到 SnapCenter 并删除 vSphere 主机。
 
 

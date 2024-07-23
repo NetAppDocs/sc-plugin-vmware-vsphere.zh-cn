@@ -16,4 +16,4 @@ summary: 快速入门文档提供了一组简要说明，用于部署适用于 V
 [role="lead"]
 快速入门文档提供了一组简要说明，用于部署适用于 VMware vSphere 的 SnapCenter 插件虚拟设备以及启用适用于 VMware vSphere 的 SnapCenter 插件。本说明适用于尚未安装 SnapCenter 且仅希望保护 VM 和数据存储库的客户。
 
-开始之前，请参见 link:scpivs44_deployment_planning_and_requirements.html["部署规划和要求"]。
+开始之前，请参阅 link:scpivs44_deployment_planning_and_requirements.html["部署规划和要求"]。

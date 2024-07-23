@@ -32,7 +32,7 @@ summary: 您可以使用适用于 VMware vSphere 的 SnapCenter 插件 REST API 
 * 适用于 VMware vSphere 的 REST API 不支持的操作
 +
 ** 子文件还原
-** 安装和配置 SnapCenter VMware 插件
+** 安装和配置适用于VMware vSphere的SnapCenter插件
 ** 为用户分配 RBAC 角色或访问权限
 
 

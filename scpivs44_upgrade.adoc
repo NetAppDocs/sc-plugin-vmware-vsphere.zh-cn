@@ -14,7 +14,7 @@ summary: 如果您使用的是适用于 VMware vSphere 的 SnapCenter 插件虚�
 
 
 
-NOTE: 只有VMware vCenter Server 7 Update 1及更高版本才支持升级到5．0号选择控制阀。对于VMware vCenter Server 7 Update 1之前的版本，您应继续使用4．7号选择控制阀。在不受支持的VMware vCenter Server版本上、升级会造成中断。
+NOTE: 只有VMware vCenter Server 7 Update 1及更高版本才支持升级到6．0号选择控制阀。对于VMware vCenter Server 7 Update 1之前的版本，您应继续使用4．7号选择控制阀。在不受支持的VMware vCenter Server版本上、升级会造成中断。
 
 如果您使用的是适用于 VMware vSphere 的 SnapCenter 插件虚拟设备，则可以升级到更高版本。升级过程将取消注册现有插件、并部署一个仅与vSphere 7.0U1及更高版本兼容的插件。
 
@@ -28,7 +28,10 @@ NOTE: 只有VMware vCenter Server 7 Update 1及更高版本才支持升级到5�
 | 适用于VMware vSphere的SnapCenter插件(SCV)版本 | 您可以将适用于VMware vSphere的SnapCenter插件直接升级到... 
 
 
-| 4.9号选择控制阀 | 升级到5.0号选择控制阀 
+| 5.0号选择控制阀 | 升级到6.0号选择控制阀 
+
+
+| 4.9号选择控制阀 | 升级到5.0号选择控制阀和6.0号选择控制阀 
 
 
 | 4.8号选择控制阀 | 升级到4.9号和5.0号选择控制阀 
@@ -48,7 +51,7 @@ NOTE: 不支持将网络配置从静态切换到 DHCP 。
 .步骤
 . 禁用适用于 VMware vSphere 的 SnapCenter 插件，为升级做准备。
 +
-.. 登录到适用于 VMware vSphere 的 SnapCenter 插件管理 GUI 。部署 SnapCenter VMware 插件时，将显示此 IP 。
+.. 登录到适用于 VMware vSphere 的 SnapCenter 插件管理 GUI 。部署适用于VMware vSphere的SnapCenter插件时、将显示IP地址。
 .. 单击左侧导航窗格中的 * 配置 * ，然后单击插件详细信息部分中的 * 服务 * 选项以禁用此插件。
 
 
@@ -64,7 +67,7 @@ NOTE: 不支持将网络配置从静态切换到 DHCP 。
 .. 在浏览器中，导航到 VMware vSphere vCenter 。
 .. 在vCenter图形用户界面上、单击* vSphere Client (HTML)*。
 .. 登录到 * VMware vCenter Single Sign-On* 页面。
-.. 在导航器窗格中，单击要升级的虚拟机，然后单击 * 摘要 * 选项卡。
+.. 在导航器窗格中，单击要升级的虚拟机，然后单击*Summary (摘要)*选项卡。
 .. 在 * 相关对象 * 窗格中，单击列表中的任何数据存储库，然后单击 * 摘要 * 选项卡。
 .. 在选定数据存储库的 * 文件 * 选项卡上，单击列表中的任何文件夹，然后单击 * 上传文件 * 。
 .. 在上传弹出屏幕上，导航到下载 ` .iso` 文件的位置，然后单击 ` .iso` 文件映像，然后单击 * 打开 * 。此文件将上传到数据存储库。

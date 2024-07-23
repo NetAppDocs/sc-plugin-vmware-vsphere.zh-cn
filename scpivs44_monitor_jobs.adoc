@@ -17,7 +17,9 @@ summary: 使用VMware vSphere客户端执行任何数据保护操作后、您可
 使用VMware vSphere客户端执行任何数据保护操作后、您可以从信息板中的作业监控选项卡监控作业状态并查看作业详细信息。
 
 .步骤
-. 在vSphere客户端的左侧导航器窗格中、单击*信息板*。如果在链接模式下配置了两个或更多vCenter、请选择一个vCenter Server、然后单击信息板窗格中的*作业监控器*选项卡。作业监控选项卡可列出每个作业及其状态，开始时间和结束时间。如果作业名称较长，则可能需要向右滚动以查看开始和结束时间。显示内容每 30 秒刷新一次。
+. 从vCenter客户端快捷方式页面中、选择适用于VMware vSphere的SnapCenter插件(SCV)。
+. 在选择控制阀的左侧导航窗格中，选择“*"Daard*(仪表板*)”。
+. 在链接模式下配置两个或多个vCenter时，选择选择选择控制阀插件实例，然后选择*作业监视器*选项卡。作业监控选项卡可列出每个作业及其状态，开始时间和结束时间。如果作业名称较长，则可能需要向右滚动以查看开始和结束时间。显示内容每 30 秒刷新一次。
 +
 ** 选择工具栏中的刷新图标可按需刷新显示内容。
 ** 选择筛选器图标以选择要显示的作业的时间范围、类型、标记和状态。此筛选器区分大小写。
@@ -26,4 +28,4 @@ summary: 使用VMware vSphere客户端执行任何数据保护操作后、您可
 
 
 
-如果信息板不显示作业信息，请参见 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/SnapCenter_vSphere_web_client_dashboard_does_not_display_jobs["知识库文章：SnapCenter vSphere客户端信息板不显示作业"^]。
+如果信息板未显示作业信息，请参见 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/SnapCenter_vSphere_web_client_dashboard_does_not_display_jobs["知识库文章：SnapCenter vSphere客户端信息板不显示作业"^]。

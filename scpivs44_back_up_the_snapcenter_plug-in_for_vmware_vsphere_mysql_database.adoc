@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_back_up_the_snapcenter_plug-in_for_vmware_vsphere_mysql_database.html 
 keywords:  
-summary: SnapCenter VMware 插件包括一个 MySQL 数据库（也称为 NSM 数据库），其中包含该插件执行的所有作业的元数据。您应定期备份此存储库。 
+summary: '适用于VMware vSphere的SnapCenter插件包括一个MySQL数据库(也称为NSM数据库)、其中包含该插件执行的所有作业的元数据。 您应定期备份此存储库。' 
 ---
 = 备份适用于 VMware vSphere 的 SnapCenter 插件 MySQL 数据库
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: SnapCenter VMware 插件包括一个 MySQL 数据库（也称为 NSM �
 
 
 [role="lead"]
-SnapCenter VMware 插件包括一个 MySQL 数据库（也称为 NSM 数据库），其中包含该插件执行的所有作业的元数据。您应定期备份此存储库。
+适用于VMware vSphere的SnapCenter插件包括一个MySQL数据库(也称为NSM数据库)、其中包含该插件执行的所有作业的元数据。 您应定期备份此存储库。
 
 在执行迁移或升级之前，您还应备份存储库。
 
@@ -22,8 +22,8 @@ SnapCenter VMware 插件包括一个 MySQL 数据库（也称为 NSM 数据库�
 当按需备份作业已在运行时，请勿启动用于备份 MySQL 数据库的作业。
 
 .步骤
-. 从VMware vSphere客户端中、选择SnapCenter VMware插件所在的虚拟机。
-. 右键单击虚拟机，然后在虚拟设备的 * 摘要 * 选项卡上单击 * 启动远程控制台 * 或启动 Web 控制台 * 以打开维护控制台窗口。
+. 从VMware vSphere客户端中、选择适用于VMware vSphere的SnapCenter插件所在的虚拟机。
+. 在虚拟设备的*Summary (摘要)*选项卡中，单击*Launch Remote Console*(启动远程控制台)*或Launch Web Console*(启动Web控制台)以打开维护控制台窗口。
 +
 image:scpivs44_image21.png["维护控制台窗口"]
 

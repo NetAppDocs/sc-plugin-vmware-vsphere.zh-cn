@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_predefined_roles_packaged_with_snapcenter.html 
 keywords:  
-summary: 为了简化 vCenter Server RBAC 的使用， SnapCenter VMware 插件提供了一组预定义角色，可使用户执行 SnapCenter 任务。此外，还提供了一个只读角色，允许用户查看 SnapCenter 信息，但不执行任何任务。 
+summary: 为了简化vCenter Server RBAC的使用、适用于VMware vSphere的SnapCenter插件提供了一组预定义角色、使用户能够执行SnapCenter任务。此外，还提供了一个只读角色，允许用户查看 SnapCenter 信息，但不执行任何任务。 
 ---
 = 适用于 VMware vSphere 的 SnapCenter 插件附带的预定义角色
 :hardbreaks:
@@ -14,13 +14,13 @@ summary: 为了简化 vCenter Server RBAC 的使用， SnapCenter VMware 插件�
 
 
 [role="lead"]
-为了简化 vCenter Server RBAC 的使用， SnapCenter VMware 插件提供了一组预定义角色，可使用户执行 SnapCenter 任务。此外，还提供了一个只读角色，允许用户查看 SnapCenter 信息，但不执行任何任务。
+为了简化vCenter Server RBAC的使用、适用于VMware vSphere的SnapCenter插件提供了一组预定义角色、使用户能够执行SnapCenter任务。此外，还提供了一个只读角色，允许用户查看 SnapCenter 信息，但不执行任何任务。
 
-这些预定义角色具有所需的 SnapCenter 专用特权和原生 vCenter Server 特权，可确保任务正确完成。此外，这些角色已设置为在所有受支持的 vCenter Server 版本中具有必要的特权。
+预定义角色具有所需的SnapCenter专用特权和本机vCenter Server特权、以确保正确完成任务。此外，这些角色已设置为在所有受支持的 vCenter Server 版本中具有必要的特权。
 
 作为管理员，您可以将这些角色分配给相应的用户。
 
-每当您重新启动 vCenter Web Client 服务或修改安装时， SnapCenter VMware 插件都会将这些角色恢复为其默认值（一组初始特权）。如果您升级 SnapCenter VMware 插件，则预定义的角色将自动升级，以使用该版本的插件。
+每当您重新启动vCenter Web Client服务或修改安装时、适用于VMware vSphere的SnapCenter插件都会将这些角色恢复为其默认值(一组初始特权)。如果您升级适用于VMware vSphere的SnapCenter插件、则预定义角色会自动升级、以使用该插件版本。
 
 您可以通过单击 * 菜单 > 管理 > 角色 * 在 vCenter GUI 中查看预定义的角色，如下表所示。
 
@@ -31,14 +31,14 @@ summary: 为了简化 vCenter Server RBAC 的使用， SnapCenter VMware 插件�
 | SCV 管理员 | 提供执行适用于 VMware vSphere 的所有 SnapCenter 插件任务所需的所有原生 vCenter Server 特权和 SnapCenter 专用特权。 
 
 
-| SCV 备份 | 提供备份 vSphere 对象（虚拟机和数据存储库）所需的所有原生 vCenter Server 和 SnapCenter 专用特权。用户还可以访问配置权限。用户无法从备份中还原。 
+| SCV 备份 | 提供备份 vSphere 对象（虚拟机和数据存储库）所需的所有原生 vCenter Server 和 SnapCenter 专用特权。用户还可以访问配置权限。用户无法还原备份。 
 
 
 | SCV 子系统文件还原 | 提供还原子系统文件和文件夹所需的所有原生 vCenter Server 和 SnapCenter 专用特权。用户无法还原 VM 或 VMDK 。 
 
 
-| SCV 恢复 | 提供还原使用 SnapCenter VMware 插件备份的 vSphere 对象以及还原子系统文件和文件夹所需的所有原生 vCenter Server 和 SnapCenter 专用特权。用户还可以访问配置权限。用户无法备份 vSphere 对象。 
+| SCV 恢复 | 提供还原使用适用于VMware vSphere的SnapCenter插件备份的vSphere对象以及还原子系统文件和文件夹所需的所有本机vCenter Server特权和SnapCenter专用特权。用户还可以访问配置权限。用户无法备份 vSphere 对象。 
 
 
-| SCV 视图 | 提供对所有 SnapCenter VMware 插件备份，资源组和策略的只读访问权限。 
+| SCV 视图 | 提供对适用于VMware vSphere的所有SnapCenter插件备份、资源组和策略的只读访问权限。 
 |===

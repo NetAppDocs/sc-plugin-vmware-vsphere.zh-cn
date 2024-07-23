@@ -19,7 +19,7 @@ summary: 如果要升级到同一版本的新修补程序，则必须清除 vCen
 如果未清除插件缓存，则在以下情况下，信息板和作业监控器不会显示最近的作业：
 
 * 适用于 VMware vSphere 的 SnapCenter 插件是使用 vCenter 部署的，之后升级到同一版本中的修补程序。
-* SnapCenter VMware 虚拟设备部署在 vCenter 1 中。稍后，此 SnapCenter VMware 插件会注册到新的 vCenter2 中。此时将使用修补程序创建一个新的 SnapCenter VMware 插件实例，并将其注册到 vCenter1 。但是，由于 vCenter1 仍具有第一个 SnapCenter VMware 插件中的缓存插件，而没有修补程序，因此需要清除缓存。
+* SnapCenter VMware 虚拟设备部署在 vCenter 1 中。之后、此适用于VMware vSphere的SnapCenter插件注册到了新的vCenter2。此时将使用修补程序创建一个适用于VMware vSphere的SnapCenter插件的新实例、并将其注册到vCenter1。但是、由于vCenter1仍具有适用于VMware vSphere的第一个SnapCenter插件中缓存的插件、而没有修补程序、因此需要清除缓存。
 
 
 
@@ -31,10 +31,10 @@ summary: 如果要升级到同一版本的新修补程序，则必须清除 vCen
 每个版本的文件夹名称都会发生变化。
 
 +
-有关适用于您的操作系统的 `vsphere-client-serenity` 文件夹的位置，请参见 VMware 文档。
+有关适用于您的操作系统的文件夹的位置、请参见VMware文档 `vsphere-client-serenity` 。
 
 . 重新启动 vCenter Server 。
 +
-然后，您可以升级 SnapCenter VMware 插件。
+然后、您可以升级适用于VMware vSphere的SnapCenter插件。
 
 

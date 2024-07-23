@@ -24,7 +24,7 @@ summary: 部署适用于VMware vSphere的SnapCenter 插件后、它会在vCenter
 . 登录到 * VMware vCenter Single Sign-On* 页面。
 +
 
-IMPORTANT: 单击 * 登录 * 按钮。由于 VMware 问题描述已知，请勿使用 Enter 键登录。有关详细信息，请参见有关 ESXi 嵌入式主机客户端问题的 VMware 文档。
+IMPORTANT: 单击 * 登录 * 按钮。由于已知VMware问题、请勿使用Enter键进行登录。 有关详细信息、请参阅有关ESXi嵌入式主机客户端问题的VMware文档。
 
 . 在* VMware vSphere Client*页面上、单击工具栏中的菜单、然后选择*适用于VMware vSphere的SnapCenter 插件*。
 

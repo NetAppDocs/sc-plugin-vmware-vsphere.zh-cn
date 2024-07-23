@@ -52,21 +52,21 @@ summary: '您可以使用 `sCBR.override` 配置文件中列出的属性来更�
 
 * * 来宾 FileRestore.monitorInterval=30*
 +
-指定 SnapCenter VMware 插件监控已过期子文件还原会话的时间间隔（以分钟为单位）。超过所配置的会话时间运行的任何会话都将断开连接。
+指定适用于VMware vSphere的SnapCenter插件监控过期子系统文件还原会话的时间间隔(以分钟为单位)。超过所配置的会话时间运行的任何会话都将断开连接。
 
 +
 默认值为 "30" 。
 
 * * 来宾 FileRestore.online.disk.timeout=100*
 +
-指定 SnapCenter VMware 插件等待子虚拟机上的联机磁盘操作完成的时间（以秒为单位）。请注意，在插件轮询联机磁盘操作完成之前，还有 30 秒的等待时间。
+以秒为单位指定适用于VMware vSphere的SnapCenter插件等待子VM上的联机磁盘操作完成的时间。请注意，在插件轮询联机磁盘操作完成之前，还有 30 秒的等待时间。
 
 +
 默认值为 "100" 。
 
 * * 来宾 FileRestore.restore.files.timeout=3600*
 +
-指定 SnapCenter VMware 插件等待子虚拟机上的还原文件操作完成的时间（以秒为单位）。如果超过此时间，此过程将结束，并且作业将标记为失败。
+以秒为单位指定适用于VMware vSphere的SnapCenter插件等待子VM上的还原文件操作完成的时间。如果超过此时间，此过程将结束，并且作业将标记为失败。
 
 +
 默认值为 "3600" （ 1 小时）。
@@ -113,7 +113,7 @@ summary: '您可以使用 `sCBR.override` 配置文件中列出的属性来更�
 
 * * include.esx.initiator.id.from.cluster=true*
 +
-指定 SnapCenter VMware 插件应包含通过 VMDK 工作流在应用程序中集群中所有 ESXi 主机的 iSCSI 和 FCP 启动程序 ID 。
+指定适用于VMware vSphere的SnapCenter插件应包含集群中通过VMDK工作流运行的应用程序中所有ESXi主机的iSCSI和FCP启动程序ID。
 
 +
 默认值为 "false" 。
@@ -124,18 +124,18 @@ summary: '您可以使用 `sCBR.override` 配置文件中列出的属性来更�
 
 * * 最大并发 .ds.storage.query.count=15*
 +
-指定 SnapCenter VMware 插件可对 SnapCenter 服务器进行的最大并发调用数，以发现数据存储库的存储占用空间。当您在 SnapCenter VMware 插件 VM 主机上重新启动 Linux 服务时，此插件会发出这些调用。
+指定适用于VMware vSphere的SnapCenter插件为发现数据存储库的存储占用空间而可对SnapCenter服务器进行的并发调用的最大数量。在适用于VMware vSphere的SnapCenter插件VM主机上重新启动Linux服务时、此插件会发出这些调用。
 
 * * 。 nfs.datastore.mount.retry.count=3*
 +
-指定 SnapCenter VMware 插件尝试在 vCenter 中将卷挂载为 NFS 数据存储库的最大次数。
+指定适用于VMware vSphere的SnapCenter插件尝试将卷作为NFS数据存储库挂载到vCenter中的最大次数。
 
 +
 默认值为 "3" 。
 
 * * nfs.datastore.mount.retry.delay=60000*
 +
-指定 SnapCenter VMware 插件在尝试将卷作为 NFS 数据存储库挂载到 vCenter 时等待的时间（以毫秒为单位）。
+以毫秒为单位指定两次尝试在vCenter中将卷作为NFS数据存储库挂载之间适用于VMware vSphere的SnapCenter插件等待的时间。
 
 +
 默认值为 "60000 " （ 60 秒）。
@@ -173,17 +173,17 @@ summary: '您可以使用 `sCBR.override` 配置文件中列出的属性来更�
 
 * * vmware.esx.ip.kernel.ip.map*
 +
-没有默认值。您可以使用此值将 ESXi IP 地址映射到 VMkernel IP 地址。默认情况下， SnapCenter VMware 插件使用 ESXi 主机的管理 VMkernel 适配器 IP 地址。如果您希望 SnapCenter VMware 插件使用不同的 VMkernel 适配器 IP 地址，则必须提供覆盖值。
+没有默认值。可以使用此值将ESXi主机IP地址映射到VMkernel IP地址。默认情况下、适用于VMware vSphere的SnapCenter插件使用ESXi主机的管理VMkernel适配器IP地址。如果希望适用于VMware vSphere的SnapCenter插件使用其他VMkernel适配器IP地址、则必须提供覆盖值。
 
 +
-在以下示例中，管理 VMkernel 适配器 IP 地址为 10.225.10.56 ；但是， SnapCenter VMware 插件使用指定地址 10.225.11.57 和 10.225.11.58 。如果管理 VMkernel 适配器 IP 地址为 10.225.10.60 ，则此插件将使用地址 10.225.11.61 。
+在以下示例中、管理VMkernel适配器IP地址为10.225.10.56；但是、适用于VMware vSphere的SnapCenter插件会使用指定的地址10.225.11.57和10.225.11.58。如果管理 VMkernel 适配器 IP 地址为 10.225.10.60 ，则此插件将使用地址 10.225.11.61 。
 
 +
 `vmware.esx.ip.kernel.ip.map=10.225.10.56:10.225.11.57,10.225.11.58; 10.225.10.60 ： 10.225.11.61`
 
 * * 。 vmware.max.concurrent-snapshots=30*
 +
-指定 SnapCenter VMware 插件在服务器上同时执行的 VMware 快照的最大数量。
+指定适用于VMware vSphere的SnapCenter插件在服务器上执行并发VMware快照的最大数量。
 
 +
 此数字会按数据存储库进行检查，只有在策略选择了 "VM consisting" 时才会进行检查。如果要执行崩溃状态一致的备份，则此设置不适用。
@@ -193,7 +193,7 @@ summary: '您可以使用 `sCBR.override` 配置文件中列出的属性来更�
 
 * * vmware.max.concurrent.snapshots.delete=30*
 +
-指定 SnapCenter VMware 插件在服务器上对每个数据存储库执行的并发 VMware 快照删除操作的最大数量。
+指定适用于VMware vSphere的SnapCenter插件在服务器上执行的每个数据存储库的并发VMware快照删除操作的最大数量。
 
 +
 此数量会按数据存储库进行检查。
@@ -203,56 +203,56 @@ summary: '您可以使用 `sCBR.override` 配置文件中列出的属性来更�
 
 * * 。 vmware.query.unresolvedy.count=10*
 +
-指定 SnapCenter VMware 插件因出现 "... 阻止 I/O 的时间限制 " 错误而重试发送有关未解析卷的查询的最大次数。
+指定适用于VMware vSphere的SnapCenter插件由于"...暂缓I/O的时间限制"而重试发送有关未解析卷的查询的最大次数。 错误。
 
 +
 默认值为 "10" 。
 
 * * 。 vmware.quiesce.retry.count=0*
 +
-指定 SnapCenter VMware 插件因备份期间出现 "... 限制 I/O 的时间 " 错误而重试发送有关 VMware 快照的查询的最大次数。
+指定适用于VMware vSphere的SnapCenter插件由于"...暂缓I/O的时间限制"而重试发送有关VMware快照的查询的最大次数。 备份期间出错。
 
 +
 默认值为 "0" 。
 
 * * vmware.quiesce.retry.interval=5*
 +
-指定 SnapCenter VMware 插件在备份期间发送有关 VMware 快照 "... 延迟 I/O 的时间限制 " 错误的查询之间等待的时间（以秒为单位）。
+指定适用于VMware vSphere的SnapCenter插件在发送有关VMware快照"...暂缓I/O的时间限制"的查询之间等待的时间量(以秒为单位)。 备份期间出错。
 
 +
 默认值为 "5" 。
 
 * * vmware.query.unresolved.retry.delay= 60000*
 +
-指定 SnapCenter VMware 插件在因出现 "... 阻止 I/O 的时间限制 " 错误而发送有关未解析卷的查询时等待的时间（以毫秒为单位）。克隆 VMFS 数据存储库时会发生此错误。
+指定适用于VMware vSphere的SnapCenter插件由于"...time Limit for Holding I/O ..."而在发送有关未解决卷的查询之间等待的时间量(以毫秒为单位)。 错误。克隆 VMFS 数据存储库时会发生此错误。
 
 +
 默认值为 "60000 " （ 60 秒）。
 
 * * 。 vmware.reconfig.vm.retry.count=10*
 +
-指定 SnapCenter VMware 插件因出现 "... 阻止 I/O 的时间限制 " 错误而重试发送有关重新配置虚拟机的查询的最大次数。
+指定适用于VMware vSphere的SnapCenter插件因"...time reLimit for Holding I/O ..."而重试发送有关重新配置虚拟机的查询的最大次数。 错误。
 
 +
 默认值为 "10" 。
 
 * * vmware.reconfig.vm.retry.delay=30000*
 +
-指定 SnapCenter VMware 插件在因出现 "... 阻止 I/O 的时间限制 " 错误而发送有关重新配置虚拟机的查询之间等待的最长时间（以毫秒为单位）。
+指定适用于VMware vSphere的SnapCenter插件由于"...time reLimit for Holding I/O ..."而在发送有关重新配置虚拟机的查询之间等待的最长时间(以毫秒为单位)。 错误。
 
 +
 默认值为 "30000" （ 30 秒）。
 
 * * 。 vmware.rescan 。 hBA.retry.count=3*
 +
-指定 SnapCenter VMware 插件在两次发送有关重新扫描主机总线适配器的查询之间等待的时间量，以毫秒为单位，因为出现 "... 用于保留 I/O 的时间限制 " 错误。
+指定适用于VMware vSphere的SnapCenter插件由于"...暂缓I/O的时间限制"而在发送有关重新扫描主机总线适配器的查询之间等待的时间量(以毫秒为单位)。 错误。
 
 +
 默认值为 "3" 。
 
 * * vmware.rescan.hba.retry.delay=30000*
 +
-指定 SnapCenter VMware 插件重试请求重新扫描主机总线适配器的最大次数。
+指定适用于VMware vSphere的SnapCenter插件重新尝试重新扫描主机总线适配器请求的最大次数。
 
 +
 默认值为 "30000 " 。

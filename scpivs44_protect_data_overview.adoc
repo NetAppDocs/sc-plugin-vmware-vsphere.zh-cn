@@ -20,11 +20,11 @@ summary: 所有备份操作都对资源组执行，该资源组可以包含一�
 
 不能在同一资源组上同时执行备份和还原操作。
 
-您应查看有关 SnapCenter VMware 插件的功能和不支持的信息。link:scpivs44_deployment_planning_and_requirements.html["部署规划和要求"]
+您应查看有关适用于VMware vSphere的SnapCenter插件支持和不支持的内容的信息。 link:scpivs44_deployment_planning_and_requirements.html["部署规划和要求"]
 
 在 MetroCluster 配置中：
 
-* 故障转移后， SnapCenter VMware 插件可能无法检测到保护关系。请参见 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Unable_to_detect_SnapMirror_or_SnapVault_relationship_after_MetroCluster_failover["知识库文章： Unable to detect SnapMirror or SnapVault relationship after MetroCluster failover"^]。
+* 适用于VMware vSphere的SnapCenter插件可能无法在故障转移后检测到保护关系。有关详细信息、请参见 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Unable_to_detect_SnapMirror_or_SnapVault_relationship_after_MetroCluster_failover["知识库文章： Unable to detect SnapMirror or SnapVault relationship after MetroCluster failover"^] 。
 * 如果备份失败并显示错误 `Unable to discover resources on SCV ： <xxx>…` 对于切换 / 切回后的 NFS 和 VMFS VM ，请从维护控制台重新启动 SnapCenter VMware 服务。
 
 

@@ -30,7 +30,7 @@ summary: 部署适用于 VMware vSphere 的 SnapCenter 插件后，您必须完�
 +
 ** 您正在运行 IPv4 ，并且 SnapCenter VMware vSphere 主机具有两个 IP 地址。因此，作业请求将发送到 SnapCenter 服务器无法识别的 IP 地址。要阻止此问题描述，请添加要使用的 IP 地址，如下所示：
 +
-... 导航到 SnapCenter VMware 插件的部署位置： ` /opt/netapp/scvservice/standalone aeg/etc`
+... 导航到适用于VMware vSphere的SnapCenter插件的部署位置： `/opt/netapp/scvservice/standalone_aegis/etc`
 ... 打开文件 network- interface.properties 。
 ... 在 `network.interface=10.10.10.10` 字段中，添加要使用的 IP 地址。
 
@@ -38,7 +38,7 @@ summary: 部署适用于 VMware vSphere 的 SnapCenter 插件后，您必须完�
 ** 您有两个 NIC 。
 
 
-* 部署 SnapCenter VMware 插件后，适用于 VMware vSphere 的 vCenter SnapCenter 插件中的 MOB 条目可能仍会显示旧版本号。当其他作业在 vCenter 中运行时，可能会发生这种情况。vCenter 最终将更新此条目。
+* 部署适用于VMware vSphere的SnapCenter插件后、适用于VMware vSphere的vCenter for SnapCenter插件中的MOB条目可能仍会显示旧版本号。如果vCenter中正在运行其他作业、则可能会发生这种情况。 vCenter最终将更新此条目。
 
 
 要更正上述任一问题，请执行以下操作：
@@ -54,10 +54,10 @@ summary: 部署适用于 VMware vSphere 的 SnapCenter 插件后，您必须完�
 
 == 管理身份验证错误
 
-如果不使用管理员凭据，则在部署适用于 VMware vSphere 的 SnapCenter 插件后或迁移后，可能会收到身份验证错误。如果遇到身份验证错误，则必须重新启动此服务。
+如果不使用管理员凭据、则在部署适用于VMware vSphere的SnapCenter插件后或迁移后可能会收到身份验证错误。如果遇到身份验证错误，则必须重新启动此服务。
 
 .步骤
-. 使用格式登录到SnapCenter VMware插件管理GUI `\https://<appliance-IP-address>:8080`。使用管理员用户名、密码和MFA令牌详细信息进行登录。可以从维护控制台生成MFA令牌。
+. 使用格式登录到适用于VMware vSphere的SnapCenter插件管理GUI `\https://<appliance-IP-address>:8080`。使用管理员用户名、密码和MFA令牌详细信息进行登录。可以从维护控制台生成MFA令牌。
 . 重新启动服务。
 
 
@@ -75,7 +75,7 @@ summary: 部署适用于 VMware vSphere 的 SnapCenter 插件后，您必须完�
 .关于此任务
 * 您可以使用 SnapCenter 图形用户界面添加 "vsphere" 类型的主机，从而在 SnapCenter 服务器中注册适用于 VMware vSphere 的 SnapCenter 插件。
 +
-端口 8144 是为 SnapCenter VMware 插件中的通信预定义的。
+已预定义端口8144、用于在适用于VMware vSphere的SnapCenter插件中进行通信。
 
 +
 您可以在同一个 SnapCenter 服务器上注册多个适用于 VMware vSphere 的 SnapCenter 插件实例，以支持在 VM 上执行基于应用程序的数据保护操作。您不能在多个 SnapCenter 服务器上注册同一个适用于 VMware vSphere 的 SnapCenter 插件。
@@ -99,7 +99,7 @@ summary: 部署适用于 VMware vSphere 的 SnapCenter 插件后，您必须完�
 | 主机名 | 验证虚拟设备的 IP 地址。 
 
 
-| 凭据 | 输入部署期间提供的 SnapCenter VMware 插件的用户名和密码。 
+| 凭据 | 输入部署期间为适用于VMware vSphere的SnapCenter插件提供的用户名和密码。 
 |===
 . 单击 * 提交 * 。
 +

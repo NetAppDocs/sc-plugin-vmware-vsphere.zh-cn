@@ -17,7 +17,8 @@ summary: 如果要使用代理 VM 连接虚拟磁盘以执行子系统文件还�
 如果要使用代理 VM 连接虚拟磁盘以执行子系统文件还原操作，则必须在开始还原操作之前设置代理 VM 。虽然您可以随时设置代理 VM ，但在插件部署完成后立即设置它可能会更方便。
 
 .步骤
-. 在VMware vSphere客户端中、单击*子文件还原*。
+. 从vSphere客户端快捷方式窗口中、选择插件下的*适用于VMware vSphere的SnapCenter插件*。
+. 在左侧导航栏中，选择*Guest File Restore*。
 . 在 * 作为凭据运行 * 部分中，执行以下操作之一：
 +
 |===
@@ -36,7 +37,7 @@ summary: 如果要使用代理 VM 连接虚拟磁盘以执行子系统文件还�
 
 |===
 +
-SnapCenter VMware 插件使用选定凭据登录到选定代理虚拟机。
+适用于VMware vSphere的SnapCenter插件使用选定凭据登录到选定代理VM。
 
 +
 " 运行方式 " 凭据必须是 Windows 提供的默认域管理员或内置本地管理员。工作组用户可以使用内置的本地管理员帐户。
@@ -46,4 +47,4 @@ SnapCenter VMware 插件使用选定凭据登录到选定代理虚拟机。
 
 
 
-NOTE: 您需要先从适用于VMware vSphere的SnapCenter插件UI中删除此代理虚拟机、然后才能从ESXi中将其删除。
+NOTE: 您需要先从适用于VMware vSphere的SnapCenter插件UI中删除此代理虚拟机、然后才能从ESXi主机中将其删除。

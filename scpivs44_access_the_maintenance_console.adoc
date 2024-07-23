@@ -17,7 +17,7 @@ summary: 您可以使用适用于 VMware vSphere 的 SnapCenter 插件的维护�
 您可以使用适用于VMware vSphere的SnapCenter 插件维护控制台管理应用程序、系统和网络配置。您可以更改管理员密码，维护密码，生成支持包以及启动远程诊断。
 
 .开始之前
-在停止并重新启动适用于 VMware vSphere 的 SnapCenter 插件服务之前，您应暂停所有计划。
+在停止并重新启动适用于VMware vSphere的SnapCenter插件服务之前、您应暂停所有计划。
 
 .关于此任务
 * 在适用于VMware vSphere的SnapCenter 插件4.6P1中、您必须在首次安装适用于VMware vSphere的SnapCenter 插件时指定密码。如果从4.6或更早版本升级到4.6P1或更高版本、则会接受更早的默认密码。
@@ -28,8 +28,8 @@ summary: 您可以使用适用于 VMware vSphere 的 SnapCenter 插件的维护�
 
 
 .步骤
-. 从VMware vSphere客户端中、选择SnapCenter VMware插件所在的虚拟机。
-. 右键单击虚拟机，然后在虚拟设备的 * 摘要 * 选项卡上单击 * 启动远程控制台 * 以打开维护控制台窗口。
+. 从VMware vSphere客户端中、选择适用于VMware vSphere的SnapCenter插件所在的虚拟机。
+. 在虚拟设备的*Summary (摘要)*选项卡中，单击*Launch Remote Console*(启动远程控制台)以打开维护控制台窗口。
 +
 使用默认维护控制台用户名登录 `maint` 和您在安装时设置的密码。
 
@@ -40,7 +40,7 @@ image:scpivs44_image11.png["维护控制台窗口"]
 +
 ** 选项 1 ：应用程序配置
 +
-显示SnapCenter VMware插件摘要启动或停止SnapCenter VMware插件服务更改SnapCenter VMware插件的登录用户名或密码更改MySQL密码备份和还原MySQL、配置和列出MySQL备份
+显示适用于VMware vSphere的SnapCenter插件启动或停止适用于VMware vSphere的SnapCenter插件服务的摘要更改适用于VMware vSphere的SnapCenter插件的登录用户名或密码更改MySQL密码备份和还原MySQL、配置和列出MySQL备份
 
 ** 选项 2 ：系统配置
 +

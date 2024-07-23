@@ -25,17 +25,17 @@ NOTE:  VMware vCenter 7u1及更高版本支持OVA部署。
 * 您必须已阅读部署要求。
 * 您必须运行受支持的 vCenter Server 版本。
 * 您必须已配置和设置 vCenter Server 环境。
-* 您必须已为 SnapCenter VMware 插件虚拟机设置 ESXi 主机。
+* 您必须已为适用于VMware vSphere VM的SnapCenter插件设置ESXi主机。
 * 您必须已下载适用于VMware vSphere的SnapCenter 插件.tar文件。
 * 您必须具有vCenter Server实例的登录身份验证详细信息。
-* 您必须拥有一个包含有效公共密钥和专用密钥文件的证书。有关详细信息、请参见下的文章 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/SnapCenter_Certificate_Resolution_Guide["存储证书管理"] 部分。
-* 您必须已注销并关闭vSphere客户端的所有浏览器会话、并删除浏览器缓存、以避免在部署SnapCenter VMware插件期间出现任何浏览器缓存问题描述。
+* 您必须拥有一个包含有效公共密钥和专用密钥文件的证书。有关详细信息、请参阅第节下的文章 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/SnapCenter_Certificate_Resolution_Guide["存储证书管理"] 。
+* 您必须已注销并关闭vSphere客户端的所有浏览器会话、并删除浏览器缓存、以避免在部署适用于VMware vSphere的SnapCenter插件期间出现任何浏览器缓存问题。
 * 您必须已在 vCenter 中启用传输层安全（ TLS ）。请参见 VMware 文档。
-* 如果您计划在部署了 SnapCenter VMware 插件的 vCenter 以外的 vCenter 中执行备份，则 ESXi 服务器， SnapCenter VMware 插件和每个 vCenter 必须同时同步。
+* 如果您计划在部署适用于VMware vSphere的SnapCenter插件的vCenter以外的vCenter中执行备份、则ESXi服务器、适用于VMware vSphere的SnapCenter插件以及每个vCenter必须同步到同一时间。
 * 要保护VVOL数据存储库上的VM、您必须先部署适用于VMware vSphere的ONTAP 工具。支持适用于VMware vSphere 9.10及更高版本的ONTAP 工具。ONTAP 工具可在ONTAP 和VMware Web客户端上配置和配置存储。
 
 
-在与 vCenter 相同的时区部署 SnapCenter VMware 插件。备份计划在部署 SnapCenter VMware 插件的时区执行。vCenter 将报告 vCenter 所在时区的数据。因此，如果 SnapCenter VMware 插件和 vCenter 位于不同时区，则 SnapCenter VMware 插件信息板中的数据可能与报告中的数据不同。
+在与vCenter相同的时区部署适用于VMware vSphere的SnapCenter插件。备份计划在部署适用于VMware vSphere的SnapCenter插件的时区执行。 vCenter按vCenter所在时区报告数据。因此、如果适用于VMware vSphere的SnapCenter插件和vCenter位于不同的时区、则适用于VMware vSphere的SnapCenter插件信息板中的数据可能与报告中的数据不同。
 
 .步骤
 . 对于VMware vCenter 7.0.3及更高版本、请按照中的步骤进行操作 link:scpivs44_download_the_ova_open_virtual_appliance.html["下载Open Virtual Appliance (OVA)"^] 将证书导入到vCenter。
@@ -45,7 +45,7 @@ NOTE:  VMware vCenter 7u1及更高版本支持OVA部署。
 NOTE: 对于 IPv6 HTML Web 客户端，必须使用 Chrome 或 Firefox 。
 
 . 登录到 * VMware vCenter Single Sign-On* 页面。
-. 在导航器窗格中，右键单击作为虚拟机的有效父对象的任何清单对象，例如数据中心，集群或主机，然后选择 * 部署 OVF 模板 * 以启动 VMware Deploy 向导。
+. 在导航器窗格中，右键单击任何作为虚拟机的有效父对象(例如数据中心、集群或主机)的清单对象，然后选择*Deploy OVF Template *(部署OVF模板)以启动VMware Deploy向导。
 . 解压缩包含.ova文件的.tar文件到本地系统。在*选择OVF模板*页面上、指定的位置 `.ova` 已提取.tar文件夹中的文件。
 . 单击 * 下一步 * 。
 . 在 * 选择名称和文件夹 * 页面上，输入虚拟机或 vApp 的唯一名称，并选择部署位置，然后单击 * 下一步 * 。
@@ -80,9 +80,9 @@ VM 的默认部署位置是启动向导的清单对象。
 +
 源网络列列出了 OVA 模板中定义的所有网络。
 
-.. 在 * IP 分配设置 * 部分中，选择所需的 IP 协议，然后单击 * 下一步 * 。
+.. 在*IP分配设置*部分，选择所需的IP地址协议，然后单击*Next*。
 +
-适用于 VMware vSphere 的 SnapCenter 插件支持一个网络接口。如果需要多个网络适配器，则必须手动设置。请参见 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_create_additional_network_adapters_in_NDB_and_SCV_4.3["知识库文章：如何创建其他网络适配器"^]。
+适用于 VMware vSphere 的 SnapCenter 插件支持一个网络接口。如果需要多个网络适配器，则必须手动设置。请参阅 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_create_additional_network_adapters_in_NDB_and_SCV_4.3["知识库文章：如何创建其他网络适配器"^]。
 
 
 
@@ -98,13 +98,13 @@ VM 的默认部署位置是启动向导的清单对象。
 
 +
 
-IMPORTANT: 记下您指定的用户名和密码。如果要稍后修改 SnapCenter VMware 插件配置，则需要使用这些凭据。
+IMPORTANT: 记下您指定的用户名和密码。如果要稍后修改适用于VMware vSphere的SnapCenter插件配置、则需要使用这些凭据。
 
 .. 输入maint用户的凭据。
-.. 在 * 设置网络属性 * 中，输入主机名。
+.. 在*设置网络属性*部分，输入主机名。
 +
-... 在 * 设置 IPv4 网络属性 * 部分中，输入网络信息，例如 IPv4 地址， IPv4 网络掩码， IPv4 网关， IPv4 主 DNS ， IPv4 二级 DNS ， 和 IPv4 搜索域。
-... 在 * 设置 IPv6 网络属性 * 部分中，输入网络信息，例如 IPv6 地址， IPv6 网络掩码， IPv6 网关， IPv6 主 DNS ， IPv6 二级 DNS ， 和 IPv6 搜索域。
+... 在*Setup IPv4 Network Properties"(设置IPv4网络属性)部分，输入网络信息，例如IPv4地址、IPv4网络掩码、IPv4网关、IPv4 Primary DNS、IPv4 Secondary DNS、 和IPv4搜索域。
+... 在*设置IPv6网络属性*部分，输入网络信息，如IPv6地址、IPv6网络掩码、IPv6网关、IPv6主DNS、IPv6二级DNS、 和IPv6搜索域。
 +
 选择 IPv4 或 IPv6 字段，或者根据需要选择这两者。如果同时使用 IPv4 和 IPv6 ，则只需要为其中一个指定主 DNS 。
 
@@ -125,20 +125,20 @@ IMPORTANT: 如果要继续使用 DHCP 作为网络配置，可以跳过这些步
 在等待 OVF 导入和部署任务完成时，您可以从 " 近期任务 " 窗口查看部署进度。
 
 +
-成功部署SnapCenter VMware插件后、该插件将部署为Linux VM、并在vCenter中注册、同时安装VMware vSphere客户端。
+成功部署适用于VMware vSphere的SnapCenter插件后、该插件将部署为Linux VM、并注册到vCenter中、同时安装VMware vSphere客户端。
 
-. 导航到部署了 SnapCenter VMware 插件的虚拟机，然后单击 * 摘要 * 选项卡，再单击 * 启动 * 框以启动虚拟设备。
-. 在 SnapCenter VMware 插件启动时，右键单击已部署的 SnapCenter VMware 插件，选择 * 来宾操作系统 * ，然后单击 * 安装 VMware 工具 * 。
+. 导航到部署了适用于VMware vSphere的SnapCenter插件的虚拟机，单击*Summary (摘要)*选项卡，然后单击*Power On*(开机)框以启动虚拟设备。
+. 在适用于VMware vSphere的SnapCenter插件启动时，右键单击已部署的适用于VMware vSphere的SnapCenter插件，选择*Guest OS*，然后单击*Install VMware tools*。
 +
-VMware工具安装在部署了SnapCenter VMware插件的虚拟机上。有关安装VMware工具的详细信息、请参见VMware文档。
-
-+
-完成部署可能需要几分钟时间。在启动 SnapCenter VMware 插件，安装 VMware 工具以及屏幕提示您登录到 SnapCenter VMware 插件后，系统将显示部署成功。您可以在首次重新启动期间将网络配置从 DHCP 切换到静态。但是，不支持从静态切换到 DHCP 。
+VMware工具安装在部署适用于VMware vSphere的SnapCenter插件的虚拟机上。有关安装VMware工具的详细信息、请参见VMware文档。
 
 +
-此屏幕将显示部署 SnapCenter VMware 插件的 IP 地址。记下 IP 地址。如果要更改 SnapCenter SnapCenter 插件配置，您需要登录到 VMware 插件管理 GUI 。
+完成部署可能需要几分钟时间。如果适用于VMware vSphere的SnapCenter插件已启动、VMware工具已安装、并且屏幕提示您登录到适用于VMware vSphere的SnapCenter插件、则表示部署成功。您可以在首次重新启动期间将网络配置从 DHCP 切换到静态。但是，不支持从静态切换到 DHCP 。
 
-. 使用部署屏幕上显示的 IP 地址并使用您在部署向导中提供的凭据登录到 SnapCenter VMware 插件管理 GUI ，然后在信息板上验证 SnapCenter VMware 插件是否已成功连接到 vCenter 并已启用。
++
+此屏幕将显示部署适用于VMware vSphere的SnapCenter插件的IP地址。记下 IP 地址。如果要更改适用于VMware vSphere的SnapCenter插件配置、您需要登录到SnapCenter管理图形用户界面。
+
+. 使用部署屏幕上显示的IP地址并使用您在部署向导中提供的凭据登录到适用于VMware vSphere的SnapCenter插件管理图形用户界面。 然后、在信息板上验证适用于VMware vSphere的SnapCenter插件是否已成功连接到vCenter并已启用。
 +
 使用格式 `\https://<appliance-IP-address>:8080` 以访问管理GUI。
 
@@ -146,7 +146,7 @@ VMware工具安装在部署了SnapCenter VMware插件的虚拟机上。有关安
 使用部署时设置的管理员用户名和密码以及使用维护控制台生成的MFA令牌登录。
 
 +
-如果未启用 SnapCenter VMware 插件，请参见 link:scpivs44_restart_the_vmware_vsphere_web_client_service.html["重新启动VMware vSphere客户端服务"]。
+如果未启用适用于VMware vSphere的SnapCenter插件，请参阅 link:scpivs44_restart_the_vmware_vsphere_web_client_service.html["重新启动VMware vSphere客户端服务"]。
 
 +
 如果主机名称为 "UnifiedVSC/SCV ，则重新启动设备。如果重新启动设备时未将主机名更改为指定的主机名，则必须重新安装该设备。

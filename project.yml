@@ -1,14 +1,16 @@
 ---
 settings:
-  name: SnapCenter Plug-in for VMware vSphere 5.0
+  name: SnapCenter Plug-in for VMware vSphere 6.0
   internal:
     pdf_enabled: true
   prod:
     pdf_enabled: true
     harmony_enabled: false
   versions:
-  - version-number: '5.0'
+  - version-number: '6.0'
     url: "/sc-plugin-vmware-vsphere"
+  - version-number: '5.0'
+    url: "/sc-plugin-vmware-vsphere-50"
   - version-number: '4.9'
     url: "/sc-plugin-vmware-vsphere-49"
   - version-number: '4.8'
@@ -22,7 +24,7 @@ settings:
   langs: zh-cn,us-en,ja-jp,ko-kr,zh-tw,de-de,es-es,fr-fr,it-it
 sidebar:
   entries:
-  - title: 适用于VMware vSphere 5.0的SnapCenter插件文档
+  - title: 适用于 VMware vSphere 6.0 的 SnapCenter 插件
     url: "/index.html"
   - title: 发行说明
     url: "/scpivs44_release_notes.html"
@@ -90,7 +92,7 @@ sidebar:
       url: "/scpivs44_download_job_logs.html"
     - title: 访问报告
       url: "/scpivs44_access_reports.html"
-    - title: 从适用于 VMware vSphere 的 SnapCenter 插件 GUI 生成支持包
+    - title: 从适用于VMware vSphere的SnapCenter插件图形用户界面生成支持包
       url: "/scpivs44_generate_a_support_bundle_from_the_snapcenter_plug-in_for_vmware_vsphere_gui.html"
     - title: 从维护控制台生成支持包
       url: "/scpivs44_generate_a_support_bundle_from_the_maintenance_console.html"
@@ -138,7 +140,7 @@ sidebar:
       url: "/scpivs44_mount_a_backup.html"
     - title: 卸载备份
       url: "/scpivs44_unmount_a_backup.html"
-  - title: 从备份还原
+  - title: 还原备份
     entries:
     - title: 概述
       url: "/scpivs44_restore_from_backups_overview.html"
@@ -182,7 +184,7 @@ sidebar:
       url: "/scpivs44_restart_the_vmware_vsphere_web_client_service.html"
     - title: 访问维护控制台
       url: "/scpivs44_access_the_maintenance_console.html"
-    - title: 从维护控制台修改 SnapCenter VMware 插件密码
+    - title: 从维护控制台修改适用于VMware vSphere的SnapCenter插件的密码
       url: "/scpivs44_modify_plugin_password.html"
     - title: 创建和导入证书
       url: "/scpivs44_create_and_import_certificates.html"
