@@ -39,7 +39,6 @@
   <block id="4e36d9630c525be29c9f2b987c378c3a" category="list-text">在向导中，执行以下操作：</block>
   <block id="1b9c2951979b9427336de3c6b89e109a" category="list-text">对于 System Configuration ，输入 * 。 2 * ，然后输入 * 。 8 * 进行升级。</block>
   <block id="3fa27d5cda1efe2ca10c0731abce440c" category="list-text">输入 * 。 * 继续并开始升级。</block>
-  <block id="df005eed1212d84ddce99431a04fc779" category="paragraph">您必须运行 vCenter 6.5 或更高版本。</block>
   <block id="d9ac8e6076d4e4d7529e26c9238771a4" category="list-text">使用 SSH 以 root 用户身份登录到 vCenter Server 设备。</block>
   <block id="263de88bd463a408f8eabe4c8a4ace37" category="list-text">使用以下命令访问设备 Shell 或 bash Shell ：</block>
   <block id="ad288d5d0843f98ebb574a6ae9d65a4e" category="paragraph">`shell`</block>
@@ -863,8 +862,6 @@
   <block id="ad9a47e46e4ad7c3e60285f394572957" category="section-title">删除资源组</block>
   <block id="16b1a35ba7401a13d918126c70a9b4e4" category="paragraph">如果您不再需要保护 vCenter 中的资源，则可以删除该资源组。在从 vCenter 中删除适用于 VMware vSphere 的 SnapCenter 插件之前，必须确保删除所有资源组。</block>
   <block id="689c8a8dce8d8ad4077d2a59cced9fda" category="list-text">在 * 删除资源组 * 确认框中，单击 * 确定 * 进行确认。</block>
-  <block id="fc5672573975422a722953bf5496e5ad" category="section-title">在 Linux vCenter 中重新启动 Web 客户端服务</block>
-  <block id="4c09019cb803ffc62d7d0666df0def34" category="list-text">使用以下 HTML5 命令删除 vCenter 上所有陈旧的 scvm 软件包：</block>
   <block id="b1e9e42ee09ce6ea661a7c8aa97f209c" category="list-text">在 * 选择 OVF 模板 * 页面上，指定 ` .ova` 文件的位置（如下表所示），然后单击 * 下一步 * 。</block>
   <block id="6033b46c80eba511ea24319b744fe51a" category="cell">在此向导页面上…</block>
   <block id="2de89f426cb40a40a73e0dc57ba1d0b0" category="cell">选择名称和文件夹</block>
@@ -1416,7 +1413,6 @@
   <block id="ca1e84c5fdfae2e245ce6dbdbd1c628f" category="paragraph">如果修改作为集群一部分自动添加的 Storage VM （有时称为隐式 Storage VM ），则该 Storage VM 将更改为显式 Storage VM ，并且可以单独删除，而不更改该集群中其余的 Storage VM 。如果身份验证方法是通过证书进行的、则在存储系统页面上、用户名显示为不适用；只有集群列表中的显式Storage VM才会显示用户名、并将ExploricitSVM标志设置为true。所有 Storage VM 始终列在关联集群下。</block>
   <block id="bebc6d6c31f801875b9e77f07bdb01e7" category="paragraph">您可以使用VMware vSphere客户端从vCenter中的清单中删除Storage VM。</block>
   <block id="47407cf5b03fece3c5c171eab2b9b01a" category="inline-link-macro">重新启动VMware vSphere客户端服务</block>
-  <block id="d1bcb651c16c1e49822b4f7c61910214" category="paragraph"><block ref="882f890d3418627cf43cd6225ef7eb22" category="inline-link-macro-rx"></block>。</block>
   <block id="2d70acf0a1999b3558f2c043c08ac3b6" category="paragraph">所有用户必须至少能够查看 vCenter 对象。如果没有此权限、用户将无法访问VMware vSphere客户端GUI。</block>
   <block id="57ece9f7f3b3d9621593aeee1cb35996" category="summary">将证书颁发机构的根证书和中间证书添加到VMware vCenter、以便信任该证书及其签名的项目。</block>
   <block id="ee28a4160e701596abbbfdd58c421736" category="doc">将证书添加到VMware证书存储</block>
@@ -1550,9 +1546,6 @@
   <block id="36139d788258b0f7f760e90a7e475cfb" category="list-text">必须安装并运行VMware工具。</block>
   <block id="7a6f0192e4916d4a7238add9c2d4e982" category="paragraph">SnapCenter 使用VMware工具中的信息与VMware子操作系统建立连接。</block>
   <block id="48e30f31b43c0ce0d7b2ae5cff7665bc" category="list-text">在VMware vSphere客户端图形用户界面中、单击工具栏中的*菜单*、然后执行以下操作之一：</block>
-  <block id="15522b8dcb225880b816b8456110deaf" category="summary">如果SnapCenter VMware vSphere客户端行为不正确、您可能需要清除浏览器缓存。如果此问题仍然存在、请重新启动VMware vSphere客户端服务。</block>
-  <block id="bbbb4a3d88d4a0dafc319898d6206ae7" category="paragraph">如果vCenter位于Linux设备上、则必须使用Linux命令重新启动SnapCenter VMware vSphere客户端服务。</block>
-  <block id="7f52ae2d13fc881eab436a11ad6556a4" category="paragraph"><block ref="ca3710e05c94c666b5609593ee562322" prefix="" category="inline-code"></block></block>
   <block id="36e391315954a298b55333c0f1afcc71" category="paragraph">按照以下步骤创建资源组。</block>
   <block id="6a03edb8ab46dff4278e3f5e0e5ebe46" category="list-text">对于VMware vCenter 7.0.3及更高版本、请按照中的步骤进行操作 <block ref="205a43536d4d7a501f66e7fd657c91ca" category="inline-link-macro-rx"></block> 将证书导入到vCenter。</block>
   <block id="8775bf884912200ed43fd5a867b909a3" category="cell">* 权限 *</block>
@@ -2223,4 +2216,5 @@ Snapshot 标签有助于将使用此策略创建的快照与二级存储系统�
   <block id="c0407ba9e12515280efc0fea9f89e131" category="sidebar">还原备份</block>
   <block id="1fe3b3d815ea6fb48fb7d036907904e3" category="sidebar">适用于 VMware vSphere 6.0 的 SnapCenter 插件</block>
   <block id="fd03aeb9f7de3aae10e07664eb1cd6c6" category="sidebar">从适用于VMware vSphere的SnapCenter插件图形用户界面生成支持包</block>
+  <block id="b02541bab3f320c7517f41f638f6ef31" category="paragraph"><block ref="6f48ea8f284b5f5f2ad46612a3e37eec" category="inline-link-macro-rx"></block>(英文)</block>
 </blocks>
