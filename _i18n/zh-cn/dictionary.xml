@@ -1959,7 +1959,6 @@ Snapshot 标签有助于将使用此策略创建的快照与二级存储系统�
   <block id="2170988af7c90eecfa54f101aa51fdea" category="list-text">适用于VMware vSphere的SnapCenter插件作为虚拟设备部署在Linux VM中</block>
   <block id="d43c8490fc8d00a5a9b8b5c9491f9d0c" category="paragraph">尽管虚拟设备必须作为Linux VM安装、但适用于VMware vSphere的SnapCenter插件同时支持基于Windows和基于Linux的vCenter。SnapCenter 本机使用此插件，无需用户干预，即可与 vCenter 进行通信，以支持基于 SnapCenter 应用程序的插件，这些插件可在 Windows 和 Linux 虚拟化应用程序上执行数据保护操作。</block>
   <block id="2bb936cdd9c74df577504952ecadc5ae" category="paragraph">除了这些主要功能之外、适用于VMware vSphere的SnapCenter插件还支持iSCSI、光纤通道、FCoE、NFS 3.0/4.1、VMFS 5.0/6.0、 和基于TCP的NVMe。</block>
-  <block id="7ff9bb4b13e56cf051cc1303e64808b4" category="paragraph">有关受支持版本的最新信息、请参阅<block ref="f480f082c29fcf628f934199402ad852" category="inline-link-rx"></block> (IMT)。</block>
   <block id="62c4e12eaf898bb7a4fa14f2be8f874b" category="paragraph">有关NFS协议和ESXi主机的信息、请参阅VMware提供的vSphere存储文档。</block>
   <block id="a2509a0543299c76d33b0c54e8658789" category="paragraph">有关SnapCenter数据保护的信息，请参阅中SnapCenter插件的数据保护信息<block ref="4be00348c5f700eec4bebc72bc1bc49c" category="inline-link-rx"></block>。</block>
   <block id="81303c47eb8370a9253bb073cb0edc5e" category="paragraph">有关支持的升级和迁移路径的信息，请参见 <block ref="bdbfb8bb150c7bdb16e7ed7779280aad" category="inline-link-macro-rx"></block>。</block>
@@ -1993,7 +1992,6 @@ Snapshot 标签有助于将使用此策略创建的快照与二级存储系统�
   <block id="f1381c3464fcec41ea788ba3061a6adb" category="paragraph">要从备份中全局排除一个或多个数据存储库、必须在配置文件的属性中指定数据存储库名称<block ref="501d684ffe56268631cacb45d6a11474" prefix=" " category="inline-code"></block><block ref="c7d1d750bd6b50c426013a326fa505ba" prefix=" " category="inline-code"></block> 。请参阅 <block ref="85a3298a3ddc49d556dd2f507b17347f" category="inline-link-macro-rx"></block>。</block>
   <block id="5a0224c26b4097d544acbe092343725a" category="paragraph">如果在每个字段中选择天数、则会在每月第1天执行备份、之后会按指定的间隔执行备份。例如，如果选择 * 每 2 天 * ，则无论开始日期是偶数还是奇数，备份都会在整个月内的第 1 天，第 3 天，第 5 天，第 7 天等执行。</block>
   <block id="8d849bfecdb9ab23e919753ad2a6b109" category="paragraph">您必须填写每个字段。适用于VMware vSphere的SnapCenter插件会在部署适用于VMware vSphere的SnapCenter插件的时区创建计划。您可以使用适用于 VMware vSphere 的 SnapCenter 插件 GUI 修改时区。</block>
-  <block id="632bb02e5d0a2f2350fb9272460b94e4" category="paragraph">适用于VMware vSphere的SnapCenter插件不会对所有ONTAP版本执行兼容性检查、仅适用于ONTAP 8.2.1及更早版本。因此、请始终参考<block ref="045f3ddde5c3413f11a91218d71b4b1a" category="inline-link-rx"></block> 以获取有关SnapCenter支持的最新信息。</block>
   <block id="a5db6a98135361a01660f39f4e92797c" category="list-text">未在SnapCenter中配置首选IP地址。</block>
   <block id="eb8da80159410f82b0725426ca163dad" category="list-text">您尚未将Storage VM (SVM)管理IP地址添加到SnapCenter中。</block>
   <block id="ec9973f6952651f75a5f915fe16d937b" category="list-text">确保已将VM所在的存储系统添加到适用于VMware vSphere的SnapCenter插件清单中。</block>
@@ -2048,14 +2046,11 @@ Snapshot 标签有助于将使用此策略创建的快照与二级存储系统�
   <block id="18ddbf443f973a535ca1b5fb7410cf19" category="list-text">每个vCenter Server (无论是否处于链接模式)都必须与一个单独的适用于VMware vSphere的SnapCenter插件实例配对。</block>
   <block id="a893739e55ea1f12f5171b7f54a73977" category="list-text">适用于VMware vSphere的SnapCenter插件的每个实例都必须部署为一个单独的Linux VM。</block>
   <block id="6475183430549d8c41dcdf49b6e454d9" category="paragraph">例如、如果要从六个不同的vCenter Server实例执行备份、则必须在六个主机上部署适用于VMware vSphere的SnapCenter插件、并且每个vCenter Server都必须与适用于VMware vSphere的SnapCenter插件的唯一实例配对。</block>
-  <block id="b53293dc1967c4f8a232c12e9b89bf9c" category="paragraph">有关受支持的ONTAP工具版本的最新信息，请参阅<block ref="f480f082c29fcf628f934199402ad852" category="inline-link-rx"></block>。</block>
   <block id="ce5825ca299ec1e545f124bbf257a2c7" category="list-text">由于虚拟机在支持Storage vMotion方面的限制、适用于VMware vSphere的SnapCenter插件对共享PCI或PCIe设备(例如NVIDIA Grid GPU)的支持有限。有关详细信息，请参见供应商文档《 VMware 部署指南》。</block>
   <block id="9dda9990139fd29842c044b5c5471a76" category="list-text">有关适用于VMware vSphere的SnapCenter插件限制的详细列表，请参阅 <block ref="bdbfb8bb150c7bdb16e7ed7779280aad" category="inline-link-macro-rx"></block>。</block>
   <block id="d20cc380823f43f0acf872e3020e3bd2" category="cell">7.0U1及更高版本。</block>
   <block id="cd7d50c8df32692f671c1e63989f485a" category="cell">ESXi服务器</block>
   <block id="fe115ae8a7d04d4f6b25288b9c0d157b" category="cell">1.2、1.3 SnapCenter服务器使用此接口与适用于VMware vSphere的SnapCenter插件进行通信、以便通过VMDK执行应用程序数据保护操作。</block>
-  <block id="a569487b43126a296801a18c63338706" category="cell">适用于 VMware vSphere 的 SnapCenter 插件可通过此插件管理 VVol 数据存储库（ VMware 虚拟卷）。有关支持的版本，请参见<block ref="f480f082c29fcf628f934199402ad852" category="inline-link-rx"></block>。</block>
-  <block id="ccb01c1fed73ae0745105a88f4f14dcd" category="paragraph">有关受支持版本的最新信息，请参阅<block ref="f480f082c29fcf628f934199402ad852" category="inline-link-rx"></block>。</block>
   <block id="608d0cc0a62b7ecff9cf09f3405773c5" category="section-title">基于TCP协议的NVMe的要求</block>
   <block id="ec3a0c65dec1eee8127351ce116aa730" category="paragraph">要支持基于TCP的NVMe协议、最低软件要求为：</block>
   <block id="128a673672e69a9c3a9a57cd50e753fd" category="list-text">vCenter vSphere 7.0u3</block>
@@ -2173,9 +2168,6 @@ Snapshot 标签有助于将使用此策略创建的快照与二级存储系统�
   <block id="39555852d385a77b40d2bcf7d790ab82" category="list-text">右键单击该虚拟机并选择*适用于VMware vSphere的SnapCenter插件*&gt;*子文件还原*。</block>
   <block id="65895b7403885311119261f9146fcd0e" category="list-text">要查找要从连接的虚拟磁盘还原的文件、请从vSphere客户端快捷方式窗口中选择*适用于VMware vSphere的SnapCenter插件*。</block>
   <block id="3384140e800c2f652b9cef13ac075fa2" category="list-text">在左侧导航窗格中，选择*子系统文件还原*&gt;*子系统配置*。</block>
-  <block id="44c6fb205ff700ce92d55729cd516c13" category="paragraph">有关受支持版本的最新信息，请参阅<block ref="045f3ddde5c3413f11a91218d71b4b1a" category="inline-link-rx"></block>。</block>
-  <block id="c30b54b2f0c6c2e9a103d286e7b23ce5" category="paragraph">您不能从运行 Linux 子操作系统的虚拟机还原文件和文件夹。但是，您可以连接 VMDK ，然后手动还原文件和文件夹。有关支持的子操作系统的最新信息，请参见<block ref="045f3ddde5c3413f11a91218d71b4b1a" category="inline-link-rx"></block>。</block>
-  <block id="6ec40fd66ac6ea02299c4fabd83e8275" category="paragraph">您不能从运行 Linux 子操作系统的虚拟机还原文件和文件夹。但是，您可以连接 VMDK ，然后手动还原文件和文件夹。有关支持的子操作系统的最新信息，请参阅<block ref="045f3ddde5c3413f11a91218d71b4b1a" category="inline-link-rx"></block>。</block>
   <block id="b59c69b3461a70dfc0aa2e0732ab7524" category="list-text">连接和还原操作使用默认 SCSI 控制器连接 VMDK 。但是、如果备份了连接到具有NVMe磁盘的VM的VMDK、则连接和还原操作将使用NVMe控制器(如果可用)。</block>
   <block id="ebdc37577a43d781541f86f380fcfba9" category="list-text">在左侧导航器窗格中、右键单击某个虚拟机、然后在下拉列表中选择*适用于VMware vSphere的SnapCenter插件*、并在二级下拉列表中选择*还原*。</block>
   <block id="0e75737369597ad96531f41e66789232" category="paragraph">您必须已使用适用于VMware vSphere的SnapCenter插件为虚拟机创建备份、然后才能还原虚拟机。</block>
@@ -2217,4 +2209,13 @@ Snapshot 标签有助于将使用此策略创建的快照与二级存储系统�
   <block id="1fe3b3d815ea6fb48fb7d036907904e3" category="sidebar">适用于 VMware vSphere 6.0 的 SnapCenter 插件</block>
   <block id="fd03aeb9f7de3aae10e07664eb1cd6c6" category="sidebar">从适用于VMware vSphere的SnapCenter插件图形用户界面生成支持包</block>
   <block id="b02541bab3f320c7517f41f638f6ef31" category="paragraph"><block ref="6f48ea8f284b5f5f2ad46612a3e37eec" category="inline-link-macro-rx"></block>(英文)</block>
+  <block id="a8873f8f7715ad49732b43f6bdd600b5" category="paragraph">有关受支持版本的最新信息、请参阅<block ref="64fc8efacd4fa13b8c1907c1db527b3d" category="inline-link-rx"></block> (IMT)。</block>
+  <block id="20f6a12d4ccfce9e9c6f58459fac2777" category="admonition">在扇出配置中、三级站点不支持一致性组。</block>
+  <block id="3458fc42f0b377624eb1de9c23c10655" category="paragraph">适用于VMware vSphere的SnapCenter插件不会对所有ONTAP版本执行兼容性检查、仅适用于ONTAP 8.2.1及更早版本。因此、请始终参考<block ref="860b18b04b199a7f740acbad2e027732" category="inline-link-rx"></block> 以获取有关SnapCenter支持的最新信息。</block>
+  <block id="b1213a15d0ce0cefa635cb9a1238b7ad" category="paragraph">有关受支持的ONTAP工具版本的最新信息，请参阅<block ref="64fc8efacd4fa13b8c1907c1db527b3d" category="inline-link-rx"></block>。</block>
+  <block id="8c9e5a8991367cd2b398f6da00fcacea" category="cell">适用于 VMware vSphere 的 SnapCenter 插件可通过此插件管理 VVol 数据存储库（ VMware 虚拟卷）。有关支持的版本，请参见<block ref="64fc8efacd4fa13b8c1907c1db527b3d" category="inline-link-rx"></block>。</block>
+  <block id="14f6e09e94edb505729ffc8766177413" category="paragraph">有关受支持版本的最新信息，请参阅<block ref="64fc8efacd4fa13b8c1907c1db527b3d" category="inline-link-rx"></block>。</block>
+  <block id="9a8a39bfd809f914e270e3aa295af606" category="paragraph">有关受支持版本的最新信息，请参阅<block ref="860b18b04b199a7f740acbad2e027732" category="inline-link-rx"></block>。</block>
+  <block id="3759b6e9ee7be120a52636d5811b2cb5" category="paragraph">您不能从运行 Linux 子操作系统的虚拟机还原文件和文件夹。但是，您可以连接 VMDK ，然后手动还原文件和文件夹。有关支持的子操作系统的最新信息，请参见<block ref="860b18b04b199a7f740acbad2e027732" category="inline-link-rx"></block>。</block>
+  <block id="6b98cc6c5d2c3be456270dd9cd0c49b3" category="paragraph">您不能从运行 Linux 子操作系统的虚拟机还原文件和文件夹。但是，您可以连接 VMDK ，然后手动还原文件和文件夹。有关支持的子操作系统的最新信息，请参阅<block ref="860b18b04b199a7f740acbad2e027732" category="inline-link-rx"></block>。</block>
 </blocks>

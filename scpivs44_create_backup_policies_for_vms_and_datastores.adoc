@@ -43,6 +43,10 @@ NOTE: 只有VMFS数据存储库才支持SnapMirror活动同步。
 +
 ** 按照技术报告中所述配置集群和调解器： https://www.netapp.com/pdf.html?item=/media/21888-tr-4878.pdf["TR-4878：SnapMirror活动同步(原SMBC)"]。
 ** 将与VMFS数据存储库关联的卷添加到一致性组、然后使用_AutomatedFailOver_或_AutomatedFailOver双 工_保护策略在两个ONTAP存储系统之间创建数据保护关系。自ONTAP 9.15.1版起、支持_AutomatedFailOver双 工_策略。
++
+
+NOTE: 在扇出配置中、三级站点不支持一致性组。
+
 
 
 

@@ -45,7 +45,7 @@ summary: 在部署虚拟设备之前，您应了解部署要求。
 有关详细信息、请参见 https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html["适用于 VMware vSphere 的 ONTAP 工具"^]
 
 +
-有关受支持的ONTAP工具版本的最新信息，请参阅 https://imt.netapp.com/matrix/imt.jsp?components=117018;&solution=1259&isHWU&src=IMT["NetApp 互操作性表工具"^]。
+有关受支持的ONTAP工具版本的最新信息，请参阅 https://imt.netapp.com/matrix/imt.jsp?components=121034;&solution=1517&isHWU&src=IMT["NetApp 互操作性表工具"^]。
 
 * 由于虚拟机在支持Storage vMotion方面的限制、适用于VMware vSphere的SnapCenter插件对共享PCI或PCIe设备(例如NVIDIA Grid GPU)的支持有限。有关详细信息，请参见供应商文档《 VMware 部署指南》。
 +
@@ -125,9 +125,9 @@ summary: 在部署虚拟设备之前，您应了解部署要求。
 | 适用于阵列集成的 VMware 应用程序 vStorage API （ VAAI ） | 适用于 VMware vSphere 的 SnapCenter 插件可通过此功能提高还原操作的性能。它还可以提高 NFS 环境中的性能。 
 
 
-| 适用于VMware的ONTAP 工具 | 适用于 VMware vSphere 的 SnapCenter 插件可通过此插件管理 VVol 数据存储库（ VMware 虚拟卷）。有关支持的版本，请参见 https://imt.netapp.com/matrix/imt.jsp?components=117018;&solution=1259&isHWU&src=IMT["NetApp 互操作性表工具"^]。 
+| 适用于VMware的ONTAP 工具 | 适用于 VMware vSphere 的 SnapCenter 插件可通过此插件管理 VVol 数据存储库（ VMware 虚拟卷）。有关支持的版本，请参见 https://imt.netapp.com/matrix/imt.jsp?components=121034;&solution=1517&isHWU&src=IMT["NetApp 互操作性表工具"^]。 
 |===
-有关受支持版本的最新信息，请参阅 https://imt.netapp.com/matrix/imt.jsp?components=117018;&solution=1259&isHWU&src=IMT["NetApp 互操作性表工具"^]。
+有关受支持版本的最新信息，请参阅 https://imt.netapp.com/matrix/imt.jsp?components=121034;&solution=1517&isHWU&src=IMT["NetApp 互操作性表工具"^]。
 
 
 
