@@ -42,10 +42,7 @@ summary: 在部署虚拟设备之前，您应了解部署要求。
 
 * 要保护VVOL VM (VMware VVOL数据存储库上的VM)、必须先部署适用于VMware vSphere的ONTAP 工具。ONTAP 工具可在ONTAP 和VMware Web Client上为VVOL配置和配置存储。
 +
-有关详细信息、请参见 https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html["适用于 VMware vSphere 的 ONTAP 工具"^]
-
-+
-有关受支持的ONTAP工具版本的最新信息，请参阅 https://imt.netapp.com/matrix/imt.jsp?components=121034;&solution=1517&isHWU&src=IMT["NetApp 互操作性表工具"^]。
+有关详细信息、请参阅适用于VMware vSphere的ONTAP工具文档。此外、有关ONTAP工具支持的版本的最新信息、请参见 https://imt.netapp.com/matrix/imt.jsp?components=121034;&solution=1517&isHWU&src=IMT["NetApp 互操作性表工具"^]。
 
 * 由于虚拟机在支持Storage vMotion方面的限制、适用于VMware vSphere的SnapCenter插件对共享PCI或PCIe设备(例如NVIDIA Grid GPU)的支持有限。有关详细信息，请参见供应商文档《 VMware 部署指南》。
 +

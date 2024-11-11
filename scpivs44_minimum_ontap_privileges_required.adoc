@@ -84,6 +84,8 @@ volume snapshot show
 
 | cluster Identity show network interface show vserver vserver peer-vserver show 
 |===
+在创建要与数据SVserver关联的角色时、可以忽略_cluster Identity show_ cluster level命令。
+
 
 NOTE: 您可以忽略有关不受支持的Vserver命令的警告消息。
 

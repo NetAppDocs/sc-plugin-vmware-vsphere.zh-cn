@@ -29,7 +29,7 @@ summary: 通过添加存储，适用于 VMware vSphere 的 SnapCenter 插件可�
 您必须将存储集群添加到适用于VMware vSphere的SnapCenter插件和适用于VMware vSphere的ONTAP工具中、以使VVOV数据保护正常工作。
 
 +
-有关详细信息、请参见 https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html["适用于 VMware vSphere 的 ONTAP 工具"^]
+有关详细信息、请参阅适用于VMware vSphere的ONTAP工具文档。此外、有关ONTAP工具支持的版本的最新信息、请参见 https://imt.netapp.com/matrix/imt.jsp?components=121034;&solution=1517&isHWU&src=IMT["NetApp 互操作性表工具"^]。
 
 
 

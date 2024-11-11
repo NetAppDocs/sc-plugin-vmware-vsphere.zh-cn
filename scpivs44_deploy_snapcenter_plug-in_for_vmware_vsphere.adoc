@@ -32,7 +32,7 @@ NOTE:  VMware vCenter 7u1及更高版本支持OVA部署。
 * 您必须已注销并关闭vSphere客户端的所有浏览器会话、并删除浏览器缓存、以避免在部署适用于VMware vSphere的SnapCenter插件期间出现任何浏览器缓存问题。
 * 您必须已在 vCenter 中启用传输层安全（ TLS ）。请参见 VMware 文档。
 * 如果您计划在部署适用于VMware vSphere的SnapCenter插件的vCenter以外的vCenter中执行备份、则ESXi服务器、适用于VMware vSphere的SnapCenter插件以及每个vCenter必须同步到同一时间。
-* 要保护VVOL数据存储库上的VM、您必须先部署适用于VMware vSphere的ONTAP 工具。支持适用于VMware vSphere 9.10及更高版本的ONTAP 工具。ONTAP 工具可在ONTAP 和VMware Web客户端上配置和配置存储。
+* 要保护VVOL数据存储库上的VM、您必须先部署适用于VMware vSphere的ONTAP 工具。有关受支持的ONTAP工具版本的最新信息，请参阅 https://imt.netapp.com/matrix/imt.jsp?components=121034;&solution=1517&isHWU&src=IMT["NetApp 互操作性表工具"^]。ONTAP 工具可在ONTAP 和VMware Web客户端上配置和配置存储。
 
 
 在与vCenter相同的时区部署适用于VMware vSphere的SnapCenter插件。备份计划在部署适用于VMware vSphere的SnapCenter插件的时区执行。 vCenter按vCenter所在时区报告数据。因此、如果适用于VMware vSphere的SnapCenter插件和vCenter位于不同的时区、则适用于VMware vSphere的SnapCenter插件信息板中的数据可能与报告中的数据不同。

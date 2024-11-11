@@ -49,6 +49,8 @@ summary: 资源组是指要保护的VM、数据存储库、vSphere标记和vSphe
 
 IMPORTANT: 如果您使用的是VMware vSphere集群服务(VCL)、请勿将VCL管理的VM包含在适用于VMware vSphere的SnapCenter插件资源组中。
 
+有关详细信息、请参见 https://kb.netapp.com/data-mgmt/SnapCenter/SC_KBs/SCV_unable_to_backup_vCLS_VMs_after_updating_vCenter_to_7.0.x["在将vCenter更新到7.0.x后、选择控制阀无法备份VCL VM"]
+
 
 TIP: 适用于VMware vSphere 4.5及更高版本的SnapCenter插件支持大型LUN上的数据存储库、以及最大128 TB的文件和最大300 TB的卷。如果要保护大型LUN、请仅使用厚配置LUN以避免延迟。
 
@@ -58,7 +60,7 @@ IMPORTANT: 请勿添加处于不可访问状态的 VM 。尽管可以创建包�
 .开始之前
 在创建包含VVOL VM的资源组之前、必须先部署适用于VMware的ONTAP 工具。
 
-有关详细信息，请参阅 https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html["适用于 VMware vSphere 的 ONTAP 工具"^]。
+有关详细信息、请参阅适用于VMware vSphere的ONTAP工具文档。此外、有关ONTAP工具支持的版本的最新信息、请参见 https://imt.netapp.com/matrix/imt.jsp?components=121034;&solution=1517&isHWU&src=IMT["NetApp 互操作性表工具"^]。
 
 .关于此任务
 您可以随时在资源组中添加或删除资源。

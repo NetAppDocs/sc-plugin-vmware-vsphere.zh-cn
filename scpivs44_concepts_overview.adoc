@@ -59,7 +59,7 @@ NFS 环境中的大多数还原操作都使用原生 ONTAP 功能（例如单个
 您可以使用ONTAP 工具在ONTAP 和VMware Web Client中为VVOL配置和配置存储。
 
 +
-有关详细信息、请参见 https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html["适用于 VMware vSphere 的 ONTAP 工具"^]
+有关详细信息、请参阅适用于VMware vSphere的ONTAP工具文档。此外、有关ONTAP工具支持的版本的最新信息、请参见 https://imt.netapp.com/matrix/imt.jsp?components=121034;&solution=1517&isHWU&src=IMT["NetApp 互操作性表工具"^]。
 
 * 适用于VMware vSphere的SnapCenter插件作为虚拟设备部署在Linux VM中
 +
