@@ -2130,8 +2130,6 @@ Snapshot 标签有助于将使用此策略创建的快照与二级存储系统�
   <block id="2b9e23fd8fb5fef0620a58a6db51b728" category="paragraph">您应查看有关适用于VMware vSphere的SnapCenter插件支持和不支持的内容的信息。 <block ref="a00337a9991b14e4173adaeb83b5a3ec" category="inline-link-macro-rx"></block></block>
   <block id="79f1e63de506798ce60c620c8f028ee2" category="list-text">适用于VMware vSphere的SnapCenter插件可能无法在故障转移后检测到保护关系。有关详细信息、请参见<block ref="99fba7c040a549996b92e8d8a4600af2" category="inline-link-rx"></block> 。</block>
   <block id="d452fe76f3c592ede8ce027419616d3a" category="paragraph">开始之前，请参阅 <block ref="a00337a9991b14e4173adaeb83b5a3ec" category="inline-link-macro-rx"></block>。</block>
-  <block id="0cb419de6360c724e26df691f8d52375" category="inline-link">《适用于VMware vSphere 6.0的SnapCenter插件发行说明》</block>
-  <block id="ef1a838b98177650f2583e0684bb4f04" category="paragraph">发行说明提供了有关此版本的适用于 VMware vSphere 的 SnapCenter 插件的重要信息，包括许可要求，已知问题，注意事项，限制， 以及任何文档更新或更正。有关详细信息、请参见<block ref="8064e7a1b1bb715ac6ad5ebb68124ef0" category="inline-link-rx"></block></block>
   <block id="81825a917dcd9f5f496e5c2e475ea698" category="summary">如果您不再需要使用SnapCenter数据保护功能、则必须禁用适用于VMware vSphere的SnapCenter插件以将其从vCenter中注销、然后从vCenter中删除适用于VMware vSphere的SnapCenter插件、最后手动删除剩余文件。</block>
   <block id="1c7d667e742402e56daf3c18150d0523" category="list-text">使用格式登录到适用于VMware vSphere的SnapCenter插件管理GUI<block ref="3dfacd84c996ac983963942e2712a0bf" prefix=" " category="inline-code"></block>。</block>
   <block id="6a491fe613035397cac20b9ae801f35f" category="list-text">在左侧导航屏幕中，右键单击适用于VMware vSphere的SnapCenter插件实例(部署虚拟设备时使用的文件名<block ref="58963a595c988dc6f693cb3238dc907a" prefix=" " category="inline-code"></block> )，然后选择*Delete from Disk*(从磁盘删除)。</block>
@@ -2207,4 +2205,6 @@ Snapshot 标签有助于将使用此策略创建的快照与二级存储系统�
   <block id="00b932dfc365b7b36023fc7e5a151179" category="paragraph">要支持基于TCP的NVMe和基于FC的NVMe协议、最低软件要求如下：</block>
   <block id="f6599049db87ec18cb4b8b124bbae9bb" category="admonition">在还原操作期间、您可能会遇到此错误、或者在适用于VMware vSphere的SnapCenter插件尝试对克隆重新签名时发生此错误<block ref="8bca5bf79dc6a0592d8b28b7fc9c19a9" prefix=" " category="inline-code"></block><block ref="9e17d1b629230b07cfa91237bf97bfc3" prefix=" " category="inline-code"></block> 。由于VMware的限制、适用于VMware vSphere的SnapCenter插件无法控制高级ESXi主机配置中的自动重新签名值。对于基于TCP的NVMe和基于FC的NVMe存储、添加新子系统时、选择控制阀无法动态添加控制器。您应在挂载操作之前进行必要的映射。</block>
   <block id="c2ad807051aed38647dbaf48da9bc4e7" category="list-text">对于基于TCP的NVMe和基于FC的NVMe协议、您需要使用NVMe.10.1 ONTAP 9及更高版本。</block>
+  <block id="ec1055ea33266617a541d92dfa6e5b67" category="inline-link">《适用于VMware vSphere 6.0 6.0.1的SnapCenter插件发行说明》</block>
+  <block id="23ea4d7ccec896acdd587b616d6cc4ee" category="paragraph">发行说明提供了有关此版本的适用于 VMware vSphere 的 SnapCenter 插件的重要信息，包括许可要求，已知问题，注意事项，限制， 以及任何文档更新或更正。有关详细信息、请参见<block ref="1433bf204e910686ea87dd6be31fd4c0" category="inline-link-rx"></block></block>
 </blocks>
