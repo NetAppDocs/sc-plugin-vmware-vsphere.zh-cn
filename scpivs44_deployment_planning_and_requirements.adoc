@@ -128,9 +128,9 @@ summary: 在部署虚拟设备之前，您应了解部署要求。
 
 
 
-==== 基于TCP协议的NVMe的要求
+==== 基于TCP的NVMe和基于FC的NVMe协议的要求
 
-要支持基于TCP的NVMe协议、最低软件要求为：
+要支持基于TCP的NVMe和基于FC的NVMe协议、最低软件要求如下：
 
 * vCenter vSphere 7.0u3
 * ESXi 7.0u3

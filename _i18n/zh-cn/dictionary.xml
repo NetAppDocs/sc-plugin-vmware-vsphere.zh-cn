@@ -1940,7 +1940,6 @@ Snapshot 标签有助于将使用此策略创建的快照与二级存储系统�
   <block id="8948a149db0e61e41cadfc936cde0889" category="paragraph">SnapCenter本机利用适用于VMware vSphere的SnapCenter插件对VMDK、原始设备映射(Raw Device Mappings、RDM)和NFS数据存储库执行所有数据保护操作。部署虚拟设备后，此插件将处理与 vCenter 的所有交互。适用于VMware vSphere的SnapCenter插件支持所有基于SnapCenter应用程序的插件。</block>
   <block id="2170988af7c90eecfa54f101aa51fdea" category="list-text">适用于VMware vSphere的SnapCenter插件作为虚拟设备部署在Linux VM中</block>
   <block id="d43c8490fc8d00a5a9b8b5c9491f9d0c" category="paragraph">尽管虚拟设备必须作为Linux VM安装、但适用于VMware vSphere的SnapCenter插件同时支持基于Windows和基于Linux的vCenter。SnapCenter 本机使用此插件，无需用户干预，即可与 vCenter 进行通信，以支持基于 SnapCenter 应用程序的插件，这些插件可在 Windows 和 Linux 虚拟化应用程序上执行数据保护操作。</block>
-  <block id="2bb936cdd9c74df577504952ecadc5ae" category="paragraph">除了这些主要功能之外、适用于VMware vSphere的SnapCenter插件还支持iSCSI、光纤通道、FCoE、NFS 3.0/4.1、VMFS 5.0/6.0、 和基于TCP的NVMe。</block>
   <block id="62c4e12eaf898bb7a4fa14f2be8f874b" category="paragraph">有关NFS协议和ESXi主机的信息、请参阅VMware提供的vSphere存储文档。</block>
   <block id="a2509a0543299c76d33b0c54e8658789" category="paragraph">有关SnapCenter数据保护的信息，请参阅中SnapCenter插件的数据保护信息<block ref="4be00348c5f700eec4bebc72bc1bc49c" category="inline-link-rx"></block>。</block>
   <block id="81303c47eb8370a9253bb073cb0edc5e" category="paragraph">有关支持的升级和迁移路径的信息，请参见 <block ref="bdbfb8bb150c7bdb16e7ed7779280aad" category="inline-link-macro-rx"></block>。</block>
@@ -2032,8 +2031,6 @@ Snapshot 标签有助于将使用此策略创建的快照与二级存储系统�
   <block id="d20cc380823f43f0acf872e3020e3bd2" category="cell">7.0U1及更高版本。</block>
   <block id="cd7d50c8df32692f671c1e63989f485a" category="cell">ESXi服务器</block>
   <block id="fe115ae8a7d04d4f6b25288b9c0d157b" category="cell">1.2、1.3 SnapCenter服务器使用此接口与适用于VMware vSphere的SnapCenter插件进行通信、以便通过VMDK执行应用程序数据保护操作。</block>
-  <block id="608d0cc0a62b7ecff9cf09f3405773c5" category="section-title">基于TCP协议的NVMe的要求</block>
-  <block id="ec3a0c65dec1eee8127351ce116aa730" category="paragraph">要支持基于TCP的NVMe协议、最低软件要求为：</block>
   <block id="128a673672e69a9c3a9a57cd50e753fd" category="list-text">vCenter vSphere 7.0u3</block>
   <block id="83796d186e6e678e53d65b677d9068ca" category="list-text">ESXi 7.0u3</block>
   <block id="ab8296c5ef7a7b056b384680f89a9379" category="list-text">ONTAP 9.10.1.</block>
@@ -2059,7 +2056,6 @@ Snapshot 标签有助于将使用此策略创建的快照与二级存储系统�
   <block id="36f4df9728d59a871c1b51b43833d3b0" category="list-text">部署适用于VMware vSphere的SnapCenter插件时会显示此IP地址。</block>
   <block id="e32f94a152303c32638eabc51580f698" category="list-text">使用在部署适用于VMware vSphere的SnapCenter插件期间提供的或以后修改的登录凭据。</block>
   <block id="9d9eeed31f8e7bbf7e9e30774035c2b8" category="paragraph">启动子系统文件还原操作时会发生此问题、但即使VMware工具正在运行且子操作系统凭据正确、连接磁盘操作也会失败。如果发生这种情况，将返回以下错误：</block>
-  <block id="ce202327d684f714d79712b7e7d5ad13" category="admonition">在还原操作期间、您可能会遇到此错误、或者在适用于VMware vSphere的SnapCenter插件尝试对克隆重新签名时发生此错误<block ref="8bca5bf79dc6a0592d8b28b7fc9c19a9" prefix=" " category="inline-code"></block><block ref="9e17d1b629230b07cfa91237bf97bfc3" prefix=" " category="inline-code"></block> 。由于VMware的限制、适用于VMware vSphere的SnapCenter插件无法控制高级ESXi主机配置中的自动重新签名值。对于基于TCP的NVMe存储、添加新子系统时、选择控制阀无法动态添加控制器。您应在挂载操作之前进行必要的映射。</block>
   <block id="fd8f2fbe73fe09f5d08a36f7b4d3bcd1" category="paragraph">有关此错误的详细信息、请参见<block ref="1077fe6ba26e5db8ea58ede2a1d4f949" category="inline-link-rx"></block> 。</block>
   <block id="15c6e9116ba0203c55283a9a43cd1467" category="admonition">从适用于VMware的SnapCenter插件(SCV) 5.0开始、您需要添加HTTP和ONTAPI类型的应用程序、作为对SCV具有基于角色的自定义访问权限的任何ONTAP用户的用户登录方法。如果无法访问这些应用程序、备份将失败。您需要重新启动选择控制阀服务才能识别对ONTAP用户登录方法所做的更改。有关创建或修改登录帐户的信息，请参见<block ref="8bb9441e135c29f77dfdcf6a698db847" category="inline-link-rx"></block>。</block>
   <block id="71dcfa5c5d50c9c8804dec50e025e539" category="paragraph">如果要将ONTAP RBAC与适用于VMware vSphere的SnapCenter插件结合使用、则必须在存储系统上配置此RBAC。在 ONTAP 中，您必须执行以下任务：</block>
@@ -2092,7 +2088,6 @@ Snapshot 标签有助于将使用此策略创建的快照与二级存储系统�
   <block id="57442019ae8a4f358f6ca948df78b8a7" category="cell">Vserver CIFS vserver cCIFS share create vserver cCIFS share delete vserver cCIFS卷影复制show vserver cCIFS share show vserver cCIFS show vserver export -policy vserver export -policy create vserver export -policy Rule create vserver export -policy规则show vserver export -policy show vserver iSCSI vserver iSCSI vserver iSCSI connection show vserver NVMe子系统控制器 vserver NVMe subsystem controller show vserver NVMe子系统映射vserver NVMe子系统映射show vserver NVMe子系统映射添加vserver NVMe子系统映射删除vserver NVMe子系统host show vserver NVMe子系统host添加vserver NVMe子系统主机删除vserver NVMe子系统显示vserver NVMe子系统删除vserver NVMe命名空间 show network interface network interface故障转移组</block>
   <block id="de92ae935b9e0d1f381bebce31b4ae2e" category="cell">cluster Identity show network interface show vserver vserver peer-vserver show</block>
   <block id="f492e93d9d3e86fc62690b1632797659" category="list-text">要使用SnapMirror活动同步功能、您需要ONTAP 9.12.1或更高版本。</block>
-  <block id="7e5d063e76d4bd57ccc370986b9505e0" category="list-text">对于基于TCP的NVMe协议、您需要ONTAP 9.10.1及更高版本。</block>
   <block id="edf08e5a72e49a6f8e59f09ad7747a6b" category="admonition">从ONTAP 9.11.1版开始、与ONTAP集群的通信将通过REST API进行。ONTAP用户应启用http应用程序。但是、如果发现ONTAP REST API存在问题、则配置密钥"FORCE-ZAPI"有助于切换到传统ZAPI工作流。您可能需要使用配置API添加或更新此密钥、并将其设置为true。有关详细信息、请参见知识库文章<block ref="1c569ff15e6174002858600fc974b74f" category="inline-link-rx"></block> 。</block>
   <block id="e7ee44e196e376b7e77e5238b063c541" category="doc">从维护控制台修改适用于VMware vSphere的SnapCenter插件的密码</block>
   <block id="f9844e7c0ca698dc548bf5d5d3867fb2" category="summary">即使备份过去已成功运行、但在适用于VMware vSphere的SnapCenter插件必须等待存储系统超过配置的超时期限这段时间内、备份可能会开始失败。如果发生这种情况，您可以增加所配置的超时时间。</block>
@@ -2207,4 +2202,9 @@ Snapshot 标签有助于将使用此策略创建的快照与二级存储系统�
   <block id="8c2a5a560e2f4170197d66660fb8d4f9" category="paragraph">有关详细信息、请参见<block ref="a5f674bd21d863d8804d3aaee35bd7df" category="inline-link-rx"></block></block>
   <block id="e6f2686f361e5123b41a78ec7cf82976" category="list-text">要保护VVOL数据存储库上的VM、您必须先部署适用于VMware vSphere的ONTAP 工具。有关受支持的ONTAP工具版本的最新信息，请参阅<block ref="64fc8efacd4fa13b8c1907c1db527b3d" category="inline-link-rx"></block>。ONTAP 工具可在ONTAP 和VMware Web客户端上配置和配置存储。</block>
   <block id="c162715bd54906edd2726c5a128225ec" category="paragraph">在创建要与数据SVserver关联的角色时、可以忽略_cluster Identity show_ cluster level命令。</block>
+  <block id="ce979aca6aa053e43e8e7148e876185c" category="paragraph">除了这些主要功能之外、适用于VMware vSphere的SnapCenter插件还支持iSCSI、光纤通道、FCoE、NFS 3.0/4.1、VMFS 5.0/6.0、基于FC的NVMe以及基于TCP的NVMe。</block>
+  <block id="18ba359970ff64681ed643864ce8bced" category="section-title">基于TCP的NVMe和基于FC的NVMe协议的要求</block>
+  <block id="00b932dfc365b7b36023fc7e5a151179" category="paragraph">要支持基于TCP的NVMe和基于FC的NVMe协议、最低软件要求如下：</block>
+  <block id="f6599049db87ec18cb4b8b124bbae9bb" category="admonition">在还原操作期间、您可能会遇到此错误、或者在适用于VMware vSphere的SnapCenter插件尝试对克隆重新签名时发生此错误<block ref="8bca5bf79dc6a0592d8b28b7fc9c19a9" prefix=" " category="inline-code"></block><block ref="9e17d1b629230b07cfa91237bf97bfc3" prefix=" " category="inline-code"></block> 。由于VMware的限制、适用于VMware vSphere的SnapCenter插件无法控制高级ESXi主机配置中的自动重新签名值。对于基于TCP的NVMe和基于FC的NVMe存储、添加新子系统时、选择控制阀无法动态添加控制器。您应在挂载操作之前进行必要的映射。</block>
+  <block id="c2ad807051aed38647dbaf48da9bc4e7" category="list-text">对于基于TCP的NVMe和基于FC的NVMe协议、您需要使用NVMe.10.1 ONTAP 9及更高版本。</block>
 </blocks>

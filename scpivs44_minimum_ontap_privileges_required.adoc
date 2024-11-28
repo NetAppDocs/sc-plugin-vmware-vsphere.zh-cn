@@ -109,7 +109,7 @@ NOTE: 您可以忽略有关不受支持的Vserver命令的警告消息。
 ** 对于NFS、您需要ONTAP 9.12.1及更高版本
 
 
-* 对于基于TCP的NVMe协议、您需要ONTAP 9.10.1及更高版本。
+* 对于基于TCP的NVMe和基于FC的NVMe协议、您需要使用NVMe.10.1 ONTAP 9及更高版本。
 
 
 
