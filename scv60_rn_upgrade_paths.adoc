@@ -1,0 +1,92 @@
+---
+permalink: scv60_rn_upgrade_paths.html 
+sidebar: sidebar 
+keywords: upgrade paths, scv, 6.0, 6.0.1 
+summary: 了解适用于VMware vSphere 6.0的SnapCenter插件中提供的新功能。 
+---
+= 升级路径
+:allow-uri-read: 
+
+
+[role="lead"]
+您可以升级到的适用于VMware vSphere的SnapCenter插件(SCV)版本取决于您当前运行的版本。
+
+[NOTE]
+====
+只有VMware vCenter Server 7 Update 1及更高版本才支持升级到适用于VMware vSphere的SnapCenter插件(SCV) 4.8及更高版本。对于版本7 Update 1之前的VMware vCenter Server、您应继续使用4.7号选择控制阀。
+
+====
+[cols="50%,50%"]
+|===
+| 如果您使用的是选择控制阀型号… | 您可以直接将选择控制阀升级为… 
+
+
+ a| 
+5.0号选择控制阀
+ a| 
+6.0号选择控制阀
+
+
+
+ a| 
+4.9号选择控制阀
+ a| 
+5号选择控制阀和6号选择控制阀
+
+
+
+ a| 
+4.8号选择控制阀
+ a| 
+4.9号选择控制阀和5.0号选择控制阀
+
+
+
+ a| 
+4.7号选择控制阀
+ a| 
+4.8号选择控制阀和4.9号选择控制阀
+
+|===
+对于与SnapCenter集成的虚拟化数据库和文件系统、以下是升级路径：
+
+[cols="30%,30%,40%"]
+|===
+| 如果您使用的是 ... | 如果您的VMware插件为… | 您可以直接升级到… 
+
+
+ a| 
+SnapCenter 6.0
+ a| 
+5.0号选择控制阀
+ a| 
+6.0号选择控制阀
+
+
+
+ a| 
+SnapCenter 5.0
+ a| 
+4.9号选择控制阀
+ a| 
+5.0号选择控制阀
+
+
+
+ a| 
+SnapCenter 4.9
+ a| 
+4.8号选择控制阀
+ a| 
+4.9号选择控制阀
+
+
+
+ a| 
+SnapCenter 4.8
+ a| 
+4.7号选择控制阀
+ a| 
+4.8号选择控制阀
+
+|===

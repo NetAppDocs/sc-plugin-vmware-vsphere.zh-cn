@@ -27,7 +27,15 @@ sidebar:
   - title: 适用于 VMware vSphere 6.0 的 SnapCenter 插件
     url: "/index.html"
   - title: 发行说明
-    url: "/scpivs44_release_notes.html"
+    entries:
+    - title: "《适用于VMware vSphere的SnapCenter插件发行说明》"
+      url: "/scpivs44_release_notes.html"
+    - title: 适用于VMware 6.0.1的SnapCenter插件中的新增功能
+      url: "/scv60_releasenotes_601_whats_new.html"
+    - title: 适用于VMware vSphere 6.0的SnapCenter插件中的新增功能
+      url: "/scv60_releasenotes_60_whats_new.html"
+    - title: 升级路径
+      url: "/scv60_rn_upgrade_paths.html"
   - title: 概念
     entries:
     - title: 产品概述
