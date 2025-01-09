@@ -23,6 +23,6 @@ https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_concepts_overvie
  a| 
 https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_concepts_overview.html["将适用于VMware vSphere 10.x的ONTAP工具与6.0.1集成"]
  a| 
-适用于VMware vSphere 10.x的ONTAP工具有助于配置VMware vSphere虚拟卷。通过此集成、您可以配置、备份和还原基于NFS的虚拟卷数据存储库上的虚拟机。
+适用于VMware vSphere 10.x的ONTAP工具有助于配置VMware vSphere虚拟卷。通过这种集成、您可以配置、备份和还原基于NFS的虚拟卷数据存储库上的虚拟机。
 
 |===

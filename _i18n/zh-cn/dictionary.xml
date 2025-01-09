@@ -2219,7 +2219,6 @@ Snapshot 标签有助于将使用此策略创建的快照与二级存储系统�
   <block id="5ba878c4a46b0a8571800aaa6e8445a7" category="paragraph">适用于VMware 6.0.1的SnapCenter插件现在支持对VMFS数据存储库使用基于FC的NVMe协议、以优化性能、降低成本并确保持续性能。</block>
   <block id="1c7703c1d060b65ce6fd3a75ba50400e" category="inline-link">将适用于VMware vSphere 10.x的ONTAP工具与6.0.1集成</block>
   <block id="0d1fedc1c92b2bac1ad8d29266340940" category="paragraph"><block ref="0d1fedc1c92b2bac1ad8d29266340940" category="inline-link-rx"></block></block>
-  <block id="41d114a9720ad1ac299b2dffec2f7186" category="paragraph">适用于VMware vSphere 10.x的ONTAP工具有助于配置VMware vSphere虚拟卷。通过此集成、您可以配置、备份和还原基于NFS的虚拟卷数据存储库上的虚拟机。</block>
   <block id="704fc5c8ea6982e3179f495b7b832121" category="doc">适用于VMware vSphere 6.0的SnapCenter插件中的新增功能</block>
   <block id="05355694c1b9a07fdbe4cd953d66f950" category="inline-link">支持基于TCP协议的NVMe</block>
   <block id="537b09dbac250171d06580c68b67b2f2" category="paragraph"><block ref="537b09dbac250171d06580c68b67b2f2" category="inline-link-rx"></block></block>
@@ -2228,7 +2227,6 @@ Snapshot 标签有助于将使用此策略创建的快照与二级存储系统�
   <block id="b154808e6bcc13034e613c359731ad79" category="paragraph">与iSCSI一样、采用基于TCP的NVMe协议的VMFS数据存储库也可以使用任何以太网NIC和交换机、并支持所有标准操作、例如备份、还原、挂载、连接和断开。</block>
   <block id="4f53b479c6b47d73b1fdb28f399b1301" category="inline-link">支持SnapMirror主动同步</block>
   <block id="a3dde13a3e6b0437cbcc67d81b0b023f" category="paragraph"><block ref="a3dde13a3e6b0437cbcc67d81b0b023f" category="inline-link-rx"></block></block>
-  <block id="88ae2479bcea5ca16281e31626f2f8d8" category="paragraph">现在、您可以使用适用于VMware vSphere的SnapCenter插件配置SnapMirror活动同步功能、例如零恢复点目标(RPO)、恢复时间目标(RTO)和透明应用程序故障转移。</block>
   <block id="6884e6f09d7d01f963a72f6d4b4dee73" category="paragraph">只有VMFS数据存储库支持SnapMirror主动同步。</block>
   <block id="ee8f5755a6e1671a63e8da1209dc860f" category="paragraph">您可以升级到的适用于VMware vSphere的SnapCenter插件(SCV)版本取决于您当前运行的版本。</block>
   <block id="4181b34482469dce169449ef3b643b27" category="paragraph">只有VMware vCenter Server 7 Update 1及更高版本才支持升级到适用于VMware vSphere的SnapCenter插件(SCV) 4.8及更高版本。对于版本7 Update 1之前的VMware vCenter Server、您应继续使用4.7号选择控制阀。</block>
@@ -2248,4 +2246,6 @@ Snapshot 标签有助于将使用此策略创建的快照与二级存储系统�
   <block id="7e35de6c484fe702e7c4fe21538ac2a4" category="paragraph">SnapCenter 4.8</block>
   <block id="9fb9e3e27a3792a16059036c9b877598" category="sidebar">适用于VMware 6.0.1的SnapCenter插件中的新增功能</block>
   <block id="43e9871fb2ac1e50ad02c9c15dce6a93" category="sidebar">适用于VMware vSphere 6.0的SnapCenter插件中的新增功能</block>
+  <block id="2c1653c7d21f34b83ac4f6c2e6d95617" category="paragraph">适用于VMware vSphere 10.x的ONTAP工具有助于配置VMware vSphere虚拟卷。通过这种集成、您可以配置、备份和还原基于NFS的虚拟卷数据存储库上的虚拟机。</block>
+  <block id="260461e32230b11c5e5f1e46e498eb6d" category="paragraph">现在、您可以使用适用于VMware vSphere的SnapCenter插件配置SnapMirror活动同步功能、例如零恢复点目标(RPO)、恢复时间目标(RTO)和透明应用程序故障转移。</block>
 </blocks>
