@@ -27,6 +27,7 @@ summary: 您可以使用适用于 VMware vSphere 的 SnapCenter 插件 REST API 
 ** 挂载和卸载数据存储库
 ** 下载作业并生成报告
 ** 修改内置计划
+** 为ASA R2配置二级保护
 
 
 * 适用于 VMware vSphere 的 REST API 不支持的操作

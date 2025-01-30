@@ -42,7 +42,7 @@ NOTE:  VMware vCenter 7u1及更高版本支持OVA部署。
 . 在浏览器中，导航到 VMware vSphere vCenter 。
 +
 
-NOTE: 对于 IPv6 HTML Web 客户端，必须使用 Chrome 或 Firefox 。
+NOTE: 对于IPv6地址HTML Web客户端、必须使用Chrome或Firefox。
 
 . 登录到 * VMware vCenter Single Sign-On* 页面。
 . 在导航器窗格中，右键单击任何作为虚拟机的有效父对象(例如数据中心、集群或主机)的清单对象，然后选择*Deploy OVF Template *(部署OVF模板)以启动VMware Deploy向导。
@@ -106,7 +106,7 @@ IMPORTANT: 记下您指定的用户名和密码。如果要稍后修改适用于
 ... 在*Setup IPv4 Network Properties"(设置IPv4网络属性)部分，输入网络信息，例如IPv4地址、IPv4网络掩码、IPv4网关、IPv4 Primary DNS、IPv4 Secondary DNS、 和IPv4搜索域。
 ... 在*设置IPv6网络属性*部分，输入网络信息，如IPv6地址、IPv6网络掩码、IPv6网关、IPv6主DNS、IPv6二级DNS、 和IPv6搜索域。
 +
-选择 IPv4 或 IPv6 字段，或者根据需要选择这两者。如果同时使用 IPv4 和 IPv6 ，则只需要为其中一个指定主 DNS 。
+选择IPv4或IPv6地址字段、或者选择这两者(如果适用)。如果同时使用IPv4和IPv6地址、则只需要为其中一个地址指定主DNS。
 
 +
 

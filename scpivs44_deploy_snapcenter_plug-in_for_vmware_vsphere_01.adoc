@@ -21,7 +21,7 @@ summary:
 . 在浏览器中，导航到 VMware vSphere vCenter 。
 +
 
-NOTE: 对于 IPv6 HTML Web 客户端，必须使用 Chrome 或 Firefox 。
+NOTE: 对于IPv6地址HTML Web客户端、必须使用Chrome或Firefox。
 
 . 登录到* VMware vCenter单点登录页面*。
 . 在导航窗格中、右键单击作为虚拟机有效父对象的任何清单对象、例如数据中心、文件夹、集群或主机、然后选择*部署OVF模板*以启动VMware Deploy向导。

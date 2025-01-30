@@ -48,41 +48,22 @@ NOTE: 从适用于VMware的SnapCenter插件(SCV) 5.0开始、您需要添加HTTP
 | version 
 
 
-| 创建卷克隆
-volume clone show
-卷克隆拆分开始
-卷克隆拆分停止
-卷创建
-卷删除
-卷销毁
-创建卷文件克隆
-volume file show-disk-usage
-卷脱机
-卷联机
-卷修改
-卷 qtree create
-卷 qtree 删除
-卷 qtree 修改
-volume qtree show
-卷限制
-volume show
-创建卷快照
-卷快照删除
-卷快照修改
-卷快照重命名
-卷快照还原
-卷快照还原文件
-volume snapshot show
-卷卸载 
+| volume clong create volume clong show volume clone-split start volume clone-split status volume clone-split stop volume create volume delete volume销毁volume file clone-disk usage-volume脱机卷联机卷管理的功能卷修改卷qtree create volume qtree delete volume qtree修改SnapLock卷qtree show volume resystem show volume snapshot create volume snapshot delete volume snapshot修改卷快照 
 
 
-| Vserver CIFS vserver cCIFS share create vserver cCIFS share delete vserver cCIFS卷影复制show vserver cCIFS share show vserver cCIFS show vserver export -policy vserver export -policy create vserver export -policy Rule create vserver export -policy规则show vserver export -policy show vserver iSCSI vserver iSCSI vserver iSCSI connection show vserver NVMe子系统控制器 vserver NVMe subsystem controller show vserver NVMe子系统映射vserver NVMe子系统映射show vserver NVMe子系统映射添加vserver NVMe子系统映射删除vserver NVMe子系统host show vserver NVMe子系统host添加vserver NVMe子系统主机删除vserver NVMe子系统显示vserver NVMe子系统删除vserver NVMe命名空间 show network interface network interface故障转移组 
+| vserver cifs-policy create vserver cifs-policy delete vserver cifs-policy show vserver cifs-share show vserver cifs-show vserver cifs-policy vserver导出策略delete vserver导出策略规则create vserver导出策略规则show vserver export -policy show vserver vserver vserver vserver vserver subsystem show vserver vserver system show vserver vserver subsystem删除NVMe子系统名称空间删除NVMe子系统vserver vserver映射删除NVMe子系统删除NVMe子系统删除NVMe子系统vserver vserver vserver vserver映射删除NVMe子系统删除NVMe子系统删除NVMe子系统删除NVMe子系统删除NVMe子系统删除NVMe子系统删除NVMe子系统vserver vserver vserver vserver vserver vserver vserver映射删除子系统删除子系统删除NVMe子系统删除NVMe子系统 
 |===
 |===
 | 只读命令： ONTAP 8.3 及更高版本所需的最低权限 
 
 
 | cluster Identity show network interface show vserver vserver peer-vserver show 
+|===
+|===
+| 完全访问命令：ONTAP 9及更高版本所需的最低权限。 
+
+
+| 一致性组storage-unit show 
 |===
 在创建要与数据SVserver关联的角色时、可以忽略_cluster Identity show_ cluster level命令。
 

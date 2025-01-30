@@ -27,7 +27,7 @@ summary: 要使用适用于 VMware vSphere 的 SnapCenter 插件 REST API 执行
 | 1. | ` /4.1/ 策略` | `Get Policies` 获取VMware vSphere客户端策略的列表。请注意在创建资源组和策略 * 频率 * 时要使用的 * 策略 Id* 。如果未列出任何策略、请使用 `Create Policy` REST API以创建新策略。 
 
 
-| 2. | ` /4.1/resource-groups` | `创建资源组` 使用指定的策略创建资源组。传递步骤 1 中的 * 策略 Id* 并输入策略 * 频率 * 详细信息以及所有其他必需属性。 
+| 2. | ` /4.1/resource-groups` | `Create a Resource Group` 使用指定策略创建资源组。传递步骤 1 中的 * 策略 Id* 并输入策略 * 频率 * 详细信息以及所有其他必需属性。您可以使用此REST API启用二级保护。 
 |===
 要修改资源组，请按照以下工作流进行操作：
 

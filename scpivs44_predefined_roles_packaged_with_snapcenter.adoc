@@ -28,10 +28,10 @@ summary: 为了简化vCenter Server RBAC的使用、适用于VMware vSphere的Sn
 | Role | Description 
 
 
-| SCV 管理员 | 提供执行适用于 VMware vSphere 的所有 SnapCenter 插件任务所需的所有原生 vCenter Server 特权和 SnapCenter 专用特权。 
+| SCV 管理员 | 提供执行适用于 VMware vSphere 的所有 SnapCenter 插件任务所需的所有原生 vCenter Server 特权和 SnapCenter 专用特权。从6.1号选择控制阀开始，此角色增加了创建二级保护的新权限。 
 
 
-| SCV 备份 | 提供备份 vSphere 对象（虚拟机和数据存储库）所需的所有原生 vCenter Server 和 SnapCenter 专用特权。用户还可以访问配置权限。用户无法还原备份。 
+| SCV 备份 | 提供备份 vSphere 对象（虚拟机和数据存储库）所需的所有原生 vCenter Server 和 SnapCenter 专用特权。用户还可以访问配置权限。用户无法还原备份。从6.1号选择控制阀开始，此角色增加了创建二级保护的新权限。 
 
 
 | SCV 子系统文件还原 | 提供还原子系统文件和文件夹所需的所有原生 vCenter Server 和 SnapCenter 专用特权。用户无法还原 VM 或 VMDK 。 

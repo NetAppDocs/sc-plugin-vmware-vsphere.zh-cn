@@ -136,7 +136,7 @@ SCV中的资源包括：
 ** 更改管理员凭据
 ** 更改时区
 ** 更改NTP服务器
-** 更改IPv4/IPv6设置
+** 更改IPv4/IPv6地址设置
 
 
 * Configuration

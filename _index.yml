@@ -7,12 +7,12 @@ indexpage:
   keywords: SnapCenter Plug-in for VMware vSphere, SCV
   lead: 适用于 VMware vSphere 的 SnapCenter 插件（ SCV ）是一种基于 Linux 的虚拟设备。作为独立的，它可以为 VM ，数据存储库和
     VMDK 提供快速，节省空间，崩溃状态一致且 VM 一致的备份和还原操作。此外，它还可以与 SnapCenter 服务器配合使用，为 SnapCenter
-    应用程序专用插件在 VMware 环境中执行基于应用程序的备份和还原操作提供支持。本文档库介绍了适用于VMware vSphere 6.0的SnapCenter插件。
+    应用程序专用插件在 VMware 环境中执行基于应用程序的备份和还原操作提供支持。本文档库介绍了适用于VMware vSphere 6.1的SnapCenter插件。
   tiles:
   - title: 入门
     links:
     - title: 发行说明
-      url: https://library.netapp.com/ecm/ecm_download_file/ECMLP3322664
+      url: https://library.netapp.com/ecm/ecm_download_file/ECMLP3337464
     - title: 了解选择控制阀
       url: "/scpivs44_concepts_overview.html"
     - title: 部署要求

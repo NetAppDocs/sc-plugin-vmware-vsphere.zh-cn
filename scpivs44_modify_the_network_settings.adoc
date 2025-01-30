@@ -33,7 +33,7 @@ summary: 您可以修改在适用于 VMware vSphere 的 SnapCenter 插件中配�
 +
 image:scpivs44_image31.png["适用于 VMware vSphere 的 SnapCenter 插件管理 GUI"]
 
-. 在 * 设置 * 页面的 * 网络设置 * 部分中，单击 * IPv4 * 或 * IPv6 * ，然后单击 * 编辑 * 。
+. 在*Settings*页的*Network Settings*部分中，单击*IPv4*或*IPv6*地址，然后单击*Edit*。
 +
 输入新信息并单击 * 保存 * 。
 
@@ -46,4 +46,4 @@ image:scpivs44_image31.png["适用于 VMware vSphere 的 SnapCenter 插件管理
 
 
 
-NOTE: 如果同时使用 IPv4 和 IPv6 ，则不能同时删除这两个网络设置。其余网络必须指定 DNS 服务器和搜索域字段。
+NOTE: 如果同时使用IPv4和IPv6地址、则无法同时删除这两个网络设置。其余网络必须指定 DNS 服务器和搜索域字段。

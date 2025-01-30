@@ -1,8 +1,8 @@
 ---
-permalink: scv60_rn_upgrade_paths.html 
+permalink: scv_rn_upgrade_paths.html 
 sidebar: sidebar 
-keywords: upgrade paths, scv, 6.0, 6.0.1 
-summary: 了解适用于VMware vSphere 6.0的SnapCenter插件中提供的新功能。 
+keywords: upgrade paths, scv, 6.1 
+summary: 了解适用于VMware vSphere 6.1的SnapCenter插件中提供的新功能。 
 ---
 = 升级路径
 :allow-uri-read: 
@@ -22,9 +22,16 @@ summary: 了解适用于VMware vSphere 6.0的SnapCenter插件中提供的新功�
 
 
  a| 
+6.0号选择控制阀
+ a| 
+SCV 6.1
+
+
+
+ a| 
 5.0号选择控制阀
  a| 
-6.0号选择控制阀
+6.0号选择控制阀和6.1号选择控制阀
 
 
 
@@ -53,6 +60,15 @@ summary: 了解适用于VMware vSphere 6.0的SnapCenter插件中提供的新功�
 [cols="30%,30%,40%"]
 |===
 | 如果您使用的是 ... | 如果您的VMware插件为… | 您可以直接升级到… 
+
+
+ a| 
+SnapCenter 6.1
+ a| 
+6.0号选择控制阀
+ a| 
+SCV 6.1
+
 
 
  a| 
@@ -90,3 +106,4 @@ SnapCenter 4.8
 4.8号选择控制阀
 
 |===
+有关受支持版本的最新信息、请参阅 https://imt.netapp.com/matrix/imt.jsp?components=121034;&solution=1517&isHWU&src=IMT["NetApp 互操作性表工具"^] (IMT)。

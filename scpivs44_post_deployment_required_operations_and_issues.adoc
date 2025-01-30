@@ -28,7 +28,7 @@ summary: 部署适用于 VMware vSphere 的 SnapCenter 插件后，您必须完�
 
 * 部署虚拟设备后，在以下情况下，信息板上的 * 备份作业 * 选项卡可能无法加载：
 +
-** 您正在运行 IPv4 ，并且 SnapCenter VMware vSphere 主机具有两个 IP 地址。因此，作业请求将发送到 SnapCenter 服务器无法识别的 IP 地址。要阻止此问题描述，请添加要使用的 IP 地址，如下所示：
+** 您运行的是IPv4地址、并且SnapCenter VMware vSphere主机具有两个IP地址。因此，作业请求将发送到 SnapCenter 服务器无法识别的 IP 地址。要阻止此问题描述，请添加要使用的 IP 地址，如下所示：
 +
 ... 导航到适用于VMware vSphere的SnapCenter插件的部署位置： `/opt/netapp/scvservice/standalone_aegis/etc`
 ... 打开文件 network- interface.properties 。
