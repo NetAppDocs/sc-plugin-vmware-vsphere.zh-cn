@@ -759,7 +759,6 @@
   <block id="253b40ae359ba25b56231803430c4873" category="cell">ONTAP</block>
   <block id="3560c7ef415d0e13191c33fa995b7005" category="cell">其中之一： SnapMirror 或 SnapVault （用于二级数据保护，而不管关系类型如何）</block>
   <block id="2b5932460c4f1e726c2fe5eb4c84cf64" category="cell">其他产品</block>
-  <block id="9f7e37bd05b30c134ff1660c6d52c186" category="cell">vSphere Standard ， Enterprise 或 Enterprise Plus 要执行使用 Storage vMotion 的还原操作，需要 vSphere 许可证。vSphere Essentials 或 Essentials Plus 许可证不包括 Storage vMotion 。</block>
   <block id="6c1ccb0198e251b6df82fd2d169fdcf0" category="cell">主目标</block>
   <block id="5be74f1e9c3cdce99e50c0e439ec19b3" category="cell">二级目标</block>
   <block id="9f65492afee4fdfba75618fed6d0f9dd" category="section-title">软件支持</block>
@@ -773,18 +772,13 @@
   <block id="91a33043fc7eebee30634cb063fa6e2c" category="cell">适用于阵列集成的 VMware 应用程序 vStorage API （ VAAI ）</block>
   <block id="16e729ceefd4cd71e291d0800dd9e9c0" category="cell">适用于 VMware vSphere 的 SnapCenter 插件可通过此功能提高还原操作的性能。它还可以提高 NFS 环境中的性能。</block>
   <block id="5a2ebfb8baa378cfcfcba58bbb1380c2" category="cell">要求</block>
-  <block id="696c660ff8d9323e55146a6dbd4e4088" category="cell">操作系统</block>
-  <block id="edc9f0a5a5d57797bf68e37364743831" category="cell">Linux</block>
   <block id="3cb874290f06f3c2d44ce2e858bb041f" category="cell">适用于 VMware vSphere 的 SnapCenter 插件，日志和 MySQL 数据库的最小硬盘空间</block>
   <block id="dcfebc6fbca2c5316f55c914e6593d2d" category="cell">100 GB</block>
   <block id="9a0980e2d2a75eb076f41f7a4d439162" category="section-title">连接和端口要求</block>
   <block id="3672cca688eb0474cd3fee2add1a2067" category="cell">端口类型</block>
-  <block id="1af12a0ed126e7e6b194370c0c0be5eb" category="cell">预配置的端口</block>
   <block id="926bafe6b6d4e07892751c7ca73ad20d" category="cell">适用于 VMware vSphere 的 SnapCenter 插件端口</block>
   <block id="bd6873be6e44dbd5504531679d8ca1ef" category="section-title">支持的配置</block>
-  <block id="f377fb769eb12fc39f5abb7af2a27054" category="paragraph">每个插件实例仅支持一个 vCenter Server 。支持处于链接模式的 vCenter 。多个插件实例可以支持相同的 SnapCenter 服务器，如下图所示。</block>
   <block id="44245d918ad9aae8ea6514501fcfa0e8" category="section-title">需要 RBAC 权限</block>
-  <block id="59e5a4ee48160cd7955828dd0c4db401" category="paragraph">vCenter 管理员帐户必须具有所需的 vCenter 权限，如下表所示。</block>
   <block id="3226b4d551073b03b6999f2db6d26c26" category="cell">执行此操作…</block>
   <block id="ebbed56187bf88c2773b58885cb13924" category="cell">您必须具有这些 vCenter 权限…</block>
   <block id="246180f43b6fb5d5b8945e640f176b32" category="cell">在 vCenter 中部署和注册适用于 VMware vSphere 的 SnapCenter 插件</block>
@@ -1222,7 +1216,6 @@
   <block id="fd9ca72572d4ab5e600c85b32f8a9e6a" category="list-text">完成新建备份策略向导以返回到创建资源组向导。</block>
   <block id="8b1375f200206162c06fc46aeb476858" category="sidebar">部署 SCV 的要求</block>
   <block id="131b9f1c14d26ba7a0cce7389e7679a9" category="cell">存储集群或 Storage VM 端口</block>
-  <block id="4ebb46027adb5b26fc62dffc3aab358e" category="cell">443 （ HTTPS ）双向 80 （ HTTP ）双向端口用于在虚拟设备与 Storage VM 或包含 Storage VM 的集群之间进行通信。</block>
   <block id="4f5a02ab6b7e9a5ab38a6272a35f425c" category="paragraph">资源组可以包含以下内容之一：</block>
   <block id="b9131269a99d9c88ad3147cbcd58bf40" category="list-text">传统 VM 和数据存储库</block>
   <block id="c590e7dcafecc166a57f574779c3cefd" category="paragraph">传统 VM ，传统 SAN 数据存储库和传统 NAS 数据存储库的任意组合。传统 VM 不能与 VVol VM 结合使用。</block>
@@ -1729,7 +1722,6 @@
   <block id="f85e08b125832fc8dae732e6790fa120" category="cell">* 操作 *</block>
   <block id="bf59ac9161d0f4561a155103d8ea2d10" category="list-text">在*Audit Log Settings*(审核日志设置*)窗格中，输入审核日志文件的最大数量和审核日志文件大小限制。</block>
   <block id="beebc895773b56339a9e46c0233ba7cd" category="list-text">选中*锁定期限*复选框以启用Snapshot锁定。您可以将Snapshot锁定期限选择为天/月/年。</block>
-  <block id="db2aeb24ed12922fe15bc09cfd1f528b" category="paragraph">在部署虚拟设备之前，您应了解部署要求。下表列出了部署要求。</block>
   <block id="716306984040e1bf7dc3b8c1b0a05422" category="paragraph">注意：支持将选择控制阀主机添加到SnapCenter的自定义端口。</block>
   <block id="06c615df2f8ec55473b26eed4f5eedbd" category="paragraph">下表显示了SnapCenter图形用户界面执行的操作。</block>
   <block id="ac3ea74e69b4d64c5b8bf99577a62f58" category="cell">使用VMware vSphere客户端图形用户界面备份VM和数据存储库。</block>
@@ -1970,14 +1962,9 @@ Snapshot 标签有助于将使用此策略创建的快照与二级存储系统�
   <block id="c8cdfbb3a52561000ef7cad338743cef" category="list-text">导航到部署了适用于VMware vSphere的SnapCenter插件的虚拟机，单击*摘要*选项卡，然后单击*开机*框启动适用于VMware vSphere的SnapCenter插件。</block>
   <block id="0e1333d2629e7e53b7c0c41245a5c98c" category="paragraph">完成部署可能需要几分钟时间。如果适用于VMware vSphere的SnapCenter插件已启动、VMware工具已安装、并且屏幕提示您登录到适用于VMware vSphere的SnapCenter插件、则表示部署成功。</block>
   <block id="145fd808d1976421d581e3373669426b" category="list-text">使用部署向导中提供的凭据、使用部署屏幕上显示的IP地址登录到适用于VMware vSphere的SnapCenter插件管理图形用户界面、然后在信息板上验证适用于VMware vSphere的SnapCenter插件是否已成功连接到vCenter并启用。</block>
-  <block id="d4ff2a4ba3e5af06f352373f50430bce" category="list-text">适用于VMware vSphere的SnapCenter插件可部署为Linux VM、而不管您是使用该插件来保护Windows系统还是Linux系统上的数据。</block>
   <block id="5897423e9fe4df49061445b3104d9dbb" category="list-text">您应在vCenter Server上部署适用于VMware vSphere的SnapCenter插件。</block>
-  <block id="77e6a5095dbf7f9171bcc524ed6e1476" category="paragraph">备份计划在部署适用于VMware vSphere的SnapCenter插件的时区执行。 vCenter按vCenter所在时区报告数据。因此、如果适用于VMware vSphere的SnapCenter插件和vCenter位于不同的时区、则适用于VMware vSphere的SnapCenter插件信息板中的数据可能与报告中的数据不同。</block>
-  <block id="5d7c1f071b8bebdb7a96ab764852bb32" category="list-text">您不能将适用于VMware vSphere的SnapCenter插件部署在名称包含特殊字符的文件夹中。</block>
   <block id="43685458a1d84184e89d6917bc3f3a30" category="list-text">您必须为每个vCenter Server部署并注册一个适用于VMware vSphere的SnapCenter插件的单独唯一实例。</block>
-  <block id="18ddbf443f973a535ca1b5fb7410cf19" category="list-text">每个vCenter Server (无论是否处于链接模式)都必须与一个单独的适用于VMware vSphere的SnapCenter插件实例配对。</block>
   <block id="a893739e55ea1f12f5171b7f54a73977" category="list-text">适用于VMware vSphere的SnapCenter插件的每个实例都必须部署为一个单独的Linux VM。</block>
-  <block id="6475183430549d8c41dcdf49b6e454d9" category="paragraph">例如、如果要从六个不同的vCenter Server实例执行备份、则必须在六个主机上部署适用于VMware vSphere的SnapCenter插件、并且每个vCenter Server都必须与适用于VMware vSphere的SnapCenter插件的唯一实例配对。</block>
   <block id="ce5825ca299ec1e545f124bbf257a2c7" category="list-text">由于虚拟机在支持Storage vMotion方面的限制、适用于VMware vSphere的SnapCenter插件对共享PCI或PCIe设备(例如NVIDIA Grid GPU)的支持有限。有关详细信息，请参见供应商文档《 VMware 部署指南》。</block>
   <block id="9dda9990139fd29842c044b5c5471a76" category="list-text">有关适用于VMware vSphere的SnapCenter插件限制的详细列表，请参阅 <block ref="bdbfb8bb150c7bdb16e7ed7779280aad" category="inline-link-macro-rx"></block>。</block>
   <block id="d20cc380823f43f0acf872e3020e3bd2" category="cell">7.0U1及更高版本。</block>
@@ -1986,7 +1973,6 @@ Snapshot 标签有助于将使用此策略创建的快照与二级存储系统�
   <block id="128a673672e69a9c3a9a57cd50e753fd" category="list-text">vCenter vSphere 7.0u3</block>
   <block id="83796d186e6e678e53d65b677d9068ca" category="list-text">ESXi 7.0u3</block>
   <block id="ab8296c5ef7a7b056b384680f89a9379" category="list-text">ONTAP 9.10.1.</block>
-  <block id="ea35a5ceed1579f5b902ce081cd9eba5" category="paragraph">8144 (HTTPS)、双向端口用于从VMware vSphere客户端和SnapCenter 服务器进行通信。8080双向此端口用于管理虚拟设备。</block>
   <block id="ddc2e0749914d96ecd066bc2875c2383" category="paragraph">适用于VMware vSphere的SnapCenter插件可提供最少的信息来跟踪其使用情况、包括插件URL。AutoSupport 包含一个已安装插件表， AutoSupport 查看器会显示此表。</block>
   <block id="5ca88d87d091c40a67888db17ab09200" category="list-text">在左侧导航器窗格中、选择一个虚拟机。</block>
   <block id="21ee10f4cd70125e8dd3b917d6c4dec7" category="list-text">在左侧导航窗格中、右键单击虚拟机、然后在下拉列表中选择*适用于VMware vSphere的SnapCenter插件*、并在二级下拉列表中选择*断开虚拟磁盘*。</block>
@@ -2244,4 +2230,16 @@ Snapshot 标签有助于将使用此策略创建的快照与二级存储系统�
   <block id="06f856f616715d0e20b174cd2c7fb47a" category="sidebar">适用于 VMware vSphere 的 SnapCenter 插件（ SCV ）是一种基于 Linux 的虚拟设备。作为独立的，它可以为 VM ，数据存储库和 VMDK 提供快速，节省空间，崩溃状态一致且 VM 一致的备份和还原操作。此外，它还可以与 SnapCenter 服务器配合使用，为 SnapCenter 应用程序专用插件在 VMware 环境中执行基于应用程序的备份和还原操作提供支持。本文档库介绍了适用于VMware vSphere 6.1的SnapCenter插件。</block>
   <block id="94e8421982a2fb673cf72156837a22d4" category="sidebar">适用于 VMware vSphere 6.1 的 SnapCenter 插件</block>
   <block id="a90ceefdbe215fb84520872833bfb5a2" category="sidebar">适用于VMware vSphere 6.1的SnapCenter插件中的新增功能</block>
+  <block id="7ba297bc556c4bd891e83b1943e116d5" category="paragraph">在开始部署适用于VMware vSphere的SnapCenter插件(SCV)之前、您应熟悉以下要求。</block>
+  <block id="ca7b78e6e086f02d5ea9e3c5f9719822" category="list-text">适用于VMware vSphere的SnapCenter插件可作为Linux VM部署、而无论用于保护Windows系统还是Linux系统上的数据。</block>
+  <block id="ea84ccf1b1b24d5d18322d9bcac320d5" category="paragraph">备份计划在部署适用于VMware vSphere的SnapCenter插件的时区执行、vCenter将按其所在时区报告数据。因此、如果适用于VMware vSphere的SnapCenter插件和vCenter位于不同的时区、则适用于VMware vSphere的SnapCenter插件信息板中的数据可能与报告中的数据不同。</block>
+  <block id="c8ab109ee626a90547277ef790b2ecc5" category="list-text">您不能将适用于VMware vSphere的SnapCenter插件部署在名称包含特殊字符的文件夹中。</block>
+  <block id="b8d538e51a79520b3157b17c50b7394d" category="list-text">每个vCenter Server (无论是否处于链接模式)都必须与一个单独的适用于VMware vSphere的SnapCenter插件实例配对。</block>
+  <block id="bfd5317e73c9442ee1915a6588c0366c" category="paragraph">例如、假设您要从六个不同的vCenter Server实例执行备份。在这种情况下、您必须在六台主机上部署适用于VMware vSphere的SnapCenter插件、并且每个vCenter Server都必须与适用于VMware vSphere的SnapCenter插件的唯一实例配对。</block>
+  <block id="94065d09aa28da13308f15b08c2c3e89" category="cell">vSphere Standard、Enterprise或Enterprise Plus要使用Storage vMotion执行还原操作、需要vSphere许可证。vSphere Essentials或Essentials Plus许可证不包括Storage vMotion。</block>
+  <block id="99ddf0e823c1be51589f68696f62cf56" category="cell">预配置的端口</block>
+  <block id="f96e5ffe0e86002fbdb3cab444ac57b9" category="paragraph">8144 (HTTPS)、双向。此端口用于与VMware vSphere客户端和SnapCenter服务器进行通信。8080双向此端口用于管理虚拟设备。</block>
+  <block id="ffa5dd2af4873dbfd89f9ae07a815104" category="cell">443 (HTTPS)、双向80 (HTTP)、双向端口用于在虚拟设备与Storage VM或包含Storage VM的集群之间进行通信。</block>
+  <block id="822926837c6e218e71716b72e1a7017f" category="paragraph">每个插件实例仅支持一个处于链接模式的vCenter Server。但是、多个插件实例可以支持同一个SnapCenter服务器、如下图所示。</block>
+  <block id="1c0894625a89e433ba87d14aebdc6088" category="paragraph">vCenter管理员帐户必须具有下表中列出的所需vCenter Privileges。</block>
 </blocks>

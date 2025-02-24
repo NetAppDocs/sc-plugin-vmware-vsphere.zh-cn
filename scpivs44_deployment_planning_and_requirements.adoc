@@ -14,7 +14,7 @@ summary: 在部署虚拟设备之前，您应了解部署要求。
 
 
 [role="lead"]
-在部署虚拟设备之前，您应了解部署要求。下表列出了部署要求。
+在开始部署适用于VMware vSphere的SnapCenter插件(SCV)之前、您应熟悉以下要求。
 
 
 
@@ -22,10 +22,10 @@ summary: 在部署虚拟设备之前，您应了解部署要求。
 
 在开始部署适用于VMware vSphere的SnapCenter插件(SCV)之前、您应熟悉主机要求。
 
-* 适用于VMware vSphere的SnapCenter插件可部署为Linux VM、而不管您是使用该插件来保护Windows系统还是Linux系统上的数据。
+* 适用于VMware vSphere的SnapCenter插件可作为Linux VM部署、而无论用于保护Windows系统还是Linux系统上的数据。
 * 您应在vCenter Server上部署适用于VMware vSphere的SnapCenter插件。
 +
-备份计划在部署适用于VMware vSphere的SnapCenter插件的时区执行。 vCenter按vCenter所在时区报告数据。因此、如果适用于VMware vSphere的SnapCenter插件和vCenter位于不同的时区、则适用于VMware vSphere的SnapCenter插件信息板中的数据可能与报告中的数据不同。
+备份计划在部署适用于VMware vSphere的SnapCenter插件的时区执行、vCenter将按其所在时区报告数据。因此、如果适用于VMware vSphere的SnapCenter插件和vCenter位于不同的时区、则适用于VMware vSphere的SnapCenter插件信息板中的数据可能与报告中的数据不同。
 
 * 您不能将适用于VMware vSphere的SnapCenter插件部署在名称包含特殊字符的文件夹中。
 +
@@ -36,7 +36,7 @@ summary: 在部署虚拟设备之前，您应了解部署要求。
 ** 每个vCenter Server (无论是否处于链接模式)都必须与一个单独的适用于VMware vSphere的SnapCenter插件实例配对。
 ** 适用于VMware vSphere的SnapCenter插件的每个实例都必须部署为一个单独的Linux VM。
 +
-例如、如果要从六个不同的vCenter Server实例执行备份、则必须在六个主机上部署适用于VMware vSphere的SnapCenter插件、并且每个vCenter Server都必须与适用于VMware vSphere的SnapCenter插件的唯一实例配对。
+例如、假设您要从六个不同的vCenter Server实例执行备份。在这种情况下、您必须在六台主机上部署适用于VMware vSphere的SnapCenter插件、并且每个vCenter Server都必须与适用于VMware vSphere的SnapCenter插件的唯一实例配对。
 
 
 
@@ -88,7 +88,7 @@ summary: 在部署虚拟设备之前，您应了解部署要求。
 | ONTAP | 其中之一： SnapMirror 或 SnapVault （用于二级数据保护，而不管关系类型如何） 
 
 
-| 其他产品 | vSphere Standard ， Enterprise 或 Enterprise Plus 要执行使用 Storage vMotion 的还原操作，需要 vSphere 许可证。vSphere Essentials 或 Essentials Plus 许可证不包括 Storage vMotion 。 
+| 其他产品 | vSphere Standard、Enterprise或Enterprise Plus要使用Storage vMotion执行还原操作、需要vSphere许可证。vSphere Essentials或Essentials Plus许可证不包括Storage vMotion。 
 
 
 | 主目标 | SnapCenter 标准版：通过 VMware SnapRestore 执行基于应用程序的保护时需要此功能：仅对 VMware VM 和数据存储库执行还原操作时需要 FlexClone ：仅用于在 VMware VM 和数据存储库上执行挂载和连接操作 
@@ -145,9 +145,6 @@ summary: 在部署虚拟设备之前，您应了解部署要求。
 | 项目 | 要求 
 
 
-| 操作系统 | Linux 
-
-
 | 建议的CPU计数 | 8个核心 
 
 
@@ -171,7 +168,7 @@ summary: 在部署虚拟设备之前，您应了解部署要求。
 
 
 | 适用于 VMware vSphere 的 SnapCenter 插件端口  a| 
-8144 (HTTPS)、双向端口用于从VMware vSphere客户端和SnapCenter 服务器进行通信。8080双向此端口用于管理虚拟设备。
+8144 (HTTPS)、双向。此端口用于与VMware vSphere客户端和SnapCenter服务器进行通信。8080双向此端口用于管理虚拟设备。
 
 注意：支持将选择控制阀主机添加到SnapCenter的自定义端口。
 
@@ -180,13 +177,13 @@ summary: 在部署虚拟设备之前，您应了解部署要求。
 | VMware vSphere vCenter Server 端口 | 如果要保护 VVol 虚拟机，则必须使用端口 443 。 
 
 
-| 存储集群或 Storage VM 端口 | 443 （ HTTPS ）双向 80 （ HTTP ）双向端口用于在虚拟设备与 Storage VM 或包含 Storage VM 的集群之间进行通信。 
+| 存储集群或 Storage VM 端口 | 443 (HTTPS)、双向80 (HTTP)、双向端口用于在虚拟设备与Storage VM或包含Storage VM的集群之间进行通信。 
 |===
 
 
 == 支持的配置
 
-每个插件实例仅支持一个 vCenter Server 。支持处于链接模式的 vCenter 。多个插件实例可以支持相同的 SnapCenter 服务器，如下图所示。
+每个插件实例仅支持一个处于链接模式的vCenter Server。但是、多个插件实例可以支持同一个SnapCenter服务器、如下图所示。
 
 image:scpivs44_image4.png["支持的配置图形表示"]
 
@@ -194,7 +191,7 @@ image:scpivs44_image4.png["支持的配置图形表示"]
 
 == 需要 RBAC 权限
 
-vCenter 管理员帐户必须具有所需的 vCenter 权限，如下表所示。
+vCenter管理员帐户必须具有下表中列出的所需vCenter Privileges。
 
 |===
 | 执行此操作… | 您必须具有这些 vCenter 权限… 
