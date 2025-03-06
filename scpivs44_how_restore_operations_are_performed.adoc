@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_how_restore_operations_are_performed.html 
 keywords:  
-summary: 对于 VMFS 环境，适用于 VMware vSphere 的 SnapCenter 插件使用 Storage VMotion 的克隆和挂载操作来执行还原操作。对于 NFS 环境，此插件使用原生 ONTAP 单文件 SnapRestore （ SFSR ）来提高大多数还原操作的效率。对于 VVOL VM ，此插件使用 ONTAP 单文件快照还原和 SnapMirror 还原执行还原操作。 
+summary: 对于 VMFS 环境，适用于 VMware vSphere 的 SnapCenter 插件使用 Storage VMotion 的克隆和挂载操作来执行还原操作。对于 NFS 环境，此插件使用原生 ONTAP 单文件 SnapRestore （ SFSR ）来提高大多数还原操作的效率。对于vVol VM、此插件会使用ONTAP单文件快照还原和SnapMirror还原执行还原操作。 
 ---
 = 如何执行还原操作
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 对于 VMFS 环境，适用于 VMware vSphere 的 SnapCenter 插件使�
 
 
 [role="lead"]
-对于 VMFS 环境，适用于 VMware vSphere 的 SnapCenter 插件使用 Storage VMotion 的克隆和挂载操作来执行还原操作。对于 NFS 环境，此插件使用原生 ONTAP 单文件 SnapRestore （ SFSR ）来提高大多数还原操作的效率。对于 VVOL VM ，此插件使用 ONTAP 单文件快照还原（ ONTAP SFSR ）和 SnapMirror 还原执行还原操作。下表列出了如何执行还原操作。
+对于 VMFS 环境，适用于 VMware vSphere 的 SnapCenter 插件使用 Storage VMotion 的克隆和挂载操作来执行还原操作。对于 NFS 环境，此插件使用原生 ONTAP 单文件 SnapRestore （ SFSR ）来提高大多数还原操作的效率。对于vVol VM、此插件会使用ONTAP单文件快照还原(ONTAP SFSR)和SnapMirror还原执行还原操作。下表列出了如何执行还原操作。
 
 |===
 | 还原操作 | from | 使用执行 

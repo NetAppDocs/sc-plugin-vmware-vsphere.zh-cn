@@ -38,7 +38,7 @@ summary: 您可以为适用于 VMware vSphere 的 SnapCenter 插件创建，修�
 
 == 修改策略
 
-您可以修改适用于 VMware vSphere 的 SnapCenter 插件资源组的策略。  在将策略附加到资源组时、您可以修改频率、复制选项、Snapshot保留设置或脚本信息。
+您可以修改适用于 VMware vSphere 的 SnapCenter 插件资源组的策略。在将策略附加到资源组时、您可以修改频率、复制选项、快照保留设置或脚本信息。
 
 .关于此任务
 修改适用于VMware vSphere的SnapCenter插件备份策略与修改基于SnapCenter应用程序的插件的备份策略不同。修改插件策略时，您无需将策略与资源组分离。

@@ -41,4 +41,4 @@ summary: 适用于VMware vSphere的SnapCenter插件是一个独立插件、与�
 |===
 对于VM一致的备份和还原操作、您必须使用VMware vSphere客户端GUI。虽然可以使用 VMware 工具执行某些操作，例如挂载或重命名数据存储库，但这些操作不会注册到 SnapCenter 存储库中，并且无法识别。
 
-SnapCenter不支持同时为数据库和VM创建一个快照。VM和数据库的备份必须单独计划和运行、这样即使数据库和VM托管在同一个卷中、也会创建单独的Snapshot。必须使用SnapCenter 图形用户界面计划基于应用程序的备份；必须使用VMware vSphere客户端图形用户界面计划VM一致的备份。
+SnapCenter不支持同时为数据库和VM创建一个快照。VM和数据库的备份必须单独计划和运行、这样即使数据库和VM托管在同一个卷中、也会创建单独的快照。必须使用SnapCenter 图形用户界面计划基于应用程序的备份；必须使用VMware vSphere客户端图形用户界面计划VM一致的备份。

@@ -65,9 +65,9 @@ SnapCenter 使用VMware工具中的信息与VMware子操作系统建立连接。
 
 IMPORTANT: 如果您必须使用非内置管理员帐户，但在 VM 中具有管理权限的帐户，则必须在子 VM 上禁用 UAC 。
 
-* 您必须知道要从中还原的备份Snapshot和VMDK。
+* 您必须知道要从中还原的备份快照和VMDK。
 +
-适用于 VMware vSphere 的 SnapCenter 插件不支持搜索要还原的文件或文件夹。因此、在开始之前、您必须了解与Snapshot和相应VMDK相关的文件或文件夹的位置。
+适用于 VMware vSphere 的 SnapCenter 插件不支持搜索要还原的文件或文件夹。因此、在开始之前、您必须了解文件或文件夹相对于快照的位置以及相应的VMDK。
 
 * 要连接的虚拟磁盘必须位于 SnapCenter 备份中。
 +

@@ -68,7 +68,6 @@
   <block id="10cdb4feb2dea4da0fb0c500304666b9" category="list-text">双击备份以查看备份中包含的所有 VM 的列表。</block>
   <block id="721dbd87e9ecd1ae54c0718f20cae8fc" category="list-text">从备份列表中选择已删除的虚拟机，然后单击 * 还原 * 。</block>
   <block id="63cef9780576628d2ececde8d6316073" category="list-text">在 * 还原 * 向导的 * 选择备份 * 页面上，选择要从中还原的备份副本。</block>
-  <block id="43bf8720e765e5ec5249782941ceb574" category="paragraph">您可以搜索特定备份名称或部分备份名称，也可以通过单击筛选器图标并选择日期和时间范围，选择是否要包含 VMware Snapshot 的备份，是否要挂载备份以及位置来筛选备份列表。单击 * 确定 * 以返回到向导。</block>
   <block id="7d095eee366e6f2ce831a4097c5c2c23" category="paragraph">如果要将 NFS 数据存储库中的虚拟机还原到 ESXi 集群中的备用 ESXi 主机，则在还原此虚拟机后，此虚拟机将注册到备用主机上。</block>
   <block id="2b8952e2a3eecf608f1229e12bda5009" category="list-text">在 * 选择位置 * 页面上，选择要从中还原的备份的位置（主备份或二级备份）。</block>
   <block id="ea5b9f5c973a98f6f3a6964373da57b1" category="list-text">查看摘要页面，然后单击 * 完成 * 。</block>
@@ -311,7 +310,6 @@
   <block id="3ccb545df639f8d635171ca5cad8bac1" category="list-text">还原数据存储库</block>
   <block id="6b70c2c0edc7d0754172c628cb3bfc2b" category="list-text">虚拟机的 VMware 一致性 Snapshot 失败</block>
   <block id="9bc06664020c3544933597c45b308bce" category="paragraph">即使虚拟机的 VMware 一致性快照失败，也会对虚拟机进行备份。您可以在还原向导中查看备份副本中包含的实体，并将其用于还原操作。</block>
-  <block id="3808b1e272e7712ca9f90b82529f9ca1" category="paragraph">您可以搜索特定备份名称或部分备份名称，也可以通过单击筛选器图标并选择日期和时间范围，选择是否要包含 VMware Snapshot 的备份，是否要挂载备份以及位置来筛选备份列表。单击 * 确定 * 以返回到向导。</block>
   <block id="8d75e6a09efb228ca1289deaf2a7a40b" category="list-text">在 * 选择范围 * 页面上，在 * 还原范围 * 字段中选择 * 整个虚拟机 * ，然后选择还原位置，然后输入应将备份挂载到的目标信息。</block>
   <block id="cb20f8f94249850e0d68df73de19b747" category="paragraph">在 * 虚拟机名称 * 字段中，如果存在相同的虚拟机名称，则新的虚拟机名称格式为 ` &lt;vm_name&gt;_&lt;timestamp&gt;` 。</block>
   <block id="9d7f2f9bd72cb1eb66d906abadf682b1" category="paragraph">还原部分备份时，还原操作会跳过 * 选择范围 * 页面。</block>
@@ -547,7 +545,6 @@
   <block id="0b15ac9c4b06123428c96b49d79809c6" category="paragraph">您必须已使用适用于 VMware vSphere 的 SnapCenter 插件创建虚拟机的备份。</block>
   <block id="35317c90c50ee8180041c9d51a4f8af2" category="list-text">如果 VMDK 已从 VM 中删除或断开，则还原操作会将 VMDK 连接到 VM 。</block>
   <block id="d5abdff77ff28e7e91bddda62c7529ef" category="list-text">在 * 还原 * 向导的选择备份页面上，选择要从中还原的备份副本。</block>
-  <block id="1fb9fd8a0fdffb5af1849f79f84bf103" category="paragraph">您可以搜索特定备份名称或部分备份名称，也可以通过单击筛选器图标并选择日期和时间范围来筛选备份列表，选择是否要包含 VMware Snapshot 的备份，是否要挂载备份， 主位置或二级位置。单击 * 确定 * 以返回到向导。</block>
   <block id="2a38f504911ad62ae867f66c2974aef0" category="list-text">在 * 选择范围 * 页面上，选择还原目标。</block>
   <block id="a5daf42def68b7a4c33242cbfca9efcf" category="cell">还原到…</block>
   <block id="7ff99aff75a4ffc74b705fb26d592f75" category="cell">指定还原目标…</block>
@@ -815,9 +812,6 @@
   <block id="5857a2699c75798b2ae21bc0b06aff95" category="paragraph">要更正问题描述，请手动断开与活动子文件还原会话连接的 VMDK 。</block>
   <block id="d076807af778318099a7f649b1a2425a" category="doc">查看虚拟机和数据存储库备份</block>
   <block id="fe5a15ae670c4a446e877ef3f375fe1f" category="paragraph">在准备备份或还原虚拟机或数据存储库时，您可能希望查看可用于该资源的所有备份并查看这些备份的详细信息。</block>
-  <block id="27b2e549cc51fb06281af543965846c2" category="paragraph">首次浏览大型文件文件夹（例如 10k 文件文件夹）可能需要一分钟或多分钟的时间。后续浏览会话所需时间更短。</block>
-  <block id="bb46ac4338fc50ace325640971d87b41" category="list-text">单击 * 菜单 * 并选择 * 主机和集群 * 菜单选项，然后选择一个虚拟机，再选择 * 配置 * 选项卡，然后单击 * 适用于 VMware vSphere 的 SnapCenter 插件 * 部分中的 * 备份 * 。</block>
-  <block id="7f9834a181f8fd15bc168c47caf536e3" category="list-text">单击要查看的备份。</block>
   <block id="173e33abe439fc0d0f5e9ee8f5562d8e" category="doc">挂载备份</block>
   <block id="482372f5186290234c8109307262c7be" category="list-text">确保备用 ESXi 主机可以连接到存储</block>
   <block id="49f24ccdfcbcf169f269c90155c78746" category="paragraph">如果数据存储库所在的 FabricPool 存储层不可用，则挂载操作可能会失败。</block>
@@ -967,7 +961,6 @@
   <block id="020c68712d58d0c6ae79d6422851ae45" category="list-text">您必须已配置二级存储关系。</block>
   <block id="585f74b2337dcf50d5f84248087dbc7a" category="inline-link">有关使用基于角色的访问控制的 SnapCenter 信息</block>
   <block id="567ee5fafb197286f35c17cbadbca640" category="paragraph">这些向导页面上的大多数字段都是不言自明的。以下信息介绍了一些可能需要指导的字段。</block>
-  <block id="dcac92a09611b2662a02b0b9aa5734c2" category="list-text">在 * 新建备份策略 * 页面上，选择要使用此策略的 vCenter Server ，然后输入策略名称和问题描述。</block>
   <block id="1d92d0cbfdf6166c05997268d3378fe0" category="list-text">链接模式</block>
   <block id="35f1c688325b0062756b2d7b0d00be28" category="paragraph">在链接模式下，每个 vCenter 都有一个单独的虚拟设备。因此，您可以在 vCenter 中使用重复的名称。但是，您必须在与资源组相同的 vCenter 中创建策略。</block>
   <block id="9efc9e0c08da510b5195bb9dc4b1b7c2" category="list-text">不支持的字符</block>
@@ -1086,8 +1079,6 @@
   <block id="c63a88a6e42f1cea88a31cbb2987791e" category="cell">输入要接收通知的人员的电子邮件地址。对于多个收件人，请使用逗号分隔电子邮件地址。</block>
   <block id="80ab38b942fb2da88ca496f8bbe237f7" category="cell">电子邮件主题</block>
   <block id="33d090cfef78f60a9e7e106bb140a048" category="cell">输入通知电子邮件所需的主题。</block>
-  <block id="7de3288fd2437e3f9a0393ef772632c0" category="cell">最新 Snapshot 名称</block>
-  <block id="db483b4b52b624fc9163590680bfec11" category="cell">自定义 Snapshot 格式</block>
   <block id="eaedab9c594e1aeb86de4b70aee0ef7b" category="list-text">在 * 生成磁盘 * 页面上，为多个数据存储库中具有多个 VMDK 的 VM 选择一个选项：</block>
   <block id="132ea0655a055ab5c66e879c0cecfd43" category="paragraph">手动选择要包括的跨区数据存储库</block>
   <block id="3210952a5fb8d5ccfeba07ae678f1775" category="list-text">在 * 策略 * 页面上，选择或创建一个或多个备份策略，如下表所示：</block>
@@ -1208,7 +1199,6 @@
   <block id="7f7a2015d521bd1848a92d266cd3fae5" category="paragraph">选择此选项可在与主备份卷具有 SnapVault 关系的另一个卷上执行磁盘到磁盘备份复制。</block>
   <block id="ec9a0601ee927cc668ce79eac801b520" category="admonition">如果为卷配置了镜像 - 存储关系，则只有在需要将备份复制到镜像 - 存储目标时，才必须选择此选项。</block>
   <block id="c5622748b0dae394073783566c4253de" category="paragraph">选中此框可在每次运行备份作业时暂停 VM 并创建 VMware 快照。</block>
-  <block id="20d4f4be2ccc6c4f003a0063fa83d6a7" category="admonition">选中 VM 一致性复选框后，备份操作可能需要更长时间并需要更多存储空间。在这种情况下， VM 会先暂停，然后 VMware 执行 VM 一致的快照，然后 SnapCenter 执行其备份操作，最后恢复 VM 操作。VM 子系统内存不包括在 VM 一致性 Snapshot 中。</block>
   <block id="97f2e18675f1fe6e8581123e483430db" category="admonition">预处理脚本和后处理脚本必须位于虚拟设备虚拟机上。要输入多个脚本，请在每个脚本路径后按 * Enter * ，以便在单独的行中列出每个脚本。不允许使用字符 " ； " 。</block>
   <block id="fde64ad9bf500f6416be37946228d6ea" category="summary">默认情况下，连接的子文件还原 VMDK 可在 24 小时内使用，然后它会自动断开连接。您可以在子系统配置页面中延长此时间。</block>
   <block id="424f6337d74c16c2d02e5cb2e6d97f82" category="list-text">默认情况下，此功能处于禁用状态。</block>
@@ -1272,8 +1262,6 @@
   <block id="822372acf93a126dd153d08fc770a85d" category="list-text">选择一个源网络并将其映射到一个目标网络，</block>
   <block id="0872cc2ae5ee51207c594d63816e1c49" category="list-text">在 * 注册到现有 vCenter * 部分中，输入虚拟设备的 vCenter 名称和 vCenter 凭据。</block>
   <block id="da8ca49d9d20bd0409b70809cfef56bc" category="admonition">如果要继续使用 DHCP 作为网络配置，可以跳过这些步骤并将 * 设置网络属性 * 部分中的条目留空。</block>
-  <block id="508fd664c51b81e70c2be429237ee2ef" category="summary">对于 VMFS 环境，适用于 VMware vSphere 的 SnapCenter 插件使用 Storage VMotion 的克隆和挂载操作来执行还原操作。对于 NFS 环境，此插件使用原生 ONTAP 单文件 SnapRestore （ SFSR ）来提高大多数还原操作的效率。对于 VVOL VM ，此插件使用 ONTAP 单文件快照还原和 SnapMirror 还原执行还原操作。</block>
-  <block id="ea823eece32dabf410d5f215cf99d2cb" category="paragraph">对于 VMFS 环境，适用于 VMware vSphere 的 SnapCenter 插件使用 Storage VMotion 的克隆和挂载操作来执行还原操作。对于 NFS 环境，此插件使用原生 ONTAP 单文件 SnapRestore （ SFSR ）来提高大多数还原操作的效率。对于 VVOL VM ，此插件使用 ONTAP 单文件快照还原（ ONTAP SFSR ）和 SnapMirror 还原执行还原操作。下表列出了如何执行还原操作。</block>
   <block id="5da618e8e4b89c66fe86e32cdafde142" category="cell">from</block>
   <block id="9f8f555cd6d2412cf59d8fe435cc9568" category="cell">使用执行</block>
   <block id="c46c3642eedf384579f1943dbc7e60cf" category="cell">VM 和 VMDK</block>
@@ -1510,7 +1498,6 @@
   <block id="d79bec3408f76d1eefc90b767b93cabf" category="summary">您可以使用SnapCenter VMware vSphere客户端的编辑资源组向导向现有资源组添加多个资源。</block>
   <block id="fbfbbb98438908f6278b91f3e912dd4f" category="list-text">在VMware vSphere客户端图形用户界面中、单击工具栏中的*菜单*、然后从下拉列表中选择*主机和集群*。</block>
   <block id="3ec87b09fd664417b12e12d452b57325" category="paragraph">您可以在vCenter中使用VMware vSphere客户端GUI执行VMware虚拟机(传统VM和VVol VM)、VMDK和数据存储库的所有备份和还原操作。对于 VVol 虚拟机（ VVol 数据存储库中的虚拟机），仅支持崩溃状态一致的备份。您还可以还原 VM 和 VMDK 以及还原子操作系统上的文件和文件夹。</block>
-  <block id="c8fc1db15ada67618adabf802e158c27" category="paragraph">如果未安装并运行VMware工具、则不会暂停文件系统、并创建崩溃状态一致的Snapshot。</block>
   <block id="ab9f567063d45a42b5368e31b1fa1ee5" category="paragraph">您可以使用ONTAP 工具在ONTAP 和VMware Web Client中为VVOL配置和配置存储。</block>
   <block id="c9424bce718e9e3deaedf0943d2692ad" category="summary">要使用适用于VMware vSphere的SnapCenter 插件REST API修改VMware vSphere客户端作业的内置计划、您必须遵循规定的REST API调用顺序。</block>
   <block id="16b3a864bb42d236668a11066dea0959" category="paragraph"><block ref="bc46521e0125f4721a271fb06915aeb5" prefix="" category="inline-code"></block></block>
@@ -1566,9 +1553,7 @@
   <block id="b6b7c58249919c09c14b897be2947b59" category="paragraph"><block ref="b6b7c58249919c09c14b897be2947b59" category="inline-image-macro-rx" type="image"></block></block>
   <block id="babb657a1390e215cc6322a94325a49a" category="paragraph">选择筛选器图标以修改要包含在报告中的时间范围、作业状态类型、资源组和策略。</block>
   <block id="e56f6654e80f4662afbca93ea23b2214" category="paragraph">您也可以单击下载图标以下载插件日志。</block>
-  <block id="d2fe9562864357eed887b91a56a42a0e" category="paragraph">您可以通过以下方式筛选备份列表：选择筛选器图标、选择日期和时间范围、选择是否需要包含VMware Snapshot的备份、是否需要挂载备份以及位置。单击 * 确定 * 。</block>
   <block id="44040e214e919d86d6a1f3f26db3d22c" category="inline-image-macro">编辑图标</block>
-  <block id="67b5e7cdb9f6fc8b9cf2e5acd6f703b8" category="inline-image-macro">vSphere Client UI</block>
   <block id="5f6ae733d2ed961dcd2c41c04be8a70d" category="paragraph"><block ref="5f6ae733d2ed961dcd2c41c04be8a70d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d6d90000405f5209bdfcbf03157cf4e4" category="paragraph">要登录到适用于 VMware vSphere 的 SnapCenter 插件管理 GUI ，您必须知道 IP 地址和登录凭据。您还必须记下从维护控制台生成的MFA令牌。</block>
   <block id="0a94cca6404e40338ea941d1db3fab5e" category="list-text">使用维护控制台的系统配置选项生成6位MFA令牌。</block>
@@ -1668,7 +1653,6 @@
   <block id="fe6c30a4fa66ded7dfa8e85bf0500684" category="list-text">vSphere标记</block>
   <block id="76114b07bad3bfc30596ae551a44e2a6" category="paragraph">具有指定vSphere标记的所有虚拟机和存储库(不包括vVol存储库)。</block>
   <block id="69e6b23ed013e0011d69b00b06dfb367" category="paragraph">虽然您可以在不使用备份策略的情况下创建资源组、但只有在至少将一个策略附加到该资源组时、才能执行数据保护操作。您可以选择在资源组创建过程中使用现有策略或创建新策略。</block>
-  <block id="492eb88027a90161462dae716848e606" category="admonition">如果要选择具有Snapshot锁定期限的备份策略、则需要选择ONTAP 9.12.1或更高版本。</block>
   <block id="4ddaa4a24ea8e29ccbdc33077a2ff02e" category="cell">选择要保护的资源类型：
 *数据存储库(一个或多个指定数据存储库中的所有传统VM)。您不能选择VVol数据存储库。
 *虚拟机(单个传统虚拟机或VVol虚拟机；在该字段中、您必须导航到包含VM或VVol虚拟机的数据存储库)。
@@ -1685,7 +1669,6 @@
   <block id="b49cf949bc4e3959497059a7bfdd0369" category="inline-link">如何使用RestAPI编辑选择控制阀中的配置参数</block>
   <block id="ec6b0202082dc6ee78a9636f86e0717d" category="list-text">具有指定vSphere标记的所有vVol VM。</block>
   <block id="2260cf040531c2852db89dceca3fdeb9" category="list-text">要配置VMware vVol VM、需要使用适用于VMware vSphere的ONTAP工具。</block>
-  <block id="9fa3adb07ccab8c66f18c216f4901022" category="paragraph"><block ref="9fa3adb07ccab8c66f18c216f4901022" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d3f72758cf0a8156e66fa0d7b643122f" category="summary">您可以使用REST API重命名存储。</block>
   <block id="16ceb93d669340dd2ab2325671f71daf" category="doc">还原已重命名存储的备份</block>
   <block id="a52fd082737b9604d73b0ea5362cc5bd" category="paragraph">重命名存储后、使用重命名前创建的备份的工作流将失败。通过引入重命名备份功能(只能通过REST API访问)、现在可以使用在存储重命名之前创建的备份。下面介绍了REST API的工作流和使用情况。</block>
@@ -1721,7 +1704,6 @@
   <block id="f7c526081094fe672e5be23f02e38b76" category="cell">* 资源 *</block>
   <block id="f85e08b125832fc8dae732e6790fa120" category="cell">* 操作 *</block>
   <block id="bf59ac9161d0f4561a155103d8ea2d10" category="list-text">在*Audit Log Settings*(审核日志设置*)窗格中，输入审核日志文件的最大数量和审核日志文件大小限制。</block>
-  <block id="beebc895773b56339a9e46c0233ba7cd" category="list-text">选中*锁定期限*复选框以启用Snapshot锁定。您可以将Snapshot锁定期限选择为天/月/年。</block>
   <block id="716306984040e1bf7dc3b8c1b0a05422" category="paragraph">注意：支持将选择控制阀主机添加到SnapCenter的自定义端口。</block>
   <block id="06c615df2f8ec55473b26eed4f5eedbd" category="paragraph">下表显示了SnapCenter图形用户界面执行的操作。</block>
   <block id="ac3ea74e69b4d64c5b8bf99577a62f58" category="cell">使用VMware vSphere客户端图形用户界面备份VM和数据存储库。</block>
@@ -1763,63 +1745,6 @@
   <block id="5b845076b112586b7fff13b10d9f0612" category="cell">转至<block ref="7c61e9e4b133f96dbd184942bce35796" prefix=" " category="inline-code"></block></block>
   <block id="e4a70196caccbfc6c6d2c0d9df5e3013" category="paragraph">要使用 SnapCenter 功能保护虚拟机上的 VM ，数据存储库和应用程序一致的数据库，您必须部署适用于 VMware vSphere 的 SnapCenter 插件。
 。 <block ref="205a43536d4d7a501f66e7fd657c91ca" category="inline-link-macro-rx"></block> 页面提供了下载OVA文件的说明。</block>
-  <block id="e36d64fc51e56fd0361e1824369bf78b" category="paragraph">SnapCenter不支持同时为数据库和VM创建一个快照。虚拟机和数据库的备份必须单独计划和运行、这样会创建单独的Snapshot、即使数据库和虚拟机托管在同一个卷中也是如此。使用SnapCenter 图形用户界面计划数据库应用程序备份；使用VMware vSphere客户端图形用户界面计划虚拟机和数据存储库备份。</block>
-  <block id="82cae014f28918df8bf16d2dffbc6ae7" category="list-text">要创建VM一致的Snapshot、需要使用VMware工具</block>
-  <block id="bf8d701c477c13e534e6d20e0696950a" category="paragraph">要保护VM和数据存储库、请使用VMware vSphere客户端界面。Web客户端图形用户界面可与存储系统上的NetApp Snapshot技术集成。这样，您就可以在几秒钟内备份 VM 和数据存储库，并还原 VM ，而无需使 ESXi 主机脱机。</block>
-  <block id="de09c59b7c20ebde6241f016a1040952" category="paragraph">SnapCenter不支持同时为数据库和VM创建一个快照。VM和数据库的备份必须单独计划和运行、这样即使数据库和VM托管在同一个卷中、也会创建单独的Snapshot。必须使用SnapCenter 图形用户界面计划基于应用程序的备份；必须使用VMware vSphere客户端图形用户界面计划VM一致的备份。</block>
-  <block id="4695e455608ec835ee8afbf8897a2f9c" category="list-text">优化快照</block>
-  <block id="f46c0979021c8025122fff51faa81bd8" category="paragraph">要优化快照、应将与同一卷关联的虚拟机和数据存储库分组到一个资源组中。</block>
-  <block id="ddc15f81cd36a8510f67cf58cea9fdb1" category="paragraph">如果要将后缀"_Recent "添加到最新Snapshot、请选中此框。"_recent " 后缀将替换日期和时间戳。</block>
-  <block id="723b537ef97ac7ce95d53da5a816b3d8" category="paragraph">如果要对Snapshot名称使用自定义格式、请选中此框并输入名称格式。</block>
-  <block id="2a41ff5a92e3ebd527bb827dc47335ba" category="list-text">默认Snapshot名称使用格式<block ref="ba8f4cc4ace4f3315ea21bd52fbde9d9" prefix=" " category="inline-code"></block>
-但是、您可以使用变量$ResourceGroup、$Policy、$hostname、$scheduleype和$CustomText指定自定义格式。使用自定义名称字段中的下拉列表选择要使用的变量及其使用顺序。
-如果选择$CustomText、则名称格式为<block ref="ad231838859064f0fe437a9669c0d36f" prefix=" " category="inline-code"></block>。在提供的附加框中输入自定义文本。
-[注意]：
-如果您还选择了"_Recent "后缀、则必须确保自定义Snapshot名称在数据存储库中是唯一的、因此、应将$ResourceGroup和$Policy变量添加到该名称中。</block>
-  <block id="72b644d7b8a7568e076044cf69d95fbf" category="paragraph">您可以通过以下方式筛选备份列表：选择筛选器图标、选择日期和时间范围、选择是否需要包含VMware Snapshot的备份、是否需要挂载备份以及位置。单击 * 确定 * 。</block>
-  <block id="5f4cf09d9b2b9a7a5e0f5ded931a3aa3" category="cell"><block ref="af62a8975e8577db87448344c585507f" prefix="" category="inline-code"></block> 获取指定备份的Snapshot的位置。
-传递步骤 2 中的 * 备份 Id* 。
-请注意 * 快照位置列表 * 信息。</block>
-  <block id="71ef781dae45cfbf666fbb693d3227ac" category="paragraph">您可以修改适用于 VMware vSphere 的 SnapCenter 插件资源组的策略。  在将策略附加到资源组时、您可以修改频率、复制选项、Snapshot保留设置或脚本信息。</block>
-  <block id="63135ded402e94eb90e91d3b29c03007" category="list-text">您必须知道要从中还原的备份Snapshot和VMDK。</block>
-  <block id="8dd3af98abb3e4b7c4a2824e64cd30d2" category="paragraph">适用于 VMware vSphere 的 SnapCenter 插件不支持搜索要还原的文件或文件夹。因此、在开始之前、您必须了解与Snapshot和相应VMDK相关的文件或文件夹的位置。</block>
-  <block id="f7f98b33a00dd6478600c36dc25fcf40" category="list-text">在*Select Location*页面上，选择要还原的快照(主快照或二级快照)。</block>
-  <block id="18c22e30c39ace97af7ec9f62038e710" category="paragraph">还原目标可以是已添加到 SnapCenter 的任何 ESXi 主机。此选项可还原虚拟机所在的选定备份中指定时间和日期的Snapshot的内容。如果选择此选项，则会选中 * 重新启动 VM* 复选框，并且虚拟机将启动。</block>
-  <block id="d67967470b9c73c5afb040931a7e6578" category="paragraph">所有资源组删除操作均以强制删除的形式执行。此删除操作会从vCenter资源组中断开所有策略、从适用于VMware vSphere的SnapCenter插件中删除此资源组、并删除此资源组的所有备份和快照。</block>
-  <block id="2e98fb5c5d12bcc1fb0bdf89d865b603" category="admonition">在SnapVault关系中、无法删除最后一个Snapshot；因此、无法删除资源组。删除SnapVault关系中的资源组之前、必须使用OnCommand系统管理器或ONTAP命令行界面删除SnapVault关系、然后删除最后一个Snapshot。</block>
-  <block id="9ed765e8e957bd37870392d8e17ee242" category="paragraph">生成的Snapshot、SnapVault和SnapMirror Snapshot总数以及用于主快照和二级快照的存储量。折线图会分别绘制连续 90 天内每天的主存储和二级存储消耗情况。存储信息每24小时在凌晨1：08更新一次
-存储节省量是逻辑容量(Snapshot节省量加上已用存储)与主存储物理容量之比。条形图显示了存储节省量。</block>
-  <block id="3da92a184b003bf8d8e0c383eabc1d01" category="admonition">如果虚拟机的快照是由适用于VMware vSphere的SnapCenter插件以外的软件执行的、则还原操作无法成功完成。</block>
-  <block id="59793dbbf73242ccdd32deff8d4d7c0b" category="paragraph">VM的还原操作会取消注册原始VM、从备份Snapshot还原VM、并在同一ESXi服务器上注册具有相同名称和配置的已还原VM。还原后，您必须手动将 VM 添加到资源组。</block>
-  <block id="a4c18c73748d0715312a439bad78189e" category="list-text">在*Restore*向导的*Select Backup*页面上，选择要还原的备份Snapshot。</block>
-  <block id="0063a09a9fbca08e1c4b484a0bc2f44e" category="list-text">如果要将Snapshot复制到镜像或存储二级存储、则必须配置关系、并且SnapCenter管理员必须已为源卷和目标卷分配Storage VM。</block>
-  <block id="f388a512c05d28e7ac94288c4bd5da97" category="list-text">要成功将Snapshot传输到NFS或VMFS数据存储库上的Version-FlexithleMirror关系的二级存储、请确保SnapMirror策略类型为异步镜像、并且已选中"all_ssource_SnapMirror"选项。</block>
-  <block id="3ce9db2a38b1f87c4fb955db8882eed6" category="list-text">当二级存储(镜像存储)上的Snapshot数量达到最大限制时、在备份操作中注册备份并应用保留的活动将失败、并显示以下错误：<block ref="30496723c454b60aabe26e3e2608097f" prefix=" " category="inline-code"></block></block>
-  <block id="901c681d3a288c3808f21d058d8434d7" category="admonition">如果计划启用 SnapVault 复制，则应将保留数量设置为 2 个或更多备份。如果将保留计数设置为 1 个要保留的备份，则保留操作可能会失败。这是因为第一个快照是SnapVault关系的参考快照、直到新的快照复制到目标为止。</block>
-  <block id="1d923d5ae6e4db3dca056c9a5b89c97f" category="paragraph">输入要添加到使用此策略创建的SnapVault和SnapMirror快照的可选自定义标签。
-Snapshot 标签有助于将使用此策略创建的快照与二级存储系统上的其他快照区分开。</block>
-  <block id="6cb0b8338ef71274b378652e10e95076" category="admonition">Snapshot标签最多允许包含31个字符。</block>
-  <block id="30f4f6955fba03a8013c2694049c90b8" category="cell">显示有关备份作业的概述数据。单击图形上的一个部分 / 状态，可在 * 报告 * 选项卡上查看具有该状态的作业列表。
-
-对于每个作业、此报告将列出作业ID、相应的资源组、备份策略、开始时间和持续时间、状态以及作业详细信息、其中包括作业名称(Snapshot名称)(如果作业已完成)以及任何警告或错误消息。
-
-您可以下载 HTML 或 CSV 格式的报告表。您还可以下载所有作业（而不仅仅是报告中的作业）的作业监控器作业日志。
-删除的备份不会包含在报告中。</block>
-  <block id="9c4a4bb63bd5e1a0810596b78da4baef" category="cell">显示有关挂载作业的概述数据。单击图形上的一个部分 / 状态，可在报告选项卡上查看具有该状态的作业列表。
-
-对于每个作业，此报告将列出作业 ID ，作业状态，作业名称以及作业开始和结束时间。作业名称包含Snapshot名称。
-
-例如：<block ref="5885e660153b51d912f9f11bb4649003" prefix=" " category="inline-code"></block>
-
-您可以下载 HTML 或 CSV 格式的报告表。
-
-您还可以下载所有作业（而不仅仅是报告中的作业）的作业监控器作业日志。</block>
-  <block id="36c9a2b98b205327142a9e705c4b9572" category="cell">显示有关还原作业的概述状态信息。单击图形上的一个部分 / 状态，可在报告选项卡上查看具有该状态的作业列表。
-对于每个作业，此报告将列出作业 ID ，作业状态，作业名称以及作业开始和结束时间。作业名称包含Snapshot名称。例如：<block ref="13d80bb12ac7353f6e745081e5946c14" prefix=" " category="inline-code"></block>
-
-您可以下载 HTML 或 CSV 格式的报告表。您还可以下载所有作业（而不仅仅是报告中的作业）的作业监控器作业日志。</block>
-  <block id="48c532a91a39978d27f7f4a9a7f5991b" category="paragraph">如果您对受SnapVault计划保护且运行ONTAP 8.3的SnapVault目标卷执行连接或挂载操作、则可能会在连接或挂载对话框屏幕中显示一个额外的Snapshot。出现这种情况的原因是、连接或挂载操作会克隆SnapVault目标卷、而ONTAP会通过创建新的Snapshot来更新此卷。</block>
-  <block id="c37f70b28958723ba6b25680a8a14c5c" category="paragraph">要防止在克隆卷时创建新的快照、请关闭SnapVault卷的ONTAP计划。不会删除先前的现有快照。</block>
   <block id="5dd03e8d039863e563e049be198c3fd3" category="sidebar">发行说明</block>
   <block id="e726fb41e1d7a22426e4a9637075810c" category="sidebar">了解选择控制阀</block>
   <block id="ff31982aef870d546d52f49bb30ef34b" category="sidebar">部署要求</block>
@@ -1836,7 +1761,6 @@ Snapshot 标签有助于将使用此策略创建的快照与二级存储系统�
   <block id="b07f5a589dfba9c50331d3753c44828e" category="list-text">从vCenter客户端快捷方式页面中、选择适用于VMware vSphere的SnapCenter插件(SCV)。</block>
   <block id="cb2dc08c39241837cb4a00bc68a28171" category="list-text">在选择控制阀的左侧导航窗格中，选择*"Dard板*"&gt;"*Reports*"(报告)选项卡。</block>
   <block id="74f69e9b1980c384917fc2295036ad1e" category="admonition">备份计划在部署适用于VMware vSphere的SnapCenter插件的时区执行。 vCenter按vCenter所在时区报告数据。因此、如果适用于VMware vSphere的SnapCenter插件和vCenter位于不同的时区、则VMware vSphere客户端信息板中的数据可能与报告中的数据不同。</block>
-  <block id="b9c6040e19e979fdcb513c0fd37529ee" category="cell">显示有关适用于VMware vSphere的SnapCenter插件所管理的VM和数据存储库在配置的天数内的保护状态的概述信息。默认值为 7 天。要修改属性文件中的值，请参见 <block ref="716011655678aa6d92cdd15196f612ff" category="inline-link-macro-rx"></block>。单击主保护图表上的一个部分 / 状态，可在 * 报告 * 选项卡上查看具有该状态的 VM 或数据存储库列表。受保护虚拟机和数据存储库的虚拟机或数据存储库保护状态报告可显示在配置的天数内备份的虚拟机或数据存储库的名称、最新Snapshot名称以及最新备份运行的开始和结束时间。未受保护的 VM 或数据存储库的 VM 或数据存储库保护状态报告显示在配置的天数内没有任何成功备份的 VM 或数据存储库的名称。您可以下载 HTML 或 CSV 格式的报告表。您还可以下载所有作业（而不仅仅是报告中的作业）的作业监控器作业日志。刷新插件缓存后，此报告每小时刷新一次。因此，此报告可能不会显示最近备份的 VM 或数据存储库。</block>
   <block id="4cfec9964bf84a35be4d941696759bca" category="summary">REST API 通过 Swagger 网页公开。您可以访问 Swagger 网页以显示适用于 VMware vSphere 的 SnapCenter 服务器或 SnapCenter 插件 REST API ，并手动对 API 调用执行问题描述操作。使用适用于VMware vSphere的SnapCenter插件REST API对虚拟机和数据存储库执行保护操作。</block>
   <block id="930080270cd7b9a56b6c02b7abc28d36" category="paragraph">REST API 通过 Swagger 网页公开。您可以访问Swagger网页以显示适用于VMware vSphere的SnapCenter 服务器或SnapCenter 插件REST API、并手动对API调用执行问题描述 操作。使用适用于VMware vSphere的SnapCenter插件REST API对虚拟机和数据存储库执行操作。</block>
   <block id="b8b4302f87de5162c5bd15a1e5ed1b44" category="paragraph">对于适用于VMware vSphere的SnapCenter插件REST API、您必须知道适用于VMware vSphere的SnapCenter插件的IP地址或主机名。</block>
@@ -1893,7 +1817,6 @@ Snapshot 标签有助于将使用此策略创建的快照与二级存储系统�
   <block id="110328d238985c18e0a7947b09b1ff0f" category="summary">适用于VMware vSphere的SnapCenter插件采用SSL加密技术与客户端浏览器进行安全通信。虽然这样可以跨网启用加密数据，但创建新的自签名证书，或者使用您自己的证书颁发机构（ CA ）基础架构或第三方 CA ，可确保此证书对于您的环境是唯一的。</block>
   <block id="6886be2ac69a368a307204ccfa1e00d9" category="paragraph">有关详细信息、请参见<block ref="bf84a7958c466b4ea912f7e396459ac9" category="inline-link-rx"></block> 。</block>
   <block id="dbda93db9be6e33e4445e8182fe70414" category="list-text">在选择控制阀插件的左侧导航窗格中，单击*Policies*，然后选择*New Policy*。</block>
-  <block id="b0131629306c9240f3789f9e15396c3b" category="paragraph">要更正此问题、请为二级存储配置SnapMirror保留策略、以避免达到Snapshot的最大限制。</block>
   <block id="6371946f7a59bb407f5608582531db43" category="paragraph">有关管理员如何将资源分配给用户的信息，请参见<block ref="3c6a9a14d0d13aed475a45101fc3cc00" category="inline-link-rx"></block>。</block>
   <block id="e90ae72a4d203cde9c1d660d983bec13" category="list-text">通过SnapMirror主动同步、即使在整个站点发生故障时、业务服务也可以继续运行、从而支持应用程序使用二级副本透明地进行故障转移。</block>
   <block id="c2bc8f54778a0e6f72a8fa3f9c96aae7" category="admonition">只有VMFS数据存储库才支持SnapMirror活动同步。</block>
@@ -2005,7 +1928,6 @@ Snapshot 标签有助于将使用此策略创建的快照与二级存储系统�
   <block id="a3e4b86e8fdd43957e1a1f48d820b4db" category="paragraph">已禁用适用于VMware vSphere的SnapCenter插件服务、并且此扩展已在vCenter中取消注册。</block>
   <block id="936704873dbea48e7a0f75de807fbb87" category="paragraph">已启用适用于VMware vSphere的SnapCenter插件服务、并且已在vCenter中注册此扩展。</block>
   <block id="064b0490f1eed446111789f518543b18" category="admonition">单击 * 登录 * 按钮。由于已知VMware问题、请勿使用Enter键进行登录。 有关详细信息、请参阅有关ESXi嵌入式主机客户端问题的VMware文档。</block>
-  <block id="12e0d65e7b7974e70338d764c2d9f665" category="paragraph">二级存储上的快照由ONTAP保留设置管理、而不是由适用于VMware vSphere的SnapCenter插件管理。因此、在使用适用于VMware vSphere的SnapCenter插件删除备份时、系统会删除主存储上的快照、但不会删除二级存储上的快照。如果二级存储上仍存在Snapshot、则适用于VMware vSphere的SnapCenter插件会保留与备份关联的元数据、以支持还原请求。当ONTAP保留过程删除二级Snapshot时、适用于VMware vSphere的SnapCenter插件会使用定期执行的清除作业删除元数据。</block>
   <block id="edd7c130c7f64f441111f5f435cc5ffe" category="paragraph">如果您不再希望适用于VMware vSphere的SnapCenter插件资源组中的策略用于管理资源的数据保护、则可以将这些策略与这些策略断开。必须先断开策略，然后才能将其删除或修改计划频率。</block>
   <block id="514256d366ab9270c353228b4adf19a4" category="paragraph">从适用于VMware vSphere的SnapCenter插件资源组中分离策略的准则与SnapCenter资源组的准则不同。对于VMware vSphere客户端资源组、可以断开所有策略、这样就会使资源组无策略。但是，要对该资源组执行任何数据保护操作，必须至少附加一个策略。</block>
   <block id="d1111de96ba88256d9e1e5433bd9114d" category="list-text">在选择控制阀插件的左侧导航窗格中，单击*Resource Groups*，然后选择一个资源组并单击*Edit*。</block>
@@ -2158,7 +2080,6 @@ Snapshot 标签有助于将使用此策略创建的快照与二级存储系统�
   <block id="7e35de6c484fe702e7c4fe21538ac2a4" category="paragraph">SnapCenter 4.8</block>
   <block id="2acd783e8dee0eed27b40328899eef19" category="inline-link">适用于VMware vSphere 6.1的SnapCenter插件注意事项</block>
   <block id="8ebd9207a610e17e383416d90951290e" category="paragraph"><block ref="8ebd9207a610e17e383416d90951290e" category="inline-link-rx"></block></block>
-  <block id="f8a96ad66100bda7d69f0d2cf5b27f72" category="admonition">ASA R2存储系统不支持_Recent Snapshot命名功能。</block>
   <block id="414f994a73d1f79098abf3d5d51e5555" category="list-text">单击*下一步*直到进入*摘要*页面，然后查看摘要并单击*完成*。</block>
   <block id="9329e69bb4e74e1c55c47a7b13b20c73" category="admonition">ASA R2备份可创建一致性组快照、并在给定资源尚未配置主一致性组的情况下对其进行配置。</block>
   <block id="94e5f239a67b0bdbb293ad6d93a70fae" category="list-text">在创建资源组向导的每个页面上输入所需信息、选择要包含在资源组中的虚拟机和数据存储库、然后选择要应用于资源组的备份策略。添加远程二级保护详细信息并指定备份计划。</block>
@@ -2167,7 +2088,6 @@ Snapshot 标签有助于将使用此策略创建的快照与二级存储系统�
   <block id="29d5d806d07657990827260e1cb0e2f6" category="list-text">为资源组创建二级保护</block>
   <block id="d2c627ac86e99bf486f92df0e01e564d" category="paragraph">二级保护负责为资源组中添加的资源创建复制关系。您需要使用主集群中的指定策略在首选集群和SVM中创建基于一致性组的SnapMirror关系。只有基于ASA R2系统的数据存储库和虚拟机才支持二级保护。应预先配置集群对等和SVM对等。二级保护仅允许异步SnapMirror策略。创建二级保护时、您需要提供一致性组后缀。</block>
   <block id="1aa6cfe25429fc4eec3c516dcd2dc639" category="paragraph">二级保护负责为资源组中添加的资源创建复制关系。</block>
-  <block id="d225ffa0857e0c1621ca548327cac09f" category="admonition">ASA R2存储系统不支持快照重命名、因此不支持选择控制阀的重命名备份和_Recent Snapshot命名功能。</block>
   <block id="581b0ff55ddecb82a36105092c53ed37" category="cell">从列表中选择一个或多个策略。二级保护适用于同时选择了SnapMirror和SnapVault更新的现有策略和新策略。</block>
   <block id="4a9546a9033ba87fc7117a1294a5e336" category="list-text">在*Secondary protection (二级保护)*页面上，将显示选定资源的列表及其保护状态。要保护未受保护的资源、请从下拉列表中选择复制策略类型、一致性组后缀、目标集群和目标SVM。在创建资源组时、系统会为二级保护创建一个单独的作业、您可以在作业监控器窗口中查看该作业。</block>
   <block id="a4ca5edd20d0b5d502ebece575681f58" category="cell">字段</block>
@@ -2219,7 +2139,6 @@ Snapshot 标签有助于将使用此策略创建的快照与二级存储系统�
   <block id="21d5f6e174bd644ffb485588eaf88aa1" category="paragraph">*支持ASA R2系统上的VM和VMFS数据存储库*</block>
   <block id="4ff1c74f59c8af7628ad4bba73e7a214" category="paragraph">现在、适用于VMware vSphere 6.1的SnapCenter插件版本支持在ASA R2系统上配置虚拟机(VM)和VMFS数据存储库。ASA R2系统提供统一的硬件和软件解决方案、可根据仅SAN客户的需求提供简化的体验。适用于VMware vSphere 6.1的SnapCenter插件在ASA R2系统上支持的VM、数据存储库和虚拟机磁盘格式(VMDK)功能包括：</block>
   <block id="58750fe248e0ff18b9fc2f1aef5f3790" category="list-text">为主保护配置一致性组</block>
-  <block id="aa90edd6232295850b0461777246c50b" category="list-text">基于一致性组的备份</block>
   <block id="9a1901c6fb175880508a4835b0898446" category="list-text">克隆工作流</block>
   <block id="d4fc87c71eab8d183e02273ad78a7c04" category="list-text">还原工作流</block>
   <block id="bfb1fb42df848164986651f570a11d61" category="list-text">在创建或修改资源组时配置二级保护。</block>
@@ -2242,4 +2161,68 @@ Snapshot 标签有助于将使用此策略创建的快照与二级存储系统�
   <block id="ffa5dd2af4873dbfd89f9ae07a815104" category="cell">443 (HTTPS)、双向80 (HTTP)、双向端口用于在虚拟设备与Storage VM或包含Storage VM的集群之间进行通信。</block>
   <block id="822926837c6e218e71716b72e1a7017f" category="paragraph">每个插件实例仅支持一个处于链接模式的vCenter Server。但是、多个插件实例可以支持同一个SnapCenter服务器、如下图所示。</block>
   <block id="1c0894625a89e433ba87d14aebdc6088" category="paragraph">vCenter管理员帐户必须具有下表中列出的所需vCenter Privileges。</block>
+  <block id="80d239c54104b637db16d32ddcf6ff89" category="admonition">ASA R2存储系统不支持_Recent Snapshot命名功能。</block>
+  <block id="68e34cb9e3a60830aed69c89f5c923aa" category="cell">显示有关备份作业的概述数据。单击图形上的一个部分 / 状态，可在 * 报告 * 选项卡上查看具有该状态的作业列表。对于每个作业、此报告将列出作业ID、相应的资源组、备份策略、开始时间和持续时间、状态以及作业详细信息、其中包括作业完成时的作业名称(快照名称)以及任何警告或错误消息。您可以下载 HTML 或 CSV 格式的报告表。您还可以下载所有作业（而不仅仅是报告中的作业）的作业监控器作业日志。删除的备份不会包含在报告中。</block>
+  <block id="b509945ce76230a5eeff2083503f5495" category="cell">显示有关挂载作业的概述数据。单击图形上的一个部分 / 状态，可在报告选项卡上查看具有该状态的作业列表。对于每个作业，此报告将列出作业 ID ，作业状态，作业名称以及作业开始和结束时间。作业名称包括快照名称。例如：<block ref="5885e660153b51d912f9f11bb4649003" prefix=" " category="inline-code"></block> 您可以下载HTML或CSV格式的"报告"表。您还可以下载所有作业（而不仅仅是报告中的作业）的作业监控器作业日志。</block>
+  <block id="fe39f815c00ab0cdc48133dd4394febe" category="cell">显示有关还原作业的概述状态信息。单击图形上的一个部分 / 状态，可在报告选项卡上查看具有该状态的作业列表。对于每个作业，此报告将列出作业 ID ，作业状态，作业名称以及作业开始和结束时间。作业名称包括快照名称。例如：<block ref="13d80bb12ac7353f6e745081e5946c14" prefix=" " category="inline-code"></block> 您可以下载HTML或CSV格式的"报告"表。您还可以下载所有作业（而不仅仅是报告中的作业）的作业监控器作业日志。</block>
+  <block id="5d6ca3a9d35eb5459130306f5807c2f3" category="cell">显示有关适用于VMware vSphere的SnapCenter插件所管理的VM和数据存储库在配置的天数内的保护状态的概述信息。默认值为 7 天。要修改属性文件中的值，请参见 <block ref="716011655678aa6d92cdd15196f612ff" category="inline-link-macro-rx"></block>。单击主保护图表上的一个部分 / 状态，可在 * 报告 * 选项卡上查看具有该状态的 VM 或数据存储库列表。受保护虚拟机和数据存储库的虚拟机或数据存储库保护状态报告可显示在配置的天数内备份的虚拟机或数据存储库的名称、最新的快照名称以及最新备份运行的开始和结束时间。未受保护的 VM 或数据存储库的 VM 或数据存储库保护状态报告显示在配置的天数内没有任何成功备份的 VM 或数据存储库的名称。您可以下载 HTML 或 CSV 格式的报告表。您还可以下载所有作业（而不仅仅是报告中的作业）的作业监控器作业日志。刷新插件缓存后，此报告每小时刷新一次。因此，此报告可能不会显示最近备份的 VM 或数据存储库。</block>
+  <block id="a3f8064d6a9d17254355b89f290da65d" category="paragraph">您可以通过以下方式筛选备份列表：选择筛选器图标、选择日期和时间范围、选择是否需要包含VMware快照的备份、是否需要挂载备份以及位置。单击 * 确定 * 。</block>
+  <block id="75df3e6b9f46cc58a0ff9c56046b0977" category="paragraph">SnapCenter不支持同时为数据库和VM创建一个快照。虚拟机和数据库的备份必须单独计划和运行、这样可以创建单独的快照、即使数据库和虚拟机托管在同一个卷中也是如此。使用SnapCenter 图形用户界面计划数据库应用程序备份；使用VMware vSphere客户端图形用户界面计划虚拟机和数据存储库备份。</block>
+  <block id="c0d9eeb671fe20a76e29ca04e5053b74" category="list-text">要创建VM一致的快照、需要使用VMware工具</block>
+  <block id="78f7815c68e90eaacbd9cc9cc5e128c5" category="paragraph">如果未安装并运行VMware工具、则不会使文件系统处于静置状态、而是会创建崩溃状态一致的快照。</block>
+  <block id="7e568888fb10657f9473564c7d777f02" category="list-text">如果要将快照复制到镜像或存储二级存储、则必须配置关系、并且SnapCenter管理员必须已为源卷和目标卷分配Storage VM。</block>
+  <block id="f06fe1377f87aa8df44d2ee3312293a0" category="list-text">要成功将快照传输到NFS或VMFS数据存储库上的Version-FlexithleMirror关系的二级存储、请确保SnapMirror策略类型为异步镜像、并且已选中"all_ssource_SnapMirror"选项。</block>
+  <block id="a39157e0ac589845c37cbdc729254197" category="list-text">当二级存储(镜像存储)上的快照数量达到最大限制时、在备份操作中注册备份并应用保留的活动将失败、并显示以下错误：<block ref="a3059186481cd77c6852e6ddd88e84af" prefix=" " category="inline-code"></block></block>
+  <block id="a106499a896f7e52f3025e26415785ae" category="paragraph">要更正此问题、请为二级存储配置SnapMirror保留策略、以避免达到快照数量上限。</block>
+  <block id="2e88e0aaabba73198bea2bc09ded1f6e" category="list-text">在“*新备份策略*”页面上，输入策略名称和说明。</block>
+  <block id="bf596bbc0d9d0d247cb65bc521d4c4dd" category="list-text">选中*锁定期限*复选框以启用快照锁定。您可以将主和二级快照锁定期限选择为天/月/年。</block>
+  <block id="338eff3cf3ea538d4dddcb15d34cf9f5" category="admonition">无论在ONTAP SnapMirror策略中设置的保留值如何、在指定的二级快照锁定期限之前不会删除二级快照副本。</block>
+  <block id="867d3cae1de1c2aa933faf18ecf34efe" category="admonition">如果计划启用 SnapVault 复制，则应将保留数量设置为 2 个或更多备份。如果将保留计数设置为 1 个要保留的备份，则保留操作可能会失败。这是因为、在将较新的快照复制到目标之前、第一个快照是SnapVault关系的参考快照。</block>
+  <block id="8187d70c0911a1d7b0d72f813e3de707" category="paragraph">输入要添加到使用此策略创建的SnapVault和SnapMirror快照的可选自定义标签。快照标签有助于区分使用此策略创建的快照与二级存储系统上的其他快照。</block>
+  <block id="c96b78ab3b546f1c6350447b6b0b69e9" category="admonition">快照标签最多允许包含31个字符。</block>
+  <block id="e7c088e25fc4bf9f423f53697a7ebc9f" category="admonition">选中 VM 一致性复选框后，备份操作可能需要更长时间并需要更多存储空间。在这种情况下， VM 会先暂停，然后 VMware 执行 VM 一致的快照，然后 SnapCenter 执行其备份操作，最后恢复 VM 操作。VM一致性快照不包括VM子系统内存。</block>
+  <block id="1d8fc89c22ffba017784a94c288acc73" category="list-text">优化快照</block>
+  <block id="f2f64708aa812b59278d786b60b3b7d7" category="paragraph">要优化快照、应将与同一卷关联的虚拟机和数据存储库分组到一个资源组中。</block>
+  <block id="7d637f0545a627149d95ca39f96e3f50" category="admonition">如果要选择具有快照锁定期限的备份策略、则需要选择9.12.1 9.12.1或更高版本。</block>
+  <block id="003fe3722b3d94694e8082a2ccce7d4e" category="cell">最新Snapshot名称</block>
+  <block id="ef7c1c422fafb269a96680a835f28111" category="paragraph">如果要将后缀"_Recent "添加到最新快照、请选中此框。"_recent " 后缀将替换日期和时间戳。</block>
+  <block id="b048816ac59c8bb52848d42e3d20198b" category="admonition">ASA R2存储系统不支持重命名快照、因此不支持选择控制阀的重命名备份和_Recent快照命名功能。</block>
+  <block id="e8e16f80b6cc95f387b7be62fa0f532e" category="cell">自定义快照格式</block>
+  <block id="284b15bb42ed466d7ea099d41647444d" category="paragraph">如果要对快照名称使用自定义格式、请选中此框并输入名称格式。</block>
+  <block id="88d5f42bbf75213962df2697649c497f" category="list-text">默认快照名称使用格式<block ref="ba8f4cc4ace4f3315ea21bd52fbde9d9" prefix=" " category="inline-code"></block>。但是、您可以使用变量$ResourceGroup、$Policy、$hostname、$计划 类型和$CustomText指定自定义格式。使用自定义名称字段中的下拉列表选择要使用的变量及其使用顺序。如果选择$CustomText，则名称格式为<block ref="ad231838859064f0fe437a9669c0d36f" prefix=" " category="inline-code"></block>。在提供的附加框中输入自定义文本。[注意]：如果您还选择了"_Recent "后缀、则必须确保自定义快照名称在数据存储库中是唯一的、因此、应将$ResourceGroup和$Policy变量添加到该名称中。</block>
+  <block id="c2c8a1e1f67b255a6abf4fc5fc809a95" category="summary">对于 VMFS 环境，适用于 VMware vSphere 的 SnapCenter 插件使用 Storage VMotion 的克隆和挂载操作来执行还原操作。对于 NFS 环境，此插件使用原生 ONTAP 单文件 SnapRestore （ SFSR ）来提高大多数还原操作的效率。对于vVol VM、此插件会使用ONTAP单文件快照还原和SnapMirror还原执行还原操作。</block>
+  <block id="f82af7cf32f7be8c379046b826f182bc" category="paragraph">对于 VMFS 环境，适用于 VMware vSphere 的 SnapCenter 插件使用 Storage VMotion 的克隆和挂载操作来执行还原操作。对于 NFS 环境，此插件使用原生 ONTAP 单文件 SnapRestore （ SFSR ）来提高大多数还原操作的效率。对于vVol VM、此插件会使用ONTAP单文件快照还原(ONTAP SFSR)和SnapMirror还原执行还原操作。下表列出了如何执行还原操作。</block>
+  <block id="b2ca7b7f9ce9a9907bcc75c5514315e5" category="paragraph">二级存储上的快照由ONTAP保留设置管理、而不是由适用于VMware vSphere的SnapCenter插件管理。因此、在使用适用于VMware vSphere的SnapCenter插件删除备份时、主存储上的快照将被删除、但二级存储上的快照不会被删除。如果二级存储上仍存在快照、则适用于VMware vSphere的SnapCenter插件会保留与备份关联的元数据、以支持还原请求。当ONTAP保留过程删除二级快照时、适用于VMware vSphere的SnapCenter插件会使用定期执行的清除作业删除元数据。</block>
+  <block id="73de513c4d9b5d1aede9f09e6412115d" category="paragraph">您可以修改适用于 VMware vSphere 的 SnapCenter 插件资源组的策略。在将策略附加到资源组时、您可以修改频率、复制选项、快照保留设置或脚本信息。</block>
+  <block id="ae969b2c3623f7b712e8dc90ea64bc7e" category="paragraph">所有资源组删除操作均以强制删除的形式执行。删除操作会从vCenter资源组中分离所有策略、从适用于VMware vSphere的SnapCenter插件中删除该资源组、并删除该资源组的所有备份和快照。</block>
+  <block id="9211a296b4cd2f3f54ffbe3156475a01" category="admonition">在SnapVault关系中、无法删除最后一个快照；因此、无法删除资源组。删除SnapVault关系中的资源组之前、必须使用OnCommand System Manager或ONTAP命令行界面删除SnapVault关系、然后删除最后一个快照。</block>
+  <block id="ce2c264a7f2ac0d42d9d859e550d04e7" category="paragraph">如果您对受SnapVault计划保护且运行ONTAP 8.3的SnapVault目标卷执行连接或挂载操作、则可能会在连接或挂载对话框屏幕中显示一个额外的快照。出现这种情况的原因是、连接或挂载操作会克隆SnapVault目标卷、而ONTAP会通过创建新快照来更新此卷。</block>
+  <block id="84ade123b589aaaa8cb58a5dc5af2c14" category="paragraph">要防止在克隆卷时创建新快照、请关闭SnapVault卷的ONTAP计划。不会删除先前已有的快照。</block>
+  <block id="7aa7ae49984d77593e48b6fd70844775" category="paragraph">要保护VM和数据存储库、请使用VMware vSphere客户端界面。Web客户端图形用户界面可与存储系统上的NetApp Snapshot技术集成。这样，您就可以在几秒钟内备份 VM 和数据存储库，并还原 VM ，而无需使 ESXi 主机脱机。</block>
+  <block id="b68c25841ace1ebf87dee9af54aa2e69" category="paragraph">SnapCenter不支持同时为数据库和VM创建一个快照。VM和数据库的备份必须单独计划和运行、这样即使数据库和VM托管在同一个卷中、也会创建单独的快照。必须使用SnapCenter 图形用户界面计划基于应用程序的备份；必须使用VMware vSphere客户端图形用户界面计划VM一致的备份。</block>
+  <block id="1471fa425a9c79f7e8a4a4bc34704d6a" category="cell"><block ref="af62a8975e8577db87448344c585507f" prefix="" category="inline-code"></block>获取指定备份的快照的位置。传递步骤 2 中的 * 备份 Id* 。请注意 * 快照位置列表 * 信息。</block>
+  <block id="c61b48c7cee87295644b3139e3651375" category="paragraph">您可以搜索特定备份名称或部分备份名称、也可以通过单击筛选器图标并选择日期和时间范围、选择是否需要包含VMware快照的备份、是否需要挂载备份以及位置来筛选备份列表。单击 * 确定 * 以返回到向导。</block>
+  <block id="8b740d927c7014ac116bad7dac5e90f3" category="paragraph">还原目标可以是已添加到 SnapCenter 的任何 ESXi 主机。此选项可从具有指定时间和日期的快照还原虚拟机所在的选定备份的内容。如果选择此选项，则会选中 * 重新启动 VM* 复选框，并且虚拟机将启动。</block>
+  <block id="8eb1b908e8b622c31068641ddc091252" category="list-text">您必须知道要从中还原的备份快照和VMDK。</block>
+  <block id="cd38aa1b745074ce7b3e671b2737e16f" category="paragraph">适用于 VMware vSphere 的 SnapCenter 插件不支持搜索要还原的文件或文件夹。因此、在开始之前、您必须了解文件或文件夹相对于快照的位置以及相应的VMDK。</block>
+  <block id="3307c3ba0f8faacd2a6ad53d834854b4" category="paragraph">您可以搜索特定备份名称或部分备份名称、也可以通过单击筛选器图标并选择日期和时间范围来筛选备份列表、选择是否需要包含VMware快照的备份、是否需要挂载备份以及主位置或二级位置。单击 * 确定 * 以返回到向导。</block>
+  <block id="c497b5cdfb468a78f47eeead674d8de4" category="list-text">在*Select Location*页面上，选择要还原的快照(主快照或二级快照)。</block>
+  <block id="f1e1ac5eb6498170a571f7c9baa59473" category="admonition">如果虚拟机的快照是由适用于VMware vSphere的SnapCenter插件以外的软件执行的、则还原操作无法成功完成。</block>
+  <block id="848e6a50c59fc9f63956382b0072922e" category="paragraph">VM的还原操作会取消注册原始VM、从备份快照还原VM、并在同一ESXi服务器上注册具有相同名称和配置的已还原VM。还原后，您必须手动将 VM 添加到资源组。</block>
+  <block id="2e0cc418cfa86596897965026b31e6df" category="list-text">在*Restore*向导的*Select Backup*页面上，选择要还原的备份快照。</block>
+  <block id="8f35b8f7de8f7e8d9b02e6a422cc70cb" category="paragraph">您可以搜索特定备份名称或部分备份名称、也可以通过单击筛选器图标并选择日期和时间范围、选择是否需要包含VMware快照的备份、是否需要挂载备份以及位置来筛选备份列表。单击 * 确定 * 以返回到向导。</block>
+  <block id="a1954b7ef0b95a152868596fad609446" category="paragraph">您可以通过以下方式筛选备份列表：选择筛选器图标、选择日期和时间范围、选择是否需要包含VMware快照的备份、是否需要挂载备份以及位置。单击 * 确定 * 。</block>
+  <block id="7cd13333ae1cedbd3aa5baace69fd245" category="paragraph">生成的快照、SnapVault和SnapMirror快照总数以及用于主快照和二级快照的存储量。折线图会分别绘制连续 90 天内每天的主存储和二级存储消耗情况。存储信息每24小时在凌晨1：08更新一次。存储节省量是逻辑容量(快照节省量加上已用存储)与主存储的物理容量之比。条形图显示了存储节省量。</block>
+  <block id="186f10ad0ae1bb6638a07f29fcf47c80" category="paragraph">在准备备份或还原虚拟机或数据存储库时、您可能需要查看可用于该资源的所有备份并查看这些备份的详细信息。</block>
+  <block id="51857ca23f1dc86274f568542e984fe5" category="paragraph">首次浏览大型文件文件夹(例如10k文件文件夹)可能需要一分钟或多分钟。后续浏览会话所需时间更短。</block>
+  <block id="a270592232d9d6514ce0ee979df39631" category="list-text">登录到 vCenter Server 。</block>
+  <block id="4fb4ce8111ab842297ec1ee06f128e55" category="list-text">导航到*Inventory*页面并选择数据存储库或虚拟机。</block>
+  <block id="f961fdd56c58ceb684e1bc66c0048696" category="list-text">在右侧窗格中，选择*配置*&gt;适用于VMware vSphere的SnapCenter插件*&gt;*备份*。</block>
+  <block id="272dbc82d7ded4803d59e20847c18877" category="inline-image-macro">备份视图</block>
+  <block id="cf1dafd1cdfffc3ffd25de8f579759be" category="paragraph"><block ref="cf1dafd1cdfffc3ffd25de8f579759be" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="58d2e74d546e138eca3824144c5ce719" category="paragraph">如果在策略创建阶段未选择*启用二级Snapshot锁定*选项，则默认情况下会采用为*启用主Snapshot锁定*选项设置的值。在备份列表中、*次要Snapshot锁定到期*字段中的连字符表示主锁定期限和次要锁定期限相同。</block>
+  <block id="e59481e00b5fbf25c9d83bb6cf1e1fc6" category="list-text">选择要查看的备份。</block>
+  <block id="10816353eaa2dd5ab8374ef58f982e29" category="list-text">基于一致性组的备份</block>
+  <block id="7282e5c8f3184e4f914d701f82b621ff" category="paragraph">*支持二级防篡改快照(TPS)*</block>
+  <block id="553dc280ed86f90ffb054d20f311a8f9" category="paragraph">适用于VMware vSphere的SnapCenter插件引入了对二级TPS的支持、可确保二级Snapshot副本不会被勒索软件攻击者或恶意管理员删除或更改、即使在遭受攻击后也可以使用。</block>
 </blocks>

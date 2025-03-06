@@ -41,11 +41,11 @@ summary: 适用于 VMware vSphere 的 SnapCenter 插件是一种独立虚拟设�
 SnapCenter本机利用适用于VMware vSphere的SnapCenter插件对VMDK、原始设备映射(Raw Device Mappings、RDM)和NFS数据存储库执行所有数据保护操作。部署虚拟设备后，此插件将处理与 vCenter 的所有交互。适用于VMware vSphere的SnapCenter插件支持所有基于SnapCenter应用程序的插件。
 
 +
-SnapCenter不支持同时为数据库和VM创建一个快照。虚拟机和数据库的备份必须单独计划和运行、这样会创建单独的Snapshot、即使数据库和虚拟机托管在同一个卷中也是如此。使用SnapCenter 图形用户界面计划数据库应用程序备份；使用VMware vSphere客户端图形用户界面计划虚拟机和数据存储库备份。
+SnapCenter不支持同时为数据库和VM创建一个快照。虚拟机和数据库的备份必须单独计划和运行、这样可以创建单独的快照、即使数据库和虚拟机托管在同一个卷中也是如此。使用SnapCenter 图形用户界面计划数据库应用程序备份；使用VMware vSphere客户端图形用户界面计划虚拟机和数据存储库备份。
 
-* 要创建VM一致的Snapshot、需要使用VMware工具
+* 要创建VM一致的快照、需要使用VMware工具
 +
-如果未安装并运行VMware工具、则不会暂停文件系统、并创建崩溃状态一致的Snapshot。
+如果未安装并运行VMware工具、则不会使文件系统处于静置状态、而是会创建崩溃状态一致的快照。
 
 * 在 SAN （ VMFS ）环境中执行还原操作需要使用 VMware Storage vMotion
 +

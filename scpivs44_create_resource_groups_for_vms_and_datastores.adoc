@@ -94,7 +94,7 @@ IMPORTANT: 请勿添加处于不可访问状态的 VM 。尽管可以创建包�
 
 +
 
-NOTE: 如果要选择具有Snapshot锁定期限的备份策略、则需要选择ONTAP 9.12.1或更高版本。
+NOTE: 如果要选择具有快照锁定期限的备份策略、则需要选择9.12.1 9.12.1或更高版本。
 
 * 兼容性检查
 +
@@ -147,26 +147,22 @@ SnapCenter 会在您创建资源组时执行兼容性检查。
 | 电子邮件主题 | 输入通知电子邮件所需的主题。 
 
 
-| 最新 Snapshot 名称  a| 
-如果要将后缀"_Recent "添加到最新Snapshot、请选中此框。"_recent " 后缀将替换日期和时间戳。
+| 最新Snapshot名称  a| 
+如果要将后缀"_Recent "添加到最新快照、请选中此框。"_recent " 后缀将替换日期和时间戳。
 
 
 NOTE: 系统会为附加到资源组的每个策略创建`_recent`备份。因此、具有多个策略的资源组将具有多个`_recent`备份。请勿手动重命名`_recent`备份。
 
 
-NOTE: ASA R2存储系统不支持快照重命名、因此不支持选择控制阀的重命名备份和_Recent Snapshot命名功能。
+NOTE: ASA R2存储系统不支持重命名快照、因此不支持选择控制阀的重命名备份和_Recent快照命名功能。
 
 
 
-| 自定义 Snapshot 格式  a| 
-如果要对Snapshot名称使用自定义格式、请选中此框并输入名称格式。
+| 自定义快照格式  a| 
+如果要对快照名称使用自定义格式、请选中此框并输入名称格式。
 
 *** 默认情况下，此功能处于禁用状态。
-*** 默认Snapshot名称使用格式 `<ResourceGroup>_<Date-TimeStamp>`
-但是、您可以使用变量$ResourceGroup、$Policy、$hostname、$scheduleype和$CustomText指定自定义格式。使用自定义名称字段中的下拉列表选择要使用的变量及其使用顺序。
-如果选择$CustomText、则名称格式为 `<CustomName>_<Date-TimeStamp>`。在提供的附加框中输入自定义文本。
-[注意]：
-如果您还选择了"_Recent "后缀、则必须确保自定义Snapshot名称在数据存储库中是唯一的、因此、应将$ResourceGroup和$Policy变量添加到该名称中。
+*** 默认快照名称使用格式 `<ResourceGroup>_<Date-TimeStamp>`。但是、您可以使用变量$ResourceGroup、$Policy、$hostname、$计划 类型和$CustomText指定自定义格式。使用自定义名称字段中的下拉列表选择要使用的变量及其使用顺序。如果选择$CustomText，则名称格式为 `<CustomName>_<Date-TimeStamp>`。在提供的附加框中输入自定义文本。[注意]：如果您还选择了"_Recent "后缀、则必须确保自定义快照名称在数据存储库中是唯一的、因此、应将$ResourceGroup和$Policy变量添加到该名称中。
 *** 名称中特殊字符的特殊字符，请遵循为名称字段提供的相同准则。
 
 
