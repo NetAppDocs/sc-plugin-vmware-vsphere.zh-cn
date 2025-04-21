@@ -31,11 +31,8 @@
   <block id="a115e2512005f81c492d368a9613ee58" category="list-text">禁用适用于 VMware vSphere 的 SnapCenter 插件，为升级做准备。</block>
   <block id="7c7ae5acd39e33d9d69f3338f6b09a4a" category="inline-link"><block ref="7c7ae5acd39e33d9d69f3338f6b09a4a" category="inline-link-rx"></block></block>
   <block id="49b20de0665dbf0adffcce8449969e05" category="list-text">登录到 NetApp 支持站点（<block ref="d9a31f976cefd9412c7b34e5af784f14" category="inline-link-rx"></block>）。</block>
-  <block id="186741bf5d776ef0cdc89239ec5d6b01" category="list-text">从产品列表中，选择 * 适用于 VMware vSphere 的 SnapCenter 插件 * ，然后单击 * 下载最新版本 * 按钮。</block>
   <block id="1ced0a64a9eacafaada35a9482d31c57" category="list-text">在浏览器中，导航到 VMware vSphere vCenter 。</block>
   <block id="8d668d142d0f3d31fe81d5725d775268" category="list-text">登录到 * VMware vCenter Single Sign-On* 页面。</block>
-  <block id="3630c5d0152e5c45485f4ec788813d5f" category="list-text">在 * 相关对象 * 窗格中，单击列表中的任何数据存储库，然后单击 * 摘要 * 选项卡。</block>
-  <block id="9bdc956870fb4f8eda0fc93c8639dda1" category="list-text">单击 CD/DVD 字段中的连接图标，然后选择 * 连接到数据存储库上的 CD/DVD 映像 * 。</block>
   <block id="4e36d9630c525be29c9f2b987c378c3a" category="list-text">在向导中，执行以下操作：</block>
   <block id="1b9c2951979b9427336de3c6b89e109a" category="list-text">对于 System Configuration ，输入 * 。 2 * ，然后输入 * 。 8 * 进行升级。</block>
   <block id="3fa27d5cda1efe2ca10c0731abce440c" category="list-text">输入 * 。 * 继续并开始升级。</block>
@@ -64,17 +61,13 @@
   <block id="65edaa2fcae57d6f852991cc8468f875" category="admonition">要提高 NFS 环境中还原操作的性能，请启用 VMware 应用程序 vStorage API for Array Integration （ VAAI ）。</block>
   <block id="994320a63a6c23552d170605431389f6" category="paragraph">您不能还原数据存储库，但可以还原数据存储库中的任何 VM 。</block>
   <block id="1e6537897e726c537f77519264b64453" category="paragraph">如果虚拟机所在的 FabricPool 存储层不可用，还原操作可能会失败。</block>
-  <block id="4496f72bb4d77e2cc55c802b7c4cd0b4" category="list-text">单击 * 菜单 * 并选择 * 存储 * 菜单选项，然后选择一个数据存储库，再选择 * 配置 * 选项卡，然后单击 * 适用于 VMware vSphere 的 SnapCenter 插件 * 部分中的 * 备份 * 。</block>
   <block id="10cdb4feb2dea4da0fb0c500304666b9" category="list-text">双击备份以查看备份中包含的所有 VM 的列表。</block>
-  <block id="721dbd87e9ecd1ae54c0718f20cae8fc" category="list-text">从备份列表中选择已删除的虚拟机，然后单击 * 还原 * 。</block>
   <block id="63cef9780576628d2ececde8d6316073" category="list-text">在 * 还原 * 向导的 * 选择备份 * 页面上，选择要从中还原的备份副本。</block>
   <block id="7d095eee366e6f2ce831a4097c5c2c23" category="paragraph">如果要将 NFS 数据存储库中的虚拟机还原到 ESXi 集群中的备用 ESXi 主机，则在还原此虚拟机后，此虚拟机将注册到备用主机上。</block>
   <block id="2b8952e2a3eecf608f1229e12bda5009" category="list-text">在 * 选择位置 * 页面上，选择要从中还原的备份的位置（主备份或二级备份）。</block>
-  <block id="ea5b9f5c973a98f6f3a6964373da57b1" category="list-text">查看摘要页面，然后单击 * 完成 * 。</block>
   <block id="92d37724657724129ae0451584c728aa" category="doc">删除适用于 VMware vSphere 的 SnapCenter 插件</block>
   <block id="159a080365af1cc94e243b73531b0b72" category="list-text">您必须具有管理员权限。</block>
   <block id="502b0645b39e83a780af1d7a09c61d26" category="list-text">确保未运行任何 SnapCenter 作业。</block>
-  <block id="d8e8dbc850d07dc581f77f4e5633db4e" category="list-text">单击左侧导航窗格中的 * 配置 * ，然后取消选择 * 插件详细信息 * 部分中的服务选项以禁用此插件。</block>
   <block id="c72da7e3fabb3a5670b26ae6fee4836f" category="list-text">登录到 VMware vSphere 。</block>
   <block id="0598c44c93d67e88f73a8106be06088d" category="doc">配置 VM 子文件还原的凭据</block>
   <block id="152d7ddc7a18ad2fce26bc8d99d1ea76" category="paragraph">在为子文件或文件夹还原操作连接虚拟磁盘时，此连接的目标 VM 必须在还原之前配置凭据。</block>
@@ -94,7 +87,6 @@
   <block id="acb84124a55cae1fe0c3d7018cf79ff8" category="cell">使用现有凭据</block>
   <block id="207b2d2bbc5c835dd43baf63338a11bd" category="cell">选择任何已配置的凭据。</block>
   <block id="d143a80422bfeac149e5c2dad186364e" category="cell">添加新凭据</block>
-  <block id="4cc186df234138a57b2e8c5d8e5f7f8d" category="list-text">单击 * 保存 * 。</block>
   <block id="3b878279a04dc47d60932cb294d96259" category="doc">概述</block>
   <block id="f212abe7cfae07ea38b183845166b927" category="paragraph">您可以从主备份或二级备份还原 VM ， VMDK ，文件和文件夹。</block>
   <block id="5f3bd8ec46e56c5e0238eee2273ef39f" category="list-text">VM 还原目标</block>
@@ -141,7 +133,6 @@
   <block id="5cfd050ff3fdacd39226ea32997183d0" category="list-text">修改报告</block>
   <block id="ebcc70edf553801db3d5acb1ad069a20" category="list-text">生成详细报告</block>
   <block id="014e67ea8ddcf4504fea98057c700b45" category="paragraph">双击任何作业以生成该作业的详细报告。</block>
-  <block id="28484678176f28b183c137f40e336d9f" category="list-text">可选：在报告选项卡上，单击 * 下载 * 并选择格式（ HTML 或 CSV ）。</block>
   <block id="7329f4c302ee9ba463379d73f374c423" category="paragraph">只有在执行迁移后备份后，信息板才会显示有关已迁移备份的信息。</block>
   <block id="67617c3dd7048bff7de2a5db0e9bb12c" category="cell">报告类型</block>
   <block id="b5a7adde1af5c87d7fd797b6245c2a39" category="cell">Description</block>
@@ -169,7 +160,6 @@
   <block id="e425f4a6b828d90cb52b0122cc580f9e" category="cell">`对资源组运行备份` 按需备份资源组。传递步骤 1 中的 * 资源组 Id* 和 * 策略 Id* 。</block>
   <block id="a1be052a01bc67bde49a959fd379c2c0" category="doc">修改已配置的存储超时</block>
   <block id="b82dc3c0be53110c5df24ad73a595788" category="paragraph">您可能会遇到错误 `Unable to discover resources on SCV ： Unable to get storage details for datastore &lt;xxx&gt;…`</block>
-  <block id="988e2ba186db5a08e3e106e58853aef1" category="list-text">在存储系统页面上，选择要修改的存储系统，然后单击 * 编辑 * 。</block>
   <block id="41545bf454b2d0546b006d90a29e618f" category="list-text">在超时字段中，增加秒数。</block>
   <block id="4d8a7d10f3159e6591e093a5ebc629b3" category="admonition">对于大型环境，建议使用 180 秒。</block>
   <block id="7322146fa0278b7076d42a67da3ca68f" category="doc">预处理脚本和后处理脚本</block>
@@ -236,7 +226,6 @@
   <block id="fd05cf455bb6088fd7c60023a5136d85" category="section-title">清除缓存的步骤</block>
   <block id="460ff760e9b03fdc18067743660e6d4c" category="paragraph">每个版本的文件夹名称都会发生变化。</block>
   <block id="bb8f6c3966fa63b12f984ba70acb97a5" category="list-text">重新启动 vCenter Server 。</block>
-  <block id="f8fd86ff3cd572a88f814e0e5aeca137" category="list-text">从产品列表中，选择 * 适用于 VMware vSphere 的 SnapCenter 插件 * ，然后单击 * 下载最新版本 * 按钮。</block>
   <block id="883fd3a999b576424bc7a7ce53cc2e8a" category="doc">不同 SnapCenter GUI 的概述</block>
   <block id="62882ef8fe7d5fd42d42bffbc2997106" category="cell">使用此 GUI…</block>
   <block id="04638ac63aa96ffa4b255a2a417c75ee" category="cell">要执行这些操作 ...</block>
@@ -281,7 +270,6 @@
   <block id="78f1e90e675a66cb2a884cded1ec1e11" category="section-title">分离策略</block>
   <block id="b215e4d6682eae092d0edbb35a888ab7" category="list-text">在 * 编辑资源组 * 向导的 * 策略 * 页面上，清除要断开的策略旁边的复选标记。</block>
   <block id="a3123051c7309d8a5b39a7de4e9f9ba8" category="paragraph">您也可以通过检查策略向资源组添加策略。</block>
-  <block id="cbd35673a02f04d4a8686fa03491191d" category="list-text">在向导的其余部分中对资源组进行任何其他修改，然后单击 * 完成 * 。</block>
   <block id="8a83564fb6cc1ce1968a698b16797b87" category="section-title">修改策略</block>
   <block id="1cba6481a8dfe62a6732da61855667eb" category="paragraph">在修改复制或保留设置之前，应考虑可能的后果。</block>
   <block id="8cde2f45172b8235e7b298986bf25883" category="list-text">增加复制或保留设置</block>
@@ -289,12 +277,10 @@
   <block id="f11482bf98ab6b5ac5791efa023f6f68" category="list-text">降低复制或保留设置</block>
   <block id="77a0736814eccd39d8f8c9a8efab7037" category="paragraph">执行下一次备份时，系统将删除超出新设置的备份。</block>
   <block id="93b6b60b04c992e93d8ce39ea4cfbfbd" category="list-text">修改策略字段。</block>
-  <block id="b15ade0f189045b567a7ac22ebe68db3" category="list-text">完成后，单击 * 更新 * 。</block>
   <block id="c8751b3fa4d94d962d436dc4eb5506de" category="paragraph">这些更改将在执行下一次计划备份时生效。</block>
   <block id="af5b784334cc5cfd8f61f1fa34d0aca5" category="section-title">删除策略</block>
   <block id="b98184ffbf0791656c3e0abd1cb06e0a" category="paragraph">如果您不再需要为适用于 VMware vSphere 的 SnapCenter 插件配置备份策略，则可能需要将其删除。</block>
   <block id="187457d2283e9d316d286284849a5944" category="paragraph">您必须先将策略与 SnapCenter 虚拟设备中的所有资源组断开连接，然后才能将其删除。</block>
-  <block id="140125da12b57457249da3f51f95f9fe" category="list-text">在确认对话框中，单击 * 确定 * 。</block>
   <block id="0b156eb7ae06ec8e963e1dd7bed83e94" category="doc">从备份还原 VM</block>
   <block id="041b4550a0ec6359f99eb2257afd1afa" category="paragraph">还原虚拟机时，您可以使用所选的备份副本覆盖现有内容，也可以创建虚拟机的副本。</block>
   <block id="b14e0e0fe870958315bd1b702bfa088a" category="list-text">挂载到原始 ESXi 主机上的原始数据存储库（此操作会覆盖原始虚拟机）</block>
@@ -330,9 +316,7 @@
   <block id="3f90a051ae4853526629991aad7c3085" category="list-text">您可以使用 SnapCenter 图形用户界面添加 "vsphere" 类型的主机，从而在 SnapCenter 服务器中注册适用于 VMware vSphere 的 SnapCenter 插件。</block>
   <block id="7af76100be5ace159efb0a1fb46267ce" category="paragraph">您可以在同一个 SnapCenter 服务器 4.2 上注册多个适用于 VMware vSphere 的 SnapCenter 插件实例，以支持在 VM 上执行基于应用程序的数据保护操作。您不能在多个 SnapCenter 服务器上注册同一个适用于 VMware vSphere 的 SnapCenter 插件。</block>
   <block id="630fdf771d5b4701ba7ad4a60d60d039" category="list-text">对于处于链接模式的 vCenter ，您必须为每个 vCenter 注册适用于 VMware vSphere 的 SnapCenter 插件。</block>
-  <block id="5b83ed8ca664f98ef4884a8f49bcba46" category="list-text">在 SnapCenter 图形用户界面左侧导航窗格中，单击 * 主机 * 。</block>
   <block id="d27f20937ce09235c9c83cd5834fc281" category="list-text">验证顶部是否已选中 * 受管主机 * 选项卡，然后找到虚拟设备主机名并验证它是否已从 SnapCenter 服务器解析。</block>
-  <block id="65c7f769b5e4012e8f85088906afe74d" category="list-text">单击 * 添加 * 以启动向导。</block>
   <block id="0feed548b5a6f23910292fdd68f8eb7a" category="list-text">在 * 添加主机 * 对话框中，指定要添加到 SnapCenter 服务器的主机，如下表所示：</block>
   <block id="ca992da0d36b851405bbef3bf1544e14" category="cell">对于此字段…</block>
   <block id="c2ece9a18147c056e75e4008644a9526" category="cell">主机类型</block>
@@ -340,18 +324,15 @@
   <block id="dae4a538d4ca7b6c0789932062fe718d" category="cell">主机名</block>
   <block id="a7e1f4661cdc46bdb73751501d52c709" category="cell">验证虚拟设备的 IP 地址。</block>
   <block id="03bc142e6422dbb9b288ad2cabee08c7" category="cell">凭据</block>
-  <block id="4b5d2dd70af718ebe67bfea5b43d8667" category="list-text">单击 * 提交 * 。</block>
   <block id="c6b4daa6b597794d6e4a1ae57d307c6d" category="paragraph">成功添加 VM 主机后，该主机将显示在受管主机选项卡上。</block>
   <block id="6ad0f7acf9ee8321077924b25436fe63" category="list-text">提供在部署适用于 VMware vSphere 的 SnapCenter 插件期间指定的凭据信息。</block>
   <block id="7e90f659fd64bec3d6994e11d8ef02f2" category="paragraph">如果修改了适用于 VMware vSphere 的 SnapCenter 插件凭据，则必须使用 SnapCenter 受管主机页面在 SnapCenter 服务器中更新注册。</block>
   <block id="6888e60d18ef291e7b86bc7e530fe2a8" category="doc">添加存储</block>
   <block id="656b1941061949fe21d495b2d2fa4764" category="doc">断开虚拟磁盘</block>
   <block id="6fc948db6bfb5ca3b3b32b543334051c" category="paragraph">在连接虚拟磁盘以还原单个文件后，您可以将虚拟磁盘与父虚拟机断开。</block>
-  <block id="b770a8b6f72e90aaf11d1b36e3181dec" category="list-text">在 * 断开虚拟磁盘 * 屏幕上，选择要断开的一个或多个磁盘，然后选中 * 断开选定磁盘 * 复选框，并单击 * 断开 * 。</block>
   <block id="a9357c4b073010dc4965ae4a7730f181" category="admonition">请确保选择正确的虚拟磁盘。选择错误的磁盘可能会影响生产工作。</block>
   <block id="3a258a61f1abdb721cb6de8642d42eb3" category="list-text">可选：在 * 近期任务 * 部分中监控操作进度。</block>
   <block id="bbdcfd9257f4afda91a64894f3ae3263" category="list-text">通过执行以下操作验证虚拟磁盘是否已断开：</block>
-  <block id="2b47e47a91e8d341f2ea5083a977170c" category="list-text">单击工具栏中的 * 菜单 * ，然后从下拉列表中选择 * 虚拟机和模板 * 。</block>
   <block id="53458ddf4cca411e8218b9e8a4d2abea" category="list-text">在 * 编辑设置 * 窗口中，展开每个硬盘的列表以查看磁盘文件列表。</block>
   <block id="4df04d3e4973fee8ddd4d518a8e88a4e" category="paragraph">"* 编辑设置 * " 页面列出了虚拟机上的磁盘。您可以展开每个硬盘的详细信息以查看连接的虚拟磁盘列表。</block>
   <block id="4d8be872caabccaa1fbf6f588178a432" category="paragraph">在备份或还原 VM 之前，您必须先添加存储集群或 Storage VM 。通过添加存储，适用于 VMware vSphere 的 SnapCenter 插件可以识别和管理 vCenter 中的备份和还原操作。</block>
@@ -371,13 +352,10 @@
   <block id="15cb2b9c090bdc4868f38d74b1626bca" category="cell">将 SnapCenter 服务器事件记录到系统日志中</block>
   <block id="0adf9b7ec7bd1bc34fa619474f6709e0" category="cell">向存储系统发送操作失败的 AutoSupport 通知</block>
   <block id="eca627e1bcebe95b4732e8113bfb0ba7" category="cell">如果要为失败的数据保护作业发送 AutoSupport 通知，请选中此复选框。您还必须在 Storage VM 上启用 AutoSupport 并配置 AutoSupport 电子邮件设置。</block>
-  <block id="7dee7e783d13b6d5d415926ce0bfc306" category="list-text">单击 * 添加 * 。</block>
   <block id="68db6c72e1ca65960795aee487114a61" category="paragraph">如果添加了存储集群，则会自动添加该集群中的所有 Storage VM 。自动添加的 Storage VM （有时称为 " 隐式 " Storage VM ）会显示在集群摘要页面上，并使用连字符（ - ）而非用户名。只有显式存储实体才会显示用户名。</block>
   <block id="d8fe65da592bff35b531fb4d34b22a35" category="doc">升级到同一版本的新修补程序后，不会显示信息</block>
   <block id="45acb704a6a1087cac77b7194c8c0ca5" category="paragraph">将适用于 VMware vSphere 的 SnapCenter 插件升级到同一版本的新修补程序后，信息板和作业监控器中可能不会显示最近的作业或其他信息。</block>
   <block id="de710b6ccc72b5f1a8613565f846ddac" category="section-title">临时解决策（如果在清除缓存之前已升级）</block>
-  <block id="78fdbaed854859eecaeb3fcabe834dcb" category="list-text">单击左侧导航窗格中的 * 配置 * ，然后单击 * 插件详细信息 * 部分中的服务选项以禁用此插件。</block>
-  <block id="e25beeff1b30b84b27263789cd7a51a5" category="list-text">单击左侧导航窗格中的 * 配置 * ，然后单击 * 插件详细信息 * 部分中的服务选项以启用此插件。</block>
   <block id="6d2bf94f38d1fdf840fe9b231866899c" category="doc">部署概述</block>
   <block id="ce6d088abcea43c594e7a9f4cfba2fd5" category="paragraph">要使用 SnapCenter 功能保护虚拟机上的 VM ，数据存储库和应用程序一致的数据库，您必须部署适用于 VMware vSphere 的 SnapCenter 插件。</block>
   <block id="8c5a46f2b9b85dd307d50498933fef6a" category="paragraph">现有 SnapCenter 用户必须使用与新 SnapCenter 用户不同的部署工作流。</block>
@@ -401,7 +379,6 @@
   <block id="fcc3a5678f0005b20d9b7c499d1b8dc3" category="list-text">在 `network.interface=10.10.10.10` 字段中，添加要使用的 IP 地址。</block>
   <block id="4fa13494fd3dbaf358f71d6c97ee016f" category="list-text">您有两个 NIC 。</block>
   <block id="a8e1186a873472e75dc70e92bde98015" category="list-text">清除浏览器缓存，然后检查 GUI 是否运行正常。</block>
-  <block id="35b1d03715ac4629a7f97ac927ec0b8c" category="list-text">登录到 vCenter ，然后单击工具栏中的 * 菜单 * ，然后选择 * 适用于 VMware vSphere 的 SnapCenter 插件 * 。</block>
   <block id="c1634a907000ddd630d2959e055bed59" category="doc">用于还原已删除 VM 的 REST API 工作流</block>
   <block id="c40cc36b9154fdd4a91c01ccb09ce903" category="cell">从 VMware 受管对象 URL 中查找 VM UUID 。记下要还原的虚拟机的 * UUID * 。</block>
   <block id="e59122dd4a3b9560e419d80fe5d7705c" category="cell">` /4.1/VM/ ｛ uuid ｝ / 备份`</block>
@@ -487,30 +464,22 @@
   <block id="3cd20156fa10057c7f84a9e13d691b32" category="paragraph">如果您不再需要访问数据存储库中的文件，则可以卸载备份。</block>
   <block id="3f741637313d2ad45b8428f580ede810" category="paragraph">如果您尝试在 Storage VM （ SVM ）上挂载 NFS 数据存储库的备份副本，并且根卷处于负载共享镜像关系中，则可能会遇到错误 `您可能已达到在 vCenter 中配置的最大 NFS 卷数。检查 vSphere Client 是否存在任何错误消息。` 要防止出现此问题，请导航到 * ESX * &gt; * 管理 * &gt; * 设置 * &gt; * 高级系统设置 * 并更改 NFS.MaxVolumes 值，以更改最大卷设置。最大值为 256 。</block>
   <block id="e68d40414316869d2023656b071a3cc1" category="admonition">请确保选择正确的数据存储库以卸载。否则，您可能会对生产工作产生发生原因影响。</block>
-  <block id="767e2e183fc102315aacf7d310c2140d" category="list-text">在 * 卸载克隆的数据存储库 * 对话框中，选择一个数据存储库，选中 * 卸载克隆的数据存储库 * 复选框，然后单击 * 卸载 * 。</block>
   <block id="aba5f0a683edf4f29d2940f278f2d102" category="doc">使用 Swagger API 网页访问 REST API</block>
   <block id="061c36e9d3e7d9f981cf79561c7144ed" category="admonition">此插件仅支持用于与第三方应用程序集成的 REST API ，不支持 PowerShell cmdlet 或 CLI 。</block>
   <block id="52db7b85d2725f40516c0dbc0da17ca6" category="list-text">在浏览器中，输入 URL 以访问插件 Swagger 网页：</block>
   <block id="b8ae0b462402a081bf316840fb878f9e" category="admonition">请勿在 REST API URL 中使用以下字符： + ，。， % 和 &amp; 。</block>
-  <block id="9ce66f05fe7909f94e1823660b617ddf" category="list-text">单击 API 资源类型可显示该资源类型的 API 。</block>
   <block id="096ea6f3f334f93dc0a0d1a707e8a4cf" category="doc">下载作业日志</block>
   <block id="1101d50ae81430281bce448efa2ea34a" category="paragraph">您可能需要向右滚动才能看到图标。</block>
-  <block id="982db1e132a71740aa27e495c99316f2" category="paragraph">您也可以双击作业以访问作业详细信息窗口，然后单击 * 下载作业日志 * 。</block>
   <block id="ce2a9d19a9ae205749d6e91959e3b4f4" category="paragraph">如果您尝试下载作业日志，但错误消息中名为的日志文件已被删除，则可能会遇到以下错误： `HTTP error 500 problem accessing /export-SCV -logs` 。要更正此错误，请检查错误消息中命名的文件的文件访问状态和权限，并更正访问问题。</block>
   <block id="65d964d49665477bbec39032d9f3ca8a" category="doc">管理备份</block>
   <block id="e10df4c314c4c935099e8c940a5cdf02" category="paragraph">您可以重命名和删除适用于 VMware vSphere 的 SnapCenter 插件执行的备份。您也可以同时删除多个备份。</block>
   <block id="b6821d00a7bc4a6fcfe3d073cec911ab" category="section-title">重命名备份</block>
   <block id="b069e722ad8d29f7eec823ae5a4a95a6" category="paragraph">如果要提供更好的名称以提高可搜索性，您可以重命名适用于 VMware vSphere 的 SnapCenter 插件备份。</block>
-  <block id="7dfbd23642b0ecfb6212dd0d0137923d" category="list-text">单击 * 菜单 * 并选择 * 主机和集群 * 菜单选项，然后选择一个虚拟机，再选择 * 配置 * 选项卡，然后单击 * 适用于 VMware vSphere 的 SnapCenter 插件 * 部分中的 * 备份 * 。</block>
-  <block id="1d25235da54411fda3f47e1c47b94db2" category="list-text">在配置选项卡上，选择备份，然后单击 * 重命名 * 。</block>
-  <block id="27947ec6e4013d1b08faee7e509cae9e" category="list-text">在 * 重命名备份 * 对话框中，输入新名称，然后单击 * 确定 * 。</block>
   <block id="f8ffb952d62ac560c6adb8ac7e15a58e" category="paragraph">请勿在虚拟机，数据存储库，策略，备份或资源组名称中使用以下特殊字符： &amp; * $ # @ ！\ / ： * ？" &lt; &gt;-| ； " ，。允许使用下划线字符（ _ ）。</block>
   <block id="de00c1e27be1485dd099e4cd2aaa554d" category="section-title">删除备份</block>
   <block id="811a38ca6a4a37270419c2834515cf5c" category="paragraph">如果您不再需要备份来执行其他数据保护操作，则可以删除适用于 VMware vSphere 的 SnapCenter 插件备份。您可以同时删除一个备份或多个备份。</block>
   <block id="4b3cb5948249f5d59292e97ced52522d" category="paragraph">您不能删除已挂载的备份。您必须先卸载备份，然后才能将其删除。</block>
-  <block id="057ce6a4f3ab47ccdfeafe4dab712fc3" category="list-text">选择一个或多个备份，然后单击 * 删除 * 。</block>
   <block id="e8f28d5b9bdfd45d62e73866daa7c7c7" category="paragraph">最多可以选择 40 个要删除的备份。</block>
-  <block id="f809d02c43aa772a2083da0e92f722e2" category="list-text">单击 * 确定 * 确认删除操作。</block>
   <block id="8dd89a625f95fb62c70506be2c26dc97" category="list-text">单击左侧 vSphere 菜单栏上的刷新图标以刷新备份列表。</block>
   <block id="09fb813827aff8cc69e2f6f011652e13" category="paragraph">您可以使用适用于 VMware vSphere 的 SnapCenter 插件 REST API 执行常见数据保护操作。此插件具有与 Windows SnapCenter Swagger 网页不同的 Swagger 网页。</block>
   <block id="772be796df64ef662fe37750aa0bac6c" category="list-text">对于使用适用于 VMware vSphere 的 REST API 对 VM 和数据存储库执行的以下操作，会记录 REST API 工作流：</block>
@@ -549,14 +518,11 @@
   <block id="a5daf42def68b7a4c33242cbfca9efcf" category="cell">还原到…</block>
   <block id="7ff99aff75a4ffc74b705fb26d592f75" category="cell">指定还原目标…</block>
   <block id="cbb42e8a1e30a5617b85b703b275a35a" category="cell">原始数据存储库</block>
-  <block id="4168cedfe7de9b5c17ed84cfb9e9d3fc" category="cell">从下拉列表中选择 * 特定磁盘 * ，然后单击 * 下一步 * 。在数据存储库选择表中，您可以选择或取消选择任何 VMDK 。</block>
   <block id="46ddbb26d4adb6887d8fc9f992672ea7" category="cell">备用位置中的备用数据存储库</block>
-  <block id="b1b5deb6a79469cf24ab15c74c8d0fd5" category="cell">单击目标数据存储库，然后从列表中选择其他数据存储库。</block>
   <block id="78d2a696f9b9f71eb637f30f0020bdbf" category="doc">按需备份资源组</block>
   <block id="1dbd69173905cff968e81a32823f8f1e" category="paragraph">备份操作对资源组中定义的所有资源执行。如果资源组附加了策略并配置了计划，则会根据计划自动进行备份。</block>
   <block id="92ae04a417b2b1bf95cb914953f21cce" category="paragraph">您必须已创建附加了策略的资源组。</block>
   <block id="c7cf19dde0a4f0c65a5e383de57d33c1" category="list-text">如果资源组配置了多个策略，则在 * 立即备份 * 对话框中，选择要用于此备份操作的策略。</block>
-  <block id="bb7ace492245c1393f1fa7650b5650f0" category="list-text">单击 * 确定 * 以启动备份。</block>
   <block id="8bf5cf5dea41cc14b69ffe6c6732b880" category="list-text">可选：有关详细信息，请单击窗口底部或信息板上的 * 近期任务 * 来监控操作进度。结果</block>
   <block id="c9f88dac59bd7db8545fafc230d3c135" category="paragraph">如果备份中任何 VM 的暂停操作失败，则备份完成后会显示警告，并标记为 VM 不一致，即使选定策略已选择 VM 一致性也是如此。在这种情况下，某些虚拟机可能已成功暂停。在作业监控器中，失败的虚拟机详细信息将显示暂停失败。</block>
   <block id="9cda0c7b074ab9336e54e5c799f32f1d" category="doc">从 VMDK 还原子系统文件和文件夹</block>
@@ -578,14 +544,11 @@
   <block id="adf56aaee20038bf2ca4c89bbd743b70" category="list-text">选择 * 发送电子邮件通知 * 选项。</block>
   <block id="d4677c4928289bbc194a10a14420d9b5" category="paragraph">如果您希望在连接操作完成时收到通知，并且虚拟磁盘可用，则需要此选项。此通知电子邮件包括虚拟磁盘名称，虚拟机名称以及为 VMDK 新分配的驱动器号。</block>
   <block id="5872155c9c9b4c108bc6482b00bcc9e8" category="admonition">启用此选项，因为子系统文件还原是一项异步操作，并且可能存在为您建立子系统会话的时间延迟。</block>
-  <block id="00c4e348fbc4d70b3f20028f27a0b2ab" category="paragraph">在单击 * 完成 * 之前，您可以返回到向导中的任何页面并更改信息。</block>
   <block id="4e856ba2cd7aacbcf8bc7b973f8553cf" category="list-text">请等待连接操作完成。</block>
   <block id="fa4def48e95c558805a7c02c07472bfb" category="paragraph">您可以在信息板作业监控器中查看操作进度，也可以等待电子邮件通知。</block>
   <block id="25e78af0a6469670457f3d69f3af2d24" category="paragraph">在子系统会话监控器表追加信息中，您可以单击 * 。 * 在右列中。</block>
   <block id="c6b1cccb1d41d1779899104b727ed6e0" category="list-text">为通知电子邮件中列出的虚拟磁盘选择子系统文件还原会话。</block>
   <block id="0af578ae1d8a85026f8bc49091baff88" category="paragraph">所有分区都分配有一个驱动器号，包括系统预留的分区。如果 VMDK 具有多个分区，则可以通过在子文件浏览页面顶部的驱动器字段的下拉列表中选择特定驱动器。</block>
-  <block id="026ed41f7c1849eb7fcf1eeb8ddf984a" category="list-text">单击 * 浏览文件 * 图标可查看虚拟磁盘上的文件和文件夹列表。</block>
-  <block id="03f7e9c1224a5f24acfe1b193927c60b" category="paragraph">双击文件夹以浏览并选择单个文件时，提取文件列表时可能会出现时间延迟，因为提取操作是在运行时执行的。</block>
   <block id="f4ff83956db6d6134a1d1743238a844b" category="paragraph">为了便于浏览，您可以在搜索字符串中使用筛选器。这些筛选器区分大小写，为 Perl 表达式，不含空格。默认搜索字符串为 ` 。` * 。下表显示了一些 Perl 搜索表达式示例。</block>
   <block id="93db5159bc2de7648e1b7fb5f28e5c6b" category="cell">此表达式为…</block>
   <block id="4a77e9776e249d3e281ac50d47ed958e" category="cell">搜索…</block>
@@ -614,7 +577,6 @@
   <block id="28d397e87306b8631f3ed80d858d35f0" category="cell">\</block>
   <block id="62e997f696b6b12613230650e87e2eef" category="cell">转义特殊字符。</block>
   <block id="600d9067a8d1e407b0661522398938e3" category="paragraph">" 子系统文件浏览 " 页面除了显示所有其他文件和文件夹之外，还显示所有隐藏的文件和文件夹。</block>
-  <block id="376e84009ccd03b9873f41487ed5796f" category="list-text">选择要还原的一个或多个文件或文件夹，然后单击 * 选择还原位置 * 。</block>
   <block id="181b43b4455912a2d87e4a95f5962dfc" category="paragraph">要还原的文件和文件夹将在 " 选定文件 " 表中列出。</block>
   <block id="1404a4829eb43be207dc9d418c129c51" category="list-text">在 * 选择还原位置 * 页面中，指定以下内容：</block>
   <block id="054b4f3ea543c990f6b125f41af6ebf7" category="cell">选项</block>
@@ -622,11 +584,9 @@
   <block id="788a23520c9ca6920e284fe4dfdfcf9c" category="cell">原始文件是否存在</block>
   <block id="58a4b5caba49157640d061b90270ccf6" category="cell">成功还原后断开来宾会话</block>
   <block id="d0ea586a3ec678077cb6864e0c45eb5f" category="cell">如果希望在还原操作完成后删除子文件还原会话，请选择此选项。</block>
-  <block id="357a35aedd0c37deb3a881df778a9bb4" category="list-text">单击 * 还原 * 。</block>
   <block id="d1ec8236730ab9b589b7970195fa6f9d" category="paragraph">您可以在信息板作业监控器中查看还原操作的进度，也可以等待电子邮件通知。发送电子邮件通知所需的时间取决于完成还原操作所需的时间长度。</block>
   <block id="5a866c580c4e14dac516488f53fd671b" category="paragraph">此通知电子邮件包含一个附件，其中包含还原操作的输出。如果还原操作失败，请打开追加信息的附件。</block>
   <block id="0a4a3719bc7519d1162060e0f0e08f8a" category="doc">创建备份策略</block>
-  <block id="2043baf4baf43c498171aa6ce5844280" category="list-text">在 * 新建备份策略 * 页面上，输入策略配置信息，然后单击 * 添加 * 。</block>
   <block id="3b94205bc2616f2bf8416a810bbba1b8" category="doc">适用于 VMware vSphere 的 SnapCenter 插件附带的预定义角色</block>
   <block id="2f6888b85318bb632604e471f8b46b60" category="paragraph">作为管理员，您可以将这些角色分配给相应的用户。</block>
   <block id="5a8be763f7b47c14c6c0fca91e41acc6" category="paragraph">您可以通过单击 * 菜单 &gt; 管理 &gt; 角色 * 在 vCenter GUI 中查看预定义的角色，如下表所示。</block>
@@ -642,9 +602,7 @@
   <block id="8ead67b1f46e17ec498cfedbeef95dca" category="list-text">您必须运行受支持的 vCenter Server 版本。</block>
   <block id="0efacb73c35dfad8adbb34de54b95af2" category="list-text">您必须已配置和设置 vCenter Server 环境。</block>
   <block id="8ba7fa3d7ed705b172a2802a36085538" category="list-text">您必须已在 vCenter 中启用传输层安全（ TLS ）。请参见 VMware 文档。</block>
-  <block id="796f03d0e85998488ac1646dc2223f74" category="list-text">在 * 选择名称和文件夹 * 页面上，输入虚拟机或 vApp 的唯一名称，并选择部署位置，然后单击 * 下一步 * 。</block>
   <block id="610a764205314eed9d2cb112d7d4fe17" category="paragraph">VM 的默认部署位置是启动向导的清单对象。</block>
-  <block id="fd38bfaa138a173dbe8f06d29d48ca2d" category="list-text">在 * 选择资源 * 页面上，选择要运行已部署 VM 模板的资源，然后单击 * 下一步 * 。</block>
   <block id="636c2e0b88f6a682d77d3838726c2fe8" category="list-text">在 * 许可协议 * 页面上，选中 * 我接受所有许可协议 * 复选框。</block>
   <block id="703b009db2355e8887ba2886f86ab2ec" category="list-text">在 * 选择存储 * 页面上，定义为已部署的 OVF 模板存储文件的位置和方式。</block>
   <block id="55cce6bfbb9d17ae1682863fc7a7764b" category="list-text">选择 VMDK 的磁盘格式。</block>
@@ -660,7 +618,6 @@
   <block id="55e37024d03d0cd46e11ea4b0c9ddc47" category="list-text">在 * 创建 SCV 凭据 * 部分中，输入本地凭据。</block>
   <block id="a8b8a57e48b9ffeadf52134384793930" category="paragraph">在 * 用户名 * 字段中，输入本地用户名；不包括域详细信息。</block>
   <block id="71f9ed6b3799a05b8e015c69367cfb37" category="list-text">在 * 设置日期和时间 * 中，选择 vCenter 所在的时区。</block>
-  <block id="e69d6a911676da089c14c8e8f2935510" category="list-text">在 * 准备完成 * 页面上，查看此页面并单击 * 完成 * 。</block>
   <block id="e60fd866a673df28143ec78f1ec5e5c6" category="paragraph">所有主机都必须配置 IP 地址（不支持 FQDN 主机名）。在部署之前， Deploy 操作不会验证您的输入。</block>
   <block id="76785e5d8d7ceebbb25a3306d19d777e" category="paragraph">在等待 OVF 导入和部署任务完成时，您可以从 " 近期任务 " 窗口查看部署进度。</block>
   <block id="7c6544e77cfe7de3aa3b9fb500330658" category="paragraph">如果主机名称为 "UnifiedVSC/SCV ，则重新启动设备。如果重新启动设备时未将主机名更改为指定的主机名，则必须重新安装该设备。</block>
@@ -685,7 +642,6 @@
   <block id="4f6399d375703e081ff1b5332c86263c" category="list-text">在 * 连接虚拟磁盘 * 窗口的 * 备份 * 部分中，选择一个备份。</block>
   <block id="775753d105c5c21b1080c5ea812205ff" category="list-text">在 * 选择磁盘 * 部分中，选择要连接的一个或多个磁盘以及要连接的位置（主磁盘或二级磁盘）。</block>
   <block id="0ccbe2c092fc378c75aa9ebb7bd7d5ab" category="paragraph">您可以更改筛选器以显示主位置和二级位置。</block>
-  <block id="2f80c7c6141a4d837c0d3b3d563d7ec1" category="list-text">单击 * 附加 * 。</block>
   <block id="c8d1e2af1ae3c89145fae7a06f3527d2" category="list-text">通过执行以下操作验证是否已连接虚拟磁盘：</block>
   <block id="a2851a7d67e43b5d48c04d6794eedea4" category="list-text">在 * 编辑设置 * 窗口中，展开每个硬盘的列表以查看磁盘文件列表。</block>
   <block id="d179ad7e63e6982bb3ee3c16224d9dd1" category="paragraph">编辑设置页面列出了虚拟机上的磁盘。您可以展开每个硬盘的详细信息以查看连接的虚拟磁盘列表。</block>
@@ -693,24 +649,13 @@
   <block id="2f0eb194a8b49da961163bd88957db1d" category="list-text">`sCBR.override` 配置文件</block>
   <block id="f04e1cf825b6adbdd02179d720a3d56e" category="doc">管理您的配置</block>
   <block id="67b9c02e71508024192e407aa7425aa2" category="section-title">修改备份的时区</block>
-  <block id="7e27210cce7cee1281fda6648cc20e60" category="list-text">单击顶部工具栏中的设置图标。</block>
-  <block id="b82ea8e02c2156c66f4aef98d37530e5" category="list-text">在 * 设置 * 页面的 * 日期和时间 * 部分中，单击 * 编辑 * 。</block>
-  <block id="55c42ae7d8ac9cb06faa6178ff1756f1" category="list-text">选择新时区并单击 * 保存 * 。</block>
   <block id="a64ef3b979aadef85700d66ece128c3c" category="paragraph">您可以修改适用于 VMware vSphere 的 SnapCenter 插件管理 GUI 的登录凭据。</block>
-  <block id="6b0833219b25cfb636dbf1df5a494408" category="list-text">在 * 设置 * 页面的 * 用户 * 部分中，单击 * 编辑 * 。</block>
-  <block id="a1f2721500bdca1919cccf8b7bd35250" category="list-text">输入新密码并单击 * 保存 * 。</block>
   <block id="00913a1f5999892e9e7489ab80e13c40" category="paragraph">可能需要几分钟才能恢复所有服务。</block>
   <block id="58a095d28f14349299e54bd7a6d4ee7f" category="paragraph">您可以修改在适用于 VMware vSphere 的 SnapCenter 插件中配置的 vCenter 登录凭据。插件使用这些设置访问 vCenter 。</block>
-  <block id="227bef74f33f1265145922d0fce4a983" category="list-text">在左侧导航窗格中，单击 * 配置 * 。</block>
-  <block id="c317117ae96d40cbc0da75810ffc4b64" category="list-text">在 * 配置 * 页面的 * vCenter * 部分中，单击 * 编辑 * 。</block>
-  <block id="a2290148c6c2289984364a0caea11e70" category="list-text">输入新密码，然后单击 * 保存 * 。</block>
   <block id="d9a651242a5b8ae831d8957f135ebd64" category="paragraph">请勿修改端口号。</block>
   <block id="d120dfcded58a5506ff23bf511e0f19f" category="section-title">修改网络设置</block>
   <block id="e7683ab9f61fe80a16f3111a33febbda" category="paragraph">您可以修改在适用于 VMware vSphere 的 SnapCenter 插件中配置的网络设置。插件使用这些设置访问 vCenter 。</block>
-  <block id="32e625127a9589134f64d90dac6cb7cd" category="paragraph">输入新信息并单击 * 保存 * 。</block>
   <block id="3c1620dc3cd833488e7cde6109b6d1bb" category="list-text">如果要删除网络设置，请执行以下操作：</block>
-  <block id="63abf295f097ef207b859912a9f5c590" category="list-text">IPv4 ：在 * IP Address* 字段中，输入 `0.0.0.0` ，然后单击 * 保存 * 。</block>
-  <block id="b24ed737f6ddf4dab1777258847520d0" category="list-text">IPv6 ：在 * IP Address* 字段中：输入 ` ： 0` ，然后单击 * 保存 * 。</block>
   <block id="bf13beedf7649b415532e33e9762784d" category="paragraph">指定适用于 VMware vSphere 的 SnapCenter 插件在子系统上完成子系统操作（联机磁盘和还原文件）时所监控的时间间隔（以秒为单位）。总等待时间由 `guestFileRestore.online.disk.timeout` 和 `guestFileRestore.restore.files.timeout` 设置。</block>
   <block id="ab42b9e9b4193a75fa82be2377e494fa" category="section-title">为适用于 VMware vSphere 的 SnapCenter 插件启用 SSH</block>
   <block id="fb8c4c80c42556fa8dabc6cab29bc009" category="list-text">从主菜单中选择菜单选项 *2 ） System Configuration* 。</block>
@@ -721,11 +666,9 @@
   <block id="09b43df06bca0a261e4635991d6c8575" category="doc">管理存储系统</block>
   <block id="8ed7e92fcf2560d9482aad3d9ec78236" category="section-title">修改 Storage VM</block>
   <block id="ba3b0a5636208104dc4a2ab975711734" category="admonition">如果您使用 SnapCenter 图形用户界面为基于应用程序的数据保护操作添加了 Storage VM ，则必须使用相同的图形用户界面来修改这些 Storage VM 。</block>
-  <block id="34941813fcfa40e1aedf056c332fda11" category="list-text">在 * 编辑存储系统 * 窗口中，输入新值，然后单击 * 更新 * 以应用更改。</block>
   <block id="70acabccfa2b6713b1a86d484632666b" category="section-title">删除 Storage VM</block>
   <block id="9511d611d059dad2cee26dd7b6fc4d5a" category="paragraph">您必须先卸载 Storage VM 中的所有数据存储库，然后才能删除此 Storage VM 。</block>
   <block id="bbef84b0a53276c7c512270e3dbf2029" category="paragraph">如果某个资源组的备份驻留在要删除的 Storage VM 上，则该资源组的后续备份将失败。</block>
-  <block id="a87f600185266e8baed2f9874a5a9772" category="list-text">在 * 存储系统 * 页面上，选择要删除的 Storage VM ，然后单击 * 删除 * 。</block>
   <block id="05cea8497a76531bc474fa00ba909484" category="doc">还原 MySQL 数据库的最新备份</block>
   <block id="e3b254eed8094c7d1beb3c3bd49d80d8" category="paragraph">您可以使用维护控制台还原适用于 VMware vSphere 的 SnapCenter 插件的 MySQL 数据库（也称为 NSM 数据库）的最新备份。</block>
   <block id="f227596490e0b5653d6abd8ec32d7ec1" category="list-text">打开维护控制台窗口。</block>
@@ -735,8 +678,6 @@
   <block id="7ea045d5f9f1f71a21d66023c045129c" category="paragraph">备份 MySQL 数据库将还原到其原始位置。</block>
   <block id="ecfc133fda25b37d408886c1a66ff36a" category="doc">从适用于 VMware vSphere 的 SnapCenter 插件 GUI 生成支持包</block>
   <block id="dd948d9992f365a6c0e9df64901d5d56" category="list-text">登录到适用于 VMware vSphere 的 SnapCenter 插件图形用户界面。</block>
-  <block id="7d1ff6975af13868750539374a2b5f49" category="list-text">在 * 设置 * 页面的 * 支持 * 部分中，单击 * 生成支持 * 包。</block>
-  <block id="97e8ab47b38e9948063b3c2295f24205" category="list-text">生成支持包后，单击提供的链接将此包下载到 NetApp 。</block>
   <block id="721796b1cb3468f0daf819180184d460" category="doc">基于角色的访问控制（ Role-Based Access Control ， RBAC ）</block>
   <block id="fc076765cbc4aef219c970ffdd93f443" category="section-title">主机要求</block>
   <block id="a7c99fa4270e567a328e88618380eaa4" category="paragraph">文件夹名称不应包含以下特殊字符： $ ！@ #%^ &amp; （） _+ ｛ ｝ ' ；， * ？ "&lt;&gt;</block>
@@ -815,15 +756,12 @@
   <block id="173e33abe439fc0d0f5e9ee8f5562d8e" category="doc">挂载备份</block>
   <block id="482372f5186290234c8109307262c7be" category="list-text">确保备用 ESXi 主机可以连接到存储</block>
   <block id="49f24ccdfcbcf169f269c90155c78746" category="paragraph">如果数据存储库所在的 FabricPool 存储层不可用，则挂载操作可能会失败。</block>
-  <block id="82f42c7fdb77aab3c0d3c6c04c6148de" category="list-text">在 * 挂载数据存储库 * 页面上，选择备份和备份位置（主或二级），然后单击 * 完成 * 。</block>
   <block id="18641fac10a89302c14853de671e8f34" category="list-text">可选：要验证是否已挂载数据存储库，请执行以下操作：</block>
-  <block id="3e67fbd13b6c5bc4e91e14df35bb4faf" category="list-text">单击工具栏中的 * 菜单 * ，然后从下拉列表中选择 * 存储 * 。</block>
   <block id="ec972bce7640d5d440d3549702031815" category="doc">管理资源组</block>
   <block id="5c6e1d830c6aa20cbea2393e562369b7" category="paragraph">您可以创建，修改和删除备份资源组，并对资源组执行备份操作。</block>
   <block id="55410cc294634878d1b4f9650ea5f30c" category="admonition">资源组在 Virtual Storage Console （ VSC ）中称为备份作业。</block>
   <block id="5f7ed1f226c86386e9dacf795c70c408" category="section-title">暂停和恢复对资源组的操作</block>
   <block id="48129b679d2c53338de87c9e4b3109b2" category="paragraph">您可以暂时禁止对资源组启动计划的操作。稍后，您可以根据需要启用这些操作。</block>
-  <block id="ea30754960d01cb1a62d6587ebb573e2" category="list-text">在确认框中，单击 * 确定 * 进行确认。</block>
   <block id="ebc6fd207253a9937a91421caf66ef04" category="paragraph">在资源组页面上，已暂停资源的作业状态为 `unle_Maintenance` 。您可能需要滚动到表的右侧才能查看作业状态列。</block>
   <block id="ceb1d43290e660f3a229e77ca6a6e67c" category="paragraph">恢复备份操作后，作业状态将更改为 `生产` 。</block>
   <block id="86f5d700774abd1b4b1161e6afcd312e" category="section-title">修改资源组</block>
@@ -831,12 +769,8 @@
   <block id="683a572529e7ee01c3f3b2f6e84ee453" category="paragraph">如果要修改资源组的名称，请勿在 VM ，数据存储库，策略，备份或资源组名称中使用以下特殊字符：</block>
   <block id="bf6bb853aafb837a490acb97d9acbf87" category="paragraph">% 和 * $ # @ ！\ / ： * ？" &lt; &gt;-| ； " ，。</block>
   <block id="a051f3eeac4a83ec1f5d55c7aeba6f06" category="paragraph">允许使用下划线字符（ _ ）。</block>
-  <block id="bc967eed1e1f8494f71a02de0d06a1ba" category="list-text">在 * 编辑资源组 * 向导的左侧列表中，单击要修改的类别并输入所做的更改。</block>
-  <block id="cb0503d668bf3e03dd4da3d424936f20" category="list-text">单击 * 下一步 * ，直到显示摘要页面，然后单击 * 完成 * 。</block>
   <block id="ad9a47e46e4ad7c3e60285f394572957" category="section-title">删除资源组</block>
   <block id="16b1a35ba7401a13d918126c70a9b4e4" category="paragraph">如果您不再需要保护 vCenter 中的资源，则可以删除该资源组。在从 vCenter 中删除适用于 VMware vSphere 的 SnapCenter 插件之前，必须确保删除所有资源组。</block>
-  <block id="689c8a8dce8d8ad4077d2a59cced9fda" category="list-text">在 * 删除资源组 * 确认框中，单击 * 确定 * 进行确认。</block>
-  <block id="b1e9e42ee09ce6ea661a7c8aa97f209c" category="list-text">在 * 选择 OVF 模板 * 页面上，指定 ` .ova` 文件的位置（如下表所示），然后单击 * 下一步 * 。</block>
   <block id="6033b46c80eba511ea24319b744fe51a" category="cell">在此向导页面上…</block>
   <block id="2de89f426cb40a40a73e0dc57ba1d0b0" category="cell">选择名称和文件夹</block>
   <block id="62e55ff28b155b578c5083d0d1bde52d" category="cell">输入虚拟机或 vApp 的唯一名称，然后选择部署位置。</block>
@@ -852,10 +786,7 @@
   <block id="ac072e04e003db352f1a51a7bc9b9b18" category="cell">选择一个源网络并将其映射到一个目标网络。</block>
   <block id="47d44ed4727a9bed10ad17773b1b922e" category="cell">自定义模板</block>
   <block id="e0bc55081d1f53a4d0589d96fbc8c57c" category="cell">准备完成</block>
-  <block id="ca71a8ec60f9c7b8aa07dbd317919f87" category="cell">查看此页面，然后单击 * 完成 * 。</block>
-  <block id="05f682de80179c0aadcfd997d1abae48" category="list-text">登录到 vCenter HTML5 客户端，然后单击工具栏中的 * 菜单 * ，然后选择 * 适用于 VMware vSphere 的 SnapCenter 插件 *</block>
   <block id="ac36de8058d77452b8ef42af1bdcdbea" category="doc">查看状态信息</block>
-  <block id="68e34ecd3d8c4f14cf216f7488191f5a" category="list-text">查看概述状态信息或单击链接以查看更多详细信息，如下表所示。</block>
   <block id="17e247c4b37c5b35b9bbd2ca94ace88a" category="cell">此信息板图块…</block>
   <block id="55994322f040ea24c55d069129729fa1" category="cell">显示以下信息…</block>
   <block id="97e5d93de418540c4c7c4acf36353718" category="paragraph">最近的作业活动</block>
@@ -870,9 +801,6 @@
   <block id="bcabdeee08dde31f4ff80e26f3556805" category="cell">查看… 的备份</block>
   <block id="38202e8729f0d79500aed84b77347e1b" category="cell">执行以下操作…</block>
   <block id="d3d9fdef0e91fc4aba18e57475fd74ea" category="cell">虚拟机</block>
-  <block id="10ca4c803b99638c7eb9454d79d6dd42" category="cell">单击 * 主机和集群 * 菜单选项，选择一个 VM ，然后单击 * 配置 * 选项卡，然后单击 * 适用于 VMware vSphere 的 SnapCenter 插件 * 部分中的 * 备份 * 。</block>
-  <block id="26f2d3de7c854e5b54cf332505d77cce" category="cell">单击 * 存储 * 菜单选项，选择一个数据存储库，然后单击 * 配置 * 选项卡，然后单击 * 适用于 VMware vSphere 的 SnapCenter 插件 * 部分中的 * 备份 * 。</block>
-  <block id="569b4ad91428d120f380fb5d92288931" category="list-text">在 * 还原 * 向导中，输入搜索名称并单击 * 搜索 * 。</block>
   <block id="fa82b0b99da0e46e629baf5081d8fee2" category="doc">所需的最小 ONTAP 权限</block>
   <block id="04a9cf8066f01cc2ca9e6a6e6b25a340" category="paragraph">所需的最小 ONTAP 权限因用于数据保护的 SnapCenter 插件而异。</block>
   <block id="7b0ca130fab8e69f326a92b2555e1195" category="paragraph">所有 SnapCenter 插件都需要以下最低权限。</block>
@@ -894,8 +822,6 @@
   <block id="1e2028a623e51fec3d186608663f4540" category="doc">设置代理 VM 以执行还原操作</block>
   <block id="3ea1027d3f48da653af6e3aa5536c419" category="paragraph">如果要使用代理 VM 连接虚拟磁盘以执行子系统文件还原操作，则必须在开始还原操作之前设置代理 VM 。虽然您可以随时设置代理 VM ，但在插件部署完成后立即设置它可能会更方便。</block>
   <block id="32db052b8c292805cf874ce498dbc022" category="paragraph">" 运行方式 " 凭据必须是 Windows 提供的默认域管理员或内置本地管理员。工作组用户可以使用内置的本地管理员帐户。</block>
-  <block id="a490d42fb7b208243371e6a2e42eb8af" category="list-text">在 * 代理凭据 * 部分中，单击 * 添加 * 以添加要用作代理的 VM 。</block>
-  <block id="536288ec9af487e2c4a7159fefd29fc9" category="list-text">在 * 代理虚拟机 * 对话框中，填写相关信息，然后单击 * 保存 * 。</block>
   <block id="da80c1dd44bd93481d651dc5c342754c" category="doc">如何为适用于 VMware vSphere 的 SnapCenter 插件配置 ONTAP RBAC</block>
   <block id="c5a03c7c060427875c6895edf012449d" category="list-text">创建一个角色。</block>
   <block id="149b50c248d73339ff7c20b3d9507dc8" category="list-text">在 ONTAP 中为此角色创建用户名和密码（存储系统凭据）。</block>
@@ -978,11 +904,9 @@
   <block id="d29d1dc03e0823975f46be5259a9780c" category="cell">包括具有独立磁盘的数据存储库</block>
   <block id="495ad64d2a6a40cfac27d689d4edd34b" category="cell">选中此框可在备份中包含包含临时数据的任何具有独立磁盘的数据存储库。</block>
   <block id="a83f1ca5ad00b39773d9e6a26b0e70b2" category="cell">脚本</block>
-  <block id="5289185cda6b3fc469161fc0d841232d" category="list-text">单击 * 添加。 *</block>
   <block id="0e966e38f37db4fe0a9b1d6f014e044c" category="paragraph">您可以通过在策略页面中选择策略来验证是否已创建策略并查看策略配置。</block>
   <block id="a02ede43aaa42f2a26c5541e91dcb505" category="doc">将多个 VM 和数据存储库添加到一个资源组</block>
   <block id="975652e8f125ca81c2e1b1c65ac8b2c9" category="paragraph">您可以添加 SAN 和 NAS 数据存储库，但不能添加 VSAN 或 VVol 数据存储库。</block>
-  <block id="ccdaf65f600f0c505b15315d8df78297" category="paragraph">默认情况下，可用实体列表显示 Datacenter 对象。您可以单击某个数据存储库以查看该数据存储库中的 VM 并将其添加到资源组中。</block>
   <block id="a7bc6073f1cfb01ebf8ceadae0d43b14" category="inline-link-macro">管理兼容性检查失败</block>
   <block id="bea0ca05b5e1fc971afeba63c277ff99" category="list-text">对要添加的每个 VM 或数据存储库重复步骤 2 。</block>
   <block id="4266f89cea2ffb125829b9bf00b31a59" category="doc">用于挂载和卸载数据存储库的 REST API 工作流</block>
@@ -1052,7 +976,6 @@
   <block id="7b8b1a9a67a203282713e5b5002f77d4" category="doc">延长子系统文件还原会话的时间</block>
   <block id="01823f78f13ea58a21539f8be54541e0" category="paragraph">默认情况下，连接的子文件还原 VMDK 可在 24 小时内使用，然后它会自动断开连接。您可以在 * 子系统配置 * 页面中延长此时间。</block>
   <block id="27144775462c760fbd9654eed5365006" category="paragraph">如果您稍后要从连接的 VMDK 还原其他文件或文件夹，则可能需要延长子系统文件还原会话。但是，由于子系统文件还原会话占用大量资源，因此只能偶尔延长会话时间。</block>
-  <block id="603547b05e5b88111ffe2fad9e1f7a7b" category="list-text">选择子系统文件还原会话，然后单击子系统会话监控器标题栏中的扩展选定子系统会话图标。</block>
   <block id="a4afedd11ba623efd60c952a1f1b8270" category="paragraph">会话将再延长 24 小时。</block>
   <block id="4ac99111b06883d38d3c676af082b7dd" category="list-text">在属性选项的值列中选择 * 内容 * ，然后在下一屏幕的值列中选择 * 扩展管理器 * 以显示注册的扩展列表。</block>
   <block id="52fb0b971147f2d50f41f8affa7cbf5e" category="list-text">备份单个资源</block>
@@ -1087,7 +1010,6 @@
   <block id="9c5b7358395094126cc2831e0ded69a9" category="cell">新策略</block>
   <block id="f756ba31a99a4185d9ca1e432a20a83f" category="paragraph">在链接模式下，此列表包含所有链接 vCenter 中的策略。您必须选择与资源组位于同一 vCenter 上的策略。</block>
   <block id="5049311e411f306df5ef01765b9dc8ec" category="list-text">在 * 计划 * 页面上，为每个选定策略配置备份计划。</block>
-  <block id="c32889f5fe21a50841ec14f3184ac30b" category="paragraph">单击 * 完成 * 后，新资源组将添加到资源组列表中。</block>
   <block id="2ff2dc58f2ec2635705f09ff662f69ce" category="admonition">如果备份中任何 VM 的暂停操作失败，则备份将标记为不是 VM 一致，即使选定策略已选择 VM 一致性也是如此。在这种情况下，某些虚拟机可能已成功暂停。</block>
   <block id="cf1527bd9ad516f4468aa9b7475269a6" category="paragraph">在尝试创建资源组时， SnapCenter 会执行兼容性检查。</block>
   <block id="89998c90c88ae3437d33fb3de7d2214a" category="paragraph">不兼容的原因可能是：</block>
@@ -1103,22 +1025,14 @@
   <block id="015b635404a717ebcfa72500098a5d70" category="paragraph">如果您使用的是适用于 VMware vSphere 的 SnapCenter 插件虚拟设备，则可以升级到更高版本。</block>
   <block id="331b48aba7178950c3dc14c31a21f9c0" category="section-title">从适用于 VMware vSphere 的 SnapCenter 插件的早期版本升级</block>
   <block id="5550f9423496c2c9ab880e725d34e0e5" category="admonition">在开始升级之前，请备份适用于 VMware vSphere 的 SnapCenter 插件 OVA 。</block>
-  <block id="5a592b098bb4ff9afd0933fb55dbd6a6" category="list-text">单击左侧导航窗格中的 * 配置 * ，然后单击插件详细信息部分中的 * 服务 * 选项以禁用此插件。</block>
   <block id="47ad474a6a92b78b6ce74b61fe8b6bbb" category="list-text">下载升级 ` .iso` 文件。</block>
   <block id="b41450a0b1e390fd09941d73050688f9" category="list-text">登录到 NetApp 支持站点。 <block ref="5a6885c3943ab3435f9bf287b1025062" category="inline-link-rx"></block>。</block>
   <block id="7dfb2dcb3c7621537351eac0e0c6d1af" category="list-text">将适用于 VMware vSphere 的 SnapCenter 插件升级 ` .iso` 文件下载到任意位置。</block>
-  <block id="631f7a55ba587cf28cc9704e056a8268" category="list-text">在选定数据存储库的 * 文件 * 选项卡上，单击列表中的任何文件夹，然后单击 * 上传文件 * 。</block>
-  <block id="676af74d42b5995bafca42439f8636c2" category="list-text">在上传弹出屏幕上，导航到下载 ` .iso` 文件的位置，然后单击 ` .iso` 文件映像，然后单击 * 打开 * 。此文件将上传到数据存储库。</block>
-  <block id="04013b162f2255bf56495f81a626a58d" category="list-text">导航回要升级的虚拟机，然后单击 * 摘要 * 选项卡。在 * 虚拟机硬件 * 窗格的 CD/DVD 字段中，此值应为 " 已断开连接 " 。</block>
   <block id="ebf9f38f50130a70990face9a5c161e5" category="list-text">在 Datastores 列中，选择您上传了 ` .iso` 文件的数据存储库。</block>
-  <block id="bded2e9e7d05afa125da2349004527d3" category="list-text">在目录列中，导航到您上传的 ` .iso` 文件，确保在文件类型字段中选择了 "ISO image" ，然后单击 * 确定 * 。请等待此字段显示 " 已连接 " 状态。</block>
-  <block id="5fea1438d24805d16252f31901b003c8" category="list-text">访问虚拟设备的 * 摘要 * 选项卡登录到维护控制台，然后单击绿色运行箭头以启动维护控制台。</block>
   <block id="020a36deb114af1bb518c70d5975e940" category="doc">创建资源组</block>
   <block id="d4a6978acacfefd87687ddcaa390823d" category="paragraph">备份按照为资源组配置的备份策略中的指定执行。</block>
   <block id="824107dbad8e3882e5944fdc7db863f5" category="doc">将单个虚拟机或数据存储库添加到资源组</block>
   <block id="637c74025d9d0e63eef84433b19400e3" category="paragraph">系统会首先检查 SnapCenter 是否管理选定虚拟机所在的存储系统并与该存储系统兼容，然后显示 * 添加到资源组 * 页面。如果显示消息 SnapCenter 兼容性错误` ，则选定虚拟机与 SnapCenter 不兼容，您必须先将相应的 Storage VM 添加到 SnapCenter 。</block>
-  <block id="9c79945a4d74c408a6c29ef69b1e18a8" category="list-text">在 * 添加到资源组 * 页面中，选择一个资源组，然后单击 * 确定 * 。</block>
-  <block id="289dd1d46bc09a4c09ae4f67d3725336" category="paragraph">单击 * 确定 * 时，系统会首先检查 SnapCenter 是否管理选定虚拟机或数据存储库所在的存储并与其兼容。</block>
   <block id="9668b00eae1748d51afb7f725a15301a" category="inline-link">知识库文章：如何创建和 / 或将 SSL 证书导入到适用于 VMware vSphere 的 SnapCenter 插件</block>
   <block id="569d193265bd4e5af2a3a29cd05c7d81" category="doc">REST API ，用于将停滞的作业标记为失败</block>
   <block id="1917b3cb33196b41c9c0f973ac50e07f" category="paragraph">使用作业部分中的以下 REST API 将停留在运行状态的作业更改为失败状态：</block>
@@ -1141,7 +1055,6 @@
   <block id="a3d53cfe9124531cb5f9bbfefe704326" category="sidebar">用于修改内置计划的 REST API 工作流</block>
   <block id="3da6944b1baaec4beb70694ac307fd1f" category="sidebar">升级到同一版本的新修补程序</block>
   <block id="8c1fdca1d8c0cd47a5190895b6695a25" category="list-text">在 * 作为凭据运行 * 对话框中，输入凭据。对于用户名，必须输入 " 管理员 " 。</block>
-  <block id="c2b926872850e499819e1c163bfb05f6" category="list-text">单击 * 选择 VM* ，然后在 * 代理 VM* 对话框中选择一个 VM 。单击 * 保存 * 以返回到 * 作为凭据运行 * 对话框。选择应用于对凭据进行身份验证的虚拟机。</block>
   <block id="e36d05bda5912440690ef51e7379f3eb" category="summary">快速入门文档提供了一组简要说明，用于部署适用于 VMware vSphere 的 SnapCenter 插件虚拟设备以及启用适用于 VMware vSphere 的 SnapCenter 插件。本说明适用于尚未安装 SnapCenter 且仅希望保护 VM 和数据存储库的客户。</block>
   <block id="d1257248e27e169a0d30f3447b5719bb" category="paragraph">`Attach VMDK` 将指定的 VMDK 连接到原始虚拟机。传递步骤 2 中的 * 备份 Id* 和步骤 1 中的 * moref* 。将步骤 3 中的 * vmdkLocationsList* 传递到 * vmdkLocations* 属性。</block>
   <block id="24e035693af4accba4a0ced0ca4f33d4" category="admonition">要将 VMDK 连接到其他虚拟机，请在 alternateVmMoref 属性中传递目标虚拟机的 moref 。</block>
@@ -1183,16 +1096,12 @@
   <block id="8758eb3a255efe6f58966e7aa99c668c" category="paragraph">在 * 注册到现有 vCenter * 中，输入 vCenter 凭据。在 * 创建适用于 VMware vSphere 的 SnapCenter 插件凭据 * 中，输入适用于 VMware vSphere 的 SnapCenter 插件凭据。</block>
   <block id="9406005cdd4e477521fef1d01f0b607f" category="admonition">记下您指定的用户名和密码。如果要稍后修改适用于 VMware vSphere 的 SnapCenter 插件配置，则需要使用这些凭据。</block>
   <block id="11cb316613261228e053ee2d9bb8189b" category="paragraph">最近三到五个备份，还原和挂载作业。</block>
-  <block id="13e9f1a7a5d0862f0b810aecb163d1e6" category="list-text">单击作业 ID 可查看有关该作业的更多详细信息。</block>
-  <block id="37344e629a37dc7f7bb66a9abb0af323" category="list-text">单击 * 查看全部 * 转到作业监控选项卡，了解有关所有作业的更多详细信息。</block>
   <block id="fa9bbf8059aa0fec45f4a49ea0b894ae" category="paragraph">选定时间窗口内主虚拟机和二级虚拟机或数据存储库的数据保护状态摘要。</block>
-  <block id="857078b2c455bf6dacb50f057dbe162f" category="list-text">单击下拉菜单以选择 * 虚拟机 * 或 * 数据存储库 * 。</block>
   <block id="75f90da62852e56efdfb58f23a5a6b41" category="list-text">对于二级存储，请选择 * SnapVault * 或 * SnapMirror * 。</block>
   <block id="f8ba147e83a03f05e3419dac65404386" category="list-text">将光标悬停在图表的某个部分上，可查看该类别中的 VM 或数据存储库数量。在成功类别中，列出了每个资源的最新备份。</block>
   <block id="101dda55a0fde1c59266190ffaf36f03" category="list-text">每个主备份或二级备份之后都会更新内部计数器。信息板磁贴每六小时刷新一次。无法更改刷新时间。注意：如果使用镜像 - 存储保护策略，则保护摘要的计数器将显示在 SnapVault 摘要图表中，而不是 SnapMirror 图表中。</block>
   <block id="5f5ba9130776790de2145fb2332ae6d9" category="paragraph">将光标悬停在图表上的一行上可查看详细的每日结果。</block>
   <block id="a9a75ce6f1fddd6aa36cbdc142ed45a4" category="list-text">在 * 作为凭据运行 * 对话框中，输入凭据。</block>
-  <block id="c5253962ed307cde16ad27589ddd8bd4" category="list-text">单击 * 选择 VM* ，然后在 * 代理 VM* 对话框中选择一个 VM 。单击 * 保存 * 以返回到 * 作为凭据运行 * 对话框。</block>
   <block id="d3f4b118b6fda39f8c977a35b6fbc3e7" category="list-text">输入凭据。对于用户名，必须输入 " 管理员 " 。</block>
   <block id="421829fbd339504809d87be62b8dd3b1" category="summary">发行说明提供了有关此版本的适用于 VMware vSphere 的 SnapCenter 插件的重要信息，包括许可要求，已知问题，注意事项，限制， 以及任何文档更新或更正。</block>
   <block id="a7352564cfc3174fc18763ada4c4e33e" category="paragraph">选择此选项可在与主备份卷具有 SnapMirror 关系的另一个卷上创建备份集的镜像副本。如果卷配置了镜像 - 存储关系，则如果要将备份复制到镜像 - 存储目标，则只能选择 * 备份后更新 SnapVault * 选项。</block>
@@ -1223,8 +1132,6 @@
   <block id="5d113f2038d289f391614c39043629e8" category="cell">范围</block>
   <block id="615707baa418ce315e44ac2a5d6164af" category="cell">数据中心</block>
   <block id="4c928d1c171b7d62d8f758ffa689710f" category="cell">可用实体</block>
-  <block id="0ae7bb79645eeb5721a499d2799dbf70" category="cell">选择要保护的资源，然后单击 * &gt; * 将所选内容移动到 " 选定实体 " 列表。</block>
-  <block id="749435efb6e9940bcadad406e3a36d76" category="paragraph">单击 * 下一步 * 时，系统会首先检查 SnapCenter 是否管理选定资源所在的存储并与其兼容。</block>
   <block id="731942548689f6a5287491346edb98a1" category="paragraph">FlexGroup 和 VVOL 数据存储库不支持跨接 VM 。</block>
   <block id="381ccd52bbe70b77caebf5b7721bc854" category="paragraph"><block ref="a1b611f7f1d7d8197cb1d43fb49ccfda" category="inline-link-macro-rx"></block>。</block>
   <block id="647d788e610e73ba524ca460bf9fe8c0" category="paragraph">要更正上述任一问题，请执行以下操作：</block>
@@ -1383,17 +1290,13 @@
   <block id="c85c932c9dd62ac289f58ffb5aa66d1b" category="paragraph">在VMware vCenter 7.0.3及更高版本中、通过Entrustly证书签名的OVA不再受信任。要解析此问题描述 、您需要执行以下操作步骤。</block>
   <block id="59252255a28a0d28afa2a95348168088" category="list-text">使用vSphere Client登录到vCenter Server。</block>
   <block id="528f0780194324480a4187dad141c85d" category="list-text">导航到*管理&gt;证书&gt;证书管理*。</block>
-  <block id="b1bcaa81b81c053b721cbd033a896d89" category="list-text">在*可信根存储*旁边、单击*添加*</block>
   <block id="08c55988cc414be1387c0fb3e1c5b08f" category="list-text">浏览并选择Entrust. root和Intermediate证书的位置。证书将添加到*可信根证书*下的面板中。安装证书后、可以验证并部署OVA。</block>
   <block id="3db8472100b0070fdc22a4aeaaf7de57" category="admonition">如果下载的OVA未被篡改、则*发布者*列将显示*可信证书*。</block>
-  <block id="f55f8ebb533c227261fdd36d760dbae3" category="list-text">在VMware vSphere客户端图形用户界面中、单击工具栏中的*菜单*、然后从下拉列表中选择*虚拟机和模板*。</block>
   <block id="fb8bd58cdb7ac31c3811b2fe027bffa6" category="list-text">您必须已下载适用于VMware vSphere的SnapCenter 插件.tar文件。</block>
   <block id="1d64e062aa9b27dfa30eef1596250248" category="list-text">您必须具有vCenter Server实例的登录身份验证详细信息。</block>
   <block id="e17b96bbe7517cc19e507278493adec4" category="inline-link">存储证书管理</block>
   <block id="4ac856ec3b3bf79b5253ad31fba9ff73" category="list-text">解压缩包含.ova文件的.tar文件到本地系统。在*选择OVF模板*页面上、指定的位置<block ref="8d8b01a4d628953e7a2225813c8edb3f" prefix=" " category="inline-code"></block> 已提取.tar文件夹中的文件。</block>
-  <block id="5a378b18f7bf0c4cabc6c655cd2f535e" category="list-text">单击 * 下一步 * 。</block>
   <block id="31591abf36a652a46358b5bdff318135" category="paragraph">此步骤指定导入位置<block ref="58963a595c988dc6f693cb3238dc907a" prefix=" " category="inline-code"></block> 文件到vCenter中。虚拟机的默认名称与选定的名称相同<block ref="8d8b01a4d628953e7a2225813c8edb3f" prefix=" " category="inline-code"></block> 文件如果更改了默认名称，请在每个 vCenter Server VM 文件夹中选择一个唯一的名称。</block>
-  <block id="16968b47795e306884c69e20183f8679" category="list-text">在*查看详细信息*页面上、验证<block ref="58963a595c988dc6f693cb3238dc907a" prefix=" " category="inline-code"></block> 模板详细信息、然后单击*下一步*。</block>
   <block id="61a8dab3f6aedb51e104e8b3324b04ea" category="list-text">输入maint用户的凭据。</block>
   <block id="26dc1678973cf898baa325abda96cb6d" category="paragraph">使用VMware vSphere客户端添加存储。</block>
   <block id="fef1c0adcbd39f7cb971d3e78b3179af" category="cell">身份验证方法</block>
@@ -1411,7 +1314,6 @@
   <block id="596e6d7cbb1dd1b33baf91e428660d8d" category="doc">下载Open Virtual Appliance (OVA)</block>
   <block id="c7e2e09f64e2a53698b257f855376266" category="list-text">下载适用于VMware的SnapCenter 插件：</block>
   <block id="4fd72c7ebfbc30f421db6702d20db942" category="list-text">下载适用于VMware vSphere的SnapCenter 插件<block ref="58963a595c988dc6f693cb3238dc907a" prefix=" " category="inline-code"></block> 文件到任何位置。</block>
-  <block id="be3ce368fecf9f27a084a64a731dcb40" category="list-text">在VMware vSphere客户端中、单击*子文件还原*。</block>
   <block id="21a2a6efe53ed1369868aa991298fb0e" category="summary">使用VMware vSphere客户端执行任何数据保护操作后、您可以从信息板中的作业监控选项卡监控作业状态并查看作业详细信息。</block>
   <block id="0090445899b9588f3e6305ac90b57e7b" category="inline-link">知识库文章：SnapCenter vSphere客户端信息板不显示作业</block>
   <block id="0b0fec51c8941dd7a53b5aae81f177ae" category="summary">您可以在vSphere客户端信息板上查看状态信息。状态信息每小时更新一次。</block>
@@ -1479,10 +1381,8 @@
   <block id="1bc9f12f6880b669c7af57f1225a3f57" category="summary">tar文件包括OVA、这是一组用于VM和数据存储库数据保护的微服务以及证书文件。</block>
   <block id="b31c78ab5b83bcac7128765c2a187ab8" category="summary">部署适用于VMware vSphere的SnapCenter 插件后、它会在vCenter上安装VMware vSphere客户端、此客户端会与其他vSphere客户端一起显示在vCenter屏幕上。</block>
   <block id="03b562a7f77490de6d5fdbcc91ed357a" category="doc">登录到SnapCenter VMware vSphere客户端</block>
-  <block id="82bfbc41da3f78208980b95480356279" category="list-text">在* VMware vSphere Client*页面上、单击工具栏中的菜单、然后选择*适用于VMware vSphere的SnapCenter 插件*。</block>
   <block id="ddad3ed39c11da21249f852ea88d160e" category="list-text">如果您希望进行VM一致的备份、则必须安装并运行VMware工具。需要使用VMware工具来暂停VM。VVOL VM 不支持 VM 一致的备份。</block>
   <block id="637f9e5cc0956a7a76dc0a24cefff651" category="paragraph">如果您使用的是适用于 VMware vSphere 的 SnapCenter 插件虚拟设备，则可以升级到更高版本。升级过程将取消注册现有插件、并部署一个仅与vSphere 7.0U1及更高版本兼容的插件。</block>
-  <block id="23281bdadc9c1bd0708c32ac888b35a9" category="list-text">在vCenter图形用户界面上、单击* vSphere Client (HTML)*。</block>
   <block id="b4739ccaeec10b1a2794ad9d017952c1" category="cell">SnapCenter vSphere客户端图形用户界面</block>
   <block id="b6618107278d92d54e80b1f930a98a14" category="paragraph">对于VM一致的备份和还原操作、您必须使用VMware vSphere客户端GUI。虽然可以使用 VMware 工具执行某些操作，例如挂载或重命名数据存储库，但这些操作不会注册到 SnapCenter 存储库中，并且无法识别。</block>
   <block id="0732e8e379c23dc5fb5e0055374a7f1d" category="summary">如果SnapCenter VMware vSphere客户端行为不正确、您可能需要清除浏览器缓存。如果问题仍然存在，请重新启动 Web 客户端服务。</block>
@@ -1496,7 +1396,6 @@
   <block id="90b174b4907cf39ccf32b9d4a8c1f631" category="paragraph">此选项将使用在vCenter中设置VMware vSphere客户端时配置的电子邮件设置。</block>
   <block id="a5bc2dcdf45e4e981e8c5477447aa605" category="list-text">登录到* VMware vCenter单点登录页面*。</block>
   <block id="d79bec3408f76d1eefc90b767b93cabf" category="summary">您可以使用SnapCenter VMware vSphere客户端的编辑资源组向导向现有资源组添加多个资源。</block>
-  <block id="fbfbbb98438908f6278b91f3e912dd4f" category="list-text">在VMware vSphere客户端图形用户界面中、单击工具栏中的*菜单*、然后从下拉列表中选择*主机和集群*。</block>
   <block id="3ec87b09fd664417b12e12d452b57325" category="paragraph">您可以在vCenter中使用VMware vSphere客户端GUI执行VMware虚拟机(传统VM和VVol VM)、VMDK和数据存储库的所有备份和还原操作。对于 VVol 虚拟机（ VVol 数据存储库中的虚拟机），仅支持崩溃状态一致的备份。您还可以还原 VM 和 VMDK 以及还原子操作系统上的文件和文件夹。</block>
   <block id="ab9f567063d45a42b5368e31b1fa1ee5" category="paragraph">您可以使用ONTAP 工具在ONTAP 和VMware Web Client中为VVOL配置和配置存储。</block>
   <block id="c9424bce718e9e3deaedf0943d2692ad" category="summary">要使用适用于VMware vSphere的SnapCenter 插件REST API修改VMware vSphere客户端作业的内置计划、您必须遵循规定的REST API调用顺序。</block>
@@ -1504,7 +1403,6 @@
   <block id="bb61ce9732135b170d9459970083b29f" category="list-text">登录到VMware vSphere客户端。</block>
   <block id="36139d788258b0f7f760e90a7e475cfb" category="list-text">必须安装并运行VMware工具。</block>
   <block id="7a6f0192e4916d4a7238add9c2d4e982" category="paragraph">SnapCenter 使用VMware工具中的信息与VMware子操作系统建立连接。</block>
-  <block id="48e30f31b43c0ce0d7b2ae5cff7665bc" category="list-text">在VMware vSphere客户端图形用户界面中、单击工具栏中的*菜单*、然后执行以下操作之一：</block>
   <block id="36e391315954a298b55333c0f1afcc71" category="paragraph">按照以下步骤创建资源组。</block>
   <block id="6a03edb8ab46dff4278e3f5e0e5ebe46" category="list-text">对于VMware vCenter 7.0.3及更高版本、请按照中的步骤进行操作 <block ref="205a43536d4d7a501f66e7fd657c91ca" category="inline-link-macro-rx"></block> 将证书导入到vCenter。</block>
   <block id="8775bf884912200ed43fd5a867b909a3" category="cell">* 权限 *</block>
@@ -1536,10 +1434,8 @@
   <block id="0a631d60b99e22182e8049161c23edfe" category="paragraph">按照本节中的步骤添加存储。</block>
   <block id="6c8295efcbb45c1c61f419f14cc9f532" category="list-text">在导航窗格中、右键单击作为虚拟机有效父对象的任何清单对象、例如数据中心、文件夹、集群或主机、然后选择*部署OVF模板*以启动VMware Deploy向导。</block>
   <block id="f255f4f27e0913e5d5174c3d34b1d8f3" category="paragraph">使用SnapCenter VMware vSphere客户端编辑资源组向导、您可以向现有资源组添加多个资源。</block>
-  <block id="d30ddc592feb0dde8f46df8a0df75b4e" category="list-text">在 Available entities 列表中，选择要添加到资源组的一个或多个 VM 或数据存储库，然后单击 * &gt; * 将所选内容移动到 Selected entities 列表。单击*&gt;*以移动所有可用实体。</block>
   <block id="6efed6170121e24d6d2c5c3bb72aa2ab" category="paragraph">您可以使用适用于VMware vSphere的SnapCenter 插件维护控制台管理应用程序、系统和网络配置。您可以更改管理员密码，维护密码，生成支持包以及启动远程诊断。</block>
   <block id="f7fa43f6dd6c15d238137979bfafde96" category="list-text">提取tar文件的内容。tar文件包含OVA和certs文件夹。certs文件夹包含Entrust. root和Intermediate证书。</block>
-  <block id="b21ad1c65300475e78e89ff6b13d3bf5" category="list-text">在*可信根证书*旁边、单击*添加*</block>
   <block id="7a6d925c9840475f937eee242a023561" category="list-text">转到_certs_文件夹。</block>
   <block id="d93a23c4b41c8a9962980d34d8ebb285" category="list-text">选择Entrustroot和Intermediate证书。</block>
   <block id="28f971e28dfc95cd1f45e3f3e43cb5ae" category="list-text">一次安装一个证书。</block>
@@ -1552,7 +1448,6 @@
   <block id="bac80dc0b6b539e2676fb6e2f1e66985" category="inline-image-macro">维护控制台窗口</block>
   <block id="b6b7c58249919c09c14b897be2947b59" category="paragraph"><block ref="b6b7c58249919c09c14b897be2947b59" category="inline-image-macro-rx" type="image"></block></block>
   <block id="babb657a1390e215cc6322a94325a49a" category="paragraph">选择筛选器图标以修改要包含在报告中的时间范围、作业状态类型、资源组和策略。</block>
-  <block id="e56f6654e80f4662afbca93ea23b2214" category="paragraph">您也可以单击下载图标以下载插件日志。</block>
   <block id="44040e214e919d86d6a1f3f26db3d22c" category="inline-image-macro">编辑图标</block>
   <block id="5f6ae733d2ed961dcd2c41c04be8a70d" category="paragraph"><block ref="5f6ae733d2ed961dcd2c41c04be8a70d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d6d90000405f5209bdfcbf03157cf4e4" category="paragraph">要登录到适用于 VMware vSphere 的 SnapCenter 插件管理 GUI ，您必须知道 IP 地址和登录凭据。您还必须记下从维护控制台生成的MFA令牌。</block>
@@ -1568,7 +1463,6 @@
   <block id="7dec9dcf8e38ded3e0697c5adf28b03d" category="inline-image-macro">播放图标</block>
   <block id="b8d4db09e92c4240560d6aaddccf4b16" category="paragraph">您必须知道适用于 VMware vSphere 的 SnapCenter 插件管理 GUI 的 IP 地址和登录凭据。您还必须记下从维护控制台生成的MFA令牌。</block>
   <block id="624b86ee772b09351048910fc4a730dc" category="section-title">部署后需要执行的操作</block>
-  <block id="0a64db99826a9ea7c2e6f2908b06dabd" category="list-text">在左侧导航窗格中，单击*Settings*，然后单击*凭 据*选项卡，然后选择*Add*以添加虚拟设备的凭据。</block>
   <block id="524697e11df05ccf97f0b0b414be0f9c" category="inline-image-macro">维护控制台窗口</block>
   <block id="830a296b46e858a56418113e07e9dfe7" category="paragraph"><block ref="830a296b46e858a56418113e07e9dfe7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="603cbed8f7baa50983a476190f811eb7" category="paragraph">重新启动虚拟机
@@ -1597,7 +1491,6 @@
   <block id="70ec0ae10bd552d994ce750505a0555a" category="list-text">系统日志服务器端口</block>
   <block id="1c9618412e023b37c69bd89815412cb8" category="list-text">RFC格式</block>
   <block id="3e32e3fb1da076fdb652714d88c86082" category="list-text">系统日志服务器证书</block>
-  <block id="073a08c9b2f5d521c447ac2e98d7b83d" category="list-text">单击*保存*以保存系统日志服务器设置。</block>
   <block id="a2129fc13872e21499db7ac1478e260c" category="section-title">更改审核日志设置</block>
   <block id="3b7005e3de4bc668f924c18bad55b3b2" category="paragraph">您可以更改日志设置的默认配置。</block>
   <block id="5a2083853297d8e177a0fe4d54c85aad" category="paragraph">此任务可帮助您更改默认审核日志设置。</block>
@@ -1768,15 +1661,10 @@
   <block id="5ac7c8c6c8598c544fefefc2a5e226b8" category="paragraph"><block ref="95e74a55a904a66f18be251d45fb5889" prefix="" category="inline-code"></block></block>
   <block id="79fd6eae591bf5da4f3d347bd833c7de" category="paragraph">在停止并重新启动适用于VMware vSphere的SnapCenter插件服务之前、您应暂停所有计划。</block>
   <block id="5aede9738fe86694aa6f3a7752268f4a" category="list-text">从VMware vSphere客户端中、选择适用于VMware vSphere的SnapCenter插件所在的虚拟机。</block>
-  <block id="4ba1829f6981934cfed58dea022efa99" category="list-text">在虚拟设备的*Summary (摘要)*选项卡中，单击*Launch Remote Console*(启动远程控制台)以打开维护控制台窗口。</block>
   <block id="a43bf1ac7e468ec6eb4e1a8d687fd60d" category="paragraph">显示适用于VMware vSphere的SnapCenter插件启动或停止适用于VMware vSphere的SnapCenter插件服务的摘要更改适用于VMware vSphere的SnapCenter插件的登录用户名或密码更改MySQL密码备份和还原MySQL、配置和列出MySQL备份</block>
   <block id="2aefcd91cb5d3d55e389e951b79daf51" category="summary">您可以快速将单个虚拟机或数据存储库添加到适用于VMware vSphere的SnapCenter插件管理的任何现有资源组中。</block>
-  <block id="d8f27f1f8193cf9030f51a4acb1ea8e2" category="list-text">在vSphere Client GUI中，单击工具栏中的*菜单*，然后导航到要添加的虚拟机或数据存储库。</block>
   <block id="f385468a15a9a67fb79a1a54d11355ef" category="list-text">在左侧导航窗格中，右键单击虚拟机或数据存储库，从次要下拉列表中选择*适用于VMware vSphere的SnapCenter插件*&gt;*添加到资源组*。</block>
   <block id="323de26efa72e3814c28e89fa0a54a17" category="paragraph">如果显示此消息<block ref="9e5971575d4ff5fdbab34f545fb3c4f7" prefix=" " category="inline-code"></block> 、则表示选定虚拟机或数据存储库与SnapCenter不兼容。有关详细信息、请参见 <block ref="83219d9586902f9891ecf56cd903fe4b" category="inline-link-macro-rx"></block> 。</block>
-  <block id="35dcc595a54f8d79fea5fe64f1afa216" category="list-text">在选择控制阀插件的左侧导航窗格中，单击*Resource Groups*，然后选择一个资源组，再单击 <block ref="f4ee71cd89b2b235a395ca347e92f957" category="inline-image-macro-rx" type="image"></block> *Edit Resource Group*以启动向导。</block>
-  <block id="17703492b9c14634026aba1ce2eba4be" category="paragraph">单击 * 下一步 * 时，系统会首先检查 SnapCenter 是否管理选定虚拟机或数据存储库所在的存储并与其兼容。如果显示此消息<block ref="c238c6c4153d32597097e3ae5ddc6f78" prefix=" " category="inline-code"></block> 、则表示选定虚拟机或数据存储库与SnapCenter不兼容。有关详细信息、请参见 <block ref="83219d9586902f9891ecf56cd903fe4b" category="inline-link-macro-rx"></block> 。</block>
-  <block id="1a9f29efd8808d12b52443b2a7c2345c" category="list-text">在选择控制阀插件的左侧导航窗格中，单击“*存储系统*”，然后选择“*添加*”选项。</block>
   <block id="46d6be65c26292b8a7b6abc4d4608ab0" category="paragraph">ESXi服务器、适用于VMware vSphere的SnapCenter插件以及每个vCenter必须同步到同一时间。如果您尝试添加存储，但 vCenter 的时间设置未同步，则此操作可能会失败并显示 Java 证书错误。</block>
   <block id="2065b3ffa5ea044c72d7fd30a206b5f8" category="paragraph">适用于VMware vSphere的SnapCenter插件可对直接连接的Storage VM以及存储集群中的Storage VM执行备份和还原操作。</block>
   <block id="3090c6393064b77b009ddfb43dc67322" category="admonition">如果您使用适用于VMware vSphere的SnapCenter插件在VMDK上支持基于应用程序的备份、则必须使用SnapCenter图形用户界面输入存储身份验证详细信息并注册存储系统。</block>
@@ -1799,10 +1687,8 @@
   <block id="1d7cdf1c59e837114cd388f7cdec463d" category="list-text">在左侧导航窗格中，右键单击某个VM，然后在下拉列表中选择*Edit settings (编辑设置)*。</block>
   <block id="74fc40e139365d9bfdb8a283b18f2fdb" category="admonition">如果用于备份适用于VMware vSphere的SnapCenter插件MySQL数据库的作业已在运行、请勿启动按需备份作业。使用维护控制台查看为 MySQL 数据库配置的备份计划。</block>
   <block id="76e9befea76516ca72c9f475d7334897" category="paragraph">在早期版本的 Virtual Storage Console （ VSC ）中，您可以执行按需备份，而无需为虚拟机或数据存储库配置备份作业。但是、对于适用于VMware vSphere的SnapCenter插件、虚拟机和数据存储库必须位于资源组中、然后才能执行备份。</block>
-  <block id="650bf64005f824cd01cde067c0788d47" category="list-text">在选择控制阀插件的左侧导航窗格中，单击*资源组*，然后选择资源组，然后选择 <block ref="aeba2b9f883565da26d0265e5ca2ca10" category="inline-image-macro-rx" type="image"></block> *立即运行*以启动备份。</block>
   <block id="803b4aa7d4fed42c6a2488a4e70f45a1" category="summary">适用于VMware vSphere的SnapCenter插件包括一个MySQL数据库(也称为NSM数据库)、其中包含该插件执行的所有作业的元数据。 您应定期备份此存储库。</block>
   <block id="ed4aa6f26ea0b1f313d46b0b10791050" category="list-text">从VMware vSphere客户端中、选择适用于VMware vSphere的SnapCenter插件所在的虚拟机。</block>
-  <block id="99c4c1b26adb908b9ae65c4102d4f31c" category="list-text">在虚拟设备的*Summary (摘要)*选项卡中，单击*Launch Remote Console*(启动远程控制台)*或Launch Web Console*(启动Web控制台)以打开维护控制台窗口。</block>
   <block id="c3a6fddfa271f6c290c0d444610ccf18" category="paragraph">适用于VMware vSphere的SnapCenter插件为您的环境添加了以下功能：</block>
   <block id="635a11cc0c4ae2a604ff20cce00bb182" category="paragraph">适用于VMware vSphere的SnapCenter插件包括一个MySQL数据库、其中包含适用于VMware vSphere的SnapCenter插件元数据。为了实现虚拟机一致和崩溃状态一致的数据保护，您无需安装 SnapCenter 服务器。</block>
   <block id="8948a149db0e61e41cadfc936cde0889" category="paragraph">SnapCenter本机利用适用于VMware vSphere的SnapCenter插件对VMDK、原始设备映射(Raw Device Mappings、RDM)和NFS数据存储库执行所有数据保护操作。部署虚拟设备后，此插件将处理与 vCenter 的所有交互。适用于VMware vSphere的SnapCenter插件支持所有基于SnapCenter应用程序的插件。</block>
@@ -1816,7 +1702,6 @@
   <block id="14287ce8c2228d3505c31799833a864f" category="paragraph">适用于VMware vSphere的SnapCenter插件使用选定凭据登录到选定虚拟机。</block>
   <block id="110328d238985c18e0a7947b09b1ff0f" category="summary">适用于VMware vSphere的SnapCenter插件采用SSL加密技术与客户端浏览器进行安全通信。虽然这样可以跨网启用加密数据，但创建新的自签名证书，或者使用您自己的证书颁发机构（ CA ）基础架构或第三方 CA ，可确保此证书对于您的环境是唯一的。</block>
   <block id="6886be2ac69a368a307204ccfa1e00d9" category="paragraph">有关详细信息、请参见<block ref="bf84a7958c466b4ea912f7e396459ac9" category="inline-link-rx"></block> 。</block>
-  <block id="dbda93db9be6e33e4445e8182fe70414" category="list-text">在选择控制阀插件的左侧导航窗格中，单击*Policies*，然后选择*New Policy*。</block>
   <block id="6371946f7a59bb407f5608582531db43" category="paragraph">有关管理员如何将资源分配给用户的信息，请参见<block ref="3c6a9a14d0d13aed475a45101fc3cc00" category="inline-link-rx"></block>。</block>
   <block id="e90ae72a4d203cde9c1d660d983bec13" category="list-text">通过SnapMirror主动同步、即使在整个站点发生故障时、业务服务也可以继续运行、从而支持应用程序使用二级副本透明地进行故障转移。</block>
   <block id="c2bc8f54778a0e6f72a8fa3f9c96aae7" category="admonition">只有VMFS数据存储库才支持SnapMirror活动同步。</block>
@@ -1824,14 +1709,11 @@
   <block id="e43b6d42c084ea82997a88a9d026236a" category="inline-link">TR-4878：SnapMirror活动同步(原SMBC)</block>
   <block id="5cefaf60738eca04f3a2c8ae491cff01" category="list-text">按照技术报告中所述配置集群和调解器：<block ref="dbd8dacf801f7f0689c0fe2812237b08" category="inline-link-rx"></block>。</block>
   <block id="a873006631aa7f356ec5a7fc41e0133d" category="list-text">将与VMFS数据存储库关联的卷添加到一致性组、然后使用_AutomatedFailOver_或_AutomatedFailOver双 工_保护策略在两个ONTAP存储系统之间创建数据保护关系。自ONTAP 9.15.1版起、支持_AutomatedFailOver双 工_策略。</block>
-  <block id="5c010c674f2546a075db61f84c21cee8" category="list-text">在选择控制阀插件的左侧导航窗格中，单击*Policies*。</block>
   <block id="e2d3fabbf465949e2cc7e077aa8dcf1f" category="admonition">要在SnapMirror活动同步部署中保护VMFS数据存储库，您需要完成_before you before beepment_一节中所述的前提条件，并启用*备份后更新SnapMirror *。</block>
   <block id="c852f476fffd15ea31d953d2cd0be4cd" category="admonition">要执行虚拟机一致的备份、必须在虚拟机上运行VMware工具。如果VMware工具未运行、则会执行崩溃状态一致的备份。</block>
   <block id="b2c10ceccf2ef38cfd16b235e94e66ca" category="paragraph">输入要在备份操作前后运行适用于VMware vSphere的SnapCenter插件的规定或后处理脚本的完全限定路径。例如，您可以运行脚本来更新 SNMP 陷阱，自动执行警报和发送日志。执行脚本时会验证脚本路径。</block>
-  <block id="3e75833fca9e76ef6912688f5fce699b" category="list-text">在选择控制阀插件的左侧导航窗格中，单击*资源组*，然后选择*创建*。</block>
   <block id="5bda43473e266bd8432257626473549a" category="admonition">如果您使用的是VMware vSphere集群服务(VCL)、请勿将VCL管理的VM包含在适用于VMware vSphere的SnapCenter插件资源组中。</block>
   <block id="55bc441bdeb0f43c60379f5dc78f6abf" category="paragraph">如果您运行的是ONTAP 9.8或ONTAP 9.9、则在切换或切回之后、必须重新启动适用于VMware vSphere的SnapCenter插件服务并重新同步SnapMirror关系、然后才能在MetroCluster环境中备份资源组。</block>
-  <block id="7c3ed3750b214d44b80f3c18a1e4cfed" category="list-text">在选择控制阀插件的左侧导航窗格中，单击*资源组*，然后选择*创建*以启动向导。</block>
   <block id="3a45015313a1faf386696ea8ef299b04" category="list-text">要为一个VM创建资源组，请在快捷方式页面上选择*主机和群集*，然后右键单击某个VM，选择*适用于VMware VSphere的SnapCenter插件*&gt;*创建资源组*。</block>
   <block id="e55c3cdc89e781170175d407fcc99d3e" category="list-text">要为一个数据存储库创建资源组，请在快捷方式页面上选择*主机和群集*，然后右键单击某个数据存储库，选择*适用于VMware VSphere的SnapCenter插件*&gt;*创建资源组*。</block>
   <block id="b6f45f1c26b5dc8cfcdcf884b55437e0" category="cell">输入资源组的名称。请勿在虚拟机，数据存储库，策略，备份或资源组名称中使用以下特殊字符： % &amp; * $ # @ ！\ / ： * ？" &lt; &gt; - [ 垂直条 ] ； " ，。允许使用下划线字符（ _ ）。具有特殊字符的虚拟机或数据存储库名称会被截断，因此很难搜索特定备份。在链接模式下、每个vCenter都有一个单独的适用于VMware vSphere的SnapCenter插件存储库。因此，您可以在 vCenter 中使用重复的名称。</block>
@@ -1867,22 +1749,18 @@
   <block id="99a0d0b84051a0e9e9194e2eb31ace23" category="list-text">如果您计划在部署适用于VMware vSphere的SnapCenter插件的vCenter以外的vCenter中执行备份、则ESXi服务器、适用于VMware vSphere的SnapCenter插件以及每个vCenter必须同步到同一时间。</block>
   <block id="e7d701a56a002995230e991e41a72df1" category="paragraph">在与vCenter相同的时区部署适用于VMware vSphere的SnapCenter插件。备份计划在部署适用于VMware vSphere的SnapCenter插件的时区执行。 vCenter按vCenter所在时区报告数据。因此、如果适用于VMware vSphere的SnapCenter插件和vCenter位于不同的时区、则适用于VMware vSphere的SnapCenter插件信息板中的数据可能与报告中的数据不同。</block>
   <block id="2eebc560b73748e82dc828dccfa95727" category="list-text">在导航器窗格中，右键单击任何作为虚拟机的有效父对象(例如数据中心、集群或主机)的清单对象，然后选择*Deploy OVF Template *(部署OVF模板)以启动VMware Deploy向导。</block>
-  <block id="5d31e0053a23e271f16c90459347f31d" category="list-text">在*IP分配设置*部分，选择所需的IP地址协议，然后单击*Next*。</block>
   <block id="db44d33dce7d8c812f3a02ad4a6455ca" category="paragraph">适用于 VMware vSphere 的 SnapCenter 插件支持一个网络接口。如果需要多个网络适配器，则必须手动设置。请参阅<block ref="d3a97202e3ae619eec0e1bd725c581b2" category="inline-link-rx"></block>。</block>
   <block id="08e8c8579b148c6dae8daea6b981f185" category="admonition">记下您指定的用户名和密码。如果要稍后修改适用于VMware vSphere的SnapCenter插件配置、则需要使用这些凭据。</block>
   <block id="78ec48b7c749b3a7a8080d651afc3669" category="list-text">在*设置网络属性*部分，输入主机名。</block>
   <block id="0b691d0bcd0bae175f4dcfd7491922bc" category="list-text">在*Setup IPv4 Network Properties"(设置IPv4网络属性)部分，输入网络信息，例如IPv4地址、IPv4网络掩码、IPv4网关、IPv4 Primary DNS、IPv4 Secondary DNS、 和IPv4搜索域。</block>
   <block id="43a7a2ab4be51a09780bb39357d5251a" category="list-text">在*设置IPv6网络属性*部分，输入网络信息，如IPv6地址、IPv6网络掩码、IPv6网关、IPv6主DNS、IPv6二级DNS、 和IPv6搜索域。</block>
   <block id="c6e3214d70bb72ad47084efe65166b00" category="paragraph">成功部署适用于VMware vSphere的SnapCenter插件后、该插件将部署为Linux VM、并注册到vCenter中、同时安装VMware vSphere客户端。</block>
-  <block id="ac366ccc90b56acbf41c1babb0ce8af0" category="list-text">导航到部署了适用于VMware vSphere的SnapCenter插件的虚拟机，单击*Summary (摘要)*选项卡，然后单击*Power On*(开机)框以启动虚拟设备。</block>
-  <block id="e41d8d8a584e4696fad050336bd97108" category="list-text">在适用于VMware vSphere的SnapCenter插件启动时，右键单击已部署的适用于VMware vSphere的SnapCenter插件，选择*Guest OS*，然后单击*Install VMware tools*。</block>
   <block id="c6b1b3dc5d4864553e0ac28a4c7026a7" category="paragraph">VMware工具安装在部署适用于VMware vSphere的SnapCenter插件的虚拟机上。有关安装VMware工具的详细信息、请参见VMware文档。</block>
   <block id="f872214d608bc2ab4451c44631575819" category="paragraph">完成部署可能需要几分钟时间。如果适用于VMware vSphere的SnapCenter插件已启动、VMware工具已安装、并且屏幕提示您登录到适用于VMware vSphere的SnapCenter插件、则表示部署成功。您可以在首次重新启动期间将网络配置从 DHCP 切换到静态。但是，不支持从静态切换到 DHCP 。</block>
   <block id="e74860100ff6e3cddea8b5470a63b46a" category="paragraph">此屏幕将显示部署适用于VMware vSphere的SnapCenter插件的IP地址。记下 IP 地址。如果要更改适用于VMware vSphere的SnapCenter插件配置、您需要登录到SnapCenter管理图形用户界面。</block>
   <block id="acc8c1d082e4a6a4cc7b9f12309e4310" category="list-text">使用部署屏幕上显示的IP地址并使用您在部署向导中提供的凭据登录到适用于VMware vSphere的SnapCenter插件管理图形用户界面。 然后、在信息板上验证适用于VMware vSphere的SnapCenter插件是否已成功连接到vCenter并已启用。</block>
   <block id="0d772116a0b1a4e8de0e3d54008be8e7" category="paragraph">如果未启用适用于VMware vSphere的SnapCenter插件，请参阅 <block ref="6f48ea8f284b5f5f2ad46612a3e37eec" category="inline-link-macro-rx"></block>。</block>
   <block id="37e5c1ad8a20521d75afc178f68d656b" category="paragraph">在*设置网络属性*部分，输入网络信息。在*设置日期和时间*部分中，选择vCenter所在的时区。</block>
-  <block id="c8cdfbb3a52561000ef7cad338743cef" category="list-text">导航到部署了适用于VMware vSphere的SnapCenter插件的虚拟机，单击*摘要*选项卡，然后单击*开机*框启动适用于VMware vSphere的SnapCenter插件。</block>
   <block id="0e1333d2629e7e53b7c0c41245a5c98c" category="paragraph">完成部署可能需要几分钟时间。如果适用于VMware vSphere的SnapCenter插件已启动、VMware工具已安装、并且屏幕提示您登录到适用于VMware vSphere的SnapCenter插件、则表示部署成功。</block>
   <block id="145fd808d1976421d581e3373669426b" category="list-text">使用部署向导中提供的凭据、使用部署屏幕上显示的IP地址登录到适用于VMware vSphere的SnapCenter插件管理图形用户界面、然后在信息板上验证适用于VMware vSphere的SnapCenter插件是否已成功连接到vCenter并启用。</block>
   <block id="5897423e9fe4df49061445b3104d9dbb" category="list-text">您应在vCenter Server上部署适用于VMware vSphere的SnapCenter插件。</block>
@@ -1911,9 +1789,7 @@
   <block id="9bb3fd3038e55c5ff6d0c9ac34f29ded" category="list-text">在选择控制阀的左侧导航窗格中，选择*"Danitor*(仪表板)"&gt;"*Job Monitor*(作业监视器)"。</block>
   <block id="75eaa5f8c6a8fbd6b38e1da522890988" category="paragraph">作业日志位于部署适用于VMware vSphere的SnapCenter插件的Linux VM主机上。默认作业日志位置为<block ref="16643b27340306e64b23df0f54664963" prefix=" " category="inline-code"></block>。</block>
   <block id="173deb36b12789854459cc96cff3413b" category="summary">在部署适用于VMware vSphere的SnapCenter插件时、默认情况下会禁用SSH。</block>
-  <block id="41dcff10f5a1fbb98115c9f68716942d" category="list-text">在虚拟设备的*Summary (摘要)*选项卡中，单击*Launch Remote Console*(启动远程控制台)以打开维护控制台窗口，然后登录。</block>
   <block id="0f07ed20820824aad4ee12939db89c73" category="paragraph">有关访问和登录维护控制台的信息，请参见 <block ref="8214327d71770f15589ad8ef083206a6" category="inline-link-macro-rx"></block>。</block>
-  <block id="273b74182537e8d404a5b5aedfc9db5f" category="list-text">在虚拟设备的*Summary (摘要)*选项卡中，单击*Launch Remote Console (启动远程控制台)或Launch Web Console*(启动Web控制台)以打开维护控制台窗口，然后登录。</block>
   <block id="36f4df9728d59a871c1b51b43833d3b0" category="list-text">部署适用于VMware vSphere的SnapCenter插件时会显示此IP地址。</block>
   <block id="e32f94a152303c32638eabc51580f698" category="list-text">使用在部署适用于VMware vSphere的SnapCenter插件期间提供的或以后修改的登录凭据。</block>
   <block id="9d9eeed31f8e7bbf7e9e30774035c2b8" category="paragraph">启动子系统文件还原操作时会发生此问题、但即使VMware工具正在运行且子操作系统凭据正确、连接磁盘操作也会失败。如果发生这种情况，将返回以下错误：</block>
@@ -1927,18 +1803,10 @@
   <block id="e53c8c53bc91c541cbe95cb3c2808e4f" category="paragraph">部署适用于VMware vSphere的SnapCenter插件时、将显示IP地址。</block>
   <block id="a3e4b86e8fdd43957e1a1f48d820b4db" category="paragraph">已禁用适用于VMware vSphere的SnapCenter插件服务、并且此扩展已在vCenter中取消注册。</block>
   <block id="936704873dbea48e7a0f75de807fbb87" category="paragraph">已启用适用于VMware vSphere的SnapCenter插件服务、并且已在vCenter中注册此扩展。</block>
-  <block id="064b0490f1eed446111789f518543b18" category="admonition">单击 * 登录 * 按钮。由于已知VMware问题、请勿使用Enter键进行登录。 有关详细信息、请参阅有关ESXi嵌入式主机客户端问题的VMware文档。</block>
   <block id="edd7c130c7f64f441111f5f435cc5ffe" category="paragraph">如果您不再希望适用于VMware vSphere的SnapCenter插件资源组中的策略用于管理资源的数据保护、则可以将这些策略与这些策略断开。必须先断开策略，然后才能将其删除或修改计划频率。</block>
   <block id="514256d366ab9270c353228b4adf19a4" category="paragraph">从适用于VMware vSphere的SnapCenter插件资源组中分离策略的准则与SnapCenter资源组的准则不同。对于VMware vSphere客户端资源组、可以断开所有策略、这样就会使资源组无策略。但是，要对该资源组执行任何数据保护操作，必须至少附加一个策略。</block>
-  <block id="d1111de96ba88256d9e1e5433bd9114d" category="list-text">在选择控制阀插件的左侧导航窗格中，单击*Resource Groups*，然后选择一个资源组并单击*Edit*。</block>
   <block id="7ed58acf20fe291c9901087f37961432" category="paragraph">修改适用于VMware vSphere的SnapCenter插件备份策略与修改基于SnapCenter应用程序的插件的备份策略不同。修改插件策略时，您无需将策略与资源组分离。</block>
   <block id="e3a286a1d0c20baf9a1b07edd871541b" category="admonition">要修改适用于VMware vSphere的SnapCenter插件策略计划、必须在插件资源组中修改该计划。</block>
-  <block id="00e237a0b793eaaa70acc87db545f340" category="list-text">在选择控制阀插件的左侧导航窗格中，单击*Policies*，然后选择一个策略并单击*Edit*。</block>
-  <block id="784a46369cd26c1dec37ea740f78e712" category="list-text">在选择控制阀插件的左侧导航窗格中，单击*Policies*，然后选择一个策略并单击*Remove*。</block>
-  <block id="de36afd85f26df65ec39424775a59ad9" category="list-text">在选择控制阀插件的左侧导航窗格中，单击*Resource Groups*，选择一个资源组，然后单击*挂起*(或单击*Resume*)。</block>
-  <block id="1dea17902eec8c260fdbaac8234b9721" category="list-text">在选择控制阀插件的左侧导航窗格中，单击*Resource Groups*，然后选择一个资源组并单击*Delete*。</block>
-  <block id="958ae256645ba54e67fbd4843e2e0a6a" category="list-text">在选择控制阀插件的左侧导航窗格中，单击*存储系统*。</block>
-  <block id="96cb6ce54654ce84eaa80d9d0009e90f" category="list-text">在 * 删除存储系统 * 确认框中，选中 * 删除存储系统 * 复选框，然后单击 * 是 * 进行确认。*注意：*仅支持ESXi主机7.0U1及更高版本。</block>
   <block id="4b7cb416c401b9627fb0aae1cfa639b9" category="paragraph">对于已向SnapCenter注册的适用于VMware vSphere的SnapCenter插件的每个实例、必须使用Windows PowerShell cmdlet<block ref="f250ae1083ae1b8c30ecafec6ba6a337" prefix=" " category="inline-code"></block> 。</block>
   <block id="722bc716d51128d4512ced86acabb7db" category="paragraph">如果适用于VMware vSphere的SnapCenter插件安装在SnapCenter服务器主机上、并且为SnapCenter存储库配置了保护、则迁移过程还会卸载基于Windows的插件软件包、其中包含适用于VMware vSphere的SnapCenter插件和适用于Windows的SnapCenter插件。 然后重新安装最新版本的适用于Windows的SnapCenter插件以支持存储库保护。SnapCenter 图形用户界面中的主机类型从 "vsphere" 更改为 "Windows" 。</block>
   <block id="fd809cf0fe9ef13998aa1e0323960d5d" category="list-text">激活适用于VMware vSphere的基于Linux的SnapCenter插件上的备份作业。</block>
@@ -2024,7 +1892,6 @@
   <block id="7f82273caf689b5fe5d147479aee9dab" category="cell">5.0号选择控制阀</block>
   <block id="8f0cfebd2785db3468780aa4a2fe25f0" category="cell">升级到5.0号选择控制阀和6.0号选择控制阀</block>
   <block id="d00ac81a0a443883139be6455462a9b5" category="list-text">登录到适用于 VMware vSphere 的 SnapCenter 插件管理 GUI 。部署适用于VMware vSphere的SnapCenter插件时、将显示IP地址。</block>
-  <block id="950f93a03b622a14040c9cfe3599ae64" category="list-text">在导航器窗格中，单击要升级的虚拟机，然后单击*Summary (摘要)*选项卡。</block>
   <block id="585e5693341c646c4b7bc39381fa0ce9" category="paragraph">有关适用于您的操作系统的文件夹的位置、请参见VMware文档<block ref="794c4bb7f71ac0884ad5f7ccacc37483" prefix=" " category="inline-code"></block> 。</block>
   <block id="41c430ba65e53c1553adf9b0e0212516" category="paragraph">然后、您可以升级适用于VMware vSphere的SnapCenter插件。</block>
   <block id="2a7a8320b1c08e372f50a1c5c9ca216a" category="list-text">在选择控制阀的左侧导航窗格中，选择*"Dard板*"&gt;"*Status*"。</block>
@@ -2037,22 +1904,13 @@
   <block id="c0407ba9e12515280efc0fea9f89e131" category="sidebar">还原备份</block>
   <block id="fd03aeb9f7de3aae10e07664eb1cd6c6" category="sidebar">从适用于VMware vSphere的SnapCenter插件图形用户界面生成支持包</block>
   <block id="b02541bab3f320c7517f41f638f6ef31" category="paragraph"><block ref="6f48ea8f284b5f5f2ad46612a3e37eec" category="inline-link-macro-rx"></block>(英文)</block>
-  <block id="a8873f8f7715ad49732b43f6bdd600b5" category="paragraph">有关受支持版本的最新信息、请参阅<block ref="64fc8efacd4fa13b8c1907c1db527b3d" category="inline-link-rx"></block> (IMT)。</block>
   <block id="20f6a12d4ccfce9e9c6f58459fac2777" category="admonition">在扇出配置中、三级站点不支持一致性组。</block>
-  <block id="3458fc42f0b377624eb1de9c23c10655" category="paragraph">适用于VMware vSphere的SnapCenter插件不会对所有ONTAP版本执行兼容性检查、仅适用于ONTAP 8.2.1及更早版本。因此、请始终参考<block ref="860b18b04b199a7f740acbad2e027732" category="inline-link-rx"></block> 以获取有关SnapCenter支持的最新信息。</block>
-  <block id="8c9e5a8991367cd2b398f6da00fcacea" category="cell">适用于 VMware vSphere 的 SnapCenter 插件可通过此插件管理 VVol 数据存储库（ VMware 虚拟卷）。有关支持的版本，请参见<block ref="64fc8efacd4fa13b8c1907c1db527b3d" category="inline-link-rx"></block>。</block>
-  <block id="14f6e09e94edb505729ffc8766177413" category="paragraph">有关受支持版本的最新信息，请参阅<block ref="64fc8efacd4fa13b8c1907c1db527b3d" category="inline-link-rx"></block>。</block>
-  <block id="9a8a39bfd809f914e270e3aa295af606" category="paragraph">有关受支持版本的最新信息，请参阅<block ref="860b18b04b199a7f740acbad2e027732" category="inline-link-rx"></block>。</block>
-  <block id="3759b6e9ee7be120a52636d5811b2cb5" category="paragraph">您不能从运行 Linux 子操作系统的虚拟机还原文件和文件夹。但是，您可以连接 VMDK ，然后手动还原文件和文件夹。有关支持的子操作系统的最新信息，请参见<block ref="860b18b04b199a7f740acbad2e027732" category="inline-link-rx"></block>。</block>
-  <block id="6b98cc6c5d2c3be456270dd9cd0c49b3" category="paragraph">您不能从运行 Linux 子操作系统的虚拟机还原文件和文件夹。但是，您可以连接 VMDK ，然后手动还原文件和文件夹。有关支持的子操作系统的最新信息，请参阅<block ref="860b18b04b199a7f740acbad2e027732" category="inline-link-rx"></block>。</block>
   <block id="99227cc56eb10094b5911955997594bd" category="list-text">选项 3 ：网络配置</block>
   <block id="eb6403fe72c82873180af4e1fbe24094" category="paragraph">显示或更改 IP 地址设置显示或更改域名搜索设置显示或更改静态路由提交更改 Ping 主机</block>
   <block id="85fe6d094a622a1eeb362f8dda82c97e" category="list-text">选项 4 ：支持和诊断</block>
   <block id="d34a5ffb5a21003f9819a1371ce31cc8" category="paragraph">生成支持包访问诊断 Shell 启用远程诊断访问生成核心转储包</block>
-  <block id="b60beee083dba233367ef7318fb10b25" category="paragraph">有关详细信息、请参阅适用于VMware vSphere的ONTAP工具文档。此外、有关ONTAP工具支持的版本的最新信息、请参见<block ref="64fc8efacd4fa13b8c1907c1db527b3d" category="inline-link-rx"></block>。</block>
   <block id="33e4404acb572de935dae083d63033a8" category="inline-link">在将vCenter更新到7.0.x后、选择控制阀无法备份VCL VM</block>
   <block id="8c2a5a560e2f4170197d66660fb8d4f9" category="paragraph">有关详细信息、请参见<block ref="a5f674bd21d863d8804d3aaee35bd7df" category="inline-link-rx"></block></block>
-  <block id="e6f2686f361e5123b41a78ec7cf82976" category="list-text">要保护VVOL数据存储库上的VM、您必须先部署适用于VMware vSphere的ONTAP 工具。有关受支持的ONTAP工具版本的最新信息，请参阅<block ref="64fc8efacd4fa13b8c1907c1db527b3d" category="inline-link-rx"></block>。ONTAP 工具可在ONTAP 和VMware Web客户端上配置和配置存储。</block>
   <block id="c162715bd54906edd2726c5a128225ec" category="paragraph">在创建要与数据SVserver关联的角色时、可以忽略_cluster Identity show_ cluster level命令。</block>
   <block id="ce979aca6aa053e43e8e7148e876185c" category="paragraph">除了这些主要功能之外、适用于VMware vSphere的SnapCenter插件还支持iSCSI、光纤通道、FCoE、NFS 3.0/4.1、VMFS 5.0/6.0、基于FC的NVMe以及基于TCP的NVMe。</block>
   <block id="18ba359970ff64681ed643864ce8bced" category="section-title">基于TCP的NVMe和基于FC的NVMe协议的要求</block>
@@ -2080,7 +1938,6 @@
   <block id="7e35de6c484fe702e7c4fe21538ac2a4" category="paragraph">SnapCenter 4.8</block>
   <block id="2acd783e8dee0eed27b40328899eef19" category="inline-link">适用于VMware vSphere 6.1的SnapCenter插件注意事项</block>
   <block id="8ebd9207a610e17e383416d90951290e" category="paragraph"><block ref="8ebd9207a610e17e383416d90951290e" category="inline-link-rx"></block></block>
-  <block id="414f994a73d1f79098abf3d5d51e5555" category="list-text">单击*下一步*直到进入*摘要*页面，然后查看摘要并单击*完成*。</block>
   <block id="9329e69bb4e74e1c55c47a7b13b20c73" category="admonition">ASA R2备份可创建一致性组快照、并在给定资源尚未配置主一致性组的情况下对其进行配置。</block>
   <block id="94e5f239a67b0bdbb293ad6d93a70fae" category="list-text">在创建资源组向导的每个页面上输入所需信息、选择要包含在资源组中的虚拟机和数据存储库、然后选择要应用于资源组的备份策略。添加远程二级保护详细信息并指定备份计划。</block>
   <block id="47b5545e20c1c3ff97bf1931ed1bb71c" category="list-text">ASA R2上的VM和数据存储库</block>
@@ -2102,7 +1959,6 @@
   <block id="4e2041ff5ea66c23b660f1aa1270c0d4" category="cell">二级受保护资源</block>
   <block id="2c66ae4d8465ecaa0277c97c3f9e52cc" category="cell">对于在资源页面中添加的资源的所有受保护存储单元、将显示二级关系详细信息、包括集群、SVM和复制类型。</block>
   <block id="55d4ade9a708df3a3dea5a7b596b3bec" category="paragraph"><block ref="55d4ade9a708df3a3dea5a7b596b3bec" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="219530a6f91e9e652edabda0d6abb52e" category="list-text">查看摘要，然后单击*完成*。从6.1号选择控制阀开始，ASA R2系统的辅助保护资源显示在摘要页中。</block>
   <block id="1fbf8001bce3062cf570e802cd34a515" category="admonition">对于IPv6地址HTML Web客户端、必须使用Chrome或Firefox。</block>
   <block id="7763535bfb2dc82fb2cbf445d64a697c" category="paragraph">选择IPv4或IPv6地址字段、或者选择这两者(如果适用)。如果同时使用IPv4和IPv6地址、则只需要为其中一个地址指定主DNS。</block>
   <block id="858e1231bf7d2fa0b29910623e458a4d" category="section-title">空间、规模估算和扩展要求</block>
@@ -2118,7 +1974,6 @@
   <block id="8f63ee5bc3100343496937f88eb71b0f" category="cell">vserver cifs-policy create vserver cifs-policy delete vserver cifs-policy show vserver cifs-share show vserver cifs-show vserver cifs-policy vserver导出策略delete vserver导出策略规则create vserver导出策略规则show vserver export -policy show vserver vserver vserver vserver vserver subsystem show vserver vserver system show vserver vserver subsystem删除NVMe子系统名称空间删除NVMe子系统vserver vserver映射删除NVMe子系统删除NVMe子系统删除NVMe子系统vserver vserver vserver vserver映射删除NVMe子系统删除NVMe子系统删除NVMe子系统删除NVMe子系统删除NVMe子系统删除NVMe子系统删除NVMe子系统vserver vserver vserver vserver vserver vserver vserver映射删除子系统删除子系统删除NVMe子系统删除NVMe子系统</block>
   <block id="5e7e64c339a65a35f9dd642d25809870" category="cell">完全访问命令：ONTAP 9及更高版本所需的最低权限。</block>
   <block id="4e822e8bd084f0d55645c04096f9f2e8" category="cell">一致性组storage-unit show</block>
-  <block id="19899f4e43a0adc60e21e11b5620c400" category="list-text">在*Settings*页的*Network Settings*部分中，单击*IPv4*或*IPv6*地址，然后单击*Edit*。</block>
   <block id="73bf8d0963d0fce608d5706a43357517" category="admonition">如果同时使用IPv4和IPv6地址、则无法同时删除这两个网络设置。其余网络必须指定 DNS 服务器和搜索域字段。</block>
   <block id="82483f0ce94e070521dde3173ea8f007" category="list-text">您运行的是IPv4地址、并且SnapCenter VMware vSphere主机具有两个IP地址。因此，作业请求将发送到 SnapCenter 服务器无法识别的 IP 地址。要阻止此问题描述，请添加要使用的 IP 地址，如下所示：</block>
   <block id="cab2abd3782f0d1cb3afdd1d41344792" category="cell">提供执行适用于 VMware vSphere 的所有 SnapCenter 插件任务所需的所有原生 vCenter Server 特权和 SnapCenter 专用特权。从6.1号选择控制阀开始，此角色增加了创建二级保护的新权限。</block>
@@ -2128,7 +1983,6 @@
   <block id="4a58337a4c5239462c0a728544f6bfeb" category="paragraph">有关已知问题、限制和已修复问题的详细信息，请参见<block ref="04c13539a5d154a6fc636a4d15810317" category="inline-link-rx"></block>。您必须使用NetApp帐户登录或创建帐户才能访问发行说明。</block>
   <block id="14a88b79b7eae8723a8ca7d5fe6807fc" category="cell"><block ref="8877dc9fcfb6df8dad34589e1a225411" prefix="" category="inline-code"></block> 使用指定策略创建资源组。传递步骤 1 中的 * 策略 Id* 并输入策略 * 频率 * 详细信息以及所有其他必需属性。您可以使用此REST API启用二级保护。</block>
   <block id="34b3c572ebc9bfec8d4ff1eb372fc521" category="list-text">为ASA R2配置二级保护</block>
-  <block id="15ca3652a44eb871e28b0f7ed33ab5f8" category="list-text">查看摘要，然后单击*完成*。</block>
   <block id="511a61be3395b836dbaacf9a77e28d9c" category="cell">输入要还原选定文件的子系统的 UNC 共享路径。IPv4地址示例：<block ref="c1efda00eba14c667cfd89393b2be583" prefix=" " category="inline-code"></block>IPv6地址示例：<block ref="f7a108079a0dc952ef09921776f4796f" prefix=" " category="inline-code"></block></block>
   <block id="12cbe201763ebb8c3712b94674ec18dc" category="admonition">只有VMware vCenter Server 7 Update 1及更高版本才支持升级到6．1号选择控制阀。对于VMware vCenter Server 7 Update 1之前的版本，您应继续使用4．7号选择控制阀。在不受支持的VMware vCenter Server版本上、升级会造成中断。</block>
   <block id="7e876cb2f9911c683b816e2dcbbc43a3" category="cell">升级到6.1号选择控制阀</block>
@@ -2162,11 +2016,6 @@
   <block id="822926837c6e218e71716b72e1a7017f" category="paragraph">每个插件实例仅支持一个处于链接模式的vCenter Server。但是、多个插件实例可以支持同一个SnapCenter服务器、如下图所示。</block>
   <block id="1c0894625a89e433ba87d14aebdc6088" category="paragraph">vCenter管理员帐户必须具有下表中列出的所需vCenter Privileges。</block>
   <block id="80d239c54104b637db16d32ddcf6ff89" category="admonition">ASA R2存储系统不支持_Recent Snapshot命名功能。</block>
-  <block id="68e34cb9e3a60830aed69c89f5c923aa" category="cell">显示有关备份作业的概述数据。单击图形上的一个部分 / 状态，可在 * 报告 * 选项卡上查看具有该状态的作业列表。对于每个作业、此报告将列出作业ID、相应的资源组、备份策略、开始时间和持续时间、状态以及作业详细信息、其中包括作业完成时的作业名称(快照名称)以及任何警告或错误消息。您可以下载 HTML 或 CSV 格式的报告表。您还可以下载所有作业（而不仅仅是报告中的作业）的作业监控器作业日志。删除的备份不会包含在报告中。</block>
-  <block id="b509945ce76230a5eeff2083503f5495" category="cell">显示有关挂载作业的概述数据。单击图形上的一个部分 / 状态，可在报告选项卡上查看具有该状态的作业列表。对于每个作业，此报告将列出作业 ID ，作业状态，作业名称以及作业开始和结束时间。作业名称包括快照名称。例如：<block ref="5885e660153b51d912f9f11bb4649003" prefix=" " category="inline-code"></block> 您可以下载HTML或CSV格式的"报告"表。您还可以下载所有作业（而不仅仅是报告中的作业）的作业监控器作业日志。</block>
-  <block id="fe39f815c00ab0cdc48133dd4394febe" category="cell">显示有关还原作业的概述状态信息。单击图形上的一个部分 / 状态，可在报告选项卡上查看具有该状态的作业列表。对于每个作业，此报告将列出作业 ID ，作业状态，作业名称以及作业开始和结束时间。作业名称包括快照名称。例如：<block ref="13d80bb12ac7353f6e745081e5946c14" prefix=" " category="inline-code"></block> 您可以下载HTML或CSV格式的"报告"表。您还可以下载所有作业（而不仅仅是报告中的作业）的作业监控器作业日志。</block>
-  <block id="5d6ca3a9d35eb5459130306f5807c2f3" category="cell">显示有关适用于VMware vSphere的SnapCenter插件所管理的VM和数据存储库在配置的天数内的保护状态的概述信息。默认值为 7 天。要修改属性文件中的值，请参见 <block ref="716011655678aa6d92cdd15196f612ff" category="inline-link-macro-rx"></block>。单击主保护图表上的一个部分 / 状态，可在 * 报告 * 选项卡上查看具有该状态的 VM 或数据存储库列表。受保护虚拟机和数据存储库的虚拟机或数据存储库保护状态报告可显示在配置的天数内备份的虚拟机或数据存储库的名称、最新的快照名称以及最新备份运行的开始和结束时间。未受保护的 VM 或数据存储库的 VM 或数据存储库保护状态报告显示在配置的天数内没有任何成功备份的 VM 或数据存储库的名称。您可以下载 HTML 或 CSV 格式的报告表。您还可以下载所有作业（而不仅仅是报告中的作业）的作业监控器作业日志。刷新插件缓存后，此报告每小时刷新一次。因此，此报告可能不会显示最近备份的 VM 或数据存储库。</block>
-  <block id="a3f8064d6a9d17254355b89f290da65d" category="paragraph">您可以通过以下方式筛选备份列表：选择筛选器图标、选择日期和时间范围、选择是否需要包含VMware快照的备份、是否需要挂载备份以及位置。单击 * 确定 * 。</block>
   <block id="75df3e6b9f46cc58a0ff9c56046b0977" category="paragraph">SnapCenter不支持同时为数据库和VM创建一个快照。虚拟机和数据库的备份必须单独计划和运行、这样可以创建单独的快照、即使数据库和虚拟机托管在同一个卷中也是如此。使用SnapCenter 图形用户界面计划数据库应用程序备份；使用VMware vSphere客户端图形用户界面计划虚拟机和数据存储库备份。</block>
   <block id="c0d9eeb671fe20a76e29ca04e5053b74" category="list-text">要创建VM一致的快照、需要使用VMware工具</block>
   <block id="78f7815c68e90eaacbd9cc9cc5e128c5" category="paragraph">如果未安装并运行VMware工具、则不会使文件系统处于静置状态、而是会创建崩溃状态一致的快照。</block>
@@ -2201,17 +2050,13 @@
   <block id="7aa7ae49984d77593e48b6fd70844775" category="paragraph">要保护VM和数据存储库、请使用VMware vSphere客户端界面。Web客户端图形用户界面可与存储系统上的NetApp Snapshot技术集成。这样，您就可以在几秒钟内备份 VM 和数据存储库，并还原 VM ，而无需使 ESXi 主机脱机。</block>
   <block id="b68c25841ace1ebf87dee9af54aa2e69" category="paragraph">SnapCenter不支持同时为数据库和VM创建一个快照。VM和数据库的备份必须单独计划和运行、这样即使数据库和VM托管在同一个卷中、也会创建单独的快照。必须使用SnapCenter 图形用户界面计划基于应用程序的备份；必须使用VMware vSphere客户端图形用户界面计划VM一致的备份。</block>
   <block id="1471fa425a9c79f7e8a4a4bc34704d6a" category="cell"><block ref="af62a8975e8577db87448344c585507f" prefix="" category="inline-code"></block>获取指定备份的快照的位置。传递步骤 2 中的 * 备份 Id* 。请注意 * 快照位置列表 * 信息。</block>
-  <block id="c61b48c7cee87295644b3139e3651375" category="paragraph">您可以搜索特定备份名称或部分备份名称、也可以通过单击筛选器图标并选择日期和时间范围、选择是否需要包含VMware快照的备份、是否需要挂载备份以及位置来筛选备份列表。单击 * 确定 * 以返回到向导。</block>
   <block id="8b740d927c7014ac116bad7dac5e90f3" category="paragraph">还原目标可以是已添加到 SnapCenter 的任何 ESXi 主机。此选项可从具有指定时间和日期的快照还原虚拟机所在的选定备份的内容。如果选择此选项，则会选中 * 重新启动 VM* 复选框，并且虚拟机将启动。</block>
   <block id="8eb1b908e8b622c31068641ddc091252" category="list-text">您必须知道要从中还原的备份快照和VMDK。</block>
   <block id="cd38aa1b745074ce7b3e671b2737e16f" category="paragraph">适用于 VMware vSphere 的 SnapCenter 插件不支持搜索要还原的文件或文件夹。因此、在开始之前、您必须了解文件或文件夹相对于快照的位置以及相应的VMDK。</block>
-  <block id="3307c3ba0f8faacd2a6ad53d834854b4" category="paragraph">您可以搜索特定备份名称或部分备份名称、也可以通过单击筛选器图标并选择日期和时间范围来筛选备份列表、选择是否需要包含VMware快照的备份、是否需要挂载备份以及主位置或二级位置。单击 * 确定 * 以返回到向导。</block>
   <block id="c497b5cdfb468a78f47eeead674d8de4" category="list-text">在*Select Location*页面上，选择要还原的快照(主快照或二级快照)。</block>
   <block id="f1e1ac5eb6498170a571f7c9baa59473" category="admonition">如果虚拟机的快照是由适用于VMware vSphere的SnapCenter插件以外的软件执行的、则还原操作无法成功完成。</block>
   <block id="848e6a50c59fc9f63956382b0072922e" category="paragraph">VM的还原操作会取消注册原始VM、从备份快照还原VM、并在同一ESXi服务器上注册具有相同名称和配置的已还原VM。还原后，您必须手动将 VM 添加到资源组。</block>
   <block id="2e0cc418cfa86596897965026b31e6df" category="list-text">在*Restore*向导的*Select Backup*页面上，选择要还原的备份快照。</block>
-  <block id="8f35b8f7de8f7e8d9b02e6a422cc70cb" category="paragraph">您可以搜索特定备份名称或部分备份名称、也可以通过单击筛选器图标并选择日期和时间范围、选择是否需要包含VMware快照的备份、是否需要挂载备份以及位置来筛选备份列表。单击 * 确定 * 以返回到向导。</block>
-  <block id="a1954b7ef0b95a152868596fad609446" category="paragraph">您可以通过以下方式筛选备份列表：选择筛选器图标、选择日期和时间范围、选择是否需要包含VMware快照的备份、是否需要挂载备份以及位置。单击 * 确定 * 。</block>
   <block id="7cd13333ae1cedbd3aa5baace69fd245" category="paragraph">生成的快照、SnapVault和SnapMirror快照总数以及用于主快照和二级快照的存储量。折线图会分别绘制连续 90 天内每天的主存储和二级存储消耗情况。存储信息每24小时在凌晨1：08更新一次。存储节省量是逻辑容量(快照节省量加上已用存储)与主存储的物理容量之比。条形图显示了存储节省量。</block>
   <block id="186f10ad0ae1bb6638a07f29fcf47c80" category="paragraph">在准备备份或还原虚拟机或数据存储库时、您可能需要查看可用于该资源的所有备份并查看这些备份的详细信息。</block>
   <block id="51857ca23f1dc86274f568542e984fe5" category="paragraph">首次浏览大型文件文件夹(例如10k文件文件夹)可能需要一分钟或多分钟。后续浏览会话所需时间更短。</block>
@@ -2225,4 +2070,158 @@
   <block id="10816353eaa2dd5ab8374ef58f982e29" category="list-text">基于一致性组的备份</block>
   <block id="7282e5c8f3184e4f914d701f82b621ff" category="paragraph">*支持二级防篡改快照(TPS)*</block>
   <block id="553dc280ed86f90ffb054d20f311a8f9" category="paragraph">适用于VMware vSphere的SnapCenter插件引入了对二级TPS的支持、可确保二级Snapshot副本不会被勒索软件攻击者或恶意管理员删除或更改、即使在遭受攻击后也可以使用。</block>
+  <block id="f01eb97005addc3eb2dfc29471d6bc14" category="list-text">可选：在报告选项卡上，选择*Download*并选择格式(HTML或CSV)。</block>
+  <block id="29100e58a6356d458e189151cf2d1a52" category="paragraph">您也可以选择下载图标以下载插件日志。</block>
+  <block id="ae80e86ae24ec176aaeda913d51beb25" category="cell">显示有关备份作业的概述数据。在图中选择一个部分/状态，以在*Reports*选项卡中查看具有该状态的作业列表。对于每个作业、此报告将列出作业ID、相应的资源组、备份策略、开始时间和持续时间、状态以及作业详细信息、其中包括作业完成时的作业名称(快照名称)以及任何警告或错误消息。您可以下载 HTML 或 CSV 格式的报告表。您还可以下载所有作业（而不仅仅是报告中的作业）的作业监控器作业日志。删除的备份不会包含在报告中。</block>
+  <block id="d30d74e3392490f4e83e57df555d6f73" category="cell">显示有关挂载作业的概述数据。在图形上选择一个部分/状态、以在报告选项卡上查看具有该状态的作业列表。对于每个作业，此报告将列出作业 ID ，作业状态，作业名称以及作业开始和结束时间。作业名称包括快照名称。例如：<block ref="5885e660153b51d912f9f11bb4649003" prefix=" " category="inline-code"></block> 您可以下载HTML或CSV格式的"报告"表。您还可以下载所有作业（而不仅仅是报告中的作业）的作业监控器作业日志。</block>
+  <block id="20e8dfc96fcc5d9aecf417a5cf4ab87f" category="cell">显示有关还原作业的概述状态信息。在图形上选择一个部分/状态、以在报告选项卡上查看具有该状态的作业列表。对于每个作业，此报告将列出作业 ID ，作业状态，作业名称以及作业开始和结束时间。作业名称包括快照名称。例如：<block ref="13d80bb12ac7353f6e745081e5946c14" prefix=" " category="inline-code"></block> 您可以下载HTML或CSV格式的"报告"表。您还可以下载所有作业（而不仅仅是报告中的作业）的作业监控器作业日志。</block>
+  <block id="f608b63b41830e1290368e09029c98a5" category="cell">显示有关适用于VMware vSphere的SnapCenter插件所管理的VM和数据存储库在配置的天数内的保护状态的概述信息。默认值为 7 天。要修改属性文件中的值，请参见 <block ref="716011655678aa6d92cdd15196f612ff" category="inline-link-macro-rx"></block>。在主保护图表上选择一个部分/状态、以在*报告*选项卡上查看具有此状态的VM或数据存储库列表。受保护虚拟机和数据存储库的虚拟机或数据存储库保护状态报告可显示在配置的天数内备份的虚拟机或数据存储库的名称、最新的快照名称以及最新备份运行的开始和结束时间。未受保护的 VM 或数据存储库的 VM 或数据存储库保护状态报告显示在配置的天数内没有任何成功备份的 VM 或数据存储库的名称。您可以下载 HTML 或 CSV 格式的报告表。您还可以下载所有作业（而不仅仅是报告中的作业）的作业监控器作业日志。刷新插件缓存后，此报告每小时刷新一次。因此，此报告可能不会显示最近备份的 VM 或数据存储库。</block>
+  <block id="f18faf3bd7f1f223a42c3b5e6a86e718" category="list-text">选择API资源类型以显示该资源类型中的API。</block>
+  <block id="7019ccbf0ec2e1d9f58c4828ab3cd7e2" category="list-text">在虚拟设备的*Summary (摘要)*选项卡中，选择*Launch Remote Console*(启动远程控制台)以打开维护控制台窗口。</block>
+  <block id="75f9f024c5e2911920acb2b0cdce0582" category="list-text">在vSphere Client图形用户界面中，选择工具栏中的*菜单*，然后导航到要添加的虚拟机或数据存储库。</block>
+  <block id="51ad42fe33fa0194c0e8e80a8fac6d2e" category="list-text">在*添加到资源组*页中，选择一个资源组，然后选择*OK*。</block>
+  <block id="91681ceaef78e9d9b417ae42b6e2234c" category="paragraph">选择*OK*时，系统会首先检查SnapCenter是否管理选定虚拟机或数据存储库所在的存储，以及是否与该存储兼容。</block>
+  <block id="4c31addf30ccabe38bc46bfd4db229e2" category="list-text">在选择控制阀插件的左侧导航窗格中，选择*资源组*，然后选择资源组，然后选择*编辑资源组<block ref="f4ee71cd89b2b235a395ca347e92f957" category="inline-image-macro-rx" type="image"></block>*以启动向导。</block>
+  <block id="1a7edbc2faac42873a9e5d8aaaf4b1e6" category="list-text">在可用实体列表中、选择要添加到资源组的一个或多个VM或数据存储库、然后选择*&gt;*将所选内容移动到选定实体列表。选择*&gt;**以移动所有可用的实体。</block>
+  <block id="853964bf7f1243a308a6373e88970cd7" category="paragraph">默认情况下，可用实体列表显示 Datacenter 对象。您可以选择一个数据存储库来查看该数据存储库中的虚拟机、并将其添加到资源组中。</block>
+  <block id="3401faaaca2b403aa3e354193cdbe7a1" category="paragraph">选择*下一步*时，系统首先检查SnapCenter是否管理选定虚拟机或数据存储库所在的存储，以及是否与该存储兼容。如果显示此消息<block ref="c238c6c4153d32597097e3ae5ddc6f78" prefix=" " category="inline-code"></block> 、则表示选定虚拟机或数据存储库与SnapCenter不兼容。有关详细信息、请参见 <block ref="83219d9586902f9891ecf56cd903fe4b" category="inline-link-macro-rx"></block> 。</block>
+  <block id="fd656c0bdef7b84ded620741d1ebb376" category="list-text">选择*下一步*直到进入*摘要*页面，然后查看摘要并选择*完成*。</block>
+  <block id="9908ac5f8e797129562c3b75eb5fb433" category="list-text">在选择控制阀插件的左侧导航窗格中，选择*存储系统*，然后选择*添加*选项。</block>
+  <block id="5340605920c74d43338f5c58ec29e22c" category="paragraph">有关详细信息、请参阅适用于VMware vSphere的ONTAP工具文档。此外、有关ONTAP工具支持的版本的最新信息、请参见<block ref="3a209fb27f7f233fd0ce1196af83183f" category="inline-link-rx"></block>。</block>
+  <block id="8cbcedf281a657d76533b7bc1386d2e3" category="list-text">在VMware vSphere Client GUI中，选择工具栏中的*菜单*，然后从下拉列表中选择*主机和群集*。</block>
+  <block id="dd5a6f2f3b2995c6412ee7fc5c68ae87" category="paragraph">您可以通过以下方式筛选备份列表：选择筛选器图标、选择日期和时间范围、选择是否需要包含VMware快照的备份、是否需要挂载备份以及位置。选择*OK*。</block>
+  <block id="05a059f12f4b8c90596d54cd9440e965" category="list-text">选择*附加*。</block>
+  <block id="6eec9b5b83edb792f92ed90fcf16c67b" category="list-text">在工具栏中选择*菜单*，然后从下拉列表中选择*虚拟机和模板*。</block>
+  <block id="5024f06eaeb6343b1d2db413894a44c8" category="list-text">在选择控制阀插件的左侧导航窗格中，选择*资源组*，然后选择资源组，然后选择<block ref="aeba2b9f883565da26d0265e5ca2ca10" category="inline-image-macro-rx" type="image"></block>*立即运行*以启动备份。</block>
+  <block id="100c073728a93280afb75a57112c2bf8" category="list-text">选择*OK*开始备份。</block>
+  <block id="cc5ac12b41743b16bd07f0041afa5ef1" category="list-text">在虚拟设备的*Summary (摘要)*选项卡中，选择*Launch Remote Console*(启动远程控制台)或Launch Web Console*(启动Web控制台)以打开维护控制台窗口。</block>
+  <block id="18eb3325cee0222ae3e641b5398c3ad1" category="paragraph">有关受支持版本的最新信息、请参阅<block ref="3a209fb27f7f233fd0ce1196af83183f" category="inline-link-rx"></block> (IMT)。</block>
+  <block id="58cfdd22a1545e36ea707ea6bf21028f" category="list-text">选择*选择VM*，然后在*代理VM*对话框中选择一个VM。选择*保存*返回到*作为身份凭证运行*对话框。选择应用于对凭据进行身份验证的虚拟机。</block>
+  <block id="10492389e94efdebbb66f7b0cd8a1324" category="list-text">选择 * 保存 * 。</block>
+  <block id="bbe1604d17d5228e6cf954f520fbcea1" category="list-text">在选择控制阀插件的左侧导航窗格中，选择*Policies*，然后选择*New Policies*。</block>
+  <block id="343abe2ecd800f9d54f2e3ae40bf76e7" category="list-text">在*New Backup Policy*页面上，输入策略配置信息，然后选择*Add*。</block>
+  <block id="f72f60cc38ad88e8f480917866baa9d7" category="list-text">在选择控制阀插件的左侧导航窗格中，选择*Policies*。</block>
+  <block id="4779ac3e13ad9aa96fd87fc92e54a9c4" category="list-text">选择*添加*</block>
+  <block id="0ff54462b9de8b695d821b2ebc099049" category="list-text">在选择控制阀插件的左侧导航窗格中，选择*资源组*，然后选择*创建*。</block>
+  <block id="b0bcb9eada66a28bbd1bea2d66b154d4" category="list-text">在选择控制阀插件的左侧导航窗格中，选择*资源组*，然后选择*创建*以启动向导。</block>
+  <block id="0783f9dc1d7a24e0349b260e2460eebf" category="cell">选择要保护的资源，然后选择*&gt;*将所选内容移动到选定实体列表。</block>
+  <block id="bb2881c18ec908f40bb248af480ea3da" category="paragraph">选择*下一步*时，系统会首先检查SnapCenter是否管理选定资源所在的存储，以及这些存储是否兼容。</block>
+  <block id="7cc71960cea46e213c1949b750d31109" category="list-text">查看摘要，然后选择*完成*。从6.1号选择控制阀开始，ASA R2系统的辅助保护资源显示在摘要页中。</block>
+  <block id="7937cf5781449e9d5aa3c9810ffc00f8" category="paragraph">在选择*完成*之前，您可以返回向导中的任何页面并更改信息。</block>
+  <block id="4cafeb5e41329bb061975eb29cec476a" category="paragraph">选择*完成*后，新资源组将添加到资源组列表中。</block>
+  <block id="3bb7a556e32d2c1180cba7a8fcc1d50a" category="paragraph">适用于VMware vSphere的SnapCenter插件不会对所有ONTAP版本执行兼容性检查、仅适用于ONTAP 8.2.1及更早版本。因此、请始终参考<block ref="361fee5724018df312396e88d348d8b5" category="inline-link-rx"></block> 以获取有关SnapCenter支持的最新信息。</block>
+  <block id="1a4e3fc91214e69b300aa63fcb1a886f" category="list-text">要保护VVOL数据存储库上的VM、您必须先部署适用于VMware vSphere的ONTAP 工具。有关受支持的ONTAP工具版本的最新信息，请参阅<block ref="3a209fb27f7f233fd0ce1196af83183f" category="inline-link-rx"></block>。ONTAP 工具可在ONTAP 和VMware Web客户端上配置和配置存储。</block>
+  <block id="e6cd86d61f4639c8a27006c6c29b3e9f" category="list-text">选择 * 下一步 * 。</block>
+  <block id="c692636646dadf4eb31c9fbae7cc8df4" category="list-text">在*选择名称和文件夹*页面上，输入VM或vApp的唯一名称，并选择部署位置，然后选择*下一步*。</block>
+  <block id="fd508849502eae93fa7d6e9a4c17cdaf" category="list-text">在“*选择资源*”页面上，选择要运行已部署VM模板的资源，然后选择“*下一步*”。</block>
+  <block id="e881aa2ceb30a27b43c8cc28f8369fca" category="list-text">在*查看详细信息*页面上，验证<block ref="58963a595c988dc6f693cb3238dc907a" prefix=" " category="inline-code"></block>模板详细信息并选择*下一步*。</block>
+  <block id="46f00d1bd7ae9c30182b743eaf484b63" category="list-text">在*IP分配设置*部分，选择所需的IP地址协议，然后选择*Next*。</block>
+  <block id="60be263003eb4d8507a03c01f20a0b63" category="list-text">在*Ready to Complete*(准备完成)页面上，查看该页面并选择*Complete*(完成)。</block>
+  <block id="9cad78c4a7066a1d426f51a9beabd0b4" category="list-text">导航到部署了适用于VMware vSphere的SnapCenter插件的虚拟机，选择*Summary (摘要)*选项卡，然后选择*Power On*(开机)框以启动虚拟设备。</block>
+  <block id="9959e5c5bb873f546ef63bf9fd716c93" category="list-text">在适用于VMware vSphere的SnapCenter插件启动时，右键单击已部署的适用于VMware vSphere的SnapCenter插件，选择*Guest OS*，然后选择*Install VMware tools*。</block>
+  <block id="5ad03fb14ed8a584334f2dc858c55e77" category="list-text">在*选择一个OVF模板*页上，指定文件的位置<block ref="8d8b01a4d628953e7a2225813c8edb3f" prefix=" " category="inline-code"></block>(如下表所示)，然后选择*下一步*。</block>
+  <block id="16d41e5fa51f9cba7e28f18a6e0fc481" category="cell">查看页面并选择*完成*。</block>
+  <block id="3edcaaa1fd86e6f2a40157811ebb01e1" category="list-text">导航到部署了适用于VMware vSphere的SnapCenter插件的虚拟机，选择*摘要*选项卡，然后选择*开机*框以启动适用于VMware vSphere的SnapCenter插件。</block>
+  <block id="4c42aedb90b93c454e82cb69bd919064" category="list-text">登录到vCenter HTML5客户端、然后在工具栏中选择*菜单*、然后选择*适用于VMware vSphere的SnapCenter插件*</block>
+  <block id="6ead0b569222ee8512a314e45dd85a21" category="cell">适用于 VMware vSphere 的 SnapCenter 插件可通过此插件管理 VVol 数据存储库（ VMware 虚拟卷）。有关支持的版本，请参见<block ref="3a209fb27f7f233fd0ce1196af83183f" category="inline-link-rx"></block>。</block>
+  <block id="b87a35e8b1ff0c734dec37c43fc7ba6e" category="paragraph">有关受支持版本的最新信息，请参阅<block ref="3a209fb27f7f233fd0ce1196af83183f" category="inline-link-rx"></block>。</block>
+  <block id="fb70fcb4630ca86be8c0c6967f41699c" category="list-text">在VMware vSphere Client GUI中，选择工具栏中的*菜单*，然后从下拉列表中选择*虚拟机和模板*。</block>
+  <block id="d0f9811f0da480925e8c3f5e76409f54" category="list-text">在*Detach Virtual Disk*(断开虚拟磁盘*)屏幕上，选择要断开的一个或多个磁盘，然后选中*Detach the selected disk(s)*(断开选定磁盘*)复选框，并选择*detach*。</block>
+  <block id="786a1456c6dc1153a986286442b671dc" category="list-text">在左侧导航窗格中选择*配置*，然后取消选择*插件详细信息*部分中的服务选项以禁用该插件。</block>
+  <block id="6dfcb68f8429554bd841be76d633bbd1" category="paragraph">您也可以双击作业以访问作业详细信息窗口，然后选择*下载作业日志*。</block>
+  <block id="a0c376277918210d31cc1ba9ab3be91f" category="list-text">从产品列表中，选择*适用于VMware vSphere的SnapCenter插件*，然后选择*下载最新版本*按钮。</block>
+  <block id="cad52eda217dcfc705b313ec906e17fa" category="list-text">在“*可信根证书*”旁边，选择“*添加*”</block>
+  <block id="2df9b4e7fd96f454112cebcb2c11bc58" category="list-text">在“*可信根存储*”旁边，选择“*添加*”</block>
+  <block id="304864a1b5aff1e1079b21758dc2eb42" category="list-text">在虚拟设备的*Summary (摘要)*选项卡中，选择*Launch Remote Console*(启动远程控制台)以打开维护控制台窗口，然后登录。</block>
+  <block id="96b7986e1420da0eaf362c26a5f92b0c" category="list-text">在VMware vSphere客户端中，选择*Guest File Restore*。</block>
+  <block id="02ff162f198bd14a9cd58de28a1509e0" category="list-text">选择子系统文件还原会话、然后在子系统会话监控器标题栏中选择扩展选定的子系统会话图标。</block>
+  <block id="5e6de1f98e1077bcf0b92faf842837b0" category="list-text">在虚拟设备的*Summary (摘要)*选项卡中，选择*Launch Remote Console (启动远程控制台)或Launch Web Console*(启动Web控制台)以打开维护控制台窗口，然后登录。</block>
+  <block id="282524d6caa147ce3f5771b9f8d297ba" category="list-text">选择顶部工具栏中的设置图标。</block>
+  <block id="6df9b38370961bbb1a0e45a55e219084" category="list-text">在*Settings*页的*Support*部分中，选择*Generate Support* Bundle。</block>
+  <block id="1458b85245c7e24884d515b42703ad30" category="list-text">生成支持包后、请选择用于将该支持包下载到NetApp的链接。</block>
+  <block id="78d673329f246fad32172b092130371a" category="list-text">在左侧导航窗格中选择*配置*，然后在*插件详细信息*部分中选择服务选项以禁用此插件。</block>
+  <block id="6443540b281dae3c732f7ca7fc8032ed" category="list-text">在左侧导航窗格中选择*配置*，然后在*插件详细信息*部分中选择服务选项以启用该插件。</block>
+  <block id="d09600046df9653330514f7dd035164b" category="admonition">选择*登录*按钮。由于已知VMware问题、请勿使用Enter键进行登录。 有关详细信息、请参阅有关ESXi嵌入式主机客户端问题的VMware文档。</block>
+  <block id="306995bdfdf7ea40bf6448d38e8bf9f3" category="list-text">在*VMware vSphere client*页面上，选择工具栏中的菜单，然后选择*VMware vSphere的SnapCenter插件*。</block>
+  <block id="608bf864557d28821b2eb0e56e8d10ac" category="list-text">选择*菜单*并选择*主机和群集*菜单选项，然后选择一个虚拟机，再选择*配置*选项卡，然后在适用于VMware vSphere的* SnapCenter插件*部分中选择*备份*。</block>
+  <block id="01d8fd80655b841fd24d5f3542e53a52" category="list-text">在配置选项卡上，选择一个备份，然后选择*重命名*。</block>
+  <block id="33cbff4155ddd163ffb01a5a6f5283f3" category="list-text">在*重 命名备份*对话框中，输入新名称，然后选择*OK*。</block>
+  <block id="00a31f10c2d5e9873bfd86b5f4e243e9" category="list-text">选择一个或多个备份，然后选择*Delete*。</block>
+  <block id="81b1e76dd77fc32dd32f1a9d4da3cd57" category="list-text">选择*OK*确认删除操作。</block>
+  <block id="cbb26e94d91f6a49695630bc1e9a5acf" category="list-text">在选择控制阀插件的左侧导航窗格中，选择*资源组*，然后选择资源组并选择*编辑*。</block>
+  <block id="3a5a734d04eec23ee6c2a3ba80352b3f" category="list-text">在向导的其余部分中对资源组进行任何其他修改，然后选择*Complete*。</block>
+  <block id="0f4789f15df2a876e628b86c5c5b025e" category="list-text">在选择控制阀插件的左侧导航窗格中，选择*Policies*，然后选择一个策略并选择*Edit*。</block>
+  <block id="9ad4c3d8396c3b25c57dc2dc06319bcb" category="list-text">完成后，选择*更新*。</block>
+  <block id="62c0fcee62745802ebeba644005a6818" category="list-text">在选择控制阀插件的左侧导航窗格中，选择*Policies*，然后选择一个策略并选择*Remove*。</block>
+  <block id="f50de413db3d38ef5cef8c7c506680d6" category="list-text">在确认对话框中，选择*OK*。</block>
+  <block id="2281ebbec799d908f6dabc24a0a2ee4c" category="list-text">在选择控制阀插件的左侧导航窗格中，选择*资源组*，选择资源组，然后选择*暂停*(或选择*恢复*)。</block>
+  <block id="18401fe25e572b345be65cea833f744c" category="list-text">在确认框中，选择*OK*进行确认。</block>
+  <block id="c7660897c3fc2e2d374ba4dfe65d1f8a" category="list-text">在*Edit Resource Group*向导的左侧列表中，选择要修改的类别并输入所做的更改。</block>
+  <block id="bc59860d55d02e9ba978306f2a1dca59" category="list-text">选择*Next*直到出现“摘要”页面，然后选择*Complet*。</block>
+  <block id="f044b3b6c633716ca101094cbd2a01d3" category="list-text">在选择控制阀插件的左侧导航窗格中，选择*资源组*，然后选择资源组并选择*删除*。</block>
+  <block id="0a0a0e324eaae9117f71fdfb0b3cfaa6" category="list-text">在“*删除资源组*”确认框中，选择*OK*进行确认。</block>
+  <block id="481e7cee5cfb9a867ff9ccc647003045" category="list-text">在选择控制阀插件的左侧导航窗格中，选择*存储系统*。</block>
+  <block id="ca44355ceea440dcbef6a10701fc8a5e" category="list-text">在*编辑存储系统*窗口中，输入新值，然后选择*更新*以应用更改。</block>
+  <block id="83127292ea67b05c69ebc93b891df3d2" category="list-text">在*Storage Systems*页面上，选择要删除的Storage VM，然后选择*Delete*。</block>
+  <block id="86778ef65cf464c25f23f29ec928f1ae" category="list-text">在“*删除存储系统*”确认框中，选中“*删除存储系统*”复选框，然后选择“是”进行确认。*注意：*仅支持ESXi主机7.0U1及更高版本。</block>
+  <block id="f8e344fab545443365f1e1346a6ba515" category="list-text">在存储系统页面上，选择要修改的存储系统并选择*Edit*。</block>
+  <block id="2015bece99e27e5d731435c9d76c182b" category="list-text">在*Settings*页面的*User*部分中，选择*Edit*。</block>
+  <block id="905fa350cd0e9c4ad417b8823d70e6cb" category="list-text">输入新密码并选择*保存*。</block>
+  <block id="778c445590328166255851c12d3f18b8" category="list-text">在*Settings*页的*Network Settings*部分中，选择*IPv4*或*IPv6*地址，然后选择*Edit*。</block>
+  <block id="ebd4b6e575c2279c1af4154dbfc7d26a" category="paragraph">输入新信息并选择*保存*。</block>
+  <block id="f798824fc17a7c3ad8b0e4b22e313af7" category="list-text">IPv4：在*IP地址*字段中，输入<block ref="f1f17934834ae2613699701054ef9684" prefix=" " category="inline-code"></block>，然后选择*Save*。</block>
+  <block id="98144ecbe86bdb73c93157dd89cff3ec" category="list-text">IPv6：在*IP Address*字段中：输入<block ref="c36786bc262473df7cbe294ed6ea806b" prefix=" " category="inline-code"></block>，然后选择*Save*。</block>
+  <block id="1ea7cb361e0e62393a10408a45051175" category="list-text">在*Settings*页面的*Date and time*部分中，选择*Edit*。</block>
+  <block id="a5e62d60df18484f374ad440fa35f2c2" category="list-text">选择新时区并选择*保存*。</block>
+  <block id="ed24fc2847a698d853d3e1f975825881" category="list-text">在左侧导航窗格中，选择*Configuration*。</block>
+  <block id="24dfc6b899da05f1754c0fac970189a5" category="list-text">在*Configuration*页面的*vCento*部分中，选择*Edit*。</block>
+  <block id="cee60d7116f7e9f602cecff95e67e795" category="list-text">输入新密码，然后选择*Save*。</block>
+  <block id="a596d47dc9e1a8667434601bb70c6ad2" category="list-text">在*挂载数据存储库*页面上、选择备份和备份位置(主或二级)、然后选择*完成*。</block>
+  <block id="176d231a661826ee641ee20f6186bd69" category="list-text">在工具栏中选择*菜单*，然后从下拉列表中选择*存储*。</block>
+  <block id="1f3058212bfbf77f41918f3f3a2fd582" category="list-text">登录到vCenter，选择工具栏中的*菜单*，然后选择*适用于VMware VSphere的SnapCenter插件*。</block>
+  <block id="55b6dbb64a7a01e55ec6c6f1e82524e2" category="list-text">在SnapCenter图形用户界面的左侧导航窗格中，选择*hosts*。</block>
+  <block id="ee3e8b5ce13430356556fee5021d9317" category="list-text">选择*Add*以启动向导。</block>
+  <block id="b623e6ded9a852f4e7cd9765578d0c08" category="list-text">选择 * 提交 * 。</block>
+  <block id="8fbd6a3eab66d75eb22802cd7bdab5ee" category="list-text">在左侧导航窗格中，选择*设置*，然后选择*身份凭证*选项卡，然后选择*添加*以添加虚拟设备的凭据。</block>
+  <block id="e556309e3738293954426d97ff80e5be" category="list-text">选择*菜单*并选择*存储*菜单选项，然后选择一个数据存储库，再选择*配置*选项卡，然后在适用于VMware vSphere的* SnapCenter插件*部分中选择*备份*。</block>
+  <block id="340644a6feb53a4c0cf17d7dc95e37bb" category="list-text">从备份列表中选择已删除的虚拟机，然后选择*Restore*。</block>
+  <block id="216106f9c289ff5c0e156f155d915eb2" category="paragraph">您可以搜索特定备份名称或部分备份名称、也可以通过单击筛选器图标并选择日期和时间范围、选择是否需要包含VMware快照的备份、是否需要挂载备份以及位置来筛选备份列表。选择*OK*返回向导。</block>
+  <block id="496e324a452b0d9825c96401dab61646" category="list-text">查看“摘要”页面，然后选择*完成*。</block>
+  <block id="ce90ba667f9b72c9d09d9562f81efad6" category="list-text">查看摘要，然后选择*完成*。</block>
+  <block id="b89dbb3a27a140b56ee4c00016ec02b6" category="list-text">选择*浏览文件*图标可查看虚拟磁盘上的文件和文件夹列表。</block>
+  <block id="ecaa5b9363bd3e23ada741ccc7512473" category="paragraph">双击要浏览的文件夹并选择单个文件时、提取文件列表时可能会出现时间延迟、因为提取操作是在运行时执行的。</block>
+  <block id="642918e808461b51c37c9e8d7909ffdb" category="list-text">选择要恢复的一个或多个文件或文件夹，然后选择*选择恢复位置*。</block>
+  <block id="f77361b272ce81d8275727f7b1a756a8" category="list-text">选择 * 还原 * 。</block>
+  <block id="903d29a0523ca22e4dcbac24e33ef3f4" category="paragraph">有关受支持版本的最新信息，请参阅<block ref="361fee5724018df312396e88d348d8b5" category="inline-link-rx"></block>。</block>
+  <block id="e48b6aae8f268fb1220ec073d110a1ec" category="paragraph">您不能从运行 Linux 子操作系统的虚拟机还原文件和文件夹。但是，您可以连接 VMDK ，然后手动还原文件和文件夹。有关支持的子操作系统的最新信息，请参见<block ref="361fee5724018df312396e88d348d8b5" category="inline-link-rx"></block>。</block>
+  <block id="1ebf62949d055407b1151236c6390c01" category="paragraph">您不能从运行 Linux 子操作系统的虚拟机还原文件和文件夹。但是，您可以连接 VMDK ，然后手动还原文件和文件夹。有关支持的子操作系统的最新信息，请参阅<block ref="361fee5724018df312396e88d348d8b5" category="inline-link-rx"></block>。</block>
+  <block id="c8a6eba78508876c1b9a258628d9ab40" category="paragraph">您可以搜索特定备份名称或部分备份名称、也可以通过单击筛选器图标并选择日期和时间范围来筛选备份列表、选择是否需要包含VMware快照的备份、是否需要挂载备份以及主位置或二级位置。选择*OK*返回向导。</block>
+  <block id="78e939bd5a7e9753b83a4aa950117e52" category="cell">从下拉列表中选择*特定磁盘*，然后选择*下一步*。在数据存储库选择表中，您可以选择或取消选择任何 VMDK 。</block>
+  <block id="99b54fcdde08e8f03e3d080dede7ffaf" category="cell">选择目标数据存储库、然后从列表中选择其他数据存储库。</block>
+  <block id="d7a906f85d31c95c7ab0435b6e7cdc0f" category="paragraph">您可以搜索特定备份名称或部分备份名称、也可以通过单击筛选器图标并选择日期和时间范围、选择是否需要包含VMware快照的备份、是否需要挂载备份以及位置来筛选备份列表。选择*OK*返回向导。</block>
+  <block id="98767e400dba33bddecdcdc37263012a" category="list-text">在VMware vSphere Client GUI中，选择工具栏中的*Menu"(菜单)，然后执行以下操作之一：</block>
+  <block id="c6e0d914d3ce8312422c0f87cce38dec" category="cell">选择*主机和群集*菜单选项，然后选择一个虚拟机，再选择*配置*选项卡，然后在适用于VMware vSphere的* SnapCenter插件部分*中选择*备份*。</block>
+  <block id="fb3dfed215ac2d206151a0e8d833297e" category="cell">选择*存储*菜单选项，然后选择一个数据存储库，再选择*配置*选项卡，然后在适用于VMware vSphere的* SnapCenter插件*部分中选择*备份*。</block>
+  <block id="3d8698d1f799932ad9b7c30ef26a6f9a" category="list-text">在*Restore*向导中输入搜索名称并选择*Search*。</block>
+  <block id="7993e260060ff1a11abab5b6b6e12d0f" category="paragraph">您可以通过以下方式筛选备份列表：选择筛选器图标、选择日期和时间范围、选择是否需要包含VMware快照的备份、是否需要挂载备份以及位置。选择*OK*。</block>
+  <block id="f4bda4730548fc24fd8d94cdec0a15df" category="list-text">选择*选择VM*，然后在*代理VM*对话框中选择一个VM。选择*保存*返回到*作为身份凭证运行*对话框。</block>
+  <block id="5de0ce684426e1f742a27b0fd2072afe" category="list-text">在*代理凭据*部分中，选择*添加*以添加要用作代理的VM。</block>
+  <block id="0eba6575de69228d6a0c42ae39b2161a" category="list-text">在*Proxy VM*对话框中，填写相关信息，然后选择*Save*。</block>
+  <block id="a7fa431624d8a435ec46632de0a41142" category="list-text">在*卸载克隆的数据存储库*对话框中、选择一个数据存储库、选中*卸载克隆的数据存储库*复选框、然后选择*卸载*。</block>
+  <block id="a08655c19df01f4238142581122cdafd" category="list-text">在左侧导航窗格中选择*配置*，然后在插件详细信息部分中选择*服务*选项以禁用此插件。</block>
+  <block id="85fbd4a2fc42ed8b114b6cc2f741cdb2" category="list-text">从产品列表中，选择*适用于VMware vSphere的SnapCenter插件*，然后选择*下载最新版本*按钮。</block>
+  <block id="651b8e2bfa244aee2afc1d33733f720d" category="list-text">在vCenter图形用户界面上，选择*vSphere Client (HTML)*。</block>
+  <block id="7d551bb98d3b3428fb3885042700cc78" category="list-text">在导航器窗格中，选择要升级的虚拟机，然后选择*Summary (摘要)*选项卡。</block>
+  <block id="1c9fb40d642ab392b4a33bf895e604d4" category="list-text">在*相关对象*窗格中，选择列表中的任何数据存储库，然后选择*摘要*选项卡。</block>
+  <block id="95ef8fc103ca8cdd2309cc11bd52c0f4" category="list-text">在选定数据存储库的*Files*选项卡上，选择列表中的任何文件夹，然后选择*Upload files*。</block>
+  <block id="e0e76d82faa4a32cc8c42b2c52e08b9f" category="list-text">在上载弹出屏幕上，导航到下载文件的位置<block ref="1ba589501f1cc472dfdecac1bd09a624" prefix=" " category="inline-code"></block>，选择文件映像，然后选择<block ref="1ba589501f1cc472dfdecac1bd09a624" prefix=" " category="inline-code"></block>*Open*。此文件将上传到数据存储库。</block>
+  <block id="d4e6cc0510b397a882fde01a403fb2f1" category="list-text">导航回要升级的虚拟机，然后选择*摘要*选项卡。在 * 虚拟机硬件 * 窗格的 CD/DVD 字段中，此值应为 " 已断开连接 " 。</block>
+  <block id="d3013f6292b8d8d9720b9ec4b45eb025" category="list-text">在CD/DVD字段中选择连接图标，然后选择*连接到数据存储库上的CD/DVD映像*。</block>
+  <block id="7f9fb53d64fb6e1b553f65ebb09b145d" category="list-text">在目录列中，导航到<block ref="1ba589501f1cc472dfdecac1bd09a624" prefix=" " category="inline-code"></block>您上传的文件，确保在文件类型字段中选择了“ISO映像”，然后选择*OK*。请等待此字段显示 " 已连接 " 状态。</block>
+  <block id="4699cb8aa03238f2ca96c699dbd3ecb4" category="list-text">通过访问虚拟设备的*Summary (摘要)*选项卡登录到维护控制台，然后选择绿色的运行箭头以启动维护控制台。</block>
+  <block id="5596675285eb7d5ee694ce10b28f4874" category="list-text">查看概述状态信息或选择链接以了解更多详细信息、如下表所示。</block>
+  <block id="54861357f32e30429aa4ce6cf91b31ca" category="list-text">选择作业ID可查看有关该作业的更多详细信息。</block>
+  <block id="3ffdb973715173d60486ae13bf2ee05d" category="list-text">选择*查看全部*以转到"作业监控"选项卡、了解有关所有作业的更多详细信息。</block>
+  <block id="ef93b45ade97012d47885d846fcd6b08" category="list-text">选择下拉菜单以选择*VM*或*数据 存储库*。</block>
+  <block id="463e735b6ee05559608eaafd56818816" category="list-text">选择*保存*以保存系统日志服务器设置。</block>
 </blocks>

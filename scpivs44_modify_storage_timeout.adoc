@@ -19,8 +19,8 @@ summary: 即使备份过去已成功运行、但在适用于VMware vSphere的Sna
 您可能会遇到错误 `Unable to discover resources on SCV ： Unable to get storage details for datastore <xxx>…`
 
 .步骤
-. 在选择控制阀插件的左侧导航窗格中，单击*存储系统*。
-. 在存储系统页面上，选择要修改的存储系统，然后单击 * 编辑 * 。
+. 在选择控制阀插件的左侧导航窗格中，选择*存储系统*。
+. 在存储系统页面上，选择要修改的存储系统并选择*Edit*。
 . 在超时字段中，增加秒数。
 +
 

@@ -21,7 +21,7 @@ summary: 将证书颁发机构的根证书和中间证书添加到VMware vCenter
 .步骤
 . 使用vSphere Client登录到vCenter Server。
 . 导航到*管理>证书>证书管理*。
-. 在*可信根存储*旁边、单击*添加*
+. 在“*可信根存储*”旁边，选择“*添加*”
 . 浏览并选择Entrust. root和Intermediate证书的位置。证书将添加到*可信根证书*下的面板中。安装证书后、可以验证并部署OVA。
 
 

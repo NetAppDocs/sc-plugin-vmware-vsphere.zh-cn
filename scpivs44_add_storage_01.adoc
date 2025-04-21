@@ -29,7 +29,7 @@ summary: 通过添加存储，适用于 VMware vSphere 的 SnapCenter 插件可�
 您必须将存储集群添加到适用于VMware vSphere的SnapCenter插件和适用于VMware vSphere的ONTAP工具中、以使VVOV数据保护正常工作。
 
 +
-有关详细信息、请参阅适用于VMware vSphere的ONTAP工具文档。此外、有关ONTAP工具支持的版本的最新信息、请参见 https://imt.netapp.com/matrix/imt.jsp?components=121034;&solution=1517&isHWU&src=IMT["NetApp 互操作性表工具"^]。
+有关详细信息、请参阅适用于VMware vSphere的ONTAP工具文档。此外、有关ONTAP工具支持的版本的最新信息、请参见 https://imt.netapp.com/matrix/imt.jsp?components=134348;&solution=1517&isHWU&src=IMT["NetApp 互操作性表工具"^]。
 
 
 
@@ -103,7 +103,7 @@ NOTE: 如果您使用适用于VMware vSphere的SnapCenter插件在VMDK上支持�
 
 | 向存储系统发送操作失败的 AutoSupport 通知 | 如果要为失败的数据保护作业发送 AutoSupport 通知，请选中此复选框。您还必须在 Storage VM 上启用 AutoSupport 并配置 AutoSupport 电子邮件设置。 
 |===
-. 单击 * 添加 * 。
+. 选择 * 添加 * 。
 +
 如果添加了存储集群，则会自动添加该集群中的所有 Storage VM 。自动添加的 Storage VM （有时称为 " 隐式 " Storage VM ）会显示在集群摘要页面上，并使用连字符（ - ）而非用户名。只有显式存储实体才会显示用户名。
 

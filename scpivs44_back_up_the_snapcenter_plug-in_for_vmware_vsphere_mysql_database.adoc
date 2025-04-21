@@ -23,7 +23,7 @@ summary: '适用于VMware vSphere的SnapCenter插件包括一个MySQL数据库(�
 
 .步骤
 . 从VMware vSphere客户端中、选择适用于VMware vSphere的SnapCenter插件所在的虚拟机。
-. 在虚拟设备的*Summary (摘要)*选项卡中，单击*Launch Remote Console*(启动远程控制台)*或Launch Web Console*(启动Web控制台)以打开维护控制台窗口。
+. 在虚拟设备的*Summary (摘要)*选项卡中，选择*Launch Remote Console*(启动远程控制台)或Launch Web Console*(启动Web控制台)以打开维护控制台窗口。
 +
 image:scpivs44_image21.png["维护控制台窗口"]
 

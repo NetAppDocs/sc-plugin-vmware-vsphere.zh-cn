@@ -51,43 +51,43 @@ TIP: 在开始升级之前，请备份适用于 VMware vSphere 的 SnapCenter �
 
 NOTE: 不支持将网络配置从静态切换到 DHCP 。
 
-有关受支持版本的最新信息、请参阅 https://imt.netapp.com/matrix/imt.jsp?components=121034;&solution=1517&isHWU&src=IMT["NetApp 互操作性表工具"^] (IMT)。
+有关受支持版本的最新信息、请参阅 https://imt.netapp.com/matrix/imt.jsp?components=134348;&solution=1517&isHWU&src=IMT["NetApp 互操作性表工具"^] (IMT)。
 
 .步骤
 . 禁用适用于 VMware vSphere 的 SnapCenter 插件，为升级做准备。
 +
 .. 登录到适用于 VMware vSphere 的 SnapCenter 插件管理 GUI 。部署适用于VMware vSphere的SnapCenter插件时、将显示IP地址。
-.. 单击左侧导航窗格中的 * 配置 * ，然后单击插件详细信息部分中的 * 服务 * 选项以禁用此插件。
+.. 在左侧导航窗格中选择*配置*，然后在插件详细信息部分中选择*服务*选项以禁用此插件。
 
 
 . 下载升级 ` .iso` 文件。
 +
 .. 登录到 NetApp 支持站点。 。
-.. 从产品列表中，选择 * 适用于 VMware vSphere 的 SnapCenter 插件 * ，然后单击 * 下载最新版本 * 按钮。
+.. 从产品列表中，选择*适用于VMware vSphere的SnapCenter插件*，然后选择*下载最新版本*按钮。
 .. 将适用于 VMware vSphere 的 SnapCenter 插件升级 ` .iso` 文件下载到任意位置。
 
 
 . 安装升级。
 +
 .. 在浏览器中，导航到 VMware vSphere vCenter 。
-.. 在vCenter图形用户界面上、单击* vSphere Client (HTML)*。
+.. 在vCenter图形用户界面上，选择*vSphere Client (HTML)*。
 .. 登录到 * VMware vCenter Single Sign-On* 页面。
-.. 在导航器窗格中，单击要升级的虚拟机，然后单击*Summary (摘要)*选项卡。
-.. 在 * 相关对象 * 窗格中，单击列表中的任何数据存储库，然后单击 * 摘要 * 选项卡。
-.. 在选定数据存储库的 * 文件 * 选项卡上，单击列表中的任何文件夹，然后单击 * 上传文件 * 。
-.. 在上传弹出屏幕上，导航到下载 ` .iso` 文件的位置，然后单击 ` .iso` 文件映像，然后单击 * 打开 * 。此文件将上传到数据存储库。
-.. 导航回要升级的虚拟机，然后单击 * 摘要 * 选项卡。在 * 虚拟机硬件 * 窗格的 CD/DVD 字段中，此值应为 " 已断开连接 " 。
-.. 单击 CD/DVD 字段中的连接图标，然后选择 * 连接到数据存储库上的 CD/DVD 映像 * 。
+.. 在导航器窗格中，选择要升级的虚拟机，然后选择*Summary (摘要)*选项卡。
+.. 在*相关对象*窗格中，选择列表中的任何数据存储库，然后选择*摘要*选项卡。
+.. 在选定数据存储库的*Files*选项卡上，选择列表中的任何文件夹，然后选择*Upload files*。
+.. 在上载弹出屏幕上，导航到下载文件的位置 `.iso`，选择文件映像，然后选择 `.iso`*Open*。此文件将上传到数据存储库。
+.. 导航回要升级的虚拟机，然后选择*摘要*选项卡。在 * 虚拟机硬件 * 窗格的 CD/DVD 字段中，此值应为 " 已断开连接 " 。
+.. 在CD/DVD字段中选择连接图标，然后选择*连接到数据存储库上的CD/DVD映像*。
 +
 image:scpivs44_image42.png["vCenter UI"]
 
 .. 在向导中，执行以下操作：
 +
 ... 在 Datastores 列中，选择您上传了 ` .iso` 文件的数据存储库。
-... 在目录列中，导航到您上传的 ` .iso` 文件，确保在文件类型字段中选择了 "ISO image" ，然后单击 * 确定 * 。请等待此字段显示 " 已连接 " 状态。
+... 在目录列中，导航到 `.iso`您上传的文件，确保在文件类型字段中选择了“ISO映像”，然后选择*OK*。请等待此字段显示 " 已连接 " 状态。
 
 
-.. 访问虚拟设备的 * 摘要 * 选项卡登录到维护控制台，然后单击绿色运行箭头以启动维护控制台。
+.. 通过访问虚拟设备的*Summary (摘要)*选项卡登录到维护控制台，然后选择绿色的运行箭头以启动维护控制台。
 .. 对于 System Configuration ，输入 * 。 2 * ，然后输入 * 。 8 * 进行升级。
 .. 输入 * 。 * 继续并开始升级。
 

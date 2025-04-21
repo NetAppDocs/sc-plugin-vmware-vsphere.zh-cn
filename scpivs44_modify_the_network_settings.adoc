@@ -29,18 +29,18 @@ summary: 您可以修改在适用于 VMware vSphere 的 SnapCenter 插件中配�
 +
 使用格式 `\https://<appliance-IP-address>:8080`
 
-. 单击顶部工具栏中的设置图标。
+. 选择顶部工具栏中的设置图标。
 +
 image:scpivs44_image31.png["适用于 VMware vSphere 的 SnapCenter 插件管理 GUI"]
 
-. 在*Settings*页的*Network Settings*部分中，单击*IPv4*或*IPv6*地址，然后单击*Edit*。
+. 在*Settings*页的*Network Settings*部分中，选择*IPv4*或*IPv6*地址，然后选择*Edit*。
 +
-输入新信息并单击 * 保存 * 。
+输入新信息并选择*保存*。
 
 . 如果要删除网络设置，请执行以下操作：
 +
-** IPv4 ：在 * IP Address* 字段中，输入 `0.0.0.0` ，然后单击 * 保存 * 。
-** IPv6 ：在 * IP Address* 字段中：输入 ` ： 0` ，然后单击 * 保存 * 。
+** IPv4：在*IP地址*字段中，输入 `0.0.0.0`，然后选择*Save*。
+** IPv6：在*IP Address*字段中：输入 `: :0`，然后选择*Save*。
 
 
 

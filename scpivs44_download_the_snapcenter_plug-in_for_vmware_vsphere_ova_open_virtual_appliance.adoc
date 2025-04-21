@@ -22,13 +22,13 @@ summary: 您可以从NetApp 支持站点 下载适用于VMware vSphere的SnapCen
 . 下载适用于VMware的SnapCenter 插件：
 +
 ** 登录到 NetApp 支持站点（ https://mysupport.netapp.com/products/index.html["https://mysupport.netapp.com/products/index.html"^]）。
-** 从产品列表中，选择 * 适用于 VMware vSphere 的 SnapCenter 插件 * ，然后单击 * 下载最新版本 * 按钮。
+** 从产品列表中，选择*适用于VMware vSphere的SnapCenter插件*，然后选择*下载最新版本*按钮。
 ** 下载适用于VMware vSphere的SnapCenter 插件 `.tar` 文件到任何位置。
 
 
 . 使用vSphere Client登录到vCenter Server。
 . 导航到*管理>证书>证书管理*。
-. 在*可信根存储*旁边、单击*添加*
+. 在“*可信根存储*”旁边，选择“*添加*”
 . 浏览并选择Entrust. root和Intermediate证书的位置。证书将添加到*可信根证书*下的面板中。安装证书后、可以验证并部署OVA。
 
 

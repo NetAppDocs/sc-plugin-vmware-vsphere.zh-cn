@@ -59,7 +59,7 @@ NFS 环境中的大多数还原操作都使用原生 ONTAP 功能（例如单个
 您可以使用ONTAP 工具在ONTAP 和VMware Web Client中为VVOL配置和配置存储。
 
 +
-有关详细信息、请参阅适用于VMware vSphere的ONTAP工具文档。此外、有关ONTAP工具支持的版本的最新信息、请参见 https://imt.netapp.com/matrix/imt.jsp?components=121034;&solution=1517&isHWU&src=IMT["NetApp 互操作性表工具"^]。
+有关详细信息、请参阅适用于VMware vSphere的ONTAP工具文档。此外、有关ONTAP工具支持的版本的最新信息、请参见 https://imt.netapp.com/matrix/imt.jsp?components=134348;&solution=1517&isHWU&src=IMT["NetApp 互操作性表工具"^]。
 
 * 适用于VMware vSphere的SnapCenter插件作为虚拟设备部署在Linux VM中
 +
@@ -69,7 +69,7 @@ NFS 环境中的大多数还原操作都使用原生 ONTAP 功能（例如单个
 
 除了这些主要功能之外、适用于VMware vSphere的SnapCenter插件还支持iSCSI、光纤通道、FCoE、NFS 3.0/4.1、VMFS 5.0/6.0、基于FC的NVMe以及基于TCP的NVMe。
 
-有关受支持版本的最新信息、请参阅 https://imt.netapp.com/matrix/imt.jsp?components=121034;&solution=1517&isHWU&src=IMT["NetApp 互操作性表工具"^] (IMT)。
+有关受支持版本的最新信息、请参阅 https://imt.netapp.com/matrix/imt.jsp?components=134348;&solution=1517&isHWU&src=IMT["NetApp 互操作性表工具"^] (IMT)。
 
 有关NFS协议和ESXi主机的信息、请参阅VMware提供的vSphere存储文档。
 

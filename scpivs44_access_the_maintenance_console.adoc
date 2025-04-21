@@ -29,7 +29,7 @@ summary: 您可以使用适用于 VMware vSphere 的 SnapCenter 插件的维护�
 
 .步骤
 . 从VMware vSphere客户端中、选择适用于VMware vSphere的SnapCenter插件所在的虚拟机。
-. 在虚拟设备的*Summary (摘要)*选项卡中，单击*Launch Remote Console*(启动远程控制台)以打开维护控制台窗口。
+. 在虚拟设备的*Summary (摘要)*选项卡中，选择*Launch Remote Console*(启动远程控制台)以打开维护控制台窗口。
 +
 使用默认维护控制台用户名登录 `maint` 和您在安装时设置的密码。
 

@@ -64,7 +64,7 @@ IMPORTANT: 请勿添加处于不可访问状态的 VM 。尽管可以创建包�
 .开始之前
 在创建包含VVOL VM的资源组之前、必须先部署适用于VMware的ONTAP 工具。
 
-有关详细信息、请参阅适用于VMware vSphere的ONTAP工具文档。此外、有关ONTAP工具支持的版本的最新信息、请参见 https://imt.netapp.com/matrix/imt.jsp?components=121034;&solution=1517&isHWU&src=IMT["NetApp 互操作性表工具"^]。
+有关详细信息、请参阅适用于VMware vSphere的ONTAP工具文档。此外、有关ONTAP工具支持的版本的最新信息、请参见 https://imt.netapp.com/matrix/imt.jsp?components=134348;&solution=1517&isHWU&src=IMT["NetApp 互操作性表工具"^]。
 
 .关于此任务
 您可以随时在资源组中添加或删除资源。
@@ -112,7 +112,7 @@ SnapCenter 会在您创建资源组时执行兼容性检查。
 二级保护负责为资源组中添加的资源创建复制关系。
 
 .步骤
-. 在选择控制阀插件的左侧导航窗格中，单击*资源组*，然后选择*创建*以启动向导。
+. 在选择控制阀插件的左侧导航窗格中，选择*资源组*，然后选择*创建*以启动向导。
 
 
 这是创建资源组的最简单方法。但是，您也可以通过执行以下操作之一来创建包含一个资源的资源组：
@@ -186,10 +186,10 @@ NOTE: ASA R2存储系统不支持重命名快照、因此不支持选择控制�
 资源组中的虚拟机和数据存储库名称必须是唯一的。 
 
 
-| 可用实体 | 选择要保护的资源，然后单击 * > * 将所选内容移动到 " 选定实体 " 列表。 
+| 可用实体 | 选择要保护的资源，然后选择*>*将所选内容移动到选定实体列表。 
 |===
 +
-单击 * 下一步 * 时，系统会首先检查 SnapCenter 是否管理选定资源所在的存储并与其兼容。
+选择*下一步*时，系统会首先检查SnapCenter是否管理选定资源所在的存储，以及这些存储是否兼容。
 
 +
 如果显示此消息 `Selected <resource-name> is not SnapCenter compatible` 、则表示选定资源与SnapCenter不兼容。
@@ -263,12 +263,12 @@ image:secondary_protection.png["创建资源组窗口"]
 +
 link:scpivs44_modify_the_time_zones.html["修改备份的时区"]。
 
-. 查看摘要，然后单击*完成*。从6.1号选择控制阀开始，ASA R2系统的辅助保护资源显示在摘要页中。
+. 查看摘要，然后选择*完成*。从6.1号选择控制阀开始，ASA R2系统的辅助保护资源显示在摘要页中。
 +
-在单击 * 完成 * 之前，您可以返回到向导中的任何页面并更改信息。
+在选择*完成*之前，您可以返回向导中的任何页面并更改信息。
 
 +
-单击 * 完成 * 后，新资源组将添加到资源组列表中。
+选择*完成*后，新资源组将添加到资源组列表中。
 
 +
 
@@ -290,7 +290,7 @@ NOTE: 如果备份中任何 VM 的暂停操作失败，则备份将标记为不�
 SnapCenter 4.x 版支持 ONTAP 8.3.1 及更高版本。
 
 +
-适用于VMware vSphere的SnapCenter插件不会对所有ONTAP版本执行兼容性检查、仅适用于ONTAP 8.2.1及更早版本。因此、请始终参考 https://imt.netapp.com/matrix/imt.jsp?components=121034;&solution=1517&isHWU&src=IMT["NetApp 互操作性表工具（ IMT ）"^] 以获取有关SnapCenter支持的最新信息。
+适用于VMware vSphere的SnapCenter插件不会对所有ONTAP版本执行兼容性检查、仅适用于ONTAP 8.2.1及更早版本。因此、请始终参考 https://imt.netapp.com/matrix/imt.jsp?components=134348;&solution=1517&isHWU&src=IMT["NetApp 互操作性表工具（ IMT ）"^] 以获取有关SnapCenter支持的最新信息。
 
 * 共享 PCI 设备已连接到 VM 。
 * 未在SnapCenter中配置首选IP地址。

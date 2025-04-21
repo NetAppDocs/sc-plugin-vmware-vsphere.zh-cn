@@ -44,7 +44,7 @@ summary: 将适用于 VMware vSphere 的 SnapCenter 插件升级到同一版本�
 +
 部署适用于VMware vSphere的SnapCenter插件时、将显示IP地址。
 
-. 单击左侧导航窗格中的 * 配置 * ，然后单击 * 插件详细信息 * 部分中的服务选项以禁用此插件。
+. 在左侧导航窗格中选择*配置*，然后在*插件详细信息*部分中选择服务选项以禁用此插件。
 +
 已禁用适用于VMware vSphere的SnapCenter插件服务、并且此扩展已在vCenter中取消注册。
 
@@ -54,7 +54,7 @@ summary: 将适用于 VMware vSphere 的 SnapCenter 插件升级到同一版本�
 
 . 重新启动 vCenter Server 。
 . 登录到VMware vSphere客户端。
-. 单击左侧导航窗格中的 * 配置 * ，然后单击 * 插件详细信息 * 部分中的服务选项以启用此插件。
+. 在左侧导航窗格中选择*配置*，然后在*插件详细信息*部分中选择服务选项以启用该插件。
 +
 已启用适用于VMware vSphere的SnapCenter插件服务、并且已在vCenter中注册此扩展。
 

@@ -46,5 +46,5 @@ IMPORTANT: 请勿在 REST API URL 中使用以下字符： + ，。， % 和 & �
 +
 登录使用vCenter身份验证机制生成令牌。
 
-. 单击 API 资源类型可显示该资源类型的 API 。
+. 选择API资源类型以显示该资源类型中的API。
 

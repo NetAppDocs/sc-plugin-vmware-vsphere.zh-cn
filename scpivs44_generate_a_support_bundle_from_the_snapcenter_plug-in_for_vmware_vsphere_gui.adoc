@@ -27,10 +27,10 @@ summary: 您可以从适用于 VMware vSphere 的 SnapCenter 插件 GUI 生成�
 +
 使用格式 `\https://<OVA-IP-address>:8080`。
 
-. 单击顶部工具栏中的设置图标。
+. 选择顶部工具栏中的设置图标。
 +
 image:scpivs44_image10.png["适用于VMware vSphere的SnapCenter插件界面"]
 
-. 在 * 设置 * 页面的 * 支持 * 部分中，单击 * 生成支持 * 包。
-. 生成支持包后，单击提供的链接将此包下载到 NetApp 。
+. 在*Settings*页的*Support*部分中，选择*Generate Support* Bundle。
+. 生成支持包后、请选择用于将该支持包下载到NetApp的链接。
 

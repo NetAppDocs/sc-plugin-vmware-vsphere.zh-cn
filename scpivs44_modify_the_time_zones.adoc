@@ -32,12 +32,12 @@ summary: 在为适用于VMware vSphere的SnapCenter插件资源组配置备份�
 +
 使用格式 `\https://<appliance-IP-address>:8080`
 
-. 单击顶部工具栏中的设置图标。
+. 选择顶部工具栏中的设置图标。
 +
 image:scpivs44_image28.jpg["适用于 VMware vSphere 的 SnapCenter 插件"]
 
-. 在 * 设置 * 页面的 * 日期和时间 * 部分中，单击 * 编辑 * 。
-. 选择新时区并单击 * 保存 * 。
+. 在*Settings*页面的*Date and time*部分中，选择*Edit*。
+. 选择新时区并选择*保存*。
 +
 新时区将用于适用于VMware vSphere的SnapCenter插件执行的所有备份。
 
