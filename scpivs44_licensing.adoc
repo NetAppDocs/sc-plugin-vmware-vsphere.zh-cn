@@ -16,11 +16,9 @@ summary: 本节提供适用于 VMware vSphere 的 SnapCenter 插件的许可信�
 [role="lead"]
 如果您使用的是以下存储系统，则适用于 VMware vSphere 的 SnapCenter 插件是一款免费产品：
 
-* FAS
-* AFF
+* 内部ONTAP集群(FAS、AFF和ASA系统)
 * Cloud Volumes ONTAP
 * ONTAP Select
-* ASA
 
 
 建议（但不要求）将 SnapCenter 标准版许可证添加到二级目标。如果二级系统上未启用 SnapCenter 标准许可证，则在执行故障转移操作后，您将无法使用 SnapCenter 。但是，要执行挂载和连接操作，需要在二级存储上安装 FlexClone 许可证。要执行还原操作，需要 SnapRestore 许可证。

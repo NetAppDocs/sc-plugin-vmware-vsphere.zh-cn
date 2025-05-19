@@ -280,17 +280,7 @@ NOTE: 如果备份中任何 VM 的暂停操作失败，则备份将标记为不�
 
 == 管理兼容性检查失败
 
-在尝试创建资源组时， SnapCenter 会执行兼容性检查。
-
-不兼容的原因可能是：
-
-* VMDK 位于不受支持的存储上；例如，在 7- 模式下运行的 ONTAP 系统或非 ONTAP 设备上。
-* 数据存储库位于运行集群模式 Data ONTAP 8.2.1 或更早版本的 NetApp 存储上。
-+
-SnapCenter 4.x 版支持 ONTAP 8.3.1 及更高版本。
-
-+
-适用于VMware vSphere的SnapCenter插件不会对所有ONTAP版本执行兼容性检查、仅适用于ONTAP 8.2.1及更早版本。因此、请始终参考 https://imt.netapp.com/matrix/imt.jsp?components=134348;&solution=1517&isHWU&src=IMT["NetApp 互操作性表工具（ IMT ）"^] 以获取有关SnapCenter支持的最新信息。
+在尝试创建资源组时， SnapCenter 会执行兼容性检查。有关SnapCenter支持的最新信息、请始终参见 https://imt.netapp.com/matrix/imt.jsp?components=134348;&solution=1517&isHWU&src=IMT["NetApp 互操作性表工具（ IMT ）"^]。不兼容的原因可能是：
 
 * 共享 PCI 设备已连接到 VM 。
 * 未在SnapCenter中配置首选IP地址。

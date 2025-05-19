@@ -100,7 +100,7 @@ VM的还原操作会取消注册原始VM、从备份快照还原VM、并在同�
 . 在VMware vSphere Client GUI中，选择工具栏中的*菜单*，然后从下拉列表中选择*虚拟机和模板*。
 +
 
-NOTE: 如果要还原已删除的VM，则添加到适用于VMware vSphere的SnapCenter插件的Storage VM凭据必须是 `vsadmin` 或具有与相同权限的用户帐户 `vsadmin`。主机必须位于运行 ONTAP 8.2.2 或更高版本的存储系统上。
+NOTE: 如果要还原已删除的VM，则添加到适用于VMware vSphere的SnapCenter插件的Storage VM凭据必须是 `vsadmin` 或具有与相同权限的用户帐户 `vsadmin`。
 
 . 在左侧导航器窗格中、右键单击某个虚拟机、然后在下拉列表中选择*适用于VMware vSphere的SnapCenter插件*、并在二级下拉列表中选择*还原*以启动此向导。
 . 在*Restore*向导的*Select Backup*页面上，选择要还原的备份快照。

@@ -28,7 +28,7 @@ NOTE: 从适用于VMware的SnapCenter插件(SCV) 5.0开始、您需要添加HTTP
 |===
 
 
-| 完全访问命令：ONTAP 8.3及更高版本所需的最低权限。 
+| 完全访问命令：最小ONTAP Privileges。 
 
 
 | event generate-autosupport-log 
@@ -54,13 +54,13 @@ NOTE: 从适用于VMware的SnapCenter插件(SCV) 5.0开始、您需要添加HTTP
 | vserver cifs-policy create vserver cifs-policy delete vserver cifs-policy show vserver cifs-share show vserver cifs-show vserver cifs-policy vserver导出策略delete vserver导出策略规则create vserver导出策略规则show vserver export -policy show vserver vserver vserver vserver vserver subsystem show vserver vserver system show vserver vserver subsystem删除NVMe子系统名称空间删除NVMe子系统vserver vserver映射删除NVMe子系统删除NVMe子系统删除NVMe子系统vserver vserver vserver vserver映射删除NVMe子系统删除NVMe子系统删除NVMe子系统删除NVMe子系统删除NVMe子系统删除NVMe子系统删除NVMe子系统vserver vserver vserver vserver vserver vserver vserver映射删除子系统删除子系统删除NVMe子系统删除NVMe子系统 
 |===
 |===
-| 只读命令： ONTAP 8.3 及更高版本所需的最低权限 
+| 只读命令：最小ONTAP Privileges 
 
 
 | cluster Identity show network interface show vserver vserver peer-vserver show 
 |===
 |===
-| 完全访问命令：ONTAP 9及更高版本所需的最低权限。 
+| 完全访问命令：最小ONTAP Privileges 
 
 
 | 一致性组storage-unit show 
@@ -74,15 +74,6 @@ NOTE: 您可以忽略有关不受支持的Vserver命令的警告消息。
 
 == 其他 ONTAP 信息
 
-* 如果您运行的是 ONTAP 8.2.x ：
-+
-您必须以 `vsadmin` 的身份登录到 Storage VM 上，以获得适用于 VMware vSphere 的 SnapCenter 插件操作的适当特权。
-
-* 如果您运行的是 ONTAP 8.3 及更高版本：
-+
-您必须以 `vsadmin` 或具有上表中列出的最低权限的角色登录。
-
-* 您必须是集群管理员才能创建和管理用户角色。您可以将用户与集群Storage VM或Storage VM相关联。
 * 要使用SnapMirror活动同步功能、您需要ONTAP 9.12.1或更高版本。
 * 要使用防篡改Snapshot (TPS)功能：
 +

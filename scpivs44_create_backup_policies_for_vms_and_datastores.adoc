@@ -41,7 +41,7 @@ NOTE: 只有VMFS数据存储库才支持SnapMirror活动同步。
 要保护SnapMirror活动同步部署中的VMFS数据存储库、作为SnapCenter管理员、您需要：
 
 +
-** 按照技术报告中所述配置集群和调解器： https://www.netapp.com/pdf.html?item=/media/21888-tr-4878.pdf["TR-4878：SnapMirror活动同步(原SMBC)"]。
+** 按照技术报告中所述配置集群和调解器： https://docs.netapp.com/us-en/ontap/snapmirror-active-sync/mediator-install-task.html["为ONTAP活动同步配置SnapMirror调解器和集群"]。
 ** 将与VMFS数据存储库关联的卷添加到一致性组、然后使用_AutomatedFailOver_或_AutomatedFailOver双 工_保护策略在两个ONTAP存储系统之间创建数据保护关系。自ONTAP 9.15.1版起、支持_AutomatedFailOver双 工_策略。
 
 
@@ -87,7 +87,9 @@ IMPORTANT: 如果计划启用 SnapVault 复制，则应将保留数量设置为 
 
 +
 
-NOTE: 对于 ONTAP 9.4 或更高版本上的资源，最大保留值为 1018 次备份；对于 ONTAP 9.3 或更早版本上的资源，最大保留值为 254 次备份。如果将保留设置为高于底层 ONTAP 版本支持的值，则备份将失败。对于跨区数据存储库也是如此。如果生成数据存储库包含 ONTAP 9.3 及更早版本以及 ONTAP 9.4 及更高版本上的资源，请确保将保留值设置为 254 以下。
+NOTE: 最大保留值为1018个备份。如果将保留设置为高于底层 ONTAP 版本支持的值，则备份将失败。对于跨区数据存储库也是如此。
+
+
 
 . 在 * 复制 * 字段中，指定复制到二级存储的类型，如下表所示：
 +
