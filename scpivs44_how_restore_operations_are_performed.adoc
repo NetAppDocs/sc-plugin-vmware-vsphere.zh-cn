@@ -35,7 +35,7 @@ summary: 对于 VMFS 环境，适用于 VMware vSphere 的 SnapCenter 插件使�
 | VM 和 VMDK | VM 一致的主备份 | NFS 环境： ONTAP 单文件 SnapRestore VMFS 环境：使用 Storage VMotion 克隆和挂载 
 
 
-| VM 和 VMDK | VM 一致的二级备份 | NFS 环境：使用 Storage VMotion VMFS 环境克隆和挂载：使用 Storage VMotion 克隆和挂载 
+| VM 和 VMDK | VM 一致的二级备份 | NFS 环境：ONTAP SnapMirror 恢复 VMFS 环境：使用 Storage VMotion 克隆和挂载 
 
 
 | VVol 虚拟机 | 崩溃状态一致的主备份 | 适用于所有协议的 ONTAP 单文件 SnapRestore 

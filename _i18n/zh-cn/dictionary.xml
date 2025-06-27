@@ -472,7 +472,6 @@
   <block id="e10df4c314c4c935099e8c940a5cdf02" category="paragraph">您可以重命名和删除适用于 VMware vSphere 的 SnapCenter 插件执行的备份。您也可以同时删除多个备份。</block>
   <block id="b6821d00a7bc4a6fcfe3d073cec911ab" category="section-title">重命名备份</block>
   <block id="b069e722ad8d29f7eec823ae5a4a95a6" category="paragraph">如果要提供更好的名称以提高可搜索性，您可以重命名适用于 VMware vSphere 的 SnapCenter 插件备份。</block>
-  <block id="f8ffb952d62ac560c6adb8ac7e15a58e" category="paragraph">请勿在虚拟机，数据存储库，策略，备份或资源组名称中使用以下特殊字符： &amp; * $ # @ ！\ / ： * ？" &lt; &gt;-| ； " ，。允许使用下划线字符（ _ ）。</block>
   <block id="de00c1e27be1485dd099e4cd2aaa554d" category="section-title">删除备份</block>
   <block id="811a38ca6a4a37270419c2834515cf5c" category="paragraph">如果您不再需要备份来执行其他数据保护操作，则可以删除适用于 VMware vSphere 的 SnapCenter 插件备份。您可以同时删除一个备份或多个备份。</block>
   <block id="4b3cb5948249f5d59292e97ced52522d" category="paragraph">您不能删除已挂载的备份。您必须先卸载备份，然后才能将其删除。</block>
@@ -760,7 +759,6 @@
   <block id="86f5d700774abd1b4b1161e6afcd312e" category="section-title">修改资源组</block>
   <block id="1850764f60496630a671ed4a4ca36a90" category="paragraph">您可以在 vCenter 中的资源组中删除或添加资源，断开或附加策略，修改计划或修改任何其他资源组选项。</block>
   <block id="683a572529e7ee01c3f3b2f6e84ee453" category="paragraph">如果要修改资源组的名称，请勿在 VM ，数据存储库，策略，备份或资源组名称中使用以下特殊字符：</block>
-  <block id="bf6bb853aafb837a490acb97d9acbf87" category="paragraph">% 和 * $ # @ ！\ / ： * ？" &lt; &gt;-| ； " ，。</block>
   <block id="a051f3eeac4a83ec1f5d55c7aeba6f06" category="paragraph">允许使用下划线字符（ _ ）。</block>
   <block id="ad9a47e46e4ad7c3e60285f394572957" category="section-title">删除资源组</block>
   <block id="16b1a35ba7401a13d918126c70a9b4e4" category="paragraph">如果您不再需要保护 vCenter 中的资源，则可以删除该资源组。在从 vCenter 中删除适用于 VMware vSphere 的 SnapCenter 插件之前，必须确保删除所有资源组。</block>
@@ -877,7 +875,6 @@
   <block id="1d92d0cbfdf6166c05997268d3378fe0" category="list-text">链接模式</block>
   <block id="35f1c688325b0062756b2d7b0d00be28" category="paragraph">在链接模式下，每个 vCenter 都有一个单独的虚拟设备。因此，您可以在 vCenter 中使用重复的名称。但是，您必须在与资源组相同的 vCenter 中创建策略。</block>
   <block id="9efc9e0c08da510b5195bb9dc4b1b7c2" category="list-text">不支持的字符</block>
-  <block id="69a02b2d668a0ebee1d9ac100a00074c" category="paragraph">请勿在虚拟机，数据存储库，集群，策略，备份， 或资源组名称： % &amp; * $ # @ ！\ / ： * ？" &lt; &gt;-| ； " ，。</block>
   <block id="a923c6bf503ee78e9fc4b4479248cff6" category="list-text">指定保留设置。</block>
   <block id="6e0b19728555d1c2b7bc98ce7895aced" category="list-text">指定频率设置。</block>
   <block id="52b19e85e6a29b6fe5690f47944f859f" category="paragraph">此策略仅指定备份频率。用于备份的特定保护计划在资源组中定义。因此，两个或更多资源组可以共享相同的策略和备份频率，但备份计划不同。</block>
@@ -1677,7 +1674,6 @@
   <block id="55bc441bdeb0f43c60379f5dc78f6abf" category="paragraph">如果您运行的是ONTAP 9.8或ONTAP 9.9、则在切换或切回之后、必须重新启动适用于VMware vSphere的SnapCenter插件服务并重新同步SnapMirror关系、然后才能在MetroCluster环境中备份资源组。</block>
   <block id="3a45015313a1faf386696ea8ef299b04" category="list-text">要为一个VM创建资源组，请在快捷方式页面上选择*主机和群集*，然后右键单击某个VM，选择*适用于VMware VSphere的SnapCenter插件*&gt;*创建资源组*。</block>
   <block id="e55c3cdc89e781170175d407fcc99d3e" category="list-text">要为一个数据存储库创建资源组，请在快捷方式页面上选择*主机和群集*，然后右键单击某个数据存储库，选择*适用于VMware VSphere的SnapCenter插件*&gt;*创建资源组*。</block>
-  <block id="b6f45f1c26b5dc8cfcdcf884b55437e0" category="cell">输入资源组的名称。请勿在虚拟机，数据存储库，策略，备份或资源组名称中使用以下特殊字符： % &amp; * $ # @ ！\ / ： * ？" &lt; &gt; - [ 垂直条 ] ； " ，。允许使用下划线字符（ _ ）。具有特殊字符的虚拟机或数据存储库名称会被截断，因此很难搜索特定备份。在链接模式下、每个vCenter都有一个单独的适用于VMware vSphere的SnapCenter插件存储库。因此，您可以在 vCenter 中使用重复的名称。</block>
   <block id="31a7acb0f4773b26008800d71953f900" category="paragraph">如果显示此消息<block ref="9e5971575d4ff5fdbab34f545fb3c4f7" prefix=" " category="inline-code"></block> 、则表示选定资源与SnapCenter不兼容。</block>
   <block id="f1381c3464fcec41ea788ba3061a6adb" category="paragraph">要从备份中全局排除一个或多个数据存储库、必须在配置文件的属性中指定数据存储库名称<block ref="501d684ffe56268631cacb45d6a11474" prefix=" " category="inline-code"></block><block ref="c7d1d750bd6b50c426013a326fa505ba" prefix=" " category="inline-code"></block> 。请参阅 <block ref="85a3298a3ddc49d556dd2f507b17347f" category="inline-link-macro-rx"></block>。</block>
   <block id="5a0224c26b4097d544acbe092343725a" category="paragraph">如果在每个字段中选择天数、则会在每月第1天执行备份、之后会按指定的间隔执行备份。例如，如果选择 * 每 2 天 * ，则无论开始日期是偶数还是奇数，备份都会在整个月内的第 1 天，第 3 天，第 5 天，第 7 天等执行。</block>
@@ -2196,4 +2192,24 @@
   <block id="4058334ba125181f863f2828e9159ff3" category="admonition">如果要还原已删除的VM，则添加到适用于VMware vSphere的SnapCenter插件的Storage VM凭据必须是<block ref="6173aa5206484b5224450952747c7148" prefix=" " category="inline-code"></block> 或具有与相同权限的用户帐户<block ref="6173aa5206484b5224450952747c7148" prefix=" " category="inline-code"></block>。</block>
   <block id="f1ff6215662f12b3f0d4d8fe8c57e63e" category="summary">适用于 VMware vSphere 的 SnapCenter 插件为管理虚拟化资源提供了一个额外级别的 RBAC 。此插件同时支持 vCenter Server RBAC 和 ONTAP RBAC 。</block>
   <block id="ea4dc37a86a15ab44286e88df44656ea" category="paragraph">适用于VMware vSphere 6.1版的SnapCenter插件支持在ASA R2系统上配置虚拟机(VM)和VMFS数据存储库。ASA R2系统提供统一的硬件和软件解决方案、可根据仅SAN客户的需求提供简化的体验。适用于VMware vSphere 6.1的SnapCenter插件在ASA R2系统上支持的VM、数据存储库和虚拟机磁盘格式(VMDK)功能包括：</block>
+  <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">法律声明提供对版权声明、商标、专利等的访问。</block>
+  <block id="6016a2b341113bf496b719905398ecd2" category="section-title">版权</block>
+  <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
+  <block id="a1a9afcf552a769c282769271829889a" category="paragraph"><block ref="a1a9afcf552a769c282769271829889a" category="inline-link-macro-rx"></block></block>
+  <block id="126a02652da6de02962cf1b654fd6376" category="section-title">商标</block>
+  <block id="c4ce4761e466527d26b3e3d5ed1006fd" category="paragraph">NetApp 、 NetApp 徽标和 NetApp 商标页面上列出的标记是 NetApp 、 Inc. 的商标。其他公司和产品名称可能是其各自所有者的商标。</block>
+  <block id="f99aa604031e5049799e73b5c3748a98" category="inline-link-macro"><block ref="f99aa604031e5049799e73b5c3748a98" category="inline-link-rx"></block></block>
+  <block id="5d545fe5152641e2ebe654e336e520e5" category="paragraph"><block ref="5d545fe5152641e2ebe654e336e520e5" category="inline-link-macro-rx"></block></block>
+  <block id="be89498d2f8a22ce47c02ba9795fe2af" category="section-title">专利</block>
+  <block id="d0b19d36be2c5f16e9aef46c8a452d3d" category="paragraph">有关 NetApp 拥有的专利的最新列表，请访问：</block>
+  <block id="88e5eabd3917048b6927c42496b98f86" category="inline-link-macro"><block ref="88e5eabd3917048b6927c42496b98f86" category="inline-link-rx"></block></block>
+  <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
+  <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">隐私政策</block>
+  <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
+  <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
+  <block id="2c6c18c9ea36047e0562b8c63f8cdc3b" category="paragraph">请勿在虚拟机，数据存储库，集群，策略，备份， 或资源组名称： % &amp; * $ # @ ！\ / ： * ？“ &lt; &gt; - | ; ' ，以及空格。</block>
+  <block id="f064264a00ed4e40241d8bc78838f677" category="cell">输入资源组的名称。请勿在虚拟机，数据存储库，策略，备份或资源组名称中使用以下特殊字符： % &amp; * $ # @ ！\ / ： * ？“ &lt; &gt; - [竖线]；'，和空格。允许使用下划线字符（ _ ）。具有特殊字符的虚拟机或数据存储库名称会被截断，因此很难搜索特定备份。在链接模式下、每个vCenter都有一个单独的适用于VMware vSphere的SnapCenter插件存储库。因此，您可以在 vCenter 中使用重复的名称。</block>
+  <block id="88464b0f22e28142bc76c51bba424a64" category="cell">NFS 环境：ONTAP SnapMirror 恢复 VMFS 环境：使用 Storage VMotion 克隆和挂载</block>
+  <block id="12b816ebabce7bea08d953072a6f5d5b" category="paragraph">请勿在虚拟机，数据存储库，策略，备份或资源组名称中使用以下特殊字符： &amp; * $ # @ ！\ / ： * ？“ &lt; &gt; - | ; ' ，以及空格。允许使用下划线字符（ _ ）。</block>
+  <block id="8651a2d0c6ade87f04ae0bca90386289" category="paragraph">% 和 * $ # @ ！\ / ： * ？“ &lt; &gt; - | ; ' ，以及空格。允许使用下划线字符（ _ ）。</block>
 </blocks>
