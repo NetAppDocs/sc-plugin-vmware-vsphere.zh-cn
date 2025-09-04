@@ -27,7 +27,7 @@ summary: 在使用适用于 VMware vSphere 的 SnapCenter 插件备份 VM 和数
 要更正此问题、请为二级存储配置SnapMirror保留策略、以避免达到快照数量上限。
 
 +
-有关管理员如何将资源分配给用户的信息，请参见 https://docs.netapp.com/us-en/snapcenter/concept/concept_types_of_role_based_access_control_in_snapcenter.html["有关使用基于角色的访问控制的 SnapCenter 信息"^]。
+有关管理员如何向用户分配资源的信息，请参阅 https://docs.netapp.com/us-en/snapcenter/get-started/rbac-snapcenter.html["有关使用基于角色的访问控制的 SnapCenter 信息"^]。
 
 
 

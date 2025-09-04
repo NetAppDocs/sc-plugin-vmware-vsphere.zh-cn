@@ -1662,7 +1662,6 @@
   <block id="14287ce8c2228d3505c31799833a864f" category="paragraph">适用于VMware vSphere的SnapCenter插件使用选定凭据登录到选定虚拟机。</block>
   <block id="110328d238985c18e0a7947b09b1ff0f" category="summary">适用于VMware vSphere的SnapCenter插件采用SSL加密技术与客户端浏览器进行安全通信。虽然这样可以跨网启用加密数据，但创建新的自签名证书，或者使用您自己的证书颁发机构（ CA ）基础架构或第三方 CA ，可确保此证书对于您的环境是唯一的。</block>
   <block id="6886be2ac69a368a307204ccfa1e00d9" category="paragraph">有关详细信息、请参见<block ref="bf84a7958c466b4ea912f7e396459ac9" category="inline-link-rx"></block> 。</block>
-  <block id="6371946f7a59bb407f5608582531db43" category="paragraph">有关管理员如何将资源分配给用户的信息，请参见<block ref="3c6a9a14d0d13aed475a45101fc3cc00" category="inline-link-rx"></block>。</block>
   <block id="e90ae72a4d203cde9c1d660d983bec13" category="list-text">通过SnapMirror主动同步、即使在整个站点发生故障时、业务服务也可以继续运行、从而支持应用程序使用二级副本透明地进行故障转移。</block>
   <block id="c2bc8f54778a0e6f72a8fa3f9c96aae7" category="admonition">只有VMFS数据存储库才支持SnapMirror活动同步。</block>
   <block id="cae2d1284a0f6ccabe57939c8b8ad176" category="paragraph">要保护SnapMirror活动同步部署中的VMFS数据存储库、作为SnapCenter管理员、您需要：</block>
@@ -2212,4 +2211,5 @@
   <block id="88464b0f22e28142bc76c51bba424a64" category="cell">NFS 环境：ONTAP SnapMirror 恢复 VMFS 环境：使用 Storage VMotion 克隆和挂载</block>
   <block id="12b816ebabce7bea08d953072a6f5d5b" category="paragraph">请勿在虚拟机，数据存储库，策略，备份或资源组名称中使用以下特殊字符： &amp; * $ # @ ！\ / ： * ？“ &lt; &gt; - | ; ' ，以及空格。允许使用下划线字符（ _ ）。</block>
   <block id="8651a2d0c6ade87f04ae0bca90386289" category="paragraph">% 和 * $ # @ ！\ / ： * ？“ &lt; &gt; - | ; ' ，以及空格。允许使用下划线字符（ _ ）。</block>
+  <block id="32ac8d4494e62d5a13c33b3927b542bb" category="paragraph">有关管理员如何向用户分配资源的信息，请参阅<block ref="d818f211a7449f29082596280ad483fa" category="inline-link-rx"></block>。</block>
 </blocks>
