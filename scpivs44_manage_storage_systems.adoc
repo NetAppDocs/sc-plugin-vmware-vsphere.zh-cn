@@ -25,7 +25,7 @@ summary: 在使用VMware vSphere客户端备份或还原VM或数据存储库之�
 如果修改作为集群一部分自动添加的 Storage VM （有时称为隐式 Storage VM ），则该 Storage VM 将更改为显式 Storage VM ，并且可以单独删除，而不更改该集群中其余的 Storage VM 。如果身份验证方法是通过证书进行的、则在存储系统页面上、用户名显示为不适用；只有集群列表中的显式Storage VM才会显示用户名、并将ExploricitSVM标志设置为true。所有 Storage VM 始终列在关联集群下。
 
 
-IMPORTANT: 如果您使用 SnapCenter 图形用户界面为基于应用程序的数据保护操作添加了 Storage VM ，则必须使用相同的图形用户界面来修改这些 Storage VM 。
+IMPORTANT: 如果您使用SnapCenter用户界面为基于应用程序的数据保护操作添加了存储虚拟机，则必须使用相同的用户界面来修改这些存储虚拟机。
 
 .步骤
 . 在选择控制阀插件的左侧导航窗格中，选择*存储系统*。
@@ -40,7 +40,7 @@ IMPORTANT: 如果您使用 SnapCenter 图形用户界面为基于应用程序的
 您可以使用VMware vSphere客户端从vCenter中的清单中删除Storage VM。
 
 
-NOTE: 如果您使用 SnapCenter 图形用户界面为基于应用程序的数据保护操作添加了 Storage VM ，则必须使用相同的图形用户界面来修改这些 Storage VM 。
+NOTE: 如果您使用SnapCenter用户界面为基于应用程序的数据保护操作添加了存储虚拟机，则必须使用相同的用户界面来修改这些存储虚拟机。
 
 .开始之前
 您必须先卸载 Storage VM 中的所有数据存储库，然后才能删除此 Storage VM 。

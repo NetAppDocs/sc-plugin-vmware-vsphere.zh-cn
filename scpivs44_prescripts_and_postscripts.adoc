@@ -28,7 +28,11 @@ summary: 您可以在数据保护操作中使用自定义预处理和后处理�
 
 预处理脚本和后处理脚本由适用于 VMware vSphere 的 SnapCenter 插件运行。因此，这些脚本必须位于适用于 VMware vSphere 的 SnapCenter 插件 OVA 中，并具有可执行权限。
 
-例如： * Perl 脚本路径可能是 ` /support/support/script.pl` * shell 脚本路径可能是 ` /support/script.sh`
+例如：
+
+* PERL 脚本路径可能是 `/support/support/script.pl`
+* shell 脚本路径可能是 `/support/support/script.sh`
+
 
 执行脚本时会验证脚本路径。
 
@@ -64,7 +68,11 @@ NOTE: 如果预处理失败，备份将成功完成，并会发送一条警告�
 
 NOTE: 如果一个后处理脚本失败，备份将成功完成，并会发送一条警告消息。
 
-检查以下内容以验证是否已填充脚本值： * 对于 Perl 脚本： ` /support/log/env.log` * 对于 shell 脚本： ` /support/support/log_file.log`
+检查以下内容以验证脚本值是否已填充：
+
+* 对于 PERL 脚本： `/support/support/log_env.log`
+* 对于 shell 脚本： `/support/support/log_file.log`
+
 
 
 

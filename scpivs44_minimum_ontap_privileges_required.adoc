@@ -85,4 +85,4 @@ NOTE: 您可以忽略有关不受支持的Vserver命令的警告消息。
 
 
 
-NOTE: 从ONTAP 9.11.1版开始、与ONTAP集群的通信将通过REST API进行。ONTAP用户应启用http应用程序。但是、如果发现ONTAP REST API存在问题、则配置密钥"FORCE-ZAPI"有助于切换到传统ZAPI工作流。您可能需要使用配置API添加或更新此密钥、并将其设置为true。有关详细信息、请参见知识库文章 https://kb.netapp.com/mgmt/SnapCenter/How_to_use_RestAPI_to_edit_configuration_parameters_in_SCV["如何使用RestAPI编辑选择控制阀中的配置参数"] 。
+NOTE: 从ONTAP版本 9.11.1 开始，与ONTAP集群的通信是通过 REST API 进行的。 ONTAP用户应该启用 http 应用程序。但是，如果发现ONTAP REST API 存在问题，配置键“FORCE_ZAPI”有助于切换到传统的 ZAPI 工作流程。您可能需要使用配置 API 添加或更新此密钥并将其设置为 true。请参阅知识库文章， https://kb.netapp.com/mgmt/SnapCenter/How_to_use_RestAPI_to_edit_configuration_parameters_in_SCV["如何使用RestAPI编辑选择控制阀中的配置参数"]了解更多信息。

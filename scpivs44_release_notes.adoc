@@ -14,9 +14,9 @@ summary: 发行说明提供了有关此版本的适用于 VMware vSphere 的 Sna
 
 
 [role="lead"]
-了解适用于VMware vSphere 6.1的SnapCenter插件中提供的新增功能和增强功能。
+了解适用于SnapCenter Plug-in for VMware vSphere中的新功能和增强功能。
 
-有关已知问题、限制和已修复问题的详细信息，请参见 https://library.netapp.com/ecm/ecm_download_file/ECMLP3337464["《适用于VMware vSphere 6.1的SnapCenter插件发行说明》"^]。您必须使用NetApp帐户登录或创建帐户才能访问发行说明。
+有关已知问题、限制和已修复问题的详细信息，请参阅 https://library.netapp.com/ecm/ecm_download_file/ECMLP3359464["SnapCenter Plug-in for VMware vSphere发行说明"^]。您必须使用您的NetApp帐户登录或创建一个帐户才能访问发行说明。
 
 [NOTE]
 ====

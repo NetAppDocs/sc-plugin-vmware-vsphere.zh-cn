@@ -16,7 +16,7 @@ summary: 通过添加存储，适用于 VMware vSphere 的 SnapCenter 插件可�
 [role="lead"]
 在备份或还原 VM 之前，您必须先添加存储集群或 Storage VM 。通过添加存储，适用于 VMware vSphere 的 SnapCenter 插件可以识别和管理 vCenter 中的备份和还原操作。
 
-* 要使用的 GUI
+* 使用哪个用户界面
 +
 使用VMware vSphere客户端添加存储。
 
@@ -40,7 +40,7 @@ ESXi服务器、适用于VMware vSphere的SnapCenter插件以及每个vCenter必
 适用于VMware vSphere的SnapCenter插件可对直接连接的Storage VM以及存储集群中的Storage VM执行备份和还原操作。
 
 
-NOTE: 如果您使用适用于VMware vSphere的SnapCenter插件在VMDK上支持基于应用程序的备份、则必须使用SnapCenter图形用户界面输入存储身份验证详细信息并注册存储系统。
+NOTE: 如果您使用SnapCenter Plug-in for VMware vSphere来支持 VMDK 上的基于应用程序的备份，则必须使用SnapCenter用户界面输入存储身份验证详细信息并注册存储系统。
 
 * 对于处于链接模式的 vCenter ，您必须分别向每个 vCenter 添加存储系统。
 * 如果要添加SVM、则Storage VM的名称必须解析为管理LIF。

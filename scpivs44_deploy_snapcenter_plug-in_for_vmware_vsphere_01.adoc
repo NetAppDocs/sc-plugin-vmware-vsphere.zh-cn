@@ -71,11 +71,11 @@ NOTE: 所有主机都必须配置 IP 地址（不支持 FQDN 主机名）。在�
 完成部署可能需要几分钟时间。如果适用于VMware vSphere的SnapCenter插件已启动、VMware工具已安装、并且屏幕提示您登录到适用于VMware vSphere的SnapCenter插件、则表示部署成功。
 
 +
-此屏幕将显示部署适用于VMware vSphere的SnapCenter插件的IP地址。记下 IP 地址。如果要更改适用于VMware vSphere的SnapCenter插件配置、您需要登录到SnapCenter管理图形用户界面。
+屏幕显示部署SnapCenter Plug-in for VMware vSphere的IP 地址。记下 IP 地址。如果要更改适用于SnapCenter Plug-in for VMware vSphere配置，则需要登录到适用SnapCenter Plug-in for VMware vSphere管理用户界面。
 
-. 使用部署向导中提供的凭据、使用部署屏幕上显示的IP地址登录到适用于VMware vSphere的SnapCenter插件管理图形用户界面、然后在信息板上验证适用于VMware vSphere的SnapCenter插件是否已成功连接到vCenter并启用。
+. 使用部署屏幕上显示的 IP 地址和部署向导中提供的凭据登录到适用SnapCenter Plug-in for VMware vSphere管理用户界面，然后在仪表板上验证适用SnapCenter Plug-in for VMware vSphere是否已成功连接到 vCenter 并已启用。
 +
-使用格式 `\https://<appliance-IP-address>:8080` 以访问管理GUI。
+使用格式 `\https://<appliance-IP-address>:8080`访问管理用户界面。
 
 +
 使用部署时设置的管理员用户名和密码以及使用维护控制台生成的MFA令牌登录。

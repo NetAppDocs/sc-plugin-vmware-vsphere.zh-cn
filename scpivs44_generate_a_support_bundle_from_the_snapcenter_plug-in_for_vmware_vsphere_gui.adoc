@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: scpivs44_generate_a_support_bundle_from_the_snapcenter_plug-in_for_vmware_vsphere_gui.html 
 keywords:  
-summary: 您可以从适用于 VMware vSphere 的 SnapCenter 插件 GUI 生成支持包。 
+summary: 您可以从SnapCenter Plug-in for VMware vSphere用户界面生成支持包。 
 ---
-= 从适用于 VMware vSphere 的 SnapCenter 插件 GUI 生成支持包
+= 从SnapCenter Plug-in for VMware vSphere用户界面生成支持包
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -15,7 +15,7 @@ summary: 您可以从适用于 VMware vSphere 的 SnapCenter 插件 GUI 生成�
 
 .开始之前
 [role="lead"]
-要登录到适用于 VMware vSphere 的 SnapCenter 插件管理 GUI ，您必须知道 IP 地址和登录凭据。您还必须记下从维护控制台生成的MFA令牌。
+要登录适用于SnapCenter Plug-in for VMware vSphere管理用户界面，您必须知道 IP 地址和登录凭据。您还必须记下从维护控制台生成的 MFA 令牌。
 
 * 部署适用于VMware vSphere的SnapCenter插件时会显示此IP地址。
 * 使用在部署适用于VMware vSphere的SnapCenter插件期间提供的或以后修改的登录凭据。
@@ -23,7 +23,7 @@ summary: 您可以从适用于 VMware vSphere 的 SnapCenter 插件 GUI 生成�
 
 
 .步骤
-. 登录到适用于 VMware vSphere 的 SnapCenter 插件图形用户界面。
+. 登录到SnapCenter Plug-in for VMware vSphere用户界面。
 +
 使用格式 `\https://<OVA-IP-address>:8080`。
 

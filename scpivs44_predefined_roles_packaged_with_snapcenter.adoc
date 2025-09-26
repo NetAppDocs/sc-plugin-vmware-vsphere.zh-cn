@@ -22,7 +22,7 @@ summary: 为了简化vCenter Server RBAC的使用、适用于VMware vSphere的Sn
 
 每当您重新启动vCenter Web Client服务或修改安装时、适用于VMware vSphere的SnapCenter插件都会将这些角色恢复为其默认值(一组初始特权)。如果您升级适用于VMware vSphere的SnapCenter插件、则预定义角色会自动升级、以使用该插件版本。
 
-您可以通过选择*菜单>管理>角色*在vCenter图形用户界面中查看预定义角色、如下表所示。
+您可以在 vCenter 用户界面中通过选择“菜单”>“管理”>“角色”来查看预定义的角色，如下表所示。
 
 |===
 | Role | Description 

@@ -24,5 +24,5 @@ summary: 要使用适用于VMware vSphere的SnapCenter 插件REST API查找VMwar
 | REST API | 注释 
 
 
-| ` /4.1/Jobs/ ｛ id ｝ /failJobs` | 当您传递的作业 ID 停留在运行状态时， `failJobs` 会将这些作业标记为失败。要确定停留在运行状态的作业，请使用作业监控器图形用户界面查看每个作业的状态和作业 ID 。 
+| ` /4.1/Jobs/ ｛ id ｝ /failJobs` | 当你传递处于运行状态的作业的 ID 时， `failJobs`将这些作业标记为失败。要识别处于运行状态的作业，请使用作业监视器用户界面查看每个作业的状态和作业 ID。 
 |===

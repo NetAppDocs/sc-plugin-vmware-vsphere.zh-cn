@@ -25,7 +25,7 @@ summary: 适用于 VMware vSphere 的 SnapCenter 插件是一种独立虚拟设�
 
 * 支持 VM 一致和崩溃一致的数据保护操作。
 +
-您可以在vCenter中使用VMware vSphere客户端GUI执行VMware虚拟机(传统VM和VVol VM)、VMDK和数据存储库的所有备份和还原操作。对于 VVol 虚拟机（ VVol 数据存储库中的虚拟机），仅支持崩溃状态一致的备份。您还可以还原 VM 和 VMDK 以及还原子操作系统上的文件和文件夹。
+您可以使用 vCenter 中的 VMware vSphere 客户端用户界面执行 VMware 虚拟机（传统 VM 和 vVol VM）、VMDK 和数据存储区的所有备份和还原操作。对于 vVol VM（vVol 数据存储中的 VM），仅支持崩溃一致性备份。您还可以还原虚拟机和 VMDK，以及还原驻留在来宾操作系统上的文件和文件夹。
 
 +
 备份 VM ， VMDK 和数据存储库时，此插件不支持 RDM 。VM 的备份作业会忽略 RDM 。如果需要备份 RDM ，则必须使用基于 SnapCenter 应用程序的插件。
@@ -35,13 +35,13 @@ summary: 适用于 VMware vSphere 的 SnapCenter 插件是一种独立虚拟设�
 
 * 支持应用程序一致的（基于 VMDB/RDM 的应用程序）数据保护操作。
 +
-您可以使用 SnapCenter 图形用户界面和相应的 SnapCenter 应用程序插件对 VM 上的主存储和二级存储上的数据库和文件系统执行所有备份和还原操作。
+您可以使用SnapCenter用户界面和适当的SnapCenter应用程序插件对虚拟机上主存储和二级存储上的数据库和文件系统执行所有备份和恢复操作。
 
 +
 SnapCenter本机利用适用于VMware vSphere的SnapCenter插件对VMDK、原始设备映射(Raw Device Mappings、RDM)和NFS数据存储库执行所有数据保护操作。部署虚拟设备后，此插件将处理与 vCenter 的所有交互。适用于VMware vSphere的SnapCenter插件支持所有基于SnapCenter应用程序的插件。
 
 +
-SnapCenter不支持同时为数据库和VM创建一个快照。虚拟机和数据库的备份必须单独计划和运行、这样可以创建单独的快照、即使数据库和虚拟机托管在同一个卷中也是如此。使用SnapCenter 图形用户界面计划数据库应用程序备份；使用VMware vSphere客户端图形用户界面计划虚拟机和数据存储库备份。
+SnapCenter不支持数据库和虚拟机的单个快照。必须独立安排和运行虚拟机和数据库的备份，这会创建单独的快照，即使数据库和虚拟机托管在同一卷中。使用SnapCenter用户界面安排数据库应用程序备份；使用 VMware vSphere 客户端用户界面安排 VM 和数据存储区备份。
 
 * 要创建VM一致的快照、需要使用VMware工具
 +

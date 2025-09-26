@@ -40,7 +40,7 @@ summary: 将适用于 VMware vSphere 的 SnapCenter 插件升级到同一版本�
 
 == 临时解决策（如果在清除缓存之前已升级）
 
-. 登录到适用于 VMware vSphere 的 SnapCenter 插件管理 GUI 。
+. 登录到SnapCenter Plug-in for VMware vSphere管理用户界面。
 +
 部署适用于VMware vSphere的SnapCenter插件时、将显示IP地址。
 

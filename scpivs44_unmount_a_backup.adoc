@@ -16,9 +16,9 @@ summary: 如果您不再需要访问数据存储库中的文件，则可以卸�
 [role="lead"]
 如果您不再需要访问数据存储库中的文件，则可以卸载备份。
 
-如果某个备份在VMware vSphere客户端图形用户界面中列为挂载、但未在卸载备份屏幕中列出、则需要使用REST API `/backup/{backup-Id}/cleanup` 要清理已绑定的数据存储库、请重新尝试卸载操作步骤。
+如果备份在 VMware vSphere 客户端用户界面中列为已安装，但未在卸载备份屏幕中列出，则需要使用 REST API `/backup/{backup-Id}/cleanup`清理超出范围的数据存储，然后再次尝试卸载过程。
 
-如果您尝试在 Storage VM （ SVM ）上挂载 NFS 数据存储库的备份副本，并且根卷处于负载共享镜像关系中，则可能会遇到错误 `您可能已达到在 vCenter 中配置的最大 NFS 卷数。检查 vSphere Client 是否存在任何错误消息。` 要防止出现此问题，请导航到 * ESX * > * 管理 * > * 设置 * > * 高级系统设置 * 并更改 NFS.MaxVolumes 值，以更改最大卷设置。最大值为 256 。
+如果您尝试在具有负载共享镜像关系的根卷的存储虚拟机 (SVM) 上挂载 NFS 数据存储区的备份副本，则可能会遇到错误 `You might have reached the maximum number of NFS volumes configured in the vCenter. Check the vSphere Client for any error messages.`为防止出现此问题，请通过导航至 *ESX* > *管理* > *设置* > *高级系统设置* 并更改 NFS.MaxVolumes 值来更改最大卷设置。最大值为 256。
 
 .步骤
 . 在VMware vSphere客户端快捷方式页面中、选择*存储*。

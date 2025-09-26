@@ -24,7 +24,7 @@ summary: 如果要在 SnapCenter 中执行基于 VMDK 的应用程序工作流�
 
 
 .关于此任务
-* 您可以使用 SnapCenter 图形用户界面添加 "vsphere" 类型的主机，从而在 SnapCenter 服务器中注册适用于 VMware vSphere 的 SnapCenter 插件。
+* 您可以使用SnapCenter用户界面添加“vsphere”类型主机，向SnapCenter服务器SnapCenter Plug-in for VMware vSphere。
 +
 已预定义端口8144、用于在适用于VMware vSphere的SnapCenter插件中进行通信。
 
@@ -35,7 +35,7 @@ summary: 如果要在 SnapCenter 中执行基于 VMDK 的应用程序工作流�
 
 
 .步骤
-. 在SnapCenter图形用户界面的左侧导航窗格中，选择*hosts*。
+. 在SnapCenter用户界面左侧导航窗格中，选择“*主机*”。
 . 验证顶部是否已选中 * 受管主机 * 选项卡，然后找到虚拟设备主机名并验证它是否已从 SnapCenter 服务器解析。
 . 选择*Add*以启动向导。
 . 在 * 添加主机 * 对话框中，指定要添加到 SnapCenter 服务器的主机，如下表所示：

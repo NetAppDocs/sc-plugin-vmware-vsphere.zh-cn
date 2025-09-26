@@ -18,6 +18,6 @@ summary: 适用于 VMware vSphere 的 SnapCenter 插件为管理虚拟化资源�
 
 SnapCenter 和 ONTAP RBAC 仅适用于 SnapCenter 服务器应用程序一致（基于 VMDK 的应用程序）作业。如果您使用适用于VMware vSphere的SnapCenter插件来支持SnapCenter应用程序一致的作业、则必须分配SnapCenterAdmin角色；您无法更改SnapCenterAdmin角色的权限。
 
-适用于VMware vSphere的SnapCenter插件附带预定义的vCenter角色。您必须使用 vCenter 图形用户界面将这些角色添加到 vCenter Active Directory 用户以执行 SnapCenter 操作。
+SnapCenter Plug-in for VMware vSphere预定义的 vCenter 角色。您必须使用 vCenter 用户界面将这些角色添加到 vCenter Active Directory 用户才能执行SnapCenter操作。
 
 您可以随时创建和修改角色，并向用户添加资源访问权限。但是、首次设置适用于VMware vSphere的SnapCenter插件时、应至少将Active Directory用户或组添加到角色中、然后再为这些用户或组添加资源访问权限。

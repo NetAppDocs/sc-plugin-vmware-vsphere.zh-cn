@@ -22,7 +22,7 @@ summary: 如果您不再需要使用SnapCenter数据保护功能、则必须禁�
 
 
 .步骤
-. 使用格式登录到适用于VMware vSphere的SnapCenter插件管理GUI `\https://<OVA-IP-address>:8080`。
+. 使用以下格式登录到SnapCenter Plug-in for VMware vSphere管理用户界面 `\https://<OVA-IP-address>:8080`。
 +
 部署适用于VMware vSphere的SnapCenter插件时、将显示此插件的IP地址。
 

@@ -17,7 +17,7 @@ summary: 您可以修改在适用于 VMware vSphere 的 SnapCenter 插件中配�
 您可以修改在适用于 VMware vSphere 的 SnapCenter 插件中配置的网络设置。插件使用这些设置访问 vCenter 。
 
 .开始之前
-您必须知道适用于 VMware vSphere 的 SnapCenter 插件管理 GUI 的 IP 地址和登录凭据。您还必须记下从维护控制台生成的MFA令牌。
+您必须知道SnapCenter Plug-in for VMware vSphere的 IP 地址和登录凭据。您还必须记下从维护控制台生成的 MFA 令牌。
 
 * 部署适用于VMware vSphere的SnapCenter插件时会显示此IP地址。
 * 使用在部署适用于VMware vSphere的SnapCenter插件期间提供的或以后修改的登录凭据。
@@ -25,13 +25,13 @@ summary: 您可以修改在适用于 VMware vSphere 的 SnapCenter 插件中配�
 
 
 .步骤
-. 登录到适用于 VMware vSphere 的 SnapCenter 插件管理 GUI 。
+. 登录到SnapCenter Plug-in for VMware vSphere管理用户界面。
 +
 使用格式 `\https://<appliance-IP-address>:8080`
 
 . 选择顶部工具栏中的设置图标。
 +
-image:scpivs44_image31.png["适用于 VMware vSphere 的 SnapCenter 插件管理 GUI"]
+image:scpivs44_image31.png["SnapCenter Plug-in for VMware vSphere"]
 
 . 在*Settings*页的*Network Settings*部分中，选择*IPv4*或*IPv6*地址，然后选择*Edit*。
 +

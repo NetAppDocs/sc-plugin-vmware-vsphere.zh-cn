@@ -54,7 +54,7 @@ cmdlet 可执行以下操作：
 ** 为迁移后备份创建备份计划。
 ** 从 Windows 主机卸载适用于 VMware vSphere 的现有 SnapCenter 插件。
 +
-如果适用于VMware vSphere的SnapCenter插件安装在SnapCenter服务器主机上、并且为SnapCenter存储库配置了保护、则迁移过程还会卸载基于Windows的插件软件包、其中包含适用于VMware vSphere的SnapCenter插件和适用于Windows的SnapCenter插件。 然后重新安装最新版本的适用于Windows的SnapCenter插件以支持存储库保护。SnapCenter 图形用户界面中的主机类型从 "vsphere" 更改为 "Windows" 。
+如果SnapCenter Server 主机上安装了SnapCenter Plug-in for VMware vSphere，并且为SnapCenter存储库配置了保护，则迁移过程还会卸载包含适用SnapCenter Plug-in for VMware vSphere和适用于 Windows 的SnapCenter插件的基于 Windows 的插件包，然后重新安装最新版本的适用于 Windows 的SnapCenter插件以支持存储库保护。  SnapCenter用户界面中的主机类型从“vsphere”更改为“Windows”。
 
 ** 从 Windows SnapCenter 服务器中删除 vSphere 主机和资源组。
 ** 激活适用于VMware vSphere的基于Linux的SnapCenter插件上的备份作业。

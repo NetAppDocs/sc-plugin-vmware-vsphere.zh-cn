@@ -19,7 +19,7 @@ REST API 通过 Swagger 网页公开。您可以访问Swagger网页以显示适�
 此插件具有与SnapCenter 服务器Swagger网页不同的Swagger网页。
 
 .开始之前
-对于适用于VMware vSphere的SnapCenter插件REST API、您必须知道适用于VMware vSphere的SnapCenter插件的IP地址或主机名。
+要访问SnapCenter Plug-in for VMware vSphereREST API，请确保您拥有适用SnapCenter Plug-in for VMware vSphere的 IP 地址或主机名。
 
 
 NOTE: 此插件仅支持用于与第三方应用程序集成的 REST API ，不支持 PowerShell cmdlet 或 CLI 。
