@@ -70,3 +70,6 @@ NOTE: 在VVol容器重新平衡之后、您无法还原VVol虚拟机。
 IMPORTANT: 在还原操作期间、您可能会遇到此错误、或者在适用于VMware vSphere的SnapCenter插件尝试对克隆重新签名时发生此错误 `Host unresolved volumes is null` `Exception while calling pre-restore on SCV….Error mounting cloned LUN as datastore…` 。由于VMware的限制、适用于VMware vSphere的SnapCenter插件无法控制高级ESXi主机配置中的自动重新签名值。对于基于TCP的NVMe和基于FC的NVMe存储、添加新子系统时、选择控制阀无法动态添加控制器。您应在挂载操作之前进行必要的映射。
 
 有关此错误的详细信息、请参见 https://kb.netapp.com/mgmt/SnapCenter/SCV_clone_or_restores_fail_with_error_'Host_Unresolved_volumes_is_null'#["知识库文章：SCV克隆或还原失败、并显示错误"主机未解析的卷为空"^] 。
+
+
+NOTE: 从 SCV 6.2 版本开始，可以支持Amazon FSx for NetApp ONTAP存储系统。

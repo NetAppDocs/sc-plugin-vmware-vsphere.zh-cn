@@ -28,6 +28,7 @@ summary: 如果您使用的是适用于 VMware vSphere 的 SnapCenter 插件，�
 
 vSphere 管理员通过执行以下操作来设置 vCenter Server RBAC ：
 
+* 您可以将用户与全局权限下的预定义角色关联。
 * 在根对象（也称为根文件夹）上设置 vCenter Server 权限。然后，您可以通过限制不需要这些权限的子实体来细化安全性。
 * 将 SCV 角色分配给 Active Directory 用户。
 +
