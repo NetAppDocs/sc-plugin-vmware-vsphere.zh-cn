@@ -41,7 +41,7 @@ IMPORTANT: 请勿添加处于不可访问状态的 VM 。尽管可以创建包�
 .开始之前
 在创建包含VVOL VM的资源组之前、必须先部署适用于VMware的ONTAP 工具。
 
-有关更多信息，请参阅适用ONTAP tools for VMware vSphere文档。如需了解支持的版本，请访问 https://imt.netapp.com/matrix/imt.jsp?components=134348;&solution=1517&isHWU&src=IMT["NetApp 互操作性表工具"^]。
+有关更多信息，请参阅适用ONTAP tools for VMware vSphere文档。如需了解支持的版本，请访问 https://imt.netapp.com/imt/imt.jsp?components=180121;&solution=1517&isHWU&src=IMT["NetApp 互操作性表工具"^]。
 
 .关于此任务
 * 您可以随时在资源组中添加或删除资源。
@@ -229,7 +229,7 @@ NOTE: 如果备份中任何虚拟机的静默操作失败，则即使您选择�
 
 == 管理兼容性检查失败
 
-在尝试创建资源组时， SnapCenter 会执行兼容性检查。有关SnapCenter支持的最新信息、请始终参见 https://imt.netapp.com/matrix/imt.jsp?components=134348;&solution=1517&isHWU&src=IMT["NetApp 互操作性表工具（ IMT ）"^]。不兼容的原因可能是：
+当您尝试创建资源组时， SnapCenter会执行兼容性检查。总是参考 https://imt.netapp.com/imt/imt.jsp?components=180121;&solution=1517&isHWU&src=IMT["NetApp 互操作性表工具（ IMT ）"^]有关SnapCenter支持的最新信息。不兼容的原因可能包括：
 
 * 共享 PCI 设备已连接到 VM 。
 * 未在SnapCenter中配置首选IP地址。

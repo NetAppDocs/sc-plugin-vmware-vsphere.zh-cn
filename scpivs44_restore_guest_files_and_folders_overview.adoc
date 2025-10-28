@@ -58,7 +58,7 @@ SnapCenter 使用VMware工具中的信息与VMware子操作系统建立连接。
 
 * Windows 子操作系统必须运行 Windows Server 2008 R2 或更高版本。
 +
-有关受支持版本的最新信息，请参阅 https://imt.netapp.com/matrix/imt.jsp?components=134348;&solution=1517&isHWU&src=IMT["NetApp 互操作性表工具（ IMT ）"^]。
+有关受支持版本的最新信息，请参阅 https://imt.netapp.com/imt/imt.jsp?components=180121;&solution=1517&isHWU&src=IMT["NetApp 互操作性表工具（ IMT ）"^]。
 
 * 目标 VM 的凭据必须指定内置域管理员帐户或内置本地管理员帐户。用户名必须为 "Administrator" 。 在开始还原操作之前，必须为要将虚拟磁盘连接到的虚拟机配置凭据。连接操作和后续还原操作都需要这些凭据。工作组用户可以使用内置的本地管理员帐户。
 +
@@ -83,7 +83,7 @@ IMPORTANT: 如果您必须使用非内置管理员帐户，但在 VM 中具有�
 
 * 不支持从 Linux 子操作系统还原
 +
-您不能从运行 Linux 子操作系统的虚拟机还原文件和文件夹。但是，您可以连接 VMDK ，然后手动还原文件和文件夹。有关支持的子操作系统的最新信息，请参见 https://imt.netapp.com/matrix/imt.jsp?components=134348;&solution=1517&isHWU&src=IMT["NetApp 互操作性表工具（ IMT ）"^]。
+您无法从运行 Linux 客户操作系统的 VM 还原文件和文件夹。但是，您可以附加 VMDK，然后手动恢复文件和文件夹。有关受支持的客户操作系统的最新信息，请参阅 https://imt.netapp.com/imt/imt.jsp?components=180121;&solution=1517&isHWU&src=IMT["NetApp 互操作性表工具（ IMT ）"^]。
 
 
 
@@ -98,7 +98,7 @@ IMPORTANT: 如果您必须使用非内置管理员帐户，但在 VM 中具有�
 * " 子系统文件浏览 " 页面将显示隐藏的文件和文件夹，您无法对其进行筛选。
 * 您无法从 Linux 子操作系统还原。
 +
-您不能从运行 Linux 子操作系统的虚拟机还原文件和文件夹。但是，您可以连接 VMDK ，然后手动还原文件和文件夹。有关支持的子操作系统的最新信息，请参阅 https://imt.netapp.com/matrix/imt.jsp?components=134348;&solution=1517&isHWU&src=IMT["NetApp 互操作性表工具（ IMT ）"^]。
+您无法从运行 Linux 客户操作系统的 VM 还原文件和文件夹。但是，您可以附加 VMDK，然后手动恢复文件和文件夹。有关受支持的客户操作系统的最新信息，请参阅 https://imt.netapp.com/imt/imt.jsp?components=180121;&solution=1517&isHWU&src=IMT["NetApp 互操作性表工具（ IMT ）"^]。
 
 * 您不能从 NTFS 文件系统还原到 FAT 文件系统。
 +

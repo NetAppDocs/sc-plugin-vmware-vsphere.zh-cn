@@ -1782,8 +1782,6 @@
   <block id="f6599049db87ec18cb4b8b124bbae9bb" category="admonition">在还原操作期间、您可能会遇到此错误、或者在适用于VMware vSphere的SnapCenter插件尝试对克隆重新签名时发生此错误<block ref="8bca5bf79dc6a0592d8b28b7fc9c19a9" prefix=" " category="inline-code"></block><block ref="9e17d1b629230b07cfa91237bf97bfc3" prefix=" " category="inline-code"></block> 。由于VMware的限制、适用于VMware vSphere的SnapCenter插件无法控制高级ESXi主机配置中的自动重新签名值。对于基于TCP的NVMe和基于FC的NVMe存储、添加新子系统时、选择控制阀无法动态添加控制器。您应在挂载操作之前进行必要的映射。</block>
   <block id="c2ad807051aed38647dbaf48da9bc4e7" category="list-text">对于基于TCP的NVMe和基于FC的NVMe协议、您需要使用NVMe.10.1 ONTAP 9及更高版本。</block>
   <block id="2233cc73f35f4d66a36bbbeebab35281" category="doc">《适用于VMware vSphere的SnapCenter插件发行说明》</block>
-  <block id="c5dcd35af16918a17ee9c3a5c153f0af" category="inline-link">IMT</block>
-  <block id="2d15261526cfe20309636c59ec64f54e" category="paragraph">有关受支持版本的最新信息，请参阅NetApp互操作性表工具<block ref="b3ca33d6c3d8c65c6db17cc2a6a779f0" category="inline-link-rx"></block>。</block>
   <block id="ee8f5755a6e1671a63e8da1209dc860f" category="paragraph">您可以升级到的适用于VMware vSphere的SnapCenter插件(SCV)版本取决于您当前运行的版本。</block>
   <block id="4181b34482469dce169449ef3b643b27" category="paragraph">只有VMware vCenter Server 7 Update 1及更高版本才支持升级到适用于VMware vSphere的SnapCenter插件(SCV) 4.8及更高版本。对于版本7 Update 1之前的VMware vCenter Server、您应继续使用4.7号选择控制阀。</block>
   <block id="e369a7ee41a72fa8a44419a1129cc575" category="cell">如果您使用的是选择控制阀型号…</block>
@@ -1908,14 +1906,12 @@
   <block id="3401faaaca2b403aa3e354193cdbe7a1" category="paragraph">选择*下一步*时，系统首先检查SnapCenter是否管理选定虚拟机或数据存储库所在的存储，以及是否与该存储兼容。如果显示此消息<block ref="c238c6c4153d32597097e3ae5ddc6f78" prefix=" " category="inline-code"></block> 、则表示选定虚拟机或数据存储库与SnapCenter不兼容。有关详细信息、请参见 <block ref="83219d9586902f9891ecf56cd903fe4b" category="inline-link-macro-rx"></block> 。</block>
   <block id="fd656c0bdef7b84ded620741d1ebb376" category="list-text">选择*下一步*直到进入*摘要*页面，然后查看摘要并选择*完成*。</block>
   <block id="9908ac5f8e797129562c3b75eb5fb433" category="list-text">在选择控制阀插件的左侧导航窗格中，选择*存储系统*，然后选择*添加*选项。</block>
-  <block id="5340605920c74d43338f5c58ec29e22c" category="paragraph">有关详细信息、请参阅适用于VMware vSphere的ONTAP工具文档。此外、有关ONTAP工具支持的版本的最新信息、请参见<block ref="3a209fb27f7f233fd0ce1196af83183f" category="inline-link-rx"></block>。</block>
   <block id="dd5a6f2f3b2995c6412ee7fc5c68ae87" category="paragraph">您可以通过以下方式筛选备份列表：选择筛选器图标、选择日期和时间范围、选择是否需要包含VMware快照的备份、是否需要挂载备份以及位置。选择*OK*。</block>
   <block id="05a059f12f4b8c90596d54cd9440e965" category="list-text">选择*附加*。</block>
   <block id="6eec9b5b83edb792f92ed90fcf16c67b" category="list-text">在工具栏中选择*菜单*，然后从下拉列表中选择*虚拟机和模板*。</block>
   <block id="5024f06eaeb6343b1d2db413894a44c8" category="list-text">在选择控制阀插件的左侧导航窗格中，选择*资源组*，然后选择资源组，然后选择<block ref="aeba2b9f883565da26d0265e5ca2ca10" category="inline-image-macro-rx" type="image"></block>*立即运行*以启动备份。</block>
   <block id="100c073728a93280afb75a57112c2bf8" category="list-text">选择*OK*开始备份。</block>
   <block id="cc5ac12b41743b16bd07f0041afa5ef1" category="list-text">在虚拟设备的*Summary (摘要)*选项卡中，选择*Launch Remote Console*(启动远程控制台)或Launch Web Console*(启动Web控制台)以打开维护控制台窗口。</block>
-  <block id="18eb3325cee0222ae3e641b5398c3ad1" category="paragraph">有关受支持版本的最新信息、请参阅<block ref="3a209fb27f7f233fd0ce1196af83183f" category="inline-link-rx"></block> (IMT)。</block>
   <block id="58cfdd22a1545e36ea707ea6bf21028f" category="list-text">选择*选择VM*，然后在*代理VM*对话框中选择一个VM。选择*保存*返回到*作为身份凭证运行*对话框。选择应用于对凭据进行身份验证的虚拟机。</block>
   <block id="10492389e94efdebbb66f7b0cd8a1324" category="list-text">选择 * 保存 * 。</block>
   <block id="bbe1604d17d5228e6cf954f520fbcea1" category="list-text">在选择控制阀插件的左侧导航窗格中，选择*Policies*，然后选择*New Policies*。</block>
@@ -1940,8 +1936,6 @@
   <block id="16d41e5fa51f9cba7e28f18a6e0fc481" category="cell">查看页面并选择*完成*。</block>
   <block id="3edcaaa1fd86e6f2a40157811ebb01e1" category="list-text">导航到部署了适用于VMware vSphere的SnapCenter插件的虚拟机，选择*摘要*选项卡，然后选择*开机*框以启动适用于VMware vSphere的SnapCenter插件。</block>
   <block id="4c42aedb90b93c454e82cb69bd919064" category="list-text">登录到vCenter HTML5客户端、然后在工具栏中选择*菜单*、然后选择*适用于VMware vSphere的SnapCenter插件*</block>
-  <block id="6ead0b569222ee8512a314e45dd85a21" category="cell">适用于 VMware vSphere 的 SnapCenter 插件可通过此插件管理 VVol 数据存储库（ VMware 虚拟卷）。有关支持的版本，请参见<block ref="3a209fb27f7f233fd0ce1196af83183f" category="inline-link-rx"></block>。</block>
-  <block id="b87a35e8b1ff0c734dec37c43fc7ba6e" category="paragraph">有关受支持版本的最新信息，请参阅<block ref="3a209fb27f7f233fd0ce1196af83183f" category="inline-link-rx"></block>。</block>
   <block id="d0f9811f0da480925e8c3f5e76409f54" category="list-text">在*Detach Virtual Disk*(断开虚拟磁盘*)屏幕上，选择要断开的一个或多个磁盘，然后选中*Detach the selected disk(s)*(断开选定磁盘*)复选框，并选择*detach*。</block>
   <block id="786a1456c6dc1153a986286442b671dc" category="list-text">在左侧导航窗格中选择*配置*，然后取消选择*插件详细信息*部分中的服务选项以禁用该插件。</block>
   <block id="6dfcb68f8429554bd841be76d633bbd1" category="paragraph">您也可以双击作业以访问作业详细信息窗口，然后选择*下载作业日志*。</block>
@@ -2004,9 +1998,6 @@
   <block id="ecaa5b9363bd3e23ada741ccc7512473" category="paragraph">双击要浏览的文件夹并选择单个文件时、提取文件列表时可能会出现时间延迟、因为提取操作是在运行时执行的。</block>
   <block id="642918e808461b51c37c9e8d7909ffdb" category="list-text">选择要恢复的一个或多个文件或文件夹，然后选择*选择恢复位置*。</block>
   <block id="f77361b272ce81d8275727f7b1a756a8" category="list-text">选择 * 还原 * 。</block>
-  <block id="903d29a0523ca22e4dcbac24e33ef3f4" category="paragraph">有关受支持版本的最新信息，请参阅<block ref="361fee5724018df312396e88d348d8b5" category="inline-link-rx"></block>。</block>
-  <block id="e48b6aae8f268fb1220ec073d110a1ec" category="paragraph">您不能从运行 Linux 子操作系统的虚拟机还原文件和文件夹。但是，您可以连接 VMDK ，然后手动还原文件和文件夹。有关支持的子操作系统的最新信息，请参见<block ref="361fee5724018df312396e88d348d8b5" category="inline-link-rx"></block>。</block>
-  <block id="1ebf62949d055407b1151236c6390c01" category="paragraph">您不能从运行 Linux 子操作系统的虚拟机还原文件和文件夹。但是，您可以连接 VMDK ，然后手动还原文件和文件夹。有关支持的子操作系统的最新信息，请参阅<block ref="361fee5724018df312396e88d348d8b5" category="inline-link-rx"></block>。</block>
   <block id="78e939bd5a7e9753b83a4aa950117e52" category="cell">从下拉列表中选择*特定磁盘*，然后选择*下一步*。在数据存储库选择表中，您可以选择或取消选择任何 VMDK 。</block>
   <block id="99b54fcdde08e8f03e3d080dede7ffaf" category="cell">选择目标数据存储库、然后从列表中选择其他数据存储库。</block>
   <block id="c6e0d914d3ce8312422c0f87cce38dec" category="cell">选择*主机和群集*菜单选项，然后选择一个虚拟机，再选择*配置*选项卡，然后在适用于VMware vSphere的* SnapCenter插件部分*中选择*备份*。</block>
@@ -2044,7 +2035,6 @@
   <block id="cf26c37864b6057757bc11f14c25d631" category="inline-link">为ONTAP活动同步配置SnapMirror调解器和集群</block>
   <block id="7bf83651187bd5c60252c236bb21bf9c" category="list-text">按照技术报告中所述配置集群和调解器：<block ref="dee2443effe2653b7b7862728c1a701c" category="inline-link-rx"></block>。</block>
   <block id="0b9c25bd5b5eaced6be5a08c296638a2" category="admonition">最大保留值为1018个备份。如果将保留设置为高于底层 ONTAP 版本支持的值，则备份将失败。对于跨区数据存储库也是如此。</block>
-  <block id="1f7a12a98590c88658034c05ec2de1fb" category="paragraph">在尝试创建资源组时， SnapCenter 会执行兼容性检查。有关SnapCenter支持的最新信息、请始终参见<block ref="361fee5724018df312396e88d348d8b5" category="inline-link-rx"></block>。不兼容的原因可能是：</block>
   <block id="cb7cb42890ccd7035c776387ce9c759c" category="list-text">内部ONTAP集群(FAS、AFF和ASA系统)</block>
   <block id="d1a5389ce9c0d52e7ee4639d806d7008" category="cell">完全访问命令：最小ONTAP Privileges。</block>
   <block id="54eadeca2b2bd492eb03529cf49b5ade" category="cell">只读命令：最小ONTAP Privileges</block>
@@ -2085,7 +2075,6 @@
   <block id="75a9afdca6c89eec0ab219e5bdeac793" category="list-text">单个FlexGroup数据存储。  SCV 不支持跨越FlexGroup数据存储。  FlexGroup数据存储不能与传统虚拟机或数据存储结合使用。</block>
   <block id="e863be193793af4172263065990cb61e" category="list-text">ASA r2 存储系统上的虚拟机和数据存储。您不能将ASA r2 VM 和数据存储区与其他 VM 和数据存储区组合。</block>
   <block id="e8b07d018037f28da5152141e242af4d" category="admonition">如果您正在使用 VMware vSphere 群集服务 (vCLS)，请不要将 vCLS 管理的虚拟机添加到SnapCenter Plug-in for VMware vSphere。</block>
-  <block id="b53f2580cfbfaccc767005acaf236e4b" category="paragraph">有关更多信息，请参阅适用ONTAP tools for VMware vSphere文档。如需了解支持的版本，请访问<block ref="3a209fb27f7f233fd0ce1196af83183f" category="inline-link-rx"></block>。</block>
   <block id="ac84b1a7e72a9605445240fa9a3b3d29" category="list-text">您可以随时在资源组中添加或删除资源。</block>
   <block id="9cda0af381aa1b4f8bea1f399ea0d7fa" category="list-text">要备份单个资源（例如虚拟机），请创建仅包含该资源的资源组。</block>
   <block id="ee4aa19a5d187373cae36a8063c1a4fa" category="list-text">要备份多个资源，请创建一个包含所有要保护的资源的资源组。</block>
@@ -2116,7 +2105,6 @@
   <block id="6df2f9689a6255e2c498bc4bfb1abbf2" category="list-text">注销并关闭所有 vSphere 客户端浏览器会话，并清除浏览器缓存以防止部署期间出现问题。</block>
   <block id="f6c9b4635b5425929b1d75520484e3a1" category="list-text">在 vCenter 中启用传输层安全性 (TLS)。请参阅 VMware 文档。</block>
   <block id="228276fa8cafcca2276f7b3f56cc1c22" category="list-text">如果您计划在部署了适用于SnapCenter Plug-in for VMware vSphere的vCenter 以外的 vCenter 中执行备份，请确保 ESXi 服务器、SnapCenter Plug-in for VMware vSphere和每个 vCenter 都同步到同一时间。</block>
-  <block id="587c9ed3c0a9b0bbee1033a084dbb713" category="list-text">要保护 vVol 数据存储上的虚拟机，请首先ONTAP tools for VMware vSphere。有关受支持的ONTAP工具版本，请参阅<block ref="3a209fb27f7f233fd0ce1196af83183f" category="inline-link-rx"></block>。  ONTAP工具在ONTAP和 VMware Web 客户端上配置和配置存储。</block>
   <block id="b1226251f40950720f8b0d1c0db0107e" category="paragraph">屏幕显示部署SnapCenter Plug-in for VMware vSphere的IP 地址。记下 IP 地址。如果要更改适用于SnapCenter Plug-in for VMware vSphere配置，则需要登录到适用SnapCenter Plug-in for VMware vSphere管理用户界面。</block>
   <block id="5d950bf8c254fb969efdbfc4db96e1b1" category="list-text">使用部署屏幕上显示的 IP 地址和部署向导中提供的凭据登录到适用SnapCenter Plug-in for VMware vSphere管理用户界面，然后在仪表板上验证适用SnapCenter Plug-in for VMware vSphere是否已成功连接到 vCenter 并已启用。</block>
   <block id="e7a5ee24eea46c33667413c3e3f1e89f" category="paragraph">使用格式<block ref="cf854de4a942e42c016ef31d206a66c3" prefix=" " category="inline-code"></block>访问管理用户界面。</block>
@@ -2204,4 +2192,14 @@
   <block id="5f9632818cc0b2ae9e72f12df491a0d9" category="sidebar">SnapCenter Plug-in for VMware vSphere用户界面生成支持包</block>
   <block id="d6ede90a002c3b83d155e427efb5f090" category="admonition">从 SCV 6.2 版本开始，可以支持Amazon FSx for NetApp ONTAP存储系统。</block>
   <block id="7b373df72819a720b694167ed282840b" category="list-text">您可以将用户与全局权限下的预定义角色关联。</block>
+  <block id="65d85f7b30631ef25b698588ad1c6d70" category="paragraph">有关更多信息，请参阅适用ONTAP tools for VMware vSphere文档。此外，请参阅<block ref="3a652b73dae301a6be8009ba1c8bc98c" category="inline-link-rx"></block>有关ONTAP工具支持的版本的最新信息。</block>
+  <block id="b0a08790fc072a9142432d7a767cb288" category="paragraph">有关受支持版本的最新信息，请参阅<block ref="3a652b73dae301a6be8009ba1c8bc98c" category="inline-link-rx"></block>（IMT）。</block>
+  <block id="5d47851b653e8af8cb032e72d0258b2b" category="paragraph">有关更多信息，请参阅适用ONTAP tools for VMware vSphere文档。如需了解支持的版本，请访问<block ref="3a652b73dae301a6be8009ba1c8bc98c" category="inline-link-rx"></block>。</block>
+  <block id="6994de96d1aec646ddcf3fc872669a22" category="paragraph">当您尝试创建资源组时， SnapCenter会执行兼容性检查。总是参考<block ref="dd731ea0dfaa7ba4b5325a39b353b5a2" category="inline-link-rx"></block>有关SnapCenter支持的最新信息。不兼容的原因可能包括：</block>
+  <block id="c1ae70ea35887b6844fa48639efbda0d" category="list-text">要保护 vVol 数据存储上的虚拟机，请首先ONTAP tools for VMware vSphere。有关受支持的ONTAP工具版本，请参阅<block ref="3a652b73dae301a6be8009ba1c8bc98c" category="inline-link-rx"></block>。ONTAP工具在ONTAP和 VMware Web 客户端上配置和配置存储。</block>
+  <block id="ee3365d72219428ca65e587d89bdfcc7" category="cell">SnapCenter Plug-in for VMware vSphere使用它来管理 vVol 数据存储（VMware 虚拟卷）。有关支持的版本，请参阅<block ref="3a652b73dae301a6be8009ba1c8bc98c" category="inline-link-rx"></block>。</block>
+  <block id="8ac9572d9a2e6569c451b7e81c7b6662" category="paragraph">有关受支持版本的最新信息，请参阅<block ref="3a652b73dae301a6be8009ba1c8bc98c" category="inline-link-rx"></block>。</block>
+  <block id="95477275bd206a7fb98bf4a8ec799a0b" category="paragraph">有关受支持版本的最新信息，请参阅<block ref="dd731ea0dfaa7ba4b5325a39b353b5a2" category="inline-link-rx"></block>。</block>
+  <block id="65d35124c2bde72fba0fccdd4037d284" category="paragraph">您无法从运行 Linux 客户操作系统的 VM 还原文件和文件夹。但是，您可以附加 VMDK，然后手动恢复文件和文件夹。有关受支持的客户操作系统的最新信息，请参阅<block ref="dd731ea0dfaa7ba4b5325a39b353b5a2" category="inline-link-rx"></block>。</block>
+  <block id="eccd74f81ec87affcad9c90ed7e1c714" category="paragraph">您无法从运行 Linux 客户操作系统的 VM 还原文件和文件夹。但是，您可以附加 VMDK，然后手动恢复文件和文件夹。有关受支持的客户操作系统的最新信息，请参阅<block ref="dd731ea0dfaa7ba4b5325a39b353b5a2" category="inline-link-rx"></block>。</block>
 </blocks>

@@ -54,7 +54,7 @@ TIP: 在开始升级之前，请备份适用于 VMware vSphere 的 SnapCenter �
 
 NOTE: 不支持将网络配置从静态切换到 DHCP 。
 
-有关受支持版本的最新信息、请参阅 https://imt.netapp.com/matrix/imt.jsp?components=134348;&solution=1517&isHWU&src=IMT["NetApp 互操作性表工具"^] (IMT)。
+有关受支持版本的最新信息，请参阅 https://imt.netapp.com/imt/imt.jsp?components=180121;&solution=1517&isHWU&src=IMT["NetApp 互操作性表工具"^]（IMT）。
 
 .步骤
 . 禁用适用于 VMware vSphere 的 SnapCenter 插件，为升级做准备。

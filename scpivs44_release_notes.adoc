@@ -20,6 +20,6 @@ summary: 发行说明提供了有关此版本的适用于 VMware vSphere 的 Sna
 
 [NOTE]
 ====
-有关受支持版本的最新信息，请参阅NetApp互操作性表工具(http://mysupport.netapp.com/matrix["IMT"^]。
+有关受支持版本的最新信息，请参阅 https://imt.netapp.com/imt/imt.jsp?components=180121;&solution=1517&isHWU&src=IMT["NetApp 互操作性表工具（ IMT ）"^]。
 
 ====
