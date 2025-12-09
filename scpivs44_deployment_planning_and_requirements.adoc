@@ -123,6 +123,9 @@ summary: 在部署虚拟设备之前，您应了解部署要求。
 
 
 | 适用于VMware的ONTAP 工具 | SnapCenter Plug-in for VMware vSphere使用它来管理 vVol 数据存储（VMware 虚拟卷）。有关支持的版本，请参阅 https://imt.netapp.com/imt/imt.jsp?components=180121;&solution=1517&isHWU&src=IMT["NetApp 互操作性表工具"^]。 
+
+
+| Amazon FSxN for NetApp ONTAP存储 | 9.10 及以上 
 |===
 有关受支持版本的最新信息，请参阅 https://imt.netapp.com/imt/imt.jsp?components=180121;&solution=1517&isHWU&src=IMT["NetApp 互操作性表工具"^]。
 
@@ -152,9 +155,6 @@ summary: 在部署虚拟设备之前，您应了解部署要求。
 
 
 | 适用于 VMware vSphere 的 SnapCenter 插件，日志和 MySQL 数据库的最小硬盘空间 | 100 GB 
-
-
-| 设备中vmcontrol服务的最大堆大小 | 8 GB 
 |===
 
 

@@ -20,3 +20,5 @@ SnapCenter Plug-in for VMware vSphere增加了对运行ONTAP 9.17.1 或更高版
 * 执行恢复工作流程
 * 在创建或修改资源组时提供二级保护（适用于ONTAP 9.16.1 及更高版本）
 
+
+从本版本开始，适用SnapCenter Plug-in for VMware vSphere支持运行 9.10 或更高版本的 Amazon FSxN for NetApp ONTAP存储系统。

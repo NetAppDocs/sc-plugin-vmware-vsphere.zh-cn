@@ -1816,8 +1816,6 @@
   <block id="856e1714b1d49f0d567463f553ef9120" category="cell">8个核心</block>
   <block id="2a9f9ccc193010032b655ecfc76e40c8" category="cell">建议的 RAM</block>
   <block id="dde8b54fa4a91beedb7b736869c08569" category="cell">24 GB</block>
-  <block id="f8bce6aa95f5621d608c29e258b620d2" category="cell">设备中vmcontrol服务的最大堆大小</block>
-  <block id="af5700014f646d2567efa6288d85ab2b" category="cell">8 GB</block>
   <block id="4fa7e925220267d7b768f4b3a78c6148" category="admonition">ASA R2存储系统不支持重命名备份。</block>
   <block id="d106abcc28b08528e977427482cfc257" category="paragraph">您可以在多个类别中进行更改。您还可以在此选项中编辑受二级保护的资源。</block>
   <block id="875b0302744a0f026125fde0002031ee" category="cell">volume clong create volume clong show volume clone-split start volume clone-split status volume clone-split stop volume create volume delete volume销毁volume file clone-disk usage-volume脱机卷联机卷管理的功能卷修改卷qtree create volume qtree delete volume qtree修改SnapLock卷qtree show volume resystem show volume snapshot create volume snapshot delete volume snapshot修改卷快照</block>
@@ -2202,4 +2200,7 @@
   <block id="95477275bd206a7fb98bf4a8ec799a0b" category="paragraph">有关受支持版本的最新信息，请参阅<block ref="dd731ea0dfaa7ba4b5325a39b353b5a2" category="inline-link-rx"></block>。</block>
   <block id="65d35124c2bde72fba0fccdd4037d284" category="paragraph">您无法从运行 Linux 客户操作系统的 VM 还原文件和文件夹。但是，您可以附加 VMDK，然后手动恢复文件和文件夹。有关受支持的客户操作系统的最新信息，请参阅<block ref="dd731ea0dfaa7ba4b5325a39b353b5a2" category="inline-link-rx"></block>。</block>
   <block id="eccd74f81ec87affcad9c90ed7e1c714" category="paragraph">您无法从运行 Linux 客户操作系统的 VM 还原文件和文件夹。但是，您可以附加 VMDK，然后手动恢复文件和文件夹。有关受支持的客户操作系统的最新信息，请参阅<block ref="dd731ea0dfaa7ba4b5325a39b353b5a2" category="inline-link-rx"></block>。</block>
+  <block id="dcd97a739116b3e37a21b24d1b1d508d" category="cell">Amazon FSxN for NetApp ONTAP存储</block>
+  <block id="b6e6ac3bc87c50849332d71bd687f2ee" category="cell">9.10 及以上</block>
+  <block id="af6ccd5ef578462110c3f8bfdb7d3622" category="paragraph">从本版本开始，适用SnapCenter Plug-in for VMware vSphere支持运行 9.10 或更高版本的 Amazon FSxN for NetApp ONTAP存储系统。</block>
 </blocks>
