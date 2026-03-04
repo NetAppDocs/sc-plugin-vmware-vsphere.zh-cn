@@ -4,7 +4,7 @@ permalink: scpivs44_search_for_backups.html
 keywords:  
 summary: 您可以使用还原向导搜索并查找虚拟机或数据存储库的特定备份。找到备份后，您可以将其还原。 
 ---
-= 搜索备份
+= 在 SnapCenter Plug-in for VMware vSphere 中搜索备份
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

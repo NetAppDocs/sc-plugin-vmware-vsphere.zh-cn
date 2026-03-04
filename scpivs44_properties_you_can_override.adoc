@@ -4,7 +4,7 @@ permalink: scpivs44_properties_you_can_override.html
 keywords:  
 summary: '您可以使用 `sCBR.override` 配置文件中列出的属性来更改默认值。' 
 ---
-= 可以覆盖的属性
+= 您可以在 SCV 中覆盖的属性
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

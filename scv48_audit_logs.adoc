@@ -4,7 +4,7 @@ permalink: scv48_audit_logs.html
 keywords:  
 summary: 审核日志可追溯谁执行了什么操作以及何时执行。审核日志是一组按时间顺序排列的事件、它会写入设备中的文件。 
 ---
-= 审核日志
+= SnapCenter Plug-in for VMware vSphere 的审计日志
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

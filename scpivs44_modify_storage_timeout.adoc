@@ -4,7 +4,7 @@ permalink: scpivs44_modify_storage_timeout.html
 keywords:  
 summary: 即使备份过去已成功运行、但在适用于VMware vSphere的SnapCenter插件必须等待存储系统超过配置的超时期限这段时间内、备份可能会开始失败。如果发生这种情况，您可以增加所配置的超时时间。 
 ---
-= 修改已配置的存储超时
+= 修改 SCV 中的存储超时
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

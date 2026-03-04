@@ -4,7 +4,7 @@ permalink: scpivs44_remove_plugin.html
 keywords:  
 summary: 如果您不再需要使用SnapCenter数据保护功能、则必须禁用适用于VMware vSphere的SnapCenter插件以将其从vCenter中注销、然后从vCenter中删除适用于VMware vSphere的SnapCenter插件、最后手动删除剩余文件。 
 ---
-= 删除适用于 VMware vSphere 的 SnapCenter 插件
+= 卸载 SnapCenter Plug-in for VMware vSphere
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

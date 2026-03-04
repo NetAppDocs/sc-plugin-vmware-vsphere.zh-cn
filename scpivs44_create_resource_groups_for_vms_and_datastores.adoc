@@ -4,7 +4,7 @@ permalink: scpivs44_create_resource_groups_for_vms_and_datastores.html
 keywords:  
 summary: 资源组是指要保护的VM、数据存储库、vSphere标记和vSphere VM文件夹的容器。 
 ---
-= 创建资源组
+= 在 SCV 中为虚拟机和数据存储创建资源组
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

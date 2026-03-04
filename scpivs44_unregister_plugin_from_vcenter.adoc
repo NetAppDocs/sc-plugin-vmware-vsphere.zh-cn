@@ -4,7 +4,7 @@ permalink: scpivs44_unregister_plugin_from_vcenter.html
 keywords:  
 summary: 如果在处于链接模式的vCenter中停止适用于VMware vSphere的SnapCenter插件服务、则资源组不会在所有链接的vCenter中都可用、即使适用于VMware vSphere的SnapCenter插件服务正在其他链接的vCenter中运行也是如此。您必须手动取消注册适用于VMware vSphere的SnapCenter插件扩展。 
 ---
-= 从 vCenter 取消注册适用于 VMware vSphere 的 SnapCenter 插件
+= 从 vCenter 注销 SnapCenter Plug-in for VMware vSphere
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -4,7 +4,7 @@ permalink: scpivs44_upgrade.html
 keywords:  
 summary: 如果您使用的是适用于 VMware vSphere 的 SnapCenter 插件虚拟设备，则可以升级到更高版本。 
 ---
-= 从适用于 VMware vSphere 的 SnapCenter 插件的早期版本升级
+= 从早期版本的 SCV 升级
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

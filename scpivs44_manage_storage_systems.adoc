@@ -4,7 +4,7 @@ permalink: scpivs44_manage_storage_systems.html
 keywords:  
 summary: 在使用VMware vSphere客户端备份或还原VM或数据存储库之前、必须添加存储。 
 ---
-= 管理存储系统
+= 管理 SnapCenter Plug-in for VMware vSphere 中的存储系统
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

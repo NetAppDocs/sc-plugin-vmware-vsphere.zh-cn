@@ -4,7 +4,7 @@ permalink: scpivs44_create_backup_policies_for_vms_and_datastores.html
 keywords:  
 summary: 在使用适用于 VMware vSphere 的 SnapCenter 插件备份 VM 和数据存储库之前，必须先创建备份策略。 
 ---
-= 为 VM 和数据存储库创建备份策略
+= 在 SCV 中为 VM 和数据存储创建备份策略
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

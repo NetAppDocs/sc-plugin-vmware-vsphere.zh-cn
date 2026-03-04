@@ -4,7 +4,7 @@ permalink: scpivs44_role_based_access_control.html
 keywords:  
 summary: 适用于 VMware vSphere 的 SnapCenter 插件为管理虚拟化资源提供了一个额外级别的 RBAC 。此插件同时支持 vCenter Server RBAC 和 ONTAP RBAC 。 
 ---
-= 基于角色的访问控制（ Role-Based Access Control ， RBAC ）
+= SCV 的基于角色的访问控制
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

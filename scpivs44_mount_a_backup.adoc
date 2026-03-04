@@ -4,7 +4,7 @@ permalink: scpivs44_mount_a_backup.html
 keywords:  
 summary: 如果要访问备份中的文件，可以从备份挂载传统数据存储库。您可以将备份挂载到创建备份的同一 ESXi 主机，也可以挂载到具有相同类型的 VM 和主机配置的备用 ESXi 主机。您可以在主机上多次挂载数据存储库。 
 ---
-= 挂载备份
+= 使用 SnapCenter Plug-in for VMware vSphere 挂载备份
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

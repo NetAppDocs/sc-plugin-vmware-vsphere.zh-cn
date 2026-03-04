@@ -4,7 +4,7 @@ permalink: scpivs44_access_the_maintenance_console.html
 keywords:  
 summary: 您可以使用适用于 VMware vSphere 的 SnapCenter 插件的维护控制台来管理应用程序，系统和网络配置。您可以更改管理员密码，维护密码，生成支持包以及启动远程诊断。 
 ---
-= 访问维护控制台
+= 访问 SnapCenter Plug-in for VMware vSphere 维护控制台
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

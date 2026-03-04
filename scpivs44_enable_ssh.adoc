@@ -4,7 +4,7 @@ permalink: scpivs44_enable_ssh.html
 keywords:  
 summary: 在部署适用于VMware vSphere的SnapCenter插件时、默认情况下会禁用SSH。 
 ---
-= 为适用于 VMware vSphere 的 SnapCenter 插件启用 SSH
+= 为 SnapCenter Plug-in for VMware vSphere 启用 SSH
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

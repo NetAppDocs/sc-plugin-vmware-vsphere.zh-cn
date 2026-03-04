@@ -4,7 +4,7 @@ permalink: scpivs44_rest_api_workflows__attach_and_detach_vmdks.html
 keywords:  
 summary: 要使用适用于 VMware vSphere 的 SnapCenter 插件 REST API 对 VMDK 执行连接和断开操作，您必须遵循规定的 REST API 调用顺序。 
 ---
-= 用于连接和断开 VMDK 的 REST API 工作流
+= 在 SCV 中附加和分离 VMDK 的 REST API 工作流程
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

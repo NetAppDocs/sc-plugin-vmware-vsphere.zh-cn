@@ -4,7 +4,7 @@ permalink: scpivs44_create_and_import_certificates.html
 keywords:  
 summary: 适用于VMware vSphere的SnapCenter插件采用SSL加密技术与客户端浏览器进行安全通信。虽然这样可以跨网启用加密数据，但创建新的自签名证书，或者使用您自己的证书颁发机构（ CA ）基础架构或第三方 CA ，可确保此证书对于您的环境是唯一的。 
 ---
-= 创建和导入证书
+= 为 SCV 创建和导入证书
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

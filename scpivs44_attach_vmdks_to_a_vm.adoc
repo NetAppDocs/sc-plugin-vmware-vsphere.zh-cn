@@ -4,7 +4,7 @@ permalink: scpivs44_attach_vmdks_to_a_vm.html
 keywords:  
 summary: 您可以将一个或多个 VMDK 从备份连接到父虚拟机，同一 ESXi 主机上的备用虚拟机，或者连接到由同一 vCenter 或不同 vCenter 以链接模式管理的备用 ESXi 主机上的备用虚拟机。支持传统数据存储库和VVol数据存储库中的VM。 
 ---
-= 将VMDK连接到虚拟机或VVol虚拟机
+= 使用 SnapCenter Plug-in for VMware vSphere 将 VMDK 附加到虚拟机
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

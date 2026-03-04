@@ -4,7 +4,7 @@ permalink: scpivs44_rest_api_workflow__restore_deleted_vms.html
 keywords:  
 summary: 要使用适用于 VMware vSphere 的 SnapCenter 插件 REST API 对 VM 备份执行还原操作，您必须遵循规定的 REST API 调用顺序。 
 ---
-= 用于还原已删除 VM 的 REST API 工作流
+= 使用 SCV 恢复已删除虚拟机的 REST API 工作流程
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

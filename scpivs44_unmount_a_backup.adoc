@@ -4,7 +4,7 @@ permalink: scpivs44_unmount_a_backup.html
 keywords:  
 summary: 如果您不再需要访问数据存储库中的文件，则可以卸载备份。 
 ---
-= 卸载备份
+= 使用 SnapCenter Plug-in for VMware vSphere 卸载备份
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

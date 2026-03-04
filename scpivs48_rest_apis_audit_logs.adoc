@@ -4,7 +4,7 @@ permalink: scpivs48_rest_apis_audit_logs.html
 keywords:  
 summary: 用于生成审核日志的REST API 
 ---
-= 用于生成审核日志的REST API
+= 用于生成 SCV 审核日志的 REST API
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

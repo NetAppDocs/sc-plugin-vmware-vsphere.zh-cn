@@ -213,7 +213,6 @@
   <block id="c6526eb8e3cbed8e83bb8553bda841dd" category="paragraph">`print FH "="======\n" ；` `Close （ FH ）；`</block>
   <block id="3c34af798ae440e90c491108b4d82309" category="section-title">示例 Shell 脚本</block>
   <block id="9eea8ad743a2ed0dc453ae3c80f5ae6b" category="paragraph">` =======================================================================================================================================================================EN` `` `` `` ``</block>
-  <block id="1249a334c3011b4680fc228dafe02845" category="doc">升级到适用于 VMware vSphere 的同一版本 SnapCenter 插件的新修补程序</block>
   <block id="b6bb7bbf9c57892b88c536fe12569417" category="paragraph">如果要升级到同一版本的新修补程序，则必须清除 vCenter Web Server 上适用于 VMware vSphere 的 SnapCenter 插件缓存，并在升级或注册之前重新启动服务器。</block>
   <block id="f110cd23dd201ad68954adbde0937a9d" category="paragraph">如果未清除插件缓存，则在以下情况下，信息板和作业监控器不会显示最近的作业：</block>
   <block id="877bf3ccc261e049bb2abf77efdaea47" category="list-text">适用于 VMware vSphere 的 SnapCenter 插件是使用 vCenter 部署的，之后升级到同一版本中的修补程序。</block>
@@ -255,7 +254,6 @@
   <block id="70cb87c6754343f91541c5c34271ad1a" category="list-text">如果备份失败并显示错误 `Unable to discover resources on SCV ： &lt;xxx&gt;…` 对于切换 / 切回后的 NFS 和 VMFS VM ，请从维护控制台重新启动 SnapCenter VMware 服务。</block>
   <block id="c4fe68d41e25e11a4876886c14d89a5a" category="doc">现有用户的部署工作流</block>
   <block id="da07a799965870e49261d180d4307b5f" category="paragraph">如果您是 SnapCenter 用户且拥有 SnapCenter 备份，请使用以下工作流开始操作。</block>
-  <block id="e7326f303b8abf78625da7d8f22fa0b4" category="doc">管理策略</block>
   <block id="2833997454e257549c1ee754caa5789a" category="paragraph">您可以为适用于 VMware vSphere 的 SnapCenter 插件创建，修改，查看，断开和删除备份策略。执行数据保护操作需要策略。</block>
   <block id="78f1e90e675a66cb2a884cded1ec1e11" category="section-title">分离策略</block>
   <block id="b215e4d6682eae092d0edbb35a888ab7" category="list-text">在 * 编辑资源组 * 向导的 * 策略 * 页面上，清除要断开的策略旁边的复选标记。</block>
@@ -455,7 +453,6 @@
   <block id="096ea6f3f334f93dc0a0d1a707e8a4cf" category="doc">下载作业日志</block>
   <block id="1101d50ae81430281bce448efa2ea34a" category="paragraph">您可能需要向右滚动才能看到图标。</block>
   <block id="ce2a9d19a9ae205749d6e91959e3b4f4" category="paragraph">如果您尝试下载作业日志，但错误消息中名为的日志文件已被删除，则可能会遇到以下错误： `HTTP error 500 problem accessing /export-SCV -logs` 。要更正此错误，请检查错误消息中命名的文件的文件访问状态和权限，并更正访问问题。</block>
-  <block id="65d964d49665477bbec39032d9f3ca8a" category="doc">管理备份</block>
   <block id="e10df4c314c4c935099e8c940a5cdf02" category="paragraph">您可以重命名和删除适用于 VMware vSphere 的 SnapCenter 插件执行的备份。您也可以同时删除多个备份。</block>
   <block id="b6821d00a7bc4a6fcfe3d073cec911ab" category="section-title">重命名备份</block>
   <block id="b069e722ad8d29f7eec823ae5a4a95a6" category="paragraph">如果要提供更好的名称以提高可搜索性，您可以重命名适用于 VMware vSphere 的 SnapCenter 插件备份。</block>
@@ -627,17 +624,14 @@
   <block id="00913a1f5999892e9e7489ab80e13c40" category="paragraph">可能需要几分钟才能恢复所有服务。</block>
   <block id="58a095d28f14349299e54bd7a6d4ee7f" category="paragraph">您可以修改在适用于 VMware vSphere 的 SnapCenter 插件中配置的 vCenter 登录凭据。插件使用这些设置访问 vCenter 。</block>
   <block id="d9a651242a5b8ae831d8957f135ebd64" category="paragraph">请勿修改端口号。</block>
-  <block id="d120dfcded58a5506ff23bf511e0f19f" category="section-title">修改网络设置</block>
   <block id="e7683ab9f61fe80a16f3111a33febbda" category="paragraph">您可以修改在适用于 VMware vSphere 的 SnapCenter 插件中配置的网络设置。插件使用这些设置访问 vCenter 。</block>
   <block id="3c1620dc3cd833488e7cde6109b6d1bb" category="list-text">如果要删除网络设置，请执行以下操作：</block>
   <block id="bf13beedf7649b415532e33e9762784d" category="paragraph">指定适用于 VMware vSphere 的 SnapCenter 插件在子系统上完成子系统操作（联机磁盘和还原文件）时所监控的时间间隔（以秒为单位）。总等待时间由 `guestFileRestore.online.disk.timeout` 和 `guestFileRestore.restore.files.timeout` 设置。</block>
-  <block id="ab42b9e9b4193a75fa82be2377e494fa" category="section-title">为适用于 VMware vSphere 的 SnapCenter 插件启用 SSH</block>
   <block id="fb8c4c80c42556fa8dabc6cab29bc009" category="list-text">从主菜单中选择菜单选项 *2 ） System Configuration* 。</block>
   <block id="4ed299908114215d69a50f34f8a3cc73" category="list-text">从 System Configuration Menu 中，选择菜单选项 * ） Enable SSH access* ，然后在确认提示符处输入 "* y" 。</block>
   <block id="e4efd499663f9b909cac3f0ea4fee7d8" category="list-text">等待消息 " 正在启用 SSH 访问… " 然后按 * 输入 * 继续，然后在提示符处输入 * X 退出维护模式。</block>
   <block id="35b654fd14f12a33551c1993b5321fcb" category="summary">适用于 VMware vSphere 的 SnapCenter 插件（ SCV ）是一种基于 Linux 的虚拟设备。作为独立的，它可以为 VM ，数据存储库和 VMDK 提供快速，节省空间，崩溃状态一致且 VM 一致的备份和还原操作。此外，它还可以与 SnapCenter 服务器配合使用，为 SnapCenter 应用程序专用插件在 VMware 环境中执行基于应用程序的备份和还原操作提供支持。</block>
   <block id="8c3d0c00ea667e3e0723e5cdc6473a09" category="doc">适用于 VMware vSphere 的 SnapCenter 插件文档</block>
-  <block id="09b43df06bca0a261e4635991d6c8575" category="doc">管理存储系统</block>
   <block id="8ed7e92fcf2560d9482aad3d9ec78236" category="section-title">修改 Storage VM</block>
   <block id="70acabccfa2b6713b1a86d484632666b" category="section-title">删除 Storage VM</block>
   <block id="9511d611d059dad2cee26dd7b6fc4d5a" category="paragraph">您必须先卸载 Storage VM 中的所有数据存储库，然后才能删除此 Storage VM 。</block>
@@ -722,13 +716,11 @@
   <block id="e2b253374500e2e93f1c334a2bb7ddd4" category="section-title">子系统文件还原会话中断后，备份不会断开</block>
   <block id="898c4d9cd797d45ca2066478fd269974" category="paragraph">当您从 VM 一致的备份执行子系统文件还原操作时，会发生此问题描述。当子系统文件还原会话处于活动状态时，会为同一个 VM 执行另一个 VM 一致的备份。如果子系统文件还原会话断开连接（手动断开或在 24 小时后自动断开），则不会断开会话的备份。</block>
   <block id="5857a2699c75798b2ae21bc0b06aff95" category="paragraph">要更正问题描述，请手动断开与活动子文件还原会话连接的 VMDK 。</block>
-  <block id="d076807af778318099a7f649b1a2425a" category="doc">查看虚拟机和数据存储库备份</block>
   <block id="fe5a15ae670c4a446e877ef3f375fe1f" category="paragraph">在准备备份或还原虚拟机或数据存储库时，您可能希望查看可用于该资源的所有备份并查看这些备份的详细信息。</block>
   <block id="173e33abe439fc0d0f5e9ee8f5562d8e" category="doc">挂载备份</block>
   <block id="482372f5186290234c8109307262c7be" category="list-text">确保备用 ESXi 主机可以连接到存储</block>
   <block id="49f24ccdfcbcf169f269c90155c78746" category="paragraph">如果数据存储库所在的 FabricPool 存储层不可用，则挂载操作可能会失败。</block>
   <block id="18641fac10a89302c14853de671e8f34" category="list-text">可选：要验证是否已挂载数据存储库，请执行以下操作：</block>
-  <block id="ec972bce7640d5d440d3549702031815" category="doc">管理资源组</block>
   <block id="5c6e1d830c6aa20cbea2393e562369b7" category="paragraph">您可以创建，修改和删除备份资源组，并对资源组执行备份操作。</block>
   <block id="55410cc294634878d1b4f9650ea5f30c" category="admonition">资源组在 Virtual Storage Console （ VSC ）中称为备份作业。</block>
   <block id="5f7ed1f226c86386e9dacf795c70c408" category="section-title">暂停和恢复对资源组的操作</block>
@@ -777,7 +769,6 @@
   <block id="847b8685554d07af7c2a25cc92eb932c" category="cell">snapmirror list-destinations snapmirror policy add-rule snapmirror policy modify-rule snapmirror policy remove-rule snapmirror policy show snapmirror restore snapmirror show snapmirror show-history snapmirror update snapmirror update-ls-set</block>
   <block id="34b6cd75171affba6957e308dcbd92be" category="cell">version</block>
   <block id="7a69b919de28d081f80cd742609937a9" category="section-title">其他 ONTAP 信息</block>
-  <block id="1086d683c23fd8a04a9c002dde8d7ad3" category="doc">用于修改内置计划的 REST API 工作流</block>
   <block id="13a93f90c76da80a37b018acb990a35d" category="paragraph">内置计划是指作为产品一部分提供的计划，例如 MySQL 数据库转储计划。您可以修改以下计划： `sschedule-DatabaseDump` `Sschedule-PurgeBackups` `Sschedule-AsapDataCollection` `Sschedule-ComputeStorageSaving` `Sschedule-PurgeJobs`</block>
   <block id="ffedd74115b7c9889faf836e15982909" category="cell">` /4.1/schedules`</block>
   <block id="f3974033ad747b4d9909ec595f6da5e0" category="cell">`获取所有内置计划` 计划获取产品中最初提供的作业计划列表。记下要修改的计划名称以及关联的 cron 表达式。</block>
@@ -843,7 +834,6 @@
   <block id="7d120b899dfe322b03e6190f482e45cf" category="list-text">关闭虚拟机。</block>
   <block id="f43a58814cc029c00e7146e34072ecec" category="list-text">登录到 SnapCenter 并删除 vSphere 主机。</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="doc">发行说明</block>
-  <block id="8e76505b54822d8003db9695ebc8dded" category="doc">为 VM 和数据存储库创建备份策略</block>
   <block id="f3a07562dfcba402848f7481f951cabf" category="paragraph">在使用适用于 VMware vSphere 的 SnapCenter 插件备份 VM 和数据存储库之前，必须先创建备份策略。</block>
   <block id="271beae8f11b01c3f45767fc1bd5c1a9" category="list-text">您必须已阅读前提条件。</block>
   <block id="020c68712d58d0c6ae79d6422851ae45" category="list-text">您必须已配置二级存储关系。</block>
@@ -907,7 +897,6 @@
   <block id="a984d8aae435a575727971f17ebc2b7f" category="paragraph">选定的备份 MySQL 数据库将还原到其原始位置。</block>
   <block id="8fbcd736aac5b9c6baba8f4db349f50e" category="section-title">创建和导入证书</block>
   <block id="eab598fe49238a4c46b7d04bd9d31b23" category="section-title">从 vCenter 取消注册适用于 VMware vSphere 的 SnapCenter 插件</block>
-  <block id="023f24f55850eacb351f762db9b50e81" category="doc">迁移概述</block>
   <block id="8a4139ea0786f41cc68aee2d93ca450a" category="paragraph">migration 命令仅从 #SnapCenter 4.0 及更高版本 # 迁移元数据。如果您使用的是早期版本的 SnapCenter ，则必须先升级，然后才能进行迁移。</block>
   <block id="ec3d3431008e42a4c37055a78db7f12e" category="list-text">迁移的内容包括</block>
   <block id="2feaeb2408c183d076a33a4219e1d2f9" category="list-text">迁移的内容</block>
@@ -1025,8 +1014,6 @@
   <block id="1fa6059a291a99772c5cdaa63dc6ea64" category="admonition">在连接和还原操作开始之前，必须配置代理 VM 。</block>
   <block id="92555e73117a4723c02849a8e31de3e3" category="paragraph">如果要还原的文件或文件夹已位于还原目标上，请选择要采取的操作：始终覆盖或始终跳过。</block>
   <block id="883a7ba4f8c59dbcd87a8b94a15652c6" category="admonition">如果此文件夹已存在，则此文件夹的内容将与现有文件夹合并。</block>
-  <block id="8592777bb1993d06e4c0038edb7ffd2c" category="section-title">修改登录凭据</block>
-  <block id="d82c01fa5382768b8cbd7e452412b872" category="section-title">修改 vCenter 登录凭据</block>
   <block id="3a3bfcea804c014276e7672b06f18879" category="summary">在部署虚拟设备之前，您应了解部署要求。</block>
   <block id="63e4e92bb7d207ca577b11c07f827279" category="paragraph">扩展</block>
   <block id="866e95688b1cd31ff497f09a4e1bfa5e" category="list-text">更新扩展</block>
@@ -1123,7 +1110,6 @@
   <block id="860885b8f814b49a1b238883de3a87df" category="list-text">ONTAP SnapMirror 还原（如果使用的是 ONTAP 9.10.1 及更高版本）</block>
   <block id="51a5d5da98cf5178b170023fee4cbe00" category="list-text">使用适用于 ONTAP 的 Storage VMotion 先前版本克隆和挂载</block>
   <block id="629ec47b81132f329d4136880bd3bbde" category="list-text">您无法还原加密的子文件。</block>
-  <block id="cee41b55e417d2c681bd345802b719fd" category="doc">还原概述</block>
   <block id="83cd4af85c0a253d77f0a1f740716cce" category="paragraph">您可以将传统 VM 还原到原始主机，同一 vCenter Server 中的备用主机，或由同一 vCenter 管理的备用 ESXi 主机或处于链接模式的任何 vCenter 。</block>
   <block id="e63580f64111a3b3b0f5a06e51edefb7" category="paragraph">您可以将 VVol 虚拟机还原到原始主机。</block>
   <block id="68109f809a0ab91cdd8972e06d907043" category="paragraph">您可以将传统 VM 中的 VMDK 还原到原始数据存储库或备用数据存储库。</block>
@@ -1208,7 +1194,6 @@
   <block id="bebc6d6c31f801875b9e77f07bdb01e7" category="paragraph">您可以使用VMware vSphere客户端从vCenter中的清单中删除Storage VM。</block>
   <block id="47407cf5b03fece3c5c171eab2b9b01a" category="inline-link-macro">重新启动VMware vSphere客户端服务</block>
   <block id="57ece9f7f3b3d9621593aeee1cb35996" category="summary">将证书颁发机构的根证书和中间证书添加到VMware vCenter、以便信任该证书及其签名的项目。</block>
-  <block id="ee28a4160e701596abbbfdd58c421736" category="doc">将证书添加到VMware证书存储</block>
   <block id="0e92f10c668b9d31215a77670df94831" category="paragraph">在安装Open Virtual Appliance (OVA)之前、请将证书添加到vCenter中。tar文件包含OVA和Entrustate根证书和中间证书、这些证书可以在证书文件夹中找到。VMware vCenter 7u1及更高版本支持OVA部署。</block>
   <block id="c85c932c9dd62ac289f58ffb5aa66d1b" category="paragraph">在VMware vCenter 7.0.3及更高版本中、通过Entrustly证书签名的OVA不再受信任。要解析此问题描述 、您需要执行以下操作步骤。</block>
   <block id="59252255a28a0d28afa2a95348168088" category="list-text">使用vSphere Client登录到vCenter Server。</block>
@@ -1465,7 +1450,6 @@
   <block id="ec6b0202082dc6ee78a9636f86e0717d" category="list-text">具有指定vSphere标记的所有vVol VM。</block>
   <block id="2260cf040531c2852db89dceca3fdeb9" category="list-text">要配置VMware vVol VM、需要使用适用于VMware vSphere的ONTAP工具。</block>
   <block id="d3f72758cf0a8156e66fa0d7b643122f" category="summary">您可以使用REST API重命名存储。</block>
-  <block id="16ceb93d669340dd2ab2325671f71daf" category="doc">还原已重命名存储的备份</block>
   <block id="a52fd082737b9604d73b0ea5362cc5bd" category="paragraph">重命名存储后、使用重命名前创建的备份的工作流将失败。通过引入重命名备份功能(只能通过REST API访问)、现在可以使用在存储重命名之前创建的备份。下面介绍了REST API的工作流和使用情况。</block>
   <block id="c886be9c6f9349123af1949e3b8746ff" category="list-text">添加或更新新的存储连接、确保新的集群或SVM名称反映在选择控制阀中。</block>
   <block id="96fa213e8fbb74cfd99aee91cdbe7198" category="inline-link">重命名SVM后、选择控制阀备份失败</block>
@@ -2110,7 +2094,6 @@
   <block id="c7731009688c7502a64776f0642b30f0" category="list-text">在 VMware vSphere 客户端用户界面中，选择工具栏中的“*菜单*”，然后从下拉列表中选择“*虚拟机和模板*”。</block>
   <block id="161c4361676fbbb0685a50473b91d746" category="list-text">使用以下格式登录到SnapCenter Plug-in for VMware vSphere管理用户界面<block ref="3dfacd84c996ac983963942e2712a0bf" prefix=" " category="inline-code"></block>。使用部署时设置的管理员用户名和密码以及使用维护控制台生成的 MFA 令牌登录。</block>
   <block id="d6d09f4e8001697611f27d93e952567a" category="summary">您可以从SnapCenter Plug-in for VMware vSphere用户界面生成支持包。</block>
-  <block id="6bbb8536e7b020e3b65c7d07c227fbae" category="doc">从SnapCenter Plug-in for VMware vSphere用户界面生成支持包</block>
   <block id="89e62d58f554cdf1af46f77cd4469ff3" category="paragraph">要登录适用于SnapCenter Plug-in for VMware vSphere管理用户界面，您必须知道 IP 地址和登录凭据。您还必须记下从维护控制台生成的 MFA 令牌。</block>
   <block id="bbd2f455c5c5873181c618f18305c874" category="list-text">登录到SnapCenter Plug-in for VMware vSphere用户界面。</block>
   <block id="3a72135a7c33f6823b48b6473e9d8b35" category="list-text">登录到SnapCenter Plug-in for VMware vSphere管理用户界面。</block>
@@ -2173,7 +2156,6 @@
   <block id="8be9482100b17d6c7657ad094600bdb4" category="list-text">登录到SnapCenter Plug-in for VMware vSphere管理用户界面。部署SnapCenter Plug-in for VMware vSphere时会显示 IP 地址。</block>
   <block id="684c61575b45828a675c729bf5d6e7e4" category="list-text">在 vCenter 用户界面上，选择 *vSphere 客户端 (HTML)*。</block>
   <block id="5a8b9254fd35acc02c10e9b586040f37" category="summary">了解适用于SnapCenter Plug-in for VMware vSphere中提供的新功能。</block>
-  <block id="439af3f6e6882fe57e6791ec29b62825" category="doc">SnapCenter Plug-in for VMware vSphere新增功能</block>
   <block id="c3a0a3a80f1167e6d71999ae5d4595e5" category="paragraph">SnapCenter Plug-in for VMware vSphere增加了对运行ONTAP 9.17.1 或更高版本的ASA r2 系统的 VMFS 数据存储区上的虚拟机 (VM) 的备份和恢复支持。在此版本中，您可以对ASA r2 系统上的虚拟机、数据存储区和虚拟机磁盘 (VMDK) 格式执行以下操作：</block>
   <block id="44b753b5a3d5303dd8249c2d474706fb" category="list-text">为主要保护提供一致性组</block>
   <block id="cca43ee5e57548c01a62909b1359e262" category="list-text">执行基于一致性组的备份</block>
@@ -2203,4 +2185,102 @@
   <block id="dcd97a739116b3e37a21b24d1b1d508d" category="cell">Amazon FSxN for NetApp ONTAP存储</block>
   <block id="b6e6ac3bc87c50849332d71bd687f2ee" category="cell">9.10 及以上</block>
   <block id="af6ccd5ef578462110c3f8bfdb7d3622" category="paragraph">从本版本开始，适用SnapCenter Plug-in for VMware vSphere支持运行 9.10 或更高版本的 Amazon FSxN for NetApp ONTAP存储系统。</block>
+  <block id="1e3fd82cbb8869ac01b6d992075b1439" category="doc">使用 SCV 从重命名的存储还原备份</block>
+  <block id="1d18339da97d5ee283ae84c2d57287e4" category="doc">访问 SnapCenter Plug-in for VMware vSphere 中的报告</block>
+  <block id="304d46884b4911953e338827bb67eaca" category="doc">使用 SCV 的 Swagger API 网页访问 REST API</block>
+  <block id="c41332952b7e8ef4d11a47de5c7c4805" category="doc">访问 SnapCenter Plug-in for VMware vSphere 维护控制台</block>
+  <block id="6feae0e4fb07fe8683680c0db941d5a5" category="doc">将单个 VM 或数据存储添加到 SCV 中的资源组</block>
+  <block id="a91f18a946a53bc0b0fe43284a8c985b" category="doc">将多个虚拟机和数据存储添加到 SCV 中的资源组</block>
+  <block id="a7f9f497de573041d545730120444a34" category="doc">将存储系统添加到 SnapCenter Plug-in for VMware vSphere</block>
+  <block id="9b4fc3d2bcf13cae01e886e3a1d8dea7" category="doc">使用 SnapCenter Plug-in for VMware vSphere 将 VMDK 附加到虚拟机</block>
+  <block id="fc385c5723d9216ab829fbe28a964188" category="doc">在 SCV 中按需备份资源组</block>
+  <block id="a6d5286ed33e7bfe05faab5d02b0d721" category="doc">了解 SnapCenter Plug-in for VMware vSphere</block>
+  <block id="db6a7ee55ad98c7b5c0bd0a119d5e601" category="doc">在 SCV 中配置 VM 来宾文件还原的凭据</block>
+  <block id="d62a4ae1c0a9e208fc4252642401de27" category="doc">为 SCV 创建和导入证书</block>
+  <block id="2524d530507c197026f73a3dc6a2637f" category="doc">在 SnapCenter Plug-in for VMware vSphere 中创建备份策略</block>
+  <block id="9ce41e46e791cbfc0487f86bc88c05a0" category="doc">在 SCV 中为 VM 和数据存储创建备份策略</block>
+  <block id="91811a6de0e07861a63cdd4db3fef2e2" category="doc">在 SnapCenter Plug-in for VMware vSphere 中创建资源组</block>
+  <block id="33146d426278a64a1d3aa020c9001962" category="doc">在 SCV 中为虚拟机和数据存储创建资源组</block>
+  <block id="ceada2fd6b0dada57a2c40eafc29fd50" category="doc">为 SCV 创建 scbr.override 配置文件</block>
+  <block id="84103f97b11961c33c89c781b62ee178" category="doc">自定义 SnapCenter Plug-in for VMware vSphere 配置</block>
+  <block id="82fa2366904e0a4b71704adee28f4e90" category="doc">部署 SnapCenter Plug-in for VMware vSphere</block>
+  <block id="7b7ba567a6247c8fc2cf0ea4ceeb3a30" category="doc">SCV 的部署规划和要求</block>
+  <block id="99a8365b0e962050af127c69194a2828" category="doc">现有 SnapCenter 用户的部署工作流程</block>
+  <block id="1138df7074c6e301d057e9847b94158d" category="doc">新 SnapCenter 用户的部署工作流程</block>
+  <block id="e7d12cb0277e28d980ce12ce7b5fac6c" category="doc">在 SnapCenter Plug-in for VMware vSphere 中分离虚拟磁盘</block>
+  <block id="e81027495bfaeedc083f075f6b584882" category="doc">禁用和启用 SnapCenter Plug-in for VMware vSphere</block>
+  <block id="8358d5bc96782834d019f36277c20d7f" category="doc">从 SnapCenter Plug-in for VMware vSphere 下载作业日志</block>
+  <block id="c95d12b16f7a41c013e250ec373dcf4e" category="doc">下载 SnapCenter Plug-in for VMware vSphere OVA</block>
+  <block id="602d6d05e5bbcfb68750770a74e22772" category="doc">为 SnapCenter Plug-in for VMware vSphere 启用 SSH</block>
+  <block id="d906bda308092252f44dd399b523cc4e" category="doc">延长 SCV 中来宾文件还原会话的时间</block>
+  <block id="19e1c1b70ebdf6d38b1697df15bfc49b" category="doc">从 SCV 维护控制台生成支持包</block>
+  <block id="d7568d9dfe3cb38e92189ea6b17a1445" category="doc">从 SCV 用户界面生成支持包</block>
+  <block id="06e3a2f90ba7fbe69866c8f4a8928611" category="doc">SnapCenter Plug-in for VMware vSphere 的部署工作流程</block>
+  <block id="b7b8f6b1819db0f110d159a8db1ae50f" category="doc">SCV 中的来宾文件还原方案</block>
+  <block id="a5b5bbaab0477105f54c80657a42858f" category="doc">SCV 如何执行还原操作</block>
+  <block id="4b941a49c8c4f2361abf530aa6d23a53" category="doc">为 SnapCenter Plug-in for VMware vSphere 配置 ONTAP RBAC</block>
+  <block id="f09becdfd77a0c14076f6312e72a5fbe" category="doc">升级到 SCV 新补丁后未显示信息</block>
+  <block id="12f70185f36225d9e785483fa5adec93" category="doc">SnapCenter Plug-in for VMware vSphere 的许可</block>
+  <block id="c60c8305c7704e2a6b481202a87d34a4" category="doc">管理 SnapCenter Plug-in for VMware vSphere 中的备份</block>
+  <block id="7806a0fcfddb17a7ef5ffbc6f69a5d84" category="doc">管理 SnapCenter Plug-in for VMware vSphere 中的策略</block>
+  <block id="a9cf02408b537b32836b3b5e779b0f56" category="doc">管理 SnapCenter Plug-in for VMware vSphere 中的资源组</block>
+  <block id="8ec10186a814e49a8603f7758664c43b" category="doc">管理 SnapCenter Plug-in for VMware vSphere 中的存储系统</block>
+  <block id="b3f0168240889017e1bf32ba930c88f9" category="doc">从基于 Windows 的 SnapCenter for VMware vSphere 迁移元数据</block>
+  <block id="53e2ff616a1db867b9b0647caed4ea4e" category="doc">SCV 所需的最低 ONTAP 权限</block>
+  <block id="c468fa820a55a1c100c86b2078a91c63" category="doc">SCV 所需的最低 vCenter 权限</block>
+  <block id="c27d4740b5308a914185b9a6ec4534ba" category="doc">修改 SCV 的配置默认值</block>
+  <block id="b7925ef612bf9a149f57ee37926bbf3c" category="doc">从维护控制台修改 SCV 密码</block>
+  <block id="07cd33842dd5813768efab26172200d1" category="doc">修改 SCV 中的存储超时</block>
+  <block id="e285884386e2062ad98e8deecfd04560" category="doc">修改 SnapCenter Plug-in for VMware vSphere 登录凭据</block>
+  <block id="4dc305a364ab194377cea35093fafc91" category="doc">修改 SCV 的网络设置</block>
+  <block id="5db02314d963fe8a8fa75d43311a04f3" category="doc">修改 SCV 中备份的时区</block>
+  <block id="3cefaebf21784290ec70bd0954b54ab9" category="doc">修改 SCV 的 vCenter 登录凭据</block>
+  <block id="34895ac2b07a353b62fe3587b973f9aa" category="doc">监视 SnapCenter Plug-in for VMware vSphere 中的作业</block>
+  <block id="b03c3bad2790d92ae4869f34a2b1b13c" category="doc">使用 SnapCenter Plug-in for VMware vSphere 挂载备份</block>
+  <block id="cc66b31e4a27a920d55087e0b904f14e" category="doc">ONTAP RBAC 功能在 SnapCenter Plug-in for VMware vSphere 中</block>
+  <block id="17bf0e7a5b475473de0d16d49d700a45" category="doc">SnapCenter Plug-in for VMware vSphere 用户界面</block>
+  <block id="d48e3280b8dddce9321cc94238fa2533" category="doc">SCV 部署后所需的操作和问题</block>
+  <block id="4a94805a53197428f6d95f928df06543" category="doc">与 SCV 打包的预定义角色</block>
+  <block id="8a1bcc3f4cdef04f061602806542ee4b" category="doc">SCV 的预脚本和后脚本</block>
+  <block id="3bdcc4410ae886a7bdb95ba9d7c210ee" category="doc">您可以在 SCV 中覆盖的属性</block>
+  <block id="6803040d0deefc5c64d293411d2eae3c" category="doc">SnapCenter Plug-in for VMware vSphere 的数据保护工作流程</block>
+  <block id="2c20cf3dbe62e059162072efca505843" category="doc">SnapCenter Plug-in for VMware vSphere 快速入门</block>
+  <block id="706c1ecc5e0dfbf5d0b578709966a41b" category="doc">向 SnapCenter 服务器注册 SCV</block>
+  <block id="946449a09a5e8fe514190b45b1239172" category="doc">SnapCenter Plug-in for VMware vSphere 的发行说明</block>
+  <block id="e6613d4a408bd1c5af7c93c35fd5c766" category="doc">卸载 SnapCenter Plug-in for VMware vSphere</block>
+  <block id="9dc439c0b26590060b9baae9a11cef15" category="doc">使用 SCV 按需备份的 REST API 工作流程</block>
+  <block id="10a69d330fd1bd443bb763f537b74f8c" category="doc">使用 SCV 恢复已删除虚拟机的 REST API 工作流程</block>
+  <block id="b053865866a67da5f0dd0221e2d43990" category="doc">使用 SCV 还原 VMDK 的 REST API 工作流程</block>
+  <block id="1cbbce04a6663b39d8a63ab90c5f332f" category="doc">使用 SCV 还原 VM 的 REST API 工作流程</block>
+  <block id="7481f8e35d6a465d37d3c520632923e4" category="doc">REST API 工作流程，用于在 SCV 中添加和修改 Storage VM</block>
+  <block id="05549cf00329cf098a758b58728feb4a" category="doc">在 SCV 中附加和分离 VMDK 的 REST API 工作流程</block>
+  <block id="47387c889c096923b76add23b299a9db" category="doc">用于在 SCV 中创建和修改资源组的 REST API 工作流</block>
+  <block id="a78e138b777bd9b17098fbb8bee31a72" category="doc">REST API 工作流程，用于修改 SCV 中的内置计划</block>
+  <block id="e01d2deaa3a9b8da7ed18a0423a240d2" category="doc">用于在 SCV 中挂载和卸载数据存储库的 REST API 工作流程</block>
+  <block id="0ab92c1e3d210a1078c8bcb60c815cda" category="doc">用于在 SCV 中下载作业和生成报告的 REST API</block>
+  <block id="251106474aba3c73dfbbf781349c0420" category="doc">用于在 SCV 中将停滞作业标记为失败的 REST API</block>
+  <block id="a74666d3669e18922af35742c6e64a2a" category="doc">了解 SnapCenter Plug-in for VMware vSphere 中的 REST API</block>
+  <block id="ea4aaf388f103ba4af0328e2438f506c" category="doc">重新启动 SCV 的 VMware vSphere 客户端服务</block>
+  <block id="b97006b94b5abbef2e4cab535709f798" category="doc">还原 SCV MySQL 数据库的特定备份</block>
+  <block id="62bb165014392b3ca2d868cae754a575" category="doc">使用 SCV 从备份中恢复已删除的 VM</block>
+  <block id="1c1d699bb8ba3233d50c545bbd1fae6d" category="doc">SnapCenter Plug-in for VMware vSphere 的还原选项</block>
+  <block id="d537acd00dd3c27290078e423c835ef5" category="doc">使用 SCV 从 VMDK 还原来宾文件和文件夹</block>
+  <block id="26c55d24b1e98dfc0abb17486fa64729" category="doc">SCV 中的来宾文件还原工作流程、先决条件和限制</block>
+  <block id="9fd1425d563e70975dbff208034dfa99" category="doc">还原 SCV MySQL 数据库的最新备份</block>
+  <block id="8092cfbde9cd8cf3324b5adcbf7237e2" category="doc">使用 SCV 从备份还原 VMDK</block>
+  <block id="5e711cf8e194d973e01259462c98c155" category="doc">使用 SCV 从备份还原 VM</block>
+  <block id="7eeaf1ff9a1a88a06fd90ffa46601773" category="doc">SCV 的基于角色的访问控制</block>
+  <block id="6a3153bea60485d6333715e37962e5ff" category="doc">在 SnapCenter Plug-in for VMware vSphere 中搜索备份</block>
+  <block id="99c9272ada00d9eec7d7db9620e8a67c" category="doc">在 SCV 中设置用于还原操作的代理 VM</block>
+  <block id="c376420999ea2ad401e54e8dfa48f79d" category="doc">使用 SnapCenter Plug-in for VMware vSphere 卸载备份</block>
+  <block id="26c6acbb6f352b4ec03673dfd3a8b7bb" category="doc">从 vCenter 注销 SnapCenter Plug-in for VMware vSphere</block>
+  <block id="b703ae65aed392d494ec29f4a2480082" category="doc">从早期版本的 SCV 升级</block>
+  <block id="4d170c3c41acaa60e75a4a3a7ee7660b" category="doc">升级到相同版本 SCV 的新修补程序</block>
+  <block id="83f7f62b68c11e5253d2f3ec375f39c6" category="doc">在 SnapCenter Plug-in for VMware vSphere 中查看状态信息</block>
+  <block id="5facd3291fe1c44a7daacb4106473013" category="doc">在 SCV 中查看虚拟机和数据存储备份</block>
+  <block id="97d4527b4b57e2ded154f700e1788fb0" category="doc">用于生成 SCV 审核日志的 REST API</block>
+  <block id="aed8d7649db335c623b5e28cb06a3058" category="doc">向 SCV 的 VMware 证书存储库添加证书</block>
+  <block id="14d41fc6e0457940b61268ea99ba5c3d" category="doc">SnapCenter Plug-in for VMware vSphere 的审计日志</block>
+  <block id="7a6363fb7129589beeb8e33959c94905" category="doc">SnapCenter Plug-in for VMware vSphere 6.2 的新功能</block>
+  <block id="c095219d8aef8343cd2a9685ddd0dda3" category="doc">SnapCenter Plug-in for VMware vSphere 的升级路径</block>
 </blocks>

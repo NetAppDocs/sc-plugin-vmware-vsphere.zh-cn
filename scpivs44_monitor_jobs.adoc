@@ -4,7 +4,7 @@ permalink: scpivs44_monitor_jobs.html
 keywords:  
 summary: 使用VMware vSphere客户端执行任何数据保护操作后、您可以从信息板中的作业监控选项卡监控作业状态并查看作业详细信息。 
 ---
-= 监控作业
+= 监视 SnapCenter Plug-in for VMware vSphere 中的作业
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -4,7 +4,7 @@ permalink: scpivs44_predefined_roles_packaged_with_snapcenter.html
 keywords:  
 summary: 为了简化vCenter Server RBAC的使用、适用于VMware vSphere的SnapCenter插件提供了一组预定义角色、使用户能够执行SnapCenter任务。此外，还提供了一个只读角色，允许用户查看 SnapCenter 信息，但不执行任何任务。 
 ---
-= 适用于 VMware vSphere 的 SnapCenter 插件附带的预定义角色
+= 与 SCV 打包的预定义角色
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

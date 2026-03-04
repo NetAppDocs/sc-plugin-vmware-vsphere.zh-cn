@@ -4,7 +4,7 @@ permalink: scpivs44_create_resource_groups.html
 keywords:  
 summary:  
 ---
-= 创建资源组
+= 在 SnapCenter Plug-in for VMware vSphere 中创建资源组
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

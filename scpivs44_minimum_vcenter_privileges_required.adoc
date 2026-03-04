@@ -4,7 +4,7 @@ permalink: scpivs44_minimum_vcenter_privileges_required.html
 keywords:  
 summary: 在开始部署适用于 VMware vSphere 的 SnapCenter 插件之前，您应确保具有所需的最低 vCenter 特权。 
 ---
-= 所需的最低 vCenter 权限
+= SCV 所需的最低 vCenter 权限
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

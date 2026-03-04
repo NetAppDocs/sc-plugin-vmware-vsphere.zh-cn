@@ -4,7 +4,7 @@ permalink: scpivs44_minimum_ontap_privileges_required.html
 keywords:  
 summary: 所需的最小 ONTAP 权限因用于数据保护的 SnapCenter 插件而异。 
 ---
-= 需要ONTAP 权限
+= SCV 所需的最低 ONTAP 权限
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

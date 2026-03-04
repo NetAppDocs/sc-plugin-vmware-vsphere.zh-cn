@@ -4,7 +4,7 @@ permalink: scpivs44_restore_from_backups_overview.html
 keywords:  
 summary: 您可以从主备份或二级备份还原 VM ， VMDK ，文件和文件夹。 
 ---
-= 还原概述
+= SnapCenter Plug-in for VMware vSphere 的还原选项
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

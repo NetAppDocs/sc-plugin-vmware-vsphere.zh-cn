@@ -4,7 +4,7 @@ permalink: scpivs44_rest_api_workflows__modify_built-in_schedules.html
 keywords:  
 summary: 要使用适用于VMware vSphere的SnapCenter 插件REST API修改VMware vSphere客户端作业的内置计划、您必须遵循规定的REST API调用顺序。 
 ---
-= 用于修改内置计划的 REST API 工作流
+= REST API 工作流程，用于修改 SCV 中的内置计划
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -4,7 +4,7 @@ permalink: scpivs44_add_a_single_vm_or_datastore_to_a_resource_group.html
 keywords:  
 summary: 您可以快速将单个虚拟机或数据存储库添加到适用于VMware vSphere的SnapCenter插件管理的任何现有资源组中。 
 ---
-= 将单个虚拟机或数据存储库添加到资源组
+= 将单个 VM 或数据存储添加到 SCV 中的资源组
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

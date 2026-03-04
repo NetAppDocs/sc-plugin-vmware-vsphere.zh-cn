@@ -4,7 +4,7 @@ permalink: scpivs44_rest_apis__download_jobs_and_generate_reports.html
 keywords:  
 summary: 要使用适用于VMware vSphere的SnapCenter 插件REST API为VMware vSphere客户端作业生成报告和下载日志、必须对VMware vSphere使用REST API调用。 
 ---
-= 用于下载作业和生成报告的 REST API
+= 用于在 SCV 中下载作业和生成报告的 REST API
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

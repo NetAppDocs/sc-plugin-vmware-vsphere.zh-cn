@@ -4,7 +4,7 @@ permalink: scpivs44_modify_the_network_settings.html
 keywords:  
 summary: 您可以修改在适用于 VMware vSphere 的 SnapCenter 插件中配置的网络设置。插件使用这些设置访问 vCenter 。 
 ---
-= 修改网络设置
+= 修改 SCV 的网络设置
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

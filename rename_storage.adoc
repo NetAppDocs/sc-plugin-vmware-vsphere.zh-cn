@@ -4,7 +4,7 @@ permalink: rename_storage.html
 keywords:  
 summary: 您可以使用REST API重命名存储。 
 ---
-= 还原已重命名存储的备份
+= 使用 SCV 从重命名的存储还原备份
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

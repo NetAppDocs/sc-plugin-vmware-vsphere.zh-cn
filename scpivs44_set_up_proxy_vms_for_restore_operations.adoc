@@ -4,7 +4,7 @@ permalink: scpivs44_set_up_proxy_vms_for_restore_operations.html
 keywords:  
 summary: 如果要使用代理 VM 连接虚拟磁盘以执行子系统文件还原操作，则必须在开始还原操作之前设置代理 VM 。虽然您可以随时设置代理 VM ，但在插件部署完成后立即设置它可能会更方便。 
 ---
-= 设置代理 VM 以执行还原操作
+= 在 SCV 中设置用于还原操作的代理 VM
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

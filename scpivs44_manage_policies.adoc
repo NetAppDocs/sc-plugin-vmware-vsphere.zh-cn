@@ -4,7 +4,7 @@ permalink: scpivs44_manage_policies.html
 keywords:  
 summary: 您可以为适用于 VMware vSphere 的 SnapCenter 插件创建，修改，查看，断开和删除备份策略。执行数据保护操作需要策略。 
 ---
-= 管理策略
+= 管理 SnapCenter Plug-in for VMware vSphere 中的策略
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

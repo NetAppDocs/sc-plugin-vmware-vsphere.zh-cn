@@ -4,7 +4,7 @@ permalink: scpivs44_protect_data_overview.html
 keywords:  
 summary: 所有备份操作都对资源组执行，该资源组可以包含一个或多个虚拟机和数据存储库的任意组合。您可以按需备份，也可以根据定义的保护计划进行备份。 
 ---
-= 数据保护工作流
+= SnapCenter Plug-in for VMware vSphere 的数据保护工作流程
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

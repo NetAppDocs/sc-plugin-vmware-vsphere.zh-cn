@@ -4,7 +4,7 @@ permalink: scpivs44_view_status_information.html
 keywords:  
 summary: 您可以在vSphere客户端信息板上查看状态信息。状态信息每小时更新一次。 
 ---
-= 查看状态信息
+= 在 SnapCenter Plug-in for VMware vSphere 中查看状态信息
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

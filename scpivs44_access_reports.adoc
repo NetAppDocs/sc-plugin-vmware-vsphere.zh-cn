@@ -4,7 +4,7 @@ permalink: scpivs44_access_reports.html
 keywords:  
 summary: 您可以从信息板请求一个或多个作业的报告。 
 ---
-= 访问报告
+= 访问 SnapCenter Plug-in for VMware vSphere 中的报告
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -4,7 +4,7 @@ permalink: scpivs44_licensing.html
 keywords:  
 summary: 本节提供适用于 VMware vSphere 的 SnapCenter 插件的许可信息。 
 ---
-= 许可
+= SnapCenter Plug-in for VMware vSphere 的许可
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

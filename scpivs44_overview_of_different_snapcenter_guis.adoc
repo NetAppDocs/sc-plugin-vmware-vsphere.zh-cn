@@ -4,7 +4,7 @@ permalink: scpivs44_overview_of_different_snapcenter_guis.html
 keywords:  
 summary: SnapCenter Plug-in for VMware vSphere是一个独立插件，与其他SnapCenter插件不同。您必须使用 vCenter 中的 VMware vSphere 客户端用户界面来执行 VM、VMDK 和数据存储区的所有备份和还原操作。 
 ---
-= 不同SnapCenter用户界面概述
+= SnapCenter Plug-in for VMware vSphere 用户界面
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

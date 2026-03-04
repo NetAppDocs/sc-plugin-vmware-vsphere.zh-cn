@@ -4,7 +4,7 @@ permalink: scpivs44_migration_overview.html
 keywords:  
 summary:  
 ---
-= 迁移概述
+= 从基于 Windows 的 SnapCenter for VMware vSphere 迁移元数据
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

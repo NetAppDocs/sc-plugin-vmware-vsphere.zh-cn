@@ -4,7 +4,7 @@ permalink: scpivs44_modify_the_time_zones.html
 keywords:  
 summary: 为SnapCenter Plug-in for VMware vSphere资源组配置备份计划时，该计划会自动设置为部署适用SnapCenter Plug-in for VMware vSphere的时区。您可以使用适用于SnapCenter Plug-in for VMware vSphere管理用户界面或维护控制台来修改该时区。 
 ---
-= 修改备份的时区
+= 修改 SCV 中备份的时区
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

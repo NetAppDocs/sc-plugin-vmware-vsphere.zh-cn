@@ -4,7 +4,7 @@ permalink: scpivs44_download_job_logs.html
 keywords:  
 summary: 您可以从SnapCenter VMware vSphere客户端的信息板上的作业监控选项卡下载作业日志。 
 ---
-= 下载作业日志
+= 从 SnapCenter Plug-in for VMware vSphere 下载作业日志
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
