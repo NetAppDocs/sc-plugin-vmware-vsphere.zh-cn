@@ -346,7 +346,6 @@
   <block id="8c5a46f2b9b85dd307d50498933fef6a" category="paragraph">现有 SnapCenter 用户必须使用与新 SnapCenter 用户不同的部署工作流。</block>
   <block id="4b983fff716674f120176e09551dd445" category="doc">产品概述</block>
   <block id="daf7cc2554c2855a22d49a54327d1a02" category="paragraph">适用于 VMware vSphere 的 SnapCenter 插件是一种独立虚拟设备（开放式虚拟设备格式），可为 VM 和数据存储库提供数据保护服务，并支持为基于 SnapCenter 应用程序的插件提供数据保护服务。本文档介绍如何部署和使用适用于 VMware vSphere 的 SnapCenter 插件，并提供了快速入门信息。</block>
-  <block id="536d4cac2b03788a96cdff576afafb34" category="paragraph">适用于 VMware vSphere 的 SnapCenter 插件部署为基于 Linux 的虚拟设备。</block>
   <block id="afcad3789276fda29a982b7d67489a6b" category="list-text">支持 VM 一致和崩溃一致的数据保护操作。</block>
   <block id="4c7b144e68815e7d228ce1ee54a5f05e" category="paragraph">备份 VM ， VMDK 和数据存储库时，此插件不支持 RDM 。VM 的备份作业会忽略 RDM 。如果需要备份 RDM ，则必须使用基于 SnapCenter 应用程序的插件。</block>
   <block id="60932d86af6c12b8d9b85fd3e78528a3" category="list-text">支持应用程序一致的（基于 VMDB/RDM 的应用程序）数据保护操作。</block>
@@ -2283,4 +2282,26 @@
   <block id="14d41fc6e0457940b61268ea99ba5c3d" category="doc">SnapCenter Plug-in for VMware vSphere 的审计日志</block>
   <block id="7a6363fb7129589beeb8e33959c94905" category="doc">SnapCenter Plug-in for VMware vSphere 6.2 的新功能</block>
   <block id="c095219d8aef8343cd2a9685ddd0dda3" category="doc">SnapCenter Plug-in for VMware vSphere 的升级路径</block>
+  <block id="bef219d35a4468480b0ce759221cdceb" category="inline-link-macro">NetApp Backup and Recovery 文档</block>
+  <block id="3883b8ba948d42c388cccbf895964cbf" category="admonition">通过 NetApp Backup and Recovery 增强 VMware 保护，该解决方案提供 3-2-1 备份、勒索软件防护、自动化备份管理、可扩展性提升、成本降低，以及通过单一界面集中管理多个 vCenter 实例中的数据存储和虚拟机的备份。您可以将 SCV 策略、快照和计划迁移到 NetApp Backup and Recovery，并通过单一控制台管理所有虚拟机保护。如需更多信息，请参阅 <block ref="6cdfe604dd727224521f5102aa0e3962" category="inline-link-macro-rx"></block>。</block>
+  <block id="f38f2973f63b76d824eba0e5aa81ebf3" category="paragraph">SnapCenter Plug-in for VMware vSphere 是一种独立的虚拟设备（Open Virtual Appliance 格式），可为 VM 和数据存储提供数据保护服务，并支持 SnapCenter 基于应用程序的插件的数据保护服务。本文档介绍如何部署和使用 SnapCenter Plug-in for VMware vSphere，并包含快速入门信息。SnapCenter Plug-in for VMware vSphere 部署为基于 Linux 的虚拟设备。</block>
+  <block id="2728192d9da29a0398498d517f5c33d9" category="admonition">使用 NetApp Backup and Recovery 增强 VMware 保护，它提供 3-2-1 备份、勒索软件保护、自动备份管理、改进的可扩展性、降低的成本以及对多个 vCenter 实例的集中管理。您可以将 SCV 策略、快照和计划迁移到 NetApp Backup and Recovery，并从单个控制台管理所有虚拟机保护。有关详细信息，请参阅 <block ref="6cdfe604dd727224521f5102aa0e3962" category="inline-link-macro-rx"></block>。</block>
+  <block id="5df2c78d1856546962ed831cc6f4a80a" category="paragraph">您现在可以执行从 SnapCenter Plug-in for VMware 到 NetApp Backup and Recovery 的无缝、一键式、无中断迁移。NetApp Backup and Recovery 提供增强的数据保护和管理功能，包括：</block>
+  <block id="458dd2c9c3bbc835fc1d4811da1865d8" category="list-text">支持 3-2-1 备份和存档策略</block>
+  <block id="3cca3b4cb162541269dd5f663c6936a9" category="list-text">使用 SnapLock 和对象锁定逻辑气隙备份的勒索软件防护</block>
+  <block id="b1319284bc2b2d4a48e58e76635adc31" category="list-text">勒索软件扫描期间的自动补救</block>
+  <block id="0d886ceae4d71a239a1403d5fe895cde" category="list-text">自动创建辅助和对象存储目标的 SnapMirror 关系，简化备份保留管理，简化应用程序和虚拟机备份工作流程</block>
+  <block id="0648473a6d134921680c915ee5ff7684" category="list-text">提高可扩展性和性能，以适应不断增长的数据量</block>
+  <block id="f72c03c20d8facba6972ad9c9a1082dd" category="list-text">通过完全托管的备份服务降低开销和总拥有成本</block>
+  <block id="f3197c2c28232cab966afe14fea9b96d" category="list-text">从一个界面跨多个 vCenter 实例对数据存储和虚拟机进行集中备份管理</block>
+  <block id="8d5d5288732cbd648dfedbc0a96970bf" category="list-text">从 Windows 和 Linux 来宾操作系统快速还原文件和文件夹</block>
+  <block id="5591a8ed61bb64684d8e07da7932a28c" category="paragraph">有关详细信息，请参见以下链接：</block>
+  <block id="0e9f99d977ed1300ac8b870e3204a3e4" category="list-text"><block ref="5813d682dfbbe57779f6b71dabccce0d" category="inline-link-rx"></block>。</block>
+  <block id="f1e9f00ae199ca6520d1d2e98102cd84" category="inline-link">通过 NetApp Backup and Recovery 发现 VMware 工作负载</block>
+  <block id="45914ee45a130a84e56547b9e11b6dd4" category="list-text"><block ref="45914ee45a130a84e56547b9e11b6dd4" category="inline-link-rx"></block></block>
+  <block id="c055fc9337a8b1ecf06de87b2294213b" category="inline-link">登录到 NetApp Backup and Recovery</block>
+  <block id="ec8b6eb38883e5854f69d9c0ca20d68f" category="list-text"><block ref="ec8b6eb38883e5854f69d9c0ca20d68f" category="inline-link-rx"></block></block>
+  <block id="6aa30740f7e61daa6dbeb98d1762ef2e" category="inline-link">访问 NetApp Backup and Recovery 服务</block>
+  <block id="938c2a8ffc581d610f5a993251309046" category="list-text"><block ref="938c2a8ffc581d610f5a993251309046" category="inline-link-rx"></block></block>
+  <block id="36fabaf7f4604c508ea56a9df930fef3" category="section-title">使用 NetApp Backup and Recovery 保护您的 VMware 资产</block>
 </blocks>
