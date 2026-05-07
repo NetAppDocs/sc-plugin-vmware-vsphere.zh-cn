@@ -1580,7 +1580,6 @@
   <block id="b35ffcf16c6223a1d7e9f879b2315a05" category="list-text">在左侧导航栏中，选择*Guest File Restore*。</block>
   <block id="14287ce8c2228d3505c31799833a864f" category="paragraph">适用于VMware vSphere的SnapCenter插件使用选定凭据登录到选定虚拟机。</block>
   <block id="110328d238985c18e0a7947b09b1ff0f" category="summary">适用于VMware vSphere的SnapCenter插件采用SSL加密技术与客户端浏览器进行安全通信。虽然这样可以跨网启用加密数据，但创建新的自签名证书，或者使用您自己的证书颁发机构（ CA ）基础架构或第三方 CA ，可确保此证书对于您的环境是唯一的。</block>
-  <block id="6886be2ac69a368a307204ccfa1e00d9" category="paragraph">有关详细信息、请参见<block ref="bf84a7958c466b4ea912f7e396459ac9" category="inline-link-rx"></block> 。</block>
   <block id="e90ae72a4d203cde9c1d660d983bec13" category="list-text">通过SnapMirror主动同步、即使在整个站点发生故障时、业务服务也可以继续运行、从而支持应用程序使用二级副本透明地进行故障转移。</block>
   <block id="c2bc8f54778a0e6f72a8fa3f9c96aae7" category="admonition">只有VMFS数据存储库才支持SnapMirror活动同步。</block>
   <block id="cae2d1284a0f6ccabe57939c8b8ad176" category="paragraph">要保护SnapMirror活动同步部署中的VMFS数据存储库、作为SnapCenter管理员、您需要：</block>
@@ -2304,4 +2303,5 @@
   <block id="6aa30740f7e61daa6dbeb98d1762ef2e" category="inline-link">访问 NetApp Backup and Recovery 服务</block>
   <block id="938c2a8ffc581d610f5a993251309046" category="list-text"><block ref="938c2a8ffc581d610f5a993251309046" category="inline-link-rx"></block></block>
   <block id="36fabaf7f4604c508ea56a9df930fef3" category="section-title">使用 NetApp Backup and Recovery 保护您的 VMware 资产</block>
+  <block id="04bc8505634cea728bd42022dbbe2763" category="paragraph">有关详细信息，请参见<block ref="3cc65228ae073aa630520717edc687a9" category="inline-link-rx"></block>。</block>
 </blocks>
