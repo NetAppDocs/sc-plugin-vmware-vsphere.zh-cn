@@ -210,7 +210,7 @@ sidebar:
       url: "/scpivs44_modify_the_time_zones.html"
     - title: 修改登录凭据
       url: "/scpivs44_modify_the_logon_credentials.html"
-    - title: 修改 vCenter 登录凭据
+    - title: 更新 SCV 中配置的 vCenter 凭据
       url: "/scpivs44_modify_the_vcenter_logon_credentials.html"
     - title: 修改网络设置
       url: "/scpivs44_modify_the_network_settings.html"
