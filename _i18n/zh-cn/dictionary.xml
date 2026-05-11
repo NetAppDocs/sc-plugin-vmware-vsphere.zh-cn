@@ -2299,8 +2299,8 @@
   <block id="938c2a8ffc581d610f5a993251309046" category="list-text"><block ref="938c2a8ffc581d610f5a993251309046" category="inline-link-rx"></block></block>
   <block id="36fabaf7f4604c508ea56a9df930fef3" category="section-title">使用 NetApp Backup and Recovery 保护您的 VMware 资产</block>
   <block id="04bc8505634cea728bd42022dbbe2763" category="paragraph">有关详细信息，请参见<block ref="3cc65228ae073aa630520717edc687a9" category="inline-link-rx"></block>。</block>
-  <block id="7132edc8383e0e83b6f687d75f421aa2" category="list-text">对于 NetApp MetroCluster 环境中的 FlexGroup 卷，如果您使用的是 ONTAP 9.8 或 9.9，在切换或切回后，在备份资源组之前，请重启 SnapCenter Plug-in for VMware vSphere 服务并重新同步 SnapMirror 关系。在 ONTAP 9.8 中，切回后备份可能会挂起；此问题在 ONTAP 9.9 中已解决。</block>
   <block id="b60052c3864c4fab5da0f6b383192ef3" category="summary">更新 SnapCenter Plug-in for VMware vSphere (SCV) 使用的 vCenter 登录凭据。在 vCenter 凭据更改后使用此任务，并且对于 vVol 备份，重新注册 ONTAP tools for VMware vSphere。</block>
-  <block id="e1960404cde13a4aedb9ab257401c3c6" category="paragraph">使用此任务可更新在 SnapCenter Plug-in for VMware vSphere 中配置的 vCenter 登录凭据。这些凭据用于访问 vCenter。如果在凭据更改后需要注册或重新注册 SCV 到 vCenter，请完成此任务。如果 vCenter 密码发生更改，请先注销 ONTAP tools for VMware vSphere，然后使用新密码重新注册 ONTAP tools，以确保 vVol 备份能够继续正常工作。</block>
-  <block id="370783e751b9f81d87d5e4b05672a702" category="paragraph">在 NetApp MetroCluster 配置中：</block>
+  <block id="74650e169a790c0e2cab1222243cfea0" category="list-text">对于 MetroCluster 环境中的 FlexGroup 卷，如果您使用的是 ONTAP 9.8 或 9.9，请在切换或切回后，备份资源组之前，重启 SnapCenter Plug-in for VMware vSphere 服务并重新同步 SnapMirror 关系。在 ONTAP 9.8 中，切回后备份可能会挂起；此问题在 ONTAP 9.9 中已解决。</block>
+  <block id="00759daaffda87f838af0da06a84529c" category="paragraph">使用此任务可更新在 SnapCenter Plug-in for VMware vSphere 中配置的 vCenter 登录凭据。这些凭据用于访问 vCenter。如果 vCenter 密码发生更改，请先注销 ONTAP tools for VMware vSphere，然后使用新密码重新注册 ONTAP tools，以确保 vVol 备份能够继续正常工作。</block>
+  <block id="76752ff072d438537747c49941f2e4a9" category="paragraph">在 MetroCluster 配置中：</block>
 </blocks>
