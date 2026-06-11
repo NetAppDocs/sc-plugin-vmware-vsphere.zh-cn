@@ -1,0 +1,126 @@
+---
+sidebar: sidebar 
+permalink: reregister-scv-vcenter.html 
+keywords: re-register SCV with vCenter, recover SCV registration, SCV not connected to vCenter, update vCenter credentials in SCV, unregister SCV extension 
+summary: 使用此任务可在凭据、网络或设备更改后恢复 SCV 与 vCenter 的注册。 
+---
+= 恢复 SCV 连接和向 vCenter 的注册
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+当您部署应用装置时，SnapCenter Plug-in for VMware vSphere (SCV) 会自动向 vCenter 注册。如果注册中断，例如在 vCenter 密码更改、SCV IP 地址或主机名更改、连接中断或部分部署失败之后，请使用此任务恢复连接和注册并确认其是否正常。
+
+如果注册未成功完成，请使用以下操作之一重试：
+
+* VMware vSphere 客户端服务(`scvservice`）已重新启动。
+* SCV 设备 IP 地址或主机名发生更改。
+* vCenter 凭据将重新保存在 SCV 中。
+
+
+.开始之前
+* 您必须知道 SCV 管理用户界面的 IP 地址和登录凭据。
+* 如果启用了多因素身份验证 (MFA)，请从维护控制台生成一个新的 6 位 MFA 令牌。
+* 验证 SCV 使用的 vCenter 帐户是否具有在 vCenter 根目录分配的所需权限。
++
+有关详细信息，请参见 link:scpivs44_minimum_vcenter_privileges_required.html["SCV 所需的最低 vCenter 权限"]。
+
+
+
+
+
+== 恢复步骤
+
+. 重新启动 VMware vSphere 客户端服务。
++
+重新启动会自动重新运行扩展注册。有关详细信息，请参见 link:scpivs44_restart_the_vmware_vsphere_web_client_service.html["重新启动 SCV 的 VMware vSphere 客户端服务"]。
+
+. 如果重新启动无法解决此问题，请完成以下步骤：
++
+.. 使用格式 `\https://<appliance-IP-address>:8080`登录到 SnapCenter Plug-in for VMware vSphere 管理用户界面。
+.. 选择*配置* > *vCenter* > *编辑*。
+.. 输入当前密码，然后选择 *Save*。
++
+有关详细信息，请参见 link:scpivs44_modify_the_vcenter_logon_credentials.html["更新 SCV 中配置的 vCenter 凭据"]。
+
+
+
+. 取消注册并重新注册插件。
++
+如果插件仍未连接，请完成以下步骤：
+
++
+.. 从 vCenter 注销 SCV。
+.. 通过重新保存 vCenter 凭据或重新启动 VMware vSphere 客户端服务重新注册 SCV。
++
+如果注册的扩展指向旧的 SCV IP 地址，则注销并重新注册插件会更新注册信息。
+
++
+有关详细信息，请参见 link:scpivs44_unregister_plugin_from_vcenter.html["从 vCenter 注销 SnapCenter Plug-in for VMware vSphere"]。
+
+
+
+. link:#verify-registration-succeeded["验证注册是否成功"].
+
+
+
+
+== 验证注册是否成功
+
+使用以下任意检查来确认 SCV 已注册并连接。
+
+* *管理用户界面*：在 *仪表板* 上，验证 SCV 已连接到 vCenter 并已启用。
+* *vSphere Client*：验证是否显示 *SnapCenter Plug-in for VMware vSphere* 菜单以及插件页面是否已加载。
+* *日志（设备）*：在 `/var/log/netapp/vmcontrol/vmcontrol.log`中，查找注册消息，如 `Registering Aegis as a Vcenter Extension`和 `Registered com.netapp.aegis extension`。凭据更改也记录在 `/var/log/netapp/audit/audit.log`中。
+
+
+[NOTE]
+====
+仅在进行高级故障诊断时使用以下参考资料。可用性和确切值可能因发布和环境而异。
+
+* 在 vCenter Extension Manager 中，您可能会看到与 SCV 相关的扩展 `com.netapp.aegis`和 `com.netapp.scv.client`。
+* 在某些环境中，您可能还会看到旧版 HTML 客户端扩展 `com.netapp.scvm.webclient`。
+* 如果设备日志访问可用，您还可以查看本主题前面引用的与注册相关的条目和 API 活动。
+
+
+====
+
+
+== 常见注册错误和补救措施
+
+* *无效的登录凭据*
++
+.. 重新输入正确的 vCenter 用户名(`domain\username`）和密码。
+.. 从维护控制台生成一个新的 6 位 MFA 令牌。
+
+
+* *权限不足 (RBAC)*：确保 vCenter 帐户具有 SCV 所需的权限，包括注册扩展的权限，这些权限在 vCenter 根目录分配。
++
+有关详细信息，请参见 link:scpivs44_minimum_vcenter_privileges_required.html["SCV 所需的最低 vCenter 权限"]。
+
+* *无法连接到 vCenter 或连接被拒绝*：验证 vCenter 主机和端口、网络和防火墙连接，并且 vCenter 正在运行。
+* *未知主机*：验证 vCenter FQDN 或 IP 地址，并确认 DNS 解析可从设备正常工作。
+* *不支持的 vCenter 版本*：SCV 支持 vCenter Server 7.0U1 及更高版本。
++
+有关详细信息，请参见 link:scpivs44_deployment_planning_and_requirements.html["SCV 的部署规划和要求"]。
+
+* *服务未运行*：如果 VMware vSphere 客户端服务停止，注册将无法运行。
++
+重新启动 VMware vSphere 客户端服务。
+
+
+
+
+
+== 相关主题
+
+* link:scpivs44_modify_the_vcenter_logon_credentials.html["更新 SCV 中配置的 vCenter 凭据"]
+* link:scpivs44_restart_the_vmware_vsphere_web_client_service.html["重新启动 SCV 的 VMware vSphere 客户端服务"]
+* link:scpivs44_unregister_plugin_from_vcenter.html["从 vCenter 注销 SnapCenter Plug-in for VMware vSphere"]
+* link:scpivs44_minimum_vcenter_privileges_required.html["SCV 所需的最低 vCenter 权限"]
+

@@ -13,7 +13,7 @@ summary: 了解适用于VMware vSphere 6.1的SnapCenter插件中提供的新功�
 
 [NOTE]
 ====
-只有VMware vCenter Server 7 Update 1及更高版本才支持升级到适用于VMware vSphere的SnapCenter插件(SCV) 4.8及更高版本。对于版本7 Update 1之前的VMware vCenter Server、您应继续使用4.7号选择控制阀。
+升级到 SnapCenter Plug-in for VMware vSphere (SCV) 4.8 及更高版本仅在 VMware vCenter Server 7 update 1 及更高版本上受支持。对于版本 7 update 1 之前的 VMware vCenter Server，应继续使用 SCV 4.7。
 
 ====
 [cols="50%,50%"]

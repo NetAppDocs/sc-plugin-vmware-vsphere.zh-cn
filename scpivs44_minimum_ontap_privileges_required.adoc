@@ -51,19 +51,19 @@ NOTE: 从适用于VMware的SnapCenter插件(SCV) 5.0开始、您需要添加HTTP
 | volume clong create volume clong show volume clone-split start volume clone-split status volume clone-split stop volume create volume delete volume销毁volume file clone-disk usage-volume脱机卷联机卷管理的功能卷修改卷qtree create volume qtree delete volume qtree修改SnapLock卷qtree show volume resystem show volume snapshot create volume snapshot delete volume snapshot修改卷快照 
 
 
-| vserver cifs-policy create vserver cifs-policy delete vserver cifs-policy show vserver cifs-share show vserver cifs-show vserver cifs-policy vserver导出策略delete vserver导出策略规则create vserver导出策略规则show vserver export -policy show vserver vserver vserver vserver vserver subsystem show vserver vserver system show vserver vserver subsystem删除NVMe子系统名称空间删除NVMe子系统vserver vserver映射删除NVMe子系统删除NVMe子系统删除NVMe子系统vserver vserver vserver vserver映射删除NVMe子系统删除NVMe子系统删除NVMe子系统删除NVMe子系统删除NVMe子系统删除NVMe子系统删除NVMe子系统vserver vserver vserver vserver vserver vserver vserver映射删除子系统删除子系统删除NVMe子系统删除NVMe子系统 
+| vserver cifs vserver export-policy vserver export-policy create vserver export-policy delete vserver export-policy rule create vserver export-policy rule show vserver export-policy show vserver iscsi vserver nvme subsystem controller vserver nvme subsystem controller show vserver nvme subsystem create vserver nvme subsystem delete vserver nvme subsystem host vserver nvme subsystem host show vserver nvme subsystem host add vserver nvme subsystem host remove vserver nvme subsystem map vserver nvme subsystem map show vserver nvme subsystem map add vserver nvme subsystem map remove vserver nvme subsystem modify vserver nvme subsystem show vserver nvme namespace create vserver nvme namespace delete vserver nvme namespace modify vserver nvme namespace show network interface 
 |===
 |===
 | 只读命令：最小ONTAP Privileges 
 
 
-| cluster Identity show network interface show vserver vserver peer-vserver show 
+| cluster identity show network interface show vserver 
 |===
 |===
 | 完全访问命令：最小ONTAP Privileges 
 
 
-| 一致性组storage-unit show 
+| vserver consistency-group 
 |===
 在创建要与数据SVserver关联的角色时、可以忽略_cluster Identity show_ cluster level命令。
 

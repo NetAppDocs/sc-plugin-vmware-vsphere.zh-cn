@@ -212,6 +212,8 @@ sidebar:
       url: "/scpivs44_modify_the_logon_credentials.html"
     - title: 更新 SCV 中配置的 vCenter 凭据
       url: "/scpivs44_modify_the_vcenter_logon_credentials.html"
+    - title: 恢复 SCV 连接和向 vCenter 的注册
+      url: "/reregister-scv-vcenter.html"
     - title: 修改网络设置
       url: "/scpivs44_modify_the_network_settings.html"
     - title: 修改配置默认值

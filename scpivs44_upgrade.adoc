@@ -14,7 +14,7 @@ summary: 如果您使用的是适用于 VMware vSphere 的 SnapCenter 插件虚�
 
 
 
-NOTE: 仅 VMware vCenter Server 7 Update 1 及更高版本支持升级到 SCV 6.2，对于版本 7 Update 1 之前的 VMware vCenter Server，您应该继续使用 SCV 4.7。对于不受支持的 VMware vCenter 服务器版本，升级会造成中断。
+NOTE: 升级到 SCV 6.2 仅在 VMware vCenter Server 7 update 1 和更高版本上受支持，对于 VMware vCenter Server 版本 7 update 1 之前的版本，您应继续使用 SCV 4.7。在不受支持的 VMware vCenter Server 版本上，升级会造成中断。
 
 如果您使用的是适用于 VMware vSphere 的 SnapCenter 插件虚拟设备，则可以升级到更高版本。升级过程将取消注册现有插件、并部署一个仅与vSphere 7.0U1及更高版本兼容的插件。
 
