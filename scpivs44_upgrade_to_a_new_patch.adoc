@@ -24,6 +24,7 @@ summary: 如果要升级到同一版本的新修补程序，则必须清除 vCen
 
 
 
+[[steps-for-clearing-the-cache]]
 == 清除缓存的步骤
 
 . 找到 `vsphere-client-serenity` 文件夹中、然后找到 `com.netapp.scv.client-<release-number>` 文件夹并将其删除。

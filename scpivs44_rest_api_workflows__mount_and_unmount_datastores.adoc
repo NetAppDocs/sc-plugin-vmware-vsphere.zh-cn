@@ -20,6 +20,7 @@ summary: 要使用适用于 VMware vSphere 的 SnapCenter 插件 REST API 对数
 
 
 
+[[to-mount-datastores-follow-this-workflow]]
 == 要挂载数据存储库，请按照以下工作流进行操作：
 
 |===
@@ -42,6 +43,7 @@ summary: 要使用适用于 VMware vSphere 的 SnapCenter 插件 REST API 对数
 |===
 
 
+[[to-unmount-datastores-follow-this-workflow]]
 == 要卸载数据存储库，请按照以下工作流进行操作：
 
 |===

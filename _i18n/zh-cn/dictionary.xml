@@ -954,7 +954,6 @@
   <block id="331b48aba7178950c3dc14c31a21f9c0" category="section-title">从适用于 VMware vSphere 的 SnapCenter 插件的早期版本升级</block>
   <block id="5550f9423496c2c9ab880e725d34e0e5" category="admonition">在开始升级之前，请备份适用于 VMware vSphere 的 SnapCenter 插件 OVA 。</block>
   <block id="47ad474a6a92b78b6ce74b61fe8b6bbb" category="list-text">下载升级 ` .iso` 文件。</block>
-  <block id="b41450a0b1e390fd09941d73050688f9" category="list-text">登录到 NetApp 支持站点。 <block ref="5a6885c3943ab3435f9bf287b1025062" category="inline-link-rx"></block>。</block>
   <block id="7dfb2dcb3c7621537351eac0e0c6d1af" category="list-text">将适用于 VMware vSphere 的 SnapCenter 插件升级 ` .iso` 文件下载到任意位置。</block>
   <block id="ebf9f38f50130a70990face9a5c161e5" category="list-text">在 Datastores 列中，选择您上传了 ` .iso` 文件的数据存储库。</block>
   <block id="020a36deb114af1bb518c70d5975e940" category="doc">创建资源组</block>
@@ -2357,4 +2356,9 @@
   <block id="20ceb481fbc8f4970bcc1d340df1f4e3" category="paragraph">如果凭据更改后未连接 SCV，请重新启动 VMware vSphere 客户端服务。如果 SCV 仍未连接，请转到 <block ref="f2a6ad7f72b7a890165a515940ad8314" category="inline-link-macro-rx"></block>。</block>
   <block id="570c179f2910eb222c034a71d4857354" category="admonition">升级到 SCV 6.2 仅在 VMware vCenter Server 7 update 1 和更高版本上受支持，对于 VMware vCenter Server 版本 7 update 1 之前的版本，您应继续使用 SCV 4.7。在不受支持的 VMware vCenter Server 版本上，升级会造成中断。</block>
   <block id="430ae1961340ee0cb232fabeaa98e220" category="paragraph">升级到 SnapCenter Plug-in for VMware vSphere (SCV) 4.8 及更高版本仅在 VMware vCenter Server 7 update 1 及更高版本上受支持。对于版本 7 update 1 之前的 VMware vCenter Server，应继续使用 SCV 4.7。</block>
+  <block id="e7cf50365f6cd8b8191b1582a763572f" category="inline-link-macro">SnapCenter Plug-in for VMware vSphere 部署规划和要求</block>
+  <block id="e265dbaceed2be137ef9239c0c28ca81" category="admonition">在升级之前，请验证您的环境是否满足系统要求。有关详细信息，请参见 <block ref="a0e1882159016587140942a1478a5aea" category="inline-link-macro-rx"></block>。</block>
+  <block id="be0cdd104110166e130ddd84d1c1fc51" category="paragraph">要了解有关受支持版本的最新信息，请参阅 <block ref="c4b2de34dedab2af97f29b6fccd6575c" category="inline-link-macro-rx"></block>。</block>
+  <block id="8c41baf1ca98e1184f48c4721d44d431" category="inline-link-macro">NetApp 支持站点</block>
+  <block id="9eeb0054bc82844b2782a42bddf7c681" category="list-text">登录到 <block ref="fe673711457a0919d053a9db0146aa49" category="inline-link-macro-rx"></block>。</block>
 </blocks>

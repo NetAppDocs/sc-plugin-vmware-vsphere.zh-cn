@@ -34,6 +34,7 @@ summary: 使用此任务可在凭据、网络或设备更改后恢复 SCV 与 vC
 
 
 
+[[recovery-steps]]
 == 恢复步骤
 
 . 重新启动 VMware vSphere 客户端服务。
@@ -70,6 +71,8 @@ summary: 使用此任务可在凭据、网络或设备更改后恢复 SCV 与 vC
 
 
 
+[[verify-that-the-registration-succeeded]]
+[[verify-registration-succeeded]]
 == 验证注册是否成功
 
 使用以下任意检查来确认 SCV 已注册并连接。
@@ -91,6 +94,7 @@ summary: 使用此任务可在凭据、网络或设备更改后恢复 SCV 与 vC
 ====
 
 
+[[common-registration-errors-and-remediations]]
 == 常见注册错误和补救措施
 
 * *无效的登录凭据*
@@ -117,6 +121,7 @@ summary: 使用此任务可在凭据、网络或设备更改后恢复 SCV 与 vC
 
 
 
+[[related-topics]]
 == 相关主题
 
 * link:scpivs44_modify_the_vcenter_logon_credentials.html["更新 SCV 中配置的 vCenter 凭据"]

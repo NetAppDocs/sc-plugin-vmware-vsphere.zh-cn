@@ -21,6 +21,7 @@ NOTE: 从适用于VMware的SnapCenter插件(SCV) 5.0开始、您需要添加HTTP
 
 
 
+[[minimum-ontap-privileges-required]]
 == 所需的最小 ONTAP 权限
 
 所有 SnapCenter 插件都需要以下最低权限。
@@ -72,6 +73,7 @@ NOTE: 您可以忽略有关不受支持的Vserver命令的警告消息。
 
 
 
+[[additional-ontap-information]]
 == 其他 ONTAP 信息
 
 * 要使用SnapMirror活动同步功能、您需要ONTAP 9.12.1或更高版本。

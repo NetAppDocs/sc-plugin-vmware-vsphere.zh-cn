@@ -18,6 +18,7 @@ summary: 在部署虚拟设备之前，您应了解部署要求。
 
 
 
+[[host-requirements]]
 == 主机要求
 
 在开始部署适用于VMware vSphere的SnapCenter插件(SCV)之前、您应熟悉主机要求。
@@ -79,6 +80,7 @@ summary: 在部署虚拟设备之前，您应了解部署要求。
 
 
 
+[[license-requirements]]
 == 许可证要求
 
 |===
@@ -98,6 +100,7 @@ summary: 在部署虚拟设备之前，您应了解部署要求。
 |===
 
 
+[[software-support]]
 == 软件支持
 
 |===
@@ -142,6 +145,7 @@ summary: 在部署虚拟设备之前，您应了解部署要求。
 
 
 
+[[space-sizing-and-scaling-requirements]]
 == 空间、规模估算和扩展要求
 
 |===
@@ -158,6 +162,7 @@ summary: 在部署虚拟设备之前，您应了解部署要求。
 |===
 
 
+[[connection-and-port-requirements]]
 == 连接和端口要求
 
 |===
@@ -181,6 +186,7 @@ summary: 在部署虚拟设备之前，您应了解部署要求。
 |===
 
 
+[[configurations-supported]]
 == 支持的配置
 
 每个插件实例仅支持一个处于链接模式的vCenter Server。但是、多个插件实例可以支持同一个SnapCenter服务器、如下图所示。
@@ -189,6 +195,7 @@ image:scpivs44_image4.png["支持的配置图形表示"]
 
 
 
+[[rbac-privileges-required]]
 == 需要 RBAC 权限
 
 vCenter管理员帐户必须具有下表中列出的所需vCenter Privileges。
@@ -216,6 +223,7 @@ vCenter管理员帐户必须具有下表中列出的所需vCenter Privileges。
 |===
 
 
+[[autosupport]]
 == AutoSupport
 
 适用于VMware vSphere的SnapCenter插件可提供最少的信息来跟踪其使用情况、包括插件URL。AutoSupport 包含一个已安装插件表， AutoSupport 查看器会显示此表。

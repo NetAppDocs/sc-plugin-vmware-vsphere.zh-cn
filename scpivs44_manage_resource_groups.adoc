@@ -21,6 +21,7 @@ NOTE: 资源组在 Virtual Storage Console （ VSC ）中称为备份作业。
 
 
 
+[[suspend-and-resume-operations-on-resource-groups]]
 == 暂停和恢复对资源组的操作
 
 暂停资源组上的计划操作。需要时再次启用它们。
@@ -37,6 +38,7 @@ NOTE: 资源组在 Virtual Storage Console （ VSC ）中称为备份作业。
 
 
 
+[[modify-resource-groups]]
 == 修改资源组
 
 您可以在 vCenter 中的资源组中删除或添加资源，断开或附加策略，修改计划或修改任何其他资源组选项。
@@ -57,6 +59,7 @@ NOTE: 资源组在 Virtual Storage Console （ VSC ）中称为备份作业。
 
 
 
+[[delete-resource-groups]]
 == 删除资源组
 
 如果不需要保护资源，请删除 vCenter 中的资源组。删除适用SnapCenter Plug-in for VMware vSphere之前，请删除所有资源组。

@@ -38,6 +38,7 @@ summary: 将适用于 VMware vSphere 的 SnapCenter 插件升级到同一版本�
 
 
 
+[[workaround-if-you-already-upgraded-before-clearing-the-cache]]
 == 临时解决策（如果在清除缓存之前已升级）
 
 . 登录到SnapCenter Plug-in for VMware vSphere管理用户界面。

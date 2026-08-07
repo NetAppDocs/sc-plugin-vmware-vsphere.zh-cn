@@ -18,6 +18,7 @@ summary: 如果SnapCenter VMware vSphere客户端行为不正确、您可能需�
 
 
 
+[[restart-the-vmware-vsphere-client-service-in-a-linux-vcenter]]
 == 在Linux vCenter中重新启动VMware vSphere客户端服务
 
 .开始之前

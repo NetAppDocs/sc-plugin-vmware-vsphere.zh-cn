@@ -18,12 +18,14 @@ summary: 部署适用于 VMware vSphere 的 SnapCenter 插件后，您必须完�
 
 
 
+[[required-operations-after-deployment]]
 == 部署后需要执行的操作
 
 如果您是新的 SnapCenter 用户，则必须先将 Storage VM 添加到 SnapCenter ，然后才能执行任何数据保护操作。添加 Storage VM 时，请指定管理 LIF 。您还可以添加集群并指定集群管理 LIF 。有关添加存储的信息，请参见 link:scpivs44_add_storage_01.html["添加存储"^]。
 
 
 
+[[deployment-issues-you-might-encounter]]
 == 可能会遇到的部署问题
 
 * 部署虚拟设备后，在以下情况下，信息板上的 * 备份作业 * 选项卡可能无法加载：
@@ -52,6 +54,7 @@ summary: 部署适用于 VMware vSphere 的 SnapCenter 插件后，您必须完�
 
 
 
+[[manage-authentication-errors]]
 == 管理身份验证错误
 
 如果不使用管理员凭据、则在部署适用于VMware vSphere的SnapCenter插件后或迁移后可能会收到身份验证错误。如果遇到身份验证错误，则必须重新启动此服务。
@@ -63,6 +66,7 @@ summary: 部署适用于 VMware vSphere 的 SnapCenter 插件后，您必须完�
 
 
 
+[[register-snapcenter-plug-in-for-vmware-vsphere-with-snapcenter-server]]
 == 向 SnapCenter 服务器注册适用于 VMware vSphere 的 SnapCenter 插件
 
 如果要在 SnapCenter 中执行基于 VMDK 的应用程序工作流（适用于虚拟化数据库和文件系统的基于应用程序的保护工作流），则必须向 SnapCenter 服务器注册适用于 VMware vSphere 的 SnapCenter 插件。

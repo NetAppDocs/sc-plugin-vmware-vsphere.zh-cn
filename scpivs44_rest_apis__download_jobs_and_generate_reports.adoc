@@ -20,6 +20,7 @@ summary: 要使用适用于VMware vSphere的SnapCenter 插件REST API为VMware v
 
 
 
+[[use-the-following-rest-apis-in-the-jobs-section-to-get-detailed-information-on-jobs]]
 == 使用作业部分中的以下 REST API 可获取有关作业的详细信息：
 
 |===
@@ -33,6 +34,7 @@ summary: 要使用适用于VMware vSphere的SnapCenter 插件REST API为VMware v
 |===
 
 
+[[use-the-following-rest-api-in-the-jobs-section-to-download-job-logs]]
 == 使用作业部分中的以下 REST API 下载作业日志：
 
 |===
@@ -43,6 +45,7 @@ summary: 要使用适用于VMware vSphere的SnapCenter 插件REST API为VMware v
 |===
 
 
+[[use-the-following-rest-apis-in-the-reports-section-to-generate-reports]]
 == 使用报告部分中的以下 REST API 生成报告：
 
 |===
