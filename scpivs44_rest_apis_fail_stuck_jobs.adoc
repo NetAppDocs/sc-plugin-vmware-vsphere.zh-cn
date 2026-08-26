@@ -4,7 +4,7 @@ permalink: scpivs44_rest_apis_fail_stuck_jobs.html
 keywords:  
 summary: 要使用适用于VMware vSphere的SnapCenter 插件REST API查找VMware vSphere客户端作业的作业ID、必须对VMware vSphere使用REST API调用。 
 ---
-= 用于在 SCV 中将停滞作业标记为失败的 REST API
+= 在 SCV 中使用 REST API 将停滞作业标记为失败
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

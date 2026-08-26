@@ -4,7 +4,7 @@ permalink: scpivs44_log_in_to_the_snapcenter_vmware_vsphere_web_client.html
 keywords:  
 summary: 部署适用于VMware vSphere的SnapCenter 插件后、它会在vCenter上安装VMware vSphere客户端、此客户端会与其他vSphere客户端一起显示在vCenter屏幕上。 
 ---
-= 登录到SnapCenter VMware vSphere客户端
+= 登录到 SnapCenter Plug-in for VMware vSphere 客户端
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
