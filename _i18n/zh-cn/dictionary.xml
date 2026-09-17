@@ -361,11 +361,6 @@
   <block id="fcc3a5678f0005b20d9b7c499d1b8dc3" category="list-text">在 `network.interface=10.10.10.10` 字段中，添加要使用的 IP 地址。</block>
   <block id="4fa13494fd3dbaf358f71d6c97ee016f" category="list-text">您有两个 NIC 。</block>
   <block id="c1634a907000ddd630d2959e055bed59" category="doc">用于还原已删除 VM 的 REST API 工作流</block>
-  <block id="c40cc36b9154fdd4a91c01ccb09ce903" category="cell">从 VMware 受管对象 URL 中查找 VM UUID 。记下要还原的虚拟机的 * UUID * 。</block>
-  <block id="e59122dd4a3b9560e419d80fe5d7705c" category="cell">` /4.1/VM/ ｛ uuid ｝ / 备份`</block>
-  <block id="e3d8a902b976f14935a74a07f0a8ff70" category="cell">`获取虚拟机备份` 获取指定虚拟机的备份列表。传递步骤 1 中的 * uuid* 。记下要还原的备份的 * 备份 Id* 。</block>
-  <block id="3a2a882001dd7896eb2b32739b29471d" category="cell">` /4.1/VM/ ｛ uuid ｝ /backup/ ｛ backupId ｝ /restore`</block>
-  <block id="7f8c1c53fd7e08fda5762c3337c0bce6" category="cell">`使用 uuid 从备份还原虚拟机或还原已删除的虚拟机` 还原指定的备份。传递步骤 1 中的 * uuid* 。传递步骤 2 中的 * 备份 Id* 。传递 * restoreLocations* 属性中步骤 3 和 4 中的信息。如果 VM 备份是部分备份，请将 `restartVM` 参数设置为 "false" 。* 注意： * 您无法还原模板虚拟机。</block>
   <block id="dcd4d838eca9843ffd6ec1f3e29709c6" category="doc">自定义配置</block>
   <block id="303bdbbcc69c42ada4d351470161cb37" category="paragraph">要提高操作效率，您可以修改 `sCBR.override` 配置文件以更改默认值。这些值控制备份期间创建或删除的 VMware 快照数量或备份脚本停止运行之前的时间等设置。</block>
   <block id="60b6fe4428eb456392dd8aa2668bcb86" category="paragraph">适用于 VMware vSphere 的 SnapCenter 插件环境使用 `sCBR.override` 配置文件，该插件支持基于 SnapCenter 应用程序的数据保护操作。如果此文件不存在，则必须从模板文件创建它。</block>
@@ -1509,7 +1504,6 @@
   <block id="6ba7b5d818acb6cab3137d4c011e2db2" category="inline-link">管理员身份验证和 RBAC</block>
   <block id="b6bdb3b25a95e999fb569567041f332e" category="paragraph"><block ref="b6bdb3b25a95e999fb569567041f332e" category="inline-link-rx"></block></block>
   <block id="47d51cdb9bee4f5be50bff68bef7f005" category="paragraph">对于每个REST API、添加<block ref="3a8f2c381c875eef37ad96b7d70fc1a1" prefix=" " category="inline-code"></block> 在REST API的前面、形成一个完整的端点。</block>
-  <block id="5b845076b112586b7fff13b10d9f0612" category="cell">转至<block ref="7c61e9e4b133f96dbd184942bce35796" prefix=" " category="inline-code"></block></block>
   <block id="e4a70196caccbfc6c6d2c0d9df5e3013" category="paragraph">要使用 SnapCenter 功能保护虚拟机上的 VM ，数据存储库和应用程序一致的数据库，您必须部署适用于 VMware vSphere 的 SnapCenter 插件。
 。 <block ref="205a43536d4d7a501f66e7fd657c91ca" category="inline-link-macro-rx"></block> 页面提供了下载OVA文件的说明。</block>
   <block id="5dd03e8d039863e563e049be198c3fd3" category="sidebar">发行说明</block>
@@ -2363,4 +2357,15 @@
   <block id="14e70facdd7f1056b19624a65647f611" category="doc">SnapCenter Plug-in for VMware vSphere 6.2 发行说明</block>
   <block id="0e1c5e24c38bf97d9c3a9e07e8ea35ac" category="doc">在 SCV 中使用 REST API 将停滞作业标记为失败</block>
   <block id="25dc68a1ecd07d4ec635e66b5aba9478" category="doc">了解 SCV 中的来宾文件还原</block>
+  <block id="cecbb6d90c269c98fdac515b81e0d73b" category="cell">从 VMware Managed Objects URL 中查找数据存储库 *moref*。请注意已删除虚拟机所在数据存储库的 moref。</block>
+  <block id="f61beb61662c6537a3f0ae8663f661fe" category="cell"><block ref="00dc830fa803616a49708e2e3e3c8b5b" prefix="" category="inline-code"></block></block>
+  <block id="b009dd3584db37104eeb85f282f3ed53" category="cell"><block ref="66205e1770e6dcf2b2bd1b6d83d6e19a" prefix="" category="inline-code"></block> 检索指定数据存储区的备份列表。传递步骤 1 中的 *moref*。记下要还原的备份的 *backupId*。</block>
+  <block id="3287b26eea51f72abac4a77e5b4829cd" category="cell"><block ref="f2a41487d6a8e863e610ba88a60bc84f" prefix="" category="inline-code"></block></block>
+  <block id="747eb4264c2de88633140e938e184ca6" category="cell"><block ref="4e49071979e4a204bd91c87e101a1a96" prefix="" category="inline-code"></block> 检索指定备份的详细信息。传递步骤 2 中的 *backupId*。在实体列表中，找到与已删除虚拟机匹配的 *entityName*，并记录 *UUID*。</block>
+  <block id="1600ae4c16a60cd5ad67ed50a8ba0f1e" category="cell"><block ref="0d42da7d88167ed4dd002c063a3dcb70" prefix="" category="inline-code"></block></block>
+  <block id="796d765a2681401240691e1d250c6fa1" category="cell"><block ref="af62a8975e8577db87448344c585507f" prefix="" category="inline-code"></block> 检索指定备份的快照位置。传递步骤 2 中的 *backupId*。请注意 *snapshotLocationsList* 信息。</block>
+  <block id="ef223d3a6282eb2d29c9050b41c058a6" category="cell"><block ref="17602b67d88fcff6d9024b3d93710f9e" prefix="" category="inline-code"></block></block>
+  <block id="704566d14e7a9a5778c823d1b4ec8f66" category="cell"><block ref="cd167a8bf45e589a93aea03099990bf5" prefix="" category="inline-code"></block> 检索存储备份的主机的信息。传递步骤 1 中的 *moref*。请注意 *availableEsxHostsList* 信息。</block>
+  <block id="d87a25d74744053d50de6457d00b0f8c" category="cell"><block ref="35fb52fb97add0bf107e8814314da67c" prefix="" category="inline-code"></block></block>
+  <block id="31533fd2e85160fecb2398d5ece8c194" category="cell"><block ref="42deac4908a17efb438eb8235d8b5154" prefix="" category="inline-code"></block> 还原指定的备份。传递步骤 3 中的 *UUID*。传递步骤 2 中的 *backupId*。在 *restoreLocations* 属性中，传递步骤 4 中 *snapshotLocationsList* 的信息；在 *esxHost* 属性中，传递步骤 5 中 *availableEsxHostsList* 的信息。如果虚拟机备份是部分备份，则将<block ref="0736c145ca7c004b573fcb3b6242d260" prefix=" " category="inline-code"></block>参数设置为 *false*。*注意：* 您无法还原作为模板的虚拟机。</block>
 </blocks>

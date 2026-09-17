@@ -22,18 +22,20 @@ summary: 要使用适用于 VMware vSphere 的 SnapCenter 插件 REST API 对 VM
 | 步骤 | REST API | 注释 
 
 
-| 1. | 转至
-`\http://<vCenter-IP>/mob` | 从 VMware 受管对象 URL 中查找 VM UUID 。记下要还原的虚拟机的 * UUID * 。 
+| 1. | 转至 `\http://<vCenter-IP>/mob` | 从 VMware Managed Objects URL 中查找数据存储库 *moref*。请注意已删除虚拟机所在数据存储库的 moref。 
 
 
-| 2. | ` /4.1/VM/ ｛ uuid ｝ / 备份` | `获取虚拟机备份` 获取指定虚拟机的备份列表。传递步骤 1 中的 * uuid* 。记下要还原的备份的 * 备份 Id* 。 
+| 2. | `/4.1/datastores/{moref}/backups` | `Get Datastore Backups` 检索指定数据存储区的备份列表。传递步骤 1 中的 *moref*。记下要还原的备份的 *backupId*。 
 
 
-| 3. | ` /4.1/vm/backup/ ｛ backupId ｝ / snapshotlocations` | `Get snapshot locations`获取指定备份的快照的位置。传递步骤 2 中的 * 备份 Id* 。请注意 * 快照位置列表 * 信息。 
+| 3. | `/4.1/backups/{backupId}` | `Get Backup Details` 检索指定备份的详细信息。传递步骤 2 中的 *backupId*。在实体列表中，找到与已删除虚拟机匹配的 *entityName*，并记录 *UUID*。 
 
 
-| 4. | ` /4.1/VM/ ｛ moref ｝ /backup/ availableesxhosts` | `获取可用 ESX 主机` 获取存储备份的主机的信息。请注意 * 可用的 EssxHostsList* 信息。 
+| 4. | `/4.1/vm/backups/{backupId}/snapshotlocations` | `Get snapshot locations` 检索指定备份的快照位置。传递步骤 2 中的 *backupId*。请注意 *snapshotLocationsList* 信息。 
 
 
-| 5. | ` /4.1/VM/ ｛ uuid ｝ /backup/ ｛ backupId ｝ /restore` | `使用 uuid 从备份还原虚拟机或还原已删除的虚拟机` 还原指定的备份。传递步骤 1 中的 * uuid* 。传递步骤 2 中的 * 备份 Id* 。传递 * restoreLocations* 属性中步骤 3 和 4 中的信息。如果 VM 备份是部分备份，请将 `restartVM` 参数设置为 "false" 。* 注意： * 您无法还原模板虚拟机。 
+| 5. | `/4.1/datastores/{moref}/availableEsxHosts` | `Get available ESX Hosts` 检索存储备份的主机的信息。传递步骤 1 中的 *moref*。请注意 *availableEsxHostsList* 信息。 
+
+
+| 6. | `/4.1/vm/{uuid}/backups/{backupId}/restoreVm` | `Restore a VM from a backup` 还原指定的备份。传递步骤 3 中的 *UUID*。传递步骤 2 中的 *backupId*。在 *restoreLocations* 属性中，传递步骤 4 中 *snapshotLocationsList* 的信息；在 *esxHost* 属性中，传递步骤 5 中 *availableEsxHostsList* 的信息。如果虚拟机备份是部分备份，则将 `restartVM`参数设置为 *false*。*注意：* 您无法还原作为模板的虚拟机。 
 |===
