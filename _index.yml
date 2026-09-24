@@ -32,7 +32,7 @@ indexpage:
     - title: NetApp 博客— SCV
       url: https://blog.netapp.com/tag/snapcenter/
     - title: NetApp 社区— SCV
-      url: https://community.netapp.com/t5/forums/filteredbylabelpage/board-id/backup-and-restore-discussions/label-name/snapcenter
+      url: https://community.netapp.com/community/categories/solutions
   - title: 更多资源
     links:
     - title: SnapCenter 软件文档
