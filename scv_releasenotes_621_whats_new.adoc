@@ -1,0 +1,56 @@
+---
+permalink: scv_releasenotes_621_whats_new.html 
+sidebar: sidebar 
+keywords: 'what"s new, release notes, scv, 6.2.1' 
+summary: 了解 SnapCenter Plug-in for VMware vSphere 6.2.1 中提供的新功能 
+---
+= SnapCenter Plug-in for VMware vSphere 6.2.1 的新增功能
+:allow-uri-read: 
+
+
+[role="lead"]
+SnapCenter Plug-in for VMware vSphere 6.2.1 是一个维护版本。它更新了设备附带的第三方软件，并修复了自 SnapCenter Plug-in for VMware vSphere 6.2 版本发布以来发现的问题。
+
+
+
+[[updated-components]]
+== 已更新组件
+
+|===
+| 组件 | SnapCenter Plug-in for VMware vSphere 6.2.1 
+
+
+| Java 运行时 | OpenJDK 21.0.12 
+
+
+| .NET 运行时 | .NET 10.0.11 
+
+
+| 设备操作系统 | Debian 13 
+|===
+
+
+[[fixed-issues]]
+== 已修复的问题
+
+在升级到某个版本之前，建议先查看该版本中已修复的已知问题。
+
+* VMDP-7072：可以将 Oracle Cloud 上的云托管 ONTAP 添加为存储系统。
+* VMDP-7052：将虚拟机还原到其他位置将保留虚拟机存储策略，因此对于使用非默认策略的虚拟机，不再拒绝还原。
+* VMDP-7027：支持日志包包含已配置存储系统的列表。
+* VMDP-6987：当 vCenter 短暂报告数据存储不可用时，连接或还原虚拟磁盘不再失败。
+* VMDP-6965：当一个计划记录不完整时，计划页面不再加载失败。
+* VMDP-6952：不允许用户删除资源组时，显示权限消息。
+* VMDP-6939：维护控制台不再报告 VMware Tools 丢失。
+* VMDP-6935：浏览备份以还原单个文件不再失败。
+* VMDP-6933：在首次设置期间，新的设备部署不再无法完成。
+* VMDP-6931：在一个无法访问的卷上，辅助备份的清理不再等待数小时。其他卷继续处理。
+* VMDP-6817：重命名源 ONTAP 卷不再使辅助备份停留在旧名称上，或显示不再有效的条目。
+
+
+
+
+[[supported-snapcenter-releases]]
+== 支持的 SnapCenter 版本
+
+有关受支持版本的最新信息，请参阅 https://imt.netapp.com/matrix/imt.jsp?components=121034;&solution=1517&isHWU&src=IMT["NetApp 互操作性表工具"^]（IMT）。

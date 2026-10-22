@@ -4,7 +4,7 @@ permalink: scpivs44_release_notes.html
 keywords:  
 summary: 发行说明提供了有关此版本的适用于 VMware vSphere 的 SnapCenter 插件的重要信息，包括许可要求，已知问题，注意事项，限制， 以及任何文档更新或更正。 
 ---
-= SnapCenter Plug-in for VMware vSphere 6.2 发行说明
+= SnapCenter Plug-in for VMware vSphere 6.2.1 和 6.2 发行说明
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,9 +14,9 @@ summary: 发行说明提供了有关此版本的适用于 VMware vSphere 的 Sna
 
 
 [role="lead"]
-了解适用于SnapCenter Plug-in for VMware vSphere中的新功能和增强功能。
+了解 SnapCenter Plug-in for VMware vSphere 6.2.1 和 6.2 中提供的新功能和增强功能。
 
-有关已知问题、限制和已修复问题的详细信息，请参阅 https://library.netapp.com/ecm/ecm_download_file/ECMLP3359464["SnapCenter Plug-in for VMware vSphere发行说明"^]。您必须使用您的NetApp帐户登录或创建一个帐户才能访问发行说明。
+有关已知问题、限制和已修复问题的详细信息，请参见 https://library.netapp.com/ecm/ecm_download_file/ECMLP3359464["SnapCenter Plug-in for VMware vSphere 6.2.1 和 6.2 发行说明"^]。您必须使用您的 NetApp 帐户登录或创建一个帐户才能访问发行说明。
 
 [NOTE]
 ====
