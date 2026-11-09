@@ -2380,17 +2380,6 @@
   <block id="1061da8067873a5bbcf3b13a320008da" category="cell">Debian 13</block>
   <block id="69464e68a5cdd0b54694ac92276fa1a3" category="section-title">已修复的问题</block>
   <block id="4bf7189ca42b78c35cf4f9f936645b31" category="paragraph">在升级到某个版本之前，建议先查看该版本中已修复的已知问题。</block>
-  <block id="f1b0557f30f515cd6d2e1aa2e60580b5" category="list-text">VMDP-7072：可以将 Oracle Cloud 上的云托管 ONTAP 添加为存储系统。</block>
-  <block id="7e30746a2e14afbe290955d5099a0827" category="list-text">VMDP-7052：将虚拟机还原到其他位置将保留虚拟机存储策略，因此对于使用非默认策略的虚拟机，不再拒绝还原。</block>
-  <block id="ffbb81ba0942679379246214302064d0" category="list-text">VMDP-7027：支持日志包包含已配置存储系统的列表。</block>
-  <block id="54df73c8ac14d36d89e624c6bcb25c15" category="list-text">VMDP-6987：当 vCenter 短暂报告数据存储不可用时，连接或还原虚拟磁盘不再失败。</block>
-  <block id="a0d9c0a5825a0a479c3c1abf79736802" category="list-text">VMDP-6965：当一个计划记录不完整时，计划页面不再加载失败。</block>
-  <block id="ae1fe0096853dc264aef45e1af3a1c54" category="list-text">VMDP-6952：不允许用户删除资源组时，显示权限消息。</block>
-  <block id="807a094ef06af183d78e766a9312e93b" category="list-text">VMDP-6939：维护控制台不再报告 VMware Tools 丢失。</block>
-  <block id="d10b5064d7908d30ce794457a6f3a36d" category="list-text">VMDP-6935：浏览备份以还原单个文件不再失败。</block>
-  <block id="67edb748ed65475a815d4782acf1f80a" category="list-text">VMDP-6933：在首次设置期间，新的设备部署不再无法完成。</block>
-  <block id="447fa43309a40a78d5e193fd06081614" category="list-text">VMDP-6931：在一个无法访问的卷上，辅助备份的清理不再等待数小时。其他卷继续处理。</block>
-  <block id="1aa76d24b907dec4cb76b6d8a77fed05" category="list-text">VMDP-6817：重命名源 ONTAP 卷不再使辅助备份停留在旧名称上，或显示不再有效的条目。</block>
   <block id="e5c7cede4b737581cd66c16346d917c5" category="section-title">支持的 SnapCenter 版本</block>
   <block id="a8873f8f7715ad49732b43f6bdd600b5" category="paragraph">有关受支持版本的最新信息，请参阅<block ref="64fc8efacd4fa13b8c1907c1db527b3d" category="inline-link-rx"></block>（IMT）。</block>
   <block id="fdc5680e65fa7898d151f608475ae69c" category="summary">了解 SnapCenter Plug-in for VMware vSphere 6.2.1 和 6.2 中提供的新功能。</block>
@@ -2398,4 +2387,27 @@
   <block id="184c7c0c678f365279a40216ed22fe8a" category="paragraph">SCV 6.2 和 SCV 6.2.1</block>
   <block id="09e5cb2777291d8cdab464a3f4d035e6" category="paragraph">SCV6.1 和 SCV 6.2</block>
   <block id="20afa33773b6c08681241027158bf0c6" category="sidebar">SnapCenter Plug-in for VMware vSphere 6.2.1 的新增功能</block>
+  <block id="b066ca6122c9857ad1ee3a44f18cc5e7" category="cell">错误 ID</block>
+  <block id="fbe32e5130ccbbb1ffa89d9f70c1b083" category="cell">VMDP-7072</block>
+  <block id="e53e7d9e47b290851f5322670e9ecb11" category="cell">Oracle Cloud 上的云托管 ONTAP 可以作为存储系统添加。</block>
+  <block id="db83ccd5ec2a7d5b47fcb16bff367994" category="cell">VMDP-7052</block>
+  <block id="978341053f0d4727fa2d3f60e89ef8d7" category="cell">将虚拟机还原到其他位置将保留虚拟机存储策略，因此对于使用非默认策略的虚拟机，不会再拒绝还原。</block>
+  <block id="eebb3d78418add83056fa6e98ab314c6" category="cell">VMDP-7027</block>
+  <block id="16f06a0d6af2ec373955e5deebcf1c92" category="cell">支持日志捆绑包包含已配置的存储系统列表。</block>
+  <block id="1ad7bcd66dc23dcde3ce1b6d54e11fa5" category="cell">VMDP-6987</block>
+  <block id="bd60983e3cd2a710b8bf94a4d46be475" category="cell">当 vCenter 短暂报告数据存储不可用时，连接或恢复虚拟磁盘不再失败。</block>
+  <block id="085a21f40a096fe8d421f595412e35c8" category="cell">VMDP-6965</block>
+  <block id="3e8dc69bde1348a24d095a52a5213e68" category="cell">当一个计划记录不完整时，计划页面不再无法加载。</block>
+  <block id="8ca9bc2edece27e6a5ce2cd1d7869b10" category="cell">VMDP-6952</block>
+  <block id="889a2d10bb7e6f4de708d61ec611b0f2" category="cell">如果不允许用户删除资源组，则会显示权限消息。</block>
+  <block id="d0797b6e14dfa7980b21f2392e2356c8" category="cell">VMDP-6939</block>
+  <block id="47957ac25ad4c0107d64327b8b0ab515" category="cell">维护控制台不再报告缺少 VMware Tools。</block>
+  <block id="832101e6141ee84bf7cbb623bf72f8d0" category="cell">VMDP-6935</block>
+  <block id="af16420268fa26529065d82d47ad3490" category="cell">浏览备份以还原单个文件不再失败。</block>
+  <block id="616f6786eb6faab93d9b620f359160b5" category="cell">VMDP-6933</block>
+  <block id="31b56ee5316a09ec641a4086ba471fc7" category="cell">在首次设置期间，新的设备部署不再无法完成。</block>
+  <block id="d50f3dfae3474354ad6a0a356d2dd751" category="cell">VMDP-6931</block>
+  <block id="cd02895ddd7c0fa8421749e568bf6763" category="cell">辅助备份的清理不再在一个无法访问的卷上等待数小时。其他卷继续处理。</block>
+  <block id="0eff747ab0e939a98b87dc30a3d4959d" category="cell">VMDP-6817</block>
+  <block id="49443c787c9ae296da4caa1b641ab418" category="cell">重命名源 ONTAP 卷将不再使辅助备份停留在旧名称上，或显示不再有效的条目。</block>
 </blocks>
